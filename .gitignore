@@ -5,3 +5,16 @@
 *.ppt
 *.xlsx
 *.xls
+
+# python environment
+*.py 
+*.pyc
+*.exe
+*.Python
+pip*
+activate.*
+python*
+easy*
+wheel
+activate
+
