@@ -5,7 +5,7 @@
         <link rel="stylesheet" type="text/css" href="/css/main.css">
         
 	</head>
-	<body>
+	<body onload="myFunction()">
 		<nav>
     		<ul>
         		<li><a href="/">Home</a></li>
@@ -67,6 +67,14 @@
             <p>
                 Copyright &copy; 2016, Xieyang Liu.  All rights reserved.
             </p>
+            <p id="demo"></p>
 		</footer>
+        <script>
+            function myFunction() 
+            {
+                var x = new Date(document.lastModified);
+                document.getElementById("demo").innerHTML = "Last updated: " + x;
+            }
+        </script>
 	</body>
 </html>
