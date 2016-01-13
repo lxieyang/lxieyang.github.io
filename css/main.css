@@ -1,12 +1,14 @@
+
 body {
     margin: 40px auto;
-    width: 70%;
+    width: 80%;
 }
 nav ul, footer ul {
     font-family:'Helvetica', 'Arial', 'Sans-Serif';
     padding: 0px;
     list-style: none;
     font-weight: bold;
+                            font-size: 1.7em;
 }
 nav ul li, footer ul li {
     display: inline;
@@ -25,6 +27,7 @@ h1 {
 }
 p {
     font-size: 1.2em;
+    font-family: 'Palatino';
     line-height: 1.4em;
     color: #333;
 }
