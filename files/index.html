@@ -4,9 +4,9 @@
 		<title>Xieyang (Michael) Liu</title>
         <!-- link to main stylesheet -->
 		<link rel="stylesheet" type="text/css" href="/css/main.css">
-        
+        <script src="/files/help.js"></script>
 	</head>
-	<body onload="myFunction()">
+	<body onload="lastupdate(); copyright()">
 		<nav>
     		<ul>
         		<li><a href="/">Home</a></li>
@@ -18,7 +18,7 @@
 		</nav>
 		<div class="container">
     		<div class="blurb">
-        		<h2>Vv255 Recitation Session Slides (Summer 2015) @ UM-SJTU Joint Institute</h2>
+        		<h2 id="top">Vv255 Recitation Session Slides (Summer 2015) @ UM-SJTU Joint Institute</h2>
                 <p>
                     <a href="/files/rc_00_introduction.pdf" target="_blank">rc_00_introduction.pdf</a><br>
                     <a href="/files/rc_01_lecture_1_2_3.pdf" target="_blank">rc_01_lecture_1_2_3.pdf</a><br>
@@ -38,7 +38,7 @@
                     Shoot me an email if you want take look at the .tex source code for these files.
                 </p>
                 
-                
+                <p><a href="#top">Go to top</a></p>
     		</div>
 		</div>
 		<footer>
@@ -61,17 +61,10 @@
                     </a>
                 </li>
 			</ul>
-            <p>
-                Copyright &copy; 2016, Xieyang Liu.  All rights reserved.
+            <p id="copyright">
+                Copyright &copy; 2015, Xieyang Liu.  All rights reserved.
             </p>
             <p id="demo"></p>
 		</footer>
-        <script>
-            function myFunction() 
-            {
-                var x = new Date(document.lastModified);
-                document.getElementById("demo").innerHTML = "Last update: " + x;
-            }
-        </script>
 	</body>
 </html>

@@ -4,9 +4,9 @@
 		<title>Xieyang (Michael) Liu</title>
         <!-- link to main stylesheet -->
 		<link rel="stylesheet" type="text/css" href="/css/main.css">
-        
+        <script src="/files/help.js"></script>
 	</head>
-	<body onload="myFunction()">
+	<body onload="lastupdate(); copyright()" >
 		<nav>
     		<ul>
         		<li><a href="/">Home</a></li>
@@ -18,7 +18,7 @@
 		</nav>
 		<div class="container">
     		<div class="blurb">
-        		<h1 style='font-family:Cursive'>Xieyang (Michael) Liu</h1>
+        		<h1 id="top" style='font-family:Cursive'>Xieyang (Michael) Liu</h1>
                 <p>
                     <img src='/pic/um_logo.png' alt='um_logo' style='width:220px;height:32px;'>
                 </p>
@@ -66,7 +66,7 @@
                     Email: lxieyang [at] umich [dot] edu <br>
                     Phone: +1(734)-741-3585
                 </p>
-                
+                <p><a href="#top">Go to top</a></p>
     		</div>
 		</div>
         
@@ -90,17 +90,11 @@
                     </a>
                 </li>
 			</ul>
-            <p>
-                Copyright &copy; 2016, Xieyang Liu.  All rights reserved.
+            <p id="copyright">
+                Copyright &copy; 2015, Xieyang Liu.  All rights reserved.
             </p>
             <p id="demo"></p>
 		</footer>
-        <script>
-            function myFunction() 
-            {
-                var x = new Date(document.lastModified);
-                document.getElementById("demo").innerHTML = "Last update: " + x;
-            }
-        </script>
+        
 	</body>
 </html>

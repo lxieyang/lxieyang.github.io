@@ -5,8 +5,9 @@
         <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
         <script src="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.0/js/bootstrap.min.js"></script>
         <script src="//cdnjs.cloudflare.com/ajax/libs/moment.js/2.5.1/moment-with-langs.min.js"></script>
+        <script src="/files/help.js"></script>
     </head>
-    <body  style="margin: 37px auto; width: 80%;"  onload="myFunction()">
+    <body  style="margin: 37px auto; width: 80%;"  onload="lastupdate(); copyright()">
         <nav>
     		<ul>
         		<li style="font-size:1.14em;"><a href="/">Home</a></li>
@@ -17,7 +18,7 @@
     		</ul>
 		</nav>
         
-        <h2>Language Skills</h2>
+        <h2 id="top">Language Skills</h2>
         <br>
         
         <div class="progress">
@@ -104,6 +105,7 @@
         <p>
             The above diagram is created using <a href="http://getbootstrap.com/">&copy; Bootstrap</a>.
         </p>  
+        <p><a href="#top">Go to top</a></p>
         
         <footer>
             <br>
@@ -126,18 +128,10 @@
                 </li>
 			</ul>
             <br>
-            <p style="font-size:1.3em;">
-                Copyright &copy; 2016, Xieyang Liu.  All rights reserved.
+            <p id="copyright" style="font-size:1.3em;">
+                Copyright &copy; 2015, Xieyang Liu.  All rights reserved.
             </p>
             <p id="demo" style="font-size:1.3em;"></p>
 		</footer>
-        <script>
-            function myFunction() 
-            {
-                var x = new Date(document.lastModified);
-                document.getElementById("demo").innerHTML = "Last update: " + x;
-            }
-        </script>
-        
     </body>
 </html>
