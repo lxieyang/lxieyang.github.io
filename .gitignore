@@ -18,3 +18,11 @@ easy*
 wheel
 activate
 
+# tex
+*.blg
+*.aux
+*.toc
+*.bbl
+*.log.*
+*.gz
+*.out
