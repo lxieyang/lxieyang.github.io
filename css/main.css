@@ -25,9 +25,13 @@ h1 {
     font-size: 3em;
     font-family:'Helvetica', 'Arial', 'Sans-Serif';
 }
+h2 {
+    font-size: 1.6em;
+    font-family:'Palatino', 'Arial', 'Sans-Serif';
+}
 p {
     font-size: 1.2em;
-    font-family: 'Palatino';
+    font-family: 'times';
     line-height: 1.4em;
     color: #333;
 }
