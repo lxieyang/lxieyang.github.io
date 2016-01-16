@@ -26,12 +26,14 @@ h1 {
 	font-style: normal;
 	font-variant: normal;
     font-size: 3em;
+    font-weight: 600;
 }
 h2 {
     font-family: Palatino, 'Palatino Linotype', 'Palatino LT STD', 'Book Antiqua', Georgia, serif;
 	font-style: normal;
 	font-variant: normal;
     font-size: 1.6em;
+    font-weight: 600;
 }
 p {
     font-family: Palatino, 'Palatino Linotype', 'Palatino LT STD', 'Book Antiqua', Georgia, serif;
