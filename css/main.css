@@ -30,8 +30,11 @@ h2 {
     font-family:'times';
 }
 p {
+    font-family: Palatino, 'Palatino Linotype', 'Palatino LT STD', 'Book Antiqua', Georgia, serif;
+	font-style: normal;
+	font-variant: normal;
     font-size: 1.2em;
-    font-family: Palatino, 'Palatino Linotype', serif;
+    
     line-height: 1.4em;
     color: #333;
 }
