@@ -27,11 +27,11 @@ h1 {
 }
 h2 {
     font-size: 1.6em;
-    font-family:'Palatino', 'times';
+    font-family:'times';
 }
 p {
     font-size: 1.2em;
-    font-family: 'Palatino', 'times';
+    font-family: Palatino, 'Palatino Linotype', serif;
     line-height: 1.4em;
     color: #333;
 }
