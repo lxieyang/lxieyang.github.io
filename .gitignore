@@ -34,3 +34,6 @@ env/
 *.gz
 *.out
 *.log
+
+# jekyll
+_site/
