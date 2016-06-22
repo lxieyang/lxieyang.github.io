@@ -1,0 +1,77 @@
+.img-circle {
+  border-radius: 50%;
+  margin: auto;   /* center the image */
+  width: 70%;
+}
+
+.site-title {
+  text-align: center;
+}
+
+figure {
+  margin: 0;
+}
+
+figcaption {
+  margin: 0;
+  padding: 0;
+  font-size: 0.8em;
+}
+
+.figcaption {
+
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+
+  border-radius: 6px;
+
+  font-size: 0.8em;
+
+  margin-top: 0;
+
+}
+
+.go-to-top {
+  color: grey;
+  text-decoration: none;
+  opacity: 0.7;
+  transition: opacity 0.07s ease-in-out;
+}
+
+.go-to-top:hover {
+  color: black;
+  text-decoration: none;
+  opacity: 1.0;
+}
+
+.last-update {
+  font-size: 0.75em;
+}
+
+blockquote {
+  border-top: 2px solid #eee;
+  border-left: 0;
+  border-right: 0;
+  border-bottom: 0;
+  box-sizing: border-box;
+  padding-left: 0;
+}
+
+.resume {
+  text-align: right;
+  margin-bottom: 15px;
+}
+
+.resume a {
+  color: grey;
+  opacity: 0.7;
+  transition: opacity 0.07s ease-in-out;
+}
+
+.resume a:hover {
+  color: black;
+  text-decoration: none;
+  opacity: 1.0;
+}
