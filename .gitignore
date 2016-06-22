@@ -7,7 +7,7 @@
 *.xls
 
 # python environment
-*.py 
+*.py
 *.pyc
 *.exe
 *.Python
@@ -17,6 +17,13 @@ python*
 easy*
 wheel
 activate
+env
+env/
+/env
+.env
+.env/
+/.env
+.DS_Store
 
 # tex
 *.blg
