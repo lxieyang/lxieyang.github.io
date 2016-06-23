@@ -1,6 +1,6 @@
 # Dependencies
 markdown:         kramdown
-highlighter:      pygments
+highlighter:      rouge
 
 # Permalinks
 # permalink:        pretty
@@ -21,9 +21,9 @@ author:
 resume:           '/resources/cv/resume_Xieyang Liu.pdf'
 
 # paginate
-gems:             [jekyll-paginate]   # enable paginate in jekyll 3
-paginate:         5
-paginate_path:    "works/page:num/"
+#gems:             [jekyll-paginate]   # enable paginate in jekyll 3
+#paginate:         5
+#paginate_path:    "works/page:num/"
 
 
 # Custom vars
@@ -42,3 +42,7 @@ linkedin:
 
 # javascript files
 helper-js:        '/resources/js/help.js'
+
+collections:
+  works:
+    output: true

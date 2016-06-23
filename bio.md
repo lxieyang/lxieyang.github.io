@@ -6,9 +6,11 @@ navigation_weight: 5
 ---
 <a href="{{ page.banner }}" >
 <img class="about-image" src="{{ page.banner }}"></a>
-<p class="message figcaption">Photo taken on the flight deck of <a href="https://www.intrepidmuseum.org" >Intrepid Museum</a> @ Manhattan, NYC, Dec 26 2015. Behind me were an IAI F-21A Kfir and an F-16.</p>
+<p class="message figcaption">Photo taken on the flight deck of the <a href="https://www.intrepidmuseum.org" >Intrepid Museum</a> @ Manhattan, NYC, Dec 26 2015. Behind me were an IAI F-21A Kfir and an F-16.</p>
 
-I'm currently an undergraduate at the [University of Michigan](https://www.umich.edu). I'm a junior majoring in [Computer Science and Engineering](http://eecs.umich.edu/cse/). I'm currently serving as a research assistant at the University of Michigan [Artificial Intelligence Lab](https://www.eecs.umich.edu/ai/). My research interests are computer vision, machine learning, and web-development. I would like to be a software engineer upon graduation.
+I'm a senior undergraduate student at the [University of Michigan](https://www.umich.edu/) in the [Computer Science and Engineering](http://eecs.umich.edu/cse/) department. I'm currently a research assistant at the University of Michigan [Croma Lab](http://web.eecs.umich.edu/~wlasecki/croma.html) under the supervision of [Prof Walter S. Lasecki](https://web.eecs.umich.edu/~wlasecki/). My research interests are computer vision, machine learning, and web-development. I would like to be a software engineer upon graduation.
+
+During my junior year in Michigan, I served as a research assistant at the University of Michigan [Artificial Intelligence Lab](https://www.eecs.umich.edu/ai/) under the supervision of [Prof Jia Deng](http://web.eecs.umich.edu/~jiadeng/).
 
 Before that, I was an ECE student at the [University of Michigan - Shanghai Jiao Tong University Joint Institute](http://www.umji.sjtu.edu.cn/en/). During my time there, I served as a teaching assistant for the course Vv255 Applied Calculus III under the supervision of [Dr. Jing Liu](http://umji.sjtu.edu.cn/faculty/jing-liu/). I was also a member of the [UM-SJTU JI Honor Council](http://umji.sjtu.edu.cn/academics/academic-integrity/).
 
