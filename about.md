@@ -2,6 +2,7 @@
 layout: page
 title: About
 banner: './resources/images/flight_deck_intrepid.jpg'
+navigation_weight: 5
 ---
 <a href="{{ page.banner }}" >
 <img class="about-image" src="{{ page.banner }}"></a>

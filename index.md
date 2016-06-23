@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Home
+navigation_weight: 1
 ---
 
 ## &nbsp;
