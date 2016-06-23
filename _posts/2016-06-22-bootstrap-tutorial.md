@@ -34,36 +34,36 @@ Many users already have downloaded Bootstrap from MaxCDN when visiting another s
 
 ## Create first web page with Bootstrap
 
-1. Add the HTML5 doctype
+  1. Add the HTML5 doctype
 
-```html
-<!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="utf-8">
-    </head>
-</html>
-```
+    ```html
+    <!DOCTYPE html>
+    <html lang="en">
+        <head>
+            <meta charset="utf-8">
+        </head>
+    </html>
+    ```
 
-2. Bootstrap 3 is mobile-first
+  2. Bootstrap 3 is mobile-first
 
-```html
-<meta name="viewport" content="width=device-width, initial-scale=1">
-```
+    ```html
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    ```
 
-    The `width=device-width` part sets the width of the page to follow the screen-width of the device (which will vary depending on the device).
+      The `width=device-width` part sets the width of the page to follow the screen-width of the device (which will vary depending on the device).
 
-    The `initial-scale=1` part sets the initial zoom level when the page is first loaded by the browser.
+      The `initial-scale=1` part sets the initial zoom level when the page is first loaded by the browser.
 
-3. Containers
+  3. Containers
 
-    There are two container classes to choose from:
+      There are two container classes to choose from:
 
-    1. The `.container` class provides a responsive fixed width container
+      1. The `.container` class provides a responsive fixed width container
 
-    2. The `.container-fluid` class provides a full width container, spanning the entire width of the viewport
+      2. The `.container-fluid` class provides a full width container, spanning the entire width of the viewport
 
-    ***Note***: Containers are not nestable (you cannot put a container inside another container).
+      ***Note***: Containers are not nestable (you cannot put a container inside another container).
 
 
 
