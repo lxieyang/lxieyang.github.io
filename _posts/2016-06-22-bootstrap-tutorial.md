@@ -185,7 +185,7 @@ Bootstrap will style the HTML `<abbr>` element in the following way:
 <p>A <abbr title="Unidentified Flying Object">UFO</abbr> was reported to take Barack Obama back to Mars in 2017.</p>
 ```
 
-#### [`<blockquote>`](./Text_Typography/blockquote.html)
+#### [`<blockquote>`]({{ page.base_url }}/Text_Typography/blockquote.html)
 
 ```html
 <blockquote>

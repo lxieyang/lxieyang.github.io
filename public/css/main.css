@@ -180,3 +180,33 @@ address {
 .single-img {
   width: 90%;
 }
+
+/*
+.posts ul {
+  padding: 5px;
+  list-style-type: none;
+  margin: 10px;
+  border-radius: 5px;
+}
+
+.posts ul li {
+  display: block;
+}
+
+.posts ul li a {
+  text-decoration: none;
+  font-family: Arial;
+  padding: 0.2em 1em;
+  color: #fff;
+  background-color: #000;
+}
+
+.posts ul li a:hover {
+  color: #000;
+  background-color: #fff;
+}
+*/
+
+.related[name="blog-content"] {
+  border-top: 0;
+}

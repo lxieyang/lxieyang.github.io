@@ -23,7 +23,7 @@ resume:           '/resources/cv/resume_Xieyang Liu.pdf'
 # paginate
 #gems:             [jekyll-paginate]   # enable paginate in jekyll 3
 #paginate:         5
-#paginate_path:    "works/page:num/"
+#paginate_path:    "blogs/page:num/"
 
 
 # Custom vars
