@@ -77,12 +77,18 @@ blockquote {
   opacity: 1.0;
 }
 
+a {
+  opacity: 1.0;
+  transition: all 0.25s;
+}
+
 a:hover,
 a:focus {
   text-decoration: none;
+  opacity: 0.6;
 }
 
-a.sidebar-nav-item{
+a.sidebar-nav-item {
   text-decoration: none;
   color: #9d9d9d;
   transition: all 0.25s;
@@ -91,10 +97,10 @@ a.sidebar-nav-item{
 a.sidebar-nav-item:hover,
 a.sidebar-nav-item:focus {
   text-decoration: none;
-  color: #fafbfb;
+  color: #ffffff;
 }
 
 .sidebar-nav-item.active {
-  font-weight: bold;
+  font-weight: normal;
   color: #ffe000;
 }
