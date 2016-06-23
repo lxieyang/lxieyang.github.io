@@ -170,3 +170,13 @@ address {
   border-color: #adadad;
   opacity: 1.0;
 }
+
+.double-img {
+  width: 46%;
+  display: inline;
+  margin: 7px;
+}
+
+.single-img {
+  width: 90%;
+}

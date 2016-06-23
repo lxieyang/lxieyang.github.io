@@ -11,12 +11,12 @@ doc_path: /resources/files/works/Portable_Laser_Guitar.pdf
 ---
 
 <br><br>
-<img src="{{ page.image_path }}" alt="img1" style="width:90%;"><br>
+<img class="single-img" src="{{ page.image_path }}" alt="img1"><br>
 
 Ever imagined playing a guitar with a "laser" string? You've just got yourself a chance!
 With laser beams replacing ordinary strings, an electronic sounding system replacing the big dumb body, we made playing the guitar the coolest thing you could ever imagine!
 
-<br><img src="{{ page.image2_path }}" alt="img2" style="width:90%;">
+<br><img class="single-img" src="{{ page.image2_path }}" alt="img2" >
 
 
 [Demo Video]({{ page.video }})
