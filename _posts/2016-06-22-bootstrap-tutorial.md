@@ -4,6 +4,12 @@ title: Bootstrap Tutorial
 base_url: /resources/blog/bstutorial/
 ---
 
+***This post will be updated on a weekly bases.***
+
+***Last update: Jun 22 2016.***
+
+<br>
+
 ## Source
 
 ### Bootstrap CDN
