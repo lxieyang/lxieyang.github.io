@@ -7,7 +7,7 @@ title: About
 
 lxieyang.github.io is:
 
-Licensed under a [Creative Commons Attribution 3.0 Unported License](https://creativecommons.org/licenses/by/3.0/deed.en_US).
+Licensed under a [Creative Commons Attribution 4.0 Unported License](https://creativecommons.org/licenses/by/4.0/deed.en_US).
 
 Powered by [Jekyll](http://jekyllrb.com/)
 
