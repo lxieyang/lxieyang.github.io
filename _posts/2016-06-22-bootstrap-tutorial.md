@@ -4,7 +4,7 @@ title: Bootstrap Tutorial
 base_url: /resources/blog/bstutorial/
 ---
 
-***This post will be updated on a weekly bases.***
+***This post will be updated on a weekly basis.***
 
 ***Last update: Jun 22 2016.***
 
@@ -277,4 +277,177 @@ The classes for text colors are: `.text-muted`, `.text-primary`, `.text-success`
 <p class="bg-info">This text represents some information.</p>
 <p class="bg-warning">This text represents a warning.</p>
 <p class="bg-danger">This text represents danger.</p>
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+## Bootstrap Tables
+
+### [Basic Tables]({{ page.base_url }}/tables/basic.html)
+
+A basic Bootstrap table has a light padding and only horizontal dividers.
+
+The `.table` class adds basic styling to a table:
+
+```html
+<table class="table">
+  <thead>
+    <tr>
+      <th>Firstname</th>
+      <th>Lastname</th>
+      <th>Email</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>John</td>
+      <td>Doe</td>
+      <td>john@example.com</td>
+    </tr>
+  </tbody>
+</table>
+```
+
+### [Striped Rows]({{ page.base_url }}/tables/stripRows.html)
+
+The `.table-striped` class adds **zebra-stripes** to a table:
+
+```html
+<table class="table table-striped">
+```
+
+### [Bordered Table]({{ page.base_url }}/tables/bordered.html)
+
+The `.table-bordered` class adds borders on all sides of the table and cells:
+
+```html
+<table class="table table-striped table-bordered">
+```
+
+### [Hover Rows]({{ page.base_url }}/tables/hover.html)
+
+The `.table-hover` class enables a hover state on table rows. **Note that don't use along with `.table-striped`**
+
+```html
+<table class="table table-hover table-bordered">
+```
+
+### [Contextual Classes]({{ page.base_url }}/tables/contextual.html)
+
+Contextual classes can be used to color table rows (`<tr>`) or table cells (`<td>`):
+
+```html
+<tr class="success">
+  <td>John</td>
+  <td>Doe</td>
+  <td>john@example.com</td>
+</tr>
+<tr class="danger">
+  <td>Mary</td>
+  <td>Moe</td>
+  <td>mary@example.com</td>
+</tr>
+<tr class="info">
+  <td>July</td>
+  <td>Dooley</td>
+  <td>july@example.com</td>
+</tr>
+```
+
+### [Responsive Table]({{ page.base_url }}/tables/responsive.html)
+The `.table-responsive` class creates a responsive table. The table will then **scroll horizontally** on small devices (under ***768px***). When viewing on anything larger than ***768px*** wide, there is no difference:
+
+```html
+<table class="table table-responsive">
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+## Bootstrap Images
+
+### [Shapes]({{ page.base_url }}/images/shapes.html)
+
+#### Rounded Corners: with class `.img-rounded`
+
+#### Circle: with class `.img-circle`
+
+#### Thumbnail: with class `.img-thumbnail`
+
+
+### [Responsive Images]({{ page.base_url }}/images/responsive.html)
+
+Images comes in all sizes. So do screens. Responsive images automatically adjust to fit the size of the screen.
+
+Create responsive images by adding an `.img-responsive` class to the `<img>` tag. The image will then scale nicely to the parent element.
+
+The `.img-responsive` class applies `display: block`; and `max-width: 100%`; and `height: auto`; to the image:
+
+
+### [Image Gallery]({{ page.base_url }}/images/gallery.html)
+
+You can also use Bootstrap's grid system in conjunction with the `.thumbnail` class to create an image gallery:
+
+```html
+<div class="row">
+  <div class="col-md-4">
+    <a href="pulpitrock.jpg" class="thumbnail">
+      <p>Pulpit Rock: A famous tourist attraction in Forsand, Ryfylke, Norway.</p>
+      <img src="pulpitrock.jpg" alt="Pulpit Rock" style="width:150px;height:150px">
+    </a>
+  </div>
+  <div class="col-md-4">
+    <a href="moustiers-sainte-marie.jpg" class="thumbnail">
+      <p>Moustiers-Sainte-Marie: Considered as one of the "most beautiful villages of France".</p>
+      <img src="moustiers-sainte-marie.jpg" alt="Moustiers Sainte Marie" style="width:150px;height:150px">
+    </a>
+  </div>
+  <div class="col-md-4">
+    <a href="cinqueterre.jpg" class="thumbnail">
+      <p>The Cinque Terre: A rugged portion of coast in the Liguria region of Italy.</p>
+      <img src="cinqueterre.jpg" alt="Cinque Terre" style="width:150px;height:150px">
+    </a>
+  </div>
+</div>
+```
+
+### [Responsive Embeds]({{ page.base_url }}/images/responsiveEmbeds.html)
+
+Also let videos or slideshows scale properly on any device.
+
+Classes can be applied directly to `<iframe>`, `<embed>`, `<video>`, and `<object>` elements.
+
+The following example creates a responsive video by adding an `.embed-responsive-item` class to an `<iframe>` tag (the video will then scale nicely to the parent element). The containing `<div>` defines the aspect ratio of the video:
+
+```html
+<!-- 16:9 aspect ratio -->
+<div class="embed-responsive embed-responsive-16by9">
+  <iframe class="embed-responsive-item" src="..."></iframe>
+</div>
 ```

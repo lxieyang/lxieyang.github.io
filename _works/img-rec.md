@@ -19,10 +19,9 @@ Imagine, one day, you could ask Siri: "Hey Siri, show me the photos in which I w
 Needless to say, virtual assistants today don't actually understand photos. All they could do is to pull out the metadata associated with that photo, for example, GPS location, time taken, surrounding temperature, etc. Therefore, they could only answer queries like "Show me the pictures I took in downtown Manhattan (at midnight)."
 
 
-<br>
-<div>
-<img class="double-img" src="{{ page.image2_path }}" alt="img2">
-<img class="double-img" src="{{ page.image3_path }}" alt="img3">
+<div class="double-img">
+<img class="double-img-left" src="{{ page.image2_path }}" alt="img2">
+<img class="double-img-right" src="{{ page.image3_path }}" alt="img3">
 </div>
 <br>
 

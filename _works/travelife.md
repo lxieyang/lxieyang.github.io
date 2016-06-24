@@ -21,7 +21,6 @@ It's time to make a change by using the technologies we have today. What we want
 The best thing out such our service is that you don't have to worry about anything. Every second of the day is worth cherishing. When you are fully engaged, you'll find that your life is that beautiful.
 
 **Demo video**:
-
-<a href="{{ page.video }}">
-  <img class="single-img" src="{{ page.image3_path }}" alt="img3">
-</a>
+<div class="embed-responsive embed-responsive-16by9">
+  <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/IBufaYlCCOc" allowfullscreen ></iframe>
+</div>
