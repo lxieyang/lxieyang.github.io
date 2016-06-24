@@ -18,8 +18,12 @@ With laser beams replacing ordinary strings, an electronic sounding system repla
 
 <br><img class="single-img" src="{{ page.image2_path }}" alt="img2" >
 
+<br>
 
-[Demo Video]({{ page.video }})
+**Demo video**:
+<div class="embed-responsive embed-responsive-4by3">
+  <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/EAGU8Xj4gFk" allowfullscreen ></iframe>
+</div>
 
 [Portable Laser Guitar Poster]({{ page.poster_path }})
 

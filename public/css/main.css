@@ -252,6 +252,10 @@ address {
     padding-bottom: 56.25%;
 }
 
+.embed-responsive-4by3 {
+    padding-bottom: 75%;
+}
+
 .embed-responsive .embed-responsive-item, .embed-responsive embed, .embed-responsive iframe, .embed-responsive object, .embed-responsive video {
     position: absolute;
     top: 0;
