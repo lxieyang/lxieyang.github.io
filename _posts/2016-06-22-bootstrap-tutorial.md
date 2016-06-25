@@ -581,3 +581,18 @@ By default, wells are medium in size.
 <div class="well well-sm">Small Well</div>
 <div class="well well-lg">Large Well</div>
 ```
+
+
+
+
+
+
+
+
+
+
+
+
+## &nbsp;
+## &nbsp;
+## [Bootstrap Templates]({% post_url 2016-06-24-bootstrap-templates %})
