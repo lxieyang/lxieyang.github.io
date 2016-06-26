@@ -595,4 +595,8 @@ By default, wells are medium in size.
 
 ## &nbsp;
 ## &nbsp;
-## [Bootstrap Templates]({% post_url 2016-06-24-bootstrap-templates %})
+## [Bootstrap Templates and Themes]({% post_url 2016-06-24-bootstrap-templates %})
+
+```html
+
+```
