@@ -311,7 +311,7 @@ address {
 .text-editor-wrap {
   display: block;
   margin: auto;
-  max-width: 100%;
+  max-width: 95%;
   border-radius: 10px;
   box-shadow: rgba(0, 0, 0, 0.5) 0px 10px 70px;
   clear: both;
@@ -338,7 +338,7 @@ address {
 }
 
 .text-body {
-  height: 150px;
+  height: 175px;
   background-color: rgba(0, 0, 0, 0.85);
   padding: 10px;
   color: #f0f0f0;

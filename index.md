@@ -6,47 +6,13 @@ navigation_weight: 1
 
 ## &nbsp;
 
-<!--
-<div class="head-text lift-text">
-    <h1 class="tagline">
-      I'm
-      <span id="typed"></span>
-      <span class="typed-cursor"> </span>
-    </h1>
-    <h4 class="sub-tagline">web developer / geek</h4>
-</div>
 
-<script>
-    $("#typed").typed({
-        strings: ["a web developer.", "a web designer.", "Michael."],
-        typeSpeed: 30,
-        callback: function(){
-            lift();
-        }
-    });
-    function lift(){
-        $(".head-text").addClass("lift-text");
-    }
-</script>
--->
-
-
-
-<div class="text-editor-wrap">
-	<div class="title-bar">
-    <span class="title"><span class="glyphicon glyphicon-home"></span> Michael — bash — 80x<span class="terminal-height">10</span>
-    </span>
-  </div>
-	<div class="text-body">
-		$ <span id="typed"></span>
-    <span class="typed-cursor"></span>
-	</div>
-</div>
+{% include typed.html %}
 
 
 
 
-Hi, I'm Xieyang Liu! You can call me **Michael**.
+Hi, I'm Xieyang Liu! You can call me **Michael**!
 
 I'm a senior undergraduate student at the [University of Michigan](https://www.umich.edu/) in the [Computer Science and Engineering](http://eecs.umich.edu/cse/) department. I'm currently a research assistant at the University of Michigan [Croma Lab](http://web.eecs.umich.edu/~wlasecki/croma.html) under the supervision of [Prof Walter S. Lasecki](https://web.eecs.umich.edu/~wlasecki/). My research interests are computer vision, machine learning, and web-development. Please click [Short Bio](./bio) to know more about my academic and social life.
 
@@ -132,40 +98,3 @@ $(document).ready(function() {
 I learned `LaTeX` during my freshmen year while writing project papers. During my time serving as a teaching assistant for a multivariate calculus course, I dedicated much of my time mastering `Beamer`, which is one of the `LaTeX` packages that deals specifically with presentations. To take a look at those presentations I created, please hit the [Selected Works](./works.html) button in the navigation bar.
 
 Please hit the [Skill Set](./skills.html) button in the navigation bar to view my current yet developing skill set...
-
-
-<script>
-$(function(){
-
-	$("#typed").typed({
-		strings: ["I'm Xieyang Liu.", "I'm a web developer.", "I'm a geek."],
-		typeSpeed: 20,
-    callback: function(){
-      shift();
-    }
-	});
-
-});
-
-function shift(){
-    $(".head-wrap").addClass("shift-text");
-    terminalHeight();
-}
-
-function terminalHeight(){
-    var termHeight = $(".terminal-height");
-    var value = termHeight.text();
-    value = parseInt(value);
-    setTimeout(function(){
-        if (value > 10){
-            value = value-1;
-            this.txtValue = value.toString();
-            termHeight.text(this.txtValue);
-            self.terminalHeight();
-        }
-        else{
-            clearTimeout();
-        }
-    }, 10);
-}
-</script>

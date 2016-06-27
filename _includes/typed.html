@@ -1,0 +1,51 @@
+<script>
+$(function(){
+  var myDate = new Date();
+  var para = document.getElementById("lastLogin");
+  para.innerHTML = "Last login: " + myDate.toString();
+
+	$("#typed").typed({
+		strings: ["I'm Xieyang Liu.", "I'm a web developer.", "I'm a software engineer.", "I'm a geek.", "I'm Michael."],
+		typeSpeed: 30,
+    contentType: 'text',
+    callback: function(){
+      shift();
+    }
+	});
+});
+
+function shift(){
+  $(".head-wrap").addClass("shift-text");
+  terminalHeight();
+}
+
+function terminalHeight(){
+  var termHeight = $(".terminal-height");
+  var value = termHeight.text();
+  value = parseInt(value);
+  setTimeout(function(){
+      if (value > 10){
+          value = value-1;
+          this.txtValue = value.toString();
+          termHeight.text(this.txtValue);
+          self.terminalHeight();
+      }
+      else{
+          clearTimeout();
+      }
+  }, 10);
+}
+</script>
+
+
+<div class="text-editor-wrap">
+	<div class="title-bar">
+    <span class="title"><span class="glyphicon glyphicon-home"></span> Michael — bash — 80x<span class="terminal-height">10</span>
+    </span>
+  </div>
+	<div class="text-body">
+    <span id="lastLogin"></span><br><br>
+		$ <span id="typed"></span>
+    <span class="typed-cursor"></span>
+	</div>
+</div>
