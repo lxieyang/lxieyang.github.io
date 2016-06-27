@@ -42,6 +42,7 @@ linkedin:
 
 # javascript files
 helper-js:        '/resources/js/help.js'
+typed-js:         '/resources/js/typed.js'
 
 collections:
   works:
