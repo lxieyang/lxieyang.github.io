@@ -774,7 +774,7 @@ To span the entire width of the screen, use the `.btn-group-justified` class:
 
 #### Example with `<button>`
 
-**Note**: For <button> elements, you must wrap each button in a `.btn-group` class
+**Note**: For `<button>` elements, you must wrap each button in a `.btn-group` class
 
 ```html
 <div class="btn-group btn-group-justified">
