@@ -6,7 +6,7 @@ base_url: /resources/blog/bstutorial/
 
 ***This post will be updated on a weekly basis.***
 
-***Last update: Jun 25 2016.***
+***Last update: Jun 29 2016.***
 
 
 ## &nbsp;
@@ -1007,6 +1007,411 @@ Create a stacked progress bar by placing multiple bars into the same `<div class
   </div>
 </div>
 ```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+## &nbsp;
+## &nbsp;
+## [Bootstrap Pagination]({{ page.base_url }}/pagination/index.html)
+
+If you have a web site with lots of pages, you may wish to add some sort of pagination to each page.
+
+To create a basic pagination, add the `.pagination` class to an `<ul>` element
+
+```html
+<ul class="pagination">
+  <li><a href="#">1</a></li>
+  <li><a href="#">2</a></li>
+  <li><a href="#">3</a></li>
+  <li><a href="#">4</a></li>
+  <li><a href="#">5</a></li>
+</ul>
+```
+
+### Active State
+
+Add class `.active` to `<li>` let the user know which page he/she is on
+
+```html
+<li class="active"><a href="#">2</a></li>
+```
+
+### Disabled State
+
+Add class `.disabled` if a link for some reason is disabled
+
+```html
+<ul class="pagination">
+  <li><a href="#">1</a></li>
+  <li><a href="#">2</a></li>
+  <li><a href="#">3</a></li>
+  <li class="disabled"><a href="#">4</a></li>
+  <li><a href="#">5</a></li>
+</ul>
+```
+
+
+### Sizing
+
+Add class `.pagination-lg` for larger blocks or `.pagination-sm` for smaller blocks
+
+
+### Breadcrumbs
+
+
+The `.breadcrumb` class indicates the current page's location within a **navigational hierarchy**:
+
+```html
+<ul class="breadcrumb">
+  <li><a href="#">Home</a></li>
+  <li><a href="#">Private</a></li>
+  <li><a href="#">Pictures</a></li>
+  <li class="active">Vacation</li>
+</ul>
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+## &nbsp;
+## &nbsp;
+## [Bootstrap Pager]({{ page.base_url }}/pager/index.html)
+
+Pager is also a form of pagination (as described in the previous chapter).
+
+Pager provides previous and next buttons (links).
+
+To create previous/next buttons, add the `.pager` class to an `<ul>` element
+
+
+```html
+<ul class="pager">
+  <li><a href="#">Previous</a></li>
+  <li><a href="#">Next</a></li>
+</ul>
+```
+
+### Align Buttons
+
+Use the `.previous` and `.next` classes to align each button to the sides of the page:
+
+```html
+<ul class="pager">
+  <li class="previous"><a href="#">Previous</a></li>
+  <li class="next"><a href="#">Next</a></li>
+</ul>
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+## &nbsp;
+## &nbsp;
+## [Bootstrap List Groups]({{ page.base_url }}/lg/index.html)
+
+The most basic list group is an unordered list with list items.
+
+To create a basic list group, use an `<ul>` element with class `.list-group`, and `<li>` elements with class `.list-group-item`.
+
+```html
+<ul class="list-group">
+  <li class="list-group-item">First item</li>
+  <li class="list-group-item">Second item</li>
+  <li class="list-group-item">Third item</li>
+</ul>
+```
+
+### List Group With Badges
+
+You can also add badges to a list group. The badges will automatically be positioned on the right
+
+To create a badge, create a `<span>` element with class `.badge` inside the list item
+
+```html
+<ul class="list-group">
+  <li class="list-group-item"><span class="badge">12</span> New</li>
+  <li class="list-group-item"><span class="badge">5</span> Deleted</li>
+  <li class="list-group-item"><span class="badge">3</span> Warnings</li>
+</ul>
+```
+
+### List Group With Linked Items
+
+The items in a list group can also be hyperlinks. This will add a grey background color on hover.
+
+To create a list group with linked items, use `<div>` instead of `<ul>` and `<a>` instead of `<li>`
+
+```html
+<div class="list-group">
+  <a href="#" class="list-group-item">First item</a>
+  <a href="#" class="list-group-item">Second item</a>
+  <a href="#" class="list-group-item">Third item</a>
+</div>
+```
+
+### Contextual Classes
+
+Contextual classes can be used to color list items
+
+The classes for coloring list-items are: `.list-group-item-success`, `list-group-item-info`, `list-group-item-warning`, and `.list-group-item-danger`:
+
+```html
+<ul class="list-group">
+  <li class="list-group-item list-group-item-success">First item</li>
+  <li class="list-group-item list-group-item-info">Second item</li>
+  <li class="list-group-item list-group-item-warning">Third item</li>
+  <li class="list-group-item list-group-item-danger">Fourth item</li>
+</ul>
+```
+
+
+### Custom Content
+
+You can add nearly any HTML inside a list group item.
+
+Bootstrap provides the classes `.list-group-item-heading` and `.list-group-item-text` which can be used as follows:
+
+```html
+<div class="list-group">
+  <a href="#" class="list-group-item active">
+    <h4 class="list-group-item-heading">First List Group Item Heading</h4>
+    <p class="list-group-item-text">List Group Item Text</p>
+  </a>
+  <a href="#" class="list-group-item">
+    <h4 class="list-group-item-heading">Second List Group Item Heading</h4>
+    <p class="list-group-item-text">List Group Item Text</p>
+  </a>
+  <a href="#" class="list-group-item">
+    <h4 class="list-group-item-heading">Third List Group Item Heading</h4>
+    <p class="list-group-item-text">List Group Item Text</p>
+  </a>
+</div>
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+## &nbsp;
+## &nbsp;
+## [Bootstrap Panels]({{ page.base_url }}/panel/index.html)
+
+A panel in bootstrap is a bordered box with some padding around its content
+
+Panels are created with the `.panel` class, and content inside the panel has a `.panel-body` class:
+
+```html
+<div class="panel panel-default">
+  <div class="panel-body">A Basic Panel</div>
+</div>
+```
+
+### Panel Heading
+
+The `.panel-heading` class adds a heading to the panel
+
+```html
+<div class="panel panel-default">
+  <div class="panel-heading">Panel Heading</div>
+  <div class="panel-body">Panel Content</div>
+</div>
+```
+
+### Panel Footer
+
+The `.panel-footer` class adds a footer to the panel
+
+```html
+<div class="panel panel-default">
+  <div class="panel-body">Panel Content</div>
+  <div class="panel-footer">Panel Footer</div>
+</div>
+```
+
+### Panel Group
+
+To group many panels together, wrap a `<div>` with class `.panel-group` around them.
+
+The `.panel-group` class clears the bottom-margin of each panel
+
+```html
+<div class="panel-group">
+  <div class="panel panel-default">
+    <div class="panel-body">Panel Content</div>
+  </div>
+  <div class="panel panel-default">
+    <div class="panel-body">Panel Content</div>
+  </div>
+</div>
+```
+
+
+### Panels with Contextual Classes
+
+To color the panel, use contextual classes (`.panel-default`, `.panel-primary`, `.panel-success`, `.panel-info`, `.panel-warning`, or `.panel-danger`):
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+## &nbsp;
+## &nbsp;
+## [Bootstrap Dropdowns]({{ page.base_url }}/dropdown/index.html)
+
+A dropdown menu is a toggleable menu that allows the user to choose one value from a predefined list
+
+```html
+<div class="dropdown">
+  <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Dropdown Example
+  <span class="caret"></span></button>
+  <ul class="dropdown-menu">
+    <li><a href="#">HTML</a></li>
+    <li><a href="#">CSS</a></li>
+    <li><a href="#">JavaScript</a></li>
+  </ul>
+</div>
+```
+
+The `.dropdown` class indicates a dropdown menu.
+
+To open the dropdown menu, use a button or a link with a class of `.dropdown-toggle` and the `data-toggle="dropdown"` attribute.
+
+The `.caret` class creates a caret arrow icon, which indicates that the button is a dropdown.
+
+Add the `.dropdown-menu` class to a `<ul>` element to actually build the dropdown menu.
+
+
+### Dropdown Divider
+
+The `.divider` class is used to separate links inside the dropdown menu with a thin horizontal border
+
+```html
+<li class="divider"></li>
+```
+
+### Dropdown Header
+
+The `.dropdown-header` class is used to add headers inside the dropdown menu
+
+```html
+<li class="dropdown-header">Dropdown header 1</li>
+```
+
+### Disable an Item
+
+To disable an item in the dropdown menu, use the `.disabled` class:
+
+```html
+<li class="disabled"><a href="#">CSS</a></li>
+```
+
+### Dropdown Position
+
+To right-align the dropdown, add the `.dropdown-menu-right` class to the element with `.dropdown-menu`:
+
+```html
+<ul class="dropdown-menu dropdown-menu-right">
+```
+
+### Dropup
+
+If you want the dropdown menu to expand upwards instead of downwards, change the `<div>` element with `class="dropdown"` to `"dropup"`
+
+```html
+<div class="dropup">
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
