@@ -593,6 +593,276 @@ By default, wells are medium in size.
 
 
 
+
+
+
+
+## &nbsp;
+## &nbsp;
+## Bootstrap Alerts
+
+Alerts are created with the .alert class, followed by one of the four contextual classes `.alert-success`, `.alert-info`, `.alert-warning` or `.alert-danger`:
+
+```html
+<div class="alert alert-success">
+  <strong>Success!</strong> Indicates a successful or positive action.
+</div>
+
+<div class="alert alert-info">
+  <strong>Info!</strong> Indicates a neutral informative change or action.
+</div>
+
+<div class="alert alert-warning">
+  <strong>Warning!</strong> Indicates a warning that might need attention.
+</div>
+
+<div class="alert alert-danger">
+  <strong>Danger!</strong> Indicates a dangerous or potentially negative action.
+</div>
+```
+
+### Closing Alerts
+
+To close the alert message, add `class="close"` and `data-dismiss="alert"` to a **link** or a **button** element:
+
+```html
+<div class="alert alert-success">
+  <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+  <strong>Success!</strong> Indicates a successful or positive action.
+</div>
+```
+
+**Note that**: `&times;` (×) is an HTML entity that is the preferred icon for close buttons, rather than the letter `"x"`.
+
+
+### Animated Alerts
+
+The `.fade` and `.in` classes adds a fading effect when closing the alert message:
+
+```html
+<div class="alert alert-success fade in">
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+## &nbsp;
+## &nbsp;
+## [Bootstrap Buttons]({{ page.base_url }}/buttons/index.html)
+
+### Button Styles
+
+The following example shows the code for the different button styles:
+
+```html
+<button type="button" class="btn btn-default">Default</button>
+<button type="button" class="btn btn-primary">Primary</button>
+<button type="button" class="btn btn-success">Success</button>
+<button type="button" class="btn btn-info">Info</button>
+<button type="button" class="btn btn-warning">Warning</button>
+<button type="button" class="btn btn-danger">Danger</button>
+<button type="button" class="btn btn-link">Link</button>
+```
+
+The button classes can be used on an `<a>`, `<button>`, or `<input>` element:
+
+```html
+<a href="#" class="btn btn-info" role="button">Link Button</a>
+<button type="button" class="btn btn-info">Button</button>
+<input type="button" class="btn btn-info" value="Input Button">
+<input type="submit" class="btn btn-info" value="Submit Button">
+```
+
+### Button Sizes
+
+```html
+<button type="button" class="btn btn-primary btn-lg">Large</button>
+<button type="button" class="btn btn-primary btn-md">Medium</button>
+<button type="button" class="btn btn-primary btn-sm">Small</button>
+<button type="button" class="btn btn-primary btn-xs">XSmall</button>
+```
+
+### Block Level Buttons
+
+Add class `.btn-block` to create a block level button:
+
+```html
+<button type="button" class="btn btn-primary btn-block">Button 1</button>
+```
+
+### Active/Disabled Buttons
+
+The class `.active` makes a button appear pressed, and the class `.disabled` makes a button unclickable:
+
+```html
+<button type="button" class="btn btn-primary active">Active Primary</button>
+<button type="button" class="btn btn-primary disabled">Disabled Primary</button>
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+## &nbsp;
+## &nbsp;
+## [Bootstrap Button Groups]({{ page.base_url }}/buttons/group.html)
+
+### (Horizontal) Button Groups
+
+Bootstrap allows you to group a series of buttons together (on a single line) in a button group. Use a `<div>` element with class `.btn-group` to create a button group:
+
+```html
+<div class="btn-group">
+  <button type="button" class="btn btn-primary">Apple</button>
+  <button type="button" class="btn btn-primary">Samsung</button>
+  <button type="button" class="btn btn-primary">Sony</button>
+</div>
+```
+
+Instead of applying button sizes to every button in a group, use class `.btn-group-*` to size all buttons in the group:
+
+```html
+<div class="btn-group btn-group-lg">
+  <button type="button" class="btn btn-primary">Apple</button>
+  <button type="button" class="btn btn-primary">Samsung</button>
+  <button type="button" class="btn btn-primary">Sony</button>
+</div>
+```
+
+### Vertical Button Groups
+
+Use the class `.btn-group-vertical` (instead of `.btn-group`) to create a vertical button group.
+
+### Justified Button Groups
+
+To span the entire width of the screen, use the `.btn-group-justified` class:
+
+#### Example with `<a>`
+
+```html
+<div class="btn-group btn-group-justified">
+  <a href="#" class="btn btn-primary">Apple</a>
+  <a href="#" class="btn btn-primary">Samsung</a>
+  <a href="#" class="btn btn-primary">Sony</a>
+</div>
+```
+
+#### Example with `<button>`
+
+**Note**: For <button> elements, you must wrap each button in a `.btn-group` class
+
+```html
+<div class="btn-group btn-group-justified">
+  <div class="btn-group">
+    <button type="button" class="btn btn-primary">Apple</button>
+  </div>
+  <div class="btn-group">
+    <button type="button" class="btn btn-primary">Samsung</button>
+  </div>
+  <div class="btn-group">
+    <button type="button" class="btn btn-primary">Sony</button>
+  </div>
+</div>
+```
+
+
+### Nesting Button Groups & Dropdown Menus
+
+Nest button groups to create dropdown menus:
+
+```html
+<div class="btn-group">
+  <button type="button" class="btn btn-primary">Apple</button>
+  <button type="button" class="btn btn-primary">Samsung</button>
+  <div class="btn-group">
+    <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+    Sony <span class="caret"></span></button>
+    <ul class="dropdown-menu" role="menu">
+      <li><a href="#">Tablet</a></li>
+      <li><a href="#">Smartphone</a></li>
+    </ul>
+  </div>
+</div>
+```
+
+
+### Split Button Dropdowns
+
+```html
+<div class="btn-group">
+  <button type="button" class="btn btn-primary">Sony</button>
+  <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+    <span class="caret"></span>
+  </button>
+  <ul class="dropdown-menu" role="menu">
+    <li><a href="#">Tablet</a></li>
+    <li><a href="#">Smartphone</a></li>
+  </ul>
+</div>
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+## &nbsp;
+## &nbsp;
+## [Bootstrap Glyphicons]({{ page.base_url }}/glyphicon/index.html)
+
+Glyphicons can be used in text, buttons, toolbars, navigation, forms, etc.
+
+
+### Glyphicon Syntax
+
+```html
+<span class="glyphicon glyphicon-name"></span>
+```
+
+
+
+
+
+
+
+
+
+
 ## &nbsp;
 ## &nbsp;
 ## [Bootstrap Templates and Themes]({% post_url 2016-06-24-bootstrap-templates %})
