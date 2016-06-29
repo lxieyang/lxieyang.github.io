@@ -863,6 +863,159 @@ Glyphicons can be used in text, buttons, toolbars, navigation, forms, etc.
 
 
 
+
+
+
+
+
+
+
+
+## &nbsp;
+## &nbsp;
+## [Bootstrap Bages]({{ page.base_url }}/bage/index.html)
+
+Badges are **numerical** indicators of how many items are associated with a link:
+
+Use the `.badge` class within `<span>` elements to create badges:
+
+```html
+<a href="#">News <span class="badge">5</span></a><br>
+<a href="#">Comments <span class="badge">10</span></a><br>
+<a href="#">Updates <span class="badge">2</span></a>
+```
+
+Bages on buttons:
+
+```html
+<button type="button" class="btn btn-primary">Primary <span class="badge">7</span></button>
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+## &nbsp;
+## &nbsp;
+## [Bootstrap Labels]({{ page.base_url }}/label/index.html)
+
+Labels are used to provide additional information about something:
+
+```html
+<h1>Example <span class="label label-default">New</span></h1>
+```
+
+Use the .label class,  followed by one of the six **contextual** classes `.label-default`, `.label-primary`, `.label-success`, `.label-info`, `.label-warning` or `.label-danger`, within a `<span>` element to create a label:
+
+```html
+<span class="label label-default">Default Label</span>
+<span class="label label-primary">Primary Label</span>
+<span class="label label-success">Success Label</span>
+<span class="label label-info">Info Label</span>
+<span class="label label-warning">Warning Label</span>
+<span class="label label-danger">Danger Label</span>
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+## &nbsp;
+## &nbsp;
+## [Bootstrap Progress Bars]({{ page.base_url }}/pb/index.html)
+
+To create a default progress bar, add a `.progress` class to a `<div>` element:
+
+```html
+<div class="progress">
+  <div class="progress-bar" role="progressbar" aria-valuenow="70"
+  aria-valuemin="0" aria-valuemax="100" style="width:70%">
+    <span class="sr-only">70% Complete</span>
+  </div>
+</div>
+```
+
+### Progress Bar With Label
+
+Remove the `.sr-only` class from the progress bar to show a visible percentage
+
+```html
+<div class="progress">
+  <div class="progress-bar" role="progressbar" aria-valuenow="70"
+  aria-valuemin="0" aria-valuemax="100" style="width:70%">
+    70%
+  </div>
+</div>
+```
+
+### Colored Progress Bars
+
+The contextual classes that can be used with progress bars are:
+
+- `.progress-bar-success`
+- `.progress-bar-info`
+- `.progress-bar-warning`
+- `.progress-bar-danger`
+
+### Striped Progress Bars
+
+Add class `.progress-bar-striped` to add stripes to the progress bars
+
+### Animated Progress Bar
+
+Add class `.active` to animate the progress bar
+
+### Stacked Progress Bars
+
+Create a stacked progress bar by placing multiple bars into the same `<div class="progress">`
+
+```html
+<div class="progress">
+  <div class="progress-bar progress-bar-success" role="progressbar" style="width:40%">
+    Free Space
+  </div>
+  <div class="progress-bar progress-bar-warning" role="progressbar" style="width:10%">
+    Warning
+  </div>
+  <div class="progress-bar progress-bar-danger" role="progressbar" style="width:20%">
+    Danger
+  </div>
+</div>
+```
+
+
+
+
+
+
+
+
+
 ## &nbsp;
 ## &nbsp;
 ## [Bootstrap Templates and Themes]({% post_url 2016-06-24-bootstrap-templates %})
