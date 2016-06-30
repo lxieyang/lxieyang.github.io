@@ -1409,6 +1409,510 @@ If you want the dropdown menu to expand upwards instead of downwards, change the
 
 
 
+## &nbsp;
+## &nbsp;
+## [Bootstrap Collapse]({{ page.base_url }}/collapse/index.html)
+
+### Basic Collapsible
+
+Collapsibles are useful when you want to hide and show large amount of content:
+
+```html
+<button data-toggle="collapse" data-target="#demo">Collapsible</button>
+
+<div id="demo" class="collapse">
+  HAHA
+</div>
+```
+
+The `.collapse` class indicates a collapsible element (a `<div>` in our example); this is the content that will be shown or hidden with a click of a button.
+
+To control (show/hide) the collapsible content, add the `data-toggle="collapse"` attribute to an `<a>` or a `<button>` element. Then add the `data-target="#id"` attribute to connect the button with the collapsible content (`<div id="demo">`).
+
+**Note**: For `<a>` elements, you can use the `href` attribute instead of the `data-target` attribute:
+
+```html
+<a href="#demo" data-toggle="collapse">Collapsible</a>
+
+<div id="demo" class="collapse">
+Lorem ipsum dolor text....
+</div>
+```
+
+By default, the collapsible content is hidden. However, you can add the `.in` class to show the content by default:
+
+```html
+<div id="demo" class="collapse in">
+Lorem ipsum dolor text....
+</div>
+```
+
+### Collapsible Panel
+
+```html
+<div class="panel-group">
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a data-toggle="collapse" href="#collapse1">Collapsible panel</a>
+      </h4>
+    </div>
+    <div id="collapse1" class="panel-collapse collapse">
+      <div class="panel-body">Panel Body</div>
+      <div class="panel-footer">Panel Footer</div>
+    </div>
+  </div>
+</div>
+```
+
+### Collapsible List Group
+
+```html
+<div class="panel-group">
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a data-toggle="collapse" href="#collapse1">Collapsible list group</a>
+      </h4>
+    </div>
+    <div id="collapse1" class="panel-collapse collapse">
+      <ul class="list-group">
+        <li class="list-group-item">One</li>
+        <li class="list-group-item">Two</li>
+        <li class="list-group-item">Three</li>
+      </ul>
+      <div class="panel-footer">Footer</div>
+    </div>
+  </div>
+</div>
+```
+
+### Accordion
+
+The following example shows a simple accordion by extending the panel component.
+
+**Note**: Use the `data-parent` attribute to make sure that all collapsible elements under the specified parent will be closed when one of the collapsible item is shown.
+
+```html
+<div class="panel-group" id="accordion">
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a data-toggle="collapse" data-parent="#accordion" href="#collapse1">
+        Collapsible Group 1</a>
+      </h4>
+    </div>
+    <div id="collapse1" class="panel-collapse collapse in">
+      <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+      sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+      minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+      commodo consequat.</div>
+    </div>
+  </div>
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a data-toggle="collapse" data-parent="#accordion" href="#collapse2">
+        Collapsible Group 2</a>
+      </h4>
+    </div>
+    <div id="collapse2" class="panel-collapse collapse">
+      <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+      sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+      minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+      commodo consequat.</div>
+    </div>
+  </div>
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a data-toggle="collapse" data-parent="#accordion" href="#collapse3">
+        Collapsible Group 3</a>
+      </h4>
+    </div>
+    <div id="collapse3" class="panel-collapse collapse">
+      <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+      sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+      minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+      commodo consequat.</div>
+    </div>
+  </div>
+</div>
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+## &nbsp;
+## &nbsp;
+## [Bootstrap Tabs and Pills]({{ page.base_url }}/tabs_and_pills/index.html)
+
+### Menus
+
+In HTML, a menu is often defined in an unordered list `<ul>` (and styled afterwards), like this:
+
+```html
+<ul>
+  <li><a href="#">Home</a></li>
+  <li><a href="#">Menu 1</a></li>
+  <li><a href="#">Menu 2</a></li>
+  <li><a href="#">Menu 3</a></li>
+</ul>
+```
+
+If you want to create a horizontal menu of the list above, add the `.list-inline` class to `<ul>`
+
+### Tabs
+
+Tabs are created with `<ul class="nav nav-tabs">`
+
+Tip: Also mark the current page with `<li class="active">`
+
+```html
+<ul class="nav nav-tabs">
+  <li class="active"><a href="#">Home</a></li>
+  <li><a href="#">Menu 1</a></li>
+  <li><a href="#">Menu 2</a></li>
+  <li><a href="#">Menu 3</a></li>
+</ul>
+```
+
+#### Tabs With Dropdown Menu
+
+The following example adds a dropdown menu to "Menu 1":
+
+```html
+<ul class="nav nav-tabs">
+  <li class="active"><a href="#">Home</a></li>
+  <li class="dropdown">
+    <a class="dropdown-toggle" data-toggle="dropdown" href="#">Menu 1
+    <span class="caret"></span></a>
+    <ul class="dropdown-menu">
+      <li><a href="#">Submenu 1-1</a></li>
+      <li><a href="#">Submenu 1-2</a></li>
+      <li><a href="#">Submenu 1-3</a></li>
+    </ul>
+  </li>
+  <li><a href="#">Menu 2</a></li>
+  <li><a href="#">Menu 3</a></li>
+</ul>
+```
+
+### Pills
+
+Pills are created with `<ul class="nav nav-pills">`. Also mark the current page with `<li class="active">`:
+
+```html
+<ul class="nav nav-pills">
+  <li class="active"><a href="#">Home</a></li>
+  <li><a href="#">Menu 1</a></li>
+  <li><a href="#">Menu 2</a></li>
+  <li><a href="#">Menu 3</a></li>
+</ul>
+```
+
+#### Vertical Pills
+
+Pills can also be displayed vertically. Just add the `.nav-stacked` class:
+
+```html
+<ul class="nav nav-pills nav-stacked">
+  <li class="active"><a href="#">Home</a></li>
+  <li><a href="#">Menu 1</a></li>
+  <li><a href="#">Menu 2</a></li>
+  <li><a href="#">Menu 3</a></li>
+</ul>
+```
+#### Pills With Dropdown Menu
+
+```html
+<ul class="nav nav-pills nav-stacked">
+  <li class="active"><a href="#">Home</a></li>
+  <li class="dropdown">
+    <a class="dropdown-toggle" data-toggle="dropdown" href="#">Menu 1
+    <span class="caret"></span></a>
+    <ul class="dropdown-menu">
+      <li><a href="#">Submenu 1-1</a></li>
+      <li><a href="#">Submenu 1-2</a></li>
+      <li><a href="#">Submenu 1-3</a></li>
+    </ul>
+  </li>
+  <li><a href="#">Menu 2</a></li>
+  <li><a href="#">Menu 3</a></li>
+</ul>
+```
+
+### Centered Tabs and Pills
+
+To center/justify the tabs and pills, use the `.nav-justified` class.
+
+***Note that on screens that are smaller than 768px, the list items are stacked (content will remain centered)***:
+
+### Toggleable / Dynamic Tabs
+
+To make the tabs toggleable, add the `data-toggle="tab"` attribute to each link. Then add a `.tab-pane` class with a unique ID for every tab and wrap them inside a `<div>` element with class `.tab-content`.
+
+If you want the tabs to fade in and out when clicking on them, add the `.fade` class to `.tab-pane`.
+
+```html
+<ul class="nav nav-tabs">
+  <li class="active"><a data-toggle="tab" href="#home">Home</a></li>
+  <li><a data-toggle="tab" href="#menu1">Menu 1</a></li>
+  <li><a data-toggle="tab" href="#menu2">Menu 2</a></li>
+</ul>
+
+<div class="tab-content">
+  <div id="home" class="tab-pane fade in active">
+    <h3>HOME</h3>
+    <p>Some content.</p>
+  </div>
+  <div id="menu1" class="tab-pane fade">
+    <h3>Menu 1</h3>
+    <p>Some content in menu 1.</p>
+  </div>
+  <div id="menu2" class="tab-pane fade">
+    <h3>Menu 2</h3>
+    <p>Some content in menu 2.</p>
+  </div>
+</div>
+```
+
+### Toggleable / Dynamic Pills
+
+The same code applies to pills; only change the data-toggle attribute to `data-toggle="pill"`:
+
+```html
+<ul class="nav nav-pills">
+  <li class="active"><a data-toggle="pill" href="#home">Home</a></li>
+  <li><a data-toggle="pill" href="#menu1">Menu 1</a></li>
+  <li><a data-toggle="pill" href="#menu2">Menu 2</a></li>
+</ul>
+
+<div class="tab-content">
+  <div id="home" class="tab-pane fade in active">
+    <h3>HOME</h3>
+    <p>Some content.</p>
+  </div>
+  <div id="menu1" class="tab-pane fade">
+    <h3>Menu 1</h3>
+    <p>Some content in menu 1.</p>
+  </div>
+  <div id="menu2" class="tab-pane fade">
+    <h3>Menu 2</h3>
+    <p>Some content in menu 2.</p>
+  </div>
+</div>
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+## &nbsp;
+## &nbsp;
+## [Bootstrap Navigation Bar]({{ page.base_url }}/navbar/index.html)
+
+A navigation bar is a navigation header that is placed at the top of the page.
+
+A standard navigation bar is created with `<nav class="navbar navbar-default">`.
+
+The following example shows how to add a navigation bar to the top of the page:
+
+```html
+<body>
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">WebSiteName</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li class="active"><a href="#">Home</a></li>
+      <li><a href="#">Page 1</a></li>
+      <li><a href="#">Page 2</a></li>
+      <li><a href="#">Page 3</a></li>
+    </ul>
+  </div>
+</nav>
+...
+```
+
+
+### Inverted Navigation Bar
+
+If you don't like the style of the default navigation bar, Bootstrap provides an alternative, black navbar:
+
+Just change the `.navbar-default` class into `.navbar-inverse`:
+
+### Fixed Navigation Bar
+
+
+The navigation bar can also be fixed at the top or at the bottom of the page.
+
+A fixed navigation bar stays visible in a fixed position (top or bottom) independent of the page scroll.
+
+[The `.navbar-fixed-top` class makes the navigation bar fixed at the top]({{ page.base_url }}/navbar/fixedup.html):
+
+```html
+<nav class="navbar navbar-inverse navbar-fixed-top">
+```
+
+[The `.navbar-fixed-bottom` class makes the navigation bar stay at the bottom]({{ page.base_url }}/navbar/fixeddown.html)
+
+```html
+<nav class="navbar navbar-inverse navbar-fixed-bottom">
+```
+
+### Navigation Bar With Dropdown
+
+Navigation bars can also hold dropdown menus.
+
+The following example adds a dropdown menu for the "Page 1" button:
+
+```html
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">WebSiteName</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li class="active"><a href="#">Home</a></li>
+      <li class="dropdown">
+        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Page 1
+        <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="#">Page 1-1</a></li>
+          <li><a href="#">Page 1-2</a></li>
+          <li><a href="#">Page 1-3</a></li>
+        </ul>
+      </li>
+      <li><a href="#">Page 2</a></li>
+      <li><a href="#">Page 3</a></li>
+    </ul>
+  </div>
+</nav>
+```
+
+### Right-Aligned Navigation Bar
+
+The `.navbar-right` class is used to right-align navigation bar buttons.
+
+In the following example we insert a "Sign Up" button and a "Login" button to the right in the navigation bar. We also add a glyphicon on each of the two new buttons:
+
+```html
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">WebSiteName</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li class="active"><a href="#">Home</a></li>
+      <li><a href="#">Page 1</a></li>
+      <li><a href="#">Page 2</a></li>
+    </ul>
+    <ul class="nav navbar-nav navbar-right">
+      <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+      <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+    </ul>
+  </div>
+</nav>
+```
+
+### Collapsing The Navigation Bar
+
+The navigation bar takes up too much space on a small screen.
+
+We should hide the navigation bar; and only show it when it is needed.
+
+In the following example the navigation bar is replaced by a button in the top right corner. Only when the button is clicked, the navigation bar will be displayed:
+
+```html
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">WebSiteName</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#">Home</a></li>
+        <li><a href="#">Page 1</a></li>
+        <li><a href="#">Page 2</a></li>
+        <li><a href="#">Page 3</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+        <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
