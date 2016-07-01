@@ -6,7 +6,7 @@ base_url: /resources/blog/bstutorial/
 
 ***This post will be updated on a weekly basis.***
 
-***Last update: Jun 29 2016.***
+***Last update: July 1 2016.***
 
 
 ## &nbsp;
@@ -1880,6 +1880,299 @@ In the following example the navigation bar is replaced by a button in the top r
   </div>
 </nav>
 ```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+## &nbsp;
+## &nbsp;
+## [Bootstrap Forms]({{ page.base_url }}/forms/index.html)
+
+Form controls automatically receive some global styling with Bootstrap:
+
+All textual `<input>`, `<textarea>`, and `<select>` elements with class `.form-control` have a width of 100%.
+
+### Form Layouts
+
+Bootstrap provides three types of form layouts:
+
+- Vertical form (this is default)
+- Horizontal form
+- Inline form
+
+Standard rules for all three form layouts:
+
+- Always use `<form role="form">` (helps improve accessibility for people using screen readers)
+- Wrap labels and form controls in `<div class="form-group">` (needed for optimum spacing)
+- Add class `.form-control` to all textual `<input>`, `<textarea>`, and `<select>` elements
+
+### Bootstrap Vertical Form (default)
+
+```html
+<form role="form">
+ <div class="form-group">
+   <label for="email">Email address:</label>
+   <input type="email" class="form-control" id="email">
+ </div>
+ <div class="form-group">
+   <label for="pwd">Password:</label>
+   <input type="password" class="form-control" id="pwd">
+ </div>
+ <div class="checkbox">
+   <label><input type="checkbox"> Remember me</label>
+ </div>
+ <button type="submit" class="btn btn-default">Submit</button>
+</form>
+```
+
+### Bootstrap Inline Form
+
+In an inline form, all of the elements are inline, left-aligned, and the labels are alongside.
+
+Note: This only applies to forms within viewports that are at least 768px wide!
+
+Add class `.form-inline` to the `<form>` element
+
+```html
+<form class="form-inline" role="form">
+```
+
+### Bootstrap Horizontal Form
+
+Additional rules for a horizontal form:
+
+- Add class `.form-horizontal` to the `<form>` element
+- Add class `.control-label` to all `<label>` elements
+
+Use Bootstrap's predefined grid classes to align labels and groups of form controls in a horizontal layout.
+
+The following example creates a horizontal form with two input fields, one checkbox, and one submit button:
+
+```html
+<form class="form-horizontal" role="form">
+ <div class="form-group">
+   <label class="control-label col-sm-2" for="email">Email:</label>
+   <div class="col-sm-10">
+     <input type="email" class="form-control" id="email" placeholder="Enter email">
+   </div>
+ </div>
+ <div class="form-group">
+   <label class="control-label col-sm-2" for="pwd">Password:</label>
+   <div class="col-sm-10">
+     <input type="password" class="form-control" id="pwd" placeholder="Enter password">
+   </div>
+ </div>
+ <div class="form-group">
+   <div class="col-sm-offset-2 col-sm-10">
+     <div class="checkbox">
+       <label><input type="checkbox"> Remember me</label>
+     </div>
+   </div>
+ </div>
+ <div class="form-group">
+   <div class="col-sm-offset-2 col-sm-10">
+     <button type="submit" class="btn btn-default">Submit</button>
+   </div>
+ </div>
+</form>
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+## &nbsp;
+## &nbsp;
+## [Bootstrap Form Input]({{ page.base_url }}/inputs/index.html)
+
+### Supported Form Controls
+
+Bootstrap supports the following form controls:
+
+- input
+- textarea
+- checkbox
+- radio
+- select
+
+### Bootstrap Input
+
+Bootstrap supports all the HTML5 input types: text, password, datetime, datetime-local, date, month, time, week, number, email, url, search, tel, and color.
+
+***Note: Inputs will NOT be fully styled if their type is not properly declared!***
+
+```html
+<div class="form-group">
+ <label for="usr">Name:</label>
+ <input type="text" class="form-control" id="usr">
+</div>
+<div class="form-group">
+ <label for="pwd">Password:</label>
+ <input type="password" class="form-control" id="pwd">
+</div>
+```
+
+### Bootstrap Textarea
+
+```html
+<div class="form-group">
+ <label for="comment">Comment:</label>
+ <textarea class="form-control" rows="5" id="comment"></textarea>
+</div>
+```
+
+### Bootstrap Checkboxes
+
+Checkboxes are used if you want the user to select any number of options from a list of preset options.
+
+The following example contains three checkboxes. The last option is disabled:
+
+```html
+<div class="checkbox">
+ <label><input type="checkbox" value="">Option 1</label>
+</div>
+<div class="checkbox">
+ <label><input type="checkbox" value="">Option 2</label>
+</div>
+<div class="checkbox disabled">
+ <label><input type="checkbox" value="" disabled>Option 3</label>
+</div>
+```
+
+Use the `.checkbox-inline` class if you want the checkboxes to appear on the same line:
+
+```html
+<label class="checkbox-inline"><input type="checkbox" value="">Option 1</label>
+<label class="checkbox-inline"><input type="checkbox" value="">Option 2</label>
+<label class="checkbox-inline"><input type="checkbox" value="">Option 3</label>
+```
+
+### Bootstrap Radio Buttons
+
+Radio buttons are used if you want to limit the user to just one selection from a list of preset options.
+
+The following example contains three radio buttons. The last option is disabled:
+
+```html
+<div class="radio">
+ <label><input type="radio" name="optradio">Option 1</label>
+</div>
+<div class="radio">
+ <label><input type="radio" name="optradio">Option 2</label>
+</div>
+<div class="radio disabled">
+ <label><input type="radio" name="optradio" disabled>Option 3</label>
+</div>
+```
+
+Use the `.radio-inline` class if you want the radio buttons to appear on the same line:
+
+### Bootstrap Select List
+
+Select lists are used if you want to allow the user to pick from multiple options.
+
+The following example contains a dropdown list (select list):
+
+```html
+<div class="form-group">
+  <label for="sel1">Select list:</label>
+  <select class="form-control" id="sel1">
+    <option>1</option>
+    <option>2</option>
+    <option>3</option>
+    <option>4</option>
+  </select>
+</div>
+```
+
+### Static Control
+
+If you need to insert **plain text** next to a form label within a horizontal form, use the `.form-control-static` class on a `<p>` element:
+
+```html
+<form class="form-horizontal" role="form">
+ <div class="form-group">
+   <label class="control-label col-sm-2" for="email">Email:</label>
+   <div class="col-sm-10">
+     <p class="form-control-static">someone@example.com</p>
+   </div>
+ </div>
+</form>
+```
+
+### Bootstrap Form Control States
+
+
+- **INPUT FOCUS** - The outline of the input is removed and a box-shadow is applied on focus
+- **DISABLED INPUTS** - Add a `disabled` attribute to disable an input field
+- **DISABLED FIELDSETS** - Add a `disabled` attribute to a fieldset to disable all controls within
+- **READONLY INPUTS** - Add a `readonly` attribute to an input to prevent user input
+- **VALIDATION STATES** - Bootstrap includes validation styles for error, warning, and success messages. To use, add `.has-warning`, `.has-error`, or `.has-success` to the parent element
+- **ICONS** - You can add feedback icons with the `.has-feedback` class and an icon
+- **HIDDEN LABELS** - Add a `.sr-only` class on non-visible labels
+
+### Input Sizing in Forms
+Set the heights of input elements using classes like `.input-lg` and `.input-sm`.
+
+Set the widths of elements using grid column classes like `.col-lg-*` and `.col-sm-*`.
+
+
+```html
+ <input class="form-control input-lg" id="inputlg" type="text">
+ ```
+
+ You can quickly size labels and form controls within a Horizontal form by adding `.form-group-*` to the `<div class="form-group">` element:
+
+ ```html
+ <div class="form-group form-group-lg">
+  <label class="col-sm-2 control-label" for="lg">form-group-lg</label>
+  <div class="col-sm-10">
+    <input class="form-control" type="text" id="lg">
+  </div>
+</div>
+```
+
+### Help Text
+
+Use the `.help-block` class to add a block level help text in forms:
+
+```html
+<spam class="help-block">This is a help block...</span>
+```
+
+
+
+
+
+
+
+
 
 
 
