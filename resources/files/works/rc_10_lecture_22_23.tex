@@ -1,0 +1,241 @@
+\documentclass[10pt]{beamer}
+\usetheme{default}
+\usepackage{float}
+\usepackage{animate}
+\usepackage{amsmath}
+
+\usepackage{esvect}
+%\usepackage[T1]{fontenc}
+
+%IndentfFirst 
+%\usepackage{indentfirst}
+%\setlength{\parindent}{2em}
+%\setlength{\parskip}{2em}
+
+
+%Geometry
+\usepackage{geometry}
+\geometry{left = 0.25in,right = 0.25in}
+
+
+
+%Adjust frametitle position (height,lateral position, etc)
+\defbeamertemplate*{frametitle}{smoothbars theme}
+{%
+	%\nointerlineskip%
+	\begin{beamercolorbox}[wd=\paperwidth,leftskip=.5cm,rightskip=.3cm plus1fil,vmode]{frametitle}
+		\vskip +4.5ex
+		\usebeamerfont*{frametitle}\insertframetitle%
+		\vskip -0.9ex
+	\end{beamercolorbox}%
+}
+
+
+\begin{document}
+
+
+%headline
+
+\setbeamertemplate{headline}{
+\parbox{\linewidth}{\vspace*{8pt}\centering{ 
+		    {\color{blue!40!black}\insertsection}
+		}
+	}
+}
+
+
+%footline
+\setbeamertemplate{footline}[text line]{%
+	\color{blue!40!black}\parbox{\linewidth}{\vspace*{-8pt}Michael Liu ~ (\insertshortinstitute)\hfill\insertshorttitle\hfill\insertshortdate~~~~~~\insertframenumber{}~/~\inserttotalframenumber}}
+
+%Remove navigation symbols
+\setbeamertemplate{navigation symbols}{}
+
+\setbeamertemplate{frametitle continuation}[from second] 
+
+\newcommand{\tabincell}[2]{\begin{tabular}{@{}#1@{}}#2\end{tabular}}
+
+%\let\oldframe\frame\renewcommand\frame[1][allowframebreaks]{\oldframe[#1]}
+
+%Title page	
+\title[Vv255 Applied Calculus III]{Vv255 Applied Calculus III\\{\small Recitation X}}   
+\author[Michael Liu]{LIU Xieyang\\{\tiny Teaching Assistant}} 
+\institute[UM-SJTU JI]{University of Michigan - Shanghai Jiaotong University \\Joint Institute}
+\date[Summer 2015]{Summer Term 2015} 
+\begin{frame}
+	\titlepage
+\end{frame}
+
+%Table of Contents (All)
+%\begin{frame}
+%	\frametitle{Table of Contents}
+%	\tableofcontents
+%\end{frame}
+
+%Table of contents (before, highlight each section)
+\AtBeginSection[]{
+	\begin{frame}
+		\frametitle{Table of Contents}
+		\frametitle{Contents}
+		\tableofcontents[currentsection]
+	\end{frame}}
+
+
+
+
+%section
+\section{Lecture 22: The Fundamental theorem for line integrals} 
+
+
+
+\begin{frame}[allowframebreaks]{Region of Interest  $D$}
+	There are three common adjectives in front of the region of interest $D$ in the field of line integral.
+	\begin{enumerate}
+		\item {\color{red}Open}: the points on all the boundaries does NOT count!$$\includegraphics[scale = 0.15]{open}$$
+		\item {\color{red}Connected}: any two points in $D$ can
+		actually be connected by a path that lies entirely within D.$$\includegraphics[scale = 0.15]{connected}$$
+		\item {\color{red}Simply connected}: one piece + NO ``holes''. Or say, any closed path in the region could be shrunk to a point.$$\includegraphics[scale = 0.15]{simplyconnected}$$
+	\end{enumerate}
+
+\end{frame}
+
+
+
+\begin{frame}[allowframebreaks]{The Fundamental theorem for line integrals}
+	\begin{figure}[H]
+		\includegraphics[scale = 0.35]{ftcline}
+	\end{figure}
+	{\color{blue} Independent of path:}\\
+	- Conditions:\\
+	\begin{itemize}
+		\item $\mathbf{F}$ being conservative: $\mathbf{F} = \nabla f$
+		\item Region $D$ being {\color{red}open}.
+		\item $P(x,y)$ and $Q(x,y)$ being continuous.
+		\item $C$ being piecewise smooth.
+		\item $A$ and $B$ are in region $D$.
+	\end{itemize}
+	$$\int_C \mathbf{F}\cdot d\mathbf{r} = \int_C\nabla f\cdot d\mathbf{r} = f(\mathbf{r}(b)) - f(\mathbf{r}(a))$$
+	- The FTL states the value of the integral depends {\color{red}on the endpoints} but not on the actual path $C$, it is said to be {\color{blue}independent of the path}.\\
+	- The FTL can be easily extended to $\mathbb{R}^3$.
+	$$\text{Conservative}\xrightarrow{D ~\text{being {\color{red}Open}}} \text{Independent of path}$$
+\end{frame}
+
+
+\begin{frame}[allowframebreaks]{The Fundamental theorem for line integrals}
+
+{\color{blue}Conservative}:\\
+If the line integral of a vector field F is {\color{red}independent of path} within $D$, then F is a
+{\color{blue}conservative} vector field on $D$.
+\\Proof see lecture.
+	$$\text{Independent of path}\xrightarrow{D ~\text{being {\color{red}Open \& Connected}}} \text{Conservative}$$
+	$$$$
+Therefore, we have the following iff statement:
+$$\includegraphics[scale = 0.36]{iff}$$
+\end{frame}
+
+
+
+\begin{frame}[allowframebreaks]{Conservative Field Test}
+$$\includegraphics[scale = 0.34]{contest}$$
+$$\dfrac{\partial P}{\partial y} = \dfrac{\partial Q}{\partial x} \xrightarrow{D ~\text{being {\color{red}Open \& Simply Connected}}} {\text{Conservative}}$$
+For $\mathbb{R}^3$, we can mimic the way introduced by your Physics professor M.K:
+\begin{enumerate}
+	\item Irrotational? ($\nabla\times \mathbf{F} = 0$)
+	\item Open simply connected?
+\end{enumerate} 
+Actually consistent with the previous result!
+\end{frame}
+
+
+\begin{frame}[allowframebreaks]{The general technique of finding potential function}
+-It remains to find the function $f$ such that $\nabla f = \mathbf{F}$ for a given vector field $\mathbf{F}$
+	that is known to be conservative before we can apply FTL.
+$$\includegraphics[scale = 0.40]{tech}$$
+
+\end{frame}
+
+\begin{frame}[allowframebreaks]{Conclusion}
+$$\includegraphics[scale = 0.37]{conclusion}$$
+\end{frame}
+
+
+
+\section{Lecture 23: Green Theorem}
+\begin{frame}[allowframebreaks]{Green Theorem}
+Green's Theorem gives the relationship between a line integral around a simple closed curve $C$ and a double integral over the plane region $D$ bounded by $C$ .\\
+In stating Green's
+Theorem we use the convention that the {\color{red}positive orientation} of a simple closed curve $C$
+refers to a single {\color{blue}counterclockwise} traversal of $C$. Thus, if $C$ is given by the vector function $\mathbf{r}(t), a\leq t\leq b$, then the region $D$ is always on the left as the point $\mathbf{r}(t)$ traverses $C$.
+$$\includegraphics[scale = 0.3]{pnorientation}$$
+$$$$
+{\color{blue}Green's Theorem}\\
+If $C$ is a positively oriented, piecewise smooth, simple
+closed curve that encloses a region $D$, and $P(x, y)$ and $Q(x, y)$ are functions that
+have continuous first partial derivatives on some open set containing $D$, then
+$$\oint_C\mathbf{F}\cdot d\mathbf{r} = \oint_C Pdx + Qdy = \iint_D\left(\dfrac{\partial Q}{\partial x} - \dfrac{\partial P}{\partial y}\right)dA$$
+where $$\mathbf{F} = P\mathbf{a}_x + Q\mathbf{a}_y~~~~\text{and}~~~~d\mathbf{r} = dx\mathbf{a}_x + dy\mathbf{a}_y$$
+Proof see lecture.
+\end{frame}
+
+
+
+\begin{frame}[allowframebreaks]{Applications of Green Theorem}
+\begin{itemize}
+	\item Double integral is easier to evaluate than line integral, use Green's theorem in the positive direction.
+	\item Line integral is easier to evaluate than double integral, use Green's theorem in the reverse direction.
+	\item Computing areas.\\
+	Note that the area of a region $D$ 	is $\iint_D 1dA$, we wish to choose $P$ and $Q$ so that $$\dfrac{\partial Q}{\partial x} - \dfrac{\partial P}{\partial y}  = 1$$
+	There are several possibilities:
+	\[
+	\left\{
+	\begin{aligned}
+	P(x,y) &= 0\\
+	Q(x,y) &=x
+	\end{aligned}
+	\right.~~~~
+		\left\{
+		\begin{aligned}
+		P(x,y) &= -y\\
+		Q(x,y) &=0
+		\end{aligned}
+		\right.
+		~~~~
+			\left\{
+			\begin{aligned}
+			P(x,y) &= -\frac{1}{2}y\\
+			Q(x,y) &=\frac{1}{2}x
+			\end{aligned}
+			\right.
+	\]
+	Then Green's Theorem gives the following formulas for the area of $D$ :
+	$$A = \oint_Cxdy = -\oint_Cydx = \dfrac{1}{2} \oint_Cxdy - ydx$$
+	For example, the area of a ellipse $\dfrac{x^2}{a^2} + \dfrac{y^2}{b^2} = 1$ can be computed in the following way:\\
+	The ellipse has parametric equations: $x=a\cos t, y=b\sin t$, where $0\leq t\leq 2\pi$. Thus:
+\[
+\begin{aligned}
+A &= \dfrac{1}{2}\int_C	xdy - ydx
+\\&= \int_0^{2\pi}(a\cos t)(b\cos t)dt 
+\\&~~~~~~- (b\sin t)(-a\sin t)dt
+\\&=\dfrac{ab}{2}\int_0^{2\pi}dt =\pi ab
+\end{aligned}
+~~~~~~~~\text{or}~~~~~~
+\begin{aligned}
+A &= \oint_C	xdy
+\\&= \int_0^{2\pi}(a\cos t)(b\cos t)dt
+\\&=ab\int_0^{2\pi}\cos^2 tdt 
+\\&=\pi ab
+\end{aligned}
+\]
+\item Help you understand Stoke's Theorem! (Will be covered later!)
+\item Physical meaning:
+$$\includegraphics[scale = 0.36]{phy}$$
+Green's theorem says that if you add up all the {\color{red}microscopic} circulation inside $C$,
+then the sum is exactly the same as the {\color{blue}macroscopic} circulation around $C$.
+\item Normal \& Tangential form
+$$\includegraphics[scale = 0.34]{normaltangential}$$
+where $\mathbf{n}$ is the unit outward normal, and the $\mathbf{T}$ is the unit tangent vector.
+\end{itemize}
+
+\end{frame}
+
+\end{document}
