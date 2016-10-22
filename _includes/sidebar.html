@@ -23,7 +23,7 @@
         {% if node.navigation_weight %}
           {% if node.title != null %}
             {% if node.layout == "page" %}
-              {% if node.title != "Home" %}
+              {% if node.title != "Xieyang (Michael) Liu" %}
                 {% if node.title == "Resume" %}
                     <a class="sidebar-nav-item{% if page.url == node.url %} active{% endif %}" href="{{ node.resume }}">{{ node.title }}</a>
                   {% else %}
@@ -42,7 +42,7 @@
       <a class="sidebar-nav-item" href="{{ site.facebook.homepage }}">Facebook</a>
       <!--<span class="sidebar-nav-item">Currently v{{ site.version }}</span>-->
     </nav>
-    
+
     <p>&copy; {{ site.time | date: '%Y' }}. All rights reserved.</p>
   </div>
 </div>
