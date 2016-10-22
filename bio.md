@@ -1,20 +1,28 @@
 ---
 layout: page
 title: Short Bio.
-banner: ./resources/images/flight_deck_intrepid_compressed.jpg
-actual_image : ./resources/images/flight_deck_intrepid.jpg
-navigation_weight: 5
+navigation_weight: 2
 ---
 
 <br>
 
-{% include typed.html %}
+<!-- {% include typed.html %} -->
 
+
+Xieyang (Michael) Liu is a senior in the Computer Science Department at the University of Michigan, where he works as an undergraduate researcher with [Dr. Walter S. Lasecki](https://web.eecs.umich.edu/~wlasecki/) in the [Crowds + Machines Lab (Croma Lab)](http://web.eecs.umich.edu/~wlasecki/croma.html). Xieyang develops intelligent systems that support human-in-the-loop machine learning and enhance end-user experiences. Prior to Croma Lab, Xieyang worked as a research assistant in the [Vision & Learning Lab](https://vl-lab.eecs.umich.edu) with [Dr. Jia Deng](http://web.eecs.umich.edu/~jiadeng/) on static image recognition.
+
+Xieyang was previously an undergraduate student at Shanghai Jiao Tong University, where he was awarded Tang-Junyuan Scholarship (top 2) for two consecutive years. He won the Meritorious Winner prize in 2015 COMAP - Mathematical Contest in Modeling during his sophomore year. He also served as a teaching assistant for multivariate calculus in SJTU working with [Dr. Jing Liu](http://umji.sjtu.edu.cn/faculty/jing-liu/).
+
+<p><span style="color:#FF3366">Resume: [</span><a href="{{ site.resume }}">pdf</a><span style="color:#FF3366">]</span> (September 2016)</p>
+
+<!--
 I'm a senior undergraduate student at the [University of Michigan](https://www.umich.edu/) in the [Computer Science and Engineering](http://eecs.umich.edu/cse/) department. I'm currently a research assistant at the University of Michigan [Croma Lab](http://web.eecs.umich.edu/~wlasecki/croma.html) under the supervision of [Prof Walter S. Lasecki](https://web.eecs.umich.edu/~wlasecki/). My research interests are computer vision, machine learning, and web-development. I would like to be a software engineer upon graduation.
 
 During my junior year in Michigan, I served as a research assistant at the University of Michigan [Artificial Intelligence Lab](https://www.eecs.umich.edu/ai/) under the supervision of [Prof Jia Deng](http://web.eecs.umich.edu/~jiadeng/).
 
 Before that, I was an ECE student at the [University of Michigan - Shanghai Jiao Tong University Joint Institute](http://www.umji.sjtu.edu.cn/en/). During my time there, I served as a teaching assistant for the course Vv255 Applied Calculus III under the supervision of [Dr. Jing Liu](http://umji.sjtu.edu.cn/faculty/jing-liu/). I was also a member of the [UM-SJTU JI Honor Council](http://umji.sjtu.edu.cn/academics/academic-integrity/).
+-->
+
 
 
 <!--<p class="message">
