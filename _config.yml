@@ -18,7 +18,7 @@ logo:             '/resources/images/homepagelogo.jpg'
 author:
   name:           'Xieyang Liu'
   url:            http://lxieyang.github.io
-resume:           '/resources/cv/resume_Xieyang Liu.pdf'
+resume:           '/resources/cv/resume_Xieyang_Liu.pdf'
 
 # paginate
 #gems:             [jekyll-paginate]   # enable paginate in jekyll 3
