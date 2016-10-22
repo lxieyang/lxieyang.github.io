@@ -15,7 +15,6 @@ navigation_weight: 1
 
 <br />
 
-Hi, I'm Xieyang Liu! You can call me **Michael**!
 
 
 
