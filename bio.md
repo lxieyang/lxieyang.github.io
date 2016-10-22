@@ -15,6 +15,69 @@ Xieyang was previously an undergraduate student at Shanghai Jiao Tong University
 
 <p><span style="color:#FF3366">Resume: [</span><a href="{{ site.resume }}">pdf</a><span style="color:#FF3366">]</span> (September 2016)</p>
 
+<br/>
+<p style="color: #C46; font-size: 1.2em;">Education</p>
+
+<table border="0">
+  <tr>
+    <td>09/2015 - 04/2017</td>
+    <td><strong>University of Michigan, Ann Arbor</strong>, MI, US</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>B.S.E in Computer Science</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>- Dean's List</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>- Teaching Assistant for Database Management Systems</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>- Worker in Crowds + Machines Lab</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>- Advisor: Dr. Walter Lasecki</td>
+  </tr>
+
+  <tr>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+  </tr>
+
+  <tr>
+    <td>09/2013 - 08/2015</td>
+    <td><strong>Shanghai Jiao Tong University</strong>, Shanghai, China</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>B.S.E in Electrical and Computer Engineering</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>- Tang-Junyuan Scholarship (top 2)</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>- Teaching Assistant for Multivariate Calculus</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>- Supervisor: Dr. Jing Liu</td>
+  </tr>
+</table>
+
+
+
+
 <!--
 I'm a senior undergraduate student at the [University of Michigan](https://www.umich.edu/) in the [Computer Science and Engineering](http://eecs.umich.edu/cse/) department. I'm currently a research assistant at the University of Michigan [Croma Lab](http://web.eecs.umich.edu/~wlasecki/croma.html) under the supervision of [Prof Walter S. Lasecki](https://web.eecs.umich.edu/~wlasecki/). My research interests are computer vision, machine learning, and web-development. I would like to be a software engineer upon graduation.
 
