@@ -5,9 +5,10 @@ banner: ./resources/images/flight_deck_intrepid_compressed.jpg
 actual_image : ./resources/images/flight_deck_intrepid.jpg
 navigation_weight: 5
 ---
-<a href="{{ page.actual_image }}" >
-<img class="about-image" src="{{ page.banner }}"></a>
-<p class="message figcaption">Photo taken on the flight deck of the <a href="https://www.intrepidmuseum.org" >Intrepid Museum</a> @ Manhattan, NYC, Dec 26 2015. Behind me were an IAI F-21A Kfir and an F-16.</p>
+
+<br>
+
+{% include typed.html %}
 
 I'm a senior undergraduate student at the [University of Michigan](https://www.umich.edu/) in the [Computer Science and Engineering](http://eecs.umich.edu/cse/) department. I'm currently a research assistant at the University of Michigan [Croma Lab](http://web.eecs.umich.edu/~wlasecki/croma.html) under the supervision of [Prof Walter S. Lasecki](https://web.eecs.umich.edu/~wlasecki/). My research interests are computer vision, machine learning, and web-development. I would like to be a software engineer upon graduation.
 

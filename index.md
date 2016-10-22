@@ -1,14 +1,21 @@
 ---
 layout: page
-title: Home
+title: Xieyang (Michael) Liu
+banner: ./resources/images/flight_deck_intrepid_compressed.jpg
+actual_image : ./resources/images/flight_deck_intrepid.jpg
 navigation_weight: 1
 ---
 
 ## &nbsp;
 
 
-{% include typed.html %}
+<div><!--<a href="{{ page.actual_image }}" >-->
+<img class="about-image" src="{{ page.banner }}"><!--</a>--></div>
+<p class="message figcaption">Photo taken on the flight deck of the <a href="https://www.intrepidmuseum.org" >Intrepid Museum</a> @ Manhattan, NYC, Dec 26 2015. Behind me were an IAI F-21A Kfir and an F-16.</p>
 
+<br />
+
+Hi, I'm Xieyang Liu! You can call me **Michael**!
 
 
 
@@ -20,6 +27,7 @@ I began my **programming journey** with `C` and `C++`, so I'm pretty familiar wi
 
 Right now, I'm focusing on using `HTML5`, `JavaScript`, `CSS`, `jQuery`, `Bootstrap`, etc., to perform web-development. The direct result is this [Homepage](/) I've been developing and maintaining. I recently re-wrote the entire site using [Jekyll](https://jekyllrb.com/), which is a simple, awesome, blog-aware, static site generator.  
 
+<!--
 <p class="message" id="showDay"></p>
 
 ```javascript
@@ -93,6 +101,7 @@ $(document).ready(function() {
 });
 
 </script>
+-->
 
 
 I learned `LaTeX` during my freshmen year while writing project papers. During my time serving as a teaching assistant for a multivariate calculus course, I dedicated much of my time mastering `Beamer`, which is one of the `LaTeX` packages that deals specifically with presentations. To take a look at those presentations I created, please hit the [Selected Works](./works.html) button in the navigation bar.
