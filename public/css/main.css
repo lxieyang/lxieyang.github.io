@@ -421,14 +421,14 @@ address {
 
 /* Tables */
 table {
-  margin-bottom: 1rem;
+  /*margin-bottom: 1rem;*/
   width: 100%;
   /* border: 1px solid #e5e5e5; */
   border: none !important;
 }
 td,
 th {
-  padding: .25rem .5rem;
+  /* padding: .25rem .5rem; */
   /* border: 1px solid #e5e5e5; */
   border: none !important;
 }
