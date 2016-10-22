@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Xieyang (Michael) Liu
-banner: ./resources/images/flight_deck_intrepid_compressed.jpg
+banner: ./resources/images/flight_deck_intrepid_compressed.png
 actual_image : ./resources/images/flight_deck_intrepid.jpg
 navigation_weight: 1
 ---
@@ -10,7 +10,7 @@ navigation_weight: 1
 
 
 <div><!--<a href="{{ page.actual_image }}" >-->
-<img class="about-image" src="{{ page.actual_image }}"><!--</a>--></div>
+<img class="about-image" src="{{ page.banner }}"><!--</a>--></div>
 <p class="message figcaption">Photo taken on the flight deck of the <a href="https://www.intrepidmuseum.org" >Intrepid Museum</a> @ Manhattan, NYC, Dec 26 2015. Behind me were an IAI F-21A Kfir and an F-16.</p>
 
 <br />
