@@ -9,7 +9,7 @@ navigation_weight: 2
 <!-- {% include typed.html %} -->
 
 
-Xieyang (Michael) Liu is a senior in the Computer Science Department at the University of Michigan, where he works as an undergraduate researcher with [Dr. Walter S. Lasecki](https://web.eecs.umich.edu/~wlasecki/) in the [Crowds + Machines Lab (Croma Lab)](http://web.eecs.umich.edu/~wlasecki/croma.html). Xieyang develops intelligent systems that support human-in-the-loop machine learning and enhance end-user experiences. Prior to Croma Lab, Xieyang worked as a research assistant in the [Vision & Learning Lab](https://vl-lab.eecs.umich.edu) with [Dr. Jia Deng](http://web.eecs.umich.edu/~jiadeng/) on static image recognition.
+Xieyang (Michael) Liu is a senior in the Computer Science Department at the University of Michigan, where he works as an undergraduate researcher with [Dr. Walter S. Lasecki](https://web.eecs.umich.edu/~wlasecki/) in the [Crowds + Machines Lab (Croma Lab)](http://web.eecs.umich.edu/~wlasecki/croma.html). Xieyang develops intelligent systems that support human-in-the-loop machine learning and enhance end-user experiences.  Xieyang's current research interests include Human-computer Interaction, intelligent systems, user interface development, and interactive machine learning. Prior to Croma Lab, Xieyang worked as a research assistant in the [Vision & Learning Lab](https://vl-lab.eecs.umich.edu) with [Dr. Jia Deng](http://web.eecs.umich.edu/~jiadeng/) on static image recognition.
 
 Xieyang was previously an undergraduate student at Shanghai Jiao Tong University, where he was awarded Tang-Junyuan Scholarship (top 2) for two consecutive years. He won the Meritorious Winner prize in 2015 COMAP - Mathematical Contest in Modeling during his sophomore year. He also served as a teaching assistant for multivariate calculus in SJTU working with [Dr. Jing Liu](http://umji.sjtu.edu.cn/faculty/jing-liu/).
 
@@ -37,11 +37,11 @@ Xieyang was previously an undergraduate student at Shanghai Jiao Tong University
   </tr>
   <tr>
     <td></td>
-    <td>- Worker in Crowds + Machines Lab</td>
+    <td>- Worker in <a href="http://web.eecs.umich.edu/~wlasecki/croma.html">Crowds + Machines Lab</a></td>
   </tr>
   <tr>
     <td></td>
-    <td>- Advisor: Dr. Walter Lasecki</td>
+    <td>- Advisor: <a href="https://web.eecs.umich.edu/~wlasecki/">Dr. Walter Lasecki</a></td>
   </tr>
 
   <tr>
@@ -71,7 +71,7 @@ Xieyang was previously an undergraduate student at Shanghai Jiao Tong University
   </tr>
   <tr>
     <td></td>
-    <td>- Supervisor: Dr. Jing Liu</td>
+    <td>- Meritorious Winner prize in 2015 COMAP - MCM</td>
   </tr>
 </table>
 
