@@ -2,20 +2,139 @@
 layout: page
 title: Projects
 navigation_weight: 4
+image_path_crowd_ml: '/resources/images/works/crowd_ml/interface_micro.png'
+image_path_denso: '/resources/images/works/denso/vatic.png'
+image_path_hico: '/resources/images/works/img-rec/preview_amazon_project_1.png'
+image_path_travelife: '/resources/images/works/travelife/preview_travel_life_2.png'
+image_path_laserguitar: '/resources/images/works/guitar/preview_guitar_1.png'
 ---
 
 <br>
 
-
-{% for work in site.works %}
+<!--
+{% for work in site.projects %}
 	<div class="works">
 		<h2><a href="{{ work.url }}">{{ work.title }}</a></h2>
 		<br>
 	</div>
 {% endfor %}
+-->
+
+
+<div class="work-container">
 
 
 
+
+
+
+<div class="school-title" id="school-um">
+	University of Michigan, Ann Arbor
+</div>
+
+<div class="project" id="porj-crowd_ml">
+	<a name="crowd_ml" id="crowd_ml"></a>
+	<div class="project-title">
+    <a href="{{ site.project_links.crowd_ml }}">{{ site.project_titles.crowd_ml }}</a>
+    <div class="project-year">(2016)</div>
+  </div>
+	<div class="row">
+		<div class="col-sm-5">
+			<a href="{{ site.project_links.crowd_ml }}">
+	      <img class="proj-image-preview" src="{{ page.image_path_crowd_ml }}" alt="crowd_ml">
+	    </a>
+		</div>
+		<div class="col-sm-7">
+			In this project, we seek to investigate the impact of added subclass information on the performances of traditional machine learning classifiers. My expertise in interactive system building and crowdsourcing comes in when we need to develop an efficient labeling tool for gathering superclass/subclass information of the images in the dataset from the crowd, and in the meantime evaluate their performances and fine-tune our system accordingly. In the future, we vision to deliver a web-based interactive system on image labeling that features front-end multi-worker collaborating in real time and back-end machine learning classifying and re-sampling on the fly.
+		</div>
+	</div>
+</div>
+
+<div class="project" id="porj-denso">
+	<a name="denso" id="denso"></a>
+	<div class="project-title">
+    <a href="{{ site.project_links.denso }}"> {{ site.project_titles.denso }} </a>
+    <div class="project-year">(2016)</div>
+  </div>
+	<div class="row">
+		<div class="col-sm-5">
+			<a href="{{ site.project_links.denso }}">
+	      <img class="proj-image-preview" src="{{ page.image_path_denso }}" alt="denso">
+	    </a>
+		</div>
+		<div class="col-sm-7">
+			This project aims to extract physical driving conditions and parameters for 3D-reconstruction from real, unconstrained vehicle crash videos available on public video sharing websites with the help of a human in the loop. I developed a reconfigurable, web-based vehicle crash scene annotation UI that enables crowd workers to efficiently and effectively provide measurement values of objects in a crash scene, as well as a reusable annotation server backend that recruits crowd workers for real-time tasks, collects responses and visualizes the obtained data samples.
+		</div>
+	</div>
+</div>
+
+<div class="project" id="porj-hico">
+	<a name="hico" id="hico"></a>
+	<div class="project-title">
+    <a href="{{ site.project_links.hico }}"> {{ site.project_titles.hico }} </a>
+    <div class="project-year">(2015 - 2016)</div>
+  </div>
+	<div class="row">
+		<div class="col-sm-5">
+			<a href="{{ site.project_links.hico }}">
+	      <img class="proj-image-preview" src="{{ page.image_path_hico }}" alt="hico">
+	    </a>
+		</div>
+		<div class="col-sm-7">
+			In this project, we want to help machines to understand the content of a static image. Machines trained by us would be able to locate human beings and objects in the image, and figure out what action the human being is performing to the object. I developed an interactive image annotation toolkit and its corresponding evaluation system that enables crowd workers to perform rapid labeling of static images, and thus obtain large datasets for subsequent training and testing.
+		</div>
+	</div>
+</div>
+
+
+
+
+
+<div class="school-title" id="school-sjtu">
+	University of Michigan - Shanghai Jiao Tong University Joint Institute
+</div>
+
+<div class="project" id="porj-travelife">
+	<a name="travelife" id="travelife"></a>
+	<div class="project-title">
+    <a href="{{ site.project_links.travelife }}">{{ site.project_titles.travelife }}</a>
+    <div class="project-year">(2015)</div>
+  </div>
+	<div class="row">
+		<div class="col-sm-5">
+			<a href="{{ site.project_links.travelife }}">
+	      <img class="proj-image-preview" src="{{ page.image_path_travelife }}" alt="travelife">
+	    </a>
+		</div>
+		<div class="col-sm-7">
+			In this project, we created a web-app and its corresponding customer services that facilitates travelling in China. Tourists could use our web-app to input their travel preferences, and instantly get matched to the most suitable professional local guide. There are also evaluation systems in place to guarantee the quality of our customer services and people's travel experience.
+		</div>
+	</div>
+</div>
+
+<div class="project" id="porj-laserguitar">
+	<a name="laserguitar" id="laserguitar"></a>
+	<div class="project-title">
+    <a href="{{ site.project_links.laserguitar }}">{{ site.project_titles.laserguitar }}</a>
+    <div class="project-year">(2014)</div>
+  </div>
+	<div class="row">
+		<div class="col-sm-5">
+			<a href="{{ site.project_links.laserguitar }}">
+	      <img class="proj-image-preview" src="{{ page.image_path_laserguitar }}" alt="laserguitar">
+	    </a>
+		</div>
+		<div class="col-sm-7">
+			Ever imagined playing a guitar with "laser" strings? You've just got yourself a chance!
+			In this project, I replaced ordinary guitar strings with laser beams, and used an electronic stereo system as the resonator. I designed and implemented the entire electronic control system so that it could well simulate an acoustic guitar.
+		</div>
+	</div>
+</div>
+
+
+
+
+</div>
 
 
 <!--

@@ -212,6 +212,7 @@ address {
 
 .single-img {
   width: 100%;
+  max-width: 600px;
 }
 
 /*
@@ -503,4 +504,12 @@ tbody tr:nth-child(odd) th {
 
 .project .proj-image-preview {
   border-radius: 5px;
+}
+
+
+
+
+/* embeded video */
+.embed-responsive {
+  max-width: 600px;
 }

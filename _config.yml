@@ -1,5 +1,6 @@
 # Dependencies
 # markdown:         redcarpet
+markdown:         kramdown
 highlighter:      rouge
 
 # Permalinks
@@ -44,8 +45,24 @@ linkedin:
 helper-js:        '/resources/js/help.js'
 typed-js:         '/resources/js/typed.js'
 
+# project links & titles
+project_titles:
+  crowd_ml:       'Crowdsourcing & Machine Learning'
+  denso:          'Vehicle Crash Analysis Using human-in-the-loop Computer Vision & Crowdsourcing'
+  hico:           'Learning to Detect Humans-Objects Interactions'
+  travelife:      'TraveLife Entrepreneurship Project'
+  laserguitar:    'Portable Laser Guitar'
+
+project_links:
+  crowd_ml:       '/projects/crowd_ml.html'
+  denso:          '/projects/denso.html'
+  hico:           '/projects/hico.html'
+  travelife:      '/projects/travelife.html'
+  laserguitar:    '/projects/laserguitar.html'
+
+
 collections:
-  works:
+  projects:
     output: true
   experiences:
     output: true

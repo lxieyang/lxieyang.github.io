@@ -1,6 +1,7 @@
 ---
-layout: works
-weight: 1
+layout: no-title-work   # have to provide title by your self
+weight: 2
+# title: {{ site.project_titles.crowd_ml }}
 title: Locating Human-object Pairs to Aid Image Recognition [Amazon MTurk-based]
 image2_path: /resources/images/works/img-rec/step1_1.gif
 image3_path: /resources/images/works/img-rec/step1_2.gif
@@ -10,6 +11,14 @@ demo_box: /resources/files/works/drawing_bounding_boxes_2.html
 demo_recent: /resources/files/works/drawing_bounding_boxes_3.html
 devfolder: https://github.com/lxieyang/simple-amt
 ---
+
+<h1 class="page-title" id="top">{{ site.project_titles.hico }}</h1>
+
+<div class="works">
+<div class="blog-post spacing">
+
+
+
 
 <br><br>
 <img class="single-img" src="{{ page.image_path }}" alt="img1"><br>
@@ -25,7 +34,7 @@ Needless to say, virtual assistants today don't actually understand photos. All 
 </div>
 <br>
 
-What we want to do is to help computers actually understand the content of the image. Computers trained by us would be able to locate human beings and objects in the image, and figure out what action the human being is performing to the object. And the interactive questions in the beginning of this section, would indeed, be possible.
+We want to help computers actually understand the content of the image. Computers trained by us would be able to locate human beings and objects in the image, and figure out what action the human being is performing to the object. And the interactive questions in the beginning of this section, would indeed, be possible.
 
 In order to do this, we could like to ask Internet workers to circle out the locations of human beings and objects in a batch of images. My role is to **develop such an interface to help the workers do their jobs way faster and more accurate**.
 
@@ -36,3 +45,11 @@ In order to do this, we could like to ask Internet workers to circle out the loc
 [Interface demo (Most Recent Version)]({{ page.demo_recent }})
 
 [Complete development folder (Simple-amt based)]({{ page.devfolder }})
+
+
+
+
+
+
+</div>
+</div>
