@@ -12,7 +12,7 @@ navigation_weight: 2
 
 Xieyang (Michael) Liu is a senior in the Computer Science Department at the University of Michigan, where he works as an undergraduate researcher with [Dr. Walter S. Lasecki](https://web.eecs.umich.edu/~wlasecki/) in the [Crowds + Machines Lab (Croma Lab)](http://web.eecs.umich.edu/~wlasecki/croma.html). Xieyang develops intelligent systems that support human-in-the-loop machine learning and enhance end-user experiences.  Xieyang's current research interests include Human-computer Interaction, intelligent systems, user interface development, and interactive machine learning. Prior to Croma Lab, Xieyang worked as a research assistant in the [Vision & Learning Lab](https://vl-lab.eecs.umich.edu) with [Dr. Jia Deng](http://web.eecs.umich.edu/~jiadeng/) on static image recognition.
 
-Xieyang was previously an undergraduate student at Shanghai Jiao Tong University, where he was awarded Tang-Junyuan Fellowship (top 2) for two consecutive years. He won the Meritorious Winner prize in 2015 COMAP - Mathematical Contest in Modeling during his sophomore year. He also served as a teaching assistant for multivariate calculus in SJTU working with [Dr. Jing Liu](http://umji.sjtu.edu.cn/faculty/jing-liu/).
+Xieyang was previously an undergraduate student at Shanghai Jiao Tong University, where he was awarded the Tang-Junyuan Fellowship for Outstanding Academic Performance (top 2) for two consecutive years. He won the Meritorious Winner prize in 2015 COMAP - Mathematical Contest in Modeling during his sophomore year. He also served as a teaching assistant for multivariate calculus in SJTU working with [Dr. Jing Liu](http://umji.sjtu.edu.cn/faculty/jing-liu/).
 
 <p><span style="color:#FF3366">Resume: [</span><a href="{{ site.resume }}">pdf</a><span style="color:#FF3366">]</span> (September 2016)</p>
 
@@ -90,7 +90,7 @@ Xieyang was previously an undergraduate student at Shanghai Jiao Tong University
 - My motto has always been: "Be the change you want to see in the world." (by Mahatma Gandhi)
 - I hosted various activities and shows when I was in high school and college. Love it.
 - My favorite song and favorite album of all time are both [Hotel California](https://en.wikipedia.org/wiki/Hotel_California). It is the only song that I can't get tired of. And I'm pretty sure I never will.
-- I play the guitar, mostly acoustic, from age 16. Though recently I started teaching myself to play the electric ones. I even made my own [portable laser guitar](https://youtu.be/EAGU8Xj4gFk) during freshmen year. Believe it or not, I can play Hotel California with that :-)
+- I play the guitar, mostly acoustic, from age 16. Though recently I started teaching myself to play the electric ones. I even made my own [portable laser guitar]({{ site.project_links.laserguitar }}) during freshmen year. Believe it or not, I can play Hotel California with that :-)
 - I enjoy reading. My favorite magazine is [Scientific American](https://www.scientificamerican.com). I also like watching TV series and movies, especially thrillers. I love [Prison Break](http://www.fox.com/prisonbreak) and [24](https://en.wikipedia.org/wiki/24_(TV_series)). Really can't tell which is better. I mean Jack Bauer saves the world and Michael Scofield saves the family!
 - I'm a gym worm. I like the saying ["自律给我自由"](https://translate.google.com/#auto/en/自律给我自由). I believe regular work out is the only way towards a healthy and prosperous life.
 

@@ -52,6 +52,7 @@ project_titles:
   hico:           'Learning to Detect Humans-Objects Interactions'
   travelife:      'TraveLife Entrepreneurship Project'
   laserguitar:    'Portable Laser Guitar'
+  easydraw:       'EasyDraw: iPad-based Specialized Figure and Diagram Editing Application'
 
 project_links:
   crowd_ml:       '/projects/crowd_ml.html'
@@ -59,6 +60,7 @@ project_links:
   hico:           '/projects/hico.html'
   travelife:      '/projects/travelife.html'
   laserguitar:    '/projects/laserguitar.html'
+  easydraw:       '/projects/easydraw.html'
 
 
 collections:
