@@ -33,7 +33,7 @@ The best thing out such our service is that you don't have to worry about anythi
 <br />
 <strong>Demo video</strong>:
 <div class="embed-responsive embed-responsive-16by9">
-  <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/IBufaYlCCOc" allowfullscreen ></iframe>
+  <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/hSuwKvpPLQg" allowfullscreen ></iframe>
 </div>
 
 
