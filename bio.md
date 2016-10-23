@@ -87,6 +87,7 @@ Xieyang was previously an undergraduate student at Shanghai Jiao Tong University
 <p style="color: #dbc; font-size: 1.2em;">More about Michael</p>
 
 - My Chinese name is 刘燮洋. I was born in an amazing city, [Wuxi](https://goo.gl/maps/V6MFTpQe3Un), where I was brought up with by lots of love from my family and friends.
+- My motto has always been: "Be the change you want to see in the world." (by Mahatma Gandhi)
 - I hosted various activities and shows when I was in high school and college. Love it.
 - My favorite song and favorite album of all time are both [Hotel California](https://en.wikipedia.org/wiki/Hotel_California). It is the only song that I can't get tired of. And I'm pretty sure I never will.
 - I play the guitar, mostly acoustic, from age 16. Though recently I started teaching myself to play the electric ones. I even made my own [portable laser guitar](https://youtu.be/EAGU8Xj4gFk) during freshmen year. Believe it or not, I can play Hotel California with that :-)
