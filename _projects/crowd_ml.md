@@ -11,7 +11,7 @@ weight: 2
 <div class="blog-post spacing">
 
 
-Comming Soon!
+Coming Soon!
 
 
 </div>
