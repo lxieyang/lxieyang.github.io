@@ -441,6 +441,11 @@ tbody tr:nth-child(odd) th {
 
 /* selected works */
 
+
+.work-container {
+    max-width: 1300px;
+}
+
 .school-title {
   margin-top: 2em;
   width: 100%;
