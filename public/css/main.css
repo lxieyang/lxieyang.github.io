@@ -54,6 +54,7 @@ figcaption {
 }
 
 .footer {
+  margin-top: 50px;
   padding-top: 19px;
   color: #777;
   border-top: 1px solid #e5e5e5;
@@ -435,4 +436,65 @@ th {
 tbody tr:nth-child(odd) td,
 tbody tr:nth-child(odd) th {
   background-color: #fff;
+}
+
+
+/* selected works */
+
+.school-title {
+  margin-top: 2em;
+  width: 100%;
+  font-size: 1.3em;
+  line-height: 2em;
+  padding-left: 1em;
+  font-weight: bold;
+  background-color: #c46;
+  color: white;
+}
+
+.school-title#school-um {
+  background-color: rgba(4, 41, 74, 0.95) !important;
+  color: rgba(252, 200, 59, 1) !important;
+}
+
+.school-title#school-sjtu {
+  background-color: rgba(252, 200, 59, 1) !important;
+  color: rgba(4, 41, 74, 0.75) !important;
+}
+
+.school-title a {
+  color: white !important;
+}
+
+.project {
+  width: 100%;
+  padding: 1em 0 1em 0;
+  border-bottom-color: silver;
+  border-bottom-width: 1px;
+  font-size: 1.0em;
+  display: block;
+  margin-bottom: 1em;
+}
+
+.project .project-title {
+  width: 100%;
+  line-height: 2em;
+  padding-left: 1em;
+  font-weight: bold;
+  margin-bottom: 1em;
+  background-color: rgba(199, 85, 73, 0.95);
+  color: white;
+}
+
+.project .project-title a {
+  color: white !important;
+}
+
+.project .project-title .project-year {
+  float: right;
+  padding-right: 2em;
+}
+
+.project .proj-image-preview {
+  border-radius: 5px;
 }

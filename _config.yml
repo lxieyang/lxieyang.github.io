@@ -47,3 +47,5 @@ typed-js:         '/resources/js/typed.js'
 collections:
   works:
     output: true
+  experiences:
+    output: true

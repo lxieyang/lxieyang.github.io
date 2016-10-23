@@ -25,7 +25,6 @@ I am a senior undergraduate student at the [University of Michigan](https://www.
 
 I am honored to be an undergraduate researcher in the [Crowds + Machines Lab](http://web.eecs.umich.edu/~wlasecki/croma.html) advised by [Dr. Walter S. Lasecki](https://web.eecs.umich.edu/~wlasecki/). My research interests include Human-computer Interaction, intelligent systems, user interface development, and human-in-the-loop machine learning. My vision is to build intelligent systems and interfaces that improve everyday experiences, and investigate how machine learning could be integrated into the solution.
 
-I am planning to become a PhD student in Computer Science after my graduation from University of Michigan.
 
 <!--
 I began my **programming journey** with `C` and `C++`, so I'm pretty familiar with those two languages. I'm also good at using `MATLAB` to do **batch processing** and **image manipulation**, which is very common in **machine learning** and **computer vision**. I'm currently using `Java` and `Python` to write several course projects as well as other small applications.
