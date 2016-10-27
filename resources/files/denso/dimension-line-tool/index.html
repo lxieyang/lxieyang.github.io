@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<head>
+    <title>Dimension-line Tool</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./static/css/main.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="./static/js/mturk.js"></script>
+
+</head>
+
+<body>
+
+
+<!-- Container Instructions -->
+<div class="container instruction" id="instruction">
+    <div class="panel panel-primary">
+        <!-- Heading -->
+        <div class="panel-heading">
+            <a data-toggle="collapse" href="#collapse1"><strong>Instructions &mdash; IMPORTANT: Read Before You Start</strong></a>
+        </div>
+
+        <!-- Body -->
+        <div id="collapse1" class="panel-collapse collapse in">
+            <div class="panel-body">
+                Instructions goes here.
+            </div>
+        </div>
+    </div>
+</div> 		<!-- End Instructions -->
+
+
+<!--  -->
+
+<!-- Begin HIT -->
+<div class="container hit-begins">
+    <div class="panel panel-primary">
+        <div class="panel-heading">
+            HIT Starts Here
+        </div>
+    </div>
+</div>
+
+<form id="mturk_form" method="post" role="form">
+<div class="container hit-contents">
+
+    <!-- CANVAS -->
+    <div class="activeObj">
+        <canvas class="cropped-image" width=600 height=400></canvas>
+    </div>
+
+    <!-- OPTIONS -->
+    <div class="options">
+        <button class="btn btn-danger option delete-current" >Delete</button>
+        <button class="btn btn-success option reset-annotation" >Reset</button>
+        <button class="btn btn-primary option reset-annotation-all" >Reset all</button>
+    </div>
+
+    <!-- DIMENSIONS -->
+    <div class="dims">
+        <button class="btn btn-default dim dim-1" >Dimension 1</button>
+        <button class="btn btn-default dim dim-2" >Dimension 2</button>
+        <button class="btn btn-default dim dim-3" >Dimension 3</button>
+        <button class="btn btn-default dim dim-4" >Dimension 4</button>
+        <button class="btn btn-default dim dim-5" >Dimension 5</button>
+        <button class="btn btn-default dim dim-6" >Dimension 6</button>
+        <button class="btn btn-default dim dim-7" >Dimension 7</button>
+    </div>
+
+
+
+    <!-- COMMENTS -->
+    <div class="comments">
+        <p class="prompt">
+            How do you think we can improve this task? [<strong>Optional</strong>]
+        </p>
+        <textarea class="form-control" rows="5" id="improvement" placeholder="Please put your suggestions here."></textarea>
+    </div>
+
+
+    <div class="submit-button-wrapper">
+        <button type="button" name="submit" value="Submit" class="btn btn-success" id="submitBtn">Submit</button>
+    </div>
+
+
+</div>
+</form>
+
+<!-- Scripts -->
+<script src="./static/js/main.js"></script>
+<script src="./static/js/dimension-line.js"></script>
+
+
+</body>

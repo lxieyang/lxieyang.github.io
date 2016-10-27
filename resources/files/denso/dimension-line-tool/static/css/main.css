@@ -1,0 +1,129 @@
+/* BODY */
+body {
+    margin-bottom: 15px;
+    padding: 10px 10px;
+    /* font-family: Verdana, Geneva, sans-serif; */
+    color: #333333;
+    font-size: 18px;
+}
+
+
+
+
+
+
+/* INSTRUCTIONS */
+.instruction .panel .panel-heading a {
+    font-size: 1.3em;
+    color: white;
+}
+
+
+
+
+
+
+/* HIT-BEGINS */
+.hit-begins .panel-heading {
+    color: #fff;
+    font-weight: bold;
+    background-color:#5cb85c;
+    border-color:#4cae4c;
+    border-radius: 3px;
+}
+
+
+
+
+/* CANVAS */
+.hit-contents canvas {
+    border: 2px solid grey;
+    -moz-box-shadow: 0px 0px 3px rgb(40, 155, 180);
+    -webkit-box-shadow: 0px 0px 3px rgb(40, 155, 180);
+    box-shadow: 0px 0px 3px rgb(40, 155, 180);
+
+    /* center */
+    padding: 0;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+
+
+
+
+/* OPTIONS */
+.hit-contents .options {
+    margin-top: 20px;
+
+
+    /* center */
+    text-align: center;
+}
+
+.hit-contents .options .option {
+    margin: 10px 20px;
+    width: 95px;
+    font-size: 1.0em;
+}
+
+
+
+
+
+/* DIMENSIONS */
+.dims {
+    margin-top: 40px;
+
+    /* center */
+    text-align: center;
+}
+
+.dims .dim {
+    margin: 10px 10px ;
+}
+
+.dims .dim.active {
+    -moz-box-shadow: 0px 0px 10px Green;
+    -webkit-box-shadow: 0px 0px 10px Green;
+    box-shadow: 0px 0px 10px Green;
+}
+
+
+
+
+
+
+/* COMMENTS */
+.comments {
+    margin-top: 50px;
+    border-top: 1px dotted grey;
+    padding-top: 20px;
+}
+
+.comments .prompt {
+    text-align: center;
+}
+
+.comments textarea {
+    width: 100%;
+}
+
+
+
+
+
+
+/* SUBMIT */
+.submit-button-wrapper {
+    margin: 25px auto;
+    width: 60px;
+}
+
+.submit-button-wrapper #submitBtn {
+    font-size: 0.98em;
+}
+
+
+
