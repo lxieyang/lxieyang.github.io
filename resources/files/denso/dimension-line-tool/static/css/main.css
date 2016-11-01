@@ -18,6 +18,24 @@ body {
     color: white;
 }
 
+.instruction .tutorial-img {
+    display: block;
+    width: 70%;
+    border-radius: 5px;
+    margin: auto;
+}
+
+.instruction .tutorial-img-2 {
+    display: block;
+    width: 95%;
+    border-radius: 5px;
+    margin: auto;
+}
+
+.instruction .panel .panel-body {
+    padding: 30px;
+}
+
 
 
 
@@ -35,7 +53,21 @@ body {
 
 
 
+/* SINGLE-IMAGE */
+div.single-image {
+    padding: 30px;
+    border-radius: 5px;
+    background-color: rgba(212, 212, 212, 0.3);
+}
+
+
+
+
 /* CANVAS */
+.activeObj {
+    /* height: 350px; */
+}
+
 .hit-contents canvas {
     border: 2px solid grey;
     -moz-box-shadow: 0px 0px 3px rgb(40, 155, 180);
@@ -64,8 +96,8 @@ body {
 
 .hit-contents .options .option {
     margin: 10px 20px;
-    width: 95px;
-    font-size: 1.0em;
+    width: 250px;
+    font-size: 0.8em;
 }
 
 
@@ -74,20 +106,27 @@ body {
 
 /* DIMENSIONS */
 .dims {
-    margin-top: 40px;
+    margin-top: 20px;
 
     /* center */
     text-align: center;
+
+    border: 1px dotted grey;
+    border-radius: 10px;
+    padding: 20px;
+    background-color: rgba(192, 224, 243, 0.15);
 }
 
 .dims .dim {
-    margin: 10px 10px ;
+    margin: 10px 30px;
+    width: 120px;
+    font-size: 1.3em;
 }
 
 .dims .dim.active {
-    -moz-box-shadow: 0px 0px 10px Green;
-    -webkit-box-shadow: 0px 0px 10px Green;
-    box-shadow: 0px 0px 10px Green;
+    -moz-box-shadow: 0px 0px 40px purple;
+    -webkit-box-shadow: 0px 0px 40px purple;
+    box-shadow: 0px 0px 40px purple;
 }
 
 
@@ -109,6 +148,41 @@ body {
 .comments textarea {
     width: 100%;
 }
+
+
+
+
+
+
+
+
+/* COUNTER */
+.hit-contents .counter-wrapper-row {
+    margin-top: 20px;
+}
+
+.hit-contents .counter-wrapper {
+    width: 50%;
+
+    margin-top: 20px;
+    margin-bottom: 10px;
+    padding-bottom: 0;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 0;
+}
+
+.hit-contents .group-ctrl button {
+    width: 100%;
+    text-align: center;
+}
+
+.hit-contents .counter p {
+    font-size: 1.3em;
+    font-weight: bold;
+    margin: 0;
+}
+
 
 
 

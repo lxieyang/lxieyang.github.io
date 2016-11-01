@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+
+<head>
+<title>Dimension-line Tool</title>
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<link rel="stylesheet" href="static/css/main.css">
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="static/js/mturk.js"></script>
+
+<style>
+canvas {
+    border: 3px solid black;
+}
+
+.dims .btn.active {
+    -moz-box-shadow: 0px 0px 10px Green;
+    -webkit-box-shadow: 0px 0px 10px Green;
+    box-shadow: 0px 0px 10px Green;
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+
+    <div class="activeObj center-block">
+        <canvas class="cropped-image" width=600 height=400>
+        </canvas>
+    </div>
+    <div class="options" style="margin-top: 30px;">
+        <button class="btn btn-danger delete-current" >Delete</button>
+        <button class="btn btn-success reset-annotation" >RESET</button>
+        <button class="btn btn-primary reset-annotation-all" >RESET ALL</button>
+    </div>
+    <div class="dims" style="margin-top: 30px;">
+        <button class="btn btn-default dim-1" >Dimension 1</button>
+        <button class="btn btn-default dim-2" >Dimension 2</button>
+        <button class="btn btn-default dim-3" >Dimension 3</button>
+        <button class="btn btn-default dim-3" >Dimension 4</button>
+        <button class="btn btn-default dim-3" >Dimension 5</button>
+        <button class="btn btn-default dim-3" >Dimension 6</button>
+        <button class="btn btn-default dim-3" >Dimension 7</button>
+    </div>
+
+
+</div>
+
+
+<!-- scripts -->
+<script src="dimension-line.js"></script>
+
+</body>

@@ -7,25 +7,24 @@ Array.prototype.remove = function(from, to) {
 };
 
 
-/* global variables */
 
-var dimension_store = [];
+/* global variables */
 
 var canvas_in_object_fix;
 var context_in_object;
 var CANVAS_IN_OBJECT_WIDTH;
 var CANVAS_IN_OBJECT_HEIGHT;
 
-
+var dimension_store = [];
 
 var lineCombo = [
     ["#c33120", "yellow", "#fff"],
-    /*["#e89507", "yellow", "#000"],*/
-    /*["yellow", "red", "#000"],*/
+    ["#e89507", "yellow", "#000"],
+    ["yellow", "red", "#000"],
     ["#00f000", "yellow", "#000"],
-    /*["#289bb4", "yellow", "#fff"],*/
+    ["#289bb4", "yellow", "#fff"],
     ["blue", "yellow", "#fff"],
-    /*["#9448f9", "yellow", "#fff"]*/
+    ["#9448f9", "yellow", "#fff"]
 ];
 
 var sensitivity = 5.0;
@@ -54,26 +53,6 @@ var is_mouse_down = [false];
 var is_modifying_start = [false];
 var is_modifying_finish = [false];
 
-function init_global_val() {
-
-    start_x = [-1];
-    start_y = [-1];
-    finish_x = [-1];
-    finish_y = [-1];
-
-    line_width = 4.0;
-    bold_pt_size = 6.0;
-    pt_color = 'red';
-    lineComboNumber = 0;
-    idx = 0;
-
-    is_started = [false];
-    is_finished = [false];
-    is_mouse_down = [false];
-    is_modifying_start = [false];
-    is_modifying_finish = [false];
-}
-
 
 function init_canvas(){
     img = new Image();
@@ -89,7 +68,7 @@ function init_canvas(){
         CANVAS_IN_OBJECT_HEIGHT = this.height;
         draw_canvas();
     }
-    img.src = "./images/" + (currentImageIdx + 1).toString() + ".png";
+    img.src = "./static/images/toyota.png";
 
     // monitor user input
     canvas_in_object_fix.onmousemove = mousemove_canvas_rect;
@@ -410,16 +389,8 @@ function reset_all() {
 
     idx = 0;
     lineComboNumber = 0;
-    init_global_val();
-    // reset the button
-    $(".dims .dim").eq(0).parent().find(".btn").each(function() {
-        $(this).removeClass("active");
-    });
-    $(".dims .dim").eq(0).addClass("active");
     draw_canvas();
     console.log("Reset all!");
-
-    console.log(image_dimension_store);
 }
 
 function switch_to_dimension(index) {
@@ -446,64 +417,17 @@ function store_current_dimension(index) {
     dimension_store[index].is_modifying_finish = is_modifying_finish;
 }
 
-// switching image support
-function setImageIdx(index) {
-    // console.log(image_dimension_store[currentImageIdx]);
-    // console.log("CURRENT INDEX: " + currentImageIdx);
-
-    // store information
-    store_current_dimension(lineComboNumber);
-    image_dimension_store[currentImageIdx] = [];
-    image_dimension_store[currentImageIdx] = deepCopy(dimension_store);
-
-    // switch to current image
-    currentImageIdx = index;
-    dimension_store = [];
-    dimension_store = deepCopy(image_dimension_store[index]);
-
-    // init current image according to log
-    lineComboNumber = 0;
-
-    init_global_val();
-    switch_to_dimension(lineComboNumber);
-
-    // reset the button
-    $(".dims .dim").eq(0).parent().find(".btn").each(function() {
-        $(this).removeClass("active");
-    });
-    $(".dims .dim").eq(0).addClass("active");
-
-
-
-    canvas_in_object_fix = $(".activeObj canvas.cropped-image")[0];
-    context_in_object = canvas_in_object_fix.getContext('2d');
-
-    // change the size of the canvas to the image size
-    init_canvas();
-}
-
-function submit_button_pressed() {
-    // store information
-    store_current_dimension(lineComboNumber);
-    image_dimension_store[currentImageIdx] = [];
-    image_dimension_store[currentImageIdx] = deepCopy(dimension_store);
-
-
-}
-
 
 $(document).ready(function() {
     init_canvas();
 
     // enable reset button
-    $(".options .reset-annotation").click(function(e) {
-        e.preventDefault();
+    $(".options .reset-annotation").click(function() {
         reset_drawing();
     });
 
-    $(".options .reset-annotation-all").click(function(e) {
-        e.preventDefault();
-        reset_all();
+    $(".options .reset-annotation-all").click(function() {
+       reset_all();
     });
 
     // enable selection
@@ -527,34 +451,21 @@ $(document).ready(function() {
             'is_modifying_start': [false],
             'is_modifying_finish': [false]
         });
-        console.log(dimension_store);
+        // console.log(dimension_store);
 
-        $(this).click(function(e) {
-            e.preventDefault();
+
+        $(this).click(function() {
             $(this).parent().find(".btn").each(function() {
                 $(this).removeClass("active");
             });
             $(this).addClass("active");
             store_current_dimension(lineComboNumber);
             lineComboNumber = index;
-
             switch_to_dimension(lineComboNumber);
             idx = 0;
             draw_canvas();
         });
     });
-
-
-    // init image_dimension_store
-    for(var i = 0; i < imageCount; i++) {
-        image_dimension_store.push(deepCopy(dimension_store));
-    }
-    // console.log(image_dimension_store);
-
-
-    // set start index
-    // setImageIdx(0);
-
 
     $('html').keyup(function(e){
         if((e.keyCode == 46) || (e.keyCode == 8)) {
@@ -565,11 +476,11 @@ $(document).ready(function() {
         }
     });
 
-    $(".options .delete-current").click(function(e) {
-        e.preventDefault();
+    $(".options .delete-current").click(function() {
         remove_this_from_dimension(idx);
         idx = 0;
         draw_canvas();
     });
 
 });
+

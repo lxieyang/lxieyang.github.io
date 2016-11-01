@@ -1,0 +1,399 @@
+<head>
+<title>Dimension-line Tool</title>
+
+<link rel="stylesheet" href="https://www.legionpowered.net/lxieyang/jcrop/css/jquery.Jcrop.min.css" />
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" />
+<link rel="stylesheet" href="../static/css/main.css" type="text/css" />
+<script src="../static/jquery/1.12.2/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+<script src="../static/zoom/magnify/js/jquery.magnify.js"></script>
+<script src="../static/js/mturk.js"></script>
+<style>
+canvas {
+	border: 3px solid black;
+}
+
+.dims .btn.active {
+	-moz-box-shadow: 0px 0px 10px Green;
+	-webkit-box-shadow: 0px 0px 10px Green;
+	box-shadow: 0px 0px 10px Green;
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+	<div class="activeObj center-block">
+		<canvas class="cropped-image" width=600 height=400>
+		</canvas>
+	</div>
+	<div class="options" style="margin-top: 30px;">
+		<button class="btn btn-success reset-annotation" >RESET</button>
+	</div>
+	<div class="dims" style="margin-top: 30px;">
+		<button class="btn btn-default dim-1" >Dimension 1</button>
+		<button class="btn btn-default dim-2" >Dimension 2</button>
+		<button class="btn btn-default dim-3" >Dimension 3</button>
+		<button class="btn btn-default dim-3" >Dimension 4</button>
+		<button class="btn btn-default dim-3" >Dimension 5</button>
+		<button class="btn btn-default dim-3" >Dimension 6</button>
+		<button class="btn btn-default dim-3" >Dimension 7</button>
+	</div>
+
+
+</div>
+
+
+
+
+<!-- scripts -->
+<script>
+
+var canvas_fix;
+var ctx;
+var CANVAS_WIDTH;
+var CANVAS_HEIGHT;
+
+function init_canvas(){
+	img = new Image();
+	canvas_fix = $(".activeObj canvas.cropped-image")[0];
+	ctx = canvas_fix.getContext('2d');
+
+	// change the size of the canvas to the image size
+	img.onload = function()
+	{
+		canvas_fix.width = this.width;
+		canvas_fix.height = this.height;
+		CANVAS_WIDTH = this.width;
+		CANVAS_HEIGHT = this.height;
+		draw_canvas();
+	}
+	img.src = "../static/images/toyota.png";
+
+
+	// monitor user input
+	canvas_fix.onmousemove = mousemove_canvas_rect;
+	canvas_fix.onmousedown = mousedown_canvas_rect;
+	canvas_fix.onmouseup = mouseup_canvas_rect;
+	// render();
+}
+
+
+var dimension_store = [];
+
+
+var cx;
+var cy;
+var curr_x;
+var curr_y;
+
+var start_x;
+var start_y;
+var finish_x;
+var finish_y;
+
+var linecolor = "blue";
+var lineBorder = "yellow";
+var linewidth = 4.0;
+var bold_pt_size = 6.0;
+var pt_color = 'red';
+var lineComboNumber = 0;
+
+var is_started = false;
+var is_finished = false;
+var is_mouse_down = false;
+var is_modifying_start = false;
+var is_modifying_finish = false;
+
+var sensitivity = 5.0;
+
+var lineCombo = [
+	["#c33120", "yellow", "#fff"],
+	["#e89507", "yellow", "#000"],
+	["yellow", "red", "#000"],
+	["#66b663", "yellow", "#000"],
+	["#289bb4", "yellow", "#fff"],
+	["blue", "yellow", "#fff"],
+	["#9448f9", "yellow", "#fff"]
+];
+
+
+// draw canvas
+function draw_canvas(){
+	//draw the image
+	ctx.clearRect(0,0,CANVAS_WIDTH,CANVAS_HEIGHT);
+	ctx.drawImage(img,0,0,CANVAS_WIDTH, CANVAS_HEIGHT);
+
+	// console.log(dimension_store.length);
+
+	store_current_dimension(lineComboNumber);
+
+	for(var i = 0; i < dimension_store.length; i++) {
+		if (i != lineComboNumber) {
+			// console.log("idx: " + i);
+			switch_to_dimension(i);
+			if (is_started) {
+				bold_the_point(start_x, start_y, bold_pt_size / 2);
+			}
+
+			if (is_finished) {
+				bold_the_point(finish_x, finish_y, bold_pt_size / 2);
+			}
+
+			if (is_started && is_finished) {
+				draw_line(start_x, start_y, finish_x, finish_y, i);
+			}
+		}
+	}
+
+
+	switch_to_dimension(lineComboNumber);
+	if (is_started) {
+		bold_the_point(start_x, start_y, bold_pt_size / 2);
+	}
+
+	if (is_finished) {
+		bold_the_point(finish_x, finish_y, bold_pt_size / 2);
+	}
+
+	if (is_started && is_finished) {
+		draw_line(start_x, start_y, finish_x, finish_y, lineComboNumber);
+	}
+
+
+}
+
+// return the current point of the cursor
+function grab_xy(event){
+	var ev = event || window.event;
+	var IE = document.all ? true : false;
+	if (IE) {	// grab the x-y pos if browser is IE
+		cx = ev.clientX + document.body.scrollLeft;
+		cy = ev.clientY + document.body.scrollTop;
+	}
+	else {	// grab the x-y pos if browser is NS
+		cx = ev.pageX;
+		cy = ev.pageY;
+	}
+
+	cx = cx - canvas_fix.offsetLeft;
+	cy = cy - canvas_fix.offsetTop;
+	if (cx < 0){cx = 0;}
+	if (cy < 0){cy = 0;}
+	if (cx > CANVAS_WIDTH) {cx = CANVAS_WIDTH};
+	if (cy > CANVAS_HEIGHT){cy = CANVAS_HEIGHT};
+
+	cx = Math.floor(cx);
+	cy = Math.floor(cy);
+	return [cx,cy];
+}
+
+// bold point when in proximity
+function proximity_sensor(x, y) {
+	if (Math.abs(x - start_x) <= sensitivity && Math.abs(y - start_y) <= sensitivity) {
+		bold_the_point(start_x, start_y, bold_pt_size);
+		return 0;
+	} else if (Math.abs(x - finish_x) <= sensitivity && Math.abs(y - finish_y) <= sensitivity) {
+		bold_the_point(finish_x, finish_y, bold_pt_size);
+		return 1;
+	}
+	return -1;
+}
+
+// make the selected point become bigger
+function bold_the_point(x, y, size){
+	// circle version
+	ctx.beginPath();
+	ctx.arc(x, y, size, 0, 2 * Math.PI, false);
+	ctx.fillStyle = pt_color;
+	ctx.fill();
+	ctx.lineWidth = size;
+	ctx.strokeStyle = pt_color;
+	ctx.stroke();
+
+
+	// rect version
+	/*
+	ctx.fillStyle = pt_color;
+	ctx.fillRect(x - bold_pt_size, y - bold_pt_size, 2 * bold_pt_size, 2 * bold_pt_size);
+	*/
+}
+
+// do something as the cursor moves across the canvas
+function mousemove_canvas_rect(event){
+	var xy = grab_xy(event);
+	curr_x = xy[0];
+	curr_y = xy[1];
+
+	if (is_started && !is_finished) {
+		// console.log(is_started + " " + is_finished);
+		draw_canvas();
+		draw_line(start_x, start_y, curr_x, curr_y, lineComboNumber);
+	} else if (is_started && is_finished) {
+		draw_canvas();
+		proximity_sensor(curr_x, curr_y);
+		if(is_mouse_down) {
+			draw_canvas();
+			if (is_modifying_start) {
+				start_x = curr_x;
+				start_y = curr_y;
+
+			} else if (is_modifying_finish) {
+				finish_x = curr_x;
+				finish_y = curr_y;
+
+			}
+			draw_line(start_x, start_y, finish_x, finish_y, lineComboNumber);
+		}
+	}
+
+	// console.log("Current point of cursor: (" + curr_x + ", " + curr_y + ")");
+
+}
+
+// do something when the left key of the mouse is hit
+function mousedown_canvas_rect(event){
+	if (!is_started && !is_finished) { 	// haven't started yet
+		start_x = curr_x;
+		start_y = curr_y;
+		bold_the_point(start_x, start_y, bold_pt_size / 2);
+		is_started = true;
+		console.log("Starting point set to : (" + start_x + ", " + start_y + ")");
+	} else if (is_started && !is_finished) { 	// start point selected
+		is_mouse_down = true;
+
+	} else if (is_started && is_finished) {
+		if(proximity_sensor(curr_x, curr_y) == 0) {
+			is_mouse_down = true;
+			is_modifying_start = true;
+
+		} else if (proximity_sensor(curr_x, curr_y) == 1) {
+			is_mouse_down = true;
+			is_modifying_finish = true;
+
+		}
+	}
+}
+
+function mouseup_canvas_rect(event) {
+	store_current_dimension(lineComboNumber);
+	if (is_started && !is_finished) {
+		is_mouse_down = false;
+		finish_x = curr_x;
+		finish_y = curr_y;
+		is_finished = true;
+		bold_the_point(finish_x, finish_y, bold_pt_size / 2);
+		console.log("Finishing point set to : (" + finish_x + ", " + finish_y + ")");
+	}
+	else if (is_started && is_finished) {
+		is_mouse_down = false;
+		is_modifying_start = false;
+		is_modifying_finish = false;
+	}
+}
+
+function draw_line(start_x, start_y, end_x, end_y, idx) {
+
+	idx = idx % lineCombo.length;
+	// border
+	ctx.strokeStyle = lineCombo[idx][1];
+	ctx.lineWidth = linewidth + 1.0;
+
+	ctx.beginPath();
+	ctx.moveTo(start_x, start_y);
+	ctx.lineTo(end_x, end_y);
+	ctx.lineCap = 'round';
+	ctx.stroke();
+
+	// inner
+	ctx.strokeStyle = lineCombo[idx][0];
+	ctx.lineWidth = linewidth;
+	ctx.stroke();
+}
+
+function reset_drawing() {
+	is_started = false;
+	is_finished = false;
+	is_modifying_start = false;
+	is_modifying_finish = false;
+	is_mouse_down = false;
+	draw_canvas();
+	console.log("Reseted!");
+}
+
+function switch_to_dimension(idx) {
+	start_x = dimension_store[idx].start_x;
+	finish_x = dimension_store[idx].finish_x;
+	start_y = dimension_store[idx].start_y;
+	finish_y = dimension_store[idx].finish_y;
+	is_started = dimension_store[idx].is_started;
+	is_finished = dimension_store[idx].is_finished;
+	is_mouse_down = dimension_store[idx].is_mouse_down;
+	is_modifying_start = dimension_store[idx].is_modifying_start;
+	is_modifying_finish = dimension_store[idx].is_modifying_finish;
+}
+
+function store_current_dimension(idx) {
+	dimension_store[idx].start_x = start_x;
+	dimension_store[idx].start_y = start_y;
+	dimension_store[idx].finish_x = finish_x;
+	dimension_store[idx].finish_y = finish_y;
+	dimension_store[idx].is_started = is_started;
+	dimension_store[idx].is_finished = is_finished;
+	dimension_store[idx].is_mouse_down = is_mouse_down;
+	dimension_store[idx].is_modifying_start = is_modifying_start;
+	dimension_store[idx].is_modifying_finish = is_modifying_finish;
+}
+
+
+
+$(document).ready(function() {
+	init_canvas();
+
+	// enable reset button
+	$(".options .reset-annotation").click(function() {
+		reset_drawing();
+	});
+
+	// enable selection
+	$(".dims .btn").each(function(index) {
+		$(this).css('background-color', lineCombo[index][0]);
+		$(this).css('color', lineCombo[index][2]);
+
+		if(index == 0) {
+			$(this).addClass("active");
+		}
+
+		// initialize dimension store
+		dimension_store.push({
+			'start_x': -1,
+			'start_y': -1,
+			'finish_x': -1,
+			'finish_y': -1,
+			'is_started': false,
+			'is_finished': false,
+			'is_mouse_down': false,
+			'is_modifying_start': false,
+			'is_modifying_finish': false
+		});
+
+		$(this).click(function() {
+			$(this).parent().find(".btn").each(function() {
+				$(this).removeClass("active");
+			});
+			$(this).addClass("active");
+			// reset_drawing();
+			store_current_dimension(lineComboNumber);
+			lineComboNumber = index;
+			switch_to_dimension(lineComboNumber);
+		});
+	});
+
+});
+
+
+</script>
+
+</body>
