@@ -3,7 +3,7 @@ layout: no-title-work   # have to provide title by your self
 weight: 2
 # title: {{ site.project_titles.denso }}
 dimension_line_tool_url: '/resources/files/denso/dimension-line-tool/index.html'
-
+image_workflow: '/resources/images/works/denso/workflow.png'
 ---
 
 <h1 class="page-title" id="top">{{ site.project_titles.denso }}</h1>
@@ -15,22 +15,40 @@ dimension_line_tool_url: '/resources/files/denso/dimension-line-tool/index.html'
 
 <h3>Overview</h3>
 <p>
-  Coming soon!
+  <strong>Goal:</strong> Extraction of physical driving conditions and parameters from real, unconstrained crash videos with the help of a human in the loop.
 </p>
-<br />
-
-<h3>Interfaces and Tools</h3>
-<h4>Crash Scene Analysis Interface</h4>
 <p>
-  Coming soon!
+  <strong>Two-level framework</strong>:
+  <ul>
+    <li>
+      <strong>First level</strong>: characterizes each video within predefined general types of conditions, called 'scenarios'.
+    </li>
+    <li>
+      <strong>Second level</strong>: associates quantitative information for each instance of scenario, called 'tokens'.
+    </li>
+  </ul>
+  <img class="single-img" src="{{ page.image_workflow }}" alt="workflow" />
 </p>
 <br />
 
+<h3>Contributions</h3><br />
+<p>
+  I contributed to the project extensively by creating intelligent systems and running user studies for various purposes. My work are summarized in the following slides:
+</p>
+<div class="responsive-wrap">
+<!-- this is the embed code provided by Google -->
+  <iframe src="https://docs.google.com/presentation/d/1TW9l9KxmEOSBcH9neMfV5s4j2tBdJkdWYqGdTwIqnGw/embed?start=false&loop=false&delayms=5000" frameborder="0" width="960" height="749" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+<!-- Google embed ends -->
+</div>
+<br />
+
+<!--
 <h4>Dimension Line Tool</h4>
 <p>
   Below is the tool I created that helps visualize dimension values for computer vision:<br />
 </p>
 <a href="{{ page.dimension_line_tool_url }}">Dimension Line Tool</a>
+-->
 
 </div>
 </div>

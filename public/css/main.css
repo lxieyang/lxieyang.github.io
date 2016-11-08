@@ -513,3 +513,9 @@ tbody tr:nth-child(odd) th {
 .embed-responsive {
   max-width: 600px;
 }
+
+
+/* google slides */
+.responsive-wrap iframe{
+  max-width: 100%;
+}
