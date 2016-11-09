@@ -23,7 +23,7 @@ navigation_weight: 1
 I am a senior undergraduate student at the [University of Michigan](https://www.umich.edu/) in the [Computer Science and Engineering](http://eecs.umich.edu/cse/) department. Prior to Michigan, I was an undergraduate student at the Shanghai Jiao Tong University, where I was awarded the Tang-Junyuan Fellowship for Outstanding Academic Performance (2015-2017).
 
 
-I am honored to be an undergraduate researcher in the [Crowds + Machines Lab](http://web.eecs.umich.edu/~wlasecki/croma.html) advised by [Dr. Walter S. Lasecki](https://web.eecs.umich.edu/~wlasecki/). My research interests include Human-computer Interaction, intelligent systems, user interface development, and human-in-the-loop machine learning. My vision is to build intelligent systems and interfaces that improve everyday experiences, and investigate how machine learning could be integrated into the solution.
+I am honored to be an undergraduate researcher in the [Crowds + Machines Lab](http://web.eecs.umich.edu/~wlasecki/croma.html) advised by [Dr. Walter S. Lasecki](https://web.eecs.umich.edu/~wlasecki/). My research interests include Human-computer Interaction, hybrid intelligent systems, user interface development, and human-in-the-loop machine learning. My vision is to build intelligent systems and interfaces that improve everyday user experience.
 
 
 <!--
