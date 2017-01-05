@@ -15,7 +15,7 @@ Xieyang (Michael) Liu is a senior in the Computer Science Department at the Univ
 Xieyang was previously an undergraduate student at Shanghai Jiao Tong University, where he was awarded the Tang-Junyuan Fellowship for Outstanding Academic Performance (top 2) for two consecutive years. He won the Meritorious Winner prize in 2015 COMAP - Mathematical Contest in Modeling during his sophomore year. He also served as a teaching assistant for multivariate calculus in SJTU working with [Dr. Jing Liu](http://umji.sjtu.edu.cn/faculty/jing-liu/).
 
 <p><span style="color:#FF3366">Resume: [</span><a href="{{ site.resume }}">pdf</a><span style="color:#FF3366">]</span> (November 2016)</p>
-<p><span style="color:#FF3366">Curriculum Vitae: [</span><a href="{{ site.cv }}">pdf</a><span style="color:#FF3366">]</span> (December 2016)</p>
+<p><span style="color:#FF3366">Curriculum Vitae: [</span><a href="{{ site.cv }}">pdf</a><span style="color:#FF3366">]</span> (January 2017)</p>
 
 <br/>
 <p style="color: #C46; font-size: 1.2em;">Education</p>
