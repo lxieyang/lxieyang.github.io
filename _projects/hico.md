@@ -47,7 +47,11 @@ In order to do this, we could like to ask Internet workers to circle out the loc
 
 
 
-
+<div class="row project-pub">
+    <strong>Publication:</strong>
+    <p>Yu-Wei Chao, Yunfan Liu, Xieyang Liu, Huayi Zeng, Jia Deng. <a href="https://arxiv.org/abs/1702.05448" target="_blank">Learning to Detect Human-Object
+        Interactions.</a>  (arXiv.org)</p>
+</div>
 
 
 </div>

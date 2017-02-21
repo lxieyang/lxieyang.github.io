@@ -100,8 +100,13 @@ image_path_laserguitar: '/resources/images/works/guitar/preview_guitar_1.png'
 	    </a>
 		</div>
 		<div class="col-sm-7">
-			In this project, we want to help machines to understand the content of a static image. Machines trained by us would be able to locate human beings and objects in the image, and figure out what action the human being is performing to the object. I developed an interactive image annotation toolkit and its corresponding evaluation system that enables crowd workers to perform rapid labeling of static images, and thus obtain large datasets for subsequent training and testing.
+			In this project, we study the problem of detecting human-object interactions (HOI) in static images, defined as predicting a human and an object bounding box with an interaction class label that connects them. HOI detection is a fundamental problem in computer vision as it provides semantic information about the interactions among the detected objects. We introduce HICO-DET, a new large benchmark for HOI detection, by augmenting the current HICO classification benchmark with instance annotations. We propose Human-Object Region-based Convolutional Neural Networks (HO-RCNN), a novel DNN-based framework for HOI detection. At the core of our HO-RCNN is the Interaction Pattern, a novel DNN input that characterizes the spatial relations between two bounding boxes. We validate the effectiveness of our HO-RCNN using HICO-DET. Experiments demonstrate that our HO-RCNN, by exploiting human-object spatial relations through Interaction Patterns, significantly improves the performance of HOI detection over baseline approaches.
 		</div>
+	</div>
+	<div class="row project-pub">
+		<strong>Publication:</strong>
+		<p>Yu-Wei Chao, Yunfan Liu, Xieyang Liu, Huayi Zeng, Jia Deng. <a href="https://arxiv.org/abs/1702.05448" target="_blank">Learning to Detect Human-Object
+			Interactions.</a>  (arXiv.org)</p>
 	</div>
 </div>
 

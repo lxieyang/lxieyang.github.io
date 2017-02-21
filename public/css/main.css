@@ -183,7 +183,7 @@ address {
 
 .double-img {
   padding: 0;
-  position: re
+  position: relative;
 }
 
 .double-img + * {
@@ -518,4 +518,10 @@ tbody tr:nth-child(odd) th {
 /* google slides */
 .responsive-wrap iframe{
   max-width: 100%;
+}
+
+
+/* project publications */
+div.project-pub {
+  margin-top: 30px;
 }
