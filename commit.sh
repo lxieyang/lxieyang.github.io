@@ -6,14 +6,14 @@ git add .
 
 git commit -m "$1"
 
-git push origin withJekyll
+git push origin development
 
-git checkout master
+# git checkout master
 
-git merge withJekyll
+# git merge development
 
-git push origin master
+# git push origin master
 
-git checkout withJekyll
+# git checkout development
 
 exit 0
