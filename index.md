@@ -3,6 +3,8 @@ layout: page
 title: Xieyang (Michael) Liu
 banner: ./resources/images/flight_deck_intrepid_compressed.png
 actual_image : ./resources/images/flight_deck_intrepid.jpg
+hcii_image: ./resources/images/hcii-cmu.jpg
+cmu_image: ./resources/images/cmu.png
 navigation_weight: 1
 ---
 
@@ -16,7 +18,12 @@ navigation_weight: 1
 <br />
 
 
+**NEWS**: I'll be starting as a Ph.D. student at the [Human Computer Interaction Institute](http://www.hcii.cmu.edu) @ [Carnegie Mellon University](http://www.cmu.edu) in Fall 2017.
 
+<img src="{{ page.hcii_image }}" height="120">
+
+<img src="{{ page.cmu_image }}" height="120">
+<br><br>
 
 <!-- Hi, I'm Xieyang Liu! You can call me **Michael**! -->
 

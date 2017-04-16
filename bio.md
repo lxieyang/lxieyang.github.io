@@ -21,9 +21,22 @@ Xieyang was previously an undergraduate student at Shanghai Jiao Tong University
 <p style="color: #C46; font-size: 1.2em;">Education</p>
 
 <table border="0">
+
+  <tr>
+    <td>08/2017 - </td>
+    <td><strong>Carnegie Mellon University</strong>, Pittsburgh, PA</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>Ph.D. in Human Computer Interaction</td>
+  </tr>
+
+
+
+
   <tr>
     <td>09/2015 - 04/2017</td>
-    <td><strong>University of Michigan, Ann Arbor</strong>, MI, US</td>
+    <td><strong>University of Michigan</strong>, Ann Arbor, MI, US</td>
   </tr>
   <tr>
     <td></td>
@@ -87,7 +100,7 @@ Xieyang was previously an undergraduate student at Shanghai Jiao Tong University
 <br/>
 <p style="color: #dbc; font-size: 1.2em;">More about Michael</p>
 
-- My Chinese name is 刘燮洋. I was born in an amazing city, [Wuxi](https://goo.gl/maps/V6MFTpQe3Un), where I was brought up with by lots of love from my family and friends.
+- My Chinese name is 刘燮洋. I was born in an amazing city,  [Wuxi](https://goo.gl/maps/V6MFTpQe3Un), where I was brought up with by lots of love from my family and friends.
 - My motto has always been: "Be the change you want to see in the world." (by Mahatma Gandhi)
 - I hosted various activities and shows when I was in high school and college. Love it.
 - My favorite song and favorite album of all time are both [Hotel California](https://en.wikipedia.org/wiki/Hotel_California). It is the only song that I can't get tired of. And I'm pretty sure I never will.
