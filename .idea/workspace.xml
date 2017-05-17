@@ -1,7 +1,319 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="37cad2e7-f2e2-46ac-9713-2fc634c6cc74" name="Default" comment="" />
+    <list default="true" id="37cad2e7-f2e2-46ac-9713-2fc634c6cc74" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_site/2012/02/06/whats-jekyll.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_site/2012/02/07/example-content.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_site/2013/12/28/introducing-hyde.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_site/2016/06/22/bootstrap-tutorial.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_site/2016/06/24/bootstrap-templates.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_site/2016/06/25/bootstrap-grid-system.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_site/404.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_site/LICENSE.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_site/README.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_site/about.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_site/about.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_site/atom.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_site/bio.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_site/blog.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_site/blog.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_site/blogs.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_site/blogs/blogs.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_site/blogs/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_site/commit.sh" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_site/contact.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_site/contact.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_site/experiences.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_site/experiences/vv255.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_site/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_site/lab_tagging" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_site/projects.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_site/projects/crowd_ml.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_site/projects/crowd_ml.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_site/projects/denso.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_site/projects/denso.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_site/projects/easydraw.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_site/projects/easydraw.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_site/projects/hico.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_site/projects/img-rec.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_site/projects/laserguitar.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_site/projects/mcm.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_site/projects/portable-laser-guitar.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_site/projects/travelife.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_site/public/apple-touch-icon-144-precomposed.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_site/public/css/bootstrap.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_site/public/css/bootstrap_gridsystem.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_site/public/css/fonts/glyphicons-halflings-regular.eot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_site/public/css/fonts/glyphicons-halflings-regular.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_site/public/css/fonts/glyphicons-halflings-regular.ttf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_site/public/css/fonts/glyphicons-halflings-regular.woff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_site/public/css/fonts/glyphicons-halflings-regular.woff2" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_site/public/css/glyphicons-halflings-regular.eot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_site/public/css/glyphicons-halflings-regular.ttf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_site/public/css/glyphicons-halflings-regular.woff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_site/public/css/hyde.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_site/public/css/lxieyang.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_site/public/css/main.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_site/public/css/poole.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_site/public/css/syntax.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_site/public/favicon.ico" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_site/public/js/lxieyang.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_site/resources/blog/bstutorial/Text_Typography/abbr.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_site/resources/blog/bstutorial/Text_Typography/blockquote.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_site/resources/blog/bstutorial/Text_Typography/code.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_site/resources/blog/bstutorial/Text_Typography/contextual_colors.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_site/resources/blog/bstutorial/Text_Typography/dl.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_site/resources/blog/bstutorial/Text_Typography/heading.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_site/resources/blog/bstutorial/Text_Typography/kbd.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_site/resources/blog/bstutorial/Text_Typography/mark.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_site/resources/blog/bstutorial/Text_Typography/small.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_site/resources/blog/bstutorial/bage/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_site/resources/blog/bstutorial/basics/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_site/resources/blog/bstutorial/buttons/group.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_site/resources/blog/bstutorial/buttons/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_site/resources/blog/bstutorial/collapse/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_site/resources/blog/bstutorial/dropdown/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_site/resources/blog/bstutorial/forms/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_site/resources/blog/bstutorial/glyphicon/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_site/resources/blog/bstutorial/gridSystem/clearFloat.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_site/resources/blog/bstutorial/gridSystem/equal.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_site/resources/blog/bstutorial/gridSystem/large.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_site/resources/blog/bstutorial/gridSystem/medium.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_site/resources/blog/bstutorial/gridSystem/mixed.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_site/resources/blog/bstutorial/gridSystem/nested.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_site/resources/blog/bstutorial/gridSystem/offset.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_site/resources/blog/bstutorial/gridSystem/pushpull.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_site/resources/blog/bstutorial/gridSystem/small.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_site/resources/blog/bstutorial/gridSystem/stackToHorizontal.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_site/resources/blog/bstutorial/gridSystem/unequal.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_site/resources/blog/bstutorial/images/cloud.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_site/resources/blog/bstutorial/images/gallery.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_site/resources/blog/bstutorial/images/lincoln.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_site/resources/blog/bstutorial/images/ms.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_site/resources/blog/bstutorial/images/responsive.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_site/resources/blog/bstutorial/images/responsiveEmbeds.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_site/resources/blog/bstutorial/images/sara.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_site/resources/blog/bstutorial/images/shapes.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_site/resources/blog/bstutorial/images/tbag.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_site/resources/blog/bstutorial/inputs/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_site/resources/blog/bstutorial/jumbotron/basic.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_site/resources/blog/bstutorial/jumbotron/header.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_site/resources/blog/bstutorial/label/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_site/resources/blog/bstutorial/lg/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_site/resources/blog/bstutorial/navbar/fixeddown.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_site/resources/blog/bstutorial/navbar/fixedup.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_site/resources/blog/bstutorial/navbar/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_site/resources/blog/bstutorial/pager/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_site/resources/blog/bstutorial/pagination/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_site/resources/blog/bstutorial/panel/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_site/resources/blog/bstutorial/pb/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_site/resources/blog/bstutorial/tables/basic.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_site/resources/blog/bstutorial/tables/bordered.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_site/resources/blog/bstutorial/tables/contextual.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_site/resources/blog/bstutorial/tables/hover.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_site/resources/blog/bstutorial/tables/responsive.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_site/resources/blog/bstutorial/tables/stripRows.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_site/resources/blog/bstutorial/tabs_and_pills/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_site/resources/blog/bstutorial/template/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_site/resources/blog/bstutorial/template/sample_temp_analytics.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_site/resources/blog/bstutorial/template/sample_temp_blog.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_site/resources/blog/bstutorial/template/sample_temp_marketing.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_site/resources/blog/bstutorial/template/sample_temp_marketing_2.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_site/resources/blog/bstutorial/template/sample_temp_portfolio.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_site/resources/blog/bstutorial/template/sample_temp_social.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_site/resources/blog/bstutorial/template/sample_temp_store.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_site/resources/blog/bstutorial/template/sample_temp_webpage.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_site/resources/blog/bstutorial/template/syntax.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_site/resources/blog/bstutorial/template/trybs_temp_analytics_ifr.htm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_site/resources/blog/bstutorial/template/trybs_temp_blog_ifr.htm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_site/resources/blog/bstutorial/template/trybs_temp_marketing2_ifr.htm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_site/resources/blog/bstutorial/template/trybs_temp_marketing_ifr.htm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_site/resources/blog/bstutorial/template/trybs_temp_portfolio_ifr.htm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_site/resources/blog/bstutorial/template/trybs_temp_social_ifr.htm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_site/resources/blog/bstutorial/template/trybs_temp_store_ifr.htm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_site/resources/blog/bstutorial/template/trybs_temp_webpage_ifr.htm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_site/resources/blog/bstutorial/theme/band/banner1.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_site/resources/blog/bstutorial/theme/band/banner2.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_site/resources/blog/bstutorial/theme/band/banner3.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_site/resources/blog/bstutorial/theme/band/dh.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_site/resources/blog/bstutorial/theme/band/eagles.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_site/resources/blog/bstutorial/theme/band/gf.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_site/resources/blog/bstutorial/theme/band/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_site/resources/blog/bstutorial/theme/band/jw.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_site/resources/blog/bstutorial/theme/band/logo.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_site/resources/blog/bstutorial/theme/band/newyork.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_site/resources/blog/bstutorial/theme/band/paris.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_site/resources/blog/bstutorial/theme/band/sanfran.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_site/resources/blog/bstutorial/theme/band/tbs.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_site/resources/blog/bstutorial/theme/company/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_site/resources/blog/bstutorial/theme/company/ipad.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_site/resources/blog/bstutorial/theme/company/iphone.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_site/resources/blog/bstutorial/theme/company/macbook.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_site/resources/blog/bstutorial/theme/simply_me/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_site/resources/blog/bstutorial/theme/simply_me/ms_1.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_site/resources/blog/bstutorial/theme/simply_me/ms_2.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_site/resources/blog/bstutorial/theme/simply_me/ms_3.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_site/resources/blog/bstutorial/theme/simply_me/wm_avatar.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_site/resources/blog/bstutorial/theme/syntax.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_site/resources/blog/bstutorial/well/basic.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_site/resources/blog/bstutorial/well/size.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_site/resources/cv/cv_Xieyang_Liu.pdf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_site/resources/cv/main.pdf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_site/resources/cv/resume_Xieyang Liu.pdf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_site/resources/cv/resume_Xieyang_Liu.pdf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_site/resources/files/denso/dimension-line-tool/app.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_site/resources/files/denso/dimension-line-tool/dimension-line.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_site/resources/files/denso/dimension-line-tool/images/1.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_site/resources/files/denso/dimension-line-tool/images/2.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_site/resources/files/denso/dimension-line-tool/images/3.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_site/resources/files/denso/dimension-line-tool/images/4.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_site/resources/files/denso/dimension-line-tool/images/5.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_site/resources/files/denso/dimension-line-tool/images/6.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_site/resources/files/denso/dimension-line-tool/images/7.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_site/resources/files/denso/dimension-line-tool/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_site/resources/files/denso/dimension-line-tool/static/css/main.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_site/resources/files/denso/dimension-line-tool/static/images/delete.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_site/resources/files/denso/dimension-line-tool/static/images/draw.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_site/resources/files/denso/dimension-line-tool/static/images/modify.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_site/resources/files/denso/dimension-line-tool/static/images/raw.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_site/resources/files/denso/dimension-line-tool/static/images/reset.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_site/resources/files/denso/dimension-line-tool/static/images/reset_all.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_site/resources/files/denso/dimension-line-tool/static/images/toyota.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_site/resources/files/denso/dimension-line-tool/static/js/dimension-line.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_site/resources/files/denso/dimension-line-tool/static/js/main.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_site/resources/files/denso/dimension-line-tool/static/js/mturk.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_site/resources/files/denso/dimension-line-tool/templates/base.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_site/resources/files/denso/dimension-line-tool/templates/child.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_site/resources/files/denso/dimension-line-tool/templates/hitbegins.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_site/resources/files/denso/dimension-line-tool/templates/hitcontents.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_site/resources/files/denso/dimension-line-tool/templates/instructions.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_site/resources/files/denso/dimension-line-tool/templates/js.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_site/resources/files/denso/dimension-line-tool/test_dimension_line.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_site/resources/files/denso/dimension-line-tool/test_dimension_line_multiple.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_site/resources/files/easydraw/memo-proposal.pdf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_site/resources/files/teaching/crash_recovery.pdf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_site/resources/files/vv255/rc_00_introduction.pdf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_site/resources/files/vv255/rc_00_introduction.tex" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_site/resources/files/vv255/rc_01_lecture_1_2_3.pdf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_site/resources/files/vv255/rc_01_lecture_1_2_3.tex" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_site/resources/files/vv255/rc_02_lecture_4_5.pdf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_site/resources/files/vv255/rc_02_lecture_4_5.tex" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_site/resources/files/vv255/rc_03_lecture_4_5_6_7.pdf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_site/resources/files/vv255/rc_03_lecture_4_5_6_7.tex" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_site/resources/files/vv255/rc_04_lecture_8_9.pdf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_site/resources/files/vv255/rc_04_lecture_8_9.tex" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_site/resources/files/vv255/rc_05_lecture_10_11.pdf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_site/resources/files/vv255/rc_05_lecture_10_11.tex" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_site/resources/files/vv255/rc_06_lecture_12_13_14.pdf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_site/resources/files/vv255/rc_06_lecture_12_13_14.tex" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_site/resources/files/vv255/rc_07_lecture_15_16_17_18_19.pdf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_site/resources/files/vv255/rc_07_lecture_15_16_17_18_19.tex" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_site/resources/files/vv255/rc_09_lecture_20_21.pdf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_site/resources/files/vv255/rc_09_lecture_20_21.tex" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_site/resources/files/vv255/rc_10_lecture_22_23.pdf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_site/resources/files/vv255/rc_10_lecture_22_23.tex" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_site/resources/files/vv255/rc_11_lecture_24_25_26_27_28.pdf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_site/resources/files/vv255/rc_11_lecture_24_25_26_27_28.tex" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_site/resources/files/works/Portable_Laser_Guitar.pdf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_site/resources/files/works/Portable_Laser_Guitar_Poster.pdf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_site/resources/files/works/drawing_bounding_boxes_1.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_site/resources/files/works/drawing_bounding_boxes_2.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_site/resources/files/works/drawing_bounding_boxes_3.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_site/resources/files/works/images/bike1.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_site/resources/files/works/images/bike2.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_site/resources/files/works/images/bike3.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_site/resources/files/works/images/bike4.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_site/resources/files/works/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_site/resources/files/works/mcm_2015.pdf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_site/resources/files/works/mcm_2015.tex" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_site/resources/files/works/mcm_2015_certificate.pdf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_site/resources/files/works/rc_00_introduction.pdf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_site/resources/files/works/rc_00_introduction.tex" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_site/resources/files/works/rc_01_lecture_1_2_3.pdf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_site/resources/files/works/rc_01_lecture_1_2_3.tex" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_site/resources/files/works/rc_02_lecture_4_5.pdf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_site/resources/files/works/rc_02_lecture_4_5.tex" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_site/resources/files/works/rc_03_lecture_4_5_6_7.pdf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_site/resources/files/works/rc_03_lecture_4_5_6_7.tex" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_site/resources/files/works/rc_04_lecture_8_9.pdf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_site/resources/files/works/rc_04_lecture_8_9.tex" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_site/resources/files/works/rc_05_lecture_10_11.pdf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_site/resources/files/works/rc_05_lecture_10_11.tex" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_site/resources/files/works/rc_06_lecture_12_13_14.pdf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_site/resources/files/works/rc_06_lecture_12_13_14.tex" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_site/resources/files/works/rc_07_lecture_15_16_17_18_19.pdf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_site/resources/files/works/rc_07_lecture_15_16_17_18_19.tex" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_site/resources/files/works/rc_09_lecture_20_21.pdf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_site/resources/files/works/rc_09_lecture_20_21.tex" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_site/resources/files/works/rc_10_lecture_22_23.pdf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_site/resources/files/works/rc_10_lecture_22_23.tex" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_site/resources/files/works/rc_11_lecture_24_25_26_27_28.pdf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_site/resources/files/works/rc_11_lecture_24_25_26_27_28.tex" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_site/resources/files/works/simpleamt.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_site/resources/images/cmu.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_site/resources/images/croma-lab_logo_um-clear.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_site/resources/images/flight_deck_intrepid.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_site/resources/images/flight_deck_intrepid_compressed.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_site/resources/images/flight_deck_intrepid_compressed.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_site/resources/images/hcii-cmu.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_site/resources/images/hcii-logo-big.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_site/resources/images/homepagelogo.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_site/resources/images/sitelogo-compressed.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_site/resources/images/sitelogo-original.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_site/resources/images/themes.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_site/resources/images/works/3dsspp/3dsspp.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_site/resources/images/works/3dsspp/3dsspp.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_site/resources/images/works/crowd_ml/Screen Shot 2016-10-23 at 1.24.29 AM.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_site/resources/images/works/crowd_ml/Screen Shot 2016-10-23 at 1.25.13 AM.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_site/resources/images/works/crowd_ml/Screen Shot 2016-10-23 at 1.32.40 AM.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_site/resources/images/works/crowd_ml/instructions.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_site/resources/images/works/crowd_ml/interface.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_site/resources/images/works/crowd_ml/interface_micro.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_site/resources/images/works/denso/Screen Shot 2016-10-23 at 1.38.32 AM.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_site/resources/images/works/denso/Screen Shot 2016-10-23 at 1.39.33 AM.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_site/resources/images/works/denso/Screen Shot 2016-11-07 at 11.24.02 PM.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_site/resources/images/works/denso/vatic.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_site/resources/images/works/denso/workflow.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_site/resources/images/works/easydraw/Slide1.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_site/resources/images/works/easydraw/Slide2.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_site/resources/images/works/easydraw/gif.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_site/resources/images/works/easydraw/gif1.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_site/resources/images/works/easydraw/icon.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_site/resources/images/works/easydraw/interface-new.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_site/resources/images/works/easydraw/interface.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_site/resources/images/works/easydraw/interface.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_site/resources/images/works/easydraw/interface_illustration.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_site/resources/images/works/easydraw/team.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_site/resources/images/works/eecs484/eecs484_teaching_preview.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_site/resources/images/works/guitar/preview_guitar_1.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_site/resources/images/works/guitar/preview_guitar_2.GIF" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_site/resources/images/works/img-rec/preview_amazon_project_1.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_site/resources/images/works/img-rec/step1_1.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_site/resources/images/works/img-rec/step1_2.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_site/resources/images/works/mcm/preview_mcm.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_site/resources/images/works/mcm/preview_mcm_2.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_site/resources/images/works/travelife/preview_travel_life_1.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_site/resources/images/works/travelife/preview_travel_life_2.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_site/resources/images/works/travelife/preview_travel_life_3.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_site/resources/images/works/vv255/preview_lecture_slides.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_site/resources/images/works/vv255/preview_michael_giving_lecture.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_site/resources/js/help.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_site/resources/js/typed.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_site/resume.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_site/skills.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_site/works.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_site/works/img-rec.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_site/works/img-rec.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_site/works/mcm.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_site/works/mcm.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_site/works/portable-laser-guitar.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_site/works/travelife.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_site/works/travelife.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_site/works/vv255.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_site/works/vv255.md" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -15,81 +327,21 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="default.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/_layouts/default.html">
+      <file leaf-file-name="commit.sh" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/commit.sh">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="216">
-              <caret line="12" column="6" lean-forward="false" selection-start-line="12" selection-start-column="6" selection-end-line="12" selection-end-column="6" />
+            <state relative-caret-position="162">
+              <caret line="9" column="23" lean-forward="true" selection-start-line="9" selection-start-column="23" selection-end-line="9" selection-end-column="23" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="page.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/_layouts/page.html">
+      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="works.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/_layouts/works.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="head.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/_includes/head.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="252">
-              <caret line="14" column="13" lean-forward="true" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="footer.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/_includes/footer.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="gototop.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/_includes/gototop.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="sidebar.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/_includes/sidebar.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="17" column="46" lean-forward="false" selection-start-line="17" selection-start-column="46" selection-end-line="17" selection-end-column="46" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="typed.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/_includes/typed.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="18">
+              <caret line="1" column="4" lean-forward="true" selection-start-line="1" selection-start-column="4" selection-end-line="1" selection-end-column="4" />
               <folding />
             </state>
           </provider>
@@ -109,9 +361,10 @@
         <option value="$PROJECT_DIR$/public/css/main.css" />
         <option value="$PROJECT_DIR$/projects.html" />
         <option value="$PROJECT_DIR$/_projects/hico.md" />
-        <option value="$PROJECT_DIR$/commit.sh" />
         <option value="$PROJECT_DIR$/_includes/head.html" />
         <option value="$PROJECT_DIR$/public/css/lxieyang.css" />
+        <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/commit.sh" />
       </list>
     </option>
   </component>
@@ -145,7 +398,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -158,55 +410,10 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="lxieyang.github.io" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="lxieyang.github.io" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="public" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="css" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="lxieyang.github.io" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="lxieyang.github.io" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="_layouts" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="lxieyang.github.io" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="lxieyang.github.io" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="_includes" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
       <pane id="Scratches" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -303,17 +510,18 @@
       <workItem from="1489344471008" duration="2000" />
       <workItem from="1490659862881" duration="1376000" />
       <workItem from="1492049132384" duration="19000" />
+      <workItem from="1495013064371" duration="267000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="3422000" />
+    <option name="totallyTimeSpent" value="3689000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="22" width="1280" height="774" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18578352" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18820679" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -343,351 +551,66 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/_layouts/default.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_layouts/page.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_layouts/works.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_includes/head.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="14" column="13" lean-forward="true" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_includes/footer.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_includes/gototop.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_includes/sidebar.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="17" column="46" lean-forward="false" selection-start-line="17" selection-start-column="46" selection-end-line="17" selection-end-column="46" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_includes/typed.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_site/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_includes/head.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="16" column="0" lean-forward="false" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/projects.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1908">
-          <caret line="106" column="26" lean-forward="false" selection-start-line="106" selection-start-column="26" selection-end-line="106" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_projects/denso.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_projects/hico.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="0">
-            <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/css/main.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3330">
-          <caret line="185" column="21" lean-forward="false" selection-start-line="185" selection-start-column="21" selection-end-line="185" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_config.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="14" column="18" lean-forward="false" selection-start-line="14" selection-start-column="18" selection-end-line="14" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_site/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_includes/head.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="16" column="0" lean-forward="false" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/projects.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1908">
-          <caret line="106" column="26" lean-forward="false" selection-start-line="106" selection-start-column="26" selection-end-line="106" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_projects/denso.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_projects/hico.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="0">
-            <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/css/main.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3330">
-          <caret line="185" column="21" lean-forward="false" selection-start-line="185" selection-start-column="21" selection-end-line="185" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_config.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="14" column="18" lean-forward="false" selection-start-line="14" selection-start-column="18" selection-end-line="14" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_site/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_includes/head.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_config.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="14" column="18" lean-forward="false" selection-start-line="14" selection-start-column="18" selection-end-line="14" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_site/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_includes/head.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_config.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" column="18" lean-forward="false" selection-start-line="14" selection-start-column="18" selection-end-line="14" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/_layouts/default.html" />
+    <entry file="file://$PROJECT_DIR$/_layouts/page.html" />
+    <entry file="file://$PROJECT_DIR$/_layouts/works.html" />
+    <entry file="file://$PROJECT_DIR$/_includes/head.html" />
+    <entry file="file://$PROJECT_DIR$/_includes/footer.html" />
+    <entry file="file://$PROJECT_DIR$/_includes/gototop.html" />
+    <entry file="file://$PROJECT_DIR$/_includes/sidebar.html" />
+    <entry file="file://$PROJECT_DIR$/_includes/typed.html" />
+    <entry file="file://$PROJECT_DIR$/_site/index.html" />
+    <entry file="file://$PROJECT_DIR$/_includes/head.html" />
+    <entry file="file://$PROJECT_DIR$/projects.html" />
+    <entry file="file://$PROJECT_DIR$/_projects/denso.html" />
+    <entry file="file://$PROJECT_DIR$/_projects/hico.md" />
+    <entry file="file://$PROJECT_DIR$/public/css/main.css" />
+    <entry file="file://$PROJECT_DIR$/_config.yml" />
+    <entry file="file://$PROJECT_DIR$/_site/index.html" />
+    <entry file="file://$PROJECT_DIR$/_includes/head.html" />
+    <entry file="file://$PROJECT_DIR$/projects.html" />
+    <entry file="file://$PROJECT_DIR$/_projects/denso.html" />
+    <entry file="file://$PROJECT_DIR$/_projects/hico.md" />
+    <entry file="file://$PROJECT_DIR$/public/css/main.css" />
+    <entry file="file://$PROJECT_DIR$/_config.yml" />
+    <entry file="file://$PROJECT_DIR$/_site/index.html" />
+    <entry file="file://$PROJECT_DIR$/_includes/head.html" />
+    <entry file="file://$PROJECT_DIR$/_config.yml" />
+    <entry file="file://$PROJECT_DIR$/_site/index.html" />
+    <entry file="file://$PROJECT_DIR$/_includes/head.html" />
+    <entry file="file://$PROJECT_DIR$/_config.yml" />
+    <entry file="file://$PROJECT_DIR$/.gitignore" />
+    <entry file="file://$PROJECT_DIR$/_projects/hico.md" />
+    <entry file="file://$PROJECT_DIR$/_projects/denso.html" />
+    <entry file="file://$PROJECT_DIR$/projects.html" />
+    <entry file="file://$PROJECT_DIR$/_site/index.html" />
+    <entry file="file://$PROJECT_DIR$/public/css/main.css" />
+    <entry file="file://$PROJECT_DIR$/_config.yml" />
+    <entry file="file://$PROJECT_DIR$/_includes/footer.html" />
+    <entry file="file://$PROJECT_DIR$/_includes/gototop.html" />
+    <entry file="file://$PROJECT_DIR$/_includes/typed.html" />
+    <entry file="file://$PROJECT_DIR$/_includes/sidebar.html" />
+    <entry file="file://$PROJECT_DIR$/_layouts/page.html" />
+    <entry file="file://$PROJECT_DIR$/_layouts/works.html" />
+    <entry file="file://$PROJECT_DIR$/_layouts/default.html" />
+    <entry file="file://$PROJECT_DIR$/public/js/lxieyang.js" />
+    <entry file="file://$PROJECT_DIR$/_includes/head.html" />
+    <entry file="file://$PROJECT_DIR$/public/css/lxieyang.css" />
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_projects/hico.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="FIRST">
-          <first_editor relative-caret-position="152">
-            <caret line="47" column="0" lean-forward="true" selection-start-line="47" selection-start-column="0" selection-end-line="47" selection-end-column="0" />
-          </first_editor>
-          <second_editor />
+        <state relative-caret-position="18">
+          <caret line="1" column="4" lean-forward="true" selection-start-line="1" selection-start-column="4" selection-end-line="1" selection-end-column="4" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/commit.sh">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="19" column="0" lean-forward="true" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_projects/denso.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="8" column="21" lean-forward="true" selection-start-line="8" selection-start-column="21" selection-end-line="8" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/projects.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="565">
-          <caret line="106" column="26" lean-forward="false" selection-start-line="106" selection-start-column="26" selection-end-line="106" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_site/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="18">
-          <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/css/main.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="565">
-          <caret line="185" column="21" lean-forward="false" selection-start-line="185" selection-start-column="21" selection-end-line="185" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_config.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="14" column="18" lean-forward="false" selection-start-line="14" selection-start-column="18" selection-end-line="14" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_includes/footer.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="162">
+          <caret line="9" column="23" lean-forward="true" selection-start-line="9" selection-start-column="23" selection-end-line="9" selection-end-column="23" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/_includes/gototop.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_includes/typed.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_includes/sidebar.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="17" column="46" lean-forward="false" selection-start-line="17" selection-start-column="46" selection-end-line="17" selection-end-column="46" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_layouts/page.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_layouts/works.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_layouts/default.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="12" column="6" lean-forward="false" selection-start-line="12" selection-start-column="6" selection-end-line="12" selection-end-column="6" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/js/lxieyang.js" />
-    <entry file="file://$PROJECT_DIR$/_includes/head.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="14" column="13" lean-forward="true" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/css/lxieyang.css" />
   </component>
 </project>
