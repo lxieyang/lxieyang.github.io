@@ -1,0 +1,106 @@
+<!-- Container Instructions -->
+<div class="container instruction" id="instruction">
+    <div class="panel panel-primary">
+        <!-- Heading -->
+        <div class="panel-heading">
+            <a data-toggle="collapse" href="#collapse1"><strong>Instructions &mdash; IMPORTANT: Read Before You Start</strong></a>
+        </div>
+
+        <!-- Body -->
+        <div id="collapse1" class="panel-collapse collapse in">
+            <div class="panel-body">
+                <p>In this HIT, you will be provided with images of vehicles in a real-road setting. Your job is to <u>mark different dimensions: the <strong>width</strong>, <strong>length</strong>, and <strong>height</strong> of the vehicles using the tool we provided</u>.</p>
+                <p><strong>Specifically:</strong></p>
+                <p><strong><a href="#step-1" data-toggle="collapse">Step 1: Draw dimension lines</a></strong></p>
+                <div id="step-1" class="collapse in">
+                    <p>
+                        First click on <button class="btn btn-default width" style="background-color: rgb(195, 49, 32); color: white; width: 80px; font-size: 1.0em;">Width</button>, and then draw dimension lines you think that can indicate the <u>width</u> of the vehicle on the canvas. To draw a dimension line:
+                        <ol>
+                            <li>Press and hold the left key of your mouse to initiate a starting point.</li>
+                            <li>Hold the left key down and move the cursor across the canvas to form a line.</li>
+                            <li>Release the left key when you reach the end point. A <span style="background-color: rgb(195, 49, 32); padding: 2px; color: #fff; border-radius: 3px">red</span> line will then be set on canvas.</li>
+                            <li><strong>Repeat the above steps to draw new lines that you think can also represent the <u>width</u> of the car</strong>.</li>
+                        </ol>
+                    </p>
+                    <p>
+                        When you are finished with <u>width</u>, please move on to <u>length</u> and <u>height</u> by clicking on <button class="btn btn-default width" style="background-color: rgb(0, 240, 0); color: black; width: 80px; font-size: 1.0em;">Length</button> and <button class="btn btn-default width" style="background-color: rgb(0, 0, 255); color: white; width: 80px; font-size: 1.0em;">Height</button> and carry out the same steps as above. The dimension you are currently working on will be indicated with a <span style="background-color: purple; padding: 2px; color: #fff; border-radius: 3px;">purple</span> shadow.
+                    </p>
+                    <p>For example:</p>
+                    <img class="tutorial-img" src="./static/images/draw.gif" alt="tutorial-1">
+                </div>
+                <br>
+                <p><strong><a href="#step-2" data-toggle="collapse">Step 2: Fine tune the dimension lines</a></strong></p>
+                <p>
+                <div id="step-2" class="collapse in">
+                    <p>If you find some of the dimension lines you drew in the first step is not accurate enough, say one of the lines for <u>height</u>, you can modify in the following way:</p>
+                    <ol>
+                        <li>
+                            Click <button class="btn btn-default width" style="background-color: rgb(0, 0, 255); color: white; width: 80px; font-size: 1.0em;">Height</button> to select to work on <u>height</u>.
+                        </li>
+                        <li>
+                            To <strong>adjust</strong> the position of a particular dimension line:
+                            <ul>
+                                <li>Move the cursor across the canvas to either end points of that line. The end point you chose will grow bigger upon cursor hovering.</li>
+                                <li>Click and hold the left key of the mouse and move the end point to a more precise location on canvas.</li>
+                            </ul>
+                        </li>
+                        <li>
+                            To <strong>delete</strong> a particular dimension line:
+                            <ul>
+                                <li>Move the cursor across the canvas. When you move close to a <span style="background-color: blue; padding: 2px; color: #fff; border-radius: 3px">blue</span> dimension line representing the <u>height</u>, it will be <u>highlighted</u> with a glowing <span style="background-color: yellow; padding: 2px; color: #000; border-radius: 3px">yellow</span> border. Click the left key of the mouse to select that dimension line.</li>
+                                <li>
+                                    Click on <button class="btn btn-small btn-default delete-current" >Delete Highlighted Dimension Line</button> to delete this dimension line.
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            To <strong>Reset</strong> everything for a dimension (in this case, <u>height</u>):
+                            <ul>
+                                <li>Make sure you are have selected the current working dimension (indicated with a <span style="background-color: purple; padding: 2px; color: #fff; border-radius: 3px;">purple</span> shadow), and then click <button class="btn btn-small btn-default reset-annotation" >Reset Current Dimension</button> to remove everything for the current dimension.</li>
+                            </ul>
+                        </li>
+                        <li>
+                            To <strong>Reset</strong> everything for <strong>ALL</strong> dimensions:
+                            <ul>
+                                <li>
+                                    Click <button class="btn btn-small btn-default reset-annotation-all" >Reset all</button>. <strong>Note that this will erase everything you've worked on so far for the current image. Please be careful!</strong>
+                                </li>
+                            </ul>
+                        </li>
+                    </ol>
+                    <p>For example:</p>
+                    <div class="row tutorial-img-wrapper">
+                        <div class="col-sm-6">
+                            <img class="tutorial-img-2" src="./static/images/modify.gif" alt="tutorial">
+                            <p style="text-align: center;"><strong>Modify</strong></p>
+                        </div>
+                        <div class="col-sm-6">
+                            <img class="tutorial-img-2" src="./static/images/delete.gif" alt="tutorial">
+                            <p style="text-align: center;"><strong>Delete</strong></p>
+                        </div>
+                    </div><br>
+                    <div class="row tutorial-img-wrapper">
+                        <div class="col-sm-6">
+                            <img class="tutorial-img-2" src="./static/images/reset.gif" alt="tutorial">
+                            <p style="text-align: center;"><strong>Reset</strong></p>
+                        </div>
+                        <div class="col-sm-6">
+                            <img class="tutorial-img-2" src="./static/images/reset_all.gif" alt="tutorial">
+                            <p style="text-align: center;"><strong>Reset all</strong></p>
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <p>
+                    There are altogether 7 images in this HIT. Please click on <strong>Next</strong> to navigate to the next image when finished with the current one. You could always go back to previous batches by clicking on <strong>Previous</strong>.
+                </p>
+                <p>
+                    <em>We highly recommend playing with the system for a while before actually starting the HIT. You will be paid for this period of learning process.</em>
+                </p>
+            </div>
+        </div>
+    </div>
+</div> 		<!-- End Instructions -->
+
+
+<!--  -->

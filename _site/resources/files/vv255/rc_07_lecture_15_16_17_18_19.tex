@@ -1,0 +1,311 @@
+\documentclass[10pt]{beamer}
+\usetheme{default}
+\usepackage{float}
+\usepackage{animate}
+\usepackage{amsmath}
+
+\usepackage{esvect}
+%\usepackage[T1]{fontenc}
+
+%IndentfFirst 
+%\usepackage{indentfirst}
+%\setlength{\parindent}{2em}
+%\setlength{\parskip}{2em}
+
+
+%Geometry
+\usepackage{geometry}
+\geometry{left = 0.25in,right = 0.25in}
+
+
+
+%Adjust frametitle position (height,lateral position, etc)
+\defbeamertemplate*{frametitle}{smoothbars theme}
+{%
+	%\nointerlineskip%
+	\begin{beamercolorbox}[wd=\paperwidth,leftskip=.5cm,rightskip=.3cm plus1fil,vmode]{frametitle}
+		\vskip +4.5ex
+		\usebeamerfont*{frametitle}\insertframetitle%
+		\vskip -0.9ex
+	\end{beamercolorbox}%
+}
+
+
+\begin{document}
+
+
+%headline
+
+\setbeamertemplate{headline}{
+\parbox{\linewidth}{\vspace*{8pt}\centering{ 
+		    {\color{blue!40!black}\insertsection}
+		}
+	}
+}
+
+
+%footline
+\setbeamertemplate{footline}[text line]{%
+	\color{blue!40!black}\parbox{\linewidth}{\vspace*{-8pt}Michael Liu ~ (\insertshortinstitute)\hfill\insertshorttitle\hfill\insertshortdate~~~~~~\insertframenumber{}~/~\inserttotalframenumber}}
+
+%Remove navigation symbols
+\setbeamertemplate{navigation symbols}{}
+
+\setbeamertemplate{frametitle continuation}[from second] 
+
+\newcommand{\tabincell}[2]{\begin{tabular}{@{}#1@{}}#2\end{tabular}}
+
+%\let\oldframe\frame\renewcommand\frame[1][allowframebreaks]{\oldframe[#1]}
+
+%Title page	
+\title[Vv255 Applied Calculus III]{Vv255 Applied Calculus III\\{\small Recitation VII}}   
+\author[Michael Liu]{LIU Xieyang\\{\tiny Teaching Assistant}} 
+\institute[UM-SJTU JI]{University of Michigan - Shanghai Jiaotong University \\Joint Institute}
+\date[Summer 2015]{Summer Term 2015} 
+\begin{frame}
+	\titlepage
+\end{frame}
+
+%Table of Contents (All)
+%\begin{frame}
+%	\frametitle{Table of Contents}
+%	\tableofcontents
+%\end{frame}
+
+%Table of contents (before, highlight each section)
+\AtBeginSection[]{
+	\begin{frame}
+		\frametitle{Table of Contents}
+		\frametitle{Contents}
+		\tableofcontents[currentsection]
+	\end{frame}}
+
+
+
+
+%section
+\section{Lecture 15: Double Integral} 
+
+
+
+\begin{frame}[allowframebreaks]{Double Integral}
+	\begin{figure}[H]
+		\centering
+		\includegraphics[scale = 0.26]{doublepartition}
+	\end{figure}
+	Net signed volume:
+	$$\iint\limits_{D} f(x,y) dA = \lim\limits_{n\rightarrow \infty}\sum_{i}^{n}f(x_i^*,y_i^*)\Delta A_i$$
+A function $f (x, y)$ is called {\color{red} integrable} if the limit actually exists and that its
+value does not depend on the choice of the partition.
+\end{frame}
+
+\begin{frame}[allowframebreaks]{Fubini's Theorem}
+	\begin{figure}[H]
+		\centering
+		\includegraphics[scale = 0.45]{fubini}
+	\end{figure}
+	When $f (x, y)$ can be factored as the product of a function of $x$ only and a
+	function of $y$ only, the double integral of $f$ can be written in a simple form.
+	$$\iint\limits_{D} f(x,y) dA  = \int_{a}^{b} g(x) dx \int_{c}^{d}h(y)dy$$
+
+\end{frame}
+
+\begin{frame}[allowframebreaks]{Two Basic Types of Double Integral}
+	\begin{figure}[H]
+		\centering
+		\includegraphics[scale = 0.45]{typeiii}
+		\caption{Type I ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~Type II}
+	\end{figure}
+	$$\text{Type I: } ~~~ \iint\limits_D f(x,y)dA = \int_{a}^{b}\int_{g_1(x)}^{g_2(x)}f(x,y)dydx$$
+	$$\text{Type II: } ~~~ \iint\limits_D f(x,y)dA = \int_{c}^{d}\int_{h_1(x)}^{h_2(x)}f(x,y)dxdy$$
+
+	
+\end{frame}
+
+
+
+
+
+
+
+\section{Lecture 16: Applications of Double integral}
+
+\begin{frame}[allowframebreaks]{Double intergral in polar coordinates}
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale = 0.3]{polar}
+\end{figure}
+$$\iint\limits_R f(x,y)dA = \int_{\alpha}^{\beta}\int_{a}^{b}f(r\cos\theta,r\sin\theta)~{\color{red}\mathbf{r}}dr~d\theta$$
+\centering
+{$\color{red}\mathbf{r}$} is known as the {\color{red}metric coefficient}.
+	
+\end{frame}
+
+\begin{frame}[allowframebreaks]{Applications of Double integral}
+\begin{enumerate}
+	\item Volume \& area.
+	\item Average value
+	$$\text{Average value} ~= \dfrac{1}{A} \iint\limits_D f(x,y) dA$$
+	\item Total mass of a lamina (inhomogeneous)
+	$$m = \iint\limits_D \rho (x,y) dA$$
+	\item Center of mass/Center of gravity
+	$$\bar{x} = \dfrac{M_y}{m} = \dfrac{\iint\limits_D x\rho(x,y)dA}{\iint\limits_D\rho(x,y)dA} ~~~~~ \bar{y} = \dfrac{M_x}{m} = \dfrac{\iint\limits_D y\rho(x,y)dA}{\iint\limits_D\rho(x,y)dA}$$
+	where $M_y$ and $M_x$ are the moments w.r.t. to the $y$ and $x$ axes.
+	\item Centroid (the center of mass of a homogeneous lamina):
+	$$\bar{x} = \dfrac{\iint\limits_DxdA}{\iint\limits_DdA} = \dfrac{1}{\text{Area}} \iint\limits_DxdA ~~~~~ \bar{y} = \dfrac{\iint\limits_DydA}{\iint\limits_DdA} = \dfrac{1}{\text{Area}} \iint\limits_DydA$$
+	\item Surface area:
+	\begin{figure}[H]
+		\centering
+		\includegraphics[scale = 0.33]{surface1} ~~~\includegraphics[scale = 0.33]{surface2}
+	\end{figure}
+		\begin{figure}[H]
+			\centering
+			\includegraphics[scale = 0.33]{surface1} ~~~\includegraphics[scale = 0.33]{surface2}
+		\end{figure}
+		$$A(S) = \lim\limits_{m,n\rightarrow \infty} \sum_{i = 1}^{m}\sum_{j = 1}^{n}\Delta T_{ij}\lim\limits_{m,n\rightarrow \infty} \sum_{i = 1}^{m}\sum_{j = 1}^{n}\Delta ~|\mathbf{a}\times\mathbf{b}|$$
+		$$\includegraphics[scale = 0.3]{ab}$$
+			\begin{figure}[H]
+				\centering
+				\includegraphics[scale = 0.2]{surface1} ~~~\includegraphics[scale = 0.2]{surface2}
+			\end{figure}
+			$$\includegraphics[scale = 0.28]{tij}$$
+			$$\text{Therefore, }~~~A(S) = \iint\limits_D\sqrt{[f_x(x,y)]^2 + [f_y(x,y)]^2 + 1}~dA$$
+\end{enumerate}
+
+More advanced:
+\begin{enumerate}
+	\item Electric potential $V$
+	$$V = \dfrac{1}{4\pi\epsilon_0}\iint\limits_s\dfrac{\rho_s}{R}ds$$
+	\item $\cdots$
+\end{enumerate}
+	
+	
+\end{frame}
+
+
+
+
+
+
+
+
+
+
+
+
+\section{Lecture 17: Triple integral}
+
+\begin{frame}[allowframebreaks]{Triple integral \& Fubini's Theorem}
+	Triple integral:
+	$$\iiint\limits_Bf(x,y,z)dV = \lim\limits_{I,m,n\rightarrow\infty}\sum_{i = 1}^{I}\sum_{j = 1}^{m}\sum_{k = 1}^{n}f(x_{ijk}^*,y_{ijk}^*,z_{ijk}^*)\Delta V$$
+	\centering
+	Find the boundary expression!
+	$$$$
+	$$\includegraphics[scale = 0.45]{fubini3}$$
+\centering
+There are five other possible orders, all of which give the same value.
+\end{frame}
+
+
+
+
+
+
+
+
+\section{Lecture 18: Triple integral in Cylindrical and Spherical coordinates}
+
+\subsection{Intro. to Coordinate Systems}
+\begin{frame}[allowframebreaks]{Orthogonal Coordinate Systems}
+	\begin{itemize}
+		\item A tool to ease the solving process for problems
+		with certain geometry;
+		\item {\color{blue}A point in 3D space can be determined by the
+		intersection of three surfaces.}
+	\item If these three surfaces are {\color{red}mutually orthogonal} to
+	each other, this sets up an orthogonal coordinate
+	system.
+	$$\includegraphics[scale = 0.23]{coordinates}$$
+	$$\text{\small Point in space is an
+		intersection of
+		coordinate surfaces.}$$$$\text{\small To describe location of each
+		point in space we need 3
+		sets of surfaces.}$$
+	\item {\color{red} Unit vectors} are defined as the normal direction of each
+	coordinate surface.
+	\end{itemize}
+\end{frame}
+
+
+\begin{frame}[allowframebreaks]{Cartesian Coordinates}
+$$\includegraphics[scale = 0.4]{cartesian}$$
+$$(x,y,z)$$
+Coordinate system where all coordinate surfaces are planar is
+called {\color{red}Cartesian}. Note that in this system, the direction of
+coordinate vectors is the same at every point in space
+\end{frame}
+
+\begin{frame}[allowframebreaks]{Cylindrical Coordinates}
+	$$\includegraphics[scale = 0.4]{cy}$$
+	$$(\rho~(\text{or }~r),\phi~(\text{or}~\theta),z)$$
+In a cylindrical coordinate
+system, a cylindrical
+surface and two planar
+surfaces all orthogonal to
+each other define location
+of a point in space.
+\\The
+coordinate vectors are $\hat{\rho}~(\text{or}~\hat{r}), \hat{\phi}~(\text{or}~\hat{\theta}), \hat{z}$. Note, in this system the
+direction of coordinate
+vectors changes from point
+to point.
+\newpage
+$$\includegraphics[width = 2.3in]{cy2}\includegraphics[width = 2.3in, height = 1.9in]{cy3}$$
+\end{frame}
+
+
+\begin{frame}[allowframebreaks]{Spherical Coordinates}
+	$$\includegraphics[scale = 0.4]{sp}$$
+	$$(R~(\text{or }~\rho),\theta~(\text{or}~\phi),\phi~(\text{or} ~ \theta))$$
+	In a spherical coordinate
+	system the surfaces of
+	spheres, cones and planes are
+	coordinate surfaces. The
+	corresponding coordinate
+	vectors $(\hat{R}~(\text{or }~\hat{\rho}),\hat{\theta}~(\text{or}~\hat{\phi}),\hat{\phi}~(\text{or} ~ \hat{\theta}))$ also change their
+	direction from point to point.
+	\newpage
+	$$\includegraphics[width = 2.3in]{sp2}\includegraphics[width = 2.3in, height = 2.0in]{sp3}$$
+	
+\end{frame}
+
+\subsection{Triple integral in Cylindrical and Spherical coordinates}
+\begin{frame}[allowframebreaks]{Triple integral in Cylindrical and Spherical coordinates}
+Cylindrical:
+$$\iiint\limits_E f(r,\theta,z) ~dr~rd\theta ~dz = \iiint\limits_E f(r,\theta,z) \underline{r}drd\theta dz$$
+Spherical:
+$$\iiint\limits_E f(\rho,\phi,\theta)~d\rho ~ \rho d\phi ~ \rho\sin\phi d\theta = \iiint\limits_E f(\rho,\phi,\theta)\underline{\rho^2\sin\phi} d\rho d\theta d\phi$$
+The additional $r$ and $\rho^2\sin\phi$ can also be interpreted as {\color{red}Jacobian}.
+\end{frame}
+
+
+
+
+
+\section{Lecture 19: Jacobian}
+
+
+\begin{frame}[allowframebreaks]{Jacobian}
+Definition:\\
+\includegraphics[scale = 0.35]{j21}
+\\~\\Theorem:\\
+\includegraphics[scale = 0.35]{j22}
+\end{frame}
+
+
+\begin{frame}[allowframebreaks]{Jacobian}
+	Definition:\\
+	\includegraphics[scale = 0.39]{j31}
+\end{frame}
+
+\end{document}

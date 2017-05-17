@@ -1,0 +1,74 @@
+<form id="mturk_form" method="post" role="form">
+<div class="container hit-contents">
+
+    <div class="single-image">
+        <!-- CANVAS -->
+        <div class="activeObj">
+            <canvas class="cropped-image" width=600 height=400></canvas>
+        </div>
+
+        <!-- OPTIONS -->
+        <div class="options">
+            <button class="btn btn-small btn-default option delete-current" >Delete Highlighted Dimension Line</button>
+            <button class="btn btn-small btn-default option reset-annotation" >Reset Current Dimension</button>
+            <button class="btn btn-small btn-default option reset-annotation-all" >Reset all</button>
+        </div>
+
+        <!-- DIMENSIONS -->
+        <div class="dims">
+            <button class="btn btn-default btn-large dim dim-1" >Width</button>
+            <button class="btn btn-default btn-large dim dim-2" >Length</button>
+            <button class="btn btn-default btn-large dim dim-3" >Height</button>
+            <!--
+            <button class="btn btn-default dim dim-4" >Dimension 4</button>
+            <button class="btn btn-default dim dim-5" >Dimension 5</button>
+            <button class="btn btn-default dim dim-6" >Dimension 6</button>
+            <button class="btn btn-default dim dim-7" >Dimension 7</button>
+            -->
+        </div>
+    </div>
+
+    <!-- Navigation: previous / next -->
+    <div class="row counter-wrapper-row" align="center">
+       <div class="counter-wrapper">
+           <div class="row group-ctrl">
+               <div class="col-xs-6">
+                   <button id="prev-btn" class="btn btn-primary pull-right" href="#top-row">
+                       <span class="glyphicon glyphicon-chevron-left"></span>
+                       Previous
+                   </button>
+               </div>
+               <div class="col-xs-6">
+                   <button id="next-btn" class="btn btn-primary pull-left" href="#top-row">
+                       Next
+                       <span class="glyphicon glyphicon-chevron-right"></span>
+                   </button>
+                   <br>
+               </div>
+           </div>
+           <div class="row">
+               <div class="col-xs-12 counter">
+                   <p style="text-align: center;"><span class="counter-top">01</span> / <span class="counter-bottom">07</span></p>
+               </div>
+           </div>
+       </div>
+    </div>  <!-- previous / next -->
+
+
+
+    <!-- COMMENTS -->
+    <div class="comments">
+        <p class="prompt">
+            How do you think we can improve this task? [<strong>Optional</strong>]
+        </p>
+        <textarea class="form-control" rows="5" id="improvement" placeholder="Please put your suggestions here."></textarea>
+    </div>
+
+
+    <div class="submit-button-wrapper">
+        <button type="button" name="submit" value="Submit" class="btn btn-success" id="submit-btn">Submit</button>
+    </div>
+
+
+</div>
+</form>

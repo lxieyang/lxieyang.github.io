@@ -1,0 +1,2031 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+
+<link href="http://gmpg.org/xfn/11" rel="profile">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+<!-- Enable responsiveness on mobile devices-->
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+<title>
+  
+    Bootstrap Tutorial &middot; Xieyang Liu
+  
+</title>
+
+<!-- CSS -->
+<link rel="stylesheet" href="/public/css/bootstrap_gridsystem.css">
+<link rel="stylesheet" href="/public/css/bootstrap.css">
+<link rel="stylesheet" href="/public/css/poole.css">
+<link rel="stylesheet" href="/public/css/syntax.css">
+<link rel="stylesheet" href="/public/css/hyde.css">
+<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=PT+Sans:400,400italic,700|Abril+Fatface">
+<link rel="stylesheet" href="/public/css/main.css">
+
+<!-- Icons -->
+<link rel="sitelogo-original" sizes="213x213" href="/resources/images/sitelogo-original.png">
+<link rel="shortcut icon" href="/resources/images/sitelogo-compressed.png">
+
+<!-- RSS -->
+<link rel="alternate" type="application/rss+xml" title="RSS" href="/atom.xml">
+
+<!-- JavaScript --> <!-- Javascript files stay in header for performance -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+<script src="/resources/js/help.js"></script>
+<script src="/resources/js/typed.js"></script>
+
+</head>
+
+
+<body onload="lastUpdate()">
+
+<div class="sidebar">
+  <div class="container sidebar-sticky">
+    <div class="sidebar-about">
+      <img class="img-circle" src="/resources/images/homepagelogo.jpg"><br>
+      <h1>
+        <a href="/" class="site-title">
+          Xieyang Liu
+        </a>
+      </h1>
+      <p class="lead"><br></p>
+    </div>
+
+    <nav class="sidebar-nav">
+      <a class="sidebar-nav-item" href="/">Home</a>
+
+      
+
+      
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+          
+            
+              
+            
+          
+        
+      
+        
+          
+            
+              
+                
+                    <a class="sidebar-nav-item" href="/bio.html">Short Bio.</a>
+                
+              
+            
+          
+        
+      
+        
+          
+            
+              
+                
+                    <a class="sidebar-nav-item" href="/projects.html">Projects</a>
+                
+              
+            
+          
+        
+      
+        
+          
+            
+              
+                
+                    <a class="sidebar-nav-item" href="/experiences.html">Experiences</a>
+                
+              
+            
+          
+        
+      
+        
+          
+            
+              
+                
+                    <a class="sidebar-nav-item" href="/skills.html">Skill Set</a>
+                
+              
+            
+          
+        
+      
+        
+          
+            
+              
+                
+                    <a class="sidebar-nav-item" href="/blogs.html">Blogs</a>
+                
+              
+            
+          
+        
+      
+        
+          
+            
+              
+                
+                    <a class="sidebar-nav-item" href="/contact.html">Contact</a>
+                
+              
+            
+          
+        
+      
+
+      <br />
+      <a class="sidebar-nav-item" href="/resources/cv/resume_Xieyang_Liu.pdf">[Resume]</a>
+      <a class="sidebar-nav-item" href="/resources/cv/cv_Xieyang_Liu.pdf">[CV]</a>
+
+      <!--<a class="sidebar-nav-item" href="https://github.com/lxieyang/lxieyang.github.io/archive/v2.0.0.zip">Download</a>-->
+      <br />
+      <a class="sidebar-nav-item" href="https://github.com/lxieyang">GitHub</a>
+      <a class="sidebar-nav-item" href="https://www.linkedin.com/in/lxieyang">LinkedIn</a>
+      <a class="sidebar-nav-item" href="https://www.facebook.com/profile.php?id=100000519299083">Facebook</a>
+      <!--<span class="sidebar-nav-item">Currently v2.0.0</span>-->
+    </nav>
+
+    <p>&copy; 2017. All rights reserved.</p>
+  </div>
+</div>
+
+
+<div class="content container">
+  <div class="post">
+  <h1 class="post-title">Bootstrap Tutorial</h1>
+  <span class="post-date">22 Jun 2016</span>
+  <p><strong><em>This post will be updated on a weekly basis.</em></strong></p>
+
+<p><strong><em>Last update: July 1 2016.</em></strong></p>
+
+<h2 id="nbsp"> </h2>
+<p>##  </p>
+
+<h2 id="source">Source</h2>
+
+<h3 id="bootstrap-cdn">Bootstrap CDN</h3>
+
+<h4 id="maxcdn">MaxCDN:</h4>
+
+<div class="language-html highlighter-rouge"><pre class="highlight"><code><span class="c">&lt;!-- Latest compiled and minified CSS --&gt;</span>
+<span class="nt">&lt;link</span> <span class="na">rel=</span><span class="s">"stylesheet"</span> <span class="na">href=</span><span class="s">"http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"</span><span class="nt">&gt;</span>
+
+<span class="c">&lt;!-- jQuery library --&gt;</span>
+<span class="nt">&lt;script </span><span class="na">src=</span><span class="s">"https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"</span><span class="nt">&gt;&lt;/script&gt;</span>
+
+<span class="c">&lt;!-- Latest compiled JavaScript --&gt;</span>
+<span class="nt">&lt;script </span><span class="na">src=</span><span class="s">"http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"</span><span class="nt">&gt;&lt;/script&gt;</span>
+
+</code></pre>
+</div>
+
+<h4 id="one-advantage-of-using-the-bootstrap-cdn">One advantage of using the Bootstrap CDN:</h4>
+
+<p>Many users already have downloaded Bootstrap from MaxCDN when visiting another site. As a result, it will be loaded from cache when they visit your site, which leads to faster loading time. Also, most CDN’s will make sure that once a user requests a file from it, it will be served from the server closest to them, which also leads to faster loading time.</p>
+
+<h2 id="create-first-web-page-with-bootstrap">Create first web page with Bootstrap</h2>
+
+<ol>
+  <li>Add the HTML5 doctype</li>
+</ol>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>```html
+<span class="cp">&lt;!DOCTYPE html&gt;</span>
+<span class="nt">&lt;html</span> <span class="na">lang=</span><span class="s">"en"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;head&gt;</span>
+        <span class="nt">&lt;meta</span> <span class="na">charset=</span><span class="s">"utf-8"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;/head&gt;</span>
+<span class="nt">&lt;/html&gt;</span>
+```
+</code></pre>
+</div>
+
+<ol>
+  <li>Bootstrap 3 is mobile-first</li>
+</ol>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>```html
+&lt;meta name="viewport" content="width=device-width, initial-scale=1"&gt;
+```
+
+  The `width=device-width` part sets the width of the page to follow the screen-width of the device (which will vary depending on the device).
+
+  The `initial-scale=1` part sets the initial zoom level when the page is first loaded by the browser.
+</code></pre>
+</div>
+
+<ol>
+  <li>
+    <p>Containers</p>
+
+    <p>There are two container classes to choose from:</p>
+
+    <ol>
+      <li>
+        <p>The <code class="highlighter-rouge">.container</code> class provides a responsive fixed width container</p>
+      </li>
+      <li>
+        <p>The <code class="highlighter-rouge">.container-fluid</code> class provides a full width container, spanning the entire width of the viewport</p>
+      </li>
+    </ol>
+
+    <p><strong><em>Note</em></strong>: Containers are not nestable (you cannot put a container inside another container).</p>
+  </li>
+</ol>
+
+<h2 id="nbsp-1"> </h2>
+<p>##  </p>
+
+<h2 id="bootstrap-grid-system">Bootstrap Grid System</h2>
+
+<p>Bootstrap’s grid system allows up to 12 columns across the page.</p>
+
+<p>If you do not want to use all 12 column individually, you can group the columns together to create wider columns:</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>span 1	span 1	span 1	span 1	span 1	span 1	span 1	span 1	span 1	span 1	span 1	span 1
+span 4	 span 4	 span 4
+span 4	span 8
+span 6	span 6
+span 12
+</code></pre>
+</div>
+
+<p>Bootstrap’s grid system is <strong>responsive</strong>, and the columns will re-arrange depending on the screen size: On a <strong><em>big</em></strong> screen it might look better with the content organized in three columns, but on a <strong><em>small</em></strong> screen it would be better if the content items were stacked on top of each other.</p>
+
+<h3 id="grid-classes">Grid classes</h3>
+
+<p>The Bootstrap grid system has four classes:</p>
+
+<ol>
+  <li><code class="highlighter-rouge">xs</code> (for phones)</li>
+  <li><code class="highlighter-rouge">sm</code> (for tablets)</li>
+  <li><code class="highlighter-rouge">md</code> (for desktops)</li>
+  <li><code class="highlighter-rouge">lg</code> (for larger desktops)</li>
+</ol>
+
+<p>The classes above can be combined to create more dynamic and flexible layouts.</p>
+
+<p><strong>Tip</strong>: Each class scales up, so if you wish to set the same widths for <code class="highlighter-rouge">xs</code> and <code class="highlighter-rouge">sm</code>, you only need to specify <code class="highlighter-rouge">xs</code>.</p>
+
+<h3 id="basic-structure-of-a-bootstrap-grid">Basic Structure of a Bootstrap Grid</h3>
+
+<p>To create the layout you want, create a container (<code class="highlighter-rouge">&lt;div class="container"&gt;</code>). Next, create a row (<code class="highlighter-rouge">&lt;div class="row"&gt;</code>). Then, add the desired number of columns (tags with appropriate <code class="highlighter-rouge">.col-*-*</code> classes). Note that numbers in <code class="highlighter-rouge">.col-*-*</code> should always add up to 12 for each row.</p>
+
+<div class="language-html highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"container"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"row"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-*-*"</span><span class="nt">&gt;&lt;/div&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"row"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-*-*"</span><span class="nt">&gt;&lt;/div&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-*-*"</span><span class="nt">&gt;&lt;/div&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-*-*"</span><span class="nt">&gt;&lt;/div&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"row"</span><span class="nt">&gt;</span>
+  ...
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+</code></pre>
+</div>
+
+<h4 id="three-equal-columnsresourcesblogbstutorialgridsystemequalhtml"><a href="/resources/blog/bstutorial//gridSystem/equal.html">Three Equal Columns</a></h4>
+
+<p>The following example shows how to get a three equal-width columns starting at tablets and scaling to large desktops. On mobile phones, the columns will automatically stack:</p>
+
+<div class="language-html highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"row"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-sm-4"</span><span class="nt">&gt;</span>.col-sm-4<span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-sm-4"</span><span class="nt">&gt;</span>.col-sm-4<span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-sm-4"</span><span class="nt">&gt;</span>.col-sm-4<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+</code></pre>
+</div>
+
+<h4 id="two-unequal-columnsresourcesblogbstutorialgridsystemunequalhtml"><a href="/resources/blog/bstutorial//gridSystem/unequal.html">Two Unequal Columns</a></h4>
+<p>The following example shows how to get two various-width columns starting at tablets and scaling to large desktops:</p>
+
+<div class="language-html highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"row"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-sm-4"</span><span class="nt">&gt;</span>.col-sm-4<span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-sm-8"</span><span class="nt">&gt;</span>.col-sm-8<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+</code></pre>
+</div>
+
+<p>To read more about the bootstrap grid system, please refer to my dedicated post:</p>
+
+<h4 id="bootstrap-grid-system20160625bootstrap-grid-systemhtml"><a href="/2016/06/25/bootstrap-grid-system.html">Bootstrap Grid System</a></h4>
+
+<h2 id="nbsp-2"> </h2>
+<p>##  </p>
+
+<h2 id="bootstrap-texttypography">Bootstrap Text/Typography</h2>
+
+<h3 id="bootstraps-default-settings">Bootstrap’s Default Settings</h3>
+
+<p>Bootstrap’s global default font-size is <strong>14px</strong>, with a line-height of <strong>1.428</strong>.</p>
+
+<p>This is applied to the <code class="highlighter-rouge">&lt;body&gt;</code> and all paragraphs.</p>
+
+<p>In addition, all <code class="highlighter-rouge">&lt;p&gt;</code> elements have a bottom margin that equals half their computed line-height (10px by default).</p>
+
+<h4 id="h1---h6resourcesblogbstutorialtexttypographyheadinghtml"><a href="/resources/blog/bstutorial//Text_Typography/heading.html"><code class="highlighter-rouge">&lt;h1&gt; - &lt;h6&gt;</code></a></h4>
+
+<div class="language-html highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;h1&gt;</span>h1 Bootstrap heading (36px)<span class="nt">&lt;/h1&gt;</span>
+<span class="nt">&lt;h2&gt;</span>h2 Bootstrap heading (30px)<span class="nt">&lt;/h2&gt;</span>
+<span class="nt">&lt;h3&gt;</span>h3 Bootstrap heading (24px)<span class="nt">&lt;/h3&gt;</span>
+<span class="nt">&lt;h4&gt;</span>h4 Bootstrap heading (18px)<span class="nt">&lt;/h4&gt;</span>
+<span class="nt">&lt;h5&gt;</span>h5 Bootstrap heading (14px)<span class="nt">&lt;/h5&gt;</span>
+<span class="nt">&lt;h6&gt;</span>h6 Bootstrap heading (12px)<span class="nt">&lt;/h6&gt;</span>
+</code></pre>
+</div>
+
+<h4 id="smallresourcesblogbstutorialtexttypographysmallhtml"><a href="/resources/blog/bstutorial//Text_Typography/small.html"><code class="highlighter-rouge">&lt;small&gt;</code></a></h4>
+
+<p>In Bootstrap the HTML <code class="highlighter-rouge">&lt;small&gt;</code> element is used to create a lighter, secondary text in any heading:</p>
+
+<div class="language-html highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;h1&gt;</span>h1 heading <span class="nt">&lt;small&gt;</span>secondary text<span class="nt">&lt;/small&gt;&lt;/h1&gt;</span>
+<span class="nt">&lt;h2&gt;</span>h2 heading <span class="nt">&lt;small&gt;</span>secondary text<span class="nt">&lt;/small&gt;&lt;/h2&gt;</span>
+<span class="nt">&lt;h3&gt;</span>h3 heading <span class="nt">&lt;small&gt;</span>secondary text<span class="nt">&lt;/small&gt;&lt;/h3&gt;</span>
+<span class="nt">&lt;h4&gt;</span>h4 heading <span class="nt">&lt;small&gt;</span>secondary text<span class="nt">&lt;/small&gt;&lt;/h4&gt;</span>
+<span class="nt">&lt;h5&gt;</span>h5 heading <span class="nt">&lt;small&gt;</span>secondary text<span class="nt">&lt;/small&gt;&lt;/h5&gt;</span>
+<span class="nt">&lt;h6&gt;</span>h6 heading <span class="nt">&lt;small&gt;</span>secondary text<span class="nt">&lt;/small&gt;&lt;/h6&gt;</span>
+</code></pre>
+</div>
+
+<h4 id="markresourcesblogbstutorialtexttypographymarkhtml"><a href="/resources/blog/bstutorial//Text_Typography/mark.html"><code class="highlighter-rouge">&lt;mark&gt;</code></a></h4>
+
+<div class="language-html highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;p&gt;</span>Use the mark element to <span class="nt">&lt;mark&gt;</span>highlight<span class="nt">&lt;/mark&gt;</span> text.<span class="nt">&lt;/p&gt;</span>
+</code></pre>
+</div>
+
+<p><strong>Note that it is indeed possible to change the way <code class="highlighter-rouge">&lt;mark&gt;</code> looks on your webpage. To do so, simply put the relevant code in you customized <code class="highlighter-rouge">css</code> file overriding the original <code class="highlighter-rouge">css</code> style provided by <code class="highlighter-rouge">Bootstrap</code> itself. For example:</strong></p>
+
+<div class="language-css highlighter-rouge"><pre class="highlight"><code><span class="nc">.mark</span><span class="o">,</span> <span class="nt">mark</span> <span class="p">{</span>
+    <span class="nl">background-color</span><span class="p">:</span> <span class="no">red</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre>
+</div>
+
+<h4 id="abbrresourcesblogbstutorialtexttypographyabbrhtml"><a href="/resources/blog/bstutorial//Text_Typography/abbr.html"><code class="highlighter-rouge">&lt;abbr&gt;</code></a></h4>
+
+<p>Bootstrap will style the HTML <code class="highlighter-rouge">&lt;abbr&gt;</code> element in the following way:</p>
+
+<div class="language-html highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;p&gt;</span>A <span class="nt">&lt;abbr</span> <span class="na">title=</span><span class="s">"Unidentified Flying Object"</span><span class="nt">&gt;</span>UFO<span class="nt">&lt;/abbr&gt;</span> was reported to take Barack Obama back to Mars in 2017.<span class="nt">&lt;/p&gt;</span>
+</code></pre>
+</div>
+
+<h4 id="blockquoteresourcesblogbstutorialtexttypographyblockquotehtml"><a href="/resources/blog/bstutorial//Text_Typography/blockquote.html"><code class="highlighter-rouge">&lt;blockquote&gt;</code></a></h4>
+
+<div class="language-html highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;blockquote&gt;</span>
+  <span class="nt">&lt;p&gt;</span>For 50 years, WWF has been protecting the future of nature. The world's leading conservation organization, WWF works in 100 countries and is supported by 1.2 million members in the United States and close to 5 million globally.<span class="nt">&lt;/p&gt;</span>
+  <span class="nt">&lt;footer&gt;</span>From WWF's website<span class="nt">&lt;/footer&gt;</span>
+<span class="nt">&lt;/blockquote&gt;</span>
+</code></pre>
+</div>
+
+<p>To show the quote on the right, use the <code class="highlighter-rouge">.blockquote-reverse</code> class:</p>
+
+<div class="language-html highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;blockquote</span> <span class="na">class=</span><span class="s">"blockquote-reverse"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;p&gt;</span>For 50 years, WWF has been protecting the future of nature. The world's leading conservation organization, WWF works in 100 countries and is supported by 1.2 million members in the United States and close to 5 million globally.<span class="nt">&lt;/p&gt;</span>
+  <span class="nt">&lt;footer&gt;</span>From WWF's website<span class="nt">&lt;/footer&gt;</span>
+<span class="nt">&lt;/blockquote&gt;</span>
+</code></pre>
+</div>
+
+<h4 id="dlresourcesblogbstutorialtexttypographydlhtml"><a href="/resources/blog/bstutorial//Text_Typography/dl.html"><code class="highlighter-rouge">&lt;dl&gt;</code></a></h4>
+
+<div class="language-html highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;dl&gt;</span>
+    <span class="nt">&lt;dt&gt;</span>UFO<span class="nt">&lt;/dt&gt;</span>
+    <span class="nt">&lt;dd&gt;</span>- unidentified flying object<span class="nt">&lt;/dd&gt;</span>
+    <span class="nt">&lt;dt&gt;</span>WHO<span class="nt">&lt;/dt&gt;</span>
+    <span class="nt">&lt;dd&gt;</span>- world health organization<span class="nt">&lt;/dd&gt;</span>
+<span class="nt">&lt;/dl&gt;</span>
+</code></pre>
+</div>
+
+<h4 id="coderesourcesblogbstutorialtexttypographycodehtml"><a href="/resources/blog/bstutorial//Text_Typography/code.html"><code class="highlighter-rouge">&lt;code&gt;</code></a></h4>
+
+<div class="language-html highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;p&gt;</span>The following HTML elements: <span class="nt">&lt;code&gt;</span>span<span class="nt">&lt;/code&gt;</span>, <span class="nt">&lt;code&gt;</span>section<span class="nt">&lt;/code&gt;</span>, and <span class="nt">&lt;code&gt;</span>div<span class="nt">&lt;/code&gt;</span> defines a section in a document.<span class="nt">&lt;/p&gt;</span>
+</code></pre>
+</div>
+
+<p><strong>Note that we can change the style of the code snippets however we want using customized <code class="highlighter-rouge">css</code> files. For example:</strong></p>
+
+<div class="language-css highlighter-rouge"><pre class="highlight"><code><span class="nt">code</span> <span class="p">{</span>
+    <span class="nl">color</span><span class="p">:</span> <span class="no">darkblue</span><span class="p">;</span>
+    <span class="nl">background-color</span><span class="p">:</span> <span class="no">yellow</span><span class="p">;</span>
+    <span class="nl">border-radius</span><span class="p">:</span> <span class="m">10px</span><span class="p">;</span>
+    <span class="nl">font-size</span><span class="p">:</span> <span class="m">1.5em</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre>
+</div>
+
+<h4 id="kbdresourcesblogbstutorialtexttypographykbdhtml"><a href="/resources/blog/bstutorial//Text_Typography/kbd.html"><code class="highlighter-rouge">&lt;kbd&gt;</code></a></h4>
+
+<div class="language-html highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;p&gt;</span>Use <span class="nt">&lt;kbd&gt;</span>ctrl + z<span class="nt">&lt;/kbd&gt;</span> to undo the last operation.<span class="nt">&lt;/p&gt;&lt;br&gt;&lt;br&gt;</span>
+</code></pre>
+</div>
+
+<p>Note that it’s also possible to change the style of the kbd using customized <code class="highlighter-rouge">css</code> files. For example:</p>
+
+<div class="language-css highlighter-rouge"><pre class="highlight"><code><span class="nt">kbd</span> <span class="p">{</span>
+    <span class="nl">border</span><span class="p">:</span> <span class="nb">solid</span> <span class="m">2px</span> <span class="no">black</span><span class="p">;</span>
+    <span class="nl">border-radius</span><span class="p">:</span> <span class="m">5px</span><span class="p">;</span>
+    <span class="nl">background-color</span><span class="p">:</span> <span class="no">lightgrey</span><span class="p">;</span>
+    <span class="nl">color</span><span class="p">:</span> <span class="no">black</span><span class="p">;</span>
+    <span class="nl">font-weight</span><span class="p">:</span> <span class="nb">bold</span><span class="p">;</span>
+    <span class="nl">font-size</span><span class="p">:</span> <span class="m">1.3em</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre>
+</div>
+
+<h4 id="contextual-colors-and-backgroundsresourcesblogbstutorialtexttypographycontextualcolorshtml"><a href="/resources/blog/bstutorial//Text_Typography/contextual_colors.html">Contextual Colors and Backgrounds</a></h4>
+
+<p>Bootstrap also has some contextual classes that can be used to provide “meaning through colors”.</p>
+
+<p>The classes for text colors are: <code class="highlighter-rouge">.text-muted</code>, <code class="highlighter-rouge">.text-primary</code>, <code class="highlighter-rouge">.text-success</code>, <code class="highlighter-rouge">.text-info</code>, <code class="highlighter-rouge">.text-warning</code>, and <code class="highlighter-rouge">.text-danger</code>:</p>
+
+<div class="language-html highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"text-muted"</span><span class="nt">&gt;</span>This text is muted.<span class="nt">&lt;/p&gt;</span>
+<span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"text-primary"</span><span class="nt">&gt;</span>This text is important.<span class="nt">&lt;/p&gt;</span>
+<span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"text-success"</span><span class="nt">&gt;</span>This text indicates success.<span class="nt">&lt;/p&gt;</span>
+<span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"text-info"</span><span class="nt">&gt;</span>This text represents some information.<span class="nt">&lt;/p&gt;</span>
+<span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"text-warning"</span><span class="nt">&gt;</span>This text represents a warning.<span class="nt">&lt;/p&gt;</span>
+<span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"text-danger"</span><span class="nt">&gt;</span>This text represents danger.<span class="nt">&lt;/p&gt;</span>
+</code></pre>
+</div>
+
+<div class="language-html highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"bg-primary"</span><span class="nt">&gt;</span>This text is important.<span class="nt">&lt;/p&gt;</span>
+<span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"bg-success"</span><span class="nt">&gt;</span>This text indicates success.<span class="nt">&lt;/p&gt;</span>
+<span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"bg-info"</span><span class="nt">&gt;</span>This text represents some information.<span class="nt">&lt;/p&gt;</span>
+<span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"bg-warning"</span><span class="nt">&gt;</span>This text represents a warning.<span class="nt">&lt;/p&gt;</span>
+<span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"bg-danger"</span><span class="nt">&gt;</span>This text represents danger.<span class="nt">&lt;/p&gt;</span>
+</code></pre>
+</div>
+
+<h2 id="nbsp-3"> </h2>
+<p>##  </p>
+
+<h2 id="bootstrap-tables">Bootstrap Tables</h2>
+
+<h3 id="basic-tablesresourcesblogbstutorialtablesbasichtml"><a href="/resources/blog/bstutorial//tables/basic.html">Basic Tables</a></h3>
+
+<p>A basic Bootstrap table has a light padding and only horizontal dividers.</p>
+
+<p>The <code class="highlighter-rouge">.table</code> class adds basic styling to a table:</p>
+
+<div class="language-html highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;table</span> <span class="na">class=</span><span class="s">"table"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;thead&gt;</span>
+    <span class="nt">&lt;tr&gt;</span>
+      <span class="nt">&lt;th&gt;</span>Firstname<span class="nt">&lt;/th&gt;</span>
+      <span class="nt">&lt;th&gt;</span>Lastname<span class="nt">&lt;/th&gt;</span>
+      <span class="nt">&lt;th&gt;</span>Email<span class="nt">&lt;/th&gt;</span>
+    <span class="nt">&lt;/tr&gt;</span>
+  <span class="nt">&lt;/thead&gt;</span>
+  <span class="nt">&lt;tbody&gt;</span>
+    <span class="nt">&lt;tr&gt;</span>
+      <span class="nt">&lt;td&gt;</span>John<span class="nt">&lt;/td&gt;</span>
+      <span class="nt">&lt;td&gt;</span>Doe<span class="nt">&lt;/td&gt;</span>
+      <span class="nt">&lt;td&gt;</span>john@example.com<span class="nt">&lt;/td&gt;</span>
+    <span class="nt">&lt;/tr&gt;</span>
+  <span class="nt">&lt;/tbody&gt;</span>
+<span class="nt">&lt;/table&gt;</span>
+</code></pre>
+</div>
+
+<h3 id="striped-rowsresourcesblogbstutorialtablesstriprowshtml"><a href="/resources/blog/bstutorial//tables/stripRows.html">Striped Rows</a></h3>
+
+<p>The <code class="highlighter-rouge">.table-striped</code> class adds <strong>zebra-stripes</strong> to a table:</p>
+
+<div class="language-html highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;table</span> <span class="na">class=</span><span class="s">"table table-striped"</span><span class="nt">&gt;</span>
+</code></pre>
+</div>
+
+<h3 id="bordered-tableresourcesblogbstutorialtablesborderedhtml"><a href="/resources/blog/bstutorial//tables/bordered.html">Bordered Table</a></h3>
+
+<p>The <code class="highlighter-rouge">.table-bordered</code> class adds borders on all sides of the table and cells:</p>
+
+<div class="language-html highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;table</span> <span class="na">class=</span><span class="s">"table table-striped table-bordered"</span><span class="nt">&gt;</span>
+</code></pre>
+</div>
+
+<h3 id="hover-rowsresourcesblogbstutorialtableshoverhtml"><a href="/resources/blog/bstutorial//tables/hover.html">Hover Rows</a></h3>
+
+<p>The <code class="highlighter-rouge">.table-hover</code> class enables a hover state on table rows. <strong>Note that don’t use along with <code class="highlighter-rouge">.table-striped</code></strong></p>
+
+<div class="language-html highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;table</span> <span class="na">class=</span><span class="s">"table table-hover table-bordered"</span><span class="nt">&gt;</span>
+</code></pre>
+</div>
+
+<h3 id="contextual-classesresourcesblogbstutorialtablescontextualhtml"><a href="/resources/blog/bstutorial//tables/contextual.html">Contextual Classes</a></h3>
+
+<p>Contextual classes can be used to color table rows (<code class="highlighter-rouge">&lt;tr&gt;</code>) or table cells (<code class="highlighter-rouge">&lt;td&gt;</code>):</p>
+
+<div class="language-html highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;tr</span> <span class="na">class=</span><span class="s">"success"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;td&gt;</span>John<span class="nt">&lt;/td&gt;</span>
+  <span class="nt">&lt;td&gt;</span>Doe<span class="nt">&lt;/td&gt;</span>
+  <span class="nt">&lt;td&gt;</span>john@example.com<span class="nt">&lt;/td&gt;</span>
+<span class="nt">&lt;/tr&gt;</span>
+<span class="nt">&lt;tr</span> <span class="na">class=</span><span class="s">"danger"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;td&gt;</span>Mary<span class="nt">&lt;/td&gt;</span>
+  <span class="nt">&lt;td&gt;</span>Moe<span class="nt">&lt;/td&gt;</span>
+  <span class="nt">&lt;td&gt;</span>mary@example.com<span class="nt">&lt;/td&gt;</span>
+<span class="nt">&lt;/tr&gt;</span>
+<span class="nt">&lt;tr</span> <span class="na">class=</span><span class="s">"info"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;td&gt;</span>July<span class="nt">&lt;/td&gt;</span>
+  <span class="nt">&lt;td&gt;</span>Dooley<span class="nt">&lt;/td&gt;</span>
+  <span class="nt">&lt;td&gt;</span>july@example.com<span class="nt">&lt;/td&gt;</span>
+<span class="nt">&lt;/tr&gt;</span>
+</code></pre>
+</div>
+
+<h3 id="responsive-tableresourcesblogbstutorialtablesresponsivehtml"><a href="/resources/blog/bstutorial//tables/responsive.html">Responsive Table</a></h3>
+<p>The <code class="highlighter-rouge">.table-responsive</code> class creates a responsive table. The table will then <strong>scroll horizontally</strong> on small devices (under <strong><em>768px</em></strong>). When viewing on anything larger than <strong><em>768px</em></strong> wide, there is no difference:</p>
+
+<div class="language-html highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;table</span> <span class="na">class=</span><span class="s">"table table-responsive"</span><span class="nt">&gt;</span>
+</code></pre>
+</div>
+
+<h2 id="nbsp-4"> </h2>
+<p>##  </p>
+
+<h2 id="bootstrap-images">Bootstrap Images</h2>
+
+<h3 id="shapesresourcesblogbstutorialimagesshapeshtml"><a href="/resources/blog/bstutorial//images/shapes.html">Shapes</a></h3>
+
+<h4 id="rounded-corners-with-class-img-rounded">Rounded Corners: with class <code class="highlighter-rouge">.img-rounded</code></h4>
+
+<h4 id="circle-with-class-img-circle">Circle: with class <code class="highlighter-rouge">.img-circle</code></h4>
+
+<h4 id="thumbnail-with-class-img-thumbnail">Thumbnail: with class <code class="highlighter-rouge">.img-thumbnail</code></h4>
+
+<h3 id="responsive-imagesresourcesblogbstutorialimagesresponsivehtml"><a href="/resources/blog/bstutorial//images/responsive.html">Responsive Images</a></h3>
+
+<p>Images comes in all sizes. So do screens. Responsive images automatically adjust to fit the size of the screen.</p>
+
+<p>Create responsive images by adding an <code class="highlighter-rouge">.img-responsive</code> class to the <code class="highlighter-rouge">&lt;img&gt;</code> tag. The image will then scale nicely to the parent element.</p>
+
+<p>The <code class="highlighter-rouge">.img-responsive</code> class applies <code class="highlighter-rouge">display: block</code>; and <code class="highlighter-rouge">max-width: 100%</code>; and <code class="highlighter-rouge">height: auto</code>; to the image:</p>
+
+<h3 id="image-galleryresourcesblogbstutorialimagesgalleryhtml"><a href="/resources/blog/bstutorial//images/gallery.html">Image Gallery</a></h3>
+
+<p>You can also use Bootstrap’s grid system in conjunction with the <code class="highlighter-rouge">.thumbnail</code> class to create an image gallery:</p>
+
+<div class="language-html highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"row"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-md-4"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"pulpitrock.jpg"</span> <span class="na">class=</span><span class="s">"thumbnail"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;p&gt;</span>Pulpit Rock: A famous tourist attraction in Forsand, Ryfylke, Norway.<span class="nt">&lt;/p&gt;</span>
+      <span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"pulpitrock.jpg"</span> <span class="na">alt=</span><span class="s">"Pulpit Rock"</span> <span class="na">style=</span><span class="s">"width:150px;height:150px"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;/a&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-md-4"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"moustiers-sainte-marie.jpg"</span> <span class="na">class=</span><span class="s">"thumbnail"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;p&gt;</span>Moustiers-Sainte-Marie: Considered as one of the "most beautiful villages of France".<span class="nt">&lt;/p&gt;</span>
+      <span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"moustiers-sainte-marie.jpg"</span> <span class="na">alt=</span><span class="s">"Moustiers Sainte Marie"</span> <span class="na">style=</span><span class="s">"width:150px;height:150px"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;/a&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-md-4"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"cinqueterre.jpg"</span> <span class="na">class=</span><span class="s">"thumbnail"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;p&gt;</span>The Cinque Terre: A rugged portion of coast in the Liguria region of Italy.<span class="nt">&lt;/p&gt;</span>
+      <span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"cinqueterre.jpg"</span> <span class="na">alt=</span><span class="s">"Cinque Terre"</span> <span class="na">style=</span><span class="s">"width:150px;height:150px"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;/a&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+</code></pre>
+</div>
+
+<h3 id="responsive-embedsresourcesblogbstutorialimagesresponsiveembedshtml"><a href="/resources/blog/bstutorial//images/responsiveEmbeds.html">Responsive Embeds</a></h3>
+
+<p>Also let videos or slideshows scale properly on any device.</p>
+
+<p>Classes can be applied directly to <code class="highlighter-rouge">&lt;iframe&gt;</code>, <code class="highlighter-rouge">&lt;embed&gt;</code>, <code class="highlighter-rouge">&lt;video&gt;</code>, and <code class="highlighter-rouge">&lt;object&gt;</code> elements.</p>
+
+<p>The following example creates a responsive video by adding an <code class="highlighter-rouge">.embed-responsive-item</code> class to an <code class="highlighter-rouge">&lt;iframe&gt;</code> tag (the video will then scale nicely to the parent element). The containing <code class="highlighter-rouge">&lt;div&gt;</code> defines the aspect ratio of the video:</p>
+
+<div class="language-html highlighter-rouge"><pre class="highlight"><code><span class="c">&lt;!-- 16:9 aspect ratio --&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"embed-responsive embed-responsive-16by9"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;iframe</span> <span class="na">class=</span><span class="s">"embed-responsive-item"</span> <span class="na">src=</span><span class="s">"..."</span><span class="nt">&gt;&lt;/iframe&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+</code></pre>
+</div>
+
+<h2 id="nbsp-5"> </h2>
+<p>##  </p>
+
+<h2 id="bootstrap-jumbotron-and-page-header">Bootstrap Jumbotron and Page Header</h2>
+
+<h3 id="jumbotronresourcesblogbstutorialjumbotronbasichtml"><a href="/resources/blog/bstutorial//jumbotron/basic.html">Jumbotron</a></h3>
+
+<p>A <strong>jumbotron</strong> indicates a big box for calling extra attention to some special content or information.</p>
+
+<p>A <strong>jumbotron</strong> is displayed as a grey box with rounded corners. It also enlarges the font sizes of the text inside it.</p>
+
+<p><strong>Tip</strong>: Inside a <strong>jumbotron</strong> <strong><em>you can put nearly any valid HTML, including other Bootstrap elements/classes</em></strong>.</p>
+
+<p>Use a &lt;div&gt; element with class <code class="highlighter-rouge">.jumbotron</code> to create a <strong>jumbotron</strong>:</p>
+
+<div class="language-html highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"container"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"jumbotron"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;h1&gt;</span>Bootstrap Tutorial<span class="nt">&lt;/h1&gt;</span>
+    <span class="nt">&lt;p&gt;</span>Bootstrap is the most popular HTML, CSS, and JS framework for developing
+    responsive, mobile-first projects on the web.<span class="nt">&lt;/p&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;p&gt;</span>This is some text.<span class="nt">&lt;/p&gt;</span>
+  <span class="nt">&lt;p&gt;</span>This is another text.<span class="nt">&lt;/p&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+</code></pre>
+</div>
+
+<h3 id="page-headerresourcesblogbstutorialjumbotronheaderhtml"><a href="/resources/blog/bstutorial//jumbotron/header.html">Page Header</a></h3>
+
+<p>A page header is like a section divider.</p>
+
+<p>The <code class="highlighter-rouge">.page-header</code> class adds:
+- a horizontal line under the heading
+- some extra space around the element</p>
+
+<div class="language-html highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"page-header"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;h1&gt;</span>Example Page Header<span class="nt">&lt;/h1&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+</code></pre>
+</div>
+
+<p><strong>Note: You’ll have to add your own <code class="highlighter-rouge">&lt;h1&gt; ... &lt;/h1&gt;</code> tags in the page header to make it look like a page header. In other words, the <code class="highlighter-rouge">page-header</code> class has no effect on the font-size/family/weight/etc.</strong></p>
+
+<h2 id="nbsp-6"> </h2>
+<p>##  </p>
+
+<h2 id="bootstrap-wells">Bootstrap Wells</h2>
+
+<h3 id="wellsresourcesblogbstutorialwellbasichtml"><a href="/resources/blog/bstutorial//well/basic.html">Wells</a></h3>
+
+<p>The <code class="highlighter-rouge">.well</code> class adds a rounded border around an element with a gray background color and some padding:</p>
+
+<div class="language-html highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"well"</span><span class="nt">&gt;</span>Basic Well<span class="nt">&lt;/div&gt;</span>
+</code></pre>
+</div>
+
+<h3 id="well-sizesresourcesblogbstutorialwellsizehtml"><a href="/resources/blog/bstutorial//well/size.html">Well Sizes</a></h3>
+
+<p>Change the size of the well by adding the <code class="highlighter-rouge">.well-sm</code> class for small wells or <code class="highlighter-rouge">.well-lg</code> class for large wells:</p>
+
+<p>By default, wells are medium in size.</p>
+
+<div class="language-html highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"well well-sm"</span><span class="nt">&gt;</span>Small Well<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"well well-lg"</span><span class="nt">&gt;</span>Large Well<span class="nt">&lt;/div&gt;</span>
+</code></pre>
+</div>
+
+<h2 id="nbsp-7"> </h2>
+<p>##  
+## Bootstrap Alerts</p>
+
+<p>Alerts are created with the .alert class, followed by one of the four contextual classes <code class="highlighter-rouge">.alert-success</code>, <code class="highlighter-rouge">.alert-info</code>, <code class="highlighter-rouge">.alert-warning</code> or <code class="highlighter-rouge">.alert-danger</code>:</p>
+
+<div class="language-html highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"alert alert-success"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;strong&gt;</span>Success!<span class="nt">&lt;/strong&gt;</span> Indicates a successful or positive action.
+<span class="nt">&lt;/div&gt;</span>
+
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"alert alert-info"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;strong&gt;</span>Info!<span class="nt">&lt;/strong&gt;</span> Indicates a neutral informative change or action.
+<span class="nt">&lt;/div&gt;</span>
+
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"alert alert-warning"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;strong&gt;</span>Warning!<span class="nt">&lt;/strong&gt;</span> Indicates a warning that might need attention.
+<span class="nt">&lt;/div&gt;</span>
+
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"alert alert-danger"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;strong&gt;</span>Danger!<span class="nt">&lt;/strong&gt;</span> Indicates a dangerous or potentially negative action.
+<span class="nt">&lt;/div&gt;</span>
+</code></pre>
+</div>
+
+<h3 id="closing-alerts">Closing Alerts</h3>
+
+<p>To close the alert message, add <code class="highlighter-rouge">class="close"</code> and <code class="highlighter-rouge">data-dismiss="alert"</code> to a <strong>link</strong> or a <strong>button</strong> element:</p>
+
+<div class="language-html highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"alert alert-success"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">class=</span><span class="s">"close"</span> <span class="na">data-dismiss=</span><span class="s">"alert"</span> <span class="na">aria-label=</span><span class="s">"close"</span><span class="nt">&gt;</span><span class="ni">&amp;times;</span><span class="nt">&lt;/a&gt;</span>
+  <span class="nt">&lt;strong&gt;</span>Success!<span class="nt">&lt;/strong&gt;</span> Indicates a successful or positive action.
+<span class="nt">&lt;/div&gt;</span>
+</code></pre>
+</div>
+
+<p><strong>Note that</strong>: <code class="highlighter-rouge">&amp;times;</code> (×) is an HTML entity that is the preferred icon for close buttons, rather than the letter <code class="highlighter-rouge">"x"</code>.</p>
+
+<h3 id="animated-alerts">Animated Alerts</h3>
+
+<p>The <code class="highlighter-rouge">.fade</code> and <code class="highlighter-rouge">.in</code> classes adds a fading effect when closing the alert message:</p>
+
+<div class="language-html highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"alert alert-success fade in"</span><span class="nt">&gt;</span>
+</code></pre>
+</div>
+
+<h2 id="nbsp-8"> </h2>
+<p>##  
+## <a href="/resources/blog/bstutorial//buttons/index.html">Bootstrap Buttons</a></p>
+
+<h3 id="button-styles">Button Styles</h3>
+
+<p>The following example shows the code for the different button styles:</p>
+
+<div class="language-html highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-default"</span><span class="nt">&gt;</span>Default<span class="nt">&lt;/button&gt;</span>
+<span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-primary"</span><span class="nt">&gt;</span>Primary<span class="nt">&lt;/button&gt;</span>
+<span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-success"</span><span class="nt">&gt;</span>Success<span class="nt">&lt;/button&gt;</span>
+<span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-info"</span><span class="nt">&gt;</span>Info<span class="nt">&lt;/button&gt;</span>
+<span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-warning"</span><span class="nt">&gt;</span>Warning<span class="nt">&lt;/button&gt;</span>
+<span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-danger"</span><span class="nt">&gt;</span>Danger<span class="nt">&lt;/button&gt;</span>
+<span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-link"</span><span class="nt">&gt;</span>Link<span class="nt">&lt;/button&gt;</span>
+</code></pre>
+</div>
+
+<p>The button classes can be used on an <code class="highlighter-rouge">&lt;a&gt;</code>, <code class="highlighter-rouge">&lt;button&gt;</code>, or <code class="highlighter-rouge">&lt;input&gt;</code> element:</p>
+
+<div class="language-html highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">class=</span><span class="s">"btn btn-info"</span> <span class="na">role=</span><span class="s">"button"</span><span class="nt">&gt;</span>Link Button<span class="nt">&lt;/a&gt;</span>
+<span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-info"</span><span class="nt">&gt;</span>Button<span class="nt">&lt;/button&gt;</span>
+<span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-info"</span> <span class="na">value=</span><span class="s">"Input Button"</span><span class="nt">&gt;</span>
+<span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"submit"</span> <span class="na">class=</span><span class="s">"btn btn-info"</span> <span class="na">value=</span><span class="s">"Submit Button"</span><span class="nt">&gt;</span>
+</code></pre>
+</div>
+
+<h3 id="button-sizes">Button Sizes</h3>
+
+<div class="language-html highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-primary btn-lg"</span><span class="nt">&gt;</span>Large<span class="nt">&lt;/button&gt;</span>
+<span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-primary btn-md"</span><span class="nt">&gt;</span>Medium<span class="nt">&lt;/button&gt;</span>
+<span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-primary btn-sm"</span><span class="nt">&gt;</span>Small<span class="nt">&lt;/button&gt;</span>
+<span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-primary btn-xs"</span><span class="nt">&gt;</span>XSmall<span class="nt">&lt;/button&gt;</span>
+</code></pre>
+</div>
+
+<h3 id="block-level-buttons">Block Level Buttons</h3>
+
+<p>Add class <code class="highlighter-rouge">.btn-block</code> to create a block level button:</p>
+
+<div class="language-html highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-primary btn-block"</span><span class="nt">&gt;</span>Button 1<span class="nt">&lt;/button&gt;</span>
+</code></pre>
+</div>
+
+<h3 id="activedisabled-buttons">Active/Disabled Buttons</h3>
+
+<p>The class <code class="highlighter-rouge">.active</code> makes a button appear pressed, and the class <code class="highlighter-rouge">.disabled</code> makes a button unclickable:</p>
+
+<div class="language-html highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-primary active"</span><span class="nt">&gt;</span>Active Primary<span class="nt">&lt;/button&gt;</span>
+<span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-primary disabled"</span><span class="nt">&gt;</span>Disabled Primary<span class="nt">&lt;/button&gt;</span>
+</code></pre>
+</div>
+
+<h2 id="nbsp-9"> </h2>
+<p>##  
+## <a href="/resources/blog/bstutorial//buttons/group.html">Bootstrap Button Groups</a></p>
+
+<h3 id="horizontal-button-groups">(Horizontal) Button Groups</h3>
+
+<p>Bootstrap allows you to group a series of buttons together (on a single line) in a button group. Use a <code class="highlighter-rouge">&lt;div&gt;</code> element with class <code class="highlighter-rouge">.btn-group</code> to create a button group:</p>
+
+<div class="language-html highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"btn-group"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-primary"</span><span class="nt">&gt;</span>Apple<span class="nt">&lt;/button&gt;</span>
+  <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-primary"</span><span class="nt">&gt;</span>Samsung<span class="nt">&lt;/button&gt;</span>
+  <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-primary"</span><span class="nt">&gt;</span>Sony<span class="nt">&lt;/button&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+</code></pre>
+</div>
+
+<p>Instead of applying button sizes to every button in a group, use class <code class="highlighter-rouge">.btn-group-*</code> to size all buttons in the group:</p>
+
+<div class="language-html highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"btn-group btn-group-lg"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-primary"</span><span class="nt">&gt;</span>Apple<span class="nt">&lt;/button&gt;</span>
+  <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-primary"</span><span class="nt">&gt;</span>Samsung<span class="nt">&lt;/button&gt;</span>
+  <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-primary"</span><span class="nt">&gt;</span>Sony<span class="nt">&lt;/button&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+</code></pre>
+</div>
+
+<h3 id="vertical-button-groups">Vertical Button Groups</h3>
+
+<p>Use the class <code class="highlighter-rouge">.btn-group-vertical</code> (instead of <code class="highlighter-rouge">.btn-group</code>) to create a vertical button group.</p>
+
+<h3 id="justified-button-groups">Justified Button Groups</h3>
+
+<p>To span the entire width of the screen, use the <code class="highlighter-rouge">.btn-group-justified</code> class:</p>
+
+<h4 id="example-with-a">Example with <code class="highlighter-rouge">&lt;a&gt;</code></h4>
+
+<div class="language-html highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"btn-group btn-group-justified"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">class=</span><span class="s">"btn btn-primary"</span><span class="nt">&gt;</span>Apple<span class="nt">&lt;/a&gt;</span>
+  <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">class=</span><span class="s">"btn btn-primary"</span><span class="nt">&gt;</span>Samsung<span class="nt">&lt;/a&gt;</span>
+  <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">class=</span><span class="s">"btn btn-primary"</span><span class="nt">&gt;</span>Sony<span class="nt">&lt;/a&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+</code></pre>
+</div>
+
+<h4 id="example-with-button">Example with <code class="highlighter-rouge">&lt;button&gt;</code></h4>
+
+<p><strong>Note</strong>: For <code class="highlighter-rouge">&lt;button&gt;</code> elements, you must wrap each button in a <code class="highlighter-rouge">.btn-group</code> class</p>
+
+<div class="language-html highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"btn-group btn-group-justified"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"btn-group"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-primary"</span><span class="nt">&gt;</span>Apple<span class="nt">&lt;/button&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"btn-group"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-primary"</span><span class="nt">&gt;</span>Samsung<span class="nt">&lt;/button&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"btn-group"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-primary"</span><span class="nt">&gt;</span>Sony<span class="nt">&lt;/button&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+</code></pre>
+</div>
+
+<h3 id="nesting-button-groups--dropdown-menus">Nesting Button Groups &amp; Dropdown Menus</h3>
+
+<p>Nest button groups to create dropdown menus:</p>
+
+<div class="language-html highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"btn-group"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-primary"</span><span class="nt">&gt;</span>Apple<span class="nt">&lt;/button&gt;</span>
+  <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-primary"</span><span class="nt">&gt;</span>Samsung<span class="nt">&lt;/button&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"btn-group"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-primary dropdown-toggle"</span> <span class="na">data-toggle=</span><span class="s">"dropdown"</span><span class="nt">&gt;</span>
+    Sony <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"caret"</span><span class="nt">&gt;&lt;/span&gt;&lt;/button&gt;</span>
+    <span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"dropdown-menu"</span> <span class="na">role=</span><span class="s">"menu"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Tablet<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+      <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Smartphone<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+    <span class="nt">&lt;/ul&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+</code></pre>
+</div>
+
+<h3 id="split-button-dropdowns">Split Button Dropdowns</h3>
+
+<div class="language-html highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"btn-group"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-primary"</span><span class="nt">&gt;</span>Sony<span class="nt">&lt;/button&gt;</span>
+  <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-primary dropdown-toggle"</span> <span class="na">data-toggle=</span><span class="s">"dropdown"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"caret"</span><span class="nt">&gt;&lt;/span&gt;</span>
+  <span class="nt">&lt;/button&gt;</span>
+  <span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"dropdown-menu"</span> <span class="na">role=</span><span class="s">"menu"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Tablet<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+    <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Smartphone<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+  <span class="nt">&lt;/ul&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+</code></pre>
+</div>
+
+<h2 id="nbsp-10"> </h2>
+<p>##  
+## <a href="/resources/blog/bstutorial//glyphicon/index.html">Bootstrap Glyphicons</a></p>
+
+<p>Glyphicons can be used in text, buttons, toolbars, navigation, forms, etc.</p>
+
+<h3 id="glyphicon-syntax">Glyphicon Syntax</h3>
+
+<div class="language-html highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"glyphicon glyphicon-name"</span><span class="nt">&gt;&lt;/span&gt;</span>
+</code></pre>
+</div>
+
+<h2 id="nbsp-11"> </h2>
+<p>##  
+## <a href="/resources/blog/bstutorial//bage/index.html">Bootstrap Bages</a></p>
+
+<p>Badges are <strong>numerical</strong> indicators of how many items are associated with a link:</p>
+
+<p>Use the <code class="highlighter-rouge">.badge</code> class within <code class="highlighter-rouge">&lt;span&gt;</code> elements to create badges:</p>
+
+<div class="language-html highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>News <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"badge"</span><span class="nt">&gt;</span>5<span class="nt">&lt;/span&gt;&lt;/a&gt;&lt;br&gt;</span>
+<span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Comments <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"badge"</span><span class="nt">&gt;</span>10<span class="nt">&lt;/span&gt;&lt;/a&gt;&lt;br&gt;</span>
+<span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Updates <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"badge"</span><span class="nt">&gt;</span>2<span class="nt">&lt;/span&gt;&lt;/a&gt;</span>
+</code></pre>
+</div>
+
+<p>Bages on buttons:</p>
+
+<div class="language-html highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-primary"</span><span class="nt">&gt;</span>Primary <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"badge"</span><span class="nt">&gt;</span>7<span class="nt">&lt;/span&gt;&lt;/button&gt;</span>
+</code></pre>
+</div>
+
+<h2 id="nbsp-12"> </h2>
+<p>##  
+## <a href="/resources/blog/bstutorial//label/index.html">Bootstrap Labels</a></p>
+
+<p>Labels are used to provide additional information about something:</p>
+
+<div class="language-html highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;h1&gt;</span>Example <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"label label-default"</span><span class="nt">&gt;</span>New<span class="nt">&lt;/span&gt;&lt;/h1&gt;</span>
+</code></pre>
+</div>
+
+<p>Use the .label class,  followed by one of the six <strong>contextual</strong> classes <code class="highlighter-rouge">.label-default</code>, <code class="highlighter-rouge">.label-primary</code>, <code class="highlighter-rouge">.label-success</code>, <code class="highlighter-rouge">.label-info</code>, <code class="highlighter-rouge">.label-warning</code> or <code class="highlighter-rouge">.label-danger</code>, within a <code class="highlighter-rouge">&lt;span&gt;</code> element to create a label:</p>
+
+<div class="language-html highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"label label-default"</span><span class="nt">&gt;</span>Default Label<span class="nt">&lt;/span&gt;</span>
+<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"label label-primary"</span><span class="nt">&gt;</span>Primary Label<span class="nt">&lt;/span&gt;</span>
+<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"label label-success"</span><span class="nt">&gt;</span>Success Label<span class="nt">&lt;/span&gt;</span>
+<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"label label-info"</span><span class="nt">&gt;</span>Info Label<span class="nt">&lt;/span&gt;</span>
+<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"label label-warning"</span><span class="nt">&gt;</span>Warning Label<span class="nt">&lt;/span&gt;</span>
+<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"label label-danger"</span><span class="nt">&gt;</span>Danger Label<span class="nt">&lt;/span&gt;</span>
+</code></pre>
+</div>
+
+<h2 id="nbsp-13"> </h2>
+<p>##  
+## <a href="/resources/blog/bstutorial//pb/index.html">Bootstrap Progress Bars</a></p>
+
+<p>To create a default progress bar, add a <code class="highlighter-rouge">.progress</code> class to a <code class="highlighter-rouge">&lt;div&gt;</code> element:</p>
+
+<div class="language-html highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"progress"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"progress-bar"</span> <span class="na">role=</span><span class="s">"progressbar"</span> <span class="na">aria-valuenow=</span><span class="s">"70"</span>
+  <span class="na">aria-valuemin=</span><span class="s">"0"</span> <span class="na">aria-valuemax=</span><span class="s">"100"</span> <span class="na">style=</span><span class="s">"width:70%"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"sr-only"</span><span class="nt">&gt;</span>70% Complete<span class="nt">&lt;/span&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+</code></pre>
+</div>
+
+<h3 id="progress-bar-with-label">Progress Bar With Label</h3>
+
+<p>Remove the <code class="highlighter-rouge">.sr-only</code> class from the progress bar to show a visible percentage</p>
+
+<div class="language-html highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"progress"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"progress-bar"</span> <span class="na">role=</span><span class="s">"progressbar"</span> <span class="na">aria-valuenow=</span><span class="s">"70"</span>
+  <span class="na">aria-valuemin=</span><span class="s">"0"</span> <span class="na">aria-valuemax=</span><span class="s">"100"</span> <span class="na">style=</span><span class="s">"width:70%"</span><span class="nt">&gt;</span>
+    70%
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+</code></pre>
+</div>
+
+<h3 id="colored-progress-bars">Colored Progress Bars</h3>
+
+<p>The contextual classes that can be used with progress bars are:</p>
+
+<ul>
+  <li><code class="highlighter-rouge">.progress-bar-success</code></li>
+  <li><code class="highlighter-rouge">.progress-bar-info</code></li>
+  <li><code class="highlighter-rouge">.progress-bar-warning</code></li>
+  <li><code class="highlighter-rouge">.progress-bar-danger</code></li>
+</ul>
+
+<h3 id="striped-progress-bars">Striped Progress Bars</h3>
+
+<p>Add class <code class="highlighter-rouge">.progress-bar-striped</code> to add stripes to the progress bars</p>
+
+<h3 id="animated-progress-bar">Animated Progress Bar</h3>
+
+<p>Add class <code class="highlighter-rouge">.active</code> to animate the progress bar</p>
+
+<h3 id="stacked-progress-bars">Stacked Progress Bars</h3>
+
+<p>Create a stacked progress bar by placing multiple bars into the same <code class="highlighter-rouge">&lt;div class="progress"&gt;</code></p>
+
+<div class="language-html highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"progress"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"progress-bar progress-bar-success"</span> <span class="na">role=</span><span class="s">"progressbar"</span> <span class="na">style=</span><span class="s">"width:40%"</span><span class="nt">&gt;</span>
+    Free Space
+  <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"progress-bar progress-bar-warning"</span> <span class="na">role=</span><span class="s">"progressbar"</span> <span class="na">style=</span><span class="s">"width:10%"</span><span class="nt">&gt;</span>
+    Warning
+  <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"progress-bar progress-bar-danger"</span> <span class="na">role=</span><span class="s">"progressbar"</span> <span class="na">style=</span><span class="s">"width:20%"</span><span class="nt">&gt;</span>
+    Danger
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+</code></pre>
+</div>
+
+<h2 id="nbsp-14"> </h2>
+<p>##  
+## <a href="/resources/blog/bstutorial//pagination/index.html">Bootstrap Pagination</a></p>
+
+<p>If you have a web site with lots of pages, you may wish to add some sort of pagination to each page.</p>
+
+<p>To create a basic pagination, add the <code class="highlighter-rouge">.pagination</code> class to an <code class="highlighter-rouge">&lt;ul&gt;</code> element</p>
+
+<div class="language-html highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"pagination"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>1<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+  <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>2<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+  <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>3<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+  <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>4<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+  <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>5<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+<span class="nt">&lt;/ul&gt;</span>
+</code></pre>
+</div>
+
+<h3 id="active-state">Active State</h3>
+
+<p>Add class <code class="highlighter-rouge">.active</code> to <code class="highlighter-rouge">&lt;li&gt;</code> let the user know which page he/she is on</p>
+
+<div class="language-html highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"active"</span><span class="nt">&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>2<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+</code></pre>
+</div>
+
+<h3 id="disabled-state">Disabled State</h3>
+
+<p>Add class <code class="highlighter-rouge">.disabled</code> if a link for some reason is disabled</p>
+
+<div class="language-html highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"pagination"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>1<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+  <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>2<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+  <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>3<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+  <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"disabled"</span><span class="nt">&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>4<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+  <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>5<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+<span class="nt">&lt;/ul&gt;</span>
+</code></pre>
+</div>
+
+<h3 id="sizing">Sizing</h3>
+
+<p>Add class <code class="highlighter-rouge">.pagination-lg</code> for larger blocks or <code class="highlighter-rouge">.pagination-sm</code> for smaller blocks</p>
+
+<h3 id="breadcrumbs">Breadcrumbs</h3>
+
+<p>The <code class="highlighter-rouge">.breadcrumb</code> class indicates the current page’s location within a <strong>navigational hierarchy</strong>:</p>
+
+<div class="language-html highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"breadcrumb"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Home<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+  <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Private<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+  <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Pictures<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+  <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"active"</span><span class="nt">&gt;</span>Vacation<span class="nt">&lt;/li&gt;</span>
+<span class="nt">&lt;/ul&gt;</span>
+</code></pre>
+</div>
+
+<h2 id="nbsp-15"> </h2>
+<p>##  
+## <a href="/resources/blog/bstutorial//pager/index.html">Bootstrap Pager</a></p>
+
+<p>Pager is also a form of pagination (as described in the previous chapter).</p>
+
+<p>Pager provides previous and next buttons (links).</p>
+
+<p>To create previous/next buttons, add the <code class="highlighter-rouge">.pager</code> class to an <code class="highlighter-rouge">&lt;ul&gt;</code> element</p>
+
+<div class="language-html highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"pager"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Previous<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+  <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Next<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+<span class="nt">&lt;/ul&gt;</span>
+</code></pre>
+</div>
+
+<h3 id="align-buttons">Align Buttons</h3>
+
+<p>Use the <code class="highlighter-rouge">.previous</code> and <code class="highlighter-rouge">.next</code> classes to align each button to the sides of the page:</p>
+
+<div class="language-html highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"pager"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"previous"</span><span class="nt">&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Previous<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+  <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"next"</span><span class="nt">&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Next<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+<span class="nt">&lt;/ul&gt;</span>
+</code></pre>
+</div>
+
+<h2 id="nbsp-16"> </h2>
+<p>##  
+## <a href="/resources/blog/bstutorial//lg/index.html">Bootstrap List Groups</a></p>
+
+<p>The most basic list group is an unordered list with list items.</p>
+
+<p>To create a basic list group, use an <code class="highlighter-rouge">&lt;ul&gt;</code> element with class <code class="highlighter-rouge">.list-group</code>, and <code class="highlighter-rouge">&lt;li&gt;</code> elements with class <code class="highlighter-rouge">.list-group-item</code>.</p>
+
+<div class="language-html highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"list-group"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"list-group-item"</span><span class="nt">&gt;</span>First item<span class="nt">&lt;/li&gt;</span>
+  <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"list-group-item"</span><span class="nt">&gt;</span>Second item<span class="nt">&lt;/li&gt;</span>
+  <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"list-group-item"</span><span class="nt">&gt;</span>Third item<span class="nt">&lt;/li&gt;</span>
+<span class="nt">&lt;/ul&gt;</span>
+</code></pre>
+</div>
+
+<h3 id="list-group-with-badges">List Group With Badges</h3>
+
+<p>You can also add badges to a list group. The badges will automatically be positioned on the right</p>
+
+<p>To create a badge, create a <code class="highlighter-rouge">&lt;span&gt;</code> element with class <code class="highlighter-rouge">.badge</code> inside the list item</p>
+
+<div class="language-html highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"list-group"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"list-group-item"</span><span class="nt">&gt;&lt;span</span> <span class="na">class=</span><span class="s">"badge"</span><span class="nt">&gt;</span>12<span class="nt">&lt;/span&gt;</span> New<span class="nt">&lt;/li&gt;</span>
+  <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"list-group-item"</span><span class="nt">&gt;&lt;span</span> <span class="na">class=</span><span class="s">"badge"</span><span class="nt">&gt;</span>5<span class="nt">&lt;/span&gt;</span> Deleted<span class="nt">&lt;/li&gt;</span>
+  <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"list-group-item"</span><span class="nt">&gt;&lt;span</span> <span class="na">class=</span><span class="s">"badge"</span><span class="nt">&gt;</span>3<span class="nt">&lt;/span&gt;</span> Warnings<span class="nt">&lt;/li&gt;</span>
+<span class="nt">&lt;/ul&gt;</span>
+</code></pre>
+</div>
+
+<h3 id="list-group-with-linked-items">List Group With Linked Items</h3>
+
+<p>The items in a list group can also be hyperlinks. This will add a grey background color on hover.</p>
+
+<p>To create a list group with linked items, use <code class="highlighter-rouge">&lt;div&gt;</code> instead of <code class="highlighter-rouge">&lt;ul&gt;</code> and <code class="highlighter-rouge">&lt;a&gt;</code> instead of <code class="highlighter-rouge">&lt;li&gt;</code></p>
+
+<div class="language-html highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"list-group"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">class=</span><span class="s">"list-group-item"</span><span class="nt">&gt;</span>First item<span class="nt">&lt;/a&gt;</span>
+  <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">class=</span><span class="s">"list-group-item"</span><span class="nt">&gt;</span>Second item<span class="nt">&lt;/a&gt;</span>
+  <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">class=</span><span class="s">"list-group-item"</span><span class="nt">&gt;</span>Third item<span class="nt">&lt;/a&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+</code></pre>
+</div>
+
+<h3 id="contextual-classes">Contextual Classes</h3>
+
+<p>Contextual classes can be used to color list items</p>
+
+<p>The classes for coloring list-items are: <code class="highlighter-rouge">.list-group-item-success</code>, <code class="highlighter-rouge">list-group-item-info</code>, <code class="highlighter-rouge">list-group-item-warning</code>, and <code class="highlighter-rouge">.list-group-item-danger</code>:</p>
+
+<div class="language-html highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"list-group"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"list-group-item list-group-item-success"</span><span class="nt">&gt;</span>First item<span class="nt">&lt;/li&gt;</span>
+  <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"list-group-item list-group-item-info"</span><span class="nt">&gt;</span>Second item<span class="nt">&lt;/li&gt;</span>
+  <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"list-group-item list-group-item-warning"</span><span class="nt">&gt;</span>Third item<span class="nt">&lt;/li&gt;</span>
+  <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"list-group-item list-group-item-danger"</span><span class="nt">&gt;</span>Fourth item<span class="nt">&lt;/li&gt;</span>
+<span class="nt">&lt;/ul&gt;</span>
+</code></pre>
+</div>
+
+<h3 id="custom-content">Custom Content</h3>
+
+<p>You can add nearly any HTML inside a list group item.</p>
+
+<p>Bootstrap provides the classes <code class="highlighter-rouge">.list-group-item-heading</code> and <code class="highlighter-rouge">.list-group-item-text</code> which can be used as follows:</p>
+
+<div class="language-html highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"list-group"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">class=</span><span class="s">"list-group-item active"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;h4</span> <span class="na">class=</span><span class="s">"list-group-item-heading"</span><span class="nt">&gt;</span>First List Group Item Heading<span class="nt">&lt;/h4&gt;</span>
+    <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"list-group-item-text"</span><span class="nt">&gt;</span>List Group Item Text<span class="nt">&lt;/p&gt;</span>
+  <span class="nt">&lt;/a&gt;</span>
+  <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">class=</span><span class="s">"list-group-item"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;h4</span> <span class="na">class=</span><span class="s">"list-group-item-heading"</span><span class="nt">&gt;</span>Second List Group Item Heading<span class="nt">&lt;/h4&gt;</span>
+    <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"list-group-item-text"</span><span class="nt">&gt;</span>List Group Item Text<span class="nt">&lt;/p&gt;</span>
+  <span class="nt">&lt;/a&gt;</span>
+  <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">class=</span><span class="s">"list-group-item"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;h4</span> <span class="na">class=</span><span class="s">"list-group-item-heading"</span><span class="nt">&gt;</span>Third List Group Item Heading<span class="nt">&lt;/h4&gt;</span>
+    <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"list-group-item-text"</span><span class="nt">&gt;</span>List Group Item Text<span class="nt">&lt;/p&gt;</span>
+  <span class="nt">&lt;/a&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+</code></pre>
+</div>
+
+<h2 id="nbsp-17"> </h2>
+<p>##  
+## <a href="/resources/blog/bstutorial//panel/index.html">Bootstrap Panels</a></p>
+
+<p>A panel in bootstrap is a bordered box with some padding around its content</p>
+
+<p>Panels are created with the <code class="highlighter-rouge">.panel</code> class, and content inside the panel has a <code class="highlighter-rouge">.panel-body</code> class:</p>
+
+<div class="language-html highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"panel panel-default"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"panel-body"</span><span class="nt">&gt;</span>A Basic Panel<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+</code></pre>
+</div>
+
+<h3 id="panel-heading">Panel Heading</h3>
+
+<p>The <code class="highlighter-rouge">.panel-heading</code> class adds a heading to the panel</p>
+
+<div class="language-html highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"panel panel-default"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"panel-heading"</span><span class="nt">&gt;</span>Panel Heading<span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"panel-body"</span><span class="nt">&gt;</span>Panel Content<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+</code></pre>
+</div>
+
+<h3 id="panel-footer">Panel Footer</h3>
+
+<p>The <code class="highlighter-rouge">.panel-footer</code> class adds a footer to the panel</p>
+
+<div class="language-html highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"panel panel-default"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"panel-body"</span><span class="nt">&gt;</span>Panel Content<span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"panel-footer"</span><span class="nt">&gt;</span>Panel Footer<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+</code></pre>
+</div>
+
+<h3 id="panel-group">Panel Group</h3>
+
+<p>To group many panels together, wrap a <code class="highlighter-rouge">&lt;div&gt;</code> with class <code class="highlighter-rouge">.panel-group</code> around them.</p>
+
+<p>The <code class="highlighter-rouge">.panel-group</code> class clears the bottom-margin of each panel</p>
+
+<div class="language-html highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"panel-group"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"panel panel-default"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"panel-body"</span><span class="nt">&gt;</span>Panel Content<span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"panel panel-default"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"panel-body"</span><span class="nt">&gt;</span>Panel Content<span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+</code></pre>
+</div>
+
+<h3 id="panels-with-contextual-classes">Panels with Contextual Classes</h3>
+
+<p>To color the panel, use contextual classes (<code class="highlighter-rouge">.panel-default</code>, <code class="highlighter-rouge">.panel-primary</code>, <code class="highlighter-rouge">.panel-success</code>, <code class="highlighter-rouge">.panel-info</code>, <code class="highlighter-rouge">.panel-warning</code>, or <code class="highlighter-rouge">.panel-danger</code>):</p>
+
+<h2 id="nbsp-18"> </h2>
+<p>##  
+## <a href="/resources/blog/bstutorial//dropdown/index.html">Bootstrap Dropdowns</a></p>
+
+<p>A dropdown menu is a toggleable menu that allows the user to choose one value from a predefined list</p>
+
+<div class="language-html highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"dropdown"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"btn btn-primary dropdown-toggle"</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">data-toggle=</span><span class="s">"dropdown"</span><span class="nt">&gt;</span>Dropdown Example
+  <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"caret"</span><span class="nt">&gt;&lt;/span&gt;&lt;/button&gt;</span>
+  <span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"dropdown-menu"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>HTML<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+    <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>CSS<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+    <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>JavaScript<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+  <span class="nt">&lt;/ul&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+</code></pre>
+</div>
+
+<p>The <code class="highlighter-rouge">.dropdown</code> class indicates a dropdown menu.</p>
+
+<p>To open the dropdown menu, use a button or a link with a class of <code class="highlighter-rouge">.dropdown-toggle</code> and the <code class="highlighter-rouge">data-toggle="dropdown"</code> attribute.</p>
+
+<p>The <code class="highlighter-rouge">.caret</code> class creates a caret arrow icon, which indicates that the button is a dropdown.</p>
+
+<p>Add the <code class="highlighter-rouge">.dropdown-menu</code> class to a <code class="highlighter-rouge">&lt;ul&gt;</code> element to actually build the dropdown menu.</p>
+
+<h3 id="dropdown-divider">Dropdown Divider</h3>
+
+<p>The <code class="highlighter-rouge">.divider</code> class is used to separate links inside the dropdown menu with a thin horizontal border</p>
+
+<div class="language-html highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"divider"</span><span class="nt">&gt;&lt;/li&gt;</span>
+</code></pre>
+</div>
+
+<h3 id="dropdown-header">Dropdown Header</h3>
+
+<p>The <code class="highlighter-rouge">.dropdown-header</code> class is used to add headers inside the dropdown menu</p>
+
+<div class="language-html highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"dropdown-header"</span><span class="nt">&gt;</span>Dropdown header 1<span class="nt">&lt;/li&gt;</span>
+</code></pre>
+</div>
+
+<h3 id="disable-an-item">Disable an Item</h3>
+
+<p>To disable an item in the dropdown menu, use the <code class="highlighter-rouge">.disabled</code> class:</p>
+
+<div class="language-html highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"disabled"</span><span class="nt">&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>CSS<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+</code></pre>
+</div>
+
+<h3 id="dropdown-position">Dropdown Position</h3>
+
+<p>To right-align the dropdown, add the <code class="highlighter-rouge">.dropdown-menu-right</code> class to the element with <code class="highlighter-rouge">.dropdown-menu</code>:</p>
+
+<div class="language-html highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"dropdown-menu dropdown-menu-right"</span><span class="nt">&gt;</span>
+</code></pre>
+</div>
+
+<h3 id="dropup">Dropup</h3>
+
+<p>If you want the dropdown menu to expand upwards instead of downwards, change the <code class="highlighter-rouge">&lt;div&gt;</code> element with <code class="highlighter-rouge">class="dropdown"</code> to <code class="highlighter-rouge">"dropup"</code></p>
+
+<div class="language-html highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"dropup"</span><span class="nt">&gt;</span>
+</code></pre>
+</div>
+
+<h2 id="nbsp-19"> </h2>
+<p>##  
+## <a href="/resources/blog/bstutorial//collapse/index.html">Bootstrap Collapse</a></p>
+
+<h3 id="basic-collapsible">Basic Collapsible</h3>
+
+<p>Collapsibles are useful when you want to hide and show large amount of content:</p>
+
+<div class="language-html highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;button</span> <span class="na">data-toggle=</span><span class="s">"collapse"</span> <span class="na">data-target=</span><span class="s">"#demo"</span><span class="nt">&gt;</span>Collapsible<span class="nt">&lt;/button&gt;</span>
+
+<span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">"demo"</span> <span class="na">class=</span><span class="s">"collapse"</span><span class="nt">&gt;</span>
+  HAHA
+<span class="nt">&lt;/div&gt;</span>
+</code></pre>
+</div>
+
+<p>The <code class="highlighter-rouge">.collapse</code> class indicates a collapsible element (a <code class="highlighter-rouge">&lt;div&gt;</code> in our example); this is the content that will be shown or hidden with a click of a button.</p>
+
+<p>To control (show/hide) the collapsible content, add the <code class="highlighter-rouge">data-toggle="collapse"</code> attribute to an <code class="highlighter-rouge">&lt;a&gt;</code> or a <code class="highlighter-rouge">&lt;button&gt;</code> element. Then add the <code class="highlighter-rouge">data-target="#id"</code> attribute to connect the button with the collapsible content (<code class="highlighter-rouge">&lt;div id="demo"&gt;</code>).</p>
+
+<p><strong>Note</strong>: For <code class="highlighter-rouge">&lt;a&gt;</code> elements, you can use the <code class="highlighter-rouge">href</code> attribute instead of the <code class="highlighter-rouge">data-target</code> attribute:</p>
+
+<div class="language-html highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#demo"</span> <span class="na">data-toggle=</span><span class="s">"collapse"</span><span class="nt">&gt;</span>Collapsible<span class="nt">&lt;/a&gt;</span>
+
+<span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">"demo"</span> <span class="na">class=</span><span class="s">"collapse"</span><span class="nt">&gt;</span>
+Lorem ipsum dolor text....
+<span class="nt">&lt;/div&gt;</span>
+</code></pre>
+</div>
+
+<p>By default, the collapsible content is hidden. However, you can add the <code class="highlighter-rouge">.in</code> class to show the content by default:</p>
+
+<div class="language-html highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">"demo"</span> <span class="na">class=</span><span class="s">"collapse in"</span><span class="nt">&gt;</span>
+Lorem ipsum dolor text....
+<span class="nt">&lt;/div&gt;</span>
+</code></pre>
+</div>
+
+<h3 id="collapsible-panel">Collapsible Panel</h3>
+
+<div class="language-html highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"panel-group"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"panel panel-default"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"panel-heading"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;h4</span> <span class="na">class=</span><span class="s">"panel-title"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;a</span> <span class="na">data-toggle=</span><span class="s">"collapse"</span> <span class="na">href=</span><span class="s">"#collapse1"</span><span class="nt">&gt;</span>Collapsible panel<span class="nt">&lt;/a&gt;</span>
+      <span class="nt">&lt;/h4&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">"collapse1"</span> <span class="na">class=</span><span class="s">"panel-collapse collapse"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"panel-body"</span><span class="nt">&gt;</span>Panel Body<span class="nt">&lt;/div&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"panel-footer"</span><span class="nt">&gt;</span>Panel Footer<span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+</code></pre>
+</div>
+
+<h3 id="collapsible-list-group">Collapsible List Group</h3>
+
+<div class="language-html highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"panel-group"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"panel panel-default"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"panel-heading"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;h4</span> <span class="na">class=</span><span class="s">"panel-title"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;a</span> <span class="na">data-toggle=</span><span class="s">"collapse"</span> <span class="na">href=</span><span class="s">"#collapse1"</span><span class="nt">&gt;</span>Collapsible list group<span class="nt">&lt;/a&gt;</span>
+      <span class="nt">&lt;/h4&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">"collapse1"</span> <span class="na">class=</span><span class="s">"panel-collapse collapse"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"list-group"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"list-group-item"</span><span class="nt">&gt;</span>One<span class="nt">&lt;/li&gt;</span>
+        <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"list-group-item"</span><span class="nt">&gt;</span>Two<span class="nt">&lt;/li&gt;</span>
+        <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"list-group-item"</span><span class="nt">&gt;</span>Three<span class="nt">&lt;/li&gt;</span>
+      <span class="nt">&lt;/ul&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"panel-footer"</span><span class="nt">&gt;</span>Footer<span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+</code></pre>
+</div>
+
+<h3 id="accordion">Accordion</h3>
+
+<p>The following example shows a simple accordion by extending the panel component.</p>
+
+<p><strong>Note</strong>: Use the <code class="highlighter-rouge">data-parent</code> attribute to make sure that all collapsible elements under the specified parent will be closed when one of the collapsible item is shown.</p>
+
+<div class="language-html highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"panel-group"</span> <span class="na">id=</span><span class="s">"accordion"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"panel panel-default"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"panel-heading"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;h4</span> <span class="na">class=</span><span class="s">"panel-title"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;a</span> <span class="na">data-toggle=</span><span class="s">"collapse"</span> <span class="na">data-parent=</span><span class="s">"#accordion"</span> <span class="na">href=</span><span class="s">"#collapse1"</span><span class="nt">&gt;</span>
+        Collapsible Group 1<span class="nt">&lt;/a&gt;</span>
+      <span class="nt">&lt;/h4&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">"collapse1"</span> <span class="na">class=</span><span class="s">"panel-collapse collapse in"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"panel-body"</span><span class="nt">&gt;</span>Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+      sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+      minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+      commodo consequat.<span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"panel panel-default"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"panel-heading"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;h4</span> <span class="na">class=</span><span class="s">"panel-title"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;a</span> <span class="na">data-toggle=</span><span class="s">"collapse"</span> <span class="na">data-parent=</span><span class="s">"#accordion"</span> <span class="na">href=</span><span class="s">"#collapse2"</span><span class="nt">&gt;</span>
+        Collapsible Group 2<span class="nt">&lt;/a&gt;</span>
+      <span class="nt">&lt;/h4&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">"collapse2"</span> <span class="na">class=</span><span class="s">"panel-collapse collapse"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"panel-body"</span><span class="nt">&gt;</span>Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+      sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+      minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+      commodo consequat.<span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"panel panel-default"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"panel-heading"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;h4</span> <span class="na">class=</span><span class="s">"panel-title"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;a</span> <span class="na">data-toggle=</span><span class="s">"collapse"</span> <span class="na">data-parent=</span><span class="s">"#accordion"</span> <span class="na">href=</span><span class="s">"#collapse3"</span><span class="nt">&gt;</span>
+        Collapsible Group 3<span class="nt">&lt;/a&gt;</span>
+      <span class="nt">&lt;/h4&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">"collapse3"</span> <span class="na">class=</span><span class="s">"panel-collapse collapse"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"panel-body"</span><span class="nt">&gt;</span>Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+      sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+      minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+      commodo consequat.<span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+</code></pre>
+</div>
+
+<h2 id="nbsp-20"> </h2>
+<p>##  
+## <a href="/resources/blog/bstutorial//tabs_and_pills/index.html">Bootstrap Tabs and Pills</a></p>
+
+<h3 id="menus">Menus</h3>
+
+<p>In HTML, a menu is often defined in an unordered list <code class="highlighter-rouge">&lt;ul&gt;</code> (and styled afterwards), like this:</p>
+
+<div class="language-html highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;ul&gt;</span>
+  <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Home<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+  <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Menu 1<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+  <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Menu 2<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+  <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Menu 3<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+<span class="nt">&lt;/ul&gt;</span>
+</code></pre>
+</div>
+
+<p>If you want to create a horizontal menu of the list above, add the <code class="highlighter-rouge">.list-inline</code> class to <code class="highlighter-rouge">&lt;ul&gt;</code></p>
+
+<h3 id="tabs">Tabs</h3>
+
+<p>Tabs are created with <code class="highlighter-rouge">&lt;ul class="nav nav-tabs"&gt;</code></p>
+
+<p>Tip: Also mark the current page with <code class="highlighter-rouge">&lt;li class="active"&gt;</code></p>
+
+<div class="language-html highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"nav nav-tabs"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"active"</span><span class="nt">&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Home<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+  <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Menu 1<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+  <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Menu 2<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+  <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Menu 3<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+<span class="nt">&lt;/ul&gt;</span>
+</code></pre>
+</div>
+
+<h4 id="tabs-with-dropdown-menu">Tabs With Dropdown Menu</h4>
+
+<p>The following example adds a dropdown menu to “Menu 1”:</p>
+
+<div class="language-html highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"nav nav-tabs"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"active"</span><span class="nt">&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Home<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+  <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"dropdown"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"dropdown-toggle"</span> <span class="na">data-toggle=</span><span class="s">"dropdown"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Menu 1
+    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"caret"</span><span class="nt">&gt;&lt;/span&gt;&lt;/a&gt;</span>
+    <span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"dropdown-menu"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Submenu 1-1<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+      <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Submenu 1-2<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+      <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Submenu 1-3<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+    <span class="nt">&lt;/ul&gt;</span>
+  <span class="nt">&lt;/li&gt;</span>
+  <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Menu 2<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+  <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Menu 3<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+<span class="nt">&lt;/ul&gt;</span>
+</code></pre>
+</div>
+
+<h3 id="pills">Pills</h3>
+
+<p>Pills are created with <code class="highlighter-rouge">&lt;ul class="nav nav-pills"&gt;</code>. Also mark the current page with <code class="highlighter-rouge">&lt;li class="active"&gt;</code>:</p>
+
+<div class="language-html highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"nav nav-pills"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"active"</span><span class="nt">&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Home<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+  <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Menu 1<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+  <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Menu 2<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+  <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Menu 3<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+<span class="nt">&lt;/ul&gt;</span>
+</code></pre>
+</div>
+
+<h4 id="vertical-pills">Vertical Pills</h4>
+
+<p>Pills can also be displayed vertically. Just add the <code class="highlighter-rouge">.nav-stacked</code> class:</p>
+
+<div class="language-html highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"nav nav-pills nav-stacked"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"active"</span><span class="nt">&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Home<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+  <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Menu 1<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+  <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Menu 2<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+  <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Menu 3<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+<span class="nt">&lt;/ul&gt;</span>
+</code></pre>
+</div>
+<p>#### Pills With Dropdown Menu</p>
+
+<div class="language-html highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"nav nav-pills nav-stacked"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"active"</span><span class="nt">&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Home<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+  <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"dropdown"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"dropdown-toggle"</span> <span class="na">data-toggle=</span><span class="s">"dropdown"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Menu 1
+    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"caret"</span><span class="nt">&gt;&lt;/span&gt;&lt;/a&gt;</span>
+    <span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"dropdown-menu"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Submenu 1-1<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+      <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Submenu 1-2<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+      <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Submenu 1-3<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+    <span class="nt">&lt;/ul&gt;</span>
+  <span class="nt">&lt;/li&gt;</span>
+  <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Menu 2<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+  <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Menu 3<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+<span class="nt">&lt;/ul&gt;</span>
+</code></pre>
+</div>
+
+<h3 id="centered-tabs-and-pills">Centered Tabs and Pills</h3>
+
+<p>To center/justify the tabs and pills, use the <code class="highlighter-rouge">.nav-justified</code> class.</p>
+
+<p><strong><em>Note that on screens that are smaller than 768px, the list items are stacked (content will remain centered)</em></strong>:</p>
+
+<h3 id="toggleable--dynamic-tabs">Toggleable / Dynamic Tabs</h3>
+
+<p>To make the tabs toggleable, add the <code class="highlighter-rouge">data-toggle="tab"</code> attribute to each link. Then add a <code class="highlighter-rouge">.tab-pane</code> class with a unique ID for every tab and wrap them inside a <code class="highlighter-rouge">&lt;div&gt;</code> element with class <code class="highlighter-rouge">.tab-content</code>.</p>
+
+<p>If you want the tabs to fade in and out when clicking on them, add the <code class="highlighter-rouge">.fade</code> class to <code class="highlighter-rouge">.tab-pane</code>.</p>
+
+<div class="language-html highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"nav nav-tabs"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"active"</span><span class="nt">&gt;&lt;a</span> <span class="na">data-toggle=</span><span class="s">"tab"</span> <span class="na">href=</span><span class="s">"#home"</span><span class="nt">&gt;</span>Home<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+  <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">data-toggle=</span><span class="s">"tab"</span> <span class="na">href=</span><span class="s">"#menu1"</span><span class="nt">&gt;</span>Menu 1<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+  <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">data-toggle=</span><span class="s">"tab"</span> <span class="na">href=</span><span class="s">"#menu2"</span><span class="nt">&gt;</span>Menu 2<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+<span class="nt">&lt;/ul&gt;</span>
+
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"tab-content"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">"home"</span> <span class="na">class=</span><span class="s">"tab-pane fade in active"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;h3&gt;</span>HOME<span class="nt">&lt;/h3&gt;</span>
+    <span class="nt">&lt;p&gt;</span>Some content.<span class="nt">&lt;/p&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">"menu1"</span> <span class="na">class=</span><span class="s">"tab-pane fade"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;h3&gt;</span>Menu 1<span class="nt">&lt;/h3&gt;</span>
+    <span class="nt">&lt;p&gt;</span>Some content in menu 1.<span class="nt">&lt;/p&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">"menu2"</span> <span class="na">class=</span><span class="s">"tab-pane fade"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;h3&gt;</span>Menu 2<span class="nt">&lt;/h3&gt;</span>
+    <span class="nt">&lt;p&gt;</span>Some content in menu 2.<span class="nt">&lt;/p&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+</code></pre>
+</div>
+
+<h3 id="toggleable--dynamic-pills">Toggleable / Dynamic Pills</h3>
+
+<p>The same code applies to pills; only change the data-toggle attribute to <code class="highlighter-rouge">data-toggle="pill"</code>:</p>
+
+<div class="language-html highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"nav nav-pills"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"active"</span><span class="nt">&gt;&lt;a</span> <span class="na">data-toggle=</span><span class="s">"pill"</span> <span class="na">href=</span><span class="s">"#home"</span><span class="nt">&gt;</span>Home<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+  <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">data-toggle=</span><span class="s">"pill"</span> <span class="na">href=</span><span class="s">"#menu1"</span><span class="nt">&gt;</span>Menu 1<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+  <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">data-toggle=</span><span class="s">"pill"</span> <span class="na">href=</span><span class="s">"#menu2"</span><span class="nt">&gt;</span>Menu 2<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+<span class="nt">&lt;/ul&gt;</span>
+
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"tab-content"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">"home"</span> <span class="na">class=</span><span class="s">"tab-pane fade in active"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;h3&gt;</span>HOME<span class="nt">&lt;/h3&gt;</span>
+    <span class="nt">&lt;p&gt;</span>Some content.<span class="nt">&lt;/p&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">"menu1"</span> <span class="na">class=</span><span class="s">"tab-pane fade"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;h3&gt;</span>Menu 1<span class="nt">&lt;/h3&gt;</span>
+    <span class="nt">&lt;p&gt;</span>Some content in menu 1.<span class="nt">&lt;/p&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">"menu2"</span> <span class="na">class=</span><span class="s">"tab-pane fade"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;h3&gt;</span>Menu 2<span class="nt">&lt;/h3&gt;</span>
+    <span class="nt">&lt;p&gt;</span>Some content in menu 2.<span class="nt">&lt;/p&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+</code></pre>
+</div>
+
+<h2 id="nbsp-21"> </h2>
+<p>##  
+## <a href="/resources/blog/bstutorial//navbar/index.html">Bootstrap Navigation Bar</a></p>
+
+<p>A navigation bar is a navigation header that is placed at the top of the page.</p>
+
+<p>A standard navigation bar is created with <code class="highlighter-rouge">&lt;nav class="navbar navbar-default"&gt;</code>.</p>
+
+<p>The following example shows how to add a navigation bar to the top of the page:</p>
+
+<div class="language-html highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;body&gt;</span>
+<span class="nt">&lt;nav</span> <span class="na">class=</span><span class="s">"navbar navbar-default"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"container-fluid"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"navbar-header"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"navbar-brand"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>WebSiteName<span class="nt">&lt;/a&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"nav navbar-nav"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"active"</span><span class="nt">&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Home<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+      <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Page 1<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+      <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Page 2<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+      <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Page 3<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+    <span class="nt">&lt;/ul&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/nav&gt;</span>
+...
+</code></pre>
+</div>
+
+<h3 id="inverted-navigation-bar">Inverted Navigation Bar</h3>
+
+<p>If you don’t like the style of the default navigation bar, Bootstrap provides an alternative, black navbar:</p>
+
+<p>Just change the <code class="highlighter-rouge">.navbar-default</code> class into <code class="highlighter-rouge">.navbar-inverse</code>:</p>
+
+<h3 id="fixed-navigation-bar">Fixed Navigation Bar</h3>
+
+<p>The navigation bar can also be fixed at the top or at the bottom of the page.</p>
+
+<p>A fixed navigation bar stays visible in a fixed position (top or bottom) independent of the page scroll.</p>
+
+<p><a href="/resources/blog/bstutorial//navbar/fixedup.html">The <code class="highlighter-rouge">.navbar-fixed-top</code> class makes the navigation bar fixed at the top</a>:</p>
+
+<div class="language-html highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;nav</span> <span class="na">class=</span><span class="s">"navbar navbar-inverse navbar-fixed-top"</span><span class="nt">&gt;</span>
+</code></pre>
+</div>
+
+<p><a href="/resources/blog/bstutorial//navbar/fixeddown.html">The <code class="highlighter-rouge">.navbar-fixed-bottom</code> class makes the navigation bar stay at the bottom</a></p>
+
+<div class="language-html highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;nav</span> <span class="na">class=</span><span class="s">"navbar navbar-inverse navbar-fixed-bottom"</span><span class="nt">&gt;</span>
+</code></pre>
+</div>
+
+<h3 id="navigation-bar-with-dropdown">Navigation Bar With Dropdown</h3>
+
+<p>Navigation bars can also hold dropdown menus.</p>
+
+<p>The following example adds a dropdown menu for the “Page 1” button:</p>
+
+<div class="language-html highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;nav</span> <span class="na">class=</span><span class="s">"navbar navbar-inverse"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"container-fluid"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"navbar-header"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"navbar-brand"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>WebSiteName<span class="nt">&lt;/a&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"nav navbar-nav"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"active"</span><span class="nt">&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Home<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+      <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"dropdown"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"dropdown-toggle"</span> <span class="na">data-toggle=</span><span class="s">"dropdown"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Page 1
+        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"caret"</span><span class="nt">&gt;&lt;/span&gt;&lt;/a&gt;</span>
+        <span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"dropdown-menu"</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Page 1-1<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+          <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Page 1-2<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+          <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Page 1-3<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+        <span class="nt">&lt;/ul&gt;</span>
+      <span class="nt">&lt;/li&gt;</span>
+      <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Page 2<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+      <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Page 3<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+    <span class="nt">&lt;/ul&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/nav&gt;</span>
+</code></pre>
+</div>
+
+<h3 id="right-aligned-navigation-bar">Right-Aligned Navigation Bar</h3>
+
+<p>The <code class="highlighter-rouge">.navbar-right</code> class is used to right-align navigation bar buttons.</p>
+
+<p>In the following example we insert a “Sign Up” button and a “Login” button to the right in the navigation bar. We also add a glyphicon on each of the two new buttons:</p>
+
+<div class="language-html highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;nav</span> <span class="na">class=</span><span class="s">"navbar navbar-inverse"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"container-fluid"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"navbar-header"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"navbar-brand"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>WebSiteName<span class="nt">&lt;/a&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"nav navbar-nav"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"active"</span><span class="nt">&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Home<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+      <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Page 1<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+      <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Page 2<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+    <span class="nt">&lt;/ul&gt;</span>
+    <span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"nav navbar-nav navbar-right"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;&lt;span</span> <span class="na">class=</span><span class="s">"glyphicon glyphicon-user"</span><span class="nt">&gt;&lt;/span&gt;</span> Sign Up<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+      <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;&lt;span</span> <span class="na">class=</span><span class="s">"glyphicon glyphicon-log-in"</span><span class="nt">&gt;&lt;/span&gt;</span> Login<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+    <span class="nt">&lt;/ul&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/nav&gt;</span>
+</code></pre>
+</div>
+
+<h3 id="collapsing-the-navigation-bar">Collapsing The Navigation Bar</h3>
+
+<p>The navigation bar takes up too much space on a small screen.</p>
+
+<p>We should hide the navigation bar; and only show it when it is needed.</p>
+
+<p>In the following example the navigation bar is replaced by a button in the top right corner. Only when the button is clicked, the navigation bar will be displayed:</p>
+
+<div class="language-html highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;nav</span> <span class="na">class=</span><span class="s">"navbar navbar-inverse"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"container-fluid"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"navbar-header"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"navbar-toggle"</span> <span class="na">data-toggle=</span><span class="s">"collapse"</span> <span class="na">data-target=</span><span class="s">"#myNavbar"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"icon-bar"</span><span class="nt">&gt;&lt;/span&gt;</span>
+        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"icon-bar"</span><span class="nt">&gt;&lt;/span&gt;</span>
+        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"icon-bar"</span><span class="nt">&gt;&lt;/span&gt;</span>
+      <span class="nt">&lt;/button&gt;</span>
+      <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"navbar-brand"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>WebSiteName<span class="nt">&lt;/a&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"collapse navbar-collapse"</span> <span class="na">id=</span><span class="s">"myNavbar"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"nav navbar-nav"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"active"</span><span class="nt">&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Home<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+        <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Page 1<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+        <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Page 2<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+        <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Page 3<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+      <span class="nt">&lt;/ul&gt;</span>
+      <span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"nav navbar-nav navbar-right"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;&lt;span</span> <span class="na">class=</span><span class="s">"glyphicon glyphicon-user"</span><span class="nt">&gt;&lt;/span&gt;</span> Sign Up<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+        <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;&lt;span</span> <span class="na">class=</span><span class="s">"glyphicon glyphicon-log-in"</span><span class="nt">&gt;&lt;/span&gt;</span> Login<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+      <span class="nt">&lt;/ul&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/nav&gt;</span>
+</code></pre>
+</div>
+
+<h2 id="nbsp-22"> </h2>
+<p>##  
+## <a href="/resources/blog/bstutorial//forms/index.html">Bootstrap Forms</a></p>
+
+<p>Form controls automatically receive some global styling with Bootstrap:</p>
+
+<p>All textual <code class="highlighter-rouge">&lt;input&gt;</code>, <code class="highlighter-rouge">&lt;textarea&gt;</code>, and <code class="highlighter-rouge">&lt;select&gt;</code> elements with class <code class="highlighter-rouge">.form-control</code> have a width of 100%.</p>
+
+<h3 id="form-layouts">Form Layouts</h3>
+
+<p>Bootstrap provides three types of form layouts:</p>
+
+<ul>
+  <li>Vertical form (this is default)</li>
+  <li>Horizontal form</li>
+  <li>Inline form</li>
+</ul>
+
+<p>Standard rules for all three form layouts:</p>
+
+<ul>
+  <li>Always use <code class="highlighter-rouge">&lt;form role="form"&gt;</code> (helps improve accessibility for people using screen readers)</li>
+  <li>Wrap labels and form controls in <code class="highlighter-rouge">&lt;div class="form-group"&gt;</code> (needed for optimum spacing)</li>
+  <li>Add class <code class="highlighter-rouge">.form-control</code> to all textual <code class="highlighter-rouge">&lt;input&gt;</code>, <code class="highlighter-rouge">&lt;textarea&gt;</code>, and <code class="highlighter-rouge">&lt;select&gt;</code> elements</li>
+</ul>
+
+<h3 id="bootstrap-vertical-form-default">Bootstrap Vertical Form (default)</h3>
+
+<div class="language-html highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;form</span> <span class="na">role=</span><span class="s">"form"</span><span class="nt">&gt;</span>
+ <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group"</span><span class="nt">&gt;</span>
+   <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"email"</span><span class="nt">&gt;</span>Email address:<span class="nt">&lt;/label&gt;</span>
+   <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"email"</span> <span class="na">class=</span><span class="s">"form-control"</span> <span class="na">id=</span><span class="s">"email"</span><span class="nt">&gt;</span>
+ <span class="nt">&lt;/div&gt;</span>
+ <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group"</span><span class="nt">&gt;</span>
+   <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"pwd"</span><span class="nt">&gt;</span>Password:<span class="nt">&lt;/label&gt;</span>
+   <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"password"</span> <span class="na">class=</span><span class="s">"form-control"</span> <span class="na">id=</span><span class="s">"pwd"</span><span class="nt">&gt;</span>
+ <span class="nt">&lt;/div&gt;</span>
+ <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"checkbox"</span><span class="nt">&gt;</span>
+   <span class="nt">&lt;label&gt;&lt;input</span> <span class="na">type=</span><span class="s">"checkbox"</span><span class="nt">&gt;</span> Remember me<span class="nt">&lt;/label&gt;</span>
+ <span class="nt">&lt;/div&gt;</span>
+ <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"submit"</span> <span class="na">class=</span><span class="s">"btn btn-default"</span><span class="nt">&gt;</span>Submit<span class="nt">&lt;/button&gt;</span>
+<span class="nt">&lt;/form&gt;</span>
+</code></pre>
+</div>
+
+<h3 id="bootstrap-inline-form">Bootstrap Inline Form</h3>
+
+<p>In an inline form, all of the elements are inline, left-aligned, and the labels are alongside.</p>
+
+<p>Note: This only applies to forms within viewports that are at least 768px wide!</p>
+
+<p>Add class <code class="highlighter-rouge">.form-inline</code> to the <code class="highlighter-rouge">&lt;form&gt;</code> element</p>
+
+<div class="language-html highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;form</span> <span class="na">class=</span><span class="s">"form-inline"</span> <span class="na">role=</span><span class="s">"form"</span><span class="nt">&gt;</span>
+</code></pre>
+</div>
+
+<h3 id="bootstrap-horizontal-form">Bootstrap Horizontal Form</h3>
+
+<p>Additional rules for a horizontal form:</p>
+
+<ul>
+  <li>Add class <code class="highlighter-rouge">.form-horizontal</code> to the <code class="highlighter-rouge">&lt;form&gt;</code> element</li>
+  <li>Add class <code class="highlighter-rouge">.control-label</code> to all <code class="highlighter-rouge">&lt;label&gt;</code> elements</li>
+</ul>
+
+<p>Use Bootstrap’s predefined grid classes to align labels and groups of form controls in a horizontal layout.</p>
+
+<p>The following example creates a horizontal form with two input fields, one checkbox, and one submit button:</p>
+
+<div class="language-html highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;form</span> <span class="na">class=</span><span class="s">"form-horizontal"</span> <span class="na">role=</span><span class="s">"form"</span><span class="nt">&gt;</span>
+ <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group"</span><span class="nt">&gt;</span>
+   <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"control-label col-sm-2"</span> <span class="na">for=</span><span class="s">"email"</span><span class="nt">&gt;</span>Email:<span class="nt">&lt;/label&gt;</span>
+   <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-sm-10"</span><span class="nt">&gt;</span>
+     <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"email"</span> <span class="na">class=</span><span class="s">"form-control"</span> <span class="na">id=</span><span class="s">"email"</span> <span class="na">placeholder=</span><span class="s">"Enter email"</span><span class="nt">&gt;</span>
+   <span class="nt">&lt;/div&gt;</span>
+ <span class="nt">&lt;/div&gt;</span>
+ <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group"</span><span class="nt">&gt;</span>
+   <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"control-label col-sm-2"</span> <span class="na">for=</span><span class="s">"pwd"</span><span class="nt">&gt;</span>Password:<span class="nt">&lt;/label&gt;</span>
+   <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-sm-10"</span><span class="nt">&gt;</span>
+     <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"password"</span> <span class="na">class=</span><span class="s">"form-control"</span> <span class="na">id=</span><span class="s">"pwd"</span> <span class="na">placeholder=</span><span class="s">"Enter password"</span><span class="nt">&gt;</span>
+   <span class="nt">&lt;/div&gt;</span>
+ <span class="nt">&lt;/div&gt;</span>
+ <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group"</span><span class="nt">&gt;</span>
+   <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-sm-offset-2 col-sm-10"</span><span class="nt">&gt;</span>
+     <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"checkbox"</span><span class="nt">&gt;</span>
+       <span class="nt">&lt;label&gt;&lt;input</span> <span class="na">type=</span><span class="s">"checkbox"</span><span class="nt">&gt;</span> Remember me<span class="nt">&lt;/label&gt;</span>
+     <span class="nt">&lt;/div&gt;</span>
+   <span class="nt">&lt;/div&gt;</span>
+ <span class="nt">&lt;/div&gt;</span>
+ <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group"</span><span class="nt">&gt;</span>
+   <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-sm-offset-2 col-sm-10"</span><span class="nt">&gt;</span>
+     <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"submit"</span> <span class="na">class=</span><span class="s">"btn btn-default"</span><span class="nt">&gt;</span>Submit<span class="nt">&lt;/button&gt;</span>
+   <span class="nt">&lt;/div&gt;</span>
+ <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/form&gt;</span>
+</code></pre>
+</div>
+
+<h2 id="nbsp-23"> </h2>
+<p>##  
+## <a href="/resources/blog/bstutorial//inputs/index.html">Bootstrap Form Input</a></p>
+
+<h3 id="supported-form-controls">Supported Form Controls</h3>
+
+<p>Bootstrap supports the following form controls:</p>
+
+<ul>
+  <li>input</li>
+  <li>textarea</li>
+  <li>checkbox</li>
+  <li>radio</li>
+  <li>select</li>
+</ul>
+
+<h3 id="bootstrap-input">Bootstrap Input</h3>
+
+<p>Bootstrap supports all the HTML5 input types: text, password, datetime, datetime-local, date, month, time, week, number, email, url, search, tel, and color.</p>
+
+<p><strong><em>Note: Inputs will NOT be fully styled if their type is not properly declared!</em></strong></p>
+
+<div class="language-html highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group"</span><span class="nt">&gt;</span>
+ <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"usr"</span><span class="nt">&gt;</span>Name:<span class="nt">&lt;/label&gt;</span>
+ <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">class=</span><span class="s">"form-control"</span> <span class="na">id=</span><span class="s">"usr"</span><span class="nt">&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group"</span><span class="nt">&gt;</span>
+ <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"pwd"</span><span class="nt">&gt;</span>Password:<span class="nt">&lt;/label&gt;</span>
+ <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"password"</span> <span class="na">class=</span><span class="s">"form-control"</span> <span class="na">id=</span><span class="s">"pwd"</span><span class="nt">&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+</code></pre>
+</div>
+
+<h3 id="bootstrap-textarea">Bootstrap Textarea</h3>
+
+<div class="language-html highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group"</span><span class="nt">&gt;</span>
+ <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"comment"</span><span class="nt">&gt;</span>Comment:<span class="nt">&lt;/label&gt;</span>
+ <span class="nt">&lt;textarea</span> <span class="na">class=</span><span class="s">"form-control"</span> <span class="na">rows=</span><span class="s">"5"</span> <span class="na">id=</span><span class="s">"comment"</span><span class="nt">&gt;&lt;/textarea&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+</code></pre>
+</div>
+
+<h3 id="bootstrap-checkboxes">Bootstrap Checkboxes</h3>
+
+<p>Checkboxes are used if you want the user to select any number of options from a list of preset options.</p>
+
+<p>The following example contains three checkboxes. The last option is disabled:</p>
+
+<div class="language-html highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"checkbox"</span><span class="nt">&gt;</span>
+ <span class="nt">&lt;label&gt;&lt;input</span> <span class="na">type=</span><span class="s">"checkbox"</span> <span class="na">value=</span><span class="s">""</span><span class="nt">&gt;</span>Option 1<span class="nt">&lt;/label&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"checkbox"</span><span class="nt">&gt;</span>
+ <span class="nt">&lt;label&gt;&lt;input</span> <span class="na">type=</span><span class="s">"checkbox"</span> <span class="na">value=</span><span class="s">""</span><span class="nt">&gt;</span>Option 2<span class="nt">&lt;/label&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"checkbox disabled"</span><span class="nt">&gt;</span>
+ <span class="nt">&lt;label&gt;&lt;input</span> <span class="na">type=</span><span class="s">"checkbox"</span> <span class="na">value=</span><span class="s">""</span> <span class="na">disabled</span><span class="nt">&gt;</span>Option 3<span class="nt">&lt;/label&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+</code></pre>
+</div>
+
+<p>Use the <code class="highlighter-rouge">.checkbox-inline</code> class if you want the checkboxes to appear on the same line:</p>
+
+<div class="language-html highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"checkbox-inline"</span><span class="nt">&gt;&lt;input</span> <span class="na">type=</span><span class="s">"checkbox"</span> <span class="na">value=</span><span class="s">""</span><span class="nt">&gt;</span>Option 1<span class="nt">&lt;/label&gt;</span>
+<span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"checkbox-inline"</span><span class="nt">&gt;&lt;input</span> <span class="na">type=</span><span class="s">"checkbox"</span> <span class="na">value=</span><span class="s">""</span><span class="nt">&gt;</span>Option 2<span class="nt">&lt;/label&gt;</span>
+<span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"checkbox-inline"</span><span class="nt">&gt;&lt;input</span> <span class="na">type=</span><span class="s">"checkbox"</span> <span class="na">value=</span><span class="s">""</span><span class="nt">&gt;</span>Option 3<span class="nt">&lt;/label&gt;</span>
+</code></pre>
+</div>
+
+<h3 id="bootstrap-radio-buttons">Bootstrap Radio Buttons</h3>
+
+<p>Radio buttons are used if you want to limit the user to just one selection from a list of preset options.</p>
+
+<p>The following example contains three radio buttons. The last option is disabled:</p>
+
+<div class="language-html highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"radio"</span><span class="nt">&gt;</span>
+ <span class="nt">&lt;label&gt;&lt;input</span> <span class="na">type=</span><span class="s">"radio"</span> <span class="na">name=</span><span class="s">"optradio"</span><span class="nt">&gt;</span>Option 1<span class="nt">&lt;/label&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"radio"</span><span class="nt">&gt;</span>
+ <span class="nt">&lt;label&gt;&lt;input</span> <span class="na">type=</span><span class="s">"radio"</span> <span class="na">name=</span><span class="s">"optradio"</span><span class="nt">&gt;</span>Option 2<span class="nt">&lt;/label&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"radio disabled"</span><span class="nt">&gt;</span>
+ <span class="nt">&lt;label&gt;&lt;input</span> <span class="na">type=</span><span class="s">"radio"</span> <span class="na">name=</span><span class="s">"optradio"</span> <span class="na">disabled</span><span class="nt">&gt;</span>Option 3<span class="nt">&lt;/label&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+</code></pre>
+</div>
+
+<p>Use the <code class="highlighter-rouge">.radio-inline</code> class if you want the radio buttons to appear on the same line:</p>
+
+<h3 id="bootstrap-select-list">Bootstrap Select List</h3>
+
+<p>Select lists are used if you want to allow the user to pick from multiple options.</p>
+
+<p>The following example contains a dropdown list (select list):</p>
+
+<div class="language-html highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"sel1"</span><span class="nt">&gt;</span>Select list:<span class="nt">&lt;/label&gt;</span>
+  <span class="nt">&lt;select</span> <span class="na">class=</span><span class="s">"form-control"</span> <span class="na">id=</span><span class="s">"sel1"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;option&gt;</span>1<span class="nt">&lt;/option&gt;</span>
+    <span class="nt">&lt;option&gt;</span>2<span class="nt">&lt;/option&gt;</span>
+    <span class="nt">&lt;option&gt;</span>3<span class="nt">&lt;/option&gt;</span>
+    <span class="nt">&lt;option&gt;</span>4<span class="nt">&lt;/option&gt;</span>
+  <span class="nt">&lt;/select&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+</code></pre>
+</div>
+
+<h3 id="static-control">Static Control</h3>
+
+<p>If you need to insert <strong>plain text</strong> next to a form label within a horizontal form, use the <code class="highlighter-rouge">.form-control-static</code> class on a <code class="highlighter-rouge">&lt;p&gt;</code> element:</p>
+
+<div class="language-html highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;form</span> <span class="na">class=</span><span class="s">"form-horizontal"</span> <span class="na">role=</span><span class="s">"form"</span><span class="nt">&gt;</span>
+ <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group"</span><span class="nt">&gt;</span>
+   <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"control-label col-sm-2"</span> <span class="na">for=</span><span class="s">"email"</span><span class="nt">&gt;</span>Email:<span class="nt">&lt;/label&gt;</span>
+   <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-sm-10"</span><span class="nt">&gt;</span>
+     <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"form-control-static"</span><span class="nt">&gt;</span>someone@example.com<span class="nt">&lt;/p&gt;</span>
+   <span class="nt">&lt;/div&gt;</span>
+ <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/form&gt;</span>
+</code></pre>
+</div>
+
+<h3 id="bootstrap-form-control-states">Bootstrap Form Control States</h3>
+
+<ul>
+  <li><strong>INPUT FOCUS</strong> - The outline of the input is removed and a box-shadow is applied on focus</li>
+  <li><strong>DISABLED INPUTS</strong> - Add a <code class="highlighter-rouge">disabled</code> attribute to disable an input field</li>
+  <li><strong>DISABLED FIELDSETS</strong> - Add a <code class="highlighter-rouge">disabled</code> attribute to a fieldset to disable all controls within</li>
+  <li><strong>READONLY INPUTS</strong> - Add a <code class="highlighter-rouge">readonly</code> attribute to an input to prevent user input</li>
+  <li><strong>VALIDATION STATES</strong> - Bootstrap includes validation styles for error, warning, and success messages. To use, add <code class="highlighter-rouge">.has-warning</code>, <code class="highlighter-rouge">.has-error</code>, or <code class="highlighter-rouge">.has-success</code> to the parent element</li>
+  <li><strong>ICONS</strong> - You can add feedback icons with the <code class="highlighter-rouge">.has-feedback</code> class and an icon</li>
+  <li><strong>HIDDEN LABELS</strong> - Add a <code class="highlighter-rouge">.sr-only</code> class on non-visible labels</li>
+</ul>
+
+<h3 id="input-sizing-in-forms">Input Sizing in Forms</h3>
+<p>Set the heights of input elements using classes like <code class="highlighter-rouge">.input-lg</code> and <code class="highlighter-rouge">.input-sm</code>.</p>
+
+<p>Set the widths of elements using grid column classes like <code class="highlighter-rouge">.col-lg-*</code> and <code class="highlighter-rouge">.col-sm-*</code>.</p>
+
+<div class="language-html highlighter-rouge"><pre class="highlight"><code> <span class="nt">&lt;input</span> <span class="na">class=</span><span class="s">"form-control input-lg"</span> <span class="na">id=</span><span class="s">"inputlg"</span> <span class="na">type=</span><span class="s">"text"</span><span class="nt">&gt;</span>
+ ```
+
+ You can quickly size labels and form controls within a Horizontal form by adding `.form-group-*` to the `<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group"</span><span class="nt">&gt;</span>` element:
+
+ ```html
+ <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group form-group-lg"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"col-sm-2 control-label"</span> <span class="na">for=</span><span class="s">"lg"</span><span class="nt">&gt;</span>form-group-lg<span class="nt">&lt;/label&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-sm-10"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;input</span> <span class="na">class=</span><span class="s">"form-control"</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">id=</span><span class="s">"lg"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+</code></pre>
+</div>
+
+<h3 id="help-text">Help Text</h3>
+
+<p>Use the <code class="highlighter-rouge">.help-block</code> class to add a block level help text in forms:</p>
+
+<div class="language-html highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;spam</span> <span class="na">class=</span><span class="s">"help-block"</span><span class="nt">&gt;</span>This is a help block...<span class="nt">&lt;/span&gt;</span>
+</code></pre>
+</div>
+
+<h2 id="nbsp-24"> </h2>
+<p>##  
+## <a href="/2016/06/24/bootstrap-templates.html">Bootstrap Templates and Themes</a></p>
+
+</div>
+
+<div class="related">
+  <h2>Related Posts</h2>
+  <ul class="related-posts">
+    
+      <li>
+        <h3>
+          <a href="/2016/06/25/bootstrap-grid-system.html">
+            Bootstrap Grid System
+            <small>25 Jun 2016</small>
+          </a>
+        </h3>
+      </li>
+    
+      <li>
+        <h3>
+          <a href="/2016/06/24/bootstrap-templates.html">
+            Bootstrap Templates & Themes
+            <small>24 Jun 2016</small>
+          </a>
+        </h3>
+      </li>
+    
+  </ul>
+</div>
+
+  <div class="footer">
+  <!-- last update information -->
+    <p class="float-left"><a id="lastUpdate" href="" class="last-update"></a></p>
+    <p class="float-right"><a href="/about" class="about">About this site</a></p>
+</div>
+
+</div>
+
+
+
+</body>
+</html>

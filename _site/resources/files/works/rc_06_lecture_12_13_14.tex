@@ -1,0 +1,259 @@
+\documentclass[10pt]{beamer}
+\usetheme{default}
+\usepackage{float}
+\usepackage{animate}
+\usepackage{amsmath}
+
+\usepackage{esvect}
+%\usepackage[T1]{fontenc}
+
+%IndentfFirst 
+%\usepackage{indentfirst}
+%\setlength{\parindent}{2em}
+%\setlength{\parskip}{2em}
+
+
+%Geometry
+\usepackage{geometry}
+\geometry{left = 0.25in,right = 0.25in}
+
+
+
+%Adjust frametitle position (height,lateral position, etc)
+\defbeamertemplate*{frametitle}{smoothbars theme}
+{%
+	%\nointerlineskip%
+	\begin{beamercolorbox}[wd=\paperwidth,leftskip=.5cm,rightskip=.3cm plus1fil,vmode]{frametitle}
+		\vskip +4.5ex
+		\usebeamerfont*{frametitle}\insertframetitle%
+		\vskip -0.9ex
+	\end{beamercolorbox}%
+}
+
+
+\begin{document}
+
+
+%headline
+
+\setbeamertemplate{headline}{
+\parbox{\linewidth}{\vspace*{8pt}\centering{ 
+		    {\color{blue!40!black}\insertsection}
+		}
+	}
+}
+
+
+%footline
+\setbeamertemplate{footline}[text line]{%
+	\color{blue!40!black}\parbox{\linewidth}{\vspace*{-8pt}Michael Liu ~ (\insertshortinstitute)\hfill\insertshorttitle\hfill\insertshortdate~~~~~~\insertframenumber{}~/~\inserttotalframenumber}}
+
+%Remove navigation symbols
+\setbeamertemplate{navigation symbols}{}
+
+\setbeamertemplate{frametitle continuation}[from second] 
+
+\newcommand{\tabincell}[2]{\begin{tabular}{@{}#1@{}}#2\end{tabular}}
+
+%\let\oldframe\frame\renewcommand\frame[1][allowframebreaks]{\oldframe[#1]}
+
+%Title page	
+\title[Vv255 Applied Calculus III]{Vv255 Applied Calculus III\\{\small Recitation VI}}   
+\author[Michael Liu]{LIU Xieyang\\{\tiny Teaching Assistant}} 
+\institute[UM-SJTU JI]{University of Michigan - Shanghai Jiaotong University \\Joint Institute}
+\date[Summer 2015]{Summer Term 2015} 
+\begin{frame}
+	\titlepage
+\end{frame}
+
+%Table of Contents (All)
+%\begin{frame}
+%	\frametitle{Table of Contents}
+%	\tableofcontents
+%\end{frame}
+
+%Table of contents (before, highlight each section)
+\AtBeginSection[]{
+	\begin{frame}
+		\frametitle{Table of Contents}
+		\frametitle{Contents}
+		\tableofcontents[currentsection]
+	\end{frame}}
+
+
+
+
+%section
+\section{Lecture 12: Differential} 
+
+
+
+\begin{frame}[allowframebreaks]{Linearization \& Differential}
+~\\
+{\color{blue} Linearization}:\\
+The {\color{red}linearization} of a function $f (x, y)$ at a point $(x_0, y_0)$, where $f$ is differentiable,
+$$L(x,y) = f(x_0,y_0) + f_x(x_0,y_0)(x-x_0) + f_y(x_0,y_0)(y-y_0).$$
+$$$$$$$${\color{blue}Differential}:
+If we move from$ (x_0, y_0)$ to a point $(x_0 +dx, y_0 +dy)$ nearby, the resulting change
+$$df = f_x(x_0,y_0)dx + f_y(x_0,y_0)dy$$
+in the linearization of $f$ is called the  {\color{red}total differential} of $f$.
+
+\newpage
+\begin{itemize}
+	\item The plane $z = L(x, y)$ is tangent to the surface $z = f (x, y)$ at the point $(x_0, y_0)$		.
+	\item The linearization of a function of two variables is a {\color{red}tangent-plane approximation}
+	in the same way that the linearization of a function of a single variable is a
+	{\color{blue}tangent line approximation}.
+\end{itemize}
+
+\end{frame}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\section{Lecture 13: Extreme values and saddle points}
+
+\begin{frame}[allowframebreaks]{Extreme Values for function of several variables}
+	\begin{figure}[H]
+		\centering
+		\includegraphics[scale = 0.4]{extremedef}
+	\end{figure}
+
+\end{frame}
+
+\begin{frame}[allowframebreaks]{Finding Local Extrema}
+Procedures for finding {\color{red}local/relative} extrema:\\
+Step 1: 
+{\color{blue}Gradient Test: Finding \color{red}Critical Points}
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale = 0.2]{criticalpoint}
+\end{figure}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale = 0.22]{saddle}
+	\caption{{\color{red}Saddle point:} In general, we will say that a function has a saddle point P if there are two
+		distinct vertical planes through P such that P in one of the planes is a
+		local maximum and P in the other is a local minimum.}
+	\end{figure}
+	
+Step 2: 
+{\color{blue}Second derivative Test: {\color{red}Hessian Matrix}}
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale = 0.3]{hessian}
+\end{figure}
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale = 0.35]{seconddtest}
+\end{figure}
+
+	
+\end{frame}
+
+
+
+\begin{frame}[allowframebreaks]{Finding Global Extrema}
+Procedures for finding {\color{red}global/Absolute} extrema:
+\begin{enumerate}
+	\item Find the local extreme values of $f$ in the domain $D$.
+	\item Find the local extreme values of $f$ on boundary of the domain $D$.
+	\begin{itemize}
+		\item Direct examination;
+		\item Lagrange multiplier (will be talked about later)
+	\end{itemize}
+	\item Compare values in step 1. and step 2., the largest of them is the global
+	maximum, the smallest is the global minimum.
+\end{enumerate}
+
+	
+\end{frame}
+
+
+
+
+
+
+
+
+
+
+\section{Lecture 14: Lagrange Multipliers}
+
+\begin{frame}[allowframebreaks]{Geometry Basis of Lagrange Multipliers}~\\
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale = 0.25]{lm1}~~~
+	\includegraphics[scale = 0.25]{lm2}
+	\caption{Maximum of $f$ is 400; minimum of $f$ is 200}
+\end{figure}
+To motivate the method of Lagrange multipliers, suppose that we are trying to maximize
+a function $f(x,y)$ subject to the constraint $g(x, y) = 0$. Geometrically, this means that we
+are looking for a point $(x_0, y_0)$ on the graph of the constraint curve at which $f(x, y)$ is as
+large as possible.\newpage
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale = 0.22]{lm1}~~~
+	\includegraphics[scale = 0.22]{lm2}
+	\caption{Maximum of $f$ is 400; minimum of $f$ is 200}
+\end{figure}
+To help locate such a point, let us construct a contour plot of $f(x, y)$ in the same coordinate system as the graph of $g(x, y) = 0$. For example, the graph on the left shows some typical level curves  of $f(x,y) = c$, which we have labeled $c = 100,200,300,400,500$ for purpose of illustration. In this figure, each point of intersection of $g(x, y) = 0$
+with a level curve is a candidate for a solution, since these points lie on the constraint curve. Among the seven such intersections shown in the figure, the maximum value of $f(x, y)$
+occurs at the intersection $(x_0, y_0)$ where $f(x, y)$ has a value of 400.\newpage
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale = 0.22]{lm1}~~~
+	\includegraphics[scale = 0.22]{lm2}
+	\caption{Maximum of $f$ is 400; minimum of $f$ is 200}
+\end{figure}
+ Note that at $(x_0, y_0)$
+the constraint curve and the level curve just {\color{red}touch} and thus have a {\color{red}common tangent line} at this point.
+\\Since $\nabla f(x_0, y_0)$ is {\color{red} normal} to the level curve $f(x, y) = 400$ at $(x_0, y_0)$, and
+since $\nabla g(x0, y0)$ is {\color{red} normal} to the constraint curve $g(x, y) = 0$ at $(x_0, y_0)$, we conclude that
+the vectors $\nabla f(x_0, y_0)$ and $\nabla g(x_0, y_0)$ must be {\color{red} parallel}. That is 
+$$\nabla f(x_0, y_0) = \lambda \nabla g(x_0, y_0)~~~~~~~\text{for some scalar } ~ \lambda$$
+\end{frame}
+
+
+
+
+
+
+
+
+\begin{frame}[allowframebreaks]{Lagrange Multipliers}~\\
+{\color{blue}Ultimate Goal}:
+\begin{center}
+	Minimize/Maximize $f$ subject to the constraint(s) $g_1= k_1$, $g_2 = k_2$, $\cdots$, $g_n = k_n$, \\where $f$ and $g_1$, $\cdots$, $g_n$ are functions of several variables.
+\end{center}
+
+{\color{blue}Method}:\\Step 1: Solve the simultaneous equations:
+\begin{center}
+	$\nabla f = {\color{red}\lambda} \nabla g_1 + {\color{red}\mu} \nabla g_2 + \cdots$\\$g_1 = k_1$\\$g_2 = k_2$\\$\cdots$
+\end{center}
+\noindent
+Step 2: 
+\\Evaluate $f$ at all the points $(x,y,z,\cdots)$ that result from step 1. The largest of
+these values is the maximum value of $f$ ; the smallest is the minimum value
+of $f$.
+	
+\end{frame}
+
+
+\end{document}

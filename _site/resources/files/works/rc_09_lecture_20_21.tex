@@ -1,0 +1,229 @@
+\documentclass[10pt]{beamer}
+\usetheme{default}
+\usepackage{float}
+\usepackage{animate}
+\usepackage{amsmath}
+
+\usepackage{esvect}
+%\usepackage[T1]{fontenc}
+
+%IndentfFirst 
+%\usepackage{indentfirst}
+%\setlength{\parindent}{2em}
+%\setlength{\parskip}{2em}
+
+
+%Geometry
+\usepackage{geometry}
+\geometry{left = 0.25in,right = 0.25in}
+
+
+
+%Adjust frametitle position (height,lateral position, etc)
+\defbeamertemplate*{frametitle}{smoothbars theme}
+{%
+	%\nointerlineskip%
+	\begin{beamercolorbox}[wd=\paperwidth,leftskip=.5cm,rightskip=.3cm plus1fil,vmode]{frametitle}
+		\vskip +4.5ex
+		\usebeamerfont*{frametitle}\insertframetitle%
+		\vskip -0.9ex
+	\end{beamercolorbox}%
+}
+
+
+\begin{document}
+
+
+%headline
+
+\setbeamertemplate{headline}{
+\parbox{\linewidth}{\vspace*{8pt}\centering{ 
+		    {\color{blue!40!black}\insertsection}
+		}
+	}
+}
+
+
+%footline
+\setbeamertemplate{footline}[text line]{%
+	\color{blue!40!black}\parbox{\linewidth}{\vspace*{-8pt}Michael Liu ~ (\insertshortinstitute)\hfill\insertshorttitle\hfill\insertshortdate~~~~~~\insertframenumber{}~/~\inserttotalframenumber}}
+
+%Remove navigation symbols
+\setbeamertemplate{navigation symbols}{}
+
+\setbeamertemplate{frametitle continuation}[from second] 
+
+\newcommand{\tabincell}[2]{\begin{tabular}{@{}#1@{}}#2\end{tabular}}
+
+%\let\oldframe\frame\renewcommand\frame[1][allowframebreaks]{\oldframe[#1]}
+
+%Title page	
+\title[Vv255 Applied Calculus III]{Vv255 Applied Calculus III\\{\small Recitation IX}}   
+\author[Michael Liu]{LIU Xieyang\\{\tiny Teaching Assistant}} 
+\institute[UM-SJTU JI]{University of Michigan - Shanghai Jiaotong University \\Joint Institute}
+\date[Summer 2015]{Summer Term 2015} 
+\begin{frame}
+	\titlepage
+\end{frame}
+
+%Table of Contents (All)
+%\begin{frame}
+%	\frametitle{Table of Contents}
+%	\tableofcontents
+%\end{frame}
+
+%Table of contents (before, highlight each section)
+\AtBeginSection[]{
+	\begin{frame}
+		\frametitle{Table of Contents}
+		\frametitle{Contents}
+		\tableofcontents[currentsection]
+	\end{frame}}
+
+
+
+
+%section
+\section{Lecture 20: Vector Fields} 
+
+
+
+\begin{frame}[allowframebreaks]{Vector Field}
+$$\includegraphics[scale = 0.42]{defvec}$$
+- Functions $P, Q$ and $R$ are known as {\color{red} component functions}.
+\\- Sometimes written compactly as $\mathbf{F}(\mathbf{r})$, 
+where $\mathbf{r}$ is the position vector $\mathbf{r} = x\mathbf{e}_x + y\mathbf{e}_y + z\mathbf{e}_z$
+\end{frame}
+
+\begin{frame}[allowframebreaks]{Gradient Field}
+	$$\includegraphics[scale = 0.39]{defgradientfield}$$
+
+Examples:
+\begin{enumerate}
+	\item Static electric potential $V$ is the negative gradient of the electric field intensity $\mathbf{E}$.
+	$$\mathbf{E} = -\nabla V$$
+	meaning, $\mathbf{E}$ field always points in the direction of maximum rate of decrease of $V$.
+	$$\includegraphics[scale = 0.29]{lic}$$
+		
+\end{enumerate}
+\end{frame}
+
+\begin{frame}[allowframebreaks]{About Gradient Operator: In Cartesian Coordinates}
+We follow the approach in rc\_05. 
+First, we found that $$dV = (\nabla V)\cdot d\mathbf{l}$$
+where $dl = \mathbf{a}_ldl$. This essentially says that {\color{blue} the total differential of a scalar function $V$ could be expressed as the dot product of its gradient and the directional line vector $d\mathbf{l}$}.\\
+Simultaneously, we could express $dV$, the total differential of a scalar function $V$ {\color{red} in Cartesian Coordinates} as:
+$$dV = \dfrac{\partial V}{\partial x}dx + \dfrac{\partial V}{\partial y}dy + \dfrac{\partial V}{\partial z}dz.$$
+Note that {\color{red} in Cartesian Coordinates}  $$d\mathbf{l} = \mathbf{a}_xdx + \mathbf{a}_ydy + \mathbf{a}_zdz.$$
+Then, expressing $dV$ as the dot product of two vectors, we have:
+\begin{align*}
+dV &=  \left(\mathbf{a}_x\dfrac{\partial V}{\partial x} + \mathbf{a}_y\dfrac{\partial V}{\partial y} + \mathbf{a}_z\dfrac{\partial V}{\partial z}\right)  \cdot\left(\mathbf{a}_xdx + \mathbf{a}_ydy + \mathbf{a}_zdz\right)
+\\&=\left(\mathbf{a}_x\dfrac{\partial V}{\partial x} + \mathbf{a}_y\dfrac{\partial V}{\partial y} + \mathbf{a}_z\dfrac{\partial V}{\partial z}\right) \cdot d\mathbf{l}
+\end{align*}
+With a little comparison, we could get that 
+$$\nabla V = \mathbf{a}_x\dfrac{\partial V}{\partial x} + \mathbf{a}_y\dfrac{\partial V}{\partial y} + \mathbf{a}_z\dfrac{\partial V}{\partial z}$$
+or
+$$\nabla V = \left(\mathbf{a}_x\dfrac{\partial }{\partial x} + \mathbf{a}_y\dfrac{\partial }{\partial y} + \mathbf{a}_z\dfrac{\partial }{\partial z}\right) V$$
+In view of the equation above, it is convenient to consider $V$ in Cartesian coordinates as a
+vector differential {\bfseries\color{red}operator}
+$$\nabla \equiv \mathbf{a}_x\dfrac{\partial }{\partial x} + \mathbf{a}_y\dfrac{\partial }{\partial y} + \mathbf{a}_z\dfrac{\partial }{\partial z}$$
+	$$$$
+	
+	Remember, 
+	$$dV = (\nabla V)\cdot d\mathbf{l}$$
+	is valid in all orthogonal curvilinear coordinate systems, {\color{red} not just Cartesian, but also Cylindrical and Spherical}.
+\\	Now, with $dV = (\nabla V)\cdot d\mathbf{l}$ in mind, we could derive the formula for the gradient in cylindrical coordinate systems in the exact same way:
+\end{frame}
+
+\begin{frame}[allowframebreaks]{About Gradient Operator: In Cylindrical Coordinates}
+$$\includegraphics[scale = 0.209]{cy2}$$
+Note it is true {\color{red} in cylindrical coordinates} that
+$$dV = \dfrac{\partial V}{\partial r}dr + \dfrac{\partial V}{\partial \phi}d\phi + \dfrac{\partial V}{\partial z}dz$$
+and 
+$$d\mathbf{l} = \mathbf{a}_rdr + \mathbf{a}_\phi {\color{red}r} d\phi + \mathbf{a}_z dz$$
+Therefore:
+$$\nabla V =\mathbf{a}_r\dfrac{\partial V}{\partial r} + \mathbf{a}_\phi{\color{red}\dfrac{1}{r}}\dfrac{\partial V}{\partial \phi} + \mathbf{a}_z \dfrac{\partial V}{\partial z}$$
+
+\end{frame}
+
+
+\begin{frame}[allowframebreaks]{About Gradient Operator: In Spherical Coordinates}
+	$$\includegraphics[scale = 0.20]{sp2}$$
+	Note it is true {\color{red} in spherical coordinates} that
+	$$dV = \dfrac{\partial V}{\partial R}dR + \dfrac{\partial V}{\partial \theta}d\theta + \dfrac{\partial V}{\partial \phi}d\phi$$
+	and 
+	$$d\mathbf{l} = \mathbf{a}_RdR + \mathbf{a}_\theta {\color{red}R} d\theta + \mathbf{a}_\phi {\color{blue}R\sin\theta} d\phi$$
+	Therefore:
+	$$\nabla V =\mathbf{a}_R\dfrac{\partial V}{\partial R} + \mathbf{a}_\theta{\color{red}\dfrac{1}{R}}\dfrac{\partial V}{\partial \theta} + \mathbf{a}_\phi {\color{blue}\dfrac{1}{R\sin\theta}}\dfrac{\partial V}{\partial \phi}$$~\\
+	NOTE THAT my notation is different from the one in your lecture slides! But as long as it indicates the correct directional vector, it's OK! \\~
+	\\{\color{red}Notation is just a mask, you have to see through what's behind it}.\\~
+	\\Dr. Jing's version should be:
+	$$\includegraphics[scale = 0.3]{liu1}$$
+	$$\includegraphics[scale = 0.3]{liu2}$$
+\end{frame}
+
+
+\begin{frame}[allowframebreaks]{ Algebra Rules for Gradients}
+	Algebra Rules for Gradients
+	\begin{figure}[H]
+		\centering
+		\includegraphics[scale = 0.45]{rule}
+	\end{figure}
+\end{frame}
+
+\section{Lecture 21: Line Integrals}
+\begin{frame}[allowframebreaks]{ Line Integral}
+\begin{itemize}
+	\item If a constant force $F$ is applied to an object to move it along a straight line from
+	$x = a$ to $ x = b$, then the amount of work done is the force times the distance,
+	$$W = F(b-a)$$
+	\item More generally, if the force is not constant, but is instead dependent on $x$ so
+	that the amount of force applied when the object is at the point $x$ is given by
+	$F(x)$, then the work done is given by the integral
+	$$W = \int\limits_{a}^{b}F(x) dx$$
+	This definition is based on applying the ``basic'' formula inside each subinterval
+	$$\sum\limits_{i = 1}^{n}F(x^*)\Delta x_i$$
+	and take the limit of the sum.
+	\item Now, suppose that a force is applied to an object to move it along a curve C
+	defined by a smooth parametrization $\mathbf{r} = x\mathbf{e}_x + y\mathbf{e}_y$, instead of along a straight line.
+	$$\includegraphics[scale = 0.3]{deltas}$$
+	If the force on the object in the direction of motion at $(x, y)$ is given by
+	$$F(x,y) = F(\mathbf{r})$$
+	Then it is reasonable to expect the following definition,
+	$$W = \lim\limits_{n\rightarrow\infty}\sum\limits_{i = 1}^{n}F(\mathbf{r}^*)\Delta s_i = \int_C F(\mathbf{r})ds$$
+	where $s$ is the arc length parameter.
+	
+\end{itemize}
+
+\end{frame}
+\begin{frame}[allowframebreaks]{Line Integral}
+	\begin{figure}[H]
+		\centering
+		\includegraphics[scale = 0.4]{line}
+	\end{figure}
+	
+\end{frame}
+\begin{frame}[allowframebreaks]{Line Integral}
+INDEED, you only need {\color{red}ONE} formula to evaluate line integral, which is
+$$W = \int_C \mathbf{F}\cdot d\mathbf{r}$$
+or you can first find $$dW = \mathbf{F}\cdot d\mathbf{r}$$
+then do the integration $$W = \int_C dW$$
+	
+\end{frame}
+
+\begin{frame}[allowframebreaks]{Application}
+\begin{enumerate}
+	\item Finding the total work done by a mechanical force acting on an object.
+	$$W = \int_C \mathbf{F}\cdot d\mathbf{r}$$
+	\item {\color{blue}Ampere's circuital law}:
+	$$\oint_C \mathbf{B}\cdot d\mathbf{l} = \mu_0 I$$
+	which states that the circulation of the magnetic flux density in free space around any closed path is equal to $\mu_0$ times the total current flowing through the surface bounded by the path.
+	\item {\color{blue}Stoke's theorem} (will cover latter in this semester)
+	$$\int_S(\nabla\times\mathbf{A})\cdot d\mathbf{s} = \oint_C \mathbf{A}\cdot d\mathbf{l}$$
+	which states that the surface integral of the curl of a vector filed over an open surface is equal to the {\color{red}closed line integral} of the vector along the contour bounding the surface.
+\end{enumerate}
+	
+\end{frame}
+
+
+\end{document}
