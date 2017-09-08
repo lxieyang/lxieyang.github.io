@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Projects
-navigation_weight: 4
+navigation_weight: 200
 image_path_crowd_ml: '/resources/images/works/crowd_ml/interface_micro.png'
 image_path_easydraw: '/resources/images/works/easydraw/interface.png'
 image_path_denso: '/resources/images/works/denso/vatic.png'
@@ -12,19 +12,8 @@ image_path_laserguitar: '/resources/images/works/guitar/preview_guitar_1.png'
 
 <br>
 
-<!--
-{% for work in site.projects %}
-	<div class="works">
-		<h2><a href="{{ work.url }}">{{ work.title }}</a></h2>
-		<br>
-	</div>
-{% endfor %}
--->
-
 
 <div class="work-container">
-
-
 
 
 
@@ -40,12 +29,12 @@ image_path_laserguitar: '/resources/images/works/guitar/preview_guitar_1.png'
     <div class="project-year">(2016)</div>
   </div>
 	<div class="row">
-		<div class="col-sm-5">
+		<div class="col-md-5">
 			<a href="{{ site.project_links.crowd_ml }}">
 	      <img class="proj-image-preview" src="{{ page.image_path_crowd_ml }}" alt="crowd_ml">
 	    </a>
 		</div>
-		<div class="col-sm-7">
+		<div class="col-md-7">
 			In this project, we seek to investigate the impact of added subclass information on the performances of traditional machine learning classifiers. My expertise in interactive system building and crowdsourcing comes in when we need to develop an efficient labeling tool for gathering superclass/subclass information of the images in the dataset from the crowd, and in the meantime evaluate their performances and fine-tune our system accordingly. In the future, we vision to deliver a web-based interactive system on image labeling that features front-end multi-worker collaborating in real time and back-end machine learning classifying and re-sampling on the fly.
 		</div>
 	</div>

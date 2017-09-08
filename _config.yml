@@ -8,19 +8,24 @@ highlighter:      rouge
 # relative_permalinks: false
 
 # Setup
-title:            Xieyang Liu
+title:            Xieyang (Michael) Liu
 tagline:          'A Practical Idealist'
 description:      '<br>'    # need to be fixed later
 url:              http://lxieyang.github.io
 baseurl:          /
 timezone:         America/New_York
 logo:             '/resources/images/homepagelogo.jpg'
+avatar-small:     '/resources/images/avatars/lxieyang-avatar-yellowstone.jpg'
+avatar:           '/resources/images/avatars/lxieyang-avatar.jpg'
+cmu-avatar:       '/resources/images/avatars/cmu.png'
+hcii-avatar:      '/resources/images/avatars/hcii-logo-big.jpg'
 
 author:
   name:           'Xieyang Liu'
   url:            http://lxieyang.github.io
 resume:           '/resources/cv/resume_Xieyang_Liu.pdf'
 cv:               '/resources/cv/cv_Xieyang_Liu.pdf'
+
 
 # paginate
 #gems:             [jekyll-paginate]   # enable paginate in jekyll 3
@@ -37,10 +42,9 @@ github:
   repo:           https://github.com/lxieyang/lxieyang.github.io
 
 # social media
-facebook:
-  homepage:       https://www.facebook.com/profile.php?id=100000519299083
-linkedin:
-  homepage:       https://www.linkedin.com/in/lxieyang
+facebook:         'https://www.facebook.com/profile.php?id=100000519299083'
+instagram:        'https://www.instagram.com/xieyangl/'
+linkedin:         'https://www.linkedin.com/in/lxieyang'
 
 # javascript files
 helper-js:        '/resources/js/help.js'
