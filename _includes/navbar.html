@@ -1,36 +1,39 @@
 <nav class="navbar navbar-expand-md navbar-light fixed-top bg-light">
-  <a class="navbar-brand" href="#">
-    <img src="{{ site.avatar-small }}" width="30" height="30" class="d-inline-block align-top" alt=""> &nbsp;
-    {{ site.title }}
-  </a>
+  <div class="container">
+    <a class="navbar-brand" href="#">
+      <img src="{{ site.avatar-small }}" width="30" height="30" class="d-inline-block align-top" alt=""> &nbsp;
+      {{ site.title }}
+    </a>
 
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
 
-  <div class="collapse navbar-collapse" id="navbarCollapse">
-    <ul class="navbar-nav ml-auto">
-      {% assign pages_list = site.pages | sort: 'navigation_weight' %}
-      {% for node in pages_list %}
-        {% if node.navigation_weight %}
-          {% if node.title != null %}
-            {% if node.layout == "page" %}
-              {% if node.title != "Xieyang (Michael) Liu" %}
-                {% if node.title == "Resume" %}
-                    <li class="nav-item {% if page.url == node.url %} active{% endif %}">
-                      <a class="nav-link" href="{{ node.resume }}">{{ node.title }}</a>
-                    </li>
-                  {% else %}
-                    <li class="nav-item {% if page.url == node.url %} active{% endif %}">
-                      <a class="nav-link" href="{{ node.url }}">{{ node.title }}</a>
-                    </li>
+    <div class="collapse navbar-collapse" id="navbarCollapse">
+      <ul class="navbar-nav ml-auto">
+        {% assign pages_list = site.pages | sort: 'navigation_weight' %}
+        {% for node in pages_list %}
+          {% if node.navigation_weight %}
+            {% if node.title != null %}
+              {% if node.layout == "page" %}
+                {% if node.title != "Xieyang (Michael) Liu" %}
+                  {% if node.title == "Resume" %}
+                      <li class="nav-item {% if page.url == node.url %} active{% endif %}">
+                        <a class="nav-link" href="{{ node.resume }}">{{ node.title }}</a>
+                      </li>
+                    {% else %}
+                      <li class="nav-item {% if page.url == node.url %} active{% endif %}">
+                        <a class="nav-link" href="{{ node.url }}">{{ node.title }}</a>
+                      </li>
+                  {% endif %}
                 {% endif %}
               {% endif %}
             {% endif %}
           {% endif %}
-        {% endif %}
-      {% endfor %}
-    </ul>
+        {% endfor %}
+      </ul>
+    </div>
+
   </div>
 
 </nav>

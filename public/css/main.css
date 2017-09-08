@@ -8,6 +8,14 @@ nav {
   font-size: 1.2em;
 }
 
+a {
+  color: rgba(193, 0, 15, 1);
+}
+
+.contacts .contact-name {
+  color: #2b8da8;
+}
+
 .page {
   padding-top: 1.0em;
 }
