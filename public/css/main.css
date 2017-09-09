@@ -12,8 +12,32 @@ a {
   color: rgba(193, 0, 15, 1);
 }
 
+a:hover {
+  color: rgba(193, 0, 15, 1);
+}
+
+.my-title {
+  margin: 15px;
+  font-size: 1.9em;
+  /* font-weight: bold; */
+  /* color: rgba(101, 102, 109, 1); */
+  color: rgba(193, 0, 15, 1);
+}
+
 .contacts .contact-name {
-  color: #2b8da8;
+  color: rgba(101, 102, 109, 1);
+}
+
+.travel.travel-past {
+  color: gray;
+}
+
+.travel.travel-past a {
+  color: gray;
+}
+
+.travel.travel-upcoming {
+  color: rgba(193, 0, 15, 1);
 }
 
 .page {
