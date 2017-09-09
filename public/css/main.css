@@ -74,7 +74,6 @@ a:hover {
 }
 
 .school-title {
-    margin-top: 2em;
     width: 100%;
     font-size: 1.3em;
     line-height: 2em;
@@ -96,26 +95,27 @@ a:hover {
 
 .project {
   margin-top: 20px;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
+  padding: 20px;
+  background-color: rgba(252, 252, 252, 1);
+  border-radius: 0px;
 }
 
 .project .project-title {
     width: 100%;
     line-height: 2em;
-    padding-left: 1em;
+    font-size: 1.5em;
     font-weight: bold;
     margin-bottom: 1em;
-    background-color: rgba(199, 85, 73, 0.95);
-    color: white;
 }
 
 .project .project-title a {
-    color: white !important;
+    color: rgba(193, 0, 15, 1) !important;
 }
 
 .project img {
-  width: 95%;
-  height: 95%;
+  max-width: 95%;
+  max-height: 95%;
   border-radius: 10px;
 }
 
