@@ -8,8 +8,8 @@ navigation_weight: 600
 
 **Xieyang (Michael) Liu** is a first year Ph.D. student at [Human Computer Interaction Institute](http://www.hcii.cmu.edu) @ [Carnegie Mellon University](http://www.cmu.edu), where he is co-advised by <a href="http://www.cs.cmu.edu/~bam/">Dr. Brad A. Myers</a> and <a href="http://kittur.org/">Dr. Niki Kittur</a>. Xieyang's current research interests include human-computer interaction, hybrid intelligent systems, user interface development, and interactive machine learning. He obtained his two B.S. degrees at University of Michigan and Shanghai Jiao Tong University. He worked as an undergraduate researcher with [Dr. Walter S. Lasecki](https://web.eecs.umich.edu/~wlasecki/) in the [Crowds + Machines Lab (Croma Lab)](http://web.eecs.umich.edu/~wlasecki/croma.html) during his time in Michigan.
 
-<p><span style="color:#FF3366">Resume: [</span><a href="{{ site.resume }}">pdf</a><span style="color:#FF3366">]</span> (November 2016)</p>
-<p><span style="color:#FF3366">Curriculum Vitae: [</span><a href="{{ site.cv }}">pdf</a><span style="color:#FF3366">]</span> (January 2017)</p>
+<!-- <p><span style="color:#FF3366">Resume: [</span><a href="{{ site.resume }}">pdf</a><span style="color:#FF3366">]</span> (November 2016)</p> -->
+<p><span style="color:#FF3366">Curriculum Vitae: [</span><a href="{{ site.cv }}">pdf</a><span style="color:#FF3366">]</span> (September 2017)</p>
 
 <br/>
 
@@ -120,13 +120,13 @@ navigation_weight: 600
 
 
 <h2>Contact</h2>
-
-<address>
-  Human-Computer Interaction Institute<br>
-  School of Computer Science<br>
-  Carnegie Mellon University<br>
-  5000 Forbes Avenue<br>
-  Pittsburgh, PA  15213-3891<br>
-  <abbr title="Phone">P:</abbr> (734) 741-3585 <br>
-  <a href="mailto:xieyangl@cs.cmu.edu"><span class="obfuscate">ude.umc.sc@lgnayeix</span></a>
-</address>
+<strong>Address:</strong> <br>
+Human-Computer Interaction Institute, <br>
+School of Computer Science <br>
+Carnegie Mellon University <br>
+5000 Forbes Avenue <br>
+Pittsburgh, PA 15213 <br>
+<br>
+<strong>Office:</strong> <a href="https://www.google.com/maps/place/Newell-Simon+Hall/@40.443428,-79.9478021,17z/data=!3m1!4b1!4m5!3m4!1s0x8834f2216b3de60b:0x9dc3e7773e241828!8m2!3d40.443428!4d-79.9456134" target="_blank">Newell-Simon Hall 4611</a> <br>
+<strong>Email:</strong> <a href="mailto:xieyangl@cs.cmu.edu"><span class="obfuscate">ude.umc.sc@lgnayeix</span></a> <br>
+<strong>Phone:</strong> +1 (734) 741-3585 <br>
