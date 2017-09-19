@@ -65,15 +65,15 @@ a:hover {
   color: rgba(101, 102, 109, 1);
 }
 
-.travel.travel-past {
+.travel-past {
   color: gray;
 }
 
-.travel.travel-past a {
+.travel-past a {
   color: gray;
 }
 
-.travel.travel-upcoming {
+.travel-upcoming {
   color: rgba(193, 0, 15, 1);
 }
 
