@@ -52,6 +52,7 @@ typed-js:         '/resources/js/typed.js'
 
 # project links & titles
 project_titles:
+  mobile_paper_reader:  'Paper Reader for Mobile Phones'
   crowd_ml:       'Crowdsourcing & Machine Learning'
   denso:          'Vehicle Crash Analysis Using human-in-the-loop Computer Vision & Crowdsourcing'
   hico:           'Learning to Detect Humans-Objects Interactions'
@@ -60,6 +61,7 @@ project_titles:
   easydraw:       'EasyDraw: iPad-based Specialized Figure and Diagram Editing Application'
 
 project_links:
+  mobile_paper_reader:  '/projects/mobile-paper-reader.html'
   crowd_ml:       '/projects/crowd_ml.html'
   denso:          '/projects/denso.html'
   hico:           '/projects/hico.html'
