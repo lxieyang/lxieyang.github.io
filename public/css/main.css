@@ -174,7 +174,7 @@ li a:hover{
 
 .single-img {
     width: 100%;
-    max-width: 600px;
+    max-width: 100%;
 }
 
 footer {
