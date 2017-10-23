@@ -104,21 +104,6 @@ li a:hover{
   direction: rtl;
 }
 
-
-.publication-item {
-	padding-left: 10px;
-	margin-top: 20px;
-	/*margin-bottom: 20px;*/
-}
-
-.black-font {
-  border-bottom: black solid 1px;
-}
-
-.paper-title, .conf-abbr {
-  font-weight: bold;
-}
-
 .school-title {
     width: 100%;
     font-size: 1.3em;
@@ -200,4 +185,28 @@ footer {
   width: 90%;
   height: 250px;
   background-color: grey;
+}
+
+
+
+
+
+
+/*  PUBLICATION  */
+
+.publication {
+  font-size: 1.1em !important;
+}
+
+.paper-title {
+  font-weight: bold;
+}
+
+.authors .author-important {
+  font-weight: bold;
+  /* border-bottom: black solid 1px; */
+}
+
+.publication-location .conference {
+  font-style: italic;
 }

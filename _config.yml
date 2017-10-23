@@ -69,6 +69,8 @@ project_links:
   laserguitar:    '/projects/laserguitar.html'
   easydraw:       '/projects/easydraw.html'
 
+publication_links:
+  hico: '/publications.html#hico'
 
 collections:
   projects:
