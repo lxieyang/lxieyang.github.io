@@ -32,6 +32,11 @@ cv:               '/resources/cv/cv_Xieyang_Liu.pdf'
 #paginate:         5
 #paginate_path:    "blogs/page:num/"
 
+logos:
+  github:         '/resources/images/footer/github-icon.png'
+  facebook:       '/resources/images/footer/facebook-icon.png'
+  instagram:      '/resources/images/footer/instagram-icon.png'
+  linkedin:       '/resources/images/footer/linkedin-icon.png'
 
 # Custom vars
 version:          2.0.0

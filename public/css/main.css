@@ -210,3 +210,17 @@ footer {
 .publication-location .conference {
   font-style: italic;
 }
+
+
+
+
+/* FOOTER */
+img.footer-logo {
+  max-width: 30px;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+a.footer-logo-wrapper:hover {
+  text-decoration: none !important;
+}
