@@ -2,6 +2,7 @@
 body {
   /* min-height: 75rem; */
   padding-top: 4.5rem;
+  font-family: Lato;
 }
 
 nav {
@@ -193,7 +194,6 @@ footer {
 
 
 /*  PUBLICATION  */
-
 .publication {
   font-size: 1.1em !important;
 }
