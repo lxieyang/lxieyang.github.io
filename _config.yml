@@ -55,6 +55,14 @@ linkedin:         'https://www.linkedin.com/in/lxieyang'
 helper-js:        '/resources/js/help.js'
 typed-js:         '/resources/js/typed.js'
 
+# css files
+font-css:         '/public/css/font.css'
+main-css:         '/public/css/main.css'
+
+# icon files
+site-logo-original:     '/resources/images/sitelogo-original.jpg'
+site-logo-compressed:   '/resources/images/sitelogo-compressed.jpg'
+
 # project links & titles
 project_titles:
   mobile_paper_reader:  'Paper Reader for Mobile Phones'
