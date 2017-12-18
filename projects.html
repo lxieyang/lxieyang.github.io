@@ -135,25 +135,37 @@ image_path_laserguitar: '/resources/images/works/guitar/preview_guitar_1.png'
 		</div>
 		<hr>
 		<div class="row">
-			<div class="col-md-9">
-				<div class="paper-title">
-						Learning to Detect Human-Object Interactions
+			<div class="col-md-12">
+				<div class="paper-title pub-element">
+					Learning to Detect Human-Object Interactions
 				</div>
-				<div class="authors">
-						Yu-Wei Chao, Yunfan Liu, <span class="author-important">Xieyang Liu</span>, Huayi Zeng, Jia Deng.
+				<div class="authors pub-element">
+					Yu-Wei Chao, Yunfan Liu, <span class="author-important">Xieyang Liu</span>, Huayi Zeng, Jia Deng.
 				</div>
-				<div class="publication-location">
-						<span class="conference">IEEE Winter Conference on Applications of Computer Vision (WACV)</span>, <span class="conference-year">2018</span>.
+				<div class="publication-location pub-element">
+					<span class="conference">IEEE Winter Conference on Applications of Computer Vision (WACV)</span>, <span class="conference-year">2018</span>.
 				</div>
-				<div class="data">
-						[ pdf ]
-						[ supplementary material ]
-						[ <a href="https://arxiv.org/abs/1702.05448" target="_blank">arXiv</a> ]
-						[ <a href="http://www-personal.umich.edu/~ywchao/hico/" target="">project</a> ]
-						[ <a href="http://napoli18.eecs.umich.edu/public_html/data/hico_20160224_det.tar.gz" target="_blank">data</a> ]
-						[ <a href="https://github.com/ywchao/ho-rcnn" target="_blank">code</a> ]
-						[ <a href="https://github.com/ywchao/hoi-det-ui" target="_blank">UI code</a> ]
-						[ <a href="http://www-personal.umich.edu/~ywchao/publications/chao_wacv2018.bib" target="_blank">bibtex</a> ]
+				<div class="data pub-element">
+					[ <a data-toggle="collapse" href="#hico-abstract" aria-expanded="false" aria-controls="hico-abstract">Abstract</a> ]          
+					[ <a data-toggle="collapse" href="#hico-bibtex" aria-expanded="false" aria-controls="hico-bibtex">BibTex</a> ]
+					[ <a href="https://arxiv.org/abs/1702.05448" target="_blank">arXiv</a> ]
+					[ <a href="http://www-personal.umich.edu/~ywchao/hico/" target="">Project</a> ]
+					[ <a href="http://napoli18.eecs.umich.edu/public_html/data/hico_20160224_det.tar.gz" target="_blank">Data</a> ]
+					[ <a href="https://github.com/ywchao/ho-rcnn" target="_blank">Code</a> ]
+					[ <a href="https://github.com/ywchao/hoi-det-ui" target="_blank">UI code</a> ]
+				</div>
+				<div id="hico-abstract" class="collapse paper-abstract publication-collapse">
+					In this paper we study the problem of detecting human-object interactions (HOI) in static images, defined as predicting a human and an object bounding box with an interaction class label that connects them. HOI detection is a fundamental problem in computer vision as it provides semantic information about the interactions among the detected objects. We introduce HICO-DET, a new large benchmark for HOI detection, by augmenting the current HICO classification benchmark with instance annotations. We propose Human-Object Region-based Convolutional Neural Networks (HO-RCNN), a novel DNN-based framework for HOI detection. At the core of our HO-RCNN is the Interaction Pattern, a novel DNN input that characterizes the spatial relations between two bounding boxes. We validate the effectiveness of our HO-RCNN using HICO-DET. Experiments demonstrate that our HO-RCNN, by exploiting human-object spatial relations through Interaction Patterns, significantly improves the performance of HOI detection over baseline approaches. 
+				</div>
+				<div id="hico-bibtex" class="collapse publication-collapse">
+					<pre class="paper-bibtex">
+@INPROCEEDINGS{chao:wacv2018,
+	author = {Yu-Wei Chao and Yunfan Liu and Xieyang Liu and Huayi Zeng and Jia Deng},
+	title = {Learning to Detect Human-Object Interactions},
+	booktitle = {Proceedings of the IEEE Winter Conference on Applications of Computer Vision},
+	year = {2018},
+}
+					</pre>
 				</div>
 			</div>
 		</div>

@@ -52,8 +52,8 @@ instagram:        'https://www.instagram.com/xieyangl/'
 linkedin:         'https://www.linkedin.com/in/lxieyang'
 
 # javascript files
-helper-js:        '/resources/js/help.js'
-typed-js:         '/resources/js/typed.js'
+helper-js:        '/public/js/help.js'
+typed-js:         '/public/js/typed.js'
 
 # css files
 font-css:         '/public/css/font.css'
