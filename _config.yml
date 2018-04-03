@@ -8,7 +8,7 @@ highlighter:      rouge
 # relative_permalinks: false
 
 # Setup
-title:            Xieyang (Michael) Liu
+title:            Michael Xieyang Liu
 tagline:          'A Practical Idealist'
 description:      '<br>'    # need to be fixed later
 url:              http://lxieyang.github.io
@@ -21,7 +21,7 @@ cmu-avatar:       '/resources/images/avatars/cmu.png'
 hcii-avatar:      '/resources/images/avatars/hcii-logo-big.jpg'
 
 author:
-  name:           'Xieyang Liu'
+  name:           'Michael Xieyang Liu'
   url:            http://lxieyang.github.io
 resume:           '/resources/cv/resume_Xieyang_Liu.pdf'
 cv:               '/resources/cv/cv_Xieyang_Liu.pdf'
