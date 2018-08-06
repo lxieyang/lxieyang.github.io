@@ -1,10 +1,15 @@
-import React from 'react'
-import PropTypes from 'prop-types'
-import Helmet from 'react-helmet'
-import { StaticQuery, graphql } from 'gatsby'
-import Favicon from '../images/hcii-logo-big.jpg';
+import React from 'react';
+import PropTypes from 'prop-types';
+import Helmet from 'react-helmet';
+import { StaticQuery, graphql } from 'gatsby';
+import {
+  Container
+} from 'reactstrap';
 
-import Header from './header'
+import Favicon from '../../images/hcii-logo-big.jpg';
+
+import Header from '../header/header';
+import './bootstrap.min.css';
 import './layout.css'
 
 const Layout = ({ children, data }) => (
@@ -19,7 +24,7 @@ const Layout = ({ children, data }) => (
       }
     `}
     render={data => (
-      <>
+      <div>
         <Helmet
           title={data.site.siteMetadata.title}
           meta={[
@@ -33,17 +38,13 @@ const Layout = ({ children, data }) => (
           <html lang="en" />
         </Helmet>
         <Header siteTitle={data.site.siteMetadata.title} />
-        <div
+        <Container 
           style={{
-            margin: '0 auto',
-            maxWidth: 960,
-            padding: '0px 1.0875rem 1.45rem',
-            paddingTop: 0,
-          }}
-        >
+            paddingTop: '5.0rem',
+          }}>
           {children}
-        </div>
-      </>
+        </Container>
+      </div>
     )}
   />
 )
@@ -52,4 +53,4 @@ Layout.propTypes = {
   children: PropTypes.node.isRequired,
 }
 
-export default Layout
+export default Layout;

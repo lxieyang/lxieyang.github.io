@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: 'Michael Xieyang Liu - A Practical Idealist',
+    title: 'Michael Xieyang Liu',
   },
   plugins: [
     'gatsby-plugin-react-helmet',
@@ -17,5 +17,6 @@ module.exports = {
       },
     },
     'gatsby-plugin-offline',
+    
   ],
 }
