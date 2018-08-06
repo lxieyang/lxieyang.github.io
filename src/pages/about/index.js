@@ -120,7 +120,7 @@ const AboutPage = () => (
           <ul>
             <li>My Chinese name is 刘燮洋. I was born in an amazing city,  <a href="https://goo.gl/maps/V6MFTpQe3Un">Wuxi</a>, where I was brought up with by lots of love from my family and friends.</li>
             <li>My motto has always been: “Be the change you want to see in the world.” (by Mahatma Gandhi)</li>
-            <li>I hosted various activities and shows when I was in high school and college. Love it.</li>
+            <li>I love driving. I love the feeling behind the wheels. No particular reason, just love it.</li>
             <li>My favorite song and favorite album of all time are both <a href="https://en.wikipedia.org/wiki/Hotel_California">Hotel California</a>. It is the only song that I can’t get tired of. And I’m pretty sure I never will.</li>
             <li>I play the guitar, mostly acoustic, from age 16. Though recently I started teaching myself to play the electric ones. I even made my own <a href="/projects/laserguitar.html">portable laser guitar</a> during freshmen year. Believe it or not, I can play Hotel California with that :-)</li>
             <li>I enjoy reading. My favorite magazine is <a href="https://www.scientificamerican.com">Scientific American</a>. I also like watching TV series and movies, especially thrillers. I love <a href="https://en.wikipedia.org/wiki/24_(TV_series)">24</a> and <a href="http://www.fox.com/prisonbreak">Prison Break</a>. Really can’t tell which is better. I mean Jack Bauer saves the world and Michael Scofield saves the family!</li>
