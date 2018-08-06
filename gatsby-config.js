@@ -1,6 +1,11 @@
 module.exports = {
   siteMetadata: {
     title: 'Michael Xieyang Liu',
+    externalLinks: {
+      github: 'https://github.com/lxieyang',
+      facebook: 'https://www.facebook.com/profile.php?id=100000519299083',
+      instagram: 'https://www.instagram.com/xieyangl/'
+    }
   },
   plugins: [
     'gatsby-plugin-react-helmet',

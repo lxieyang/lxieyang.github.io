@@ -63,3 +63,7 @@
 .travel-upcoming {
   color: rgba(193, 0, 15, 1);
 }
+
+.old-news {
+  display: none;
+}

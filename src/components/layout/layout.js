@@ -9,16 +9,23 @@ import {
 import Favicon from '../../images/hcii-logo-big.jpg';
 
 import Header from '../header/header';
+import Footer from '../footer/footer';
 import './bootstrap.min.css';
 import './layout.css'
 
-const Layout = ({ children, data }) => (
+const Layout = ({children, data}) => {
+  return (
   <StaticQuery
     query={graphql`
       query SiteTitleQuery {
         site {
           siteMetadata {
             title
+            externalLinks {
+              github
+              facebook
+              instagram
+            }
           }
         }
       }
@@ -43,11 +50,12 @@ const Layout = ({ children, data }) => (
             paddingTop: '5.0rem',
           }}>
           {children}
+          <Footer siteTitle={data.site.siteMetadata.title} links={data.site.siteMetadata.externalLinks}/>
         </Container>
       </div>
     )}
   />
-)
+)}
 
 Layout.propTypes = {
   children: PropTypes.node.isRequired,
