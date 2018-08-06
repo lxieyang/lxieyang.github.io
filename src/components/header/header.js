@@ -50,22 +50,27 @@ class Header extends Component {
               <Nav className="ml-auto" navbar>
                 <NavItem style={{marginBottom: '0'}}>
                   <div className="navlink">
-                    <Link to="/research" activeClassName="active">Research</Link>
+                    <Link exact to="/" activeClassName="active">Home</Link>
                   </div>
                 </NavItem>
                 <NavItem style={{marginBottom: '0'}}>
                   <div className="navlink">
-                    <Link to="/experiences" activeClassName="active">Experiences</Link>
+                    <Link exact to="/research" activeClassName="active">Research</Link>
                   </div>
                 </NavItem>
                 <NavItem style={{marginBottom: '0'}}>
                   <div className="navlink">
-                    <Link to="/blogs" activeClassName="active">Blogs</Link>
+                    <Link exact to="/experiences" activeClassName="active">Experiences</Link>
                   </div>
                 </NavItem>
                 <NavItem style={{marginBottom: '0'}}>
                   <div className="navlink">
-                    <Link to="/about" activeClassName="active">About</Link>
+                    <Link exact to="/blogs" activeClassName="active">Blogs</Link>
+                  </div>
+                </NavItem>
+                <NavItem style={{marginBottom: '0'}}>
+                  <div className="navlink">
+                    <Link exact to="/about" activeClassName="active">About</Link>
                   </div>
                 </NavItem>
               </Nav>
