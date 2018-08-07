@@ -8,6 +8,10 @@ import {
 import Layout from '../../components/layout/layout';
 import ContactInfo from '../../components/UI/ContactInfo/ContactInfo';
 import CVFile from '../../assets/files/jobs/cv_Xieyang_Liu.pdf';
+import HeadshotTooltip from '../../components/UI/HeadshotTooltip/HeadshotTooltip';
+import BradImg from '../../images/people/bradmyers.jpg';
+import NikiImg from '../../images/people/nikikittur.jpg';
+import WalterImg from '../../images/people/walterlasecki.jpg';
 
 import styles from './about.module.css';
 
@@ -19,8 +23,12 @@ const AboutPage = () => (
           {/* eslint-disable-next-line */}
           <a className='anchor' name='bio'></a>
           <h2>Bio.</h2>
-          <p><strong>Michael Xieyang Liu</strong> is a second year Ph.D. student at <a href="http://www.hcii.cmu.edu">Human Computer Interaction Institute</a> @ <a href="http://www.cmu.edu">Carnegie Mellon University</a>, where he is co-advised by <a href="http://www.cs.cmu.edu/~bam/">Dr. Brad A. Myers</a> and <a href="http://kittur.org/">Dr. Niki Kittur</a>. Michael's current research interests include human-computer interaction, hybrid intelligent systems, user interface development, and sensemaking. He obtained his two B.S. degrees at University of Michigan and Shanghai Jiao Tong University. He worked as an undergraduate researcher with <a href="https://web.eecs.umich.edu/~wlasecki/">Dr. Walter S. Lasecki</a> in the <a href="http://web.eecs.umich.edu/~wlasecki/croma.html">Crowds + Machines Lab (Croma Lab)</a> during his time in Michigan.</p>
+          <p><strong>Michael Xieyang Liu</strong> is a second year Ph.D. student at <a href="http://www.hcii.cmu.edu">Human Computer Interaction Institute</a> @ <a href="http://www.cmu.edu">Carnegie Mellon University</a>, where he is co-advised by <a href="http://www.cs.cmu.edu/~bam/" id="brad-myers">Dr. Brad A. Myers</a> and <a href="http://kittur.org/" id="niki-kittur">Dr. Niki Kittur</a>. Michael's current research interests include human-computer interaction, hybrid intelligent systems, user interface development, and sensemaking. He obtained his two B.S. degrees at University of Michigan and Shanghai Jiao Tong University. He worked as an undergraduate researcher with <a href="https://web.eecs.umich.edu/~wlasecki/" id="walter-lasecki">Dr. Walter S. Lasecki</a> in the <a href="http://web.eecs.umich.edu/~wlasecki/croma.html">Crowds + Machines Lab (Croma Lab)</a> during his time in Michigan.</p>
           <p><span>Curriculum Vitae: [</span><a href={ CVFile }>pdf</a><span>]</span> (September 2017)</p>
+
+          <HeadshotTooltip target="brad-myers" headshotPath={ BradImg }/>
+          <HeadshotTooltip target="niki-kittur" headshotPath={ NikiImg }/>
+          <HeadshotTooltip target="walter-lasecki" headshotPath={ WalterImg }/>
         </div>
 
 
@@ -44,7 +52,7 @@ const AboutPage = () => (
             </tr>
             <tr>
               <td></td>
-              <td>- Advisors: <a href="http://www.cs.cmu.edu/~bam/">Dr. Brad A. Myers</a> and <a href="http://kittur.org/">Dr. Niki Kittur</a></td>
+              <td>- Advisors: <a href="http://www.cs.cmu.edu/~bam/" id="brad-myers-2">Dr. Brad A. Myers</a> and <a href="http://kittur.org/" id="niki-kittur-2">Dr. Niki Kittur</a></td>
             </tr>
             <tr>
               <td>09/2015 - 04/2017</td>
@@ -56,7 +64,7 @@ const AboutPage = () => (
             </tr>
             <tr>
               <td></td>
-              <td>- Advisor: <a href="https://web.eecs.umich.edu/~wlasecki/">Dr. Walter Lasecki</a></td>
+              <td>- Advisor: <a href="https://web.eecs.umich.edu/~wlasecki/" id="walter-lasecki-2">Dr. Walter Lasecki</a></td>
             </tr>
             <tr>
               <td></td>
@@ -106,6 +114,10 @@ const AboutPage = () => (
             </tr>
           </tbody>
           </table>
+
+          <HeadshotTooltip target="brad-myers-2" headshotPath={ BradImg }/>
+          <HeadshotTooltip target="niki-kittur-2" headshotPath={ NikiImg }/>
+          <HeadshotTooltip target="walter-lasecki-2" headshotPath={ WalterImg }/>
         </div>
 
 

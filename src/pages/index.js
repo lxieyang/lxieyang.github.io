@@ -13,6 +13,10 @@ import Map from '../components/UI/Map/Map';
 import ProfileImg from '../images/lxieyang-avatar.jpg';
 import CMUAvatar from '../images/cmu.png';
 import HCIIAvatar from '../images/hcii-logo-big.jpg';
+import HeadshotTooltip from '../components/UI/HeadshotTooltip/HeadshotTooltip';
+import BradImg from '../images/people/bradmyers.jpg';
+import NikiImg from '../images/people/nikikittur.jpg';
+import WalterImg from '../images/people/walterlasecki.jpg';
 
 import CVFile from '../assets/files/jobs/cv_Xieyang_Liu.pdf';
 // import SensemakingWorkshopPaperLocalFile from '../assets/files/pubs/kap/Liu-SupportingKnowledgeAccelerationForProgramming.pdf';
@@ -56,8 +60,14 @@ const IndexPage = ({data}) => (
           <hr/>
           <p style={{fontSize: '1.1rem'}}>
             My current research interests include <strong>human-computer interaction</strong>, <strong>user interface development</strong>, and  <strong>sensemaking</strong>. <br/>
-            My current advisors are <a href="http://www.cs.cmu.edu/~bam/">Dr. Brad A. Myers</a> and <a href="http://kittur.org/">Dr. Niki Kittur</a>. <br/>
-            I obtained my two B.S. degrees at <a href="https://www.umich.edu">University of Michigan, Ann Arbor</a> and <a href="http://en.sjtu.edu.cn">Shanghai Jiao Tong University</a>. I worked as an undergraduate researcher with <a href="https://web.eecs.umich.edu/~wlasecki/">Dr. Walter S. Lasecki</a> in the <a href="http://web.eecs.umich.edu/~wlasecki/croma.html">Crowds + Machines Lab (Croma Lab)</a> during my time in Michigan.
+            My current advisors are <a href="http://www.cs.cmu.edu/~bam/" id="brad-myers">Dr. Brad A. Myers</a> and <a href="http://kittur.org/" id="niki-kittur">Dr. Niki Kittur</a>. <br/>
+
+            <HeadshotTooltip target="brad-myers" headshotPath={ BradImg }/>
+            <HeadshotTooltip target="niki-kittur" headshotPath={ NikiImg }/>
+
+            I obtained my two B.S. degrees at <a href="https://www.umich.edu">University of Michigan, Ann Arbor</a> and <a href="http://en.sjtu.edu.cn">Shanghai Jiao Tong University</a>. I worked as an undergraduate researcher with <a href="https://web.eecs.umich.edu/~wlasecki/" id="walter-lasecki">Dr. Walter S. Lasecki</a> in the <a href="http://web.eecs.umich.edu/~wlasecki/croma.html">Crowds + Machines Lab (Croma Lab)</a> during my time in Michigan.
+
+            <HeadshotTooltip target="walter-lasecki" headshotPath={ WalterImg }/>
           </p>
           <Row className="contacts">
             <Col md='6'>
