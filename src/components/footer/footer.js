@@ -1,13 +1,74 @@
 import React, { Component } from 'react';
+import { Link } from 'gatsby';
 import {
-  Row, Col
+  Row, Col,
+  UncontrolledTooltip
 } from 'reactstrap';
 
+import styled from 'styled-components';
+
+import Map from '../../components/UI/Map/Map';
+import ContactInfo from '../../components/UI/ContactInfo/ContactInfo';
 import GithubLogo from '../../images/footer/github-icon.png';
 import FacebookLogo from '../../images/footer/facebook-icon.png';
 import InstagramLogo from '../../images/footer/instagram-icon.png';
-
+import GatsbyLogo from '../../images/gatsby-icon.png';
+import ReactLogo from '../../images/react-icon.jpg';
+import BootstrapLogo from '../../images/bootstrap-icon.png';
 import './footer.css';
+
+const FooterContainer = styled.footer`
+  color: #666;
+`;
+
+const SocialMediaIcon = styled.img`
+  display: inline-block;
+  filter: grayscale(1);
+  opacity: 0.7;
+  border-radius: 50%;
+  max-width: 30px;
+  margin-right: 10px;
+
+  transition: 0.1s all ease-in;
+
+  &:hover {
+    opacity: 1;
+    transform: scale(1.05);
+    filter: grayscale(0);
+  }
+`;
+
+const CopyrightParagraphContainer = styled.div`
+  margin: 10px 0;
+`;
+
+const SocialMediaIconsContainer = styled.div`
+  margin: 10px 0;
+`;
+
+const BuildInfoContainer = styled.div`
+  margin: 10px 0;
+  display: flex;
+  align-items: center;
+`;
+
+const CompanyIcon = styled.img`
+  display: inline-block;
+  filter: grayscale(1);
+  border-radius: 50%;
+  max-width: 30px;
+  margin: 0 5px;
+
+  opacity: 0.7;
+
+  transition: 0.1s all ease-in;
+
+  &:hover {
+    opacity: 1;
+    transform: scale(1.05);
+    filter: grayscale(0);
+  }
+`;
 
 class Footer extends Component {
 
@@ -22,24 +83,58 @@ class Footer extends Component {
       <div>
         <br/><hr/>
 
-        <footer>
+        <FooterContainer>
           <Row>
-            <Col style={{color: 'gray'}}>
-              Copyright © {this.props.siteTitle} {this.state.startYear} - {(new Date()).getFullYear()}
+            <Col md='6'>
+              <Row><Col><h4>Contact Me</h4></Col></Row>
+              <Row><Col><Map /></Col></Row>
+              <Row><Col><ContactInfo /></Col></Row>
             </Col>
-            <Col className="text-right">
-              <a className="footer-logo-wrapper" href={ github }>
-                <img alt="github" src={ GithubLogo } className="footer-logo" />
-              </a>
-              <a className="footer-logo-wrapper" href={ facebook }>
-                <img alt="facebook" src={ FacebookLogo } className="footer-logo" />
-              </a>
-              <a className="footer-logo-wrapper" href={ instagram }>
-                <img alt="instagram" src={ InstagramLogo } className="footer-logo" />
-              </a>
+
+            <Col md='6' className="text-left">
+              <div>Designed by <Link to="/">Michael Xieyang Liu</Link>.</div>
+              <SocialMediaIconsContainer>
+                <a className="footer-logo-wrapper" href={ github } id="github-logo">
+                  <SocialMediaIcon alt="github" src={ GithubLogo } className="footer-logo" />
+                </a>
+                <UncontrolledTooltip placement="bottom" target="github-logo">
+                  Github
+                </UncontrolledTooltip>
+                <a className="footer-logo-wrapper" href={ facebook } id="facebook-logo">
+                  <SocialMediaIcon alt="facebook" src={ FacebookLogo } className="footer-logo" />
+                </a>
+                <UncontrolledTooltip placement="bottom" target="facebook-logo">
+                  Facebook
+                </UncontrolledTooltip>
+                <a className="footer-logo-wrapper" href={ instagram } id="instagram-logo">
+                  <SocialMediaIcon alt="instagram" src={ InstagramLogo } className="footer-logo" />
+                </a>
+                <UncontrolledTooltip placement="bottom" target="instagram-logo">
+                  Instagram
+                </UncontrolledTooltip>
+              </SocialMediaIconsContainer>
+              <CopyrightParagraphContainer>
+                Copyright © {this.state.startYear} - {(new Date()).getFullYear()}
+              </CopyrightParagraphContainer>
+              <BuildInfoContainer>
+                Built with <a href="https://gatsbyjs.org" id="gatsby"><CompanyIcon src={ GatsbyLogo } alt="gatsby"/></a>, <a href="https://reactjs.org" id="react"><CompanyIcon src={ ReactLogo } alt="react"/></a> and <a href="https://getbootstrap.com/" id="bootstrap"><CompanyIcon src={ BootstrapLogo } alt="react"/></a>.
+                <UncontrolledTooltip placement="bottom" target="gatsby">
+                  Gatsby v2
+                </UncontrolledTooltip>
+                <UncontrolledTooltip placement="bottom" target="react">
+                  React v16
+                </UncontrolledTooltip>
+                <UncontrolledTooltip placement="bottom" target="bootstrap">
+                  Bootstrap v4
+                </UncontrolledTooltip>
+              </BuildInfoContainer>
+              
+              
             </Col>
+
+            
           </Row>
-        </footer>   
+        </FooterContainer>   
         
         <br/>
       </div>

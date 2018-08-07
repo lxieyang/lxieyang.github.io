@@ -168,24 +168,6 @@ const IndexPage = ({data}) => (
       </Col>
     </Row>
 
-
-    <br/><hr/><br/>
-
-
-    <Row>
-      {/* contact */}
-      <Col sm='6'>
-        <h2>Contact</h2>
-        <ContactInfo />
-      </Col>
-
-      {/* map */}
-      <Col sm='6'>
-        <h2>Location</h2>
-        <Map />
-      </Col>
-    </Row>
-
   </Layout>
 );
 

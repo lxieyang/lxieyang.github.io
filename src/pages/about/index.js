@@ -140,17 +140,6 @@ const AboutPage = () => (
           </ul>
         </div>
 
-
-        <hr/>
-
-
-        <div>
-          {/* eslint-disable-next-line */}
-          <a className='anchor' name='contact'></a>
-          <h2>Contact</h2>
-          <ContactInfo />
-        </div>
-
       </Col>
 
       {/* https://getbootstrap.com/docs/4.1/utilities/display/ */}
@@ -164,9 +153,6 @@ const AboutPage = () => (
           </li>
           <li>
           <a href="#misc">Misc.</a>
-          </li>
-          <li>
-            <a href="#contact">Contact</a>
           </li>
         </ul>
       </Col>
