@@ -26,7 +26,7 @@ import './index.css';
 const IndexPage = ({data}) => (
   <Layout>
     <Row>
-      <Col lg='4' md='6'>
+      <Col md='4' className="d-none d-sm-none d-md-block">
         <div className="homepage-avatar-section">
           <div className="watermark-image-display-container">
             <img src={ProfileImg} alt="profile" style={{maxWidth: '100%', maxHeight: '100%'}}/><br />
@@ -45,7 +45,7 @@ const IndexPage = ({data}) => (
         </div>
       </Col>
 
-      <Col lg='8' md='6'>
+      <Col md='8'>
         <div className="homepage-word-section">
           <h2>
             Michael Xieyang Liu (刘燮洋)
@@ -58,7 +58,7 @@ const IndexPage = ({data}) => (
             I am a Ph.D. student at <a href="http://www.hcii.cmu.edu">Human-Computer Interaction Institute</a> @ <a href="http://www.cmu.edu">Carnegie Mellon University</a>. <br/>
           </p>
           <hr/>
-          <p style={{fontSize: '1.1rem'}}>
+          <p style={{fontSize: '1.0rem'}}>
             My current research interests include <strong>human-computer interaction</strong>, <strong>user interface development</strong>, and  <strong>sensemaking</strong>. <br/>
             My current advisors are <a href="http://www.cs.cmu.edu/~bam/" id="brad-myers">Dr. Brad A. Myers</a> and <a href="http://kittur.org/" id="niki-kittur">Dr. Niki Kittur</a>. <br/>
 
