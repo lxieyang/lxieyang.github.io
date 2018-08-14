@@ -6,8 +6,6 @@ import {
   Container
 } from 'reactstrap';
 
-import Favicon from '../../images/hcii-logo-big.jpg';
-
 import Header from '../header/header';
 import Footer from '../footer/footer';
 import './bootstrap.min.css';
@@ -37,9 +35,6 @@ const Layout = ({children, data, pathName}) => {
           meta={[
             { name: 'description', content: 'Michael Xieyang Liu\'s personal website' },
             { name: 'keywords', content: 'HCI, Computer Science, Researcher, Carnegie Mellon University' },
-          ]}
-          link={[
-            { rel: 'shortcut icon', type: 'image/jpeg', href: `${Favicon}` }
           ]}
         >
           <html lang="en" />
