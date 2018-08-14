@@ -100,12 +100,12 @@ const IndexPage = ({data}) => (
               Our paper <span className="paper-title">Learning to Detect Human-Object Interactions</span> is accepted to <a href="http://wacv18.uccs.us" target="_blank" rel="noopener noreferrer">WACV 2018</a>. Check it out <Link to="/research/#hico">here</Link>.
           </li>
           <li>
-            Check out my Paper Reader app to support better reading experience of <strong>pdf</strong> documents (especially research papers) on mobile phones!
+            Check out my <a href="https://github.com/lxieyang/mobile-paper-reader" target="_blank" rel="noopener noreferrer">Paper Reader app</a> to support better reading experience of <strong>pdf</strong> documents (especially research papers) on mobile phones!
           </li>
-          <li>
+          <li  className="old-news">
             <a href="http://www.cs.cmu.edu/~bam/">Dr. Brad A. Myers</a> and <a href="http://kittur.org/">Dr. Niki Kittur</a> are my advisors here at <a href="http://www.hcii.cmu.edu">CMU HCII</a>.
           </li>
-          <li>
+          <li  className="old-news">
             I started as a <strong>Ph.D.</strong> student at <a href="http://www.hcii.cmu.edu">Human-Computer Interaction Institute</a> @ <a href="http://www.cmu.edu">Carnegie Mellon University</a> in August 2017!
           </li>
           <li className="old-news">
