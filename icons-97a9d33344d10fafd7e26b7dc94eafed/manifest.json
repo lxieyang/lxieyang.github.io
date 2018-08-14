@@ -1,14 +1,14 @@
 {
-  "name": "Gatsby site",
-  "short_name": "Gatsby site",
-  "description": null,
+  "name": "Michael Liu's Website",
+  "short_name": "Michael Liu's Website",
+  "description": "The personal website of Michael Xieyang Liu",
   "dir": "auto",
   "lang": "en-US",
   "display": "standalone",
   "orientation": "any",
   "start_url": "/?homescreen=1",
   "background_color": "#fff",
-  "theme_color": "#fff",
+  "theme_color": "#002635",
   "icons": [
     {
       "src": "/icons-97a9d33344d10fafd7e26b7dc94eafed/android-chrome-36x36.png",
