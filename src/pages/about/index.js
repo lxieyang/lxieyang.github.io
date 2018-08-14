@@ -1,13 +1,13 @@
 import React from 'react';
 import { Link } from 'gatsby';
+import appRoutes from '../../utils/appRoutes';
 import {
   // Container, 
   Row, Col
 } from 'reactstrap';
 
 import Layout from '../../components/layout/layout';
-import ContactInfo from '../../components/UI/ContactInfo/ContactInfo';
-import CVFile from '../../assets/files/jobs/cv_Xieyang_Liu.pdf';
+import { CVPath } from '../../utils/constants';
 import HeadshotTooltip from '../../components/UI/HeadshotTooltip/HeadshotTooltip';
 import BradImg from '../../images/people/bradmyers.jpg';
 import NikiImg from '../../images/people/nikikittur.jpg';
@@ -16,7 +16,7 @@ import WalterImg from '../../images/people/walterlasecki.jpg';
 import styles from './about.module.css';
 
 const AboutPage = () => (
-  <Layout>
+  <Layout pathName="About">
     <Row>
       <Col md='9' sm='12'>
         <div>
@@ -24,7 +24,7 @@ const AboutPage = () => (
           <a className='anchor' name='bio'></a>
           <h2>Bio.</h2>
           <p><strong>Michael Xieyang Liu</strong> is a second year Ph.D. student at <a href="http://www.hcii.cmu.edu">Human Computer Interaction Institute</a> @ <a href="http://www.cmu.edu">Carnegie Mellon University</a>, where he is co-advised by <a href="http://www.cs.cmu.edu/~bam/" id="brad-myers">Dr. Brad A. Myers</a> and <a href="http://kittur.org/" id="niki-kittur">Dr. Niki Kittur</a>. Michael's current research interests include human-computer interaction, hybrid intelligent systems, user interface development, and sensemaking. He obtained his two B.S. degrees at University of Michigan and Shanghai Jiao Tong University. He worked as an undergraduate researcher with <a href="https://web.eecs.umich.edu/~wlasecki/" id="walter-lasecki">Dr. Walter S. Lasecki</a> in the <a href="http://web.eecs.umich.edu/~wlasecki/croma.html">Crowds + Machines Lab (Croma Lab)</a> during his time in Michigan.</p>
-          <p><span>Curriculum Vitae: [</span><a href={ CVFile }>pdf</a><span>]</span> (September 2017)</p>
+          <p><span>Curriculum Vitae: [</span><a href={ CVPath }>pdf</a><span>]</span> (September 2017)</p>
 
           <HeadshotTooltip target="brad-myers" headshotPath={ BradImg }/>
           <HeadshotTooltip target="niki-kittur" headshotPath={ NikiImg }/>
@@ -132,7 +132,7 @@ const AboutPage = () => (
           <ul>
             <li>My Chinese name is 刘燮洋. I was born in an amazing city,  <a href="https://goo.gl/maps/V6MFTpQe3Un">Wuxi</a>, where I was brought up with by lots of love from my family and friends.</li>
             <li>My motto has always been: “Be the change you want to see in the world.” (by Mahatma Gandhi)</li>
-            <li>I love driving. I love the feeling behind the wheels. No particular reason, just love it. There's also a clue about how much I love being on the road through this site's <Link to="/404/">404 NOT FOUND</Link> page.</li>
+            <li>I love driving. I love the feeling behind the wheels. No particular reason, just love it. There's also a clue about how much I love being on the road through this site's <Link to={appRoutes.notfound}>404 NOT FOUND</Link> page.</li>
             <li>My favorite song and favorite album of all time are both <a href="https://en.wikipedia.org/wiki/Hotel_California">Hotel California</a>. It is the only song that I can’t get tired of. And I’m pretty sure I never will.</li>
             <li>I play the guitar, mostly acoustic, from age 16. Though recently I started teaching myself to play the electric ones. I even made my own <a href="/projects/laserguitar.html">portable laser guitar</a> during freshmen year. Believe it or not, I can play Hotel California with that :-)</li>
             <li>I enjoy reading. My favorite magazine is <a href="https://www.scientificamerican.com">Scientific American</a>. I also like watching TV series and movies, especially thrillers. I love <a href="https://en.wikipedia.org/wiki/24_(TV_series)">24</a> and <a href="http://www.fox.com/prisonbreak">Prison Break</a>. Really can’t tell which is better. I mean Jack Bauer saves the world and Michael Scofield saves the family!</li>

@@ -1,12 +1,13 @@
 import React from 'react';
-import { Link } from 'gatsby';
+// import { Link } from 'gatsby';
+// import appRoutes from '../../utils/appRoutes';
 
 import Layout from '../../components/layout/layout';
 
-const ExperiencesPage = () => (
-  <Layout>
+const ExperiencesPage = (props) => (
+  <Layout pathName="Experiences">
     <h1>Experiences</h1>
-    <Link to="/">Go back to the homepage</Link>
+    <h4>Coming soon!</h4>
   </Layout>
 )
 export default ExperiencesPage;

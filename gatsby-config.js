@@ -36,6 +36,26 @@ module.exports = {
         exclude: ["/preview/**", "/do-not-track/me/too/"],
       },
     },
+    {
+      resolve: 'gatsby-plugin-copy-files',
+      options: {
+          source: `${__dirname}/src/assets`,
+          destination: '/assets'
+      }
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `assets`,
+        path: `${__dirname}/src/assets/`,
+      },
+    },
+    {
+      resolve: `gatsby-transformer-remark`,
+      options: {
+        plugins: ["gatsby-remark-copy-linked-files"],
+      },
+    },
     
   ],
 }

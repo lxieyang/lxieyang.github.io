@@ -13,7 +13,7 @@ import Footer from '../footer/footer';
 import './bootstrap.min.css';
 import './layout.css'
 
-const Layout = ({children, data}) => {
+const Layout = ({children, data, pathName}) => {
   return (
   <StaticQuery
     query={graphql`
@@ -33,7 +33,7 @@ const Layout = ({children, data}) => {
     render={data => (
       <div>
         <Helmet
-          title={data.site.siteMetadata.title}
+          title={`${pathName !== undefined ? pathName + ' | ' : ''}${data.site.siteMetadata.title}`}
           meta={[
             { name: 'description', content: 'Michael Xieyang Liu\'s personal website' },
             { name: 'keywords', content: 'HCI, Computer Science, Researcher, Carnegie Mellon University' },

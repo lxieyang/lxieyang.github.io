@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { Link } from 'gatsby';
+import appRoutes from '../../utils/appRoutes';
 import './header.css';
 import {
   Container,
@@ -52,7 +53,7 @@ class Header extends Component {
         <Navbar id="navbar" color="light" light expand="md" fixed="top"> 
           <Container>
             <div className="navbarbrand">
-              <Link to="/">
+              <Link to={appRoutes.home}>
                 <img src={HeaderImg} width="30" height="30" className="d-inline-block align-top" alt="profile" style={{marginBottom: '0'}}/> &nbsp;
                 {this.props.siteTitle}
               </Link>
@@ -62,27 +63,27 @@ class Header extends Component {
               <Nav className="ml-auto" navbar>
                 <NavItem style={{marginBottom: '0'}}>
                   <div className="navlink">
-                    <Link exact to="/" activeClassName="active">Home</Link>
+                    <Link exact to={appRoutes.home} activeClassName="active">Home</Link>
                   </div>
                 </NavItem>
                 <NavItem style={{marginBottom: '0'}}>
                   <div className="navlink">
-                    <Link exact to="/research" activeClassName="active">Research</Link>
+                    <Link exact to={appRoutes.research} activeClassName="active">Research</Link>
                   </div>
                 </NavItem>
                 <NavItem style={{marginBottom: '0'}}>
                   <div className="navlink">
-                    <Link exact to="/experiences" activeClassName="active">Experiences</Link>
+                    <Link exact to={appRoutes.experiences} activeClassName="active">Experiences</Link>
                   </div>
                 </NavItem>
                 <NavItem style={{marginBottom: '0'}}>
                   <div className="navlink">
-                    <Link exact to="/blogs" activeClassName="active">Blogs</Link>
+                    <Link exact to={appRoutes.blogs} activeClassName="active">Blogs</Link>
                   </div>
                 </NavItem>
                 <NavItem style={{marginBottom: '0'}}>
                   <div className="navlink">
-                    <Link exact to="/about" activeClassName="active">About</Link>
+                    <Link exact to={appRoutes.about} activeClassName="active">About</Link>
                   </div>
                 </NavItem>
               </Nav>

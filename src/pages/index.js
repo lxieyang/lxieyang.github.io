@@ -7,8 +7,6 @@ import {
 
 import Layout from '../components/layout/layout';
 import Email from '../components/UI/ObfuscatedEmail/ObfuscatedEmail';
-import ContactInfo from '../components/UI/ContactInfo/ContactInfo';
-import Map from '../components/UI/Map/Map';
 
 import ProfileImg from '../images/lxieyang-avatar.jpg';
 import CMUAvatar from '../images/cmu.png';
@@ -18,7 +16,7 @@ import BradImg from '../images/people/bradmyers.jpg';
 import NikiImg from '../images/people/nikikittur.jpg';
 import WalterImg from '../images/people/walterlasecki.jpg';
 
-import CVFile from '../assets/files/jobs/cv_Xieyang_Liu.pdf';
+import { CVPath } from '../utils/constants';
 // import SensemakingWorkshopPaperLocalFile from '../assets/files/pubs/kap/Liu-SupportingKnowledgeAccelerationForProgramming.pdf';
 
 import './index.css';
@@ -71,7 +69,7 @@ const IndexPage = ({data}) => (
           </p>
           <Row className="contacts">
             <Col md='6'>
-              <span className="contact-name">Curriculum Vitae: [</span><a href={ CVFile }>pdf</a><span className="contact-name">]</span> (September 2017)<br/>
+              <span className="contact-name">Curriculum Vitae: [</span><a href={ CVPath }>pdf</a><span className="contact-name">]</span> (September 2017)<br/>
               <span className="contact-name">Email: </span> <Email />
               
             </Col>
@@ -93,7 +91,10 @@ const IndexPage = ({data}) => (
         <h2>News</h2>
         <ul>
           <li>
-            I will present our position paper <span className="paper-title">Supporting Knowledge Acceleration for Programming from a Sensemaking Perspective</span> at <a href="https://sensemakingchi2018.com/" target="_blank" rel="noopener noreferrer">CHI 2018 Sensemaking Workshop</a>. Check it out <Link to="/research/#kap">here</Link>.
+            I re-wrote this website with <a href="https://www.gatsbyjs.org" target="_blank" rel="noopener noreferrer">Gatsby.js</a> and <a href="https://reactjs.org/" target="_blank" rel="noopener noreferrer">React.js</a>! It used to be based on <a href="https://jekyllrb.com/" target="_blank" rel="noopener noreferrer">Jekyll</a>.
+          </li>
+          <li>
+            I presented our position paper <span className="paper-title">Supporting Knowledge Acceleration for Programming from a Sensemaking Perspective</span> at <a href="https://sensemakingchi2018.com/" target="_blank" rel="noopener noreferrer">CHI 2018 Sensemaking Workshop</a>. Check it out <Link to="/research/#kap-sensemaking-workshop">here</Link>.
           </li>
           <li>
               Our paper <span className="paper-title">Learning to Detect Human-Object Interactions</span> is accepted to <a href="http://wacv18.uccs.us" target="_blank" rel="noopener noreferrer">WACV 2018</a>. Check it out <Link to="/research/#hico">here</Link>.
