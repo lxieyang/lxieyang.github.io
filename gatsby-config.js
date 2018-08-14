@@ -12,13 +12,15 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: 'gatsby-starter-default',
-        short_name: 'starter',
-        start_url: '/',
-        background_color: '#663399',
-        theme_color: '#663399',
+        name: `Michael Liu's Website`,
+        description: 'The personal website of Michael Xieyang Liu',
+        short_name: 'ML Site',
+        background_color: 'white',
+        start_url: "/",
+        theme_color: '#C1000F',
+        orientation: 'portrait',
         display: 'minimal-ui',
-        icon: 'src/images/gatsby-icon.png', // This path is relative to the root of the site.
+        icon: `${__dirname}/static/favicon.jpg`,
       },
     },
     'gatsby-plugin-offline',
@@ -56,37 +58,36 @@ module.exports = {
         plugins: ["gatsby-remark-copy-linked-files"],
       },
     },
-    {
-      resolve: `gatsby-plugin-favicon`,
-      options: {
-        logo: "./src/images/hcii-logo-big.jpg",
-        // WebApp Manifest Configuration
-        appName: 'Gatsby site',
-        appDescription: null,
-        developerName: null,
-        developerURL: null,
-        dir: 'auto',
-        lang: 'en-US',
-        background: '#fff',
-        theme_color: '#fff',
-        display: 'standalone',
-        orientation: 'any',
-        start_url: '/?homescreen=1',
-        version: '1.0',
-        icons: {
-          android: true,
-          appleIcon: true,
-          appleStartup: true,
-          coast: false,
-          favicons: true,
-          firefox: true,
-          opengraph: false,
-          twitter: false,
-          yandex: false,
-          windows: false
-        }
-      }
-    }
-    
-  ],
+    // {
+    //   resolve: `gatsby-plugin-favicon`,
+    //   options: {
+    //     logo: `${__dirname}/static/favicon.jpg`,
+    //     // WebApp Manifest Configuration
+    //     appName: `Michael Liu's Website`,
+    //     appDescription: 'The personal website of Michael Xieyang Liu',
+    //     developerName: 'Michael Xieyang Liu',
+    //     developerURL: 'https://lxieyang.github.io',
+    //     dir: 'auto',
+    //     lang: 'en-US',
+    //     background: '#fff',
+    //     theme_color: '#002635',
+    //     display: 'standalone',
+    //     orientation: 'any',
+    //     start_url: '/?homescreen=1',
+    //     version: '1.0',
+    //     icons: {
+    //       android: true,
+    //       appleIcon: true,
+    //       appleStartup: true,
+    //       coast: false,
+    //       favicons: true,
+    //       firefox: true,
+    //       opengraph: false,
+    //       twitter: false,
+    //       yandex: false,
+    //       windows: false
+    //     }
+    //   }
+    // }
+  ]
 }
