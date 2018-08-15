@@ -91,7 +91,7 @@ const IndexPage = ({data}) => (
         <h2>News</h2>
         <ul>
           <li>
-            I re-wrote this website with <a href="https://www.gatsbyjs.org" target="_blank" rel="noopener noreferrer">Gatsby.js</a> and <a href="https://reactjs.org/" target="_blank" rel="noopener noreferrer">React.js</a>! It used to be based on <a href="https://jekyllrb.com/" target="_blank" rel="noopener noreferrer">Jekyll</a>.
+            I re-wrote this website as a Single Page Application (SPA) with <a href="https://www.gatsbyjs.org" target="_blank" rel="noopener noreferrer">Gatsby.js</a> and <a href="https://reactjs.org/" target="_blank" rel="noopener noreferrer">React.js</a>! Way shorter loading time and better performance! It used to be based on <a href="https://jekyllrb.com/" target="_blank" rel="noopener noreferrer">Jekyll</a>.
           </li>
           <li>
             I presented our position paper <span className="paper-title">Supporting Knowledge Acceleration for Programming from a Sensemaking Perspective</span> at <a href="https://sensemakingchi2018.com/" target="_blank" rel="noopener noreferrer">CHI 2018 Sensemaking Workshop</a>. Check it out <Link to="/research/#kap-sensemaking-workshop">here</Link>.
