@@ -7,10 +7,8 @@ import {
   Collapse,
   Navbar,
   NavbarToggler,
-  // NavbarBrand,
   Nav,
   NavItem,
-  // NavLink
 } from 'reactstrap';
 import HeaderImg from '../../images/lxieyang-avatar-yellowstone.jpg';
 
@@ -21,10 +19,15 @@ class Header extends Component {
 
     // https://www.w3schools.com/howto/howto_js_navbar_hide_scroll.asp
     if (typeof window !== 'undefined') {
-      var prevScrollpos = window.pageYOffset;
+      let prevScrollpos = window.pageYOffset;
       window.onscroll = function () {
-      var currentScrollPos = window.pageYOffset;
-        if (prevScrollpos > currentScrollPos) {
+        const maxScroll = document.body.clientHeight - window.innerHeight;
+        let currentScrollPos = window.pageYOffset;
+        if (
+            (maxScroll > 0 && prevScrollpos > currentScrollPos && prevScrollpos <= maxScroll) 
+          || (maxScroll <= 0 && prevScrollpos > currentScrollPos)
+          || (prevScrollpos <= 0 && currentScrollPos <= 0)
+          ) {
           document.getElementById("navbar").style.top = "0";
         } else {
           document.getElementById("navbar").style.top = "-5.0rem";
@@ -32,7 +35,6 @@ class Header extends Component {
         prevScrollpos = currentScrollPos;
       }
     }
-    
   }
 
   state = {

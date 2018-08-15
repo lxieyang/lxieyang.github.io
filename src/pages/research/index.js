@@ -113,7 +113,7 @@ class ResearchPage extends Component {
                             </div>
                             <div className="data pub-element">
                               [<a href={`#${pub.codename}`} id={`${pub.codename}-abstract`}>Abstract</a>]
-                              [<a href={`${pubFilePathPrefix}/${pub.codename}/${pub.codename}.pdf`}>Local Paper</a>]
+                              [<a href={`${pubFilePathPrefix}/${pub.codename}/${pub.codename}.pdf`} target="_blank" rel="noopener noreferrer">Local Paper</a>]
                             </div>
                             <UncontrolledCollapse 
                               toggler={`#${pub.codename}-abstract`}
