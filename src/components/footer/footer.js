@@ -73,6 +73,12 @@ const CompanyIcon = styled.img`
   }
 `;
 
+const SourceCodeInfoContainer = styled.div`
+  margin: 0px 0;
+  display: flex;
+  align-items: center;
+`;
+
 class Footer extends Component {
 
   state = {
@@ -136,7 +142,13 @@ class Footer extends Component {
                   Bootstrap v4
                 </UncontrolledTooltip>
               </BuildInfoContainer>
-              
+
+              <SourceCodeInfoContainer>
+                <p>Last updated: {document.lastModified}</p>
+              </SourceCodeInfoContainer>
+              <SourceCodeInfoContainer>
+                <a href="https://github.com/lxieyang/lxieyang.github.io/tree/gatsby-dev" target="_blank" rel="noopener noreferrer"><img src="https://travis-ci.org/lxieyang/lxieyang.github.io.svg?branch=gatsby-dev" alt="build"/></a>
+              </SourceCodeInfoContainer>              
             </Col>
 
             

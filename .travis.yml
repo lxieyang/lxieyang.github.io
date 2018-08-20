@@ -12,8 +12,9 @@ deploy:
   github-token: $GITHUB_TOKEN
   local_dir: public
   keep-history: true
+  on:ranch: master
   on:
-    branch: master
+    branch: gatsby-dev
 before_script:
   - "npm i -g gatsby"
   - "npm i"

@@ -68,27 +68,27 @@ class Header extends Component {
               <Nav className="ml-auto" navbar>
                 <NavItem style={{marginBottom: '0'}}>
                   <div className="navlink">
-                    <Link exact to={appRoutes.home} activeClassName="active">Home</Link>
+                    <Link exact="true" to={appRoutes.home} activeClassName="active">Home</Link>
                   </div>
                 </NavItem>
                 <NavItem style={{marginBottom: '0'}}>
                   <div className="navlink">
-                    <Link exact to={appRoutes.research} activeClassName="active">Research</Link>
+                    <Link exact="true" to={appRoutes.research} activeClassName="active">Research</Link>
                   </div>
                 </NavItem>
                 <NavItem style={{marginBottom: '0'}}>
                   <div className="navlink">
-                    <Link exact to={appRoutes.experiences} activeClassName="active">Experiences</Link>
+                    <Link exact="true" to={appRoutes.experiences} activeClassName="active">Experiences</Link>
                   </div>
                 </NavItem>
                 <NavItem style={{marginBottom: '0'}}>
                   <div className="navlink">
-                    <Link exact to={appRoutes.blogs} activeClassName="active">Blogs</Link>
+                    <Link exact="true" to={appRoutes.blogs} activeClassName="active">Blogs</Link>
                   </div>
                 </NavItem>
                 <NavItem style={{marginBottom: '0'}}>
                   <div className="navlink">
-                    <Link exact to={appRoutes.about} activeClassName="active">About</Link>
+                    <Link exact="true" to={appRoutes.about} activeClassName="active">About</Link>
                   </div>
                 </NavItem>
               </Nav>
