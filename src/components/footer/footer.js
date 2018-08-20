@@ -82,7 +82,14 @@ const SourceCodeInfoContainer = styled.div`
 class Footer extends Component {
 
   state = {
-    startYear: 2013
+    startYear: 2013,
+    lastUpdated: null
+  }
+
+  componentDidMount () {
+    let lastUpdated = document.lastModified;
+    console.log(lastUpdated);
+    this.setState({lastUpdated});
   }
 
   render () {
@@ -144,7 +151,7 @@ class Footer extends Component {
               </BuildInfoContainer>
 
               <SourceCodeInfoContainer>
-                <p>Last updated: {document.lastModified}</p>
+                <p>Last updated: {this.state.lastUpdated}</p>
               </SourceCodeInfoContainer>
               <SourceCodeInfoContainer>
                 <a href="https://github.com/lxieyang/lxieyang.github.io/tree/gatsby-dev" target="_blank" rel="noopener noreferrer"><img src="https://travis-ci.org/lxieyang/lxieyang.github.io.svg?branch=gatsby-dev" alt="build"/></a>
