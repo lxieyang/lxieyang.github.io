@@ -12,6 +12,16 @@ import {
 } from 'reactstrap';
 import HeaderImg from '../../images/lxieyang-avatar-yellowstone.jpg';
 
+const ListLink = (props) => (
+  <NavItem style={{marginBottom: '0'}}>
+    <div className="navlink">
+      <Link exact="true" to={props.route} activeClassName="active" style={{textTransform: 'capitalize'}}>
+        {props.routeName}
+      </Link>
+    </div>
+  </NavItem>
+);
+
 class Header extends Component {
   constructor (props) {
     super(props);
@@ -66,31 +76,11 @@ class Header extends Component {
             <NavbarToggler className="mr-2" onClick={this.toggle} />
             <Collapse isOpen={this.state.isOpen} navbar>
               <Nav className="ml-auto" navbar>
-                <NavItem style={{marginBottom: '0'}}>
-                  <div className="navlink">
-                    <Link exact="true" to={appRoutes.home} activeClassName="active">Home</Link>
-                  </div>
-                </NavItem>
-                <NavItem style={{marginBottom: '0'}}>
-                  <div className="navlink">
-                    <Link exact="true" to={appRoutes.research} activeClassName="active">Research</Link>
-                  </div>
-                </NavItem>
-                <NavItem style={{marginBottom: '0'}}>
-                  <div className="navlink">
-                    <Link exact="true" to={appRoutes.experiences} activeClassName="active">Experiences</Link>
-                  </div>
-                </NavItem>
-                <NavItem style={{marginBottom: '0'}}>
-                  <div className="navlink">
-                    <Link exact="true" to={appRoutes.blogs} activeClassName="active">Blogs</Link>
-                  </div>
-                </NavItem>
-                <NavItem style={{marginBottom: '0'}}>
-                  <div className="navlink">
-                    <Link exact="true" to={appRoutes.about} activeClassName="active">About</Link>
-                  </div>
-                </NavItem>
+                <ListLink route={appRoutes.home} routeName={'Home'}/>
+                <ListLink route={appRoutes.research} routeName={'Research'}/>
+                <ListLink route={appRoutes.experiences} routeName={'Experiences'}/>
+                <ListLink route={appRoutes.blogs} routeName={'Blogs'}/>
+                <ListLink route={appRoutes.about} routeName={'About'}/>
               </Nav>
             </Collapse>
           </Container>

@@ -39,7 +39,7 @@ const Layout = ({children, data, pathName}) => {
         >
           <html lang="en" />
         </Helmet>
-        <Header siteTitle={data.site.siteMetadata.title} />
+        <Header siteTitle={data.site.siteMetadata.title} pathName={pathName}/>
         <Container 
           style={{
             paddingTop: '5.0rem',
