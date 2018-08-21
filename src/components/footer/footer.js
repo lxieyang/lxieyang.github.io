@@ -165,8 +165,31 @@ const CopyrightTechnologySection = ({startYear, facebook, github, instagram, git
               display: 'flex',
               alignItems: 'center'
             }}>
-              {gitDataFromGithub.commit.message} &nbsp; 
-              <a href="https://github.com/lxieyang/lxieyang.github.io" target="_blank" rel="noopener noreferrer"><img src="https://travis-ci.org/lxieyang/lxieyang.github.io.svg?branch=gatsby-dev" alt="build status" style={{height: '18px'}}/></a>
+              <a 
+                href="https://github.com/lxieyang/lxieyang.github.io"
+                target="_blank" rel="noopener noreferrer" 
+                title={gitDataFromGithub.commit.message}
+                style={{color: 'inherit'}}>
+                {gitDataFromGithub.commit.message}
+              </a> &nbsp; 
+              <a 
+                href="https://travis-ci.org/lxieyang/lxieyang.github.io" 
+                target="_blank" rel="noopener noreferrer"
+                title={'View build status on Travis CI'}>
+                <img 
+                  src="https://travis-ci.org/lxieyang/lxieyang.github.io.svg?branch=gatsby-dev" 
+                  alt="build status" 
+                  style={{height: '18px'}}/>
+              </a> &nbsp; 
+              <a 
+                href="https://codeclimate.com/github/lxieyang/lxieyang.github.io/maintainability" 
+                target="_blank" rel="noopener noreferrer"
+                title={'View maintainability on Code Climate'}>
+                <img 
+                  src="https://api.codeclimate.com/v1/badges/04e11d27938adef6dd80/maintainability" 
+                  alt="maintainability" 
+                  style={{height: '18px'}}/>
+              </a>
             </div>
             <div>
               <img alt={gitDataFromGithub.committer.login} src={gitDataFromGithub.committer.avatar_url} width="20" height="20" style={{borderRadius: '2px'}}/> <span style={{
