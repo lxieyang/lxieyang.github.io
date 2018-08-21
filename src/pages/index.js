@@ -17,7 +17,6 @@ import NikiImg from '../images/people/nikikittur.jpg';
 import WalterImg from '../images/people/walterlasecki.jpg';
 
 import { CVPath } from '../utils/constants';
-// import SensemakingWorkshopPaperLocalFile from '../assets/files/pubs/kap/Liu-SupportingKnowledgeAccelerationForProgramming.pdf';
 
 import NewsList from '../utils/news';
 import TravelList from '../utils/travel';
