@@ -10,6 +10,7 @@ import Header from '../header/header';
 import Footer from '../footer/footer';
 import './bootstrap.min.css';
 import './layout.css'
+require("prismjs/themes/prism-tomorrow.css");
 
 const Layout = ({children, data, pathName}) => {
   return (

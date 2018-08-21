@@ -12,10 +12,11 @@ import {
 } from 'reactstrap';
 import HeaderImg from '../../images/lxieyang-avatar-yellowstone.jpg';
 
+
 const ListLink = (props) => (
   <NavItem style={{marginBottom: '0'}}>
     <div className="navlink">
-      <Link exact="true" to={props.route} activeClassName="active" style={{textTransform: 'capitalize'}}>
+      <Link to={props.route} activeClassName="active">
         {props.routeName}
       </Link>
     </div>
