@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import moment from 'moment';
+import axios from 'axios';
 import { Link } from 'gatsby';
 import {
   Row, Col,
@@ -79,21 +81,46 @@ const SourceCodeInfoContainer = styled.div`
   align-items: center;
 `;
 
+const CommitBadgeCard = styled.div`
+  border: 1px solid #eaecef;
+  padding: 8px 10px;
+  display: flex;
+  align-items: center;
+`;
+
+const CommitBadgeLeftContainer = styled.div`
+  /* margin-right: 8px; */
+`;
+
+// const CommitBadgeRightContainer = styled.div`
+
+// `;
+
+
 class Footer extends Component {
 
   state = {
     startYear: 2013,
-    lastUpdated: null
+    lastUpdated: null,
+    gitDataFromGithub: null
   }
 
   componentDidMount () {
     let lastUpdated = document.lastModified;
-    console.log(lastUpdated);
     this.setState({lastUpdated});
+
+    axios.get('https://api.github.com/repos/lxieyang/lxieyang.github.io/commits/gatsby-dev')
+      .then(({ data }) => {
+        this.setState({gitDataFromGithub: data});
+      })
+      .catch((error) => {
+        console.log(error);
+      })
   }
 
   render () {
     const { facebook, github, instagram } = this.props.links;
+    const { gitDataFromGithub } = this.state;
 
     return (
       <div>
@@ -101,13 +128,13 @@ class Footer extends Component {
 
         <FooterContainer>
           <Row>
-            <Col md='8'>
+            <Col md='6'>
               <Row><Col><h4>Contact Me</h4></Col></Row>
               {/* <Row><Col><Map /></Col></Row> */}
               <Row><Col><ContactInfo /></Col></Row>
             </Col>
 
-            <Col md='4' className="text-left">
+            <Col md='6' className="text-left">
 
               <div>Designed by <Link to="/">Michael Xieyang Liu</Link>.</div>
 
@@ -150,12 +177,50 @@ class Footer extends Component {
                 </UncontrolledTooltip>
               </BuildInfoContainer>
 
+              {/*<SourceCodeInfoContainer>
+                {
+                  this.state.lastUpdated !== null
+                  ? <p>Last updated: {this.state.lastUpdated} ({moment(this.state.lastUpdated).fromNow()})</p>
+                  : null
+                }
+              </SourceCodeInfoContainer>*/}
+
               <SourceCodeInfoContainer>
-                <p>Last updated: {this.state.lastUpdated}</p>
-              </SourceCodeInfoContainer>
-              <SourceCodeInfoContainer>
-                <a href="https://github.com/lxieyang/lxieyang.github.io/tree/gatsby-dev" target="_blank" rel="noopener noreferrer"><img src="https://travis-ci.org/lxieyang/lxieyang.github.io.svg?branch=gatsby-dev" alt="build"/></a>
-              </SourceCodeInfoContainer>              
+              {
+                gitDataFromGithub !== null
+                ? <CommitBadgeCard>
+                    <CommitBadgeLeftContainer>
+                      <div style={{
+                        color: '#444d56',
+                        fontWeight: '600',
+                        fontSize: '14px',
+                        lineHeight: '21px',
+                        display: 'flex',
+                        alignItems: 'center'
+                      }}>
+                        {gitDataFromGithub.commit.message} &nbsp; 
+                        <a href="https://github.com/lxieyang/lxieyang.github.io" target="_blank" rel="noopener noreferrer"><img src="https://travis-ci.org/lxieyang/lxieyang.github.io.svg?branch=gatsby-dev" alt="build status" style={{height: '18px'}}/></a>
+                      </div>
+                      <div>
+                        <img alt={gitDataFromGithub.committer.login} src={gitDataFromGithub.committer.avatar_url} width="20" height="20" style={{borderRadius: '2px'}}/> <span style={{
+                          color: '#586069',
+                          fontWeight: '600',
+                          fontSize: '12px',
+                        }}>
+                          {gitDataFromGithub.commit.committer.name}
+                        </span> <span style={{
+                          color: '#586069',
+                          fontWeight: '400',
+                          fontSize: '12px'
+                        }}>
+                          committed {moment(gitDataFromGithub.commit.committer.date).fromNow()}
+                        </span> 
+                      </div>
+                    </CommitBadgeLeftContainer>
+                  </CommitBadgeCard>
+                : null
+              }
+              </SourceCodeInfoContainer>           
             </Col>
 
             

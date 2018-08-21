@@ -4,6 +4,7 @@
   "version": "1.0.2",
   "author": "Michael Xieyang Liu",
   "dependencies": {
+    "axios": "^0.18.0",
     "bootstrap": "^4.1.3",
     "gatsby": "next",
     "gatsby-image": "^1.0.55",
@@ -19,6 +20,7 @@
     "gatsby-transformer-remark": "^1.7.44",
     "json-query": "^2.2.2",
     "lodash": "^4.17.10",
+    "moment": "^2.22.2",
     "react": "^16.4.1",
     "react-dom": "^16.4.1",
     "react-google-maps": "^9.4.5",
