@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link, graphql } from 'gatsby';
+import { graphql } from 'gatsby';
 import {
   // Container, 
   Row, Col
@@ -18,6 +18,9 @@ import WalterImg from '../images/people/walterlasecki.jpg';
 
 import { CVPath } from '../utils/constants';
 // import SensemakingWorkshopPaperLocalFile from '../assets/files/pubs/kap/Liu-SupportingKnowledgeAccelerationForProgramming.pdf';
+
+import NewsList from '../utils/news';
+import TravelList from '../utils/travel';
 
 import './index.css';
 
@@ -90,82 +93,46 @@ const IndexPage = ({data}) => (
       <Col md='6'>  
         <h2>News</h2>
         <ul>
-          <li>
-            I re-wrote this website as a Single Page Application (SPA) with <a href="https://www.gatsbyjs.org" target="_blank" rel="noopener noreferrer">Gatsby.js</a> and <a href="https://reactjs.org/" target="_blank" rel="noopener noreferrer">React.js</a>! Way shorter loading time and better performance! It used to be based on <a href="https://jekyllrb.com/" target="_blank" rel="noopener noreferrer">Jekyll</a>.
-          </li>
-          <li>
-            I presented our position paper <span className="paper-title">Supporting Knowledge Acceleration for Programming from a Sensemaking Perspective</span> at <a href="https://sensemakingchi2018.com/" target="_blank" rel="noopener noreferrer">CHI 2018 Sensemaking Workshop</a>. Check it out <Link to="/research/#kap-sensemaking-workshop">here</Link>.
-          </li>
-          <li>
-              Our paper <span className="paper-title">Learning to Detect Human-Object Interactions</span> is accepted to <a href="http://wacv18.uccs.us" target="_blank" rel="noopener noreferrer">WACV 2018</a>. Check it out <Link to="/research/#hico">here</Link>.
-          </li>
-          <li>
-            Check out my <a href="https://github.com/lxieyang/mobile-paper-reader" target="_blank" rel="noopener noreferrer">Paper Reader app</a> to support better reading experience of <strong>pdf</strong> documents (especially research papers) on mobile phones!
-          </li>
-          <li  className="old-news">
-            <a href="http://www.cs.cmu.edu/~bam/">Dr. Brad A. Myers</a> and <a href="http://kittur.org/">Dr. Niki Kittur</a> are my advisors here at <a href="http://www.hcii.cmu.edu">CMU HCII</a>.
-          </li>
-          <li  className="old-news">
-            I started as a <strong>Ph.D.</strong> student at <a href="http://www.hcii.cmu.edu">Human-Computer Interaction Institute</a> @ <a href="http://www.cmu.edu">Carnegie Mellon University</a> in August 2017!
-          </li>
-          <li className="old-news">
-            I got my <strong>B.S. in Electrical and Computer Engineering</strong> from <a href="http://en.sjtu.edu.cn">Shanghai Jiao Tong University</a> in August 2017.
-          </li>
-          <li className="old-news">
-            I got my <strong>B.S. in Computer Science</strong> from <a href="https://www.umich.edu">University of Michigan, Ann Arbor</a> in April 2017.
-          </li>
+          {
+            NewsList.map((newsItem, idx) => (
+              <li 
+                key={idx} 
+                className={newsItem.shouldDisplay === false ? 'old-news' : null}
+                dangerouslySetInnerHTML={{
+                  __html: newsItem.content
+                }}></li>
+            ))
+          }
         </ul>
 
       </Col>
       <Col md='6'>
         <h2>Travel</h2>
-          <div className="travel travel-past">
-            <Row>
-              <Col>April 21, 2018</Col>
-              <Col><a href="https://chi2018.acm.org/">CHI 2018</a></Col>
-              <Col>Montréal, Canada</Col>
-            </Row>
-          </div>
+          {
+            TravelList.map((travelItem, idx) => {
+              const YearGap = 2.0;
+              let diff = ((new Date()) - new Date(travelItem.date)) / (YearGap*365*24*60*60*1000);
 
-          <div className="travel travel-past">
-            <Row>
-              <Col>March 28, 2017</Col>
-              <Col><a href="https://www.harvard.edu/">Harvard Open House</a></Col>
-              <Col>Cambridge, MA, US</Col>
-            </Row>
-          </div>
-
-          <div className="travel travel-past">
-            <Row>
-              <Col>March 25, 2017</Col>
-              <Col><a href="http://www.cmu.edu/">CMU HCII Open House</a></Col>
-              <Col>Pittsburgh, PA, US</Col>
-            </Row>
-          </div>
-
-          <div className="travel travel-past">
-            <Row>
-              <Col>March 18, 2017</Col>
-              <Col><a href="https://vt.edu/">VT Open House</a></Col>
-              <Col>Blacksburg, VA, US</Col>
-            </Row>
-          </div>
-
-          <div className="travel travel-past">
-            <Row>
-              <Col>March 15, 2017</Col>
-              <Col><a href="https://ucsd.edu/">UCSD Open House</a></Col>
-              <Col>San Diego, CA, US</Col>
-            </Row>
-          </div>
-
-          <div className="travel travel-past">
-            <Row>
-              <Col>March 13, 2017</Col>
-              <Col><a href="http://www.washington.edu/">UW Open House</a></Col>
-              <Col>Seattle, WA, US</Col>
-            </Row>
-          </div>
+              return (
+                <div 
+                  key={idx}
+                  className={['travel',
+                    diff <= 0
+                    ? 'travel-upcoming'
+                    : diff <= 1
+                      ? 'travel-past'
+                      : 'travel-old'
+                  ].join(' ')}
+                >
+                  <Row>
+                    <Col>{travelItem.date}</Col>
+                    <Col><a href={travelItem.url}>{travelItem.event}</a></Col>
+                    <Col>{travelItem.location}</Col>
+                  </Row>
+                </div>
+              );
+            })
+          }
       </Col>
     </Row>
 

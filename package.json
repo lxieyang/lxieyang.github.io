@@ -40,6 +40,7 @@
     "start": "npm run develop",
     "build": "gatsby build",
     "develop": "gatsby develop",
+    "postBuildDeploy": "gh-pages -b master -d public",
     "deploy": "gatsby build && gh-pages -b master -d public",
     "format": "prettier --write '**/*.js'",
     "test": "echo \"Should probably write some tests!\""

@@ -52,6 +52,10 @@
   direction: rtl;
 }
 
+.travel-old {
+  display: none;
+}
+
 .travel-past {
   color: gray;
 }
