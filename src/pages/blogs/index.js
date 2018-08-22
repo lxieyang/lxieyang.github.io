@@ -18,16 +18,15 @@ const ChronologicalBlogList = ({ allMarkdownRemark }) => {
             <div key={node.id}>
               <Link to={node.fields.slug}>
                 <h3>
-                  {node.frontmatter.title}{" "}
-                  <span
-                    className={css`
-                      color: #bbb
-                    `}
-                  >
-                    — {node.frontmatter.date}
-                  </span>
+                  {node.frontmatter.title}
                 </h3>
               </Link>
+              <div className={css`
+                  color: #bbb;
+                  font-size: 0.8rem;
+                `}>
+                {node.frontmatter.date}
+              </div>
               <p>{node.excerpt}</p>
             </div>
           );
