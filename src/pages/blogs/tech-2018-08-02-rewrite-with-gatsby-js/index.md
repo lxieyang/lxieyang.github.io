@@ -1,7 +1,8 @@
 ---
 title: "Hello World! I rebuilt this site with Gatsby.js!"
-date: "2018-08-10"
+date: "2018-08-02"
 published: true
+under: 'blogs'
 category: "tech"
 subcategory: ["React", "Gatsby.js",]
 ---

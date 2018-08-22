@@ -94,3 +94,13 @@ li.publication {
   overflow-x: auto;
   overflow-y: hidden;
 }
+
+
+
+
+/* Blogs */
+blockquote {
+  border-left: 4px solid #aaa;
+  padding-left: 8px;
+  color: #999;
+}

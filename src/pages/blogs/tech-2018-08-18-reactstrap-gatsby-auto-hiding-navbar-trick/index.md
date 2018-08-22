@@ -2,6 +2,7 @@
 title: "Reactstrap/Gatsby Auto-hiding Navbar Trick"
 date: "2018-08-18"
 published: true
+under: 'blogs'
 category: "tech"
 subcategory: ["React", "Gatsby.js", "Reactstrap"]
 ---
