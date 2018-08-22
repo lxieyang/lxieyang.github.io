@@ -12,16 +12,43 @@ import {
 } from 'reactstrap';
 import HeaderImg from '../../images/lxieyang-avatar-yellowstone.jpg';
 
+// https://reach.tech/router/api/Link
+// https://github.com/gatsbyjs/gatsby/issues/7526#issuecomment-414858689
+// this link will be active when itself or deeper routes
+// are current
+const isActive = ({ isCurrent }) => {
+  return isCurrent ? { className: "active" } : null
+};
 
-const ListLink = (props) => (
-  <NavItem style={{marginBottom: '0'}}>
-    <div className="navlink">
-      <Link to={props.route} activeClassName="active">
-        {props.routeName}
-      </Link>
-    </div>
-  </NavItem>
+const ExactNavLink = props => (
+  <Link getProps={isActive} {...props} />
 );
+
+const isPartiallyActive = ({
+  isPartiallyCurrent
+}) => {
+  return isPartiallyCurrent
+    ? { className: "active" }
+    : null
+};
+
+const PartialNavLink = props => (
+  <Link getProps={isPartiallyActive} {...props} />
+);
+
+const ListLink = (props) => {
+  return (
+    <NavItem style={{marginBottom: '0'}}>
+      <div className="navlink">
+        {
+          props.exact === true
+          ? <ExactNavLink to={props.route}>{props.routeName}</ExactNavLink>
+          : <PartialNavLink to={props.route}>{props.routeName}</PartialNavLink>
+        }
+      </div>
+    </NavItem>
+  )
+};
 
 class Header extends Component {
   constructor (props) {
@@ -77,7 +104,7 @@ class Header extends Component {
             <NavbarToggler className="mr-2" onClick={this.toggle} />
             <Collapse isOpen={this.state.isOpen} navbar>
               <Nav className="ml-auto" navbar>
-                <ListLink route={appRoutes.home} routeName={'Home'}/>
+                <ListLink exact={true} route={appRoutes.home} routeName={'Home'}/>
                 <ListLink route={appRoutes.research} routeName={'Research'}/>
                 <ListLink route={appRoutes.experiences} routeName={'Experiences'}/>
                 <ListLink route={appRoutes.blogs} routeName={'Blogs'}/>
