@@ -3,6 +3,7 @@
  *
  * See: https://www.gatsbyjs.org/docs/node-apis/
  */
+const _ = require('lodash');
 const path = require(`path`);
 const { createFilePath } = require(`gatsby-source-filesystem`);
 
@@ -23,29 +24,44 @@ exports.createPages = ({ graphql, actions }) => {
   return new Promise((resolve, reject) => {
     graphql(`
       {
-        allMarkdownRemark {
+        allMarkdownRemark(
+          sort: { fields: [frontmatter___date], order: DESC }
+        ) {
           edges {
             node {
               fields {
                 slug
+              }
+              frontmatter {
+                title
               }
             }
           }
         }
       }
     `).then(result => {
-      result.data.allMarkdownRemark.edges.forEach(({ node }) => {
+      if (result.errors) {
+        console.log(result.errors)
+        reject(result.errors)
+      }
+
+      // Create blog posts pages.
+      const posts = result.data.allMarkdownRemark.edges;
+      _.each(posts, (post, index) => {
+        const previous = index === posts.length - 1 ? null : posts[index + 1].node;
+        const next = index === 0 ? null : posts[index - 1].node;
+
         createPage({
-          path: node.fields.slug,
+          path: post.node.fields.slug,
           component: path.resolve(`./src/templates/blog-post/blog-post.js`),
           context: {
-            // Data passed to context is available
-            // in page queries as GraphQL variables.
-            slug: node.fields.slug,
+            slug: post.node.fields.slug,
+            previous,
+            next,
           },
-        })
-      })
-      resolve()
+        });
+      });
+      resolve();
     })
   })
 }

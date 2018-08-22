@@ -40,6 +40,7 @@ const Banner = ({ allMarkdownRemark }) => {
   return (
     <div style={{
       display: 'flex',
+      flexWrap: 'wrap',
       alignItems: 'center',
       justifyContent: 'space-between'
     }}>
