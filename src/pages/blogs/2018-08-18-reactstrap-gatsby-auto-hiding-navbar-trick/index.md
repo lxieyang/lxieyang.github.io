@@ -1,10 +1,9 @@
 ---
 title: "Reactstrap/Gatsby Auto-hiding Navbar Trick"
 date: "2018-08-18"
-published: false
+published: true
 category: "tech"
 subcategory: ["React", "Gatsby.js", "Reactstrap"]
-img: './scrolling-down-hit-bottom-safari.gif'
 ---
 
 ### Disclaimer
