@@ -21,10 +21,10 @@ const ChronologicalBlogList = ({ allMarkdownRemark }) => {
                   {node.frontmatter.title}
                 </h3>
               </Link>
-              <div className={css`
-                  color: #bbb;
-                  font-size: 0.8rem;
-                `}>
+              <div style={{
+                color: '#bbb',
+                fontSize: '0.8rem'
+              }}>
                 {node.frontmatter.date}
               </div>
               <p>{node.excerpt}</p>
