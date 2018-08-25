@@ -6,7 +6,6 @@ import {
 } from 'reactstrap';
 
 import Layout from '../components/layout/layout';
-import Email from '../components/UI/ObfuscatedEmail/ObfuscatedEmail';
 import ContactInfo from '../components/UI/ContactInfo/ContactInfo';
 
 import ProfileImg from '../images/lxieyang-avatar.jpg';
@@ -27,7 +26,7 @@ import './index.css';
 const IndexPage = ({data}) => (
   <Layout>
     <Row>
-      <Col md='3' className="d-none d-sm-none d-md-block">
+      <Col md='4' className="d-none d-sm-none d-md-block">
         <div className="homepage-avatar-section">
           <div className="watermark-image-display-container">
             <img src={ProfileImg} alt="profile" style={{maxWidth: '100%', maxHeight: '100%'}}/><br />
@@ -41,7 +40,7 @@ const IndexPage = ({data}) => (
         </div>
       </Col>
 
-      <Col md='9'>
+      <Col md='8'>
         <div className="homepage-word-section">
           <h1>
             Michael Xieyang Liu (刘燮洋)
@@ -59,7 +58,9 @@ const IndexPage = ({data}) => (
           <p className="self-identify-paragraph">
             I am a 2nd year Ph.D. student at <a href="http://www.hcii.cmu.edu">Human-Computer Interaction Institute</a> @ <a href="http://www.cmu.edu">Carnegie Mellon University</a>. <br/>
           </p>
+
           <hr/>
+
           <p style={{fontSize: '1.0rem'}}>
             My current research interests include <strong>human-computer interaction</strong>, <strong>user interface development</strong>, and  <strong>sensemaking</strong>. <br/>
             My current advisors are <a href="http://www.cs.cmu.edu/~bam/" id="brad-myers">Dr. Brad A. Myers</a> and <a href="http://kittur.org/" id="niki-kittur">Dr. Niki Kittur</a>. <br/>
@@ -79,6 +80,11 @@ const IndexPage = ({data}) => (
               <span className="contact-name">Instagram: </span><a href={data.site.siteMetadata.externalLinks.instagram}>xieyangl</a><br/>
             </Col>
           </Row>
+
+          <div className="d-sm-block d-md-none d-lg-none">
+            <hr/>
+            <ContactInfo />
+          </div>
         </div>
       </Col>
     </Row>
