@@ -12,13 +12,11 @@ import styled from 'styled-components';
 import Aux from '../../hoc/Aux/Aux';
 
 // import Map from '../../components/UI/Map/Map';
-import ContactInfo from '../../components/UI/ContactInfo/ContactInfo';
+// import ContactInfo from '../../components/UI/ContactInfo/ContactInfo';
 import GithubLogo from '../../images/footer/github-icon.png';
 import FacebookLogo from '../../images/footer/facebook-icon.png';
 import InstagramLogo from '../../images/footer/instagram-icon.png';
-import GatsbyLogo from '../../images/gatsby-icon.png';
-import ReactLogo from '../../images/react-icon.jpg';
-import BootstrapLogo from '../../images/bootstrap-icon.png';
+import TwitterLogo from '../../images/footer/twitter-icon.png';
 import './footer.css';
 
 
@@ -44,19 +42,13 @@ const SocialMediaIcon = styled.img`
   }
 `;
 
-const CopyrightParagraphContainer = styled.div`
-  margin: 10px 0;
-  display: flex;
-  align-items: center;
-`;
-
 const SocialMediaIconsContainer = styled.div`
   margin: 10px 0;
   display: flex;
   align-items: center;
 `;
 
-const BuildInfoContainer = styled.div`
+const BuildInfoContainer = styled.span`
   margin: 10px 0;
   display: flex;
   align-items: center;
@@ -66,7 +58,7 @@ const CompanyIcon = styled.img`
   display: inline-block;
   filter: grayscale(1);
   border-radius: 50%;
-  max-width: 30px;
+  max-width: 25px;
   margin: 0 5px;
   opacity: 0.7;
 
@@ -87,125 +79,122 @@ const SourceCodeInfoContainer = styled.div`
 
 const CommitBadgeCard = styled.div`
   border: 1px solid #eaecef;
-  padding: 8px 10px;
+  padding: 0px;
+  /* padding: 8px 10px;
   display: flex;
-  align-items: center;
+  align-items: center; */
 `;
 
 const CommitBadgeLeftContainer = styled.div`
   /* margin-right: 8px; */
+  display: flex;
+  align-items: stretch;
 `;
 
-// const CommitBadgeRightContainer = styled.div`
+const SourceCodeIconContainer = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 0px 6px;
+`;
 
-// `;
 
 /* Functional Components */
-const ContactSection = () => (
+const CopyrightSection = ({ facebook, github, instagram, twitter }) => (
   <Aux>
-    <Row><Col><h4>Contact Me</h4></Col></Row>
-    {/* <Row><Col><Map /></Col></Row> */}
-    <Row><Col><ContactInfo /></Col></Row>
+    <div>
+      <div>
+        <Link to="/">Michael Xieyang Liu</Link> © {(new Date()).getFullYear()}. Built with <a href="https://gatsbyjs.org" id="gatsby">Gatsby</a>, <a href="https://reactjs.org" id="react">React</a> and <a href="https://getbootstrap.com/" id="bootstrap">Bootstrap</a>.
+      </div>
+      <div>
+        <SocialMediaIconsContainer>
+          <a href={ github } id="github-logo">
+            <SocialMediaIcon alt="github" src={ GithubLogo }  />
+          </a>
+          <a href={ facebook } id="facebook-logo">
+            <SocialMediaIcon alt="facebook" src={ FacebookLogo }  />
+          </a>
+          <a href={ instagram } id="instagram-logo">
+            <SocialMediaIcon alt="instagram" src={ InstagramLogo }  />
+          </a>
+          <a href={ twitter } id="twitter-logo">
+            <SocialMediaIcon alt="twitter" src={ TwitterLogo }  />
+          </a>
+        </SocialMediaIconsContainer>
+      </div>
+    </div>
   </Aux>
 );
 
-const CopyrightTechnologySection = ({startYear, facebook, github, instagram, gitDataFromGithub}) => (
+
+const CodeCommitSection = ({ gitDataFromGithub }) => (
   <Aux>
-    <div>Designed by <Link to="/">Michael Xieyang Liu</Link>.</div>
-
-    <SocialMediaIconsContainer>
-      <a href={ github } id="github-logo">
-        <SocialMediaIcon alt="github" src={ GithubLogo }  />
-      </a>
-      <a href={ facebook } id="facebook-logo">
-        <SocialMediaIcon alt="facebook" src={ FacebookLogo }  />
-      </a>
-      <a href={ instagram } id="instagram-logo">
-        <SocialMediaIcon alt="instagram" src={ InstagramLogo }  />
-      </a>
-
-      <UncontrolledTooltip placement="bottom" target="github-logo">
-        Github
-      </UncontrolledTooltip>
-      <UncontrolledTooltip placement="bottom" target="facebook-logo">
-        Facebook
-      </UncontrolledTooltip>
-      <UncontrolledTooltip placement="bottom" target="instagram-logo">
-        Instagram
-      </UncontrolledTooltip>
-    </SocialMediaIconsContainer>
-
-    <CopyrightParagraphContainer>
-      Copyright © {startYear} - {(new Date()).getFullYear()}
-    </CopyrightParagraphContainer>
-
-    <BuildInfoContainer>
-      Built with <a href="https://gatsbyjs.org" id="gatsby"><CompanyIcon src={ GatsbyLogo } alt="gatsby"/></a>, <a href="https://reactjs.org" id="react"><CompanyIcon src={ ReactLogo } alt="react"/></a> and <a href="https://getbootstrap.com/" id="bootstrap"><CompanyIcon src={ BootstrapLogo } alt="react"/></a>.
-      <UncontrolledTooltip placement="bottom" target="gatsby">
-        Gatsby v2
-      </UncontrolledTooltip>
-      <UncontrolledTooltip placement="bottom" target="react">
-        React v16
-      </UncontrolledTooltip>
-      <UncontrolledTooltip placement="bottom" target="bootstrap">
-        Bootstrap v4
-      </UncontrolledTooltip>
-    </BuildInfoContainer>
-
     <SourceCodeInfoContainer>
     {
       gitDataFromGithub !== null
       ? <CommitBadgeCard>
           <CommitBadgeLeftContainer>
+            <SourceCodeIconContainer >
+              <a href="https://github.com/lxieyang/lxieyang.github.io"
+              target="_blank" rel="noopener noreferrer" title="website source code" style={{
+                color: 'inherit'
+              }}>{`</>`}</a>
+            </SourceCodeIconContainer>
+
             <div style={{
-              color: '#444d56',
-              fontWeight: '600',
-              fontSize: '14px',
-              lineHeight: '21px',
-              display: 'flex',
-              alignItems: 'center'
+              padding: '8px 10px'
             }}>
-              <a 
-                href="https://github.com/lxieyang/lxieyang.github.io"
-                target="_blank" rel="noopener noreferrer" 
-                title={gitDataFromGithub.commit.message}
-                style={{color: 'inherit'}}>
-                {gitDataFromGithub.commit.message}
-              </a> &nbsp; 
-              <a 
-                href="https://travis-ci.org/lxieyang/lxieyang.github.io" 
-                target="_blank" rel="noopener noreferrer"
-                title={'View build status on Travis CI'}>
-                <img 
-                  src="https://travis-ci.org/lxieyang/lxieyang.github.io.svg?branch=gatsby-dev" 
-                  alt="build status" 
-                  style={{height: '18px'}}/>
-              </a> &nbsp; 
-              <a 
-                href="https://codeclimate.com/github/lxieyang/lxieyang.github.io/maintainability" 
-                target="_blank" rel="noopener noreferrer"
-                title={'View maintainability on Code Climate'}>
-                <img 
-                  src="https://api.codeclimate.com/v1/badges/04e11d27938adef6dd80/maintainability" 
-                  alt="maintainability" 
-                  style={{height: '18px'}}/>
-              </a>
-            </div>
-            <div>
-              <img alt={gitDataFromGithub.committer.login} src={gitDataFromGithub.committer.avatar_url} width="20" height="20" style={{borderRadius: '2px'}}/> <span style={{
-                color: '#586069',
+              <div style={{
+                color: '#444d56',
                 fontWeight: '600',
-                fontSize: '12px',
+                fontSize: '14px',
+                lineHeight: '21px',
+                display: 'flex',
+                alignItems: 'center'
               }}>
-                {gitDataFromGithub.commit.committer.name}
-              </span> <span style={{
-                color: '#586069',
-                fontWeight: '400',
-                fontSize: '12px'
-              }}>
-                committed {moment(gitDataFromGithub.commit.committer.date).fromNow()}
-              </span> 
+                <a 
+                  href={gitDataFromGithub.html_url}
+                  target="_blank" rel="noopener noreferrer" 
+                  title={gitDataFromGithub.commit.message}
+                  style={{color: 'inherit'}}>
+                  {gitDataFromGithub.commit.message}
+                </a> &nbsp;
+                <a 
+                  href="https://travis-ci.org/lxieyang/lxieyang.github.io" 
+                  target="_blank" rel="noopener noreferrer"
+                  title={'View build status on Travis CI'}>
+                  <img 
+                    src="https://travis-ci.org/lxieyang/lxieyang.github.io.svg?branch=gatsby-dev" 
+                    alt="build status" 
+                    style={{height: '18px'}}/>
+                </a> &nbsp; 
+                <a 
+                  href="https://codeclimate.com/github/lxieyang/lxieyang.github.io/maintainability" 
+                  target="_blank" rel="noopener noreferrer"
+                  title={'View maintainability on Code Climate'}>
+                  <img 
+                    src="https://api.codeclimate.com/v1/badges/04e11d27938adef6dd80/maintainability" 
+                    alt="maintainability" 
+                    style={{height: '18px'}}/>
+                </a>
+              </div>
+              <div>
+                <img alt={gitDataFromGithub.committer.login} src={gitDataFromGithub.committer.avatar_url} width="20" height="20" style={{borderRadius: '2px'}}/> <span style={{
+                  color: '#586069',
+                  fontWeight: '600',
+                  fontSize: '12px',
+                }}>
+                  {gitDataFromGithub.commit.committer.name}
+                </span> <span style={{
+                  color: '#586069',
+                  fontWeight: '400',
+                  fontSize: '12px'
+                }}>
+                  committed {moment(gitDataFromGithub.commit.committer.date).fromNow()}
+                </span> 
+              </div>
             </div>
+            
           </CommitBadgeLeftContainer>
         </CommitBadgeCard>
       : null
@@ -219,7 +208,6 @@ const CopyrightTechnologySection = ({startYear, facebook, github, instagram, git
 class Footer extends Component {
 
   state = {
-    startYear: 2013,
     lastUpdated: null,
     gitDataFromGithub: null
   }
@@ -238,7 +226,7 @@ class Footer extends Component {
   }
 
   render () {
-    const { startYear, facebook, github, instagram } = this.props.links;
+    const { facebook, github, instagram, twitter } = this.props.links;
     const { gitDataFromGithub } = this.state;
 
     return (
@@ -246,16 +234,16 @@ class Footer extends Component {
         <br/><hr/>
         <FooterContainer>
           <Row>
-            <Col md='6'>
-              <ContactSection />
-            </Col>
-
-            <Col md='6' className="text-left">
-              <CopyrightTechnologySection 
-                startYear={startYear}
+            <Col lg='7'>
+              <CopyrightSection 
                 facebook={facebook} 
                 github={github} 
-                instagram={instagram} 
+                instagram={instagram}
+                twitter={twitter} />
+            </Col>
+
+            <Col lg='5' className="text-left">
+              <CodeCommitSection
                 gitDataFromGithub={gitDataFromGithub}/>        
             </Col>
           </Row>

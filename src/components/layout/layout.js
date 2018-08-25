@@ -24,6 +24,7 @@ const Layout = ({children, data, pathName}) => {
               github
               facebook
               instagram
+              twitter
             }
           }
         }

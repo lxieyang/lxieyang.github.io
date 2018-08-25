@@ -7,6 +7,7 @@ import {
 
 import Layout from '../components/layout/layout';
 import Email from '../components/UI/ObfuscatedEmail/ObfuscatedEmail';
+import ContactInfo from '../components/UI/ContactInfo/ContactInfo';
 
 import ProfileImg from '../images/lxieyang-avatar.jpg';
 import CMUAvatar from '../images/cmu.png';
@@ -26,7 +27,7 @@ import './index.css';
 const IndexPage = ({data}) => (
   <Layout>
     <Row>
-      <Col md='4' className="d-none d-sm-none d-md-block">
+      <Col md='3' className="d-none d-sm-none d-md-block">
         <div className="homepage-avatar-section">
           <div className="watermark-image-display-container">
             <img src={ProfileImg} alt="profile" style={{maxWidth: '100%', maxHeight: '100%'}}/><br />
@@ -35,27 +36,28 @@ const IndexPage = ({data}) => (
             </div>
           </div>
           <div className="card-words">
-            <p className="my-title">
-              #hci-researcher <br/>
-              #developer #adventurer <br/>
-              <a href="https://twitter.com/search?q=%23cmu&src=typd&lang=en" target="_blank" rel="noopener noreferrer">#cmu</a> <a href="https://twitter.com/search?q=%23hcii&src=typd&lang=en" target="_blank" rel="noopener noreferrer">#hcii</a> <a href="https://twitter.com/search?q=%23pgh&src=typd&lang=en" target="_blank" rel="noopener noreferrer">#pgh</a>
-              <br/>
-            </p>
+            <ContactInfo />
           </div>
         </div>
       </Col>
 
-      <Col md='8'>
+      <Col md='9'>
         <div className="homepage-word-section">
-          <h2>
+          <h1>
             Michael Xieyang Liu (刘燮洋)
             &nbsp;
             <img src={ CMUAvatar } width="30" height="30" className="d-inline-block" alt="cmu-avatar"/>
             <img src={ HCIIAvatar } width="30" height="30" className="d-inline-block" alt="hcii-avatar"/>
-          </h2>
+          </h1>
+
+          <p className="my-title">
+            #hci-researcher &nbsp; #developer &nbsp; #adventurer 
+          </p>
+
           <hr/>
+
           <p className="self-identify-paragraph">
-            I am a Ph.D. student at <a href="http://www.hcii.cmu.edu">Human-Computer Interaction Institute</a> @ <a href="http://www.cmu.edu">Carnegie Mellon University</a>. <br/>
+            I am a 2nd year Ph.D. student at <a href="http://www.hcii.cmu.edu">Human-Computer Interaction Institute</a> @ <a href="http://www.cmu.edu">Carnegie Mellon University</a>. <br/>
           </p>
           <hr/>
           <p style={{fontSize: '1.0rem'}}>
@@ -70,12 +72,8 @@ const IndexPage = ({data}) => (
             <HeadshotTooltip target="walter-lasecki" headshotPath={ WalterImg }/>
           </p>
           <Row className="contacts">
-            <Col md='6'>
+            <Col sm='12'>
               <span className="contact-name">Curriculum Vitae: [</span><a href={ CVPath }>pdf</a><span className="contact-name">]</span> (September 2017)<br/>
-              <span className="contact-name">Email: </span> <Email />
-              
-            </Col>
-            <Col md='6'>
               <span className="contact-name">Github: </span><a href={data.site.siteMetadata.externalLinks.github}>lxieyang</a><br/>
               <span className="contact-name">Facebook: </span><a href={data.site.siteMetadata.externalLinks.facebook}>Xieyang Liu (Michael Liu)</a><br/>
               <span className="contact-name">Instagram: </span><a href={data.site.siteMetadata.externalLinks.instagram}>xieyangl</a><br/>
