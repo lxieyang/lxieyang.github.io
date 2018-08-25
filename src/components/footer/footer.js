@@ -3,16 +3,13 @@ import moment from 'moment';
 import axios from 'axios';
 import { Link } from 'gatsby';
 import {
-  Row, Col,
-  UncontrolledTooltip
+  Row, Col
 } from 'reactstrap';
 
 import styled from 'styled-components';
 
 import Aux from '../../hoc/Aux/Aux';
 
-// import Map from '../../components/UI/Map/Map';
-// import ContactInfo from '../../components/UI/ContactInfo/ContactInfo';
 import GithubLogo from '../../images/footer/github-icon.png';
 import FacebookLogo from '../../images/footer/facebook-icon.png';
 import InstagramLogo from '../../images/footer/instagram-icon.png';
@@ -46,29 +43,6 @@ const SocialMediaIconsContainer = styled.div`
   margin: 10px 0;
   display: flex;
   align-items: center;
-`;
-
-const BuildInfoContainer = styled.span`
-  margin: 10px 0;
-  display: flex;
-  align-items: center;
-`;
-
-const CompanyIcon = styled.img`
-  display: inline-block;
-  filter: grayscale(1);
-  border-radius: 50%;
-  max-width: 25px;
-  margin: 0 5px;
-  opacity: 0.7;
-
-  transition: 0.1s all ease-in;
-
-  &:hover {
-    opacity: 1;
-    transform: scale(1.05);
-    filter: grayscale(0);
-  }
 `;
 
 const SourceCodeInfoContainer = styled.div`
@@ -136,7 +110,7 @@ const CodeCommitSection = ({ gitDataFromGithub }) => (
           <CommitBadgeLeftContainer>
             <SourceCodeIconContainer >
               <a href="https://github.com/lxieyang/lxieyang.github.io"
-              target="_blank" rel="noopener noreferrer" title="website source code" style={{
+              target="_blank" rel="noopener noreferrer" title="Website Source Code" style={{
                 color: 'inherit'
               }}>{`</>`}</a>
             </SourceCodeIconContainer>
@@ -179,13 +153,18 @@ const CodeCommitSection = ({ gitDataFromGithub }) => (
                 </a>
               </div>
               <div>
-                <img alt={gitDataFromGithub.committer.login} src={gitDataFromGithub.committer.avatar_url} width="20" height="20" style={{borderRadius: '2px'}}/> <span style={{
-                  color: '#586069',
-                  fontWeight: '600',
-                  fontSize: '12px',
-                }}>
+                <a 
+                  href={gitDataFromGithub.committer.html_url} 
+                  target="_blank" rel="noopener noreferrer"
+                  title={`${gitDataFromGithub.commit.committer.name}'s Github Profile`}
+                  style={{
+                    color: '#586069',
+                    fontWeight: '600',
+                    fontSize: '12px',
+                  }}><img alt={gitDataFromGithub.committer.login} src={gitDataFromGithub.committer.avatar_url} width="20" height="20" style={{borderRadius: '2px'}}/> <span>
                   {gitDataFromGithub.commit.committer.name}
-                </span> <span style={{
+                  </span>
+                </a> <span style={{
                   color: '#586069',
                   fontWeight: '400',
                   fontSize: '12px'
