@@ -26,7 +26,7 @@ import './index.css';
 const IndexPage = ({data}) => (
   <Layout>
     <Row>
-      <Col md='4' className="d-none d-sm-none d-md-block">
+      <Col md='4' className="d-none d-sm-none d-md-block d-lg-block">
         <div className="homepage-avatar-section">
           <div className="watermark-image-display-container">
             <img src={ProfileImg} alt="profile" style={{maxWidth: '100%', maxHeight: '100%'}}/><br />
