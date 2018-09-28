@@ -53,14 +53,33 @@ const PreviewImg = styled.img`
   opacity: 0.8;
 `;
 
+const NewTag = styled.span`
+  padding: .10em .30em;
+  font-size: 75%;
+  font-weight: 700;
+  color: #fff;
+  text-align: center;
+  white-space: nowrap;
+  border-radius: .25em;
+  background-color: #5cb85c;
+`;
+
 
 class ResearchPage extends Component {
+
+  state = {
+    currentYear: (new Date()).getFullYear()
+  }
 
   render () {
     let pubsInfo = [
       {
         prompt: 'Conferences',
         data: jsonQuery('publications[*type=conference]', {data: publicationsData}).value
+      },
+      {
+        prompt: 'Posters',
+        data: jsonQuery('publications[*type=poster]', {data: publicationsData}).value
       },
       {
         prompt: 'Workshops',
@@ -79,7 +98,6 @@ class ResearchPage extends Component {
             <strong>Background:</strong> Programmers spend a significant proportion of their time searching for and making sense of complex information in order to accomplish their goals, whether choosing among between different APIs, adapting code snippets found on the Internet to meet their needs, or trying to learn unfamiliar code to fix an error or add a new feature. When performing tasks like these, programmers continually are making hypotheses, proposing questions, and discovering answers. However, after each sensemaking episode in which a programmer gains knowledge for themselves, their work is essentially lost, with no one else benefiting. Although there are many tools to help programmers find the answers, there are very few tools to help programmers make use of the knowledge gained performing the task, or share that knowledge with others. We aim to help the initial programmer collect, navigate, and organize knowledge to meet their goals, while capturing this knowledge and making it useful for later programmers with similar needs.
           </p>
         </ResearchStatementContainer>
-
 
         <h2>Publications</h2>
         <PublicationContainer>
@@ -106,7 +124,10 @@ class ResearchPage extends Component {
                             <div className="authors pub-element">
                               {
                                 pub.authors.map((author, authorIdx) => (
-                                  <span key={authorIdx} className={author.bold ? 'author-important' : null}>{author.name}{authorIdx === pub.authors.length - 1 ? '. ' : ', '} </span>
+                                  <Aux>
+                                    <span key={authorIdx} className={author.bold ? 'author-important' : null}>{author.name}</span>
+                                    {authorIdx === pub.authors.length - 1 ? '. ' : ', '} 
+                                  </Aux>
                                 ))
                               }
                             </div>
@@ -117,7 +138,18 @@ class ResearchPage extends Component {
                               [<a href={`#${pub.codename}`} id={`${pub.codename}-abstract`}>Abstract</a>]
                               {
                                 pub.shouldShowLocalPaperLink !== false
-                                ? <Aux>[<a href={`${pubFilePathPrefix}/${pub.codename}/${pub.codename}.pdf`} target="_blank" rel="noopener noreferrer">Local Paper</a>]</Aux>
+                                ? pub.type === 'poster'
+                                  ? <Aux>
+                                      [<a href={`${pubFilePathPrefix}/${pub.codename}/${pub.codename}-paper.pdf`} target="_blank" rel="noopener noreferrer">Extended Abstract</a>][<a href={`${pubFilePathPrefix}/${pub.codename}/${pub.codename}-poster.pdf`} target="_blank" rel="noopener noreferrer">Poster</a>]
+                                    </Aux>
+                                  : <Aux>[<a href={`${pubFilePathPrefix}/${pub.codename}/${pub.codename}.pdf`} target="_blank" rel="noopener noreferrer">Local Paper</a>]</Aux>
+                                : null
+                              }
+                            </div>
+                            <div className="pub-element">
+                              {
+                                pub.year === this.state.currentYear
+                                ? <NewTag>new</NewTag>
                                 : null
                               }
                             </div>

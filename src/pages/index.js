@@ -76,7 +76,7 @@ const IndexPage = ({data}) => (
             <Col sm='12'>
               <span className="contact-name">Curriculum Vitae: [</span><a href={ CVPath }>pdf</a><span className="contact-name">]</span> (September 2017)<br/>
               <span className="contact-name">Github: </span><a href={data.site.siteMetadata.externalLinks.github}>lxieyang</a><br/>
-              <span className="contact-name">Facebook: </span><a href={data.site.siteMetadata.externalLinks.facebook}>Xieyang Liu (Michael Liu)</a><br/>
+              <span className="contact-name">Facebook: </span><a href={data.site.siteMetadata.externalLinks.facebook}>Michael Xieyang Liu</a><br/>
               <span className="contact-name">Instagram: </span><a href={data.site.siteMetadata.externalLinks.instagram}>xieyangl</a><br/>
             </Col>
           </Row>

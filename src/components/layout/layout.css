@@ -69,6 +69,7 @@ li.publication {
 
 .paper-title {
   font-weight: bold;
+  font-style: italic;
 }
 
 .authors .author-important {
