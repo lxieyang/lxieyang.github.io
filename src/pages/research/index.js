@@ -9,7 +9,7 @@ import {
 import { sortBy, reverse } from 'lodash';
 import jsonQuery from 'json-query';
 import { publicationsData, pubFilePathPrefix } from '../../utils/publications';
-
+import Aux from '../../../src/hoc/Aux/Aux';
 import Layout from '../../components/layout/layout';
 import ProgrammingImg from '../../images/research/research-statement-bg.png';
 
@@ -48,9 +48,11 @@ const PubCategoryPromptContainer = styled.h4`
 
 const PreviewImg = styled.img`
   max-width: 95%;
+  max-height: 90%;
   /* max-height: 95%; */
   opacity: 0.8;
 `;
+
 
 class ResearchPage extends Component {
 
@@ -89,7 +91,7 @@ class ResearchPage extends Component {
                     {pubCategory.prompt}
                   </PubCategoryPromptContainer>
                   {
-                    reverse(sortBy(pubCategory.data, 'year')).map((pub, pubIdx) => {
+                    reverse(sortBy(pubCategory.data, ['year', 'month'])).map((pub, pubIdx) => {
                       return (
                         <Row key={pubIdx}>
                           {/* eslint-disable-next-line */}
@@ -113,7 +115,11 @@ class ResearchPage extends Component {
                             </div>
                             <div className="data pub-element">
                               [<a href={`#${pub.codename}`} id={`${pub.codename}-abstract`}>Abstract</a>]
-                              [<a href={`${pubFilePathPrefix}/${pub.codename}/${pub.codename}.pdf`} target="_blank" rel="noopener noreferrer">Local Paper</a>]
+                              {
+                                pub.shouldShowLocalPaperLink !== false
+                                ? <Aux>[<a href={`${pubFilePathPrefix}/${pub.codename}/${pub.codename}.pdf`} target="_blank" rel="noopener noreferrer">Local Paper</a>]</Aux>
+                                : null
+                              }
                             </div>
                             <UncontrolledCollapse 
                               toggler={`#${pub.codename}-abstract`}
