@@ -84,7 +84,7 @@ export const publicationsData = {
       abstract: "UNAKITE is a new system that supports developers in collecting, organizing, consuming, and persisting design rationales while solving problems using web resources. Understanding design rationale has widely been recognized as signiﬁcant for the success of a software engineering project. However, it is currently both time and labor intensive for little immediate payoff for a developer to generate and embed a useful design rationale in their code. Under this cost structure, there is very little effective tool support to help developers keep track of design rationales. UNAKITE addresses this challenge for some design decisions by changing the cost structure: developers are incentivized to make decisions using UNAKITE's collecting and organizing mechanisms as it makes tracking and deciding between alternatives easier than before; the structure thus generated is automatically embedded in the code as the design rationale when the developer copies sample code into their existing code. In a preliminary usability study developers found UNAKITE to be usable for capturing design rationales and effective for interpreting the rationale of others.",
       codename: "unakite-vlhcc-workshop",
       previewImgLink: unakiteVlhccWorkshopPreviewImgLink,
-      shouldShowLocalPaperLink: false
+      shouldShowLocalPaperLink: true
     },
 
 
