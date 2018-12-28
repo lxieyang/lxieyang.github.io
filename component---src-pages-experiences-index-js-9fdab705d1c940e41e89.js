@@ -1,2 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[7],{142:function(e,n,a){"use strict";a.r(n);var t=a(0),c=a.n(t),r=a(150);n.default=function(e){return c.a.createElement(r.a,{pathName:"Experiences"},c.a.createElement("h1",null,"Experiences"),c.a.createElement("h4",null,"Coming soon!"))}}}]);
-//# sourceMappingURL=component---src-pages-experiences-index-js-9fdab705d1c940e41e89.js.map
