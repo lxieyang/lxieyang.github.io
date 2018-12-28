@@ -111,7 +111,7 @@ class ResearchPage extends Component {
                   {
                     reverse(sortBy(pubCategory.data, ['year', 'month'])).map((pub, pubIdx) => {
                       return (
-                        <Row key={pubIdx}>
+                        <Row key={pubIdx} style={{marginBottom: '10px'}}>
                           {/* eslint-disable-next-line */}
                           <a className='anchor' name={pub.codename}></a>
                           <Col lg='3' className="d-none d-sm-none d-md-none d-lg-block">
@@ -137,6 +137,13 @@ class ResearchPage extends Component {
                             <div className="data pub-element">
                               [<a href={`#${pub.codename}`} id={`${pub.codename}-abstract`}>Abstract</a>]
                               {
+                                pub.ieeexplore !== undefined
+                                ? <Aux>
+                                    [<a href={pub.ieeexplore} target="_blank" rel="noopener noreferrer">IEEE Digital Library</a>]
+                                  </Aux>
+                                : null
+                              }
+                              {
                                 pub.shouldShowLocalPaperLink !== false
                                 ? pub.type === 'poster'
                                   ? <Aux>
@@ -146,13 +153,15 @@ class ResearchPage extends Component {
                                 : null
                               }
                             </div>
+                            {/*
                             <div className="pub-element">
                               {
-                                pub.year === this.state.currentYear
+                                pub.year >= this.state.currentYear
                                 ? <NewTag>new</NewTag>
                                 : null
                               }
                             </div>
+                            */}
                             <UncontrolledCollapse 
                               toggler={`#${pub.codename}-abstract`}
                               className="paper-abstract publication-collapse">

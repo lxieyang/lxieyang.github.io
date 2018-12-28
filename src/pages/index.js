@@ -59,19 +59,22 @@ const IndexPage = ({data}) => (
             I am a 2nd year Ph.D. student at <a href="http://www.hcii.cmu.edu">Human-Computer Interaction Institute</a> @ <a href="http://www.cmu.edu">Carnegie Mellon University</a>. <br/>
           </p>
 
-          <hr/>
-
-          <p style={{fontSize: '1.0rem'}}>
-            My current research interests include <strong>human-computer interaction</strong>, <strong>user interface development</strong>, and  <strong>sensemaking</strong>. <br/>
+          <p>
+            My current research interests include <strong>human-computer interaction</strong>,  <strong>programming support tools</strong>, <strong>sensemaking</strong>, <strong>end-user programming</strong>, <strong>intelligent user interfaces</strong>. <br/>
             My current advisors are <a href="http://www.cs.cmu.edu/~bam/" id="brad-myers">Dr. Brad A. Myers</a> and <a href="http://kittur.org/" id="niki-kittur">Dr. Niki Kittur</a>. <br/>
 
             <HeadshotTooltip target="brad-myers" headshotPath={ BradImg }/>
             <HeadshotTooltip target="niki-kittur" headshotPath={ NikiImg }/>
+          </p>
 
+          <hr/>
+
+          <p>
             I obtained my two B.S. degrees at <a href="https://www.umich.edu">University of Michigan, Ann Arbor</a> and <a href="http://en.sjtu.edu.cn">Shanghai Jiao Tong University</a>. I worked as an undergraduate researcher with <a href="https://web.eecs.umich.edu/~wlasecki/" id="walter-lasecki">Dr. Walter S. Lasecki</a> in the <a href="http://web.eecs.umich.edu/~wlasecki/croma.html">Crowds + Machines Lab (Croma Lab)</a> during my time in Michigan.
 
             <HeadshotTooltip target="walter-lasecki" headshotPath={ WalterImg }/>
           </p>
+          
           <Row className="contacts">
             <Col sm='12'>
               <span className="contact-name">Curriculum Vitae: [</span><a href={ CVPath }>pdf</a><span className="contact-name">]</span> (Dec 2018)<br/>
@@ -95,7 +98,7 @@ const IndexPage = ({data}) => (
     <Row>
       <Col md='6'>  
         <h2>News</h2>
-        <ul>
+        <ul style={{paddingLeft: '16px'}}>
           {
             NewsList.map((newsItem, idx) => (
               <li 
@@ -111,6 +114,15 @@ const IndexPage = ({data}) => (
       </Col>
       <Col md='6'>
         <h2>Travel</h2>
+          <div style={{
+            backgroundColor: 'lightgrey', 
+            padding: '5px',
+            fontSize: '0.8rem',
+            color: '#333',
+            borderRadius: '4px'
+          }}>
+            Due to my recent Achilles tendon injury, my travel plan is very limited. I'm expected to recover fully in early 2019.
+          </div>
           {
             TravelList.map((travelItem, idx) => {
               const YearGap = 2.0;

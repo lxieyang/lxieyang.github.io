@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Link } from 'gatsby';
 import appRoutes from '../../utils/appRoutes';
+import { CVPath } from '../../utils/constants';
 import './header.css';
 import {
   Container,
@@ -37,17 +38,31 @@ const PartialNavLink = props => (
 );
 
 const ListLink = (props) => {
-  return (
-    <NavItem style={{marginBottom: '0'}}>
-      <div className="navlink">
-        {
-          props.exact === true
-          ? <ExactNavLink to={props.route}>{props.routeName}</ExactNavLink>
-          : <PartialNavLink to={props.route}>{props.routeName}</PartialNavLink>
-        }
-      </div>
-    </NavItem>
-  )
+  if (props.isPurelink !== undefined && props.isPurelink === true) {
+    return (
+      <NavItem style={{marginBottom: '0'}}>
+        <div className="navlink">
+          {
+            props.external === true
+            ? <a href={props.route} target="_blank" rel="noopener noreferrer">{props.routeName}</a>
+            : <a href={props.route}>{props.routeName}</a>
+          }
+        </div>
+      </NavItem>
+    )
+  } else {
+    return (
+      <NavItem style={{marginBottom: '0'}}>
+        <div className="navlink">
+          {
+            props.exact === true
+            ? <ExactNavLink to={props.route}>{props.routeName}</ExactNavLink>
+            : <PartialNavLink to={props.route}>{props.routeName}</PartialNavLink>
+          }
+        </div>
+      </NavItem>
+    )
+  }
 };
 
 class Header extends Component {
@@ -106,9 +121,10 @@ class Header extends Component {
               <Nav className="ml-auto" navbar>
                 <ListLink exact={true} route={appRoutes.home} routeName={'Home'}/>
                 <ListLink route={appRoutes.research} routeName={'Research'}/>
-                <ListLink route={appRoutes.experiences} routeName={'Experiences'}/>
+                {/*<ListLink route={appRoutes.experiences} routeName={'Experiences'}/>*/}
                 <ListLink route={appRoutes.blogs} routeName={'Blogs'}/>
                 <ListLink route={appRoutes.about} routeName={'About'}/>
+                <ListLink isPurelink={true} route={CVPath} routeName={'CV'} external={false}/>
               </Nav>
             </Collapse>
           </Container>

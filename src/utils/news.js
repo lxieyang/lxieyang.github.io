@@ -1,5 +1,9 @@
 export default [
   {
+    content: `Our long paper <span class="paper-title">Popup: Reconstructing 3D Video Using Particle Filtering to Aggregate Crowd Responses</span> is accepted to <a href="https://iui.acm.org/2019/" target="_blank" rel="noopener noreferrer">ACM IUI 2019</a>. Check it out <a href="/research/#av_anno">here</a>.`,
+    shouldDisplay: true
+  },
+  {
     content: `Our long paper <span class="paper-title">UNAKITE: Support Developers for Capturing and Persisting Design Rationales When Solving Problems Using Web Resources</span> is accepted to <a href="https://www.cs.washington.edu/dtshps2018/index.html" target="_blank" rel="noopener noreferrer">DTSHPS 2018</a>. Check it out <a href="/research/#unakite-vlhcc-workshop">here</a>.`,
     shouldDisplay: true
   },

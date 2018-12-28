@@ -2,6 +2,7 @@ import hicoPreviewImgLink from '../assets/files/pubs/hico/hico-preview.png';
 import kapSensemakingWorkshopPreviewImgLink from '../assets/files/pubs/kap-sensemaking-workshop/kap-sensemaking-workshop-preview.png'
 import unakiteVlhccWorkshopPreviewImgLink from '../assets/files/pubs/unakite-vlhcc-workshop/unakite-vlhcc-workshop.png';
 import stackoverflowVlhccWorkshopPreviewImgLink from '../assets/files/pubs/stackoverflow-vlhcc-workshop/stackoverflow-vlhcc-workshop-preview.jpg';
+import av_annoPreviewImgLink from '../assets/files/pubs/av_anno/av_anno.png';
 import { filePathPrefix } from './constants';
 
 export const pubFilePathPrefix = filePathPrefix + `/pubs`;
@@ -36,7 +37,9 @@ export const publicationsData = {
       `,
       previewImgLink: hicoPreviewImgLink,
       projectPageLink: "http://www-personal.umich.edu/~ywchao/hico/",
-      codebaseLink: "https://github.com/ywchao/ho-rcnn"
+      codebaseLink: "https://github.com/ywchao/ho-rcnn",
+      doi: "http://doi.org/10.1109/WACV.2018.00048",
+      ieeexplore: "https://ieeexplore.ieee.org/document/8354152"
     },
 
 
@@ -107,6 +110,32 @@ export const publicationsData = {
       codename: "stackoverflow-vlhcc-workshop",
       previewImgLink: stackoverflowVlhccWorkshopPreviewImgLink,
       shouldShowLocalPaperLink: true
+    },
+
+
+    // Popup: Reconstructing 3D Video Using Particle Filtering to Aggregate Crowd Responses - IUI 2019
+    {
+      title: "Popup: Reconstructing 3D Video Using Particle Filtering to Aggregate Crowd Responses",
+      type: "conference",
+      conference: "IUI",
+      conferenceFullName: "ACM International Conference on Intelligent User Interfaces (IUI)",
+      conferenceTag: "IUI 2019",
+      year: 2019,
+      month: 3,
+      authors: [
+        { name: "Jean Y. Song", bold: false },
+        { name: "Stephan J. Lemmer", bold: false },
+        { name: "Michael Xieyang Liu", bold: true },
+        { name: "Shiyan Yan", bold: false },
+        { name: "Juho Kim", bold: false },
+        { name: "Jason J. Corso", bold: false },
+        { name: "Walter S. Lasecki", bold: false }
+      ],
+      abstract: "Collecting a sufficient amount of 3D training data for autonomous vehicles to handle rare, but critical, traffic events (e.g., collisions) may take decades of deployment. Abundant video data of such events from municipal traffic cameras and video sharing sites (e.g., YouTube) could provide a potential alternative, but generating realistic training data in the form of 3D video reconstructions is a challenging task beyond the current capabilities of computer vision. Crowdsourcing manual annotations of necessary information has the potential to bridge this gap, but the level of accuracy required to attain usable reconstructions makes this a nearly impossible task for non-experts. In this paper, we propose a novel crowd-machine hybrid method that combines annotations from multiple contents by adopting particle filtering as an aggregation technique. Our approach is capable of leveraging temporal dependencies between video frames, enabling more aggressive filtering thresholds for annotations that can help improve the aggregation quality. The proposed method results in a 33% reduction in the relative error of position estimation compared to a state-of-the-art baseline. Moreover, our method enables skip-based (self-filtering) annotation that reduces the total annotation time for hard-to-annotate frames by 16%. Our approach provides a generalizable means of aggregating more accurate crowd responses even in settings where annotation is especially challenging or error-prone.",
+      codename: "av_anno",
+      bibtex: ``,
+      previewImgLink: av_annoPreviewImgLink,
+      shouldShowLocalPaperLink: false
     },
   ]
 };
