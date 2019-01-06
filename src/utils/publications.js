@@ -109,7 +109,9 @@ export const publicationsData = {
       abstract: "Programmers consistently engage in cognitively demanding tasks such as sensemaking and decision-making. During the information-foraging process, programmers are growing more reliant on resources available online since they contain masses of crowdsourced information and are easier to navigate. Content available in questions and answers on Stack Overflow presents a unique platform for studying the types of problems encountered in programming and possible solutions. In addition to classifying these questions, we introduce possible visual representations for organizing the gathered information and propose that such models may help reduce the cost of navigating, understanding and choosing solution alternatives.",
       codename: "stackoverflow-vlhcc-workshop",
       previewImgLink: stackoverflowVlhccWorkshopPreviewImgLink,
-      shouldShowLocalPaperLink: true
+      shouldShowLocalPaperLink: true,
+      doi: "https://doi.org/10.1109/VLHCC.2018.8506517",
+      ieeexplore: "https://ieeexplore.ieee.org/document/8506517"
     },
 
 
