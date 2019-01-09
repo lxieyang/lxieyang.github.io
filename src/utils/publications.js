@@ -137,7 +137,6 @@ export const publicationsData = {
       codename: "av_anno",
       bibtex: ``,
       previewImgLink: av_annoPreviewImgLink,
-      shouldShowLocalPaperLink: false
     },
   ]
 };
