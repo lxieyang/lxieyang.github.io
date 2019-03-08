@@ -230,6 +230,7 @@ export const query = graphql`
       siteMetadata {
         title
         externalLinks {
+          googleScholarProfile
           github
           facebook
           instagram
