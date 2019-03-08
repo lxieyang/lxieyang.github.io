@@ -10,7 +10,6 @@ import {
 import { sortBy, reverse } from 'lodash';
 import jsonQuery from 'json-query';
 import { publicationsData, pubFilePathPrefix } from '../../utils/publications';
-import Aux from '../../../src/hoc/Aux/Aux';
 import Layout from '../../components/layout/layout';
 import ProgrammingImg from '../../images/research/research-statement-bg.png';
 
@@ -152,7 +151,7 @@ class ResearchPage extends Component {
                           </div>
                           <div className="authors pub-element">
                             {pub.authors.map((author, authorIdx) => (
-                              <Aux>
+                              <React.Fragment key={authorIdx}>
                                 <span
                                   key={authorIdx}
                                   className={
@@ -164,7 +163,7 @@ class ResearchPage extends Component {
                                 {authorIdx === pub.authors.length - 1
                                   ? '. '
                                   : ', '}
-                              </Aux>
+                              </React.Fragment>
                             ))}
                           </div>
                           <div className="publication-location pub-element">
@@ -184,7 +183,7 @@ class ResearchPage extends Component {
                             </a>
                             ]
                             {pub.ieeexplore !== undefined ? (
-                              <Aux>
+                              <React.Fragment>
                                 [
                                 <a
                                   href={pub.ieeexplore}
@@ -194,11 +193,11 @@ class ResearchPage extends Component {
                                   IEEE Digital Library
                                 </a>
                                 ]
-                              </Aux>
+                              </React.Fragment>
                             ) : null}
                             {pub.shouldShowLocalPaperLink !== false ? (
                               pub.type === 'poster' ? (
-                                <Aux>
+                                <React.Fragment>
                                   [
                                   <a
                                     href={`${pubFilePathPrefix}/${
@@ -220,9 +219,9 @@ class ResearchPage extends Component {
                                     Poster
                                   </a>
                                   ]
-                                </Aux>
+                                </React.Fragment>
                               ) : (
-                                <Aux>
+                                <React.Fragment>
                                   [
                                   <a
                                     href={`${pubFilePathPrefix}/${
@@ -234,7 +233,7 @@ class ResearchPage extends Component {
                                     Local Paper
                                   </a>
                                   ]
-                                </Aux>
+                                </React.Fragment>
                               )
                             ) : null}
                           </div>
