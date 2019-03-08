@@ -2,6 +2,7 @@ module.exports = {
   siteMetadata: {
     title: 'Michael Xieyang Liu',
     externalLinks: {
+      googleScholarProfile: 'https://scholar.google.com/citations?user=RCHIBagAAAAJ',
       github: 'https://github.com/lxieyang',
       facebook: 'https://www.facebook.com/profile.php?id=100000519299083',
       instagram: 'https://www.instagram.com/xieyangl/',
@@ -42,8 +43,8 @@ module.exports = {
     {
       resolve: 'gatsby-plugin-copy-files',
       options: {
-          source: `${__dirname}/src/assets`,
-          destination: '/assets'
+        source: `${__dirname}/src/assets`,
+        destination: '/assets'
       }
     },
     {
@@ -65,8 +66,7 @@ module.exports = {
     {
       resolve: `gatsby-transformer-remark`,
       options: {
-        plugins: [
-          {
+        plugins: [{
             resolve: `gatsby-remark-images`,
             options: {
               // It's important to specify the maxWidth (in pixels) of
