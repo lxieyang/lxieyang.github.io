@@ -1,18 +1,18 @@
-import React, { Component } from 'react'
-import styled from 'styled-components'
+import React, { Component } from 'react';
+import styled from 'styled-components';
 import {
   // Container,
   Row,
   Col,
-  UncontrolledCollapse,
-} from 'reactstrap'
+  UncontrolledCollapse
+} from 'reactstrap';
 
-import { sortBy, reverse } from 'lodash'
-import jsonQuery from 'json-query'
-import { publicationsData, pubFilePathPrefix } from '../../utils/publications'
-import Aux from '../../../src/hoc/Aux/Aux'
-import Layout from '../../components/layout/layout'
-import ProgrammingImg from '../../images/research/research-statement-bg.png'
+import { sortBy, reverse } from 'lodash';
+import jsonQuery from 'json-query';
+import { publicationsData, pubFilePathPrefix } from '../../utils/publications';
+import Aux from '../../../src/hoc/Aux/Aux';
+import Layout from '../../components/layout/layout';
+import ProgrammingImg from '../../images/research/research-statement-bg.png';
 
 const ResearchStatementContainer = styled.div`
   position: relative;
@@ -33,24 +33,24 @@ const ResearchStatementContainer = styled.div`
     background-image: url(${ProgrammingImg});
     background-blend-mode: lighten;
   }
-`
+`;
 
-const PublicationContainer = styled.div``
+const PublicationContainer = styled.div``;
 
 const PubCategoryContainer = styled.div`
   margin-bottom: 15px;
-`
+`;
 
 const PubCategoryPromptContainer = styled.h4`
   opacity: 0.7;
-`
+`;
 
 const PreviewImg = styled.img`
   max-width: 95%;
   max-height: 90%;
   /* max-height: 95%; */
   opacity: 0.8;
-`
+`;
 
 // const NewTag = styled.span`
 //   padding: 0.1em 0.3em;
@@ -65,30 +65,30 @@ const PreviewImg = styled.img`
 
 class ResearchPage extends Component {
   state = {
-    currentYear: new Date().getFullYear(),
-  }
+    currentYear: new Date().getFullYear()
+  };
 
   render() {
     let pubsInfo = [
       {
         prompt: 'Conferences',
         data: jsonQuery('publications[*type=conference]', {
-          data: publicationsData,
-        }).value,
+          data: publicationsData
+        }).value
       },
       {
         prompt: 'Posters',
         data: jsonQuery('publications[*type=poster]', {
-          data: publicationsData,
-        }).value,
+          data: publicationsData
+        }).value
       },
       {
         prompt: 'Workshops',
         data: jsonQuery('publications[*type=workshop]', {
-          data: publicationsData,
-        }).value,
-      },
-    ]
+          data: publicationsData
+        }).value
+      }
+    ];
 
     return (
       <Layout pathName="Research">
@@ -255,15 +255,15 @@ class ResearchPage extends Component {
                           </UncontrolledCollapse>
                         </Col>
                       </Row>
-                    )
+                    );
                   }
                 )}
               </PubCategoryContainer>
-            )
+            );
           })}
         </PublicationContainer>
       </Layout>
-    )
+    );
   }
 }
 
@@ -282,4 +282,4 @@ class ResearchPage extends Component {
 //   }
 // `;
 
-export default ResearchPage
+export default ResearchPage;

@@ -1,26 +1,21 @@
-import React, { Component } from 'react';
-import moment from 'moment';
-import axios from 'axios';
-import { Link } from 'gatsby';
-import {
-  Row, Col
-} from 'reactstrap';
+import React, { Component } from 'react'
+import moment from 'moment'
+import axios from 'axios'
+import { Link } from 'gatsby'
+import { Row, Col } from 'reactstrap'
 
-import styled from 'styled-components';
+import styled from 'styled-components'
 
-import Aux from '../../hoc/Aux/Aux';
-
-import GithubLogo from '../../images/footer/github-icon.png';
-import FacebookLogo from '../../images/footer/facebook-icon.png';
-import InstagramLogo from '../../images/footer/instagram-icon.png';
-import TwitterLogo from '../../images/footer/twitter-icon.png';
-import './footer.css';
-
+import GithubLogo from '../../images/footer/github-icon.png'
+import FacebookLogo from '../../images/footer/facebook-icon.png'
+import InstagramLogo from '../../images/footer/instagram-icon.png'
+import TwitterLogo from '../../images/footer/twitter-icon.png'
+import './footer.css'
 
 /* Styled components */
 const FooterContainer = styled.footer`
   color: #666;
-`;
+`
 
 const SocialMediaIcon = styled.img`
   display: inline-block;
@@ -37,19 +32,19 @@ const SocialMediaIcon = styled.img`
     transform: scale(1.05);
     filter: grayscale(0);
   }
-`;
+`
 
 const SocialMediaIconsContainer = styled.div`
   margin: 10px 0;
   display: flex;
   align-items: center;
-`;
+`
 
 const SourceCodeInfoContainer = styled.div`
   margin: 0px 0;
   display: flex;
   align-items: center;
-`;
+`
 
 const CommitBadgeCard = styled.div`
   border: 1px solid #eaecef;
@@ -57,180 +52,222 @@ const CommitBadgeCard = styled.div`
   /* padding: 8px 10px;
   display: flex;
   align-items: center; */
-`;
+`
 
 const CommitBadgeLeftContainer = styled.div`
   /* margin-right: 8px; */
   display: flex;
   align-items: stretch;
-`;
+`
 
 const SourceCodeIconContainer = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-around;
   padding: 0px 6px;
-`;
-
+`
 
 /* Functional Components */
 const CopyrightSection = ({ facebook, github, instagram, twitter }) => (
-  <Aux>
+  <React.Fragment>
     <div>
       <div>
-        <Link to="/">Michael Xieyang Liu</Link> © {(new Date()).getFullYear()}. Built with <a href="https://gatsbyjs.org" id="gatsby">Gatsby</a>, <a href="https://reactjs.org" id="react">React</a> and <a href="https://getbootstrap.com/" id="bootstrap">Bootstrap</a>.
+        <Link to="/">Michael Xieyang Liu</Link> © {new Date().getFullYear()}.
+        Built with{' '}
+        <a href="https://gatsbyjs.org" id="gatsby">
+          Gatsby
+        </a>
+        ,{' '}
+        <a href="https://reactjs.org" id="react">
+          React
+        </a>{' '}
+        and{' '}
+        <a href="https://getbootstrap.com/" id="bootstrap">
+          Bootstrap
+        </a>
+        .
       </div>
       <div>
         <SocialMediaIconsContainer>
-          <a href={ github } id="github-logo">
-            <SocialMediaIcon alt="github" src={ GithubLogo }  />
+          <a href={github} id="github-logo">
+            <SocialMediaIcon alt="github" src={GithubLogo} />
           </a>
-          <a href={ facebook } id="facebook-logo">
-            <SocialMediaIcon alt="facebook" src={ FacebookLogo }  />
+          <a href={facebook} id="facebook-logo">
+            <SocialMediaIcon alt="facebook" src={FacebookLogo} />
           </a>
-          <a href={ instagram } id="instagram-logo">
-            <SocialMediaIcon alt="instagram" src={ InstagramLogo }  />
+          <a href={instagram} id="instagram-logo">
+            <SocialMediaIcon alt="instagram" src={InstagramLogo} />
           </a>
-          <a href={ twitter } id="twitter-logo">
-            <SocialMediaIcon alt="twitter" src={ TwitterLogo }  />
+          <a href={twitter} id="twitter-logo">
+            <SocialMediaIcon alt="twitter" src={TwitterLogo} />
           </a>
         </SocialMediaIconsContainer>
       </div>
     </div>
-  </Aux>
-);
-
+  </React.Fragment>
+)
 
 const CodeCommitSection = ({ gitDataFromGithub }) => (
-  <Aux>
+  <React.Fragment>
     <SourceCodeInfoContainer>
-    {
-      gitDataFromGithub !== null
-      ? <CommitBadgeCard>
+      {gitDataFromGithub !== null ? (
+        <CommitBadgeCard>
           <CommitBadgeLeftContainer>
-            <SourceCodeIconContainer >
-              <a href="https://github.com/lxieyang/lxieyang.github.io"
-              target="_blank" rel="noopener noreferrer" title="Website Source Code" style={{
-                color: 'inherit'
-              }}>{`</>`}</a>
+            <SourceCodeIconContainer>
+              <a
+                href="https://github.com/lxieyang/lxieyang.github.io"
+                target="_blank"
+                rel="noopener noreferrer"
+                title="Website Source Code"
+                style={{
+                  color: 'inherit',
+                }}
+              >{`</>`}</a>
             </SourceCodeIconContainer>
 
-            <div style={{
-              padding: '8px 10px'
-            }}>
-              <div style={{
-                color: '#444d56',
-                fontWeight: '600',
-                fontSize: '14px',
-                lineHeight: '21px',
-                display: 'flex',
-                alignItems: 'center'
-              }}>
-                <a 
+            <div
+              style={{
+                padding: '8px 10px',
+              }}
+            >
+              <div
+                style={{
+                  color: '#444d56',
+                  fontWeight: '600',
+                  fontSize: '14px',
+                  lineHeight: '21px',
+                  display: 'flex',
+                  alignItems: 'center',
+                }}
+              >
+                <a
                   href={gitDataFromGithub.html_url}
-                  target="_blank" rel="noopener noreferrer" 
+                  target="_blank"
+                  rel="noopener noreferrer"
                   title={gitDataFromGithub.commit.message}
-                  style={{color: 'inherit'}}>
+                  style={{ color: 'inherit' }}
+                >
                   {gitDataFromGithub.commit.message}
-                </a> &nbsp;
-                <a 
-                  href="https://travis-ci.org/lxieyang/lxieyang.github.io" 
-                  target="_blank" rel="noopener noreferrer"
-                  title={'View build status on Travis CI'}>
-                  <img 
-                    src="https://travis-ci.org/lxieyang/lxieyang.github.io.svg?branch=gatsby-dev" 
-                    alt="build status" 
-                    style={{height: '18px'}}/>
-                </a> &nbsp; 
-                <a 
-                  href="https://codeclimate.com/github/lxieyang/lxieyang.github.io/maintainability" 
-                  target="_blank" rel="noopener noreferrer"
-                  title={'View maintainability on Code Climate'}>
-                  <img 
-                    src="https://api.codeclimate.com/v1/badges/04e11d27938adef6dd80/maintainability" 
-                    alt="maintainability" 
-                    style={{height: '18px'}}/>
+                </a>{' '}
+                &nbsp;
+                <a
+                  href="https://travis-ci.org/lxieyang/lxieyang.github.io"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  title={'View build status on Travis CI'}
+                >
+                  <img
+                    src="https://travis-ci.org/lxieyang/lxieyang.github.io.svg?branch=gatsby-dev"
+                    alt="build status"
+                    style={{ height: '18px' }}
+                  />
+                </a>{' '}
+                &nbsp;
+                <a
+                  href="https://codeclimate.com/github/lxieyang/lxieyang.github.io/maintainability"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  title={'View maintainability on Code Climate'}
+                >
+                  <img
+                    src="https://api.codeclimate.com/v1/badges/04e11d27938adef6dd80/maintainability"
+                    alt="maintainability"
+                    style={{ height: '18px' }}
+                  />
                 </a>
               </div>
               <div>
-                <a 
-                  href={gitDataFromGithub.committer.html_url} 
-                  target="_blank" rel="noopener noreferrer"
-                  title={`${gitDataFromGithub.commit.committer.name}'s Github Profile`}
+                <a
+                  href={gitDataFromGithub.committer.html_url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  title={`${
+                    gitDataFromGithub.commit.committer.name
+                  }'s Github Profile`}
                   style={{
                     color: '#586069',
                     fontWeight: '600',
                     fontSize: '12px',
-                  }}><img alt={gitDataFromGithub.committer.login} src={gitDataFromGithub.committer.avatar_url} width="20" height="20" style={{borderRadius: '2px'}}/> <span>
-                  {gitDataFromGithub.commit.committer.name}
-                  </span>
-                </a> <span style={{
-                  color: '#586069',
-                  fontWeight: '400',
-                  fontSize: '12px'
-                }}>
-                  committed {moment(gitDataFromGithub.commit.committer.date).fromNow()}
-                </span> 
+                  }}
+                >
+                  <img
+                    alt={gitDataFromGithub.committer.login}
+                    src={gitDataFromGithub.committer.avatar_url}
+                    width="20"
+                    height="20"
+                    style={{ borderRadius: '2px' }}
+                  />{' '}
+                  <span>{gitDataFromGithub.commit.committer.name}</span>
+                </a>{' '}
+                <span
+                  style={{
+                    color: '#586069',
+                    fontWeight: '400',
+                    fontSize: '12px',
+                  }}
+                >
+                  committed{' '}
+                  {moment(gitDataFromGithub.commit.committer.date).fromNow()}
+                </span>
               </div>
             </div>
-            
           </CommitBadgeLeftContainer>
         </CommitBadgeCard>
-      : null
-    }
-    </SourceCodeInfoContainer>  
-  </Aux>
-);
-
-
+      ) : null}
+    </SourceCodeInfoContainer>
+  </React.Fragment>
+)
 
 class Footer extends Component {
-
   state = {
     lastUpdated: null,
-    gitDataFromGithub: null
+    gitDataFromGithub: null,
   }
 
-  componentDidMount () {
-    let lastUpdated = document.lastModified;
-    this.setState({lastUpdated});
+  componentDidMount() {
+    let lastUpdated = document.lastModified
+    this.setState({ lastUpdated })
 
-    axios.get('https://api.github.com/repos/lxieyang/lxieyang.github.io/commits/gatsby-dev')
+    axios
+      .get(
+        'https://api.github.com/repos/lxieyang/lxieyang.github.io/commits/gatsby-dev'
+      )
       .then(({ data }) => {
-        this.setState({gitDataFromGithub: data});
+        this.setState({ gitDataFromGithub: data })
       })
-      .catch((error) => {
-        console.log(error);
+      .catch(error => {
+        console.log(error)
       })
   }
 
-  render () {
-    const { facebook, github, instagram, twitter } = this.props.links;
-    const { gitDataFromGithub } = this.state;
+  render() {
+    const { facebook, github, instagram, twitter } = this.props.links
+    const { gitDataFromGithub } = this.state
 
     return (
       <div>
-        <br/><hr/>
+        <br />
+        <hr />
         <FooterContainer>
           <Row>
-            <Col lg='7'>
-              <CopyrightSection 
-                facebook={facebook} 
-                github={github} 
+            <Col lg="7">
+              <CopyrightSection
+                facebook={facebook}
+                github={github}
                 instagram={instagram}
-                twitter={twitter} />
+                twitter={twitter}
+              />
             </Col>
 
-            <Col lg='5' className="text-left">
-              <CodeCommitSection
-                gitDataFromGithub={gitDataFromGithub}/>        
+            <Col lg="5" className="text-left">
+              <CodeCommitSection gitDataFromGithub={gitDataFromGithub} />
             </Col>
           </Row>
-        </FooterContainer>   
-        <br/>
+        </FooterContainer>
+        <br />
       </div>
-    );
+    )
   }
 }
 
-export default Footer;
+export default Footer

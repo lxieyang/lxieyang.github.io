@@ -1,5 +1,4 @@
-export default [
-  {
+export default [{
     content: `Our long paper <span class="paper-title">Popup: Reconstructing 3D Video Using Particle Filtering to Aggregate Crowd Responses</span> is accepted to <a href="https://iui.acm.org/2019/" target="_blank" rel="noopener noreferrer">ACM IUI 2019</a>. Check it out <a href="/research/#av_anno">here</a>.`,
     shouldDisplay: true
   },

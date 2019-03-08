@@ -1,28 +1,28 @@
-import React from 'react'
-import { graphql } from 'gatsby'
+import React from 'react';
+import { graphql } from 'gatsby';
 import {
   // Container,
   Row,
-  Col,
-} from 'reactstrap'
+  Col
+} from 'reactstrap';
 
-import Layout from '../components/layout/layout'
-import ContactInfo from '../components/UI/ContactInfo/ContactInfo'
+import Layout from '../components/layout/layout';
+import ContactInfo from '../components/UI/ContactInfo/ContactInfo';
 
-import ProfileImg from '../images/lxieyang-avatar.jpg'
-import CMUAvatar from '../images/cmu.png'
-import HCIIAvatar from '../images/hcii-logo-big.jpg'
-import HeadshotTooltip from '../components/UI/HeadshotTooltip/HeadshotTooltip'
-import BradImg from '../images/people/bradmyers.jpg'
-import NikiImg from '../images/people/nikikittur.jpg'
-import WalterImg from '../images/people/walterlasecki.jpg'
+import ProfileImg from '../images/lxieyang-avatar.jpg';
+import CMUAvatar from '../images/cmu.png';
+import HCIIAvatar from '../images/hcii-logo-big.jpg';
+import HeadshotTooltip from '../components/UI/HeadshotTooltip/HeadshotTooltip';
+import BradImg from '../images/people/bradmyers.jpg';
+import NikiImg from '../images/people/nikikittur.jpg';
+import WalterImg from '../images/people/walterlasecki.jpg';
 
-import { CVPath } from '../utils/constants'
+import { CVPath } from '../utils/constants';
 
-import NewsList from '../utils/news'
-import TravelList from '../utils/travel'
+import NewsList from '../utils/news';
+import TravelList from '../utils/travel';
 
-import './index.css'
+import './index.css';
 
 const IndexPage = ({ data }) => (
   <Layout>
@@ -171,7 +171,7 @@ const IndexPage = ({ data }) => (
               key={idx}
               className={newsItem.shouldDisplay === false ? 'old-news' : null}
               dangerouslySetInnerHTML={{
-                __html: newsItem.content,
+                __html: newsItem.content
               }}
             />
           ))}
@@ -185,17 +185,17 @@ const IndexPage = ({ data }) => (
             padding: '5px',
             fontSize: '0.8rem',
             color: '#333',
-            borderRadius: '4px',
+            borderRadius: '4px'
           }}
         >
           Due to my recent Achilles tendon injury, my travel plan is very
           limited. I'm expected to recover fully in early 2019.
         </div>
         {TravelList.map((travelItem, idx) => {
-          const YearGap = 2.0
+          const YearGap = 2.0;
           let diff =
             (new Date() - new Date(travelItem.date)) /
-            (YearGap * 365 * 24 * 60 * 60 * 1000)
+            (YearGap * 365 * 24 * 60 * 60 * 1000);
 
           return (
             <div
@@ -206,7 +206,7 @@ const IndexPage = ({ data }) => (
                   ? 'travel-upcoming'
                   : diff <= 1
                   ? 'travel-past'
-                  : 'travel-old',
+                  : 'travel-old'
               ].join(' ')}
             >
               <Row>
@@ -217,12 +217,12 @@ const IndexPage = ({ data }) => (
                 <Col>{travelItem.location}</Col>
               </Row>
             </div>
-          )
+          );
         })}
       </Col>
     </Row>
   </Layout>
-)
+);
 
 export const query = graphql`
   query HomePageQuery {
@@ -237,6 +237,6 @@ export const query = graphql`
       }
     }
   }
-`
+`;
 
-export default IndexPage
+export default IndexPage;
