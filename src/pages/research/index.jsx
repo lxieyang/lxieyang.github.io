@@ -142,7 +142,7 @@ class ResearchPage extends Component {
                           <PreviewImg
                             src={pub.previewImgLink}
                             alt={pub.codename}
-                            className="img-responsive"
+                            className="img-fluid"
                           />
                         </Col>
                         <Col lg="9">
