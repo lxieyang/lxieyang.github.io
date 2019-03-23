@@ -1,4 +1,7 @@
 export default [{
+    content: `Please try <a href="https://unakite.info" target="_blank" rel="noopener noreferrer">Unakite</a>, our new plugin for Chrome to help programmers organize information found on the web!`,
+    shouldDisplay: true
+  }, {
     content: `Our long paper <span class="paper-title">Popup: Reconstructing 3D Video Using Particle Filtering to Aggregate Crowd Responses</span> is accepted to <a href="https://iui.acm.org/2019/" target="_blank" rel="noopener noreferrer">ACM IUI 2019</a>. Check it out <a href="/research/#av_anno">here</a>.`,
     shouldDisplay: true
   },

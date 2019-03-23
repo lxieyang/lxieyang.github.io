@@ -22,7 +22,7 @@ module.exports = {
         theme_color: '#C1000F',
         orientation: 'portrait',
         display: 'minimal-ui',
-        icon: `${__dirname}/static/favicon.jpg`,
+        icon: `${__dirname}/static/favicon.png`,
       },
     },
     'gatsby-plugin-offline',
@@ -61,6 +61,7 @@ module.exports = {
         name: 'pages',
       },
     },
+    `gatsby-plugin-catch-links`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     {
