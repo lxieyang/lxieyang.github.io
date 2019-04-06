@@ -221,6 +221,8 @@ export const publicationsData = {
       codename: "av_anno",
       bibtex: ``,
       previewImgLink: av_annoPreviewImgLink,
+      doi: "https://doi.org/10.1145/3301275.3302305",
+      acmdl: "https://dl.acm.org/citation.cfm?id=3302305"
     },
   ]
 };

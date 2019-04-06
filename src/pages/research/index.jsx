@@ -280,7 +280,7 @@ class ResearchPage extends Component {
                               Abstract
                             </a>
                             ]
-                            {pub.ieeexplore !== undefined ? (
+                            {pub.ieeexplore !== undefined && (
                               <React.Fragment>
                                 [
                                 <a
@@ -292,7 +292,20 @@ class ResearchPage extends Component {
                                 </a>
                                 ]
                               </React.Fragment>
-                            ) : null}
+                            )}
+                            {pub.acmdl !== undefined && (
+                              <React.Fragment>
+                                [
+                                <a
+                                  href={pub.acmdl}
+                                  target="_blank"
+                                  rel="noopener noreferrer"
+                                >
+                                  ACM Digital Library
+                                </a>
+                                ]
+                              </React.Fragment>
+                            )}
                             {pub.shouldShowLocalPaperLink !== false ? (
                               pub.type === 'poster' ? (
                                 <React.Fragment>
