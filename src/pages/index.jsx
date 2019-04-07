@@ -189,7 +189,7 @@ const IndexPage = ({ data }) => (
           }}
         >
           Due to my recent Achilles tendon injury, my travel plan is very
-          limited. I'm expected to recover fully in early 2019.
+          limited. I'm expected to recover fully in late 2019.
         </div>
         {TravelList.map((travelItem, idx) => {
           const YearGap = 2.0;

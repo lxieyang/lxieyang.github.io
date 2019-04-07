@@ -1,4 +1,14 @@
-export default [
+export default [{
+    date: 'May 27, 2019',
+    location: 'Pittsburgh, PA, US',
+    event: 'Bosch Research Pittsburgh Internship',
+    url: 'https://www.bosch.us/our-company/bosch-in-the-usa/pittsburgh/'
+  }, {
+    date: 'May 4, 2019',
+    location: 'Glasgow, Scotland',
+    event: 'CHI 2019',
+    url: 'https://chi2019.acm.org/'
+  },
   {
     date: 'April 21, 2018',
     location: 'Montréal, Canada',
