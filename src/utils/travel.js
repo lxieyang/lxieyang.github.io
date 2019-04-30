@@ -1,9 +1,17 @@
-export default [{
+export default [
+  {
     date: 'May 27, 2019',
     location: 'Pittsburgh, PA, US',
     event: 'Bosch Research Pittsburgh Internship',
     url: 'https://www.bosch.us/our-company/bosch-in-the-usa/pittsburgh/'
-  }, {
+  },
+  {
+    date: 'May 14, 2019',
+    location: 'Austin, TX, US',
+    event: 'Personal Trip',
+    url: 'https://www.austintexas.org/'
+  },
+  {
     date: 'May 4, 2019',
     location: 'Glasgow, Scotland',
     event: 'CHI 2019',
@@ -45,4 +53,4 @@ export default [{
     event: 'UW Open House',
     url: 'http://www.washington.edu/'
   }
-]
+];
