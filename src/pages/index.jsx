@@ -137,16 +137,16 @@ const IndexPage = ({ data }) => (
               <span className="contact-name">Github: </span>
               <a href={data.site.siteMetadata.externalLinks.github}>lxieyang</a>
               <br />
-              <span className="contact-name">Facebook: </span>
+              {/* <span className="contact-name">Facebook: </span>
               <a href={data.site.siteMetadata.externalLinks.facebook}>
                 Michael Xieyang Liu
               </a>
-              <br />
-              <span className="contact-name">Instagram: </span>
+              <br /> */}
+              {/* <span className="contact-name">Instagram: </span>
               <a href={data.site.siteMetadata.externalLinks.instagram}>
                 xieyangl
               </a>
-              <br />
+              <br /> */}
             </Col>
           </Row>
 
@@ -188,7 +188,7 @@ const IndexPage = ({ data }) => (
             borderRadius: '4px'
           }}
         >
-          Due to my recent Achilles tendon injury, my travel plan is very
+          Due to my Achilles tendon injury in July 2018, my travel plan is very
           limited. I'm expected to recover fully in late 2019.
         </div>
         {TravelList.map((travelItem, idx) => {

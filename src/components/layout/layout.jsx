@@ -43,7 +43,7 @@ const Layout = ({ children, data, pathName }) => {
               {
                 name: 'keywords',
                 content:
-                  'HCI, Computer Science, Researcher, Carnegie Mellon University'
+                  'Human Computer Interaction, Computer Science, Researcher, Carnegie Mellon University'
               }
             ]}
           >
