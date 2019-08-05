@@ -51,6 +51,10 @@
   direction: rtl;
 }
 
+.travel {
+  margin: 12px;
+}
+
 .travel-old {
   display: none;
 }

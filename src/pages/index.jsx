@@ -210,7 +210,7 @@ const IndexPage = ({ data }) => (
           limited. I'm expected to recover fully in late 2019.
         </div>
         {TravelList.map((travelItem, idx) => {
-          const YearGap = 2.0;
+          const YearGap = 3.0;
           let diff =
             (new Date() - new Date(travelItem.date)) /
             (YearGap * 365 * 24 * 60 * 60 * 1000);
