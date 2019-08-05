@@ -74,7 +74,7 @@ const CopyrightSection = ({
   facebook,
   github,
   instagram,
-  twitter
+  twitter,
 }) => (
   <React.Fragment>
     <div>
@@ -130,14 +130,14 @@ const CodeCommitSection = ({ gitDataFromGithub }) => (
                 rel="noopener noreferrer"
                 title="Website Source Code"
                 style={{
-                  color: 'inherit'
+                  color: 'inherit',
                 }}
               >{`</>`}</a>
             </SourceCodeIconContainer>
 
             <div
               style={{
-                padding: '8px 10px'
+                padding: '8px 10px',
               }}
             >
               <div
@@ -147,7 +147,7 @@ const CodeCommitSection = ({ gitDataFromGithub }) => (
                   fontSize: '14px',
                   lineHeight: '21px',
                   display: 'flex',
-                  alignItems: 'center'
+                  alignItems: 'center',
                 }}
               >
                 <a
@@ -172,32 +172,17 @@ const CodeCommitSection = ({ gitDataFromGithub }) => (
                     style={{ height: '18px' }}
                   />
                 </a>{' '}
-                &nbsp;
-                <a
-                  href="https://codeclimate.com/github/lxieyang/lxieyang.github.io/maintainability"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  title={'View maintainability on Code Climate'}
-                >
-                  <img
-                    src="https://api.codeclimate.com/v1/badges/04e11d27938adef6dd80/maintainability"
-                    alt="maintainability"
-                    style={{ height: '18px' }}
-                  />
-                </a>
               </div>
               <div>
                 <a
                   href={gitDataFromGithub.committer.html_url}
                   target="_blank"
                   rel="noopener noreferrer"
-                  title={`${
-                    gitDataFromGithub.commit.committer.name
-                  }'s Github Profile`}
+                  title={`${gitDataFromGithub.commit.committer.name}'s Github Profile`}
                   style={{
                     color: '#586069',
                     fontWeight: '600',
-                    fontSize: '12px'
+                    fontSize: '12px',
                   }}
                 >
                   <img
@@ -213,7 +198,7 @@ const CodeCommitSection = ({ gitDataFromGithub }) => (
                   style={{
                     color: '#586069',
                     fontWeight: '400',
-                    fontSize: '12px'
+                    fontSize: '12px',
                   }}
                 >
                   committed{' '}
@@ -231,7 +216,7 @@ const CodeCommitSection = ({ gitDataFromGithub }) => (
 class Footer extends Component {
   state = {
     lastUpdated: null,
-    gitDataFromGithub: null
+    gitDataFromGithub: null,
   };
 
   componentDidMount() {
@@ -245,7 +230,7 @@ class Footer extends Component {
       .then(({ data }) => {
         this.setState({ gitDataFromGithub: data });
       })
-      .catch(error => {
+      .catch((error) => {
         console.log(error);
       });
   }
@@ -256,7 +241,7 @@ class Footer extends Component {
       facebook,
       github,
       instagram,
-      twitter
+      twitter,
     } = this.props.links;
     const { gitDataFromGithub } = this.state;
 

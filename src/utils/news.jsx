@@ -1,9 +1,9 @@
-import React, { Fragment as _ } from 'react';
+import React, { Fragment } from 'react';
 
 export default [
   {
     content: (
-      <_>
+      <Fragment>
         {' '}
         Tired of looking for a tab among the 50 tabs you opened ? The{' '}
         <a
@@ -23,13 +23,14 @@ export default [
           {' '}
           [Source code]
         </a>
-      </_>
+      </Fragment>
     ),
+    date: new Date('2019-07-31'),
     shouldDisplay: true,
   },
   {
     content: (
-      <_>
+      <Fragment>
         Please try{' '}
         <a
           href="https://unakite.info"
@@ -40,13 +41,14 @@ export default [
         </a>
         , our new plugin for Chrome to help programmers organize information
         found on the web!
-      </_>
+      </Fragment>
     ),
+    date: new Date('2019-04-01'),
     shouldDisplay: true,
   },
   {
     content: (
-      <_>
+      <Fragment>
         Our long paper{' '}
         <span className="paper-title">
           Popup: Reconstructing 3D Video Using Particle Filtering to Aggregate
@@ -61,13 +63,14 @@ export default [
           ACM IUI 2019
         </a>
         . Check it out <a href="/research/#av_anno">here</a>.
-      </_>
+      </Fragment>
     ),
+    date: new Date('2019-03-01'),
     shouldDisplay: true,
   },
   {
     content: (
-      <_>
+      <Fragment>
         Our long paper{' '}
         <span className="paper-title">
           UNAKITE: Support Developers for Capturing and Persisting Design
@@ -82,13 +85,14 @@ export default [
           DTSHPS 2018
         </a>
         . Check it out <a href="/research/#unakite-vlhcc-workshop">here</a>.
-      </_>
+      </Fragment>
     ),
+    date: new Date('2018-10-01'),
     shouldDisplay: false,
   },
   {
     content: (
-      <_>
+      <Fragment>
         Our poster{' '}
         <span className="paper-title">
           An Exploratory Study of Web Foraging to Understand and Support
@@ -104,13 +108,14 @@ export default [
         </a>
         . Check it out{' '}
         <a href="/research/#stackoverflow-vlhcc-workshop">here</a>.
-      </_>
+      </Fragment>
     ),
+    date: new Date('2018-10-01'),
     shouldDisplay: true,
   },
   {
     content: (
-      <_>
+      <Fragment>
         I re-wrote this website as a Single Page Application (SPA) with{' '}
         <a
           href="https://www.gatsbyjs.org"
@@ -137,13 +142,14 @@ export default [
           Jekyll
         </a>
         .
-      </_>
+      </Fragment>
     ),
+    date: new Date('2018-06-12'),
     shouldDisplay: true,
   },
   {
     content: (
-      <_>
+      <Fragment>
         I presented our position paper{' '}
         <span className="paper-title">
           Supporting Knowledge Acceleration for Programming from a Sensemaking
@@ -158,13 +164,14 @@ export default [
           CHI 2018 Sensemaking Workshop
         </a>
         . Check it out <a href="/research/#kap-sensemaking-workshop">here</a>.
-      </_>
+      </Fragment>
     ),
+    date: new Date('2018-05-09'),
     shouldDisplay: true,
   },
   {
     content: (
-      <_>
+      <Fragment>
         Our paper{' '}
         <span className="paper-title">
           Learning to Detect Human-Object Interactions
@@ -178,13 +185,14 @@ export default [
           WACV 2018
         </a>
         . Check it out <a href="/research/#hico">here</a>.
-      </_>
+      </Fragment>
     ),
+    date: new Date('2018-03-01'),
     shouldDisplay: true,
   },
   {
     content: (
-      <_>
+      <Fragment>
         Check out my{' '}
         <a
           href="https://github.com/lxieyang/mobile-paper-reader"
@@ -195,51 +203,58 @@ export default [
         </a>{' '}
         to support better reading experience of <strong>pdf</strong> documents
         (especially research papers) on mobile phones!
-      </_>
+      </Fragment>
     ),
+    date: new Date('2018-02-01'),
     shouldDisplay: false,
   },
   {
     content: (
-      <_>
+      <Fragment>
         <a href="http://www.cs.cmu.edu/~bam/">Dr. Brad A. Myers</a> and{' '}
         <a href="http://kittur.org/">Dr. Niki Kittur</a> are my advisors here at{' '}
         <a href="http://www.hcii.cmu.edu">CMU HCII</a>.
-      </_>
+      </Fragment>
     ),
+    date: new Date('2017-10-01'),
     shouldDisplay: false,
   },
   {
     content: (
-      <_>
+      <Fragment>
         I started as a <strong>Ph.D.</strong> student at{' '}
         <a href="http://www.hcii.cmu.edu">
           Human-Computer Interaction Institute
         </a>{' '}
         @ <a href="http://www.cmu.edu">Carnegie Mellon University</a> in August
         2017!
-      </_>
+      </Fragment>
     ),
+    date: new Date('2017-08-20'),
     shouldDisplay: false,
   },
   {
     content: (
-      <_>
-        I got my <strong>B.S. in Electrical and Computer Engineering</strong>{' '}
-        from <a href="http://en.sjtu.edu.cn">Shanghai Jiao Tong University</a>{' '}
-        in August 2017.
-      </_>
+      <Fragment>
+        I am deeply honored to receive my{' '}
+        <strong>B.S. in Electrical and Computer Engineering</strong> from{' '}
+        <a href="http://en.sjtu.edu.cn">Shanghai Jiao Tong University</a> in
+        August 2017.
+      </Fragment>
     ),
+    date: new Date('2017-08-10'),
     shouldDisplay: false,
   },
   {
     content: (
-      <_>
-        I got my <strong>B.S. in Computer Science</strong> from{' '}
+      <Fragment>
+        I am deeply honored to receive my{' '}
+        <strong>B.S. in Computer Science</strong> from{' '}
         <a href="https://www.umich.edu">University of Michigan, Ann Arbor</a> in
         April 2017.
-      </_>
+      </Fragment>
     ),
+    date: new Date('2017-04-30'),
     shouldDisplay: false,
   },
 ];

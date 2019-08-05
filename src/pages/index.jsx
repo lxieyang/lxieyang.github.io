@@ -1,4 +1,5 @@
 import React from 'react';
+import moment from 'moment';
 import { graphql } from 'gatsby';
 import {
   // Container,
@@ -165,15 +166,33 @@ const IndexPage = ({ data }) => (
     <Row>
       <Col md="6">
         <h2>News</h2>
-        <ul style={{ paddingLeft: '16px' }}>
-          {NewsList.map((newsItem, idx) => (
-            <li
-              key={idx}
-              className={newsItem.shouldDisplay === false ? 'old-news' : null}
-            >
-              {newsItem.content}
-            </li>
-          ))}
+        <ul style={{ padding: 0, listStyle: 'none' }}>
+          {NewsList.map((newsItem, idx) => {
+            return (
+              <li
+                key={idx}
+                style={{
+                  margin: '16px 0px',
+                }}
+                className={newsItem.shouldDisplay === false ? 'old-news' : null}
+              >
+                {newsItem.date && (
+                  <span
+                    className="news-date"
+                    style={{
+                      fontSize: idx <= 2 ? '0.95rem' : null,
+                      padding: idx <= 2 ? '2px 6px' : null,
+                      opacity: idx <= 2 ? 0.8 : 0.6,
+                    }}
+                  >
+                    {moment(newsItem.date).fromNow()}
+                  </span>
+                )}
+
+                <p style={{ paddingLeft: 3 }}>{newsItem.content}</p>
+              </li>
+            );
+          })}
         </ul>
       </Col>
       <Col md="6">
