@@ -3,7 +3,7 @@ import { graphql } from 'gatsby';
 import {
   // Container,
   Row,
-  Col
+  Col,
 } from 'reactstrap';
 
 import Layout from '../components/layout/layout';
@@ -170,10 +170,9 @@ const IndexPage = ({ data }) => (
             <li
               key={idx}
               className={newsItem.shouldDisplay === false ? 'old-news' : null}
-              dangerouslySetInnerHTML={{
-                __html: newsItem.content
-              }}
-            />
+            >
+              {newsItem.content}
+            </li>
           ))}
         </ul>
       </Col>
@@ -185,10 +184,10 @@ const IndexPage = ({ data }) => (
             padding: '5px',
             fontSize: '0.8rem',
             color: '#333',
-            borderRadius: '4px'
+            borderRadius: '4px',
           }}
         >
-          Due to my Achilles tendon injury in July 2018, my travel plan is very
+          Due to my Achilles tendon injury in July 2018, my travel plan is
           limited. I'm expected to recover fully in late 2019.
         </div>
         {TravelList.map((travelItem, idx) => {
@@ -206,7 +205,7 @@ const IndexPage = ({ data }) => (
                   ? 'travel-upcoming'
                   : diff <= 1
                   ? 'travel-past'
-                  : 'travel-old'
+                  : 'travel-old',
               ].join(' ')}
             >
               <Row>
