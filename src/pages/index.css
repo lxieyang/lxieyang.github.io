@@ -82,3 +82,37 @@
   padding: 2px 4px;
   font-size: 0.8rem;
 }
+
+.data.pub-element {
+  display: flex;
+  align-items: center;
+}
+
+.data.pub-element span {
+  margin: 0px 6px;
+  display: inline-block;
+}
+
+.data.pub-element span:first-child {
+  margin-left: 0px;
+}
+
+.awards.pub-element {
+  display: flex;
+  align-items: center;
+}
+
+.awards.pub-element span {
+  margin: 0px 3px;
+  padding: 2px 6px;
+  border-radius: 10px;
+  background-color: rgba(193, 0, 15, 0.8);
+  color: white;
+  font-size: 0.9rem;
+  display: flex;
+  align-items: center;
+}
+
+.awards.pub-element span:first-child {
+  margin-left: 0px;
+}

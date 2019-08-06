@@ -1,10 +1,11 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
+import ScrollableAnchor from 'react-scrollable-anchor';
 import {
   // Container,
   Row,
   Col,
-  UncontrolledCollapse
+  UncontrolledCollapse,
 } from 'reactstrap';
 
 import { sortBy, reverse } from 'lodash';
@@ -14,6 +15,11 @@ import Layout from '../../components/layout/layout';
 import ProgrammingImg from '../../images/research/research-statement-bg.png';
 
 import UnakitePreview from '../../images/research/projects/kap/unakite-v2-preview.png';
+
+import ACMDLIcon from '../../images/acmdl-icon.jpg';
+import IEEEIcon from '../../images/ieee-icon.png';
+
+import { FaAward } from 'react-icons/fa';
 
 const ResearchStatementContainer = styled.div`
   position: relative;
@@ -70,7 +76,7 @@ const PreviewImg = styled.img`
 
 class ResearchPage extends Component {
   state = {
-    currentYear: new Date().getFullYear()
+    currentYear: new Date().getFullYear(),
   };
 
   render() {
@@ -78,21 +84,21 @@ class ResearchPage extends Component {
       {
         prompt: 'Conferences',
         data: jsonQuery('publications[*type=conference]', {
-          data: publicationsData
-        }).value
+          data: publicationsData,
+        }).value,
       },
       {
         prompt: 'Posters',
         data: jsonQuery('publications[*type=poster]', {
-          data: publicationsData
-        }).value
+          data: publicationsData,
+        }).value,
       },
       {
         prompt: 'Workshops',
         data: jsonQuery('publications[*type=workshop]', {
-          data: publicationsData
-        }).value
-      }
+          data: publicationsData,
+        }).value,
+      },
     ];
 
     return (
@@ -230,125 +236,164 @@ class ResearchPage extends Component {
                 {reverse(sortBy(pubCategory.data, ['year', 'month'])).map(
                   (pub, pubIdx) => {
                     return (
-                      <Row key={pubIdx} style={{ marginBottom: '10px' }}>
-                        {/* eslint-disable-next-line */}
-                        <a className="anchor" name={pub.codename} />
-                        <Col
-                          lg="3"
-                          className="d-none d-sm-none d-md-none d-lg-block"
-                        >
-                          <PreviewImg
-                            src={pub.previewImgLink}
-                            alt={pub.codename}
-                            className="img-fluid"
-                          />
-                        </Col>
-                        <Col lg="9">
-                          <div className="paper-title pub-element">
-                            {pub.title}
-                          </div>
-                          <div className="authors pub-element">
-                            {pub.authors.map((author, authorIdx) => (
-                              <React.Fragment key={authorIdx}>
-                                <span
-                                  key={authorIdx}
-                                  className={
-                                    author.bold ? 'author-important' : null
-                                  }
+                      <ScrollableAnchor key={pubIdx} id={pub.codename}>
+                        <Row key={pubIdx} style={{ marginBottom: '10px' }}>
+                          {/* eslint-disable-next-line */}
+                          <a className="anchor" name={pub.codename} />
+                          <Col
+                            lg="3"
+                            className="d-none d-sm-none d-md-none d-lg-block"
+                          >
+                            <PreviewImg
+                              src={pub.previewImgLink}
+                              alt={pub.codename}
+                              className="img-fluid"
+                            />
+                          </Col>
+                          <Col lg="9">
+                            <div className="paper-title pub-element">
+                              {pub.title}
+                            </div>
+                            <div className="authors pub-element">
+                              {pub.authors.map((author, authorIdx) => (
+                                <React.Fragment key={authorIdx}>
+                                  <span
+                                    key={authorIdx}
+                                    className={
+                                      author.bold ? 'author-important' : null
+                                    }
+                                  >
+                                    {author.name}
+                                  </span>
+                                  {authorIdx === pub.authors.length - 1
+                                    ? '. '
+                                    : ', '}
+                                </React.Fragment>
+                              ))}
+                            </div>
+                            <div className="publication-location pub-element">
+                              <span className="conference">
+                                {pub.conferenceFullName}
+                              </span>
+                              ,{' '}
+                              <span className="conference-year">
+                                {pub.year}
+                              </span>
+                              .
+                            </div>
+                            {pub.award && (
+                              <div className="awards pub-element">
+                                {pub.award.honorableMention && (
+                                  <span>
+                                    <FaAward
+                                      size={'1rem'}
+                                      style={{ marginRight: 4 }}
+                                    />{' '}
+                                    Best Paper Honorable Mention Award
+                                  </span>
+                                )}
+                              </div>
+                            )}
+                            <div className="data pub-element">
+                              <span>
+                                <a
+                                  href={`#${pub.codename}`}
+                                  id={`${pub.codename}-abstract`}
                                 >
-                                  {author.name}
+                                  Abstract
+                                </a>
+                              </span>
+
+                              {pub.ieeexplore !== undefined && (
+                                <span>
+                                  <a
+                                    href={pub.ieeexplore}
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    style={{
+                                      display: 'flex',
+                                      alignItems: 'center',
+                                    }}
+                                  >
+                                    <img
+                                      src={IEEEIcon}
+                                      alt="ieee"
+                                      style={{
+                                        marginRight: 3,
+                                        width: 20,
+                                        height: 20,
+                                      }}
+                                    />
+                                    IEEE Digital Library
+                                  </a>
                                 </span>
-                                {authorIdx === pub.authors.length - 1
-                                  ? '. '
-                                  : ', '}
-                              </React.Fragment>
-                            ))}
-                          </div>
-                          <div className="publication-location pub-element">
-                            <span className="conference">
-                              {pub.conferenceFullName}
-                            </span>
-                            ,{' '}
-                            <span className="conference-year">{pub.year}</span>.
-                          </div>
-                          <div className="data pub-element">
-                            [
-                            <a
-                              href={`#${pub.codename}`}
-                              id={`${pub.codename}-abstract`}
-                            >
-                              Abstract
-                            </a>
-                            ]
-                            {pub.ieeexplore !== undefined && (
-                              <React.Fragment>
-                                [
-                                <a
-                                  href={pub.ieeexplore}
-                                  target="_blank"
-                                  rel="noopener noreferrer"
-                                >
-                                  IEEE Digital Library
-                                </a>
-                                ]
-                              </React.Fragment>
-                            )}
-                            {pub.acmdl !== undefined && (
-                              <React.Fragment>
-                                [
-                                <a
-                                  href={pub.acmdl}
-                                  target="_blank"
-                                  rel="noopener noreferrer"
-                                >
-                                  ACM Digital Library
-                                </a>
-                                ]
-                              </React.Fragment>
-                            )}
-                            {pub.shouldShowLocalPaperLink !== false ? (
-                              pub.type === 'poster' ? (
-                                <React.Fragment>
-                                  [
-                                  <a
-                                    href={`${pubFilePathPrefix}/${
-                                      pub.codename
-                                    }/${pub.codename}-paper.pdf`}
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                  >
-                                    Extended Abstract
-                                  </a>
-                                  ][
-                                  <a
-                                    href={`${pubFilePathPrefix}/${
-                                      pub.codename
-                                    }/${pub.codename}-poster.pdf`}
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                  >
-                                    Poster
-                                  </a>
-                                  ]
-                                </React.Fragment>
-                              ) : (
-                                <React.Fragment>
-                                  [
-                                  <a
-                                    href={`${pubFilePathPrefix}/${
-                                      pub.codename
-                                    }/${pub.codename}.pdf`}
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                  >
-                                    Local Paper
-                                  </a>
-                                  ]
-                                </React.Fragment>
-                              )
-                            ) : null}
-                          </div>
-                          {/*
+                              )}
+                              {pub.acmdl !== undefined && (
+                                <span>
+                                  {pub.acmdl_available === false ? (
+                                    <React.Fragment>
+                                      <em>Available soon!</em>
+                                    </React.Fragment>
+                                  ) : (
+                                    <a
+                                      href={pub.acmdl}
+                                      target="_blank"
+                                      rel="noopener noreferrer"
+                                      style={{
+                                        display: 'flex',
+                                        alignItems: 'center',
+                                      }}
+                                    >
+                                      <img
+                                        src={ACMDLIcon}
+                                        alt="acmdl"
+                                        style={{
+                                          marginRight: 3,
+                                          width: 20,
+                                          height: 20,
+                                        }}
+                                      />
+                                      ACM Digital Library
+                                    </a>
+                                  )}
+                                </span>
+                              )}
+                              {pub.shouldShowLocalPaperLink !== false ? (
+                                pub.type === 'poster' ? (
+                                  <React.Fragment>
+                                    <span>
+                                      <a
+                                        href={`${pubFilePathPrefix}/${pub.codename}/${pub.codename}-paper.pdf`}
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                      >
+                                        Extended Abstract
+                                      </a>
+                                    </span>
+                                    <span>
+                                      <a
+                                        href={`${pubFilePathPrefix}/${pub.codename}/${pub.codename}-poster.pdf`}
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                      >
+                                        Poster
+                                      </a>
+                                    </span>
+                                  </React.Fragment>
+                                ) : (
+                                  <span>
+                                    <a
+                                      href={`${pubFilePathPrefix}/${pub.codename}/${pub.codename}.pdf`}
+                                      target="_blank"
+                                      rel="noopener noreferrer"
+                                    >
+                                      Local PDF
+                                    </a>
+                                  </span>
+                                )
+                              ) : null}
+                            </div>
+                            {/*
                             <div className="pub-element">
                               {
                                 pub.year >= this.state.currentYear
@@ -357,14 +402,15 @@ class ResearchPage extends Component {
                               }
                             </div>
                             */}
-                          <UncontrolledCollapse
-                            toggler={`#${pub.codename}-abstract`}
-                            className="paper-abstract publication-collapse"
-                          >
-                            {pub.abstract}
-                          </UncontrolledCollapse>
-                        </Col>
-                      </Row>
+                            <UncontrolledCollapse
+                              toggler={`#${pub.codename}-abstract`}
+                              className="paper-abstract publication-collapse"
+                            >
+                              {pub.abstract}
+                            </UncontrolledCollapse>
+                          </Col>
+                        </Row>
+                      </ScrollableAnchor>
                     );
                   }
                 )}

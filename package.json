@@ -38,6 +38,8 @@
     "react-emotion": "^9.2.12",
     "react-google-maps": "^9.4.5",
     "react-helmet": "^5.2.1",
+    "react-icons": "^3.7.0",
+    "react-scrollable-anchor": "^0.6.1",
     "react-typography": "^0.16.18",
     "reactstrap": "^6.5.0",
     "styled-components": "^3.4.10",

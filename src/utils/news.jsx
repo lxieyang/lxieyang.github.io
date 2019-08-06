@@ -1,6 +1,39 @@
 import React, { Fragment } from 'react';
+import { pubFilePathPrefix } from '../utils/publications';
+import { FaAward } from 'react-icons/fa';
 
 export default [
+  {
+    content: (
+      <Fragment>
+        Our full paper{' '}
+        <span className="paper-title">
+          <a
+            href={`${pubFilePathPrefix}/unakite-uist-2019/unakite-uist-2019.pdf`}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Unakite: Scaffolding Developers’ Decision-Making Using the Web
+          </a>
+        </span>{' '}
+        is accepted to{' '}
+        <a
+          href="http://uist.acm.org/uist2019/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          ACM UIST 2019
+        </a>
+        . It also received a{' '}
+        <strong>
+          <FaAward size={'1rem'} /> Best Paper Honorable Mention Award
+        </strong>
+        ! Check it out <a href="/research/#unakite-uist-2019">here</a>.
+      </Fragment>
+    ),
+    date: new Date('2019-08-06'),
+    shouldDisplay: true,
+  },
   {
     content: (
       <Fragment>
@@ -49,10 +82,16 @@ export default [
   {
     content: (
       <Fragment>
-        Our long paper{' '}
+        Our full paper{' '}
         <span className="paper-title">
-          Popup: Reconstructing 3D Video Using Particle Filtering to Aggregate
-          Crowd Responses
+          <a
+            href={`${pubFilePathPrefix}/av_anno/av_anno.pdf`}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Popup: Reconstructing 3D Video Using Particle Filtering to Aggregate
+            Crowd Responses
+          </a>
         </span>{' '}
         is accepted to{' '}
         <a
@@ -174,7 +213,13 @@ export default [
       <Fragment>
         Our paper{' '}
         <span className="paper-title">
-          Learning to Detect Human-Object Interactions
+          <a
+            href={`${pubFilePathPrefix}/hico/hico.pdf`}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Learning to Detect Human-Object Interactions
+          </a>
         </span>{' '}
         is accepted to{' '}
         <a
