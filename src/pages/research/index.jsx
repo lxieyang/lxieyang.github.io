@@ -103,8 +103,9 @@ class ResearchPage extends Component {
 
     return (
       <Layout pathName="Research">
-        <a className="anchor" name="research" />
-        <h1>Research</h1>
+        <ScrollableAnchor key={'research'}>
+          <h1>Research</h1>
+        </ScrollableAnchor>
         <ResearchStatementContainer>
           <p>
             <strong>Overview:</strong> I research programming support largely
@@ -134,8 +135,9 @@ class ResearchPage extends Component {
           </p>
         </ResearchStatementContainer>
 
-        <a className="anchor" name="projects" />
-        <h1>Projects</h1>
+        <ScrollableAnchor key={'projects'}>
+          <h1>Projects</h1>
+        </ScrollableAnchor>
         <PublicationContainer>
           <PubCategoryContainer>
             <ProjectNamePromptContainer>Unakite</ProjectNamePromptContainer>
@@ -224,8 +226,9 @@ class ResearchPage extends Component {
           </PubCategoryContainer>
         </PublicationContainer>
 
-        <a className="anchor" name="publications" />
-        <h1>Publications</h1>
+        <ScrollableAnchor key={'publications'}>
+          <h1>Publications</h1>
+        </ScrollableAnchor>
         <PublicationContainer>
           {pubsInfo.map((pubCategory, pubCategoryIdx) => {
             return (

@@ -1,5 +1,6 @@
 import React from 'react';
 import moment from 'moment';
+import ordinal from 'ordinal';
 import { graphql } from 'gatsby';
 import {
   // Container,
@@ -74,7 +75,7 @@ const IndexPage = ({ data }) => (
           <hr />
 
           <p className="self-identify-paragraph">
-            I am a 2nd year Ph.D. student at{' '}
+            I am a {ordinal(3)} year Ph.D. student at{' '}
             <a href="http://www.hcii.cmu.edu">
               Human-Computer Interaction Institute
             </a>{' '}
@@ -180,9 +181,11 @@ const IndexPage = ({ data }) => (
                   <span
                     className="news-date"
                     style={{
-                      fontSize: idx <= 2 ? '0.95rem' : null,
-                      padding: idx <= 2 ? '2px 6px' : null,
-                      opacity: idx <= 2 ? 0.8 : 0.6,
+                      fontSize:
+                        idx === 0 ? '1rem' : idx <= 2 ? '0.95rem' : null,
+                      padding:
+                        idx === 0 ? '3px 6px' : idx <= 2 ? '2px 6px' : null,
+                      opacity: idx === 0 ? 0.9 : idx <= 2 ? 0.75 : 0.6,
                     }}
                   >
                     {moment(newsItem.date).fromNow()}
