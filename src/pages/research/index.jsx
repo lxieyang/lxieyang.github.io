@@ -288,11 +288,8 @@ class ResearchPage extends Component {
                               <div className="awards pub-element">
                                 {pub.award.honorableMention && (
                                   <span>
-                                    <FaAward
-                                      size={'1rem'}
-                                      style={{ marginRight: 4 }}
-                                    />{' '}
-                                    Best Paper Honorable Mention Award
+                                    <FaAward style={{ marginRight: 4 }} /> Best
+                                    Paper Honorable Mention Award
                                   </span>
                                 )}
                               </div>

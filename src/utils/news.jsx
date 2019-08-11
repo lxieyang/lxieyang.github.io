@@ -26,7 +26,7 @@ export default [
         </a>
         . It also received a{' '}
         <strong>
-          <FaAward size={'1rem'} /> Best Paper Honorable Mention Award
+          <FaAward /> Best Paper Honorable Mention Award
         </strong>
         ! Check it out <a href="/research/#unakite-uist-2019">here</a>.
       </Fragment>
