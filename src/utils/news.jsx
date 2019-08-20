@@ -6,6 +6,37 @@ export default [
   {
     content: (
       <Fragment>
+        {' '}
+        I just updated my Ionic template app called
+        <a
+          href="https://github.com/lxieyang/ionic-audio-player"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          {' '}
+          Ionic Audio Player{' '}
+        </a>{' '}
+        with the latest version of Ionic and Angular. Can't believe it's been
+        two years since I last updated it. It's a great starting point for devs
+        who would like to build an audio player using the Ionic Framework.
+        Please{' '}
+        <a
+          href="https://github.com/lxieyang/ionic-audio-player"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          {' '}
+          check it out{' '}
+        </a>
+        !
+      </Fragment>
+    ),
+    date: new Date('2019-08-20 18:00'),
+    shouldDisplay: true,
+  },
+  {
+    content: (
+      <Fragment>
         Our full paper{' '}
         <span className="paper-title">
           <a
