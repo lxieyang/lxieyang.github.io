@@ -6,6 +6,12 @@ export default [
     url: 'http://uist.acm.org/uist2019/',
   },
   {
+    date: 'October 14, 2019',
+    location: 'Memphis, TN, US',
+    event: 'VL/HCC 2019',
+    url: 'https://human-se.github.io/vlhcc2019/',
+  },
+  {
     date: 'May 27, 2019',
     location: 'Pittsburgh, PA, US',
     event: 'Bosch Research Pittsburgh Internship',
