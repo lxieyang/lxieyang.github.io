@@ -294,7 +294,7 @@ export const publicationsData = {
       previewImgLink: unakite_uist_2019PreviewImgLink,
       doi: 'http://dx.doi.org/10.1145/3332165.3347908',
       acmdl: 'http://dx.doi.org/10.1145/3332165.3347908',
-      acmdl_available: false,
+      acmdl_available: true,
       award: {
         honorableMention: true,
       },
