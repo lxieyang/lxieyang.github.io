@@ -6,6 +6,37 @@ export default [
   {
     content: (
       <Fragment>
+        I will present our full paper{' '}
+        <span className="paper-title">
+          <a
+            href={`${pubFilePathPrefix}/unakite-uist-2019/unakite-uist-2019.pdf`}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Unakite: Scaffolding Developers’ Decision-Making Using the Web
+          </a>
+        </span>{' '}
+        at{' '}
+        <a
+          href="http://uist.acm.org/uist2019/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          UIST 2019
+        </a>{' '}
+        in New Orleans. It received a{' '}
+        <strong>
+          <FaAward /> Best Paper Honorable Mention Award
+        </strong>
+        ! Check it out <a href="/research/#unakite-uist-2019">here</a>.
+      </Fragment>
+    ),
+    date: new Date('2019-10-21 11:00'),
+    shouldDisplay: true,
+  },
+  {
+    content: (
+      <Fragment>
         {' '}
         I just updated my Ionic template app called
         <a
@@ -26,7 +57,7 @@ export default [
           rel="noopener noreferrer"
         >
           {' '}
-          check it out{' '}
+          check it out
         </a>
         !
       </Fragment>
