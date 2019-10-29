@@ -38,8 +38,9 @@ const IndexPage = ({ data }) => (
               style={{ maxWidth: '100%', maxHeight: '100%' }}
             />
             <br />
+            <div className="image-watermark-top-left">The Selfie (2019)</div>
             <div className="image-watermark-bottom-right">
-              Yellowstone National Park, US
+              Great Lakes Science Center, Cleveland, OH
             </div>
           </div>
           <div className="card-words">

@@ -6,7 +6,7 @@ export default [
   {
     content: (
       <Fragment>
-        I will present our full paper{' '}
+        I presented our full paper{' '}
         <span className="paper-title">
           <a
             href={`${pubFilePathPrefix}/unakite-uist-2019/unakite-uist-2019.pdf`}
