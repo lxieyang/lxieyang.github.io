@@ -67,13 +67,10 @@ const IndexPage = ({ data }) => (
               alt="hcii-avatar"
             />
           </h1>
-
           <p className="my-title">
             #hci-researcher &nbsp; #developer &nbsp; #adventurer
           </p>
-
           <hr />
-
           <p className="self-identify-paragraph">
             I am a {ordinal(3)} year Ph.D. student at{' '}
             <a href="http://www.hcii.cmu.edu">
@@ -82,7 +79,6 @@ const IndexPage = ({ data }) => (
             @ <a href="http://www.cmu.edu">Carnegie Mellon University</a>.{' '}
             <br />
           </p>
-
           <p>
             My current research interests include{' '}
             <strong>human-computer interaction</strong>,{' '}
@@ -101,9 +97,7 @@ const IndexPage = ({ data }) => (
             <HeadshotTooltip target="brad-myers" headshotPath={BradImg} />
             <HeadshotTooltip target="niki-kittur" headshotPath={NikiImg} />
           </p>
-
           <hr />
-
           <p>
             I obtained my two B.S. degrees at{' '}
             <a href="https://www.umich.edu">
@@ -122,7 +116,6 @@ const IndexPage = ({ data }) => (
             during my time in Michigan.
             <HeadshotTooltip target="walter-lasecki" headshotPath={WalterImg} />
           </p>
-
           <Row className="contacts">
             <Col sm="12">
               <span className="contact-name">Curriculum Vitae: [</span>
@@ -151,7 +144,34 @@ const IndexPage = ({ data }) => (
               <br /> */}
             </Col>
           </Row>
-
+          <hr />
+          Open-source projects:
+          <ul>
+            <li style={{ display: 'flex', alignItems: 'center' }}>
+              <a
+                style={{ display: 'flex', alignItems: 'center' }}
+                href={
+                  'https://chrome.google.com/webstore/detail/vertical-tabs/pddljdmihkpdfpkgmbhdomeeifpklgnm'
+                }
+              >
+                Vertical Tabs Chrome Extension &nbsp;
+                <img
+                  alt="user-count"
+                  src={
+                    'https://img.shields.io/chrome-web-store/users/pddljdmihkpdfpkgmbhdomeeifpklgnm'
+                  }
+                />
+              </a>{' '}
+              &nbsp;
+              <a
+                href={
+                  'https://github.com/lxieyang/vertical-tabs-chrome-extension'
+                }
+              >
+                [Code]
+              </a>
+            </li>
+          </ul>
           <div className="d-sm-block d-md-none d-lg-none">
             <hr />
             <ContactInfo />
