@@ -4,7 +4,7 @@ import appRoutes from '../../utils/appRoutes';
 import {
   // Container,
   Row,
-  Col
+  Col,
 } from 'reactstrap';
 
 import Layout from '../../components/layout/layout';
@@ -24,7 +24,7 @@ const AboutPage = () => (
           <a className="anchor" name="bio" />
           <h2>Bio.</h2>
           <p>
-            <strong>Michael Xieyang Liu</strong> is a 2nd year Ph.D. student at{' '}
+            <strong>Michael Xieyang Liu</strong> is a 3rd year Ph.D. student at{' '}
             <a href="http://www.hcii.cmu.edu">
               Human Computer Interaction Institute
             </a>{' '}
