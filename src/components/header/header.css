@@ -13,10 +13,18 @@
 
 .navbarbrand {
   display: inline-block;
-  padding-top: .3125rem;
-  padding-bottom: .3125rem;
+  padding-top: 0.3125rem;
+  padding-bottom: 0.3125rem;
   margin-right: 1rem;
   font-size: 1.25rem;
   line-height: inherit;
   white-space: nowrap;
+}
+
+#SiteTitle:hover {
+  text-decoration: none;
+}
+
+#SiteTitle:hover > span {
+  text-decoration: underline;
 }

@@ -52,25 +52,42 @@ const IndexPage = ({ data }) => (
       <Col md="8">
         <div className="homepage-word-section">
           <h1>
-            Michael Xieyang Liu (刘燮洋) &nbsp;
-            <img
-              src={CMUAvatar}
-              width="30"
-              height="30"
-              className="d-inline-block"
-              alt="cmu-avatar"
-            />
-            <img
-              src={HCIIAvatar}
-              width="30"
-              height="30"
-              className="d-inline-block"
-              alt="hcii-avatar"
-            />
+            Michael Xieyang Liu{' '}
+            <span className="d-none d-sm-none d-md-none d-lg-inline">
+              (刘燮洋) &nbsp;
+              <img
+                src={CMUAvatar}
+                width="30"
+                height="30"
+                className="d-inline-block"
+                alt="cmu-avatar"
+              />
+              <img
+                src={HCIIAvatar}
+                width="30"
+                height="30"
+                className="d-inline-block"
+                alt="hcii-avatar"
+              />
+            </span>
           </h1>
-          <p className="my-title">
-            #hci-researcher &nbsp; #developer &nbsp; #adventurer
-          </p>
+          <Row>
+            <Col xs="4" sm="4" className="d-sm-block d-md-none">
+              <div>
+                <img
+                  src={ProfileImg}
+                  alt="profile"
+                  style={{ maxWidth: '100%', maxHeight: '100%' }}
+                />
+              </div>
+            </Col>
+            <Col xs="8" sm="8" md="12">
+              <p className="my-title d-md-block">
+                #humanComputerInteraction &nbsp; #programmingTools &nbsp;
+                #sensemaking &nbsp; #intelligentUserInterfaces
+              </p>
+            </Col>
+          </Row>
           <hr />
           <p className="self-identify-paragraph">
             I am a {ordinal(3)} year Ph.D. student at{' '}

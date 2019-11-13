@@ -9,9 +9,10 @@ import {
   Navbar,
   NavbarToggler,
   Nav,
-  NavItem
+  NavItem,
 } from 'reactstrap';
-import HeaderImg from '../../images/lxieyang-avatar-yellowstone.jpg';
+// import HeaderImg from '../../images/lxieyang-avatar-yellowstone.jpg';
+import Favicon from '../../../static/favicon.png';
 
 // https://reach.tech/router/api/Link
 // https://github.com/gatsbyjs/gatsby/issues/7526#issuecomment-414858689
@@ -21,17 +22,17 @@ const isActive = ({ isCurrent }) => {
   return isCurrent ? { className: 'active' } : null;
 };
 
-const ExactNavLink = props => <Link getProps={isActive} {...props} />;
+const ExactNavLink = (props) => <Link getProps={isActive} {...props} />;
 
 const isPartiallyActive = ({ isPartiallyCurrent }) => {
   return isPartiallyCurrent ? { className: 'active' } : null;
 };
 
-const PartialNavLink = props => (
+const PartialNavLink = (props) => (
   <Link getProps={isPartiallyActive} {...props} />
 );
 
-const ListLink = props => {
+const ListLink = (props) => {
   if (props.isPurelink !== undefined && props.isPurelink === true) {
     return (
       <NavItem style={{ marginBottom: '0' }}>
@@ -89,12 +90,12 @@ class Header extends Component {
   }
 
   state = {
-    isOpen: false
+    isOpen: false,
   };
 
   toggleNavbar() {
     this.setState({
-      isOpen: !this.state.isOpen
+      isOpen: !this.state.isOpen,
     });
   }
 
@@ -109,9 +110,9 @@ class Header extends Component {
         <Navbar id="navbar" color="light" light expand="md" fixed="top">
           <Container>
             <div className="navbarbrand">
-              <Link to={appRoutes.home}>
+              <Link to={appRoutes.home} id="SiteTitle">
                 <img
-                  src={HeaderImg}
+                  src={Favicon}
                   width="30"
                   height="30"
                   className="d-inline-block align-top"
@@ -119,7 +120,7 @@ class Header extends Component {
                   style={{ marginBottom: '0' }}
                 />{' '}
                 &nbsp;
-                {this.props.siteTitle}
+                <span>{this.props.siteTitle}</span>
               </Link>
             </div>
             <NavbarToggler className="mr-2" onClick={this.toggle} />
