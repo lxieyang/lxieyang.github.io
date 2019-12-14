@@ -9,7 +9,7 @@ import styled from 'styled-components';
 import GoogleScholarLogo from '../../images/footer/googleScholar-icon.png';
 import GithubLogo from '../../images/footer/github-icon.png';
 import FacebookLogo from '../../images/footer/facebook-icon.png';
-import InstagramLogo from '../../images/footer/instagram-icon.png';
+// import InstagramLogo from '../../images/footer/instagram-icon.png';
 import TwitterLogo from '../../images/footer/twitter-icon.png';
 import './footer.css';
 
@@ -105,9 +105,11 @@ const CopyrightSection = ({
           <a href={facebook} id="facebook-logo">
             <SocialMediaIcon alt="facebook" src={FacebookLogo} />
           </a>
-          <a href={instagram} id="instagram-logo">
-            <SocialMediaIcon alt="instagram" src={InstagramLogo} />
-          </a>
+          {/*
+            <a href={instagram} id="instagram-logo">
+              <SocialMediaIcon alt="instagram" src={InstagramLogo} />
+            </a>
+           */}
           <a href={twitter} id="twitter-logo">
             <SocialMediaIcon alt="twitter" src={TwitterLogo} />
           </a>
