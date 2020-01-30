@@ -16,7 +16,11 @@ import ProgrammingImg from '../../images/research/research-statement-bg.png';
 
 import UnakitePreview from '../../images/research/projects/kap/unakite-v2-preview.png';
 
+import GistIcon from '../../images/gist-icon.jpg';
 import ACMDLIcon from '../../images/acmdl-icon.jpg';
+import VideoIcon from '../../images/video-icon.png';
+import DocumentIcon from '../../images/document-icon.png';
+import PosterIcon from '../../images/poster-icon.png';
 import IEEEIcon from '../../images/ieee-icon.png';
 
 import { FaAward } from 'react-icons/fa';
@@ -299,7 +303,20 @@ class ResearchPage extends Component {
                                 <a
                                   href={`#${pub.codename}`}
                                   id={`${pub.codename}-abstract`}
+                                  style={{
+                                    display: 'flex',
+                                    alignItems: 'center',
+                                  }}
                                 >
+                                  <img
+                                    src={GistIcon}
+                                    alt="video"
+                                    style={{
+                                      marginRight: 3,
+                                      width: 20,
+                                      height: 20,
+                                    }}
+                                  />
                                   Abstract
                                 </a>
                               </span>
@@ -366,7 +383,20 @@ class ResearchPage extends Component {
                                         href={`${pubFilePathPrefix}/${pub.codename}/${pub.codename}-paper.pdf`}
                                         target="_blank"
                                         rel="noopener noreferrer"
+                                        style={{
+                                          display: 'flex',
+                                          alignItems: 'center',
+                                        }}
                                       >
+                                        <img
+                                          src={DocumentIcon}
+                                          alt="video"
+                                          style={{
+                                            marginRight: 3,
+                                            width: 20,
+                                            height: 20,
+                                          }}
+                                        />
                                         Extended Abstract
                                       </a>
                                     </span>
@@ -375,7 +405,20 @@ class ResearchPage extends Component {
                                         href={`${pubFilePathPrefix}/${pub.codename}/${pub.codename}-poster.pdf`}
                                         target="_blank"
                                         rel="noopener noreferrer"
+                                        style={{
+                                          display: 'flex',
+                                          alignItems: 'center',
+                                        }}
                                       >
+                                        <img
+                                          src={PosterIcon}
+                                          alt="video"
+                                          style={{
+                                            marginRight: 3,
+                                            width: 20,
+                                            height: 20,
+                                          }}
+                                        />
                                         Poster
                                       </a>
                                     </span>
@@ -386,12 +429,49 @@ class ResearchPage extends Component {
                                       href={`${pubFilePathPrefix}/${pub.codename}/${pub.codename}.pdf`}
                                       target="_blank"
                                       rel="noopener noreferrer"
+                                      style={{
+                                        display: 'flex',
+                                        alignItems: 'center',
+                                      }}
                                     >
+                                      <img
+                                        src={DocumentIcon}
+                                        alt="video"
+                                        style={{
+                                          marginRight: 3,
+                                          width: 20,
+                                          height: 20,
+                                        }}
+                                      />
                                       Local PDF
                                     </a>
                                   </span>
                                 )
                               ) : null}
+                              {pub.conferenceTalkVideo !== undefined && (
+                                <span>
+                                  <a
+                                    href={pub.conferenceTalkVideo}
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    style={{
+                                      display: 'flex',
+                                      alignItems: 'center',
+                                    }}
+                                  >
+                                    <img
+                                      src={VideoIcon}
+                                      alt="video"
+                                      style={{
+                                        marginRight: 3,
+                                        width: 20,
+                                        height: 20,
+                                      }}
+                                    />
+                                    Conference Talk
+                                  </a>
+                                </span>
+                              )}
                             </div>
                             {/*
                             <div className="pub-element">

@@ -298,6 +298,7 @@ export const publicationsData = {
       award: {
         honorableMention: true,
       },
+      conferenceTalkVideo: 'https://youtu.be/UMQ-kWgmbQ4',
     },
   ],
 };
