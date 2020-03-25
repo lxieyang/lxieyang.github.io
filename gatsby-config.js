@@ -2,14 +2,38 @@ module.exports = {
   siteMetadata: {
     title: 'Michael Xieyang Liu',
     externalLinks: {
-      googleScholarProfile: 'https://scholar.google.com/citations?user=RCHIBagAAAAJ',
+      googleScholarProfile:
+        'https://scholar.google.com/citations?user=RCHIBagAAAAJ',
       github: 'https://github.com/lxieyang',
       facebook: 'https://www.facebook.com/profile.php?id=100000519299083',
       instagram: 'https://www.instagram.com/xieyangl/',
-      twitter: 'https://twitter.com/TerminatorET'
-    }
+      twitter: 'https://twitter.com/TerminatorET',
+    },
   },
   plugins: [
+    {
+      resolve: `gatsby-plugin-prefetch-google-fonts`,
+      options: {
+        fonts: [
+          {
+            family: `Gotu`,
+          },
+          {
+            family: `Roboto`,
+          },
+          {
+            family: `Baloo 2`,
+          },
+          {
+            family: `Crimson Text`,
+          },
+          {
+            family: `Shadows Into Light`,
+          },
+        ],
+        display: 'swap',
+      },
+    },
     'gatsby-plugin-react-helmet',
     {
       resolve: `gatsby-plugin-manifest`,
@@ -18,7 +42,7 @@ module.exports = {
         description: 'The personal website of Michael Xieyang Liu',
         short_name: 'ML Site',
         background_color: 'white',
-        start_url: "/",
+        start_url: '/',
         theme_color: '#C1000F',
         orientation: 'portrait',
         display: 'minimal-ui',
@@ -29,7 +53,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
-        trackingId: "UA-123595265-1",
+        trackingId: 'UA-123595265-1',
         // Puts tracking script in the head instead of the body
         head: true,
         // Setting this parameter is optional
@@ -37,15 +61,15 @@ module.exports = {
         // Setting this parameter is also optional
         respectDNT: true,
         // Avoids sending pageview hits from custom paths
-        exclude: ["/preview/**", "/do-not-track/me/too/"],
+        exclude: ['/preview/**', '/do-not-track/me/too/'],
       },
     },
     {
       resolve: 'gatsby-plugin-copy-files',
       options: {
         source: `${__dirname}/src/assets`,
-        destination: '/assets'
-      }
+        destination: '/assets',
+      },
     },
     {
       resolve: `gatsby-source-filesystem`,
@@ -67,7 +91,8 @@ module.exports = {
     {
       resolve: `gatsby-transformer-remark`,
       options: {
-        plugins: [{
+        plugins: [
+          {
             resolve: `gatsby-remark-images`,
             options: {
               // It's important to specify the maxWidth (in pixels) of
@@ -76,11 +101,11 @@ module.exports = {
               maxWidth: 300,
             },
           },
-          "gatsby-remark-copy-linked-files",
+          'gatsby-remark-copy-linked-files',
           {
             resolve: `gatsby-remark-prismjs`,
             options: {
-              classPrefix: "language-",
+              classPrefix: 'language-',
               inlineCodeMarker: null,
               aliases: {},
             },
@@ -119,5 +144,5 @@ module.exports = {
     //     }
     //   }
     // }
-  ]
-}
+  ],
+};

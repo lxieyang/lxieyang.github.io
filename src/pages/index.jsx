@@ -7,7 +7,7 @@ import {
   Row,
   Col,
 } from 'reactstrap';
-import Darkmode from 'darkmode-js';
+// import Darkmode from 'darkmode-js';
 
 import Layout from '../components/layout/layout';
 import ContactInfo from '../components/UI/ContactInfo/ContactInfo';

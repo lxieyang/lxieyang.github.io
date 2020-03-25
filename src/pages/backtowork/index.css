@@ -1,0 +1,17 @@
+.PageContainer {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(255, 159, 0, 0.9);
+  /* font-family: 'Baloo 2', cursive; */
+  /* font-family: 'Gotu', sans-serif; */
+  /* font-family: 'Crimson Text', serif; */
+  font-family: 'Shadows Into Light', cursive;
+}
+
+.Banner {
+  font-size: 3rem;
+  text-align: center;
+}
