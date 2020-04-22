@@ -15,6 +15,14 @@ import WalterImg from '../../images/people/walterlasecki.jpg';
 
 import styles from './about.module.css';
 
+/**
+ * hosting images live here: they're not actually used in the code,
+ * but i need to import them in order for them to show up in the final
+ * build bundle.
+ */
+
+import ChromeExntesionDevIntellisense from '../../assets/files/hosting-images/chrome-extension-boilerplate-dev-intellisense.png';
+
 const AboutPage = () => (
   <Layout pathName="About">
     <Row>
