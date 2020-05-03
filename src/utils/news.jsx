@@ -6,6 +6,34 @@ export default [
   {
     content: (
       <Fragment>
+        Check out our{' '}
+        <a
+          href={'https://covidcast.cmu.edu/'}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          COVIDcast system
+        </a>
+        , which displays indicators related to COVID-19 activity level across
+        the U.S. <br />
+        CMU news coverage:{' '}
+        <a
+          href="https://www.cmu.edu/news/stories/archives/2020/april/cmu-unveils-covidcast-maps.html"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Carnegie Mellon Unveils Five Interactive COVID-19 Maps
+        </a>
+        . <br />
+        Honored to be on this team and contribute!
+      </Fragment>
+    ),
+    date: new Date('2020-05-01 12:00'),
+    shouldDisplay: true,
+  },
+  {
+    content: (
+      <Fragment>
         I presented our full paper{' '}
         <span className="paper-title">
           <a
