@@ -32,22 +32,18 @@ self.__precacheManifest = [
     "url": "framework-ddff9c6a94258f6c8286.js"
   },
   {
-    "url": "app-af57e6a647129c94633e.js"
+    "url": "app-3b164d6a75fd3aae1eab.js"
   },
   {
     "url": "component---node-modules-gatsby-plugin-offline-app-shell-js-e6e2e3de499c93d1f978.js"
   },
   {
     "url": "offline-plugin-app-shell-fallback/index.html",
-    "revision": "95cbeadeaa95b0e1ea800a4741aee3c5"
+    "revision": "4d205100a15003e3d3ec565e6091147d"
   },
   {
     "url": "google-fonts/s/baloo2/v1/wXKrE3kTposypRyd51jcAA.woff2",
     "revision": "ff36e5e00d11be793e0827dd21f2e2ea"
-  },
-  {
-    "url": "google-fonts/s/crimsontext/v10/wlp2gwHKFkZgtmSR3NB0oRJfbwhT.woff2",
-    "revision": "29c6d640c48ad6666c008c6f010d05da"
   },
   {
     "url": "google-fonts/s/crimsontext/v11/wlp2gwHKFkZgtmSR3NB0oRJfbwhT.woff2",
@@ -63,10 +59,6 @@ self.__precacheManifest = [
   },
   {
     "url": "google-fonts/s/shadowsintolight/v10/UqyNK9UOIntux_czAvDQx_ZcHqZXBNQzdcD5.woff2",
-    "revision": "3238e51cb019f0ba4322d2b48ce7ba81"
-  },
-  {
-    "url": "google-fonts/s/shadowsintolight/v9/UqyNK9UOIntux_czAvDQx_ZcHqZXBNQzdcD5.woff2",
     "revision": "3238e51cb019f0ba4322d2b48ce7ba81"
   },
   {
@@ -98,7 +90,7 @@ const navigationRoute = new NavigationRoute(async ({ event }) => {
   // Check for resources + the app bundle
   // The latter may not exist if the SW is updating to a new version
   const resources = await idbKeyval.get(`resources:${pathname}`)
-  if (!resources || !(await caches.match(`/app-af57e6a647129c94633e.js`))) {
+  if (!resources || !(await caches.match(`/app-3b164d6a75fd3aae1eab.js`))) {
     return await fetch(event.request)
   }
 
