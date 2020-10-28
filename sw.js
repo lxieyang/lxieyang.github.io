@@ -26,20 +26,20 @@ workbox.clientsClaim();
  */
 self.__precacheManifest = [
   {
-    "url": "webpack-runtime-7878d8804fdba2380c0a.js"
+    "url": "webpack-runtime-c222e6b467eedbfa8b87.js"
   },
   {
-    "url": "commons-c5d9c9636107219360bb.js"
+    "url": "framework-ddff9c6a94258f6c8286.js"
   },
   {
-    "url": "app-977bda99d178a0fc26eb.js"
+    "url": "app-af57e6a647129c94633e.js"
   },
   {
-    "url": "component---node-modules-gatsby-plugin-offline-app-shell-js-7ca1fffc0f095fe8aa22.js"
+    "url": "component---node-modules-gatsby-plugin-offline-app-shell-js-e6e2e3de499c93d1f978.js"
   },
   {
     "url": "offline-plugin-app-shell-fallback/index.html",
-    "revision": "9d0e9eeaee90d2f5f5d5807cee663cfe"
+    "revision": "95cbeadeaa95b0e1ea800a4741aee3c5"
   },
   {
     "url": "google-fonts/s/baloo2/v1/wXKrE3kTposypRyd51jcAA.woff2",
@@ -47,6 +47,10 @@ self.__precacheManifest = [
   },
   {
     "url": "google-fonts/s/crimsontext/v10/wlp2gwHKFkZgtmSR3NB0oRJfbwhT.woff2",
+    "revision": "29c6d640c48ad6666c008c6f010d05da"
+  },
+  {
+    "url": "google-fonts/s/crimsontext/v11/wlp2gwHKFkZgtmSR3NB0oRJfbwhT.woff2",
     "revision": "29c6d640c48ad6666c008c6f010d05da"
   },
   {
@@ -58,12 +62,19 @@ self.__precacheManifest = [
     "revision": "479970ffb74f2117317f9d24d9e317fe"
   },
   {
+    "url": "google-fonts/s/shadowsintolight/v10/UqyNK9UOIntux_czAvDQx_ZcHqZXBNQzdcD5.woff2",
+    "revision": "3238e51cb019f0ba4322d2b48ce7ba81"
+  },
+  {
     "url": "google-fonts/s/shadowsintolight/v9/UqyNK9UOIntux_czAvDQx_ZcHqZXBNQzdcD5.woff2",
     "revision": "3238e51cb019f0ba4322d2b48ce7ba81"
   },
   {
+    "url": "polyfill-028a9d87ec8626446859.js"
+  },
+  {
     "url": "manifest.webmanifest",
-    "revision": "606144d434ed6a49ec382a3835b72405"
+    "revision": "e4c36339203769fab7cb739a2a9d7f96"
   }
 ].concat(self.__precacheManifest || []);
 workbox.precaching.suppressWarnings();
@@ -87,7 +98,7 @@ const navigationRoute = new NavigationRoute(async ({ event }) => {
   // Check for resources + the app bundle
   // The latter may not exist if the SW is updating to a new version
   const resources = await idbKeyval.get(`resources:${pathname}`)
-  if (!resources || !(await caches.match(`/app-977bda99d178a0fc26eb.js`))) {
+  if (!resources || !(await caches.match(`/app-af57e6a647129c94633e.js`))) {
     return await fetch(event.request)
   }
 
