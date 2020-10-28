@@ -91,7 +91,8 @@ const IndexPage = ({ data }) => (
           </Row>
           <hr />
           <p className="self-identify-paragraph">
-            I am a {ordinal(3)} year Ph.D. student at{' '}
+            I am a {ordinal(1 + moment().diff(moment([2017, 9]), 'years'))} year
+            Ph.D. student at{' '}
             <a href="http://www.hcii.cmu.edu">
               Human-Computer Interaction Institute
             </a>{' '}
