@@ -1,10 +1,7 @@
 language: node_js
 os: osx
 node_js:
-  - "lts/*"
-cache:
-  directories:
-  - node_modules
+  - 7
 
 deploy:
   provider: pages
@@ -16,10 +13,10 @@ deploy:
   on:
     branch: gatsby-dev
 before_script:
-  - "npm i -g gatsby-cli"
-  - "npm i"
+  - 'npm i -g gatsby-cli'
+  - 'npm i'
 script:
-  - "npm run test"
-  - "npm run build"
+  - 'npm run test'
+  - 'npm run build'
 after_success:
-  - "npm run postBuildDeploy"
+  - 'npm run postBuildDeploy'
