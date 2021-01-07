@@ -1,5 +1,23 @@
 export default [
   {
+    date: 'October 2021',
+    location: 'Virtual',
+    event: 'CSCW 2021',
+    url: 'https://cscw.acm.org/2021/',
+  },
+  {
+    date: 'October 20, 2020',
+    location: 'Minneapolis, MN, USA',
+    event: 'UIST 2020',
+    url: 'https://uist.acm.org/uist2020/',
+  },
+  {
+    date: 'October 17, 2020',
+    location: 'Minneapolis, MN, USA',
+    event: 'CSCW 2020',
+    url: 'https://cscw.acm.org/2020/',
+  },
+  {
     date: 'October 20, 2019',
     location: 'New Orleans, LA, US',
     event: 'UIST 2019',
@@ -17,12 +35,12 @@ export default [
     event: 'Bosch Research Pittsburgh Internship',
     url: 'https://www.bosch.us/our-company/bosch-in-the-usa/pittsburgh/',
   },
-  {
-    date: 'May 14, 2019',
-    location: 'Austin, TX, US',
-    event: 'Personal Trip',
-    url: 'https://www.austintexas.org/',
-  },
+  // {
+  //   date: 'May 14, 2019',
+  //   location: 'Austin, TX, US',
+  //   event: 'Personal Trip',
+  //   url: 'https://www.austintexas.org/',
+  // },
   {
     date: 'May 4, 2019',
     location: 'Glasgow, Scotland',

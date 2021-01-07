@@ -240,7 +240,7 @@ const IndexPage = ({ data }) => (
       </Col>
       <Col md="6">
         <h2>Travel</h2>
-        <div
+        {/* <div
           style={{
             backgroundColor: 'lightgrey',
             padding: '5px',
@@ -251,7 +251,7 @@ const IndexPage = ({ data }) => (
         >
           Due to my Achilles tendon injury in July 2018, my travel plan is
           limited. I'm expected to recover fully in late 2019.
-        </div>
+        </div> */}
         {TravelList.map((travelItem, idx) => {
           const YearGap = 3.0;
           let diff =

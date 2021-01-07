@@ -6,6 +6,34 @@ export default [
   {
     content: (
       <Fragment>
+        Our full paper{' '}
+        <span className="paper-title">
+          <a
+            // href={`${pubFilePathPrefix}/strata-cscw-2021/strata-cscw-2021.pdf`}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            To Reuse or Not To Reuse? A Framework and System for Evaluating
+            Summarized Knowledge
+          </a>
+        </span>{' '}
+        is accepted to{' '}
+        <a
+          href="https://cscw.acm.org/2021/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          CSCW 2021
+        </a>
+        ! Details comming soon!
+      </Fragment>
+    ),
+    date: new Date('2020-12-22'),
+    shouldDisplay: true,
+  },
+  {
+    content: (
+      <Fragment>
         Check out our{' '}
         <a
           href={'https://covidcast.cmu.edu/'}
@@ -28,7 +56,7 @@ export default [
         Honored to be on this team and contribute!
       </Fragment>
     ),
-    date: new Date('2020-05-01 12:00'),
+    date: new Date('2020-05-01'),
     shouldDisplay: true,
   },
   {
@@ -59,7 +87,7 @@ export default [
         ! Check it out <a href="/research/#unakite-uist-2019">here</a>.
       </Fragment>
     ),
-    date: new Date('2019-10-21 11:00'),
+    date: new Date('2019-10-21'),
     shouldDisplay: true,
   },
   {
@@ -90,7 +118,7 @@ export default [
         !
       </Fragment>
     ),
-    date: new Date('2019-08-20 18:00'),
+    date: new Date('2019-08-20'),
     shouldDisplay: true,
   },
   {
