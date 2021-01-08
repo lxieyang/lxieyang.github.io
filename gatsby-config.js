@@ -12,25 +12,9 @@ module.exports = {
   },
   plugins: [
     {
-      resolve: `gatsby-plugin-prefetch-google-fonts`,
+      resolve: `gatsby-plugin-google-fonts`,
       options: {
-        fonts: [
-          {
-            family: `Gotu`,
-          },
-          {
-            family: `Roboto`,
-          },
-          {
-            family: `Baloo 2`,
-          },
-          {
-            family: `Crimson Text`,
-          },
-          {
-            family: `Shadows Into Light`,
-          },
-        ],
+        fonts: [`Shadows Into Light`],
         display: 'swap',
       },
     },

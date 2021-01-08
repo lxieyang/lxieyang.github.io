@@ -29,7 +29,7 @@ export default [
       </Fragment>
     ),
     date: new Date('2020-12-22'),
-    shouldDisplay: true,
+    shouldDisplay: false,
   },
   {
     content: (
