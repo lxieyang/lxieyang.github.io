@@ -26,7 +26,7 @@ workbox.clientsClaim();
  */
 self.__precacheManifest = [
   {
-    "url": "webpack-runtime-c222e6b467eedbfa8b87.js"
+    "url": "webpack-runtime-b0ef8793cf20726cc44b.js"
   },
   {
     "url": "framework-ddff9c6a94258f6c8286.js"
@@ -39,27 +39,7 @@ self.__precacheManifest = [
   },
   {
     "url": "offline-plugin-app-shell-fallback/index.html",
-    "revision": "4d205100a15003e3d3ec565e6091147d"
-  },
-  {
-    "url": "google-fonts/s/baloo2/v1/wXKrE3kTposypRyd51jcAA.woff2",
-    "revision": "ff36e5e00d11be793e0827dd21f2e2ea"
-  },
-  {
-    "url": "google-fonts/s/crimsontext/v11/wlp2gwHKFkZgtmSR3NB0oRJfbwhT.woff2",
-    "revision": "29c6d640c48ad6666c008c6f010d05da"
-  },
-  {
-    "url": "google-fonts/s/gotu/v1/o-0FIpksx3QOpHoBiw.woff2",
-    "revision": "a67f29f609c8f3ea6b98ef97e51e17eb"
-  },
-  {
-    "url": "google-fonts/s/roboto/v20/KFOmCnqEu92Fr1Mu4mxK.woff2",
-    "revision": "479970ffb74f2117317f9d24d9e317fe"
-  },
-  {
-    "url": "google-fonts/s/shadowsintolight/v10/UqyNK9UOIntux_czAvDQx_ZcHqZXBNQzdcD5.woff2",
-    "revision": "3238e51cb019f0ba4322d2b48ce7ba81"
+    "revision": "acf843b08546304eddc9b7c4514682d4"
   },
   {
     "url": "polyfill-028a9d87ec8626446859.js"
