@@ -210,14 +210,14 @@ const AboutPage = () => (
               . It is the only song that I can’t get tired of. And I’m pretty
               sure I never will.
             </li>
-            <li>
+            {/* <li>
               I play the guitar, mostly acoustic, from age 16. Though recently I
               started teaching myself to play the electric ones. I even made my
               own <a href="/projects/laserguitar.html">portable laser guitar</a>{' '}
               during freshmen year. Believe it or not, I can play Hotel
               California with that :-)
-            </li>
-            <li>
+            </li> */}
+            {/* <li>
               I enjoy reading. My favorite magazine is{' '}
               <a href="https://www.scientificamerican.com">
                 Scientific American
@@ -228,15 +228,15 @@ const AboutPage = () => (
               <a href="http://www.fox.com/prisonbreak">Prison Break</a>. Really
               can’t tell which is better. I mean Jack Bauer saves the world and
               Michael Scofield saves the family!
-            </li>
-            <li>
-              I’m a gym worm. I like the saying{' '}
+            </li> */}
+            {/* <li>
+              I’m an avid gym-goer. I like the saying{' '}
               <a href="https://translate.google.com/#auto/en/自律给我自由">
                 “自律给我自由”
               </a>
               . I believe regular work out is the only way towards a healthy and
               prosperous life.
-            </li>
+            </li> */}
           </ul>
         </div>
       </Col>
