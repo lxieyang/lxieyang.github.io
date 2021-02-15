@@ -9,7 +9,7 @@ export default [
         Our full paper{' '}
         <span className="paper-title">
           <a
-            // href={`${pubFilePathPrefix}/strata-cscw-2021/strata-cscw-2021.pdf`}
+            href={`${pubFilePathPrefix}/strata-cscw-2021/strata-cscw-2021.pdf`}
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -25,11 +25,11 @@ export default [
         >
           CSCW 2021
         </a>
-        ! Details comming soon!
+        ! Check it out <a href="/research/#strata-cscw-2021">here</a>.
       </Fragment>
     ),
     date: new Date('2020-12-22'),
-    shouldDisplay: false,
+    shouldDisplay: true,
   },
   {
     content: (

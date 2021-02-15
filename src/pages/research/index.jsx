@@ -20,6 +20,7 @@ import GistIcon from '../../images/gist-icon.jpg';
 import ACMDLIcon from '../../images/acmdl-icon.jpg';
 import VideoIcon from '../../images/video-icon.png';
 import DocumentIcon from '../../images/document-icon.png';
+import ArxivIcon from '../../images/arxiv.jpg';
 import PosterIcon from '../../images/poster-icon.png';
 import IEEEIcon from '../../images/ieee-icon.png';
 
@@ -244,7 +245,7 @@ class ResearchPage extends Component {
                   (pub, pubIdx) => {
                     return (
                       <ScrollableAnchor key={pubIdx} id={pub.codename}>
-                        <Row key={pubIdx} style={{ marginBottom: '10px' }}>
+                        <Row key={pubIdx} style={{ marginBottom: '20px' }}>
                           {/* eslint-disable-next-line */}
                           <a className="anchor" name={pub.codename} />
                           <Col
@@ -373,6 +374,30 @@ class ResearchPage extends Component {
                                       ACM Digital Library
                                     </a>
                                   )}
+                                </span>
+                              )}
+                              {pub.arxiv !== undefined && (
+                                <span>
+                                  <a
+                                    href={pub.arxiv}
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    style={{
+                                      display: 'flex',
+                                      alignItems: 'center',
+                                    }}
+                                  >
+                                    <img
+                                      src={ArxivIcon}
+                                      alt="ieee"
+                                      style={{
+                                        marginRight: 3,
+                                        width: 20,
+                                        height: 20,
+                                      }}
+                                    />
+                                    arxiv.org
+                                  </a>
                                 </span>
                               )}
                               {pub.shouldShowLocalPaperLink !== false ? (
