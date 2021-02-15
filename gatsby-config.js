@@ -1,6 +1,8 @@
 module.exports = {
   siteMetadata: {
     title: 'Michael Xieyang Liu',
+    nameEnglish: 'Michael Xieyang Liu',
+    nameChinese: '刘燮洋',
     externalLinks: {
       googleScholarProfile:
         'https://scholar.google.com/citations?user=RCHIBagAAAAJ',

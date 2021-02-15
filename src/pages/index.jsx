@@ -53,9 +53,9 @@ const IndexPage = ({ data }) => (
       <Col md="8">
         <div className="homepage-word-section">
           <h1>
-            Michael Xieyang Liu{' '}
+            {data.site.siteMetadata.nameEnglish}{' '}
             <span className="d-none d-sm-none d-md-none d-lg-inline">
-              (刘燮洋) &nbsp;
+              ({data.site.siteMetadata.nameChinese}) &nbsp;
               <img
                 src={CMUAvatar}
                 width="30"
@@ -104,8 +104,10 @@ const IndexPage = ({ data }) => (
             <strong>human-computer interaction</strong>,{' '}
             <strong>programming support tools</strong>,{' '}
             <strong>sensemaking</strong>, <strong>end-user programming</strong>,{' '}
-            <strong>intelligent user interfaces</strong>. <br />
-            My current advisors are{' '}
+            <strong>intelligent user interfaces</strong>.{' '}
+          </p>
+          <p>
+            My advisors are{' '}
             <a href="http://www.cs.cmu.edu/~bam/" id="brad-myers">
               Dr. Brad A. Myers
             </a>{' '}
@@ -113,13 +115,22 @@ const IndexPage = ({ data }) => (
             <a href="http://kittur.org/" id="niki-kittur">
               Dr. Niki Kittur
             </a>
-            . <br />
+            . My work is supported by the{' '}
+            <a href="https://www.nsf.gov/awardsearch/showAward?AWD_ID=1814826">
+              National Science Foundation (NSF)
+            </a>
+            , Google, Bosch, the Office of Naval Research, and the{' '}
+            <a href="https://centerforknowledgeacceleration.wordpress.com/">
+              CMU Center for Knowledge Acceleration
+            </a>
+            .
+            <br />
             <HeadshotTooltip target="brad-myers" headshotPath={BradImg} />
             <HeadshotTooltip target="niki-kittur" headshotPath={NikiImg} />
           </p>
           <hr />
           <p>
-            I obtained my two B.S. degrees at{' '}
+            I obtained my dual B.S. degrees at{' '}
             <a href="https://www.umich.edu">
               University of Michigan, Ann Arbor
             </a>{' '}
@@ -133,7 +144,7 @@ const IndexPage = ({ data }) => (
             <a href="http://web.eecs.umich.edu/~wlasecki/croma.html">
               Crowds + Machines Lab (Croma Lab)
             </a>{' '}
-            during my time in Michigan.
+            during my time at Umich.
             <HeadshotTooltip target="walter-lasecki" headshotPath={WalterImg} />
           </p>
           <Row className="contacts">
@@ -345,6 +356,8 @@ export const query = graphql`
     site {
       siteMetadata {
         title
+        nameEnglish
+        nameChinese
         externalLinks {
           googleScholarProfile
           github
