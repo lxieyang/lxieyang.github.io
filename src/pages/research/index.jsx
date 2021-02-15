@@ -68,6 +68,15 @@ const PreviewImg = styled.img`
   opacity: 0.8;
 `;
 
+const ConferenceTag = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 1.25rem;
+  opacity: 0.8;
+`;
+
 // const NewTag = styled.span`
 //   padding: 0.1em 0.3em;
 //   font-size: 75%;
@@ -148,7 +157,7 @@ class ResearchPage extends Component {
             <ProjectNamePromptContainer>Unakite</ProjectNamePromptContainer>
             <Row style={{ marginBottom: '10px' }}>
               <Col
-                lg="3"
+                lg="2"
                 md="6"
                 // className="d-none d-sm-none d-md-block d-lg-block"
               >
@@ -158,7 +167,7 @@ class ResearchPage extends Component {
                   className="img-fluid"
                 />
               </Col>
-              <Col lg="9" md="6">
+              <Col lg="10" md="6">
                 <p>
                   The{' '}
                   <a
@@ -245,11 +254,11 @@ class ResearchPage extends Component {
                   (pub, pubIdx) => {
                     return (
                       <ScrollableAnchor key={pubIdx} id={pub.codename}>
-                        <Row key={pubIdx} style={{ marginBottom: '20px' }}>
+                        <Row key={pubIdx} style={{ marginBottom: '25px' }}>
                           {/* eslint-disable-next-line */}
                           <a className="anchor" name={pub.codename} />
                           <Col
-                            lg="3"
+                            lg="2"
                             className="d-none d-sm-none d-md-none d-lg-block"
                           >
                             <PreviewImg
@@ -257,8 +266,9 @@ class ResearchPage extends Component {
                               alt={pub.codename}
                               className="img-fluid"
                             />
+                            <ConferenceTag>{pub.conferenceTag}</ConferenceTag>
                           </Col>
-                          <Col lg="9">
+                          <Col lg="10">
                             <div className="paper-title pub-element">
                               {pub.title}
                             </div>
