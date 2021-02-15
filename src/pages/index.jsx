@@ -151,7 +151,7 @@ const IndexPage = ({ data }) => (
             <Col sm="12">
               <span className="contact-name">Curriculum Vitae: [</span>
               <a href={CVPath}>pdf</a>
-              <span className="contact-name">]</span> (Jan 2021)
+              <span className="contact-name">]</span> (Feb 2021)
               <br />
               <span className="contact-name">Google Scholar Profile: </span>
               <a
