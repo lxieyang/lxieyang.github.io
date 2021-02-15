@@ -167,29 +167,84 @@ const IndexPage = ({ data }) => (
           <hr />
           Open-source projects:
           <ul>
-            <li style={{ display: 'flex', alignItems: 'center' }}>
-              <a
-                style={{ display: 'flex', alignItems: 'center' }}
-                href={
-                  'https://chrome.google.com/webstore/detail/vertical-tabs/pddljdmihkpdfpkgmbhdomeeifpklgnm'
-                }
-              >
-                Vertical Tabs Chrome Extension &nbsp;
+            {/* Vertical Tabs */}
+            <li style={{ marginBottom: 8 }}>
+              <div style={{ fontWeight: 'bold' }}>
+                <a
+                  href={
+                    'https://chrome.google.com/webstore/detail/vertical-tabs/pddljdmihkpdfpkgmbhdomeeifpklgnm'
+                  }
+                >
+                  Vertical Tabs Chrome Extension
+                </a>
+              </div>
+              <div>
                 <img
                   alt="user-count"
                   src={
                     'https://img.shields.io/chrome-web-store/users/pddljdmihkpdfpkgmbhdomeeifpklgnm'
                   }
                 />
-              </a>{' '}
-              &nbsp;
-              <a
-                href={
-                  'https://github.com/lxieyang/vertical-tabs-chrome-extension'
-                }
-              >
-                [Code]
-              </a>
+                &nbsp; &nbsp;
+                <a
+                  href={
+                    'https://github.com/lxieyang/vertical-tabs-chrome-extension'
+                  }
+                >
+                  [Code]
+                </a>
+              </div>
+            </li>
+
+            {/* Chrome extension boilerplate (w/ React & Webpack) */}
+            <li>
+              <div style={{ fontWeight: 'bold' }}>
+                <a
+                  style={{ display: 'flex', alignItems: 'center' }}
+                  href={
+                    'https://github.com/lxieyang/chrome-extension-boilerplate-react'
+                  }
+                >
+                  Chrome extension boilerplate (w/ React & Webpack)
+                </a>
+              </div>
+              <div>
+                <img
+                  alt="user-count"
+                  src={
+                    'https://img.shields.io/github/stars/lxieyang/chrome-extension-boilerplate-react?style=social'
+                  }
+                />
+                &nbsp; &nbsp;
+                <img
+                  alt="npm-version"
+                  src={
+                    'https://img.shields.io/npm/v/chrome-extension-boilerplate-react'
+                  }
+                />
+                &nbsp; &nbsp;
+                <img
+                  alt="npm-download-week"
+                  src={
+                    'https://img.shields.io/npm/dw/chrome-extension-boilerplate-react'
+                  }
+                />
+                &nbsp; &nbsp;
+                <img
+                  alt="npm-download-month"
+                  src={
+                    'https://img.shields.io/npm/dm/chrome-extension-boilerplate-react'
+                  }
+                />
+                &nbsp; &nbsp;
+                <a
+                  href={
+                    'https://github.com/lxieyang/chrome-extension-boilerplate-react'
+                  }
+                >
+                  [Code]
+                </a>
+              </div>
             </li>
           </ul>
           <div className="d-sm-block d-md-none d-lg-none">
