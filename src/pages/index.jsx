@@ -221,9 +221,16 @@ const IndexPage = ({ data }) => (
               </div>
               <div>
                 <img
-                  alt="user-count"
+                  alt="star-count"
                   src={
                     'https://img.shields.io/github/stars/lxieyang/chrome-extension-boilerplate-react?style=social'
+                  }
+                />
+                &nbsp; &nbsp;
+                <img
+                  alt="fork-count"
+                  src={
+                    'https://img.shields.io/github/forks/lxieyang/chrome-extension-boilerplate-react'
                   }
                 />
                 &nbsp; &nbsp;
