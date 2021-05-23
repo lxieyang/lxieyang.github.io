@@ -11,7 +11,6 @@ import Layout from '../../components/layout/layout';
 import HeadshotTooltip from '../../components/UI/HeadshotTooltip/HeadshotTooltip';
 import BradImg from '../../images/people/bradmyers.jpg';
 import NikiImg from '../../images/people/nikikittur.jpg';
-import WalterImg from '../../images/people/walterlasecki.jpg';
 
 import styles from './about.module.css';
 
@@ -41,10 +40,10 @@ const AboutPage = () => (
             interaction, hybrid intelligent systems, user interface development,
             and sensemaking. He obtained his two B.S. degrees at University of
             Michigan and Shanghai Jiao Tong University. He worked as an
-            undergraduate researcher with{' '}
-            <a href="https://web.eecs.umich.edu/~wlasecki/" id="walter-lasecki">
+            undergraduate researcher
+            {/* with <a href="https://web.eecs.umich.edu/~wlasecki/" id="walter-lasecki">
               Dr. Walter S. Lasecki
-            </a>{' '}
+            </a>{' '} */}
             in the{' '}
             <a href="http://web.eecs.umich.edu/~wlasecki/croma.html">
               Crowds + Machines Lab (Croma Lab)
@@ -54,7 +53,6 @@ const AboutPage = () => (
 
           <HeadshotTooltip target="brad-myers" headshotPath={BradImg} />
           <HeadshotTooltip target="niki-kittur" headshotPath={NikiImg} />
-          <HeadshotTooltip target="walter-lasecki" headshotPath={WalterImg} />
         </div>
 
         <hr />
@@ -101,7 +99,7 @@ const AboutPage = () => (
               </tr>
               <tr>
                 <td />
-                <td>
+                {/* <td>
                   - Advisor:{' '}
                   <a
                     href="https://web.eecs.umich.edu/~wlasecki/"
@@ -109,7 +107,7 @@ const AboutPage = () => (
                   >
                     Dr. Walter Lasecki
                   </a>
-                </td>
+                </td> */}
               </tr>
               <tr>
                 <td />
@@ -176,7 +174,6 @@ const AboutPage = () => (
 
           <HeadshotTooltip target="brad-myers-2" headshotPath={BradImg} />
           <HeadshotTooltip target="niki-kittur-2" headshotPath={NikiImg} />
-          <HeadshotTooltip target="walter-lasecki-2" headshotPath={WalterImg} />
         </div>
 
         <hr />

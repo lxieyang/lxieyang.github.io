@@ -135,8 +135,8 @@ const IndexPage = ({ data }) => (
               University of Michigan, Ann Arbor
             </a>{' '}
             and{' '}
-            <a href="http://en.sjtu.edu.cn">Shanghai Jiao Tong University</a>. I
-            worked as an undergraduate researcher with{' '}
+            <a href="http://en.sjtu.edu.cn">Shanghai Jiao Tong University</a>.
+            {/* I worked as an undergraduate researcher with{' '}
             <a href="https://web.eecs.umich.edu/~wlasecki/" id="walter-lasecki">
               Dr. Walter S. Lasecki
             </a>{' '}
@@ -145,7 +145,7 @@ const IndexPage = ({ data }) => (
               Crowds + Machines Lab (Croma Lab)
             </a>{' '}
             during my time at Umich.
-            <HeadshotTooltip target="walter-lasecki" headshotPath={WalterImg} />
+            <HeadshotTooltip target="walter-lasecki" headshotPath={WalterImg} /> */}
           </p>
           <Row className="contacts">
             <Col sm="12">
