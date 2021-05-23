@@ -163,13 +163,13 @@ const CodeCommitSection = ({ gitDataFromGithub }) => (
                 </a>{' '}
                 &nbsp;
                 <a
-                  href="https://travis-ci.org/lxieyang/lxieyang.github.io"
+                  href="https://travis-ci.com/lxieyang/lxieyang.github.io"
                   target="_blank"
                   rel="noopener noreferrer"
                   title={'View build status on Travis CI'}
                 >
                   <img
-                    src="https://travis-ci.org/lxieyang/lxieyang.github.io.svg?branch=gatsby-dev"
+                    src="https://travis-ci.com/lxieyang/lxieyang.github.io.svg?branch=gatsby-dev"
                     alt="build status"
                     style={{ height: '18px' }}
                   />
