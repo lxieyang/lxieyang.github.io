@@ -4,7 +4,7 @@
   "version": "2.3.8",
   "author": "Michael Xieyang Liu",
   "dependencies": {
-    "axios": "^0.21.1",
+    "axios": "^0.21.2",
     "bootstrap": "^4.5.3",
     "core-js": "^2.6.11",
     "darkmode-js": "^1.5.7",
