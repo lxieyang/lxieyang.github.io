@@ -9,6 +9,37 @@ export default [
         Our full paper{' '}
         <span className="paper-title">
           <a
+            href={`${pubFilePathPrefix}/tabsdo-uist-2021/tabsdo-uist-2021.pdf`}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Tabs.do: Task-Centric Browser Tab Management
+          </a>
+        </span>{' '}
+        is accepted to{' '}
+        <a
+          href="https://uist.acm.org/uist2021/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          UIST 2021
+        </a>
+        ! Check it out{' '}
+        <a href={`${pubFilePathPrefix}/tabsdo-uist-2021/tabsdo-uist-2021.pdf`}>
+          here
+        </a>
+        .
+      </Fragment>
+    ),
+    date: new Date('2021-09-10'),
+    shouldDisplay: true,
+  },
+  {
+    content: (
+      <Fragment>
+        Our full paper{' '}
+        <span className="paper-title">
+          <a
             href={`${pubFilePathPrefix}/strata-cscw-2021/strata-cscw-2021.pdf`}
             target="_blank"
             rel="noopener noreferrer"
@@ -25,7 +56,11 @@ export default [
         >
           CSCW 2021
         </a>
-        ! Check it out <a href="/research/#strata-cscw-2021">here</a>.
+        ! Check it out{' '}
+        <a href={`${pubFilePathPrefix}/strata-cscw-2021/strata-cscw-2021.pdf`}>
+          here
+        </a>
+        .
       </Fragment>
     ),
     date: new Date('2020-12-22'),
@@ -84,7 +119,13 @@ export default [
         <strong>
           <FaAward /> Best Paper Honorable Mention Award
         </strong>
-        ! Check it out <a href="/research/#unakite-uist-2019">here</a>.
+        ! Check it out{' '}
+        <a
+          href={`${pubFilePathPrefix}/unakite-uist-2019/unakite-uist-2019.pdf`}
+        >
+          here
+        </a>
+        .
       </Fragment>
     ),
     date: new Date('2019-10-21'),

@@ -5,6 +5,7 @@ import stackoverflowVlhccWorkshopPreviewImgLink from '../assets/files/pubs/stack
 import av_annoPreviewImgLink from '../assets/files/pubs/av_anno/av_anno.png';
 import unakite_uist_2019PreviewImgLink from '../assets/files/pubs/unakite-uist-2019/unakite-uist-2019.png';
 import strata_cscw_2021PreviewImgLink from '../assets/files/pubs/strata-cscw-2021/strata-cscw-2021.jpg';
+import tabsdo_uist_2021PreviewImgLink from '../assets/files/pubs/tabsdo-uist-2021/tabsdo-uist-2021.jpg';
 import { filePathPrefix } from './constants';
 
 export const pubFilePathPrefix = filePathPrefix + `/pubs`;
@@ -343,6 +344,55 @@ export const publicationsData = {
         honorableMention: false,
       },
       // conferenceTalkVideo: 'https://youtu.be/UMQ-kWgmbQ4',
+    },
+
+    // Tabs.do: Task-Centric Browser Tab Management - UIST 2021
+    {
+      title: 'Tabs.do: Task-Centric Browser Tab Management',
+      type: 'conference',
+      conference: 'UIST',
+      conferenceFullName:
+        'ACM Symposium on User Interface Software and Technology (UIST)',
+      conferenceTag: 'UIST 2021',
+      year: 2021,
+      month: 10,
+      authors: [
+        {
+          name: 'Joseph Chee Chang',
+          bold: false,
+        },
+        {
+          name: 'Yongsung Kim',
+          bold: false,
+        },
+        {
+          name: 'Victor Miller',
+          bold: false,
+        },
+        {
+          name: 'Michael Xieyang Liu',
+          bold: true,
+        },
+        {
+          name: 'Brad A. Myers',
+          bold: false,
+        },
+        {
+          name: 'Aniket Kittur',
+          bold: false,
+        },
+      ],
+      abstract: `Despite the increasing complexity and scale of people's online activities, browser interfaces have stayed largely the same since tabs were introduced in major browsers nearly 20 years ago. The gap between simple tab-based browser interfaces and the complexity of users' tasks can lead to serious adverse effects – commonly referred to as "tab overload." This paper introduces a Chrome extension called Tabs.do, which explores bringing a task-centric approach to the browser, helping users to group their tabs into tasks and then organize, prioritize, and switch between those tasks fluidly. To lower the cost of importing, Tabs.do uses machine learning to make intelligent suggestions for grouping users' open tabs into task bundles by exploiting behavioral and semantic features. We conducted a field deployment study where participants used Tabs.do with their real-life tasks in the wild, and showed that Tabs.do can decrease tab clutter, enabled users to create rich task structures with lightweight interactions, and allowed participants to context-switch among tasks more efficiently.`,
+      codename: 'tabsdo-uist-2021',
+      bibtex: ``,
+      previewImgLink: tabsdo_uist_2021PreviewImgLink,
+      shouldShowLocalPaperLink: true,
+      doi: 'https://doi.org/10.1145/3472749.3474777',
+      acmdl: 'https://doi.org/10.1145/3472749.3474777',
+      acmdl_available: true,
+      award: {
+        honorableMention: false,
+      },
     },
   ],
 };

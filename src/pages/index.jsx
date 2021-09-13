@@ -91,7 +91,7 @@ const IndexPage = ({ data }) => (
           </Row>
           <hr />
           <p className="self-identify-paragraph">
-            I am a {ordinal(1 + moment().diff(moment([2017, 9]), 'years'))} year
+            I am a {ordinal(1 + moment().diff(moment([2017, 8]), 'years'))} year
             Ph.D. student at{' '}
             <a href="http://www.hcii.cmu.edu">
               Human-Computer Interaction Institute
@@ -151,7 +151,7 @@ const IndexPage = ({ data }) => (
             <Col sm="12">
               <span className="contact-name">Curriculum Vitae: [</span>
               <a href={CVPath}>pdf</a>
-              <span className="contact-name">]</span> (Feb 2021)
+              <span className="contact-name">]</span> (Sept 2021)
               <br />
               <span className="contact-name">Google Scholar Profile: </span>
               <a

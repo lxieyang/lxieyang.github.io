@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
+import mobile from 'is-mobile';
 import ScrollableAnchor from 'react-scrollable-anchor';
 import {
   // Container,
@@ -148,97 +149,6 @@ class ResearchPage extends Component {
             making it useful for later programmers with similar needs.
           </p>
         </ResearchStatementContainer>
-
-        <ScrollableAnchor key={'projects'}>
-          <h1>Projects</h1>
-        </ScrollableAnchor>
-        <PublicationContainer>
-          <PubCategoryContainer>
-            <ProjectNamePromptContainer>Unakite</ProjectNamePromptContainer>
-            <Row style={{ marginBottom: '10px' }}>
-              <Col
-                lg="2"
-                md="6"
-                // className="d-none d-sm-none d-md-block d-lg-block"
-              >
-                <PreviewImg
-                  src={UnakitePreview}
-                  alt={'unakite'}
-                  className="img-fluid"
-                />
-              </Col>
-              <Col lg="10" md="6">
-                <p>
-                  The{' '}
-                  <a
-                    href="https://unakite.info"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    Unakite Chrome extension
-                  </a>{' '}
-                  is designed to help developers organize information forgaged
-                  from the web so that they can make better-informed programming
-                  decisions.{' '}
-                </p>
-                <p>
-                  You can use Unakite's{' '}
-                  <a
-                    href="https://unakite.info/docs/features/collecting"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    light-weight clipping tool
-                  </a>{' '}
-                  to quickly snip any information into a{' '}
-                  <a
-                    href="https://unakite.info/docs/components/sidebar"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    sidebar
-                  </a>
-                  . You can then start{' '}
-                  <a
-                    href="https://unakite.info/docs/features/organizing"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    organizing the information
-                  </a>{' '}
-                  into a comparison table directly in the sidebar. After you
-                  make a decision, you can get a{' '}
-                  <a
-                    href="https://unakite.info/docs/features/sharing"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    sharable link
-                  </a>{' '}
-                  to the table and the snippets and embed it in your code or
-                  share it with your friends or colleagues.
-                </p>
-                <p>
-                  <strong>Unakite</strong> stands for{' '}
-                  <em>
-                    <u>U</u>sers <u>N</u>eed <u>A</u>ccelerators for <u>K</u>
-                    nowledge for <u>I</u>mplementations in <u>T</u>echnology{' '}
-                    <u>E</u>nvironments
-                  </em>
-                  . And unakite is a{' '}
-                  <a
-                    href="https://www.cs.cmu.edu/~bam/acronyms.html"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    semiprecious gemstone
-                  </a>
-                  .
-                </p>
-              </Col>
-            </Row>
-          </PubCategoryContainer>
-        </PublicationContainer>
 
         <ScrollableAnchor key={'publications'}>
           <h1>Publications</h1>
@@ -518,6 +428,7 @@ class ResearchPage extends Component {
                             </div>
                             */}
                             <UncontrolledCollapse
+                              defaultOpen={!mobile()}
                               toggler={`#${pub.codename}-abstract`}
                               className="paper-abstract publication-collapse"
                             >
@@ -532,6 +443,97 @@ class ResearchPage extends Component {
               </PubCategoryContainer>
             );
           })}
+        </PublicationContainer>
+
+        <ScrollableAnchor key={'projects'}>
+          <h1>Projects</h1>
+        </ScrollableAnchor>
+        <PublicationContainer>
+          <PubCategoryContainer>
+            <ProjectNamePromptContainer>Unakite</ProjectNamePromptContainer>
+            <Row style={{ marginBottom: '10px' }}>
+              <Col
+                lg="2"
+                md="6"
+                // className="d-none d-sm-none d-md-block d-lg-block"
+              >
+                <PreviewImg
+                  src={UnakitePreview}
+                  alt={'unakite'}
+                  className="img-fluid"
+                />
+              </Col>
+              <Col lg="10" md="6">
+                <p>
+                  The{' '}
+                  <a
+                    href="https://unakite.info"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Unakite Chrome extension
+                  </a>{' '}
+                  is designed to help developers organize information forgaged
+                  from the web so that they can make better-informed programming
+                  decisions.{' '}
+                </p>
+                <p>
+                  You can use Unakite's{' '}
+                  <a
+                    href="https://unakite.info/docs/features/collecting"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    light-weight clipping tool
+                  </a>{' '}
+                  to quickly snip any information into a{' '}
+                  <a
+                    href="https://unakite.info/docs/components/sidebar"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    sidebar
+                  </a>
+                  . You can then start{' '}
+                  <a
+                    href="https://unakite.info/docs/features/organizing"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    organizing the information
+                  </a>{' '}
+                  into a comparison table directly in the sidebar. After you
+                  make a decision, you can get a{' '}
+                  <a
+                    href="https://unakite.info/docs/features/sharing"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    sharable link
+                  </a>{' '}
+                  to the table and the snippets and embed it in your code or
+                  share it with your friends or colleagues.
+                </p>
+                <p>
+                  <strong>Unakite</strong> stands for{' '}
+                  <em>
+                    <u>U</u>sers <u>N</u>eed <u>A</u>ccelerators for <u>K</u>
+                    nowledge for <u>I</u>mplementations in <u>T</u>echnology{' '}
+                    <u>E</u>nvironments
+                  </em>
+                  . And unakite is a{' '}
+                  <a
+                    href="https://www.cs.cmu.edu/~bam/acronyms.html"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    semiprecious gemstone
+                  </a>
+                  .
+                </p>
+              </Col>
+            </Row>
+          </PubCategoryContainer>
         </PublicationContainer>
       </Layout>
     );
