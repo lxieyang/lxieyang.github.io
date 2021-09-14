@@ -18,7 +18,7 @@ import HCIIAvatar from '../images/hcii-logo-big.jpg';
 import HeadshotTooltip from '../components/UI/HeadshotTooltip/HeadshotTooltip';
 import BradImg from '../images/people/bradmyers.jpg';
 import NikiImg from '../images/people/nikikittur.jpg';
-import WalterImg from '../images/people/walterlasecki.jpg';
+// import WalterImg from '../images/people/walterlasecki.jpg';
 
 import { CVPath } from '../utils/constants';
 
