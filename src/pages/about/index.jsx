@@ -12,7 +12,7 @@ import HeadshotTooltip from '../../components/UI/HeadshotTooltip/HeadshotTooltip
 import BradImg from '../../images/people/bradmyers.jpg';
 import NikiImg from '../../images/people/nikikittur.jpg';
 
-import styles from './about.module.css';
+import { NavUL } from './about.module.css';
 
 const AboutPage = () => (
   <Layout pathName="About">
@@ -244,7 +244,7 @@ const AboutPage = () => (
         className="d-none d-sm-none d-md-block"
         style={{ position: 'fixed' }}
       >
-        <ul className={styles.NavUL}>
+        <ul className={NavUL}>
           <li>
             <a href="#bio">Bio.</a>
           </li>

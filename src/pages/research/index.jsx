@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
 import mobile from 'is-mobile';
-import ScrollableAnchor from 'react-scrollable-anchor';
 import {
   // Container,
   Row,
@@ -118,9 +117,9 @@ class ResearchPage extends Component {
 
     return (
       <Layout pathName="Research">
-        <ScrollableAnchor key={'research'}>
-          <h1>Research</h1>
-        </ScrollableAnchor>
+        <a href="#research"></a>
+        <h1>Research</h1>
+
         <ResearchStatementContainer>
           <p>
             <strong>Overview:</strong> I research programming support largely
@@ -150,9 +149,9 @@ class ResearchPage extends Component {
           </p>
         </ResearchStatementContainer>
 
-        <ScrollableAnchor key={'publications'}>
-          <h1>Publications</h1>
-        </ScrollableAnchor>
+        <a href="#publications"> </a>
+        <h1>Publications</h1>
+
         <PublicationContainer>
           {pubsInfo.map((pubCategory, pubCategoryIdx) => {
             return (
@@ -163,215 +162,165 @@ class ResearchPage extends Component {
                 {reverse(sortBy(pubCategory.data, ['year', 'month'])).map(
                   (pub, pubIdx) => {
                     return (
-                      <ScrollableAnchor key={pubIdx} id={pub.codename}>
-                        <Row key={pubIdx} style={{ marginBottom: '25px' }}>
-                          {/* eslint-disable-next-line */}
-                          <a className="anchor" name={pub.codename} />
-                          <Col
-                            lg="2"
-                            className="d-none d-sm-none d-md-none d-lg-block"
-                          >
-                            <PreviewImg
-                              src={pub.previewImgLink}
-                              alt={pub.codename}
-                              className="img-fluid"
-                            />
-                            <ConferenceTag>{pub.conferenceTag}</ConferenceTag>
-                          </Col>
-                          <Col lg="10">
-                            <div className="paper-title pub-element">
-                              {pub.title}
+                      <Row key={pubIdx} style={{ marginBottom: '25px' }}>
+                        {/* eslint-disable-next-line */}
+                        <a className="anchor" name={pub.codename} />
+                        <Col
+                          lg="2"
+                          className="d-none d-sm-none d-md-none d-lg-block"
+                        >
+                          <PreviewImg
+                            src={pub.previewImgLink}
+                            alt={pub.codename}
+                            className="img-fluid"
+                          />
+                          <ConferenceTag>{pub.conferenceTag}</ConferenceTag>
+                        </Col>
+                        <Col lg="10">
+                          <div className="paper-title pub-element">
+                            {pub.title}
+                          </div>
+                          <div className="authors pub-element">
+                            {pub.authors.map((author, authorIdx) => (
+                              <React.Fragment key={authorIdx}>
+                                <span
+                                  key={authorIdx}
+                                  className={
+                                    author.bold ? 'author-important' : null
+                                  }
+                                >
+                                  {author.name}
+                                </span>
+                                {authorIdx === pub.authors.length - 1
+                                  ? '. '
+                                  : ', '}
+                              </React.Fragment>
+                            ))}
+                          </div>
+                          <div className="publication-location pub-element">
+                            <span className="conference">
+                              {pub.conferenceFullName}
+                            </span>
+                            ,{' '}
+                            <span className="conference-year">{pub.year}</span>.
+                          </div>
+                          {pub.award && (
+                            <div className="awards pub-element">
+                              {pub.award.honorableMention && (
+                                <span>
+                                  <FaAward style={{ marginRight: 4 }} /> Best
+                                  Paper Honorable Mention Award
+                                </span>
+                              )}
                             </div>
-                            <div className="authors pub-element">
-                              {pub.authors.map((author, authorIdx) => (
-                                <React.Fragment key={authorIdx}>
-                                  <span
-                                    key={authorIdx}
-                                    className={
-                                      author.bold ? 'author-important' : null
-                                    }
-                                  >
-                                    {author.name}
-                                  </span>
-                                  {authorIdx === pub.authors.length - 1
-                                    ? '. '
-                                    : ', '}
-                                </React.Fragment>
-                              ))}
-                            </div>
-                            <div className="publication-location pub-element">
-                              <span className="conference">
-                                {pub.conferenceFullName}
-                              </span>
-                              ,{' '}
-                              <span className="conference-year">
-                                {pub.year}
-                              </span>
-                              .
-                            </div>
-                            {pub.award && (
-                              <div className="awards pub-element">
-                                {pub.award.honorableMention && (
-                                  <span>
-                                    <FaAward style={{ marginRight: 4 }} /> Best
-                                    Paper Honorable Mention Award
-                                  </span>
-                                )}
-                              </div>
-                            )}
-                            <div className="data pub-element">
+                          )}
+                          <div className="data pub-element">
+                            <span>
+                              <a
+                                href={`#${pub.codename}`}
+                                id={`${pub.codename}-abstract`}
+                                style={{
+                                  display: 'flex',
+                                  alignItems: 'center',
+                                }}
+                              >
+                                <img
+                                  src={GistIcon}
+                                  alt="video"
+                                  style={{
+                                    marginRight: 3,
+                                    width: 20,
+                                    height: 20,
+                                  }}
+                                />
+                                Abstract
+                              </a>
+                            </span>
+
+                            {pub.ieeexplore !== undefined && (
                               <span>
                                 <a
-                                  href={`#${pub.codename}`}
-                                  id={`${pub.codename}-abstract`}
+                                  href={pub.ieeexplore}
+                                  target="_blank"
+                                  rel="noopener noreferrer"
                                   style={{
                                     display: 'flex',
                                     alignItems: 'center',
                                   }}
                                 >
                                   <img
-                                    src={GistIcon}
-                                    alt="video"
+                                    src={IEEEIcon}
+                                    alt="ieee"
                                     style={{
                                       marginRight: 3,
                                       width: 20,
                                       height: 20,
                                     }}
                                   />
-                                  Abstract
+                                  IEEE Digital Library
                                 </a>
                               </span>
-
-                              {pub.ieeexplore !== undefined && (
-                                <span>
-                                  <a
-                                    href={pub.ieeexplore}
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                    style={{
-                                      display: 'flex',
-                                      alignItems: 'center',
-                                    }}
-                                  >
-                                    <img
-                                      src={IEEEIcon}
-                                      alt="ieee"
-                                      style={{
-                                        marginRight: 3,
-                                        width: 20,
-                                        height: 20,
-                                      }}
-                                    />
-                                    IEEE Digital Library
-                                  </a>
-                                </span>
-                              )}
-                              {pub.acmdl !== undefined && (
-                                <span>
-                                  {pub.acmdl_available === false ? (
-                                    <React.Fragment>
-                                      <em>Available soon!</em>
-                                    </React.Fragment>
-                                  ) : (
-                                    <a
-                                      href={pub.acmdl}
-                                      target="_blank"
-                                      rel="noopener noreferrer"
-                                      style={{
-                                        display: 'flex',
-                                        alignItems: 'center',
-                                      }}
-                                    >
-                                      <img
-                                        src={ACMDLIcon}
-                                        alt="acmdl"
-                                        style={{
-                                          marginRight: 3,
-                                          width: 20,
-                                          height: 20,
-                                        }}
-                                      />
-                                      ACM Digital Library
-                                    </a>
-                                  )}
-                                </span>
-                              )}
-                              {pub.arxiv !== undefined && (
-                                <span>
-                                  <a
-                                    href={pub.arxiv}
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                    style={{
-                                      display: 'flex',
-                                      alignItems: 'center',
-                                    }}
-                                  >
-                                    <img
-                                      src={ArxivIcon}
-                                      alt="ieee"
-                                      style={{
-                                        marginRight: 3,
-                                        width: 20,
-                                        height: 20,
-                                      }}
-                                    />
-                                    arxiv.org
-                                  </a>
-                                </span>
-                              )}
-                              {pub.shouldShowLocalPaperLink !== false ? (
-                                pub.type === 'poster' ? (
+                            )}
+                            {pub.acmdl !== undefined && (
+                              <span>
+                                {pub.acmdl_available === false ? (
                                   <React.Fragment>
-                                    <span>
-                                      <a
-                                        href={`${pubFilePathPrefix}/${pub.codename}/${pub.codename}-paper.pdf`}
-                                        target="_blank"
-                                        rel="noopener noreferrer"
-                                        style={{
-                                          display: 'flex',
-                                          alignItems: 'center',
-                                        }}
-                                      >
-                                        <img
-                                          src={DocumentIcon}
-                                          alt="video"
-                                          style={{
-                                            marginRight: 3,
-                                            width: 20,
-                                            height: 20,
-                                          }}
-                                        />
-                                        Extended Abstract
-                                      </a>
-                                    </span>
-                                    <span>
-                                      <a
-                                        href={`${pubFilePathPrefix}/${pub.codename}/${pub.codename}-poster.pdf`}
-                                        target="_blank"
-                                        rel="noopener noreferrer"
-                                        style={{
-                                          display: 'flex',
-                                          alignItems: 'center',
-                                        }}
-                                      >
-                                        <img
-                                          src={PosterIcon}
-                                          alt="video"
-                                          style={{
-                                            marginRight: 3,
-                                            width: 20,
-                                            height: 20,
-                                          }}
-                                        />
-                                        Poster
-                                      </a>
-                                    </span>
+                                    <em>Available soon!</em>
                                   </React.Fragment>
                                 ) : (
+                                  <a
+                                    href={pub.acmdl}
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    style={{
+                                      display: 'flex',
+                                      alignItems: 'center',
+                                    }}
+                                  >
+                                    <img
+                                      src={ACMDLIcon}
+                                      alt="acmdl"
+                                      style={{
+                                        marginRight: 3,
+                                        width: 20,
+                                        height: 20,
+                                      }}
+                                    />
+                                    ACM Digital Library
+                                  </a>
+                                )}
+                              </span>
+                            )}
+                            {pub.arxiv !== undefined && (
+                              <span>
+                                <a
+                                  href={pub.arxiv}
+                                  target="_blank"
+                                  rel="noopener noreferrer"
+                                  style={{
+                                    display: 'flex',
+                                    alignItems: 'center',
+                                  }}
+                                >
+                                  <img
+                                    src={ArxivIcon}
+                                    alt="ieee"
+                                    style={{
+                                      marginRight: 3,
+                                      width: 20,
+                                      height: 20,
+                                    }}
+                                  />
+                                  arxiv.org
+                                </a>
+                              </span>
+                            )}
+                            {pub.shouldShowLocalPaperLink !== false ? (
+                              pub.type === 'poster' ? (
+                                <React.Fragment>
                                   <span>
                                     <a
-                                      href={`${pubFilePathPrefix}/${pub.codename}/${pub.codename}.pdf`}
+                                      href={`${pubFilePathPrefix}/${pub.codename}/${pub.codename}-paper.pdf`}
                                       target="_blank"
                                       rel="noopener noreferrer"
                                       style={{
@@ -388,15 +337,36 @@ class ResearchPage extends Component {
                                           height: 20,
                                         }}
                                       />
-                                      Local PDF
+                                      Extended Abstract
                                     </a>
                                   </span>
-                                )
-                              ) : null}
-                              {pub.conferenceTalkVideo !== undefined && (
+                                  <span>
+                                    <a
+                                      href={`${pubFilePathPrefix}/${pub.codename}/${pub.codename}-poster.pdf`}
+                                      target="_blank"
+                                      rel="noopener noreferrer"
+                                      style={{
+                                        display: 'flex',
+                                        alignItems: 'center',
+                                      }}
+                                    >
+                                      <img
+                                        src={PosterIcon}
+                                        alt="video"
+                                        style={{
+                                          marginRight: 3,
+                                          width: 20,
+                                          height: 20,
+                                        }}
+                                      />
+                                      Poster
+                                    </a>
+                                  </span>
+                                </React.Fragment>
+                              ) : (
                                 <span>
                                   <a
-                                    href={pub.conferenceTalkVideo}
+                                    href={`${pubFilePathPrefix}/${pub.codename}/${pub.codename}.pdf`}
                                     target="_blank"
                                     rel="noopener noreferrer"
                                     style={{
@@ -405,7 +375,7 @@ class ResearchPage extends Component {
                                     }}
                                   >
                                     <img
-                                      src={VideoIcon}
+                                      src={DocumentIcon}
                                       alt="video"
                                       style={{
                                         marginRight: 3,
@@ -413,12 +383,37 @@ class ResearchPage extends Component {
                                         height: 20,
                                       }}
                                     />
-                                    Conference Talk
+                                    Local PDF
                                   </a>
                                 </span>
-                              )}
-                            </div>
-                            {/*
+                              )
+                            ) : null}
+                            {pub.conferenceTalkVideo !== undefined && (
+                              <span>
+                                <a
+                                  href={pub.conferenceTalkVideo}
+                                  target="_blank"
+                                  rel="noopener noreferrer"
+                                  style={{
+                                    display: 'flex',
+                                    alignItems: 'center',
+                                  }}
+                                >
+                                  <img
+                                    src={VideoIcon}
+                                    alt="video"
+                                    style={{
+                                      marginRight: 3,
+                                      width: 20,
+                                      height: 20,
+                                    }}
+                                  />
+                                  Conference Talk
+                                </a>
+                              </span>
+                            )}
+                          </div>
+                          {/*
                             <div className="pub-element">
                               {
                                 pub.year >= this.state.currentYear
@@ -427,16 +422,15 @@ class ResearchPage extends Component {
                               }
                             </div>
                             */}
-                            <UncontrolledCollapse
-                              defaultOpen={!mobile()}
-                              toggler={`#${pub.codename}-abstract`}
-                              className="paper-abstract publication-collapse"
-                            >
-                              {pub.abstract}
-                            </UncontrolledCollapse>
-                          </Col>
-                        </Row>
-                      </ScrollableAnchor>
+                          <UncontrolledCollapse
+                            defaultOpen={!mobile()}
+                            toggler={`#${pub.codename}-abstract`}
+                            className="paper-abstract publication-collapse"
+                          >
+                            {pub.abstract}
+                          </UncontrolledCollapse>
+                        </Col>
+                      </Row>
                     );
                   }
                 )}
@@ -445,9 +439,9 @@ class ResearchPage extends Component {
           })}
         </PublicationContainer>
 
-        <ScrollableAnchor key={'projects'}>
-          <h1>Projects</h1>
-        </ScrollableAnchor>
+        <a href="#projects"> </a>
+        <h1>Projects</h1>
+
         <PublicationContainer>
           <PubCategoryContainer>
             <ProjectNamePromptContainer>Unakite</ProjectNamePromptContainer>
