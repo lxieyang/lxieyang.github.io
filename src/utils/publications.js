@@ -343,7 +343,7 @@ export const publicationsData = {
       award: {
         honorableMention: false,
       },
-      // conferenceTalkVideo: 'https://youtu.be/UMQ-kWgmbQ4',
+      conferenceTalkVideo: 'https://youtu.be/NuL-jtf710E',
     },
 
     // Tabs.do: Task-Centric Browser Tab Management - UIST 2021
