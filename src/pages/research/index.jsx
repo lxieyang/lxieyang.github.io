@@ -166,8 +166,9 @@ class ResearchPage extends Component {
                         {/* eslint-disable-next-line */}
                         <a className="anchor" name={pub.codename} />
                         <Col
-                          lg="2"
-                          className="d-none d-sm-none d-md-none d-lg-block"
+                          md="4"
+                          lg="3"
+                          className="d-none d-sm-none d-md-block d-lg-block"
                         >
                           <PreviewImg
                             src={pub.previewImgLink}
@@ -176,7 +177,7 @@ class ResearchPage extends Component {
                           />
                           <ConferenceTag>{pub.conferenceTag}</ConferenceTag>
                         </Col>
-                        <Col lg="10">
+                        <Col md="8" lg="9">
                           <div className="paper-title pub-element">
                             {pub.title}
                           </div>

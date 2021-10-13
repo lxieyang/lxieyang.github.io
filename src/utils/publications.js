@@ -240,6 +240,7 @@ export const publicationsData = {
       shouldShowLocalPaperLink: true,
       doi: 'https://doi.org/10.1145/3301275.3302305',
       acmdl: 'https://dl.acm.org/citation.cfm?id=3302305',
+      conferenceTalkVideo: 'https://youtu.be/hn0r9Eb9_rQ',
     },
 
     // Unakite: Scaffolding Developers’ Decision-Making Using the Web - UIST 2019

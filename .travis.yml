@@ -13,7 +13,7 @@ deploy:
     branch: gatsby-dev
 before_script:
   - 'npm i -g gatsby-cli'
-  - 'npm i'
+  - 'npm i --legacy-peer-deps'
 script:
   - 'npm run test'
   - 'npm run build'
