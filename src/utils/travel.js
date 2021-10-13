@@ -6,6 +6,18 @@ export default [
     url: 'https://cscw.acm.org/2021/',
   },
   {
+    date: 'October 2021',
+    location: 'Virtual',
+    event: 'UIST 2021',
+    url: 'https://uist.acm.org/uist2021/',
+  },
+  {
+    date: 'October 2021',
+    location: 'Virtual',
+    event: 'VL/HCC 2021',
+    url: 'https://conf.researchr.org/home/vlhcc-2021',
+  },
+  {
     date: 'October 20, 2020',
     location: 'Minneapolis, MN, USA',
     event: 'UIST 2020',
