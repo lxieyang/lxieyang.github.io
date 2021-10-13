@@ -1,14 +1,14 @@
 language: node_js
 node_js:
-  - 12
+  - 14
 
 deploy:
   provider: pages
-  skip-cleanup: false
-  github-token: $GITHUB_TOKEN
+  skip_cleanup: true
+  github_token: $GITHUB_TOKEN
   local_dir: public
-  keep-history: true
-  target-branch: master
+  keep_history: true
+  target_branch: master
   on:
     branch: gatsby-dev
 before_script:
