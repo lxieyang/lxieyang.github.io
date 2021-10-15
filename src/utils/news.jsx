@@ -1,8 +1,46 @@
 import React, { Fragment } from 'react';
 import { pubFilePathPrefix } from '../utils/publications';
-import { FaAward } from 'react-icons/fa';
+import { FaAward, FaTrophy } from 'react-icons/fa';
 
 export default [
+  {
+    content: (
+      <Fragment>
+        Our full paper{' '}
+        <span className="paper-title">
+          <a
+            href={`${pubFilePathPrefix}/strata-cscw-2021/strata-cscw-2021.pdf`}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            To Reuse or Not To Reuse? A Framework and System for Evaluating
+            Summarized Knowledge
+          </a>
+        </span>{' '}
+        just won a{' '}
+        <span className="news-badge">
+          <span className="best-paper">
+            <FaTrophy /> &nbsp; Best Paper Award
+          </span>
+        </span>{' '}
+        at{' '}
+        <a
+          href="https://cscw.acm.org/2021/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          CSCW 2021
+        </a>
+        ! Check it out{' '}
+        <a href={`${pubFilePathPrefix}/strata-cscw-2021/strata-cscw-2021.pdf`}>
+          here
+        </a>
+        !
+      </Fragment>
+    ),
+    date: new Date('2021-10-15'),
+    shouldDisplay: true,
+  },
   {
     content: (
       <Fragment>
@@ -116,9 +154,11 @@ export default [
           UIST 2019
         </a>{' '}
         in New Orleans. It received a{' '}
-        <strong>
-          <FaAward /> Best Paper Honorable Mention Award
-        </strong>
+        <span className="news-badge">
+          <span className="honorable">
+            <FaAward /> &nbsp; Best Paper Honorable Mention Award
+          </span>
+        </span>
         ! Check it out{' '}
         <a
           href={`${pubFilePathPrefix}/unakite-uist-2019/unakite-uist-2019.pdf`}

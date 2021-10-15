@@ -342,7 +342,7 @@ export const publicationsData = {
       arxiv: 'https://arxiv.org/abs/2102.06231',
       acmdl_available: true,
       award: {
-        honorableMention: false,
+        bestPaper: true,
       },
       conferenceTalkVideo: 'https://youtu.be/NuL-jtf710E',
     },

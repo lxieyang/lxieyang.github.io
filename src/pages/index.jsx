@@ -292,13 +292,13 @@ const IndexPage = ({ data }) => (
                 {newsItem.date && (
                   <span
                     className="news-date"
-                    style={{
-                      fontSize:
-                        idx === 0 ? '1rem' : idx <= 2 ? '0.95rem' : null,
-                      padding:
-                        idx === 0 ? '3px 6px' : idx <= 2 ? '2px 6px' : null,
-                      opacity: idx === 0 ? 0.9 : idx <= 2 ? 0.75 : 0.6,
-                    }}
+                    // style={{
+                    //   fontSize:
+                    //     idx === 0 ? '1rem' : idx <= 2 ? '0.95rem' : null,
+                    //   padding:
+                    //     idx === 0 ? '3px 6px' : idx <= 2 ? '2px 6px' : null,
+                    //   opacity: idx === 0 ? 0.9 : idx <= 2 ? 0.75 : 0.6,
+                    // }}
                   >
                     {moment(newsItem.date).fromNow()}
                   </span>

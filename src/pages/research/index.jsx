@@ -24,7 +24,7 @@ import ArxivIcon from '../../images/arxiv.jpg';
 import PosterIcon from '../../images/poster-icon.png';
 import IEEEIcon from '../../images/ieee-icon.png';
 
-import { FaAward } from 'react-icons/fa';
+import { FaAward, FaTrophy } from 'react-icons/fa';
 
 const ResearchStatementContainer = styled.div`
   position: relative;
@@ -208,9 +208,15 @@ class ResearchPage extends Component {
                           {pub.award && (
                             <div className="awards pub-element">
                               {pub.award.honorableMention && (
-                                <span>
+                                <span className="honorable">
                                   <FaAward style={{ marginRight: 4 }} /> Best
                                   Paper Honorable Mention Award
+                                </span>
+                              )}
+                              {pub.award.bestPaper && (
+                                <span className="best-paper">
+                                  <FaTrophy style={{ marginRight: 4 }} /> Best
+                                  Paper Award
                                 </span>
                               )}
                             </div>

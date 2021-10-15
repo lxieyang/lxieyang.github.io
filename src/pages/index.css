@@ -86,11 +86,14 @@
 }
 
 .news-date {
-  color: #fff;
-  background-color: rgba(193, 0, 15, 1);
+  /* color: #fff; */
+  /* background-color: rgba(193, 0, 15, 1); */
+  color: #999;
   border-radius: 10px;
   padding: 2px 4px;
-  font-size: 0.8rem;
+  /* padding-left: 0px; */
+  font-size: 0.9rem;
+  font-style: italic;
 }
 
 .data.pub-element {
@@ -112,15 +115,26 @@
   align-items: center;
 }
 
+.news-badge span,
 .awards.pub-element span {
   margin: 0px 3px;
   padding: 2px 6px;
   border-radius: 10px;
-  background-color: rgba(193, 0, 15, 0.8);
-  color: white;
   font-size: 0.9rem;
-  display: flex;
+  display: inline-flex;
   align-items: center;
+}
+
+.news-badge span.honorable,
+.awards.pub-element span.honorable {
+  background-color: rgb(255, 115, 0);
+  color: #fff;
+}
+
+.news-badge span.best-paper,
+.awards.pub-element span.best-paper {
+  background-color: rgba(193, 0, 15, 0.8);
+  color: #fff;
 }
 
 .awards.pub-element span:first-child {
