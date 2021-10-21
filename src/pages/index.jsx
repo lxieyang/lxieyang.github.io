@@ -190,9 +190,37 @@ const IndexPage = ({ data }) => (
               </div>
               <div>
                 <img
+                  alt="chrome-store-version"
+                  src={
+                    'https://img.shields.io/chrome-web-store/v/pddljdmihkpdfpkgmbhdomeeifpklgnm'
+                  }
+                />
+                &nbsp; &nbsp;
+                <img
                   alt="user-count"
                   src={
                     'https://img.shields.io/chrome-web-store/users/pddljdmihkpdfpkgmbhdomeeifpklgnm'
+                  }
+                />
+                &nbsp; &nbsp;
+                {/* <img
+                  alt="master-branch-version"
+                  src={
+                    'https://img.shields.io/github/package-json/v/lxieyang/vertical-tabs-chrome-extension/master'
+                  }
+                />
+                &nbsp; &nbsp; */}
+                <img
+                  alt="last-commit"
+                  src={
+                    'https://img.shields.io/github/last-commit/lxieyang/vertical-tabs-chrome-extension'
+                  }
+                />
+                &nbsp; &nbsp;
+                <img
+                  alt="star-count"
+                  src={
+                    'https://img.shields.io/github/stars/lxieyang/vertical-tabs-chrome-extension?style=social'
                   }
                 />
                 &nbsp; &nbsp;
@@ -220,13 +248,6 @@ const IndexPage = ({ data }) => (
               </div>
               <div>
                 <img
-                  alt="star-count"
-                  src={
-                    'https://img.shields.io/github/stars/lxieyang/chrome-extension-boilerplate-react?style=social'
-                  }
-                />
-                &nbsp; &nbsp;
-                <img
                   alt="fork-count"
                   src={
                     'https://img.shields.io/github/forks/lxieyang/chrome-extension-boilerplate-react'
@@ -251,6 +272,13 @@ const IndexPage = ({ data }) => (
                   alt="npm-download-month"
                   src={
                     'https://img.shields.io/npm/dm/chrome-extension-boilerplate-react'
+                  }
+                />
+                &nbsp; &nbsp;
+                <img
+                  alt="star-count"
+                  src={
+                    'https://img.shields.io/github/stars/lxieyang/chrome-extension-boilerplate-react?style=social'
                   }
                 />
                 &nbsp; &nbsp;
