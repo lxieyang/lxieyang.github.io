@@ -90,23 +90,14 @@ const IndexPage = ({ data }) => (
           </Row>
           <hr />
           <p className="self-identify-paragraph">
-            I am a {ordinal(1 + moment().diff(moment([2017, 8]), 'years'))} year
-            Ph.D. student at{' '}
+            Michael Xieyang Liu is a{' '}
+            {ordinal(1 + moment().diff(moment([2017, 8]), 'years'))} year Ph.D.
+            student at{' '}
             <a href="http://www.hcii.cmu.edu">
               Human-Computer Interaction Institute
             </a>{' '}
-            @ <a href="http://www.cmu.edu">Carnegie Mellon University</a>.{' '}
-            <br />
-          </p>
-          <p>
-            My current research interests include{' '}
-            <strong>human-computer interaction</strong>,{' '}
-            <strong>programming support tools</strong>,{' '}
-            <strong>sensemaking</strong>, <strong>end-user programming</strong>,{' '}
-            <strong>intelligent user interfaces</strong>.{' '}
-          </p>
-          <p>
-            My advisors are{' '}
+            @ <a href="http://www.cmu.edu">Carnegie Mellon University</a>, where
+            he is advised by{' '}
             <a href="http://www.cs.cmu.edu/~bam/" id="brad-myers">
               Dr. Brad A. Myers
             </a>{' '}
@@ -114,7 +105,23 @@ const IndexPage = ({ data }) => (
             <a href="http://kittur.org/" id="niki-kittur">
               Dr. Niki Kittur
             </a>
-            . My work is supported by the{' '}
+            . <br />
+          </p>
+          <p>
+            His current research interests include{' '}
+            <strong>human-computer interaction</strong>,{' '}
+            <strong>programming support tools</strong>,{' '}
+            <strong>sensemaking</strong>, <strong>end-user programming</strong>,{' '}
+            <strong>intelligent user interfaces</strong>.{' '}
+          </p>
+          <p>
+            He publishes at premier HCI academic venues such as UIST and CSCW,
+            including two award-winning papers: a <strong>best paper</strong> at
+            CSCW 2021 and a <strong>best paper honorable mention</strong> paper
+            at UIST 2019.
+          </p>
+          <p>
+            His work is supported by the{' '}
             <a href="https://www.nsf.gov/awardsearch/showAward?AWD_ID=1814826">
               National Science Foundation (NSF)
             </a>
@@ -129,7 +136,7 @@ const IndexPage = ({ data }) => (
           </p>
           <hr />
           <p>
-            I obtained my dual B.S. degrees at{' '}
+            He obtained his dual B.S. degrees at{' '}
             <a href="https://www.umich.edu">
               University of Michigan, Ann Arbor
             </a>{' '}
@@ -150,7 +157,7 @@ const IndexPage = ({ data }) => (
             <Col sm="12">
               <span className="contact-name">Curriculum Vitae: [</span>
               <a href={CVPath}>pdf</a>
-              <span className="contact-name">]</span> (Sept 2021)
+              <span className="contact-name">]</span> (Oct 2021)
               <br />
               <span className="contact-name">Google Scholar Profile: </span>
               <a

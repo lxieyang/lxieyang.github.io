@@ -23,7 +23,7 @@ const AboutPage = () => (
           <a className="anchor" name="bio" />
           <h2>Bio.</h2>
           <p>
-            <strong>Michael Xieyang Liu</strong> is a 3rd year Ph.D. student at{' '}
+            <strong>Michael Xieyang Liu</strong> is a 5th year Ph.D. student at{' '}
             <a href="http://www.hcii.cmu.edu">
               Human Computer Interaction Institute
             </a>{' '}
@@ -36,11 +36,16 @@ const AboutPage = () => (
             <a href="http://kittur.org/" id="niki-kittur">
               Dr. Niki Kittur
             </a>
-            . Michael's current research interests include human-computer
-            interaction, hybrid intelligent systems, user interface development,
-            and sensemaking. He obtained his two B.S. degrees at University of
-            Michigan and Shanghai Jiao Tong University. He worked as an
-            undergraduate researcher
+            . His current research interests include{' '}
+            <strong>human-computer interaction</strong>,{' '}
+            <strong>hybrid intelligent systems</strong>,{' '}
+            <strong>user interface development</strong>, and{' '}
+            <strong>sensemaking</strong>. He publishes at premier HCI academic
+            venues such as UIST and CSCW, including two award-winning papers: a{' '}
+            <strong>best paper</strong> at CSCW 2021 and a{' '}
+            <strong>best paper honorable mention</strong> paper at UIST 2019. He
+            obtained his two B.S. degrees at University of Michigan and Shanghai
+            Jiao Tong University. He worked as an undergraduate researcher
             {/* with <a href="https://web.eecs.umich.edu/~wlasecki/" id="walter-lasecki">
               Dr. Walter S. Lasecki
             </a>{' '} */}
