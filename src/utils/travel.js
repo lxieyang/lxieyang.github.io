@@ -1,5 +1,11 @@
 export default [
   {
+    date: 'November 9, 2021',
+    location: 'Pittsburgh, PA, USA',
+    event: 'PLATEAU 2021',
+    url: 'https://2021.plateau-workshop.org/',
+  },
+  {
     date: 'October 2021',
     location: 'Virtual',
     event: 'CSCW 2021',
