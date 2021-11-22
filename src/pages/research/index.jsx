@@ -116,6 +116,8 @@ class ResearchPage extends Component {
       },
     ];
 
+    console.log(pubsInfo[0]);
+
     return (
       <Layout pathName="Research">
         <a href="#research"></a>

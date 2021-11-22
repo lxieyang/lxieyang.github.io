@@ -6,6 +6,36 @@ export default [
   {
     content: (
       <Fragment>
+        Our two full papers{' '}
+        <span className="paper-title">
+          {/* <a href={`#`} target="_blank" rel="noopener noreferrer"> */}
+          Crystalline: Lowering the Cost for Developers to Collect and Organize
+          Information for Decision Making
+          {/* </a> */}
+        </span>{' '}
+        and{' '}
+        <span className="paper-title">
+          {/* <a href={`#`} target="_blank" rel="noopener noreferrer"> */}
+          Understanding How Programmers Can Use Annotations on Documentation
+          {/* </a> */}
+        </span>{' '}
+        are conditionally accepted to{' '}
+        <a
+          href="https://chi2022.acm.org/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          CHI 2022
+        </a>
+        ! .
+      </Fragment>
+    ),
+    date: new Date('2021-11-19'),
+    shouldDisplay: true,
+  },
+  {
+    content: (
+      <Fragment>
         Our full paper{' '}
         <span className="paper-title">
           <a

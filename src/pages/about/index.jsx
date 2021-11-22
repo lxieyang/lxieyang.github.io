@@ -41,8 +41,8 @@ const AboutPage = () => (
             <strong>hybrid intelligent systems</strong>,{' '}
             <strong>user interface development</strong>, and{' '}
             <strong>sensemaking</strong>. He publishes at premier HCI academic
-            venues such as UIST and CSCW, including two award-winning papers: a{' '}
-            <strong>best paper</strong> at CSCW 2021 and a{' '}
+            venues such as CHI, UIST, and CSCW, including two award-winning
+            papers: a <strong>best paper</strong> at CSCW 2021 and a{' '}
             <strong>best paper honorable mention</strong> paper at UIST 2019. He
             obtained his two B.S. degrees at University of Michigan and Shanghai
             Jiao Tong University. He worked as an undergraduate researcher
@@ -92,6 +92,17 @@ const AboutPage = () => (
                   </a>
                 </td>
               </tr>
+              <tr>
+                <td>08/2017 - 12/2021</td>
+                <td>
+                  <strong>Carnegie Mellon University</strong>, Pittsburgh, PA
+                </td>
+              </tr>
+              <tr>
+                <td />
+                <td>M.S. in Human Computer Interaction</td>
+              </tr>
+
               <tr>
                 <td>09/2015 - 04/2017</td>
                 <td>

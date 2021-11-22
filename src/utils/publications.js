@@ -6,6 +6,8 @@ import av_annoPreviewImgLink from '../assets/files/pubs/av_anno/av_anno.png';
 import unakite_uist_2019PreviewImgLink from '../assets/files/pubs/unakite-uist-2019/unakite-uist-2019.png';
 import strata_cscw_2021PreviewImgLink from '../assets/files/pubs/strata-cscw-2021/strata-cscw-2021.jpg';
 import tabsdo_uist_2021PreviewImgLink from '../assets/files/pubs/tabsdo-uist-2021/tabsdo-uist-2021.jpg';
+import crystalline_chi_2022PreviewImgLink from '../assets/files/pubs/crystalline-chi-2022/crystalline-chi-2022.png';
+import adamite_chi_2022PreviewImgLink from '../assets/files/pubs/adamite-chi-2022/adamite-chi-2022.png';
 import { filePathPrefix } from './constants';
 
 export const pubFilePathPrefix = filePathPrefix + `/pubs`;
@@ -395,6 +397,100 @@ export const publicationsData = {
         bestPaper: true,
       },
       conferenceTalkVideo: 'https://youtu.be/NuL-jtf710E',
+    },
+
+    // Crystalline: Lowering the Cost for Developers to Collect and Organize Information for Decision Making - CHI 2022
+    {
+      title:
+        'Understanding How Programmers Can Use Annotations on Documentation',
+      type: 'conference',
+      conference: 'CHI',
+      conferenceFullName:
+        'ACM CHI Conference on Human Factors in Computing Systems (CHI)',
+      conferenceTag: 'CHI 2022',
+      year: 2022,
+      month: 4,
+      authors: [
+        {
+          name: 'Amber Horvath',
+          bold: false,
+        },
+        {
+          name: 'Michael Xieyang Liu',
+          bold: true,
+        },
+        {
+          name: 'River Hendriksen',
+          bold: false,
+        },
+        {
+          name: 'Connor Shannon',
+          bold: false,
+        },
+        {
+          name: 'Emma Paterson',
+          bold: false,
+        },
+        {
+          name: 'Kazi Jawad',
+          bold: false,
+        },
+        {
+          name: 'Andrew Macvean',
+          bold: false,
+        },
+        {
+          name: 'Brad A. Myers',
+          bold: false,
+        },
+      ],
+      abstract: 'Coming soon...',
+      codename: 'adamite-chi-2022',
+      bibtex: ``,
+      previewImgLink: adamite_chi_2022PreviewImgLink,
+      shouldShowLocalPaperLink: false,
+      // doi: 'https://doi.org/10.1145/3449240',
+      // acmdl: 'https://doi.org/10.1145/3449240',
+      // arxiv: 'https://arxiv.org/abs/2102.06231',
+      acmdl_available: false,
+      // conferenceTalkVideo: 'https://youtu.be/NuL-jtf710E',
+    },
+
+    // Crystalline: Lowering the Cost for Developers to Collect and Organize Information for Decision Making - CHI 2022
+    {
+      title:
+        'Crystalline: Lowering the Cost for Developers to Collect and Organize Information for Decision Making',
+      type: 'conference',
+      conference: 'CHI',
+      conferenceFullName:
+        'ACM CHI Conference on Human Factors in Computing Systems (CHI)',
+      conferenceTag: 'CHI 2022',
+      year: 2022,
+      month: 4,
+      authors: [
+        {
+          name: 'Michael Xieyang Liu',
+          bold: true,
+        },
+        {
+          name: 'Aniket Kittur',
+          bold: false,
+        },
+        {
+          name: 'Brad A. Myers',
+          bold: false,
+        },
+      ],
+      abstract: 'Coming soon...',
+      codename: 'crystalline-chi-2022',
+      bibtex: ``,
+      previewImgLink: crystalline_chi_2022PreviewImgLink,
+      shouldShowLocalPaperLink: false,
+      // doi: 'https://doi.org/10.1145/3449240',
+      // acmdl: 'https://doi.org/10.1145/3449240',
+      // arxiv: 'https://arxiv.org/abs/2102.06231',
+      acmdl_available: false,
+      // conferenceTalkVideo: 'https://youtu.be/NuL-jtf710E',
     },
   ],
 };

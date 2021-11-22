@@ -133,10 +133,10 @@ const IndexPage = ({ data }) => (
             <strong>intelligent user interfaces</strong>.{' '}
           </p>
           <p>
-            He publishes at premier HCI academic venues such as UIST and CSCW,
-            including two award-winning papers: a <strong>best paper</strong> at
-            CSCW 2021 and a <strong>best paper honorable mention</strong> paper
-            at UIST 2019.
+            He publishes at premier HCI academic venues such as CHI, UIST, and
+            CSCW, including two award-winning papers: a{' '}
+            <strong>best paper</strong> at CSCW 2021 and a{' '}
+            <strong>best paper honorable mention</strong> paper at UIST 2019.
           </p>
           <p>
             His work is supported by the{' '}

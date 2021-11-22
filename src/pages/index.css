@@ -99,9 +99,11 @@
 .data.pub-element {
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 .data.pub-element span {
+  flex-shrink: 0;
   margin: 0px 6px;
   display: inline-block;
 }
