@@ -23,6 +23,7 @@ import DocumentIcon from '../../images/document-icon.png';
 import ArxivIcon from '../../images/arxiv.jpg';
 import PosterIcon from '../../images/poster-icon.png';
 import IEEEIcon from '../../images/ieee-icon.png';
+import CMUSCSIcon from '../../images/cmu-scs-logo.png';
 
 import { FaAward, FaTrophy } from 'react-icons/fa';
 
@@ -419,6 +420,30 @@ class ResearchPage extends Component {
                                 </a>
                               </span>
                             )}
+                            {pub.cmuSCSMedia !== undefined && (
+                              <span>
+                                <a
+                                  href={pub.cmuSCSMedia}
+                                  target="_blank"
+                                  rel="noopener noreferrer"
+                                  style={{
+                                    display: 'flex',
+                                    alignItems: 'center',
+                                  }}
+                                >
+                                  <img
+                                    src={CMUSCSIcon}
+                                    alt="video"
+                                    style={{
+                                      marginRight: 3,
+                                      width: 20,
+                                      height: 20,
+                                    }}
+                                  />
+                                  CMU SCS News
+                                </a>
+                              </span>
+                            )}
                           </div>
                           {/*
                             <div className="pub-element">
@@ -430,7 +455,8 @@ class ResearchPage extends Component {
                             </div>
                             */}
                           <UncontrolledCollapse
-                            defaultOpen={!mobile()}
+                            // defaultOpen={!mobile()}
+                            defaultOpen={false}
                             toggler={`#${pub.codename}-abstract`}
                             className="paper-abstract publication-collapse"
                           >
@@ -446,7 +472,7 @@ class ResearchPage extends Component {
           })}
         </PublicationContainer>
 
-        <a href="#projects"> </a>
+        {/* <a href="#projects"> </a>
         <h1>Projects</h1>
 
         <PublicationContainer>
@@ -535,7 +561,7 @@ class ResearchPage extends Component {
               </Col>
             </Row>
           </PubCategoryContainer>
-        </PublicationContainer>
+        </PublicationContainer> */}
       </Layout>
     );
   }

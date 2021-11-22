@@ -35,7 +35,15 @@ export default [
         <a href={`${pubFilePathPrefix}/strata-cscw-2021/strata-cscw-2021.pdf`}>
           here
         </a>
-        !
+        ! Also check out this piece of{' '}
+        <a
+          href={`https://www.cs.cmu.edu/news/2021/reuse-content-tool`}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          news ccoverage
+        </a>{' '}
+        from CMU SCS!
       </Fragment>
     ),
     date: new Date('2021-10-15'),

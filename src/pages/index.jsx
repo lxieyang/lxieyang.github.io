@@ -51,10 +51,15 @@ const IndexPage = ({ data }) => (
 
       <Col md="8">
         <div className="homepage-word-section">
-          <h1>
-            {data.site.siteMetadata.nameEnglish}{' '}
+          <h1
+            style={{
+              display: 'flex',
+              alignItems: 'center',
+            }}
+          >
+            {data.site.siteMetadata.nameEnglish} &nbsp;
             <span className="d-none d-sm-none d-md-none d-lg-inline">
-              ({data.site.siteMetadata.nameChinese}) &nbsp;
+              {/* ({data.site.siteMetadata.nameChinese}) &nbsp; */}
               <img
                 src={CMUAvatar}
                 width="30"

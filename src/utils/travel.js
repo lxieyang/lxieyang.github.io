@@ -1,5 +1,11 @@
 export default [
   {
+    date: 'April 30, 2022',
+    location: 'New Orleans, LA, US',
+    event: 'CHI 2022',
+    url: 'https://chi2022.acm.org/',
+  },
+  {
     date: 'November 9, 2021',
     location: 'Pittsburgh, PA, USA',
     event: 'PLATEAU 2021',

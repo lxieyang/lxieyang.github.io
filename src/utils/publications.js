@@ -306,47 +306,6 @@ export const publicationsData = {
       conferenceTalkVideo: 'https://youtu.be/UMQ-kWgmbQ4',
     },
 
-    // To Reuse or Not To Reuse? A Framework and System for Evaluating Summarized Knowledge - CSCW 2021
-    {
-      title:
-        'To Reuse or Not To Reuse? A Framework and System for Evaluating Summarized Knowledge',
-      type: 'conference',
-      conference: 'CSCW',
-      conferenceFullName:
-        'ACM Conference on Computer Supported Cooperative Work and Social Computing (CSCW)',
-      conferenceTag: 'CSCW 2021',
-      year: 2021,
-      month: 10,
-      authors: [
-        {
-          name: 'Michael Xieyang Liu',
-          bold: true,
-        },
-        {
-          name: 'Aniket Kittur',
-          bold: false,
-        },
-        {
-          name: 'Brad A. Myers',
-          bold: false,
-        },
-      ],
-      abstract:
-        "As the amount of information online continues to grow, a correspondingly important opportunity is for individuals to reuse knowledge which has been summarized by others rather than starting from scratch. However, appropriate reuse requires judging the relevance, trustworthiness, and thoroughness of others' knowledge in relation to an individual's goals and context. In this work, we explore augmenting judgements of the appropriateness of reusing knowledge in the domain of programming, specifically of reusing artifacts that result from other developers' searching and decision making. Through an analysis of prior research on sensemaking and trust, along with new interviews with developers, we synthesized a framework for reuse judgements. The interviews also validated that developers express a desire for help with judging whether to reuse an existing decision. From this framework, we developed a set of techniques for capturing the initial decision maker's behavior and visualizing signals calculated based on the behavior, to facilitate subsequent consumers' reuse decisions, instantiated in a prototype system called Strata. Results of a user study suggest that the system significantly improves the accuracy, depth, and speed of reusing decisions. These results have implications for systems involving user-generated content in which other users need to evaluate the relevance and trustworthiness of that content.",
-      codename: 'strata-cscw-2021',
-      bibtex: ``,
-      previewImgLink: strata_cscw_2021PreviewImgLink,
-      shouldShowLocalPaperLink: true,
-      doi: 'https://doi.org/10.1145/3449240',
-      acmdl: 'https://doi.org/10.1145/3449240',
-      arxiv: 'https://arxiv.org/abs/2102.06231',
-      acmdl_available: true,
-      award: {
-        bestPaper: true,
-      },
-      conferenceTalkVideo: 'https://youtu.be/NuL-jtf710E',
-    },
-
     // Tabs.do: Task-Centric Browser Tab Management - UIST 2021
     {
       title: 'Tabs.do: Task-Centric Browser Tab Management',
@@ -394,6 +353,48 @@ export const publicationsData = {
       award: {
         honorableMention: false,
       },
+    },
+
+    // To Reuse or Not To Reuse? A Framework and System for Evaluating Summarized Knowledge - CSCW 2021
+    {
+      title:
+        'To Reuse or Not To Reuse? A Framework and System for Evaluating Summarized Knowledge',
+      type: 'conference',
+      conference: 'CSCW',
+      conferenceFullName:
+        'ACM Conference on Computer Supported Cooperative Work and Social Computing (CSCW)',
+      conferenceTag: 'CSCW 2021',
+      year: 2021,
+      month: 10,
+      authors: [
+        {
+          name: 'Michael Xieyang Liu',
+          bold: true,
+        },
+        {
+          name: 'Aniket Kittur',
+          bold: false,
+        },
+        {
+          name: 'Brad A. Myers',
+          bold: false,
+        },
+      ],
+      abstract:
+        "As the amount of information online continues to grow, a correspondingly important opportunity is for individuals to reuse knowledge which has been summarized by others rather than starting from scratch. However, appropriate reuse requires judging the relevance, trustworthiness, and thoroughness of others' knowledge in relation to an individual's goals and context. In this work, we explore augmenting judgements of the appropriateness of reusing knowledge in the domain of programming, specifically of reusing artifacts that result from other developers' searching and decision making. Through an analysis of prior research on sensemaking and trust, along with new interviews with developers, we synthesized a framework for reuse judgements. The interviews also validated that developers express a desire for help with judging whether to reuse an existing decision. From this framework, we developed a set of techniques for capturing the initial decision maker's behavior and visualizing signals calculated based on the behavior, to facilitate subsequent consumers' reuse decisions, instantiated in a prototype system called Strata. Results of a user study suggest that the system significantly improves the accuracy, depth, and speed of reusing decisions. These results have implications for systems involving user-generated content in which other users need to evaluate the relevance and trustworthiness of that content.",
+      codename: 'strata-cscw-2021',
+      bibtex: ``,
+      previewImgLink: strata_cscw_2021PreviewImgLink,
+      shouldShowLocalPaperLink: true,
+      doi: 'https://doi.org/10.1145/3449240',
+      acmdl: 'https://doi.org/10.1145/3449240',
+      arxiv: 'https://arxiv.org/abs/2102.06231',
+      cmuSCSMedia: 'https://www.cs.cmu.edu/news/2021/reuse-content-tool',
+      acmdl_available: true,
+      award: {
+        bestPaper: true,
+      },
+      conferenceTalkVideo: 'https://youtu.be/NuL-jtf710E',
     },
   ],
 };
