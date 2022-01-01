@@ -38,9 +38,9 @@ const IndexPage = ({ data }) => (
               style={{ maxWidth: '100%', maxHeight: '100%' }}
             />
             <br />
-            <div className="image-watermark-top-left">The Selfie (2019)</div>
+            <div className="image-watermark-top-left">Dec. 2021</div>
             <div className="image-watermark-bottom-right">
-              Great Lakes Science Center, Cleveland, OH
+              Meteor Crater, Winslow, AZ
             </div>
           </div>
           <div className="card-words">
