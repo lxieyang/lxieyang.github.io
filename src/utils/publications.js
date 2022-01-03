@@ -444,7 +444,8 @@ export const publicationsData = {
           bold: false,
         },
       ],
-      abstract: 'Coming soon...',
+      abstract:
+        'Modern software development requires developers to find and effectively utilize new APIs and their documentation, but documentation has many well-known issues. Despite this, developers eventually overcome these issues but have no way of sharing what they learned. We investigate sharing this documentation-specific information through annotations, which have advantages over developer forums as the information is contextualized, not disruptive, and is short, thus easy to author. Developers can also author annotations to support their own comprehension. In order to support the documentation usage behaviors we found, we built the Adamite annotation tool, which provides features such as multiple anchors, annotation types, and pinning. In our user study, we found that developers are able to create annotations that are useful to themselves and are able to utilize annotations created by other developers when learning a new API, with readers of the annotations completing 67% more of the task, on average, than the baseline.',
       codename: 'adamite-chi-2022',
       bibtex: ``,
       previewImgLink: adamite_chi_2022PreviewImgLink,
@@ -481,7 +482,8 @@ export const publicationsData = {
           bold: false,
         },
       ],
-      abstract: 'Coming soon...',
+      abstract:
+        'Developers perform online sensemaking on a daily basis, such as researching and choosing libraries and APIs. Prior research has introduced tools that help developers capture information from various sources and organize it into structures useful for subsequent decision-making. However, it remains a laborious process for developers to manually identify and clip content, maintaining its provenance and synthesizing it with other content. In this work, we introduce a new system called Crystalline that attempts to automatically collect and organize information into tabular structures as the user searches and browses the web. It leverages natural language processing to automatically group similar criteria together to reduce clutter as well as passive behavioral signals such as mouse movement and dwell time to infer what information to collect and how to visualize and prioritize it. Our user study suggests that developers are able to create comparison tables about 20% faster with a 60% reduction in operational cost without sacrificing the quality of the tables.',
       codename: 'crystalline-chi-2022',
       bibtex: ``,
       previewImgLink: crystalline_chi_2022PreviewImgLink,
