@@ -93,7 +93,7 @@ const IndexPage = ({ data }) => (
               </p>
             </Col>
           </Row>
-          <Row>
+          {/* <Row>
             <Col
               style={{
                 background: 'rgba(193, 0, 15, 1)',
@@ -105,7 +105,7 @@ const IndexPage = ({ data }) => (
             >
               📢 I am on the market for a summer 2022 internship :-)
             </Col>
-          </Row>
+          </Row> */}
           <hr />
           <p className="self-identify-paragraph">
             Michael Xieyang Liu is a{' '}
