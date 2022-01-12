@@ -399,7 +399,7 @@ export const publicationsData = {
       conferenceTalkVideo: 'https://youtu.be/NuL-jtf710E',
     },
 
-    // Crystalline: Lowering the Cost for Developers to Collect and Organize Information for Decision Making - CHI 2022
+    // Understanding How Programmers Can Use Annotations on Documentation - CHI 2022
     {
       title:
         'Understanding How Programmers Can Use Annotations on Documentation',
@@ -449,9 +449,9 @@ export const publicationsData = {
       codename: 'adamite-chi-2022',
       bibtex: ``,
       previewImgLink: adamite_chi_2022PreviewImgLink,
-      shouldShowLocalPaperLink: false,
-      // doi: 'https://doi.org/10.1145/3449240',
-      // acmdl: 'https://doi.org/10.1145/3449240',
+      shouldShowLocalPaperLink: true,
+      // doi: 'https://doi.org/10.1145/3491102.3502095',
+      // acmdl: 'https://doi.org/10.1145/3491102.3502095',
       // arxiv: 'https://arxiv.org/abs/2102.06231',
       acmdl_available: false,
       // conferenceTalkVideo: 'https://youtu.be/NuL-jtf710E',
@@ -487,10 +487,9 @@ export const publicationsData = {
       codename: 'crystalline-chi-2022',
       bibtex: ``,
       previewImgLink: crystalline_chi_2022PreviewImgLink,
-      shouldShowLocalPaperLink: false,
-      // doi: 'https://doi.org/10.1145/3449240',
-      // acmdl: 'https://doi.org/10.1145/3449240',
-      // arxiv: 'https://arxiv.org/abs/2102.06231',
+      shouldShowLocalPaperLink: true,
+      // doi: 'https://doi.org/10.1145/3491102.3501968',
+      // acmdl: 'https://doi.org/10.1145/3491102.3501968',
       acmdl_available: false,
       // conferenceTalkVideo: 'https://youtu.be/NuL-jtf710E',
     },
