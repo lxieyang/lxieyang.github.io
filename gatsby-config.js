@@ -9,7 +9,7 @@ module.exports = {
       github: 'https://github.com/lxieyang',
       facebook: 'https://www.facebook.com/profile.php?id=100000519299083',
       instagram: 'https://www.instagram.com/xieyangl/',
-      twitter: 'https://twitter.com/TerminatorET',
+      twitter: 'https://twitter.com/lxieyang',
     },
   },
   plugins: [
