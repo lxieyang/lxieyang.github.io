@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkmichael_personal_website=self.webpackChunkmichael_personal_website||[]).push([[246],{1008:function(e,n,t){t.r(n);var l=t(7294),a=t(5153);n.default=function(e){return l.createElement(a.Z,{pathName:"Experiences"},l.createElement("h1",null,"Experiences"),l.createElement("h4",null,"Coming soon!"))}}}]);
+//# sourceMappingURL=component---src-pages-experiences-index-jsx-98d2aee6c50666f8bcbf.js.map
