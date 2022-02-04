@@ -355,6 +355,7 @@ export const publicationsData = {
       award: {
         honorableMention: false,
       },
+      conferenceTalkVideo: 'https://youtu.be/UrXMVkqfYbg',
     },
 
     // To Reuse or Not To Reuse? A Framework and System for Evaluating Summarized Knowledge - CSCW 2021
@@ -491,7 +492,7 @@ export const publicationsData = {
       // doi: 'https://doi.org/10.1145/3491102.3501968',
       // acmdl: 'https://doi.org/10.1145/3491102.3501968',
       acmdl_available: false,
-      // conferenceTalkVideo: 'https://youtu.be/NuL-jtf710E',
+      conferenceTalkVideo: 'https://youtu.be/VO-osTVGuJs',
     },
   ],
 };
