@@ -15,7 +15,7 @@ const ContactInfo = () => (
       target="_blank"
       rel="noopener noreferrer"
     >
-      Newell-Simon Hall 4405
+      Newell-Simon Hall 4505
     </a>{' '}
     <br />
     <strong>Email:</strong> <Email /> <br />
