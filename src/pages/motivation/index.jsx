@@ -1,5 +1,6 @@
 import React from 'react';
-import { Container, Row, Column } from 'reactstrap';
+import Helmet from 'react-helmet';
+import { Container } from 'reactstrap';
 
 import SeattleImg from '../../images/motivation/seattle.jpg';
 import ModelYImg from '../../images/motivation/model-y.jpg';
@@ -8,8 +9,9 @@ import SolarHouseImg from '../../images/motivation/solar-house.jpg';
 
 import './index.css';
 
-const Motivation = (props) => (
+const Motivation = () => (
   <div className="PageContainer">
+    <Helmet title={'Motivation'}></Helmet>
     <div className="Background">
       <div className="BgImage">
         <img src={SeattleImg} alt="Seattle" />
@@ -22,6 +24,13 @@ const Motivation = (props) => (
       </div>
       <div className="BgImage">
         <img src={SolarHouseImg} alt="Solar house" />
+      </div>
+    </div>
+
+    <div className="Foreground">
+      <div className="Banner">
+        Go back to work. <br />
+        Now.
       </div>
     </div>
   </div>
