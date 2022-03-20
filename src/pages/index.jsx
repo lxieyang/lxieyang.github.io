@@ -23,6 +23,7 @@ import { CVPath } from '../utils/constants';
 
 import NewsList from '../utils/news';
 import TravelList from '../utils/travel';
+import Publication from '../components/Content/Publications/Publications';
 
 import './index.css';
 
@@ -407,6 +408,12 @@ const IndexPage = ({ data }) => (
         })}
       </Col>
     </Row>
+
+    <br />
+    <hr />
+    <br />
+
+    <Publication />
   </Layout>
 );
 

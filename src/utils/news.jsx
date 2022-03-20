@@ -238,7 +238,7 @@ export default [
       </Fragment>
     ),
     date: new Date('2019-08-20'),
-    shouldDisplay: true,
+    shouldDisplay: false,
   },
   {
     content: (
@@ -314,7 +314,7 @@ export default [
       </Fragment>
     ),
     date: new Date('2019-04-01'),
-    shouldDisplay: true,
+    shouldDisplay: false,
   },
   {
     content: (
@@ -342,7 +342,7 @@ export default [
       </Fragment>
     ),
     date: new Date('2019-03-01'),
-    shouldDisplay: true,
+    shouldDisplay: false,
   },
   {
     content: (
@@ -387,7 +387,7 @@ export default [
       </Fragment>
     ),
     date: new Date('2018-10-01'),
-    shouldDisplay: true,
+    shouldDisplay: false,
   },
   {
     content: (
@@ -421,7 +421,7 @@ export default [
       </Fragment>
     ),
     date: new Date('2018-06-12'),
-    shouldDisplay: true,
+    shouldDisplay: false,
   },
   {
     content: (
@@ -443,7 +443,7 @@ export default [
       </Fragment>
     ),
     date: new Date('2018-05-09'),
-    shouldDisplay: true,
+    shouldDisplay: false,
   },
   {
     content: (
@@ -470,7 +470,7 @@ export default [
       </Fragment>
     ),
     date: new Date('2018-03-01'),
-    shouldDisplay: true,
+    shouldDisplay: false,
   },
   {
     content: (

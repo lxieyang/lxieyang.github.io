@@ -134,7 +134,7 @@ class Header extends Component {
                 <ListLink route={appRoutes.research} routeName={'Research'} />
                 {/*<ListLink route={appRoutes.experiences} routeName={'Experiences'}/>*/}
                 {/* <ListLink route={appRoutes.blogs} routeName={'Blogs'} /> */}
-                <ListLink route={appRoutes.about} routeName={'About'} />
+                {/* <ListLink route={appRoutes.about} routeName={'About'} /> */}
                 <ListLink
                   isPurelink={true}
                   route={CVPath}
