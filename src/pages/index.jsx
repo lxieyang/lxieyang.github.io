@@ -14,6 +14,9 @@ import ContactInfo from '../components/UI/ContactInfo/ContactInfo';
 import ProfileImg from '../images/lxieyang-avatar.jpg';
 import CMUAvatar from '../images/cmu.png';
 import HCIIAvatar from '../images/hcii-logo-big.jpg';
+import CMULogo from '../images/cmu-logo.png';
+import CMUTextLogo from '../images/cmu-text-logo-transparent.png';
+import HCIITextLogo from '../images/hcii-text-logo.png';
 import HeadshotTooltip from '../components/UI/HeadshotTooltip/HeadshotTooltip';
 import BradImg from '../images/people/bradmyers.jpg';
 import NikiImg from '../images/people/nikikittur.jpg';
@@ -30,29 +33,65 @@ import './index.css';
 const IndexPage = ({ data }) => (
   <Layout>
     <Row>
-      <Col md="4" className="d-none d-sm-none d-md-block d-lg-block">
-        <div className="homepage-avatar-section">
-          <div className="watermark-image-display-container">
-            <img
-              src={ProfileImg}
-              alt="profile"
-              style={{ maxWidth: '100%', maxHeight: '100%' }}
-            />
-            <br />
-            <div className="image-watermark-top-left">Dec. 2021</div>
+      <Col
+        sm="4"
+        md="3"
+        // className="d-none d-sm-none d-md-block d-lg-block"
+      >
+        <div
+          className="homepage-avatar-section sticky-top"
+          style={{ top: '5rem' }}
+        >
+          <Row>
+            <Col xs="4" sm="12">
+              <div className="watermark-image-display-container">
+                <img
+                  src={ProfileImg}
+                  alt="profile"
+                  // style={{ maxWidth: '100%', maxHeight: '100%' }}
+                />
+                <br />
+                {/* <div className="image-watermark-top-left">Dec. 2021</div>
             <div className="image-watermark-bottom-right">
               Meteor Crater, Winslow, AZ
-            </div>
-          </div>
-          <div className="card-words">
-            <ContactInfo />
-          </div>
+            </div> */}
+              </div>
+              <br />
+            </Col>
+
+            <Col xs="8" sm="12">
+              <h5 style={{ display: 'flex', justifyContent: 'flex-start' }}>
+                {data.site.siteMetadata.nameEnglish}
+              </h5>
+
+              <p className="basic-info-text d-none d-sm-none d-md-block d-lg-block">
+                Pronoun: he/him
+              </p>
+              <p className="basic-info-text">Ph.D. student</p>
+              <p className="basic-info-text">
+                <a href="http://www.hcii.cmu.edu">
+                  {' '}
+                  Human-Computer Interaction Institute
+                </a>{' '}
+                <br />
+                <a href="https://www.cs.cmu.edu/">
+                  School of Computer Science
+                </a>{' '}
+                <br />
+                <a href="https://www.cmu.edu/">Carnegie Mellon University</a>
+              </p>
+
+              <div className="d-none d-sm-none d-md-block d-lg-block">
+                <ContactInfo data={data} />
+              </div>
+            </Col>
+          </Row>
         </div>
       </Col>
 
-      <Col md="8">
+      <Col sm="8" md="9">
         <div className="homepage-word-section">
-          <h1
+          {/* <h1
             style={{
               display: 'flex',
               alignItems: 'center',
@@ -60,7 +99,6 @@ const IndexPage = ({ data }) => (
           >
             {data.site.siteMetadata.nameEnglish} &nbsp;
             <span className="d-none d-sm-none d-md-none d-lg-inline">
-              {/* ({data.site.siteMetadata.nameChinese}) &nbsp; */}
               <img
                 src={CMUAvatar}
                 width="30"
@@ -76,8 +114,8 @@ const IndexPage = ({ data }) => (
                 alt="hcii-avatar"
               />
             </span>
-          </h1>
-          <Row>
+          </h1> */}
+          {/* <Row>
             <Col xs="4" sm="4" className="d-sm-block d-md-none">
               <div>
                 <img
@@ -93,7 +131,7 @@ const IndexPage = ({ data }) => (
                 #sensemaking &nbsp; #intelligentUserInterfaces
               </p>
             </Col>
-          </Row>
+          </Row> */}
           {/* <Row>
             <Col
               style={{
@@ -107,8 +145,13 @@ const IndexPage = ({ data }) => (
               📢 I am on the market for a summer 2022 internship :-)
             </Col>
           </Row> */}
-          <hr />
-          <p className="self-identify-paragraph">
+          <div className="header-banner-images-container d-none d-sm-none d-md-block d-lg-block">
+            <img src={CMULogo} alt="cmu" />
+            <img src={CMUTextLogo} alt="cmu" />
+          </div>
+          <br />
+          <h1>About me</h1>
+          <p className="">
             Michael Xieyang Liu is a{' '}
             {ordinal(1 + moment().diff(moment([2017, 8]), 'years'))} year Ph.D.
             student at{' '}
@@ -124,23 +167,32 @@ const IndexPage = ({ data }) => (
             <a href="http://kittur.org/" id="niki-kittur">
               Dr. Niki Kittur
             </a>
-            . <br />
+            . Prior to Ph.D., he received his dual Bachelor’s degrees in
+            Computer Science at{' '}
+            <a href="https://www.umich.edu">
+              University of Michigan, Ann Arbor
+            </a>{' '}
+            and{' '}
+            <a href="http://en.sjtu.edu.cn">Shanghai Jiao Tong University</a>.
           </p>
           <p>
-            His current research interests include{' '}
-            <strong>human-computer interaction</strong>,{' '}
-            <strong>programming support tools</strong>,{' '}
-            <strong>sensemaking</strong>, <strong>end-user programming</strong>,{' '}
-            <strong>intelligent user interfaces</strong>.{' '}
+            He works at the intersection of{' '}
+            <strong>Human-computer Interaction (HCI)</strong>,{' '}
+            <strong>Programming Support Tools</strong>,{' '}
+            <strong>Sensemaking</strong>, <strong>End-user Programming</strong>,
+            and <strong>Intelligent User Interfaces</strong>, where he uses
+            human-centered methods to design, build, and study interactive
+            systems to empower individuals, especially developers, to find,
+            collect, organize, and make sese of information online as well as to
+            keep track of their complex decision making processes so that other
+            individuals could also benefit.
           </p>
           <p>
             He publishes at premier HCI academic venues such as CHI, UIST, and
             CSCW, including two award-winning papers: a{' '}
             <strong>best paper</strong> at CSCW 2021 and a{' '}
             <strong>best paper honorable mention</strong> paper at UIST 2019.
-          </p>
-          <p>
-            His work is supported by the{' '}
+            His work has been generously supported by the{' '}
             <a href="https://www.nsf.gov/awardsearch/showAward?AWD_ID=1814826">
               National Science Foundation (NSF)
             </a>
@@ -153,15 +205,13 @@ const IndexPage = ({ data }) => (
             <HeadshotTooltip target="brad-myers" headshotPath={BradImg} />
             <HeadshotTooltip target="niki-kittur" headshotPath={NikiImg} />
           </p>
+
+          <div className="d-sm-none d-md-none d-lg-none">
+            <ContactInfo data={data} />
+          </div>
           <hr />
-          <p>
-            He obtained his dual B.S. degrees at{' '}
-            <a href="https://www.umich.edu">
-              University of Michigan, Ann Arbor
-            </a>{' '}
-            and{' '}
-            <a href="http://en.sjtu.edu.cn">Shanghai Jiao Tong University</a>.
-            {/* I worked as an undergraduate researcher with{' '}
+          {/* <p>
+            I worked as an undergraduate researcher with{' '}
             <a href="https://web.eecs.umich.edu/~wlasecki/" id="walter-lasecki">
               Dr. Walter S. Lasecki
             </a>{' '}
@@ -170,38 +220,11 @@ const IndexPage = ({ data }) => (
               Crowds + Machines Lab (Croma Lab)
             </a>{' '}
             during my time at Umich.
-            <HeadshotTooltip target="walter-lasecki" headshotPath={WalterImg} /> */}
-          </p>
-          <Row className="contacts">
-            <Col sm="12">
-              <span className="contact-name">Curriculum Vitae: [</span>
-              <a href={CVPath}>pdf</a>
-              <span className="contact-name">]</span> (Nov 2021)
-              <br />
-              <span className="contact-name">Google Scholar Profile: </span>
-              <a
-                href={data.site.siteMetadata.externalLinks.googleScholarProfile}
-              >
-                Michael Xieyang Liu
-              </a>
-              <br />
-              <span className="contact-name">Github: </span>
-              <a href={data.site.siteMetadata.externalLinks.github}>lxieyang</a>
-              <br />
-              {/* <span className="contact-name">Facebook: </span>
-              <a href={data.site.siteMetadata.externalLinks.facebook}>
-                Michael Xieyang Liu
-              </a>
-              <br /> */}
-              {/* <span className="contact-name">Instagram: </span>
-              <a href={data.site.siteMetadata.externalLinks.instagram}>
-                xieyangl
-              </a>
-              <br /> */}
-            </Col>
-          </Row>
-          <hr />
-          Open-source projects:
+            <HeadshotTooltip target="walter-lasecki" headshotPath={WalterImg} />
+          </p> */}
+
+          <h1>Open-source projects</h1>
+
           <ul>
             {/* Vertical Tabs */}
             <li style={{ marginBottom: 8 }}>
@@ -318,55 +341,56 @@ const IndexPage = ({ data }) => (
               </div>
             </li>
           </ul>
-          <div className="d-sm-block d-md-none d-lg-none">
-            <hr />
-            <ContactInfo />
-          </div>
         </div>
-      </Col>
-    </Row>
 
-    <br />
-    <hr />
-    <br />
+        <hr />
+        <br />
 
-    <Row>
-      <Col md="6">
-        <h2>News</h2>
-        <ul style={{ padding: 0, listStyle: 'none' }}>
-          {NewsList.map((newsItem, idx) => {
-            return (
-              <li
-                key={idx}
-                style={{
-                  margin: '16px 0px',
-                }}
-                className={newsItem.shouldDisplay === false ? 'old-news' : null}
-              >
-                {newsItem.date && (
-                  <span
-                    className="news-date"
-                    // style={{
-                    //   fontSize:
-                    //     idx === 0 ? '1rem' : idx <= 2 ? '0.95rem' : null,
-                    //   padding:
-                    //     idx === 0 ? '3px 6px' : idx <= 2 ? '2px 6px' : null,
-                    //   opacity: idx === 0 ? 0.9 : idx <= 2 ? 0.75 : 0.6,
-                    // }}
+        <Row>
+          <Col md="6">
+            <h1>News</h1>
+            <ul
+              style={{
+                padding: 0,
+                listStyle: 'none',
+                // fontSize: '0.9rem'
+              }}
+            >
+              {NewsList.map((newsItem, idx) => {
+                return (
+                  <li
+                    key={idx}
+                    style={{
+                      margin: '16px 0px',
+                    }}
+                    className={
+                      newsItem.shouldDisplay === false ? 'old-news' : null
+                    }
                   >
-                    {moment(newsItem.date).fromNow()}
-                  </span>
-                )}
+                    {newsItem.date && (
+                      <span
+                        className="news-date"
+                        // style={{
+                        //   fontSize:
+                        //     idx === 0 ? '1rem' : idx <= 2 ? '0.95rem' : null,
+                        //   padding:
+                        //     idx === 0 ? '3px 6px' : idx <= 2 ? '2px 6px' : null,
+                        //   opacity: idx === 0 ? 0.9 : idx <= 2 ? 0.75 : 0.6,
+                        // }}
+                      >
+                        {moment(newsItem.date).fromNow()}
+                      </span>
+                    )}
 
-                <p style={{ paddingLeft: 3 }}>{newsItem.content}</p>
-              </li>
-            );
-          })}
-        </ul>
-      </Col>
-      <Col md="6">
-        <h2>Travel</h2>
-        {/* <div
+                    <p style={{ paddingLeft: 3 }}>{newsItem.content}</p>
+                  </li>
+                );
+              })}
+            </ul>
+          </Col>
+          <Col md="6">
+            <h1>Travel</h1>
+            {/* <div
           style={{
             backgroundColor: 'lightgrey',
             padding: '5px',
@@ -378,42 +402,44 @@ const IndexPage = ({ data }) => (
           Due to my Achilles tendon injury in July 2018, my travel plan is
           limited. I'm expected to recover fully in late 2019.
         </div> */}
-        {TravelList.map((travelItem, idx) => {
-          const YearGap = 3.0;
-          let diff =
-            (new Date() - new Date(travelItem.date)) /
-            (YearGap * 365 * 24 * 60 * 60 * 1000);
+            {TravelList.map((travelItem, idx) => {
+              const YearGap = 3.0;
+              let diff =
+                (new Date() - new Date(travelItem.date)) /
+                (YearGap * 365 * 24 * 60 * 60 * 1000);
 
-          return (
-            <div
-              key={idx}
-              className={[
-                'travel',
-                diff <= 0
-                  ? 'travel-upcoming'
-                  : diff <= 1
-                  ? 'travel-past'
-                  : 'travel-old',
-              ].join(' ')}
-            >
-              <Row>
-                <Col>{travelItem.date}</Col>
-                <Col>
-                  <a href={travelItem.url}>{travelItem.event}</a>
-                </Col>
-                <Col>{travelItem.location}</Col>
-              </Row>
-            </div>
-          );
-        })}
+              return (
+                <div
+                  key={idx}
+                  className={[
+                    'travel',
+                    diff <= 0
+                      ? 'travel-upcoming'
+                      : diff <= 1
+                      ? 'travel-past'
+                      : 'travel-old',
+                  ].join(' ')}
+                  // style={{ fontSize: '0.9rem' }}
+                >
+                  <Row>
+                    <Col>{travelItem.date}</Col>
+                    <Col>
+                      <a href={travelItem.url}>{travelItem.event}</a>
+                    </Col>
+                    <Col>{travelItem.location}</Col>
+                  </Row>
+                </div>
+              );
+            })}
+          </Col>
+        </Row>
+        <br />
+        <hr />
+        <br />
+
+        <Publication />
       </Col>
     </Row>
-
-    <br />
-    <hr />
-    <br />
-
-    <Publication />
   </Layout>
 );
 
@@ -429,6 +455,7 @@ export const query = graphql`
           github
           facebook
           instagram
+          twitter
         }
       }
     }

@@ -29,7 +29,7 @@ const Layout = ({ children, data, pathName }) => {
           }
         }
       `}
-      render={data => (
+      render={(data) => (
         <div>
           <Helmet
             title={`${pathName !== undefined ? pathName + ' | ' : ''}${
@@ -38,13 +38,13 @@ const Layout = ({ children, data, pathName }) => {
             meta={[
               {
                 name: 'description',
-                content: "Michael Xieyang Liu's personal website"
+                content: "Michael Xieyang Liu's personal website",
               },
               {
                 name: 'keywords',
                 content:
-                  'Human Computer Interaction, Computer Science, Researcher, Carnegie Mellon University'
-              }
+                  'Human Computer Interaction, Computer Science, Researcher, Carnegie Mellon University',
+              },
             ]}
           >
             <html lang="en" />
@@ -55,7 +55,7 @@ const Layout = ({ children, data, pathName }) => {
           />
           <Container
             style={{
-              paddingTop: '5.0rem'
+              paddingTop: '5.0rem',
             }}
           >
             {children}
@@ -71,7 +71,7 @@ const Layout = ({ children, data, pathName }) => {
 };
 
 Layout.propTypes = {
-  children: PropTypes.node.isRequired
+  children: PropTypes.node.isRequired,
 };
 
 export default Layout;

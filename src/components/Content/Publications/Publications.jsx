@@ -93,8 +93,6 @@ class Publications extends Component {
       },
     ];
 
-    console.log(pubsInfo[0]);
-
     return (
       <React.Fragment>
         <a href="#publications"> </a>

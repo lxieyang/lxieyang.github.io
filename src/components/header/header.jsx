@@ -12,7 +12,7 @@ import {
   NavItem,
 } from 'reactstrap';
 // import HeaderImg from '../../images/lxieyang-avatar-yellowstone.jpg';
-import Favicon from '../../../static/favicon.png';
+import Favicon from '../../../static/cmu-favicon.png';
 
 // https://reach.tech/router/api/Link
 // https://github.com/gatsbyjs/gatsby/issues/7526#issuecomment-414858689

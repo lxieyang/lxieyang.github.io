@@ -1,6 +1,6 @@
 export default [
   {
-    date: 'April 30, 2022',
+    date: 'May 1, 2022',
     location: 'New Orleans, LA, US',
     event: 'CHI 2022',
     url: 'https://chi2022.acm.org/',

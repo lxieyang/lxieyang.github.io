@@ -33,7 +33,7 @@ module.exports = {
         theme_color: '#C1000F',
         orientation: 'portrait',
         display: 'minimal-ui',
-        icon: `${__dirname}/static/favicon.png`,
+        icon: `${__dirname}/static/cmu-favicon.png`,
       },
     },
     'gatsby-plugin-offline',
