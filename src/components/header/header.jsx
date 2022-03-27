@@ -13,6 +13,7 @@ import {
 } from 'reactstrap';
 // import HeaderImg from '../../images/lxieyang-avatar-yellowstone.jpg';
 import Favicon from '../../../static/cmu-favicon.png';
+import ProfileAvatar3 from '../../images/avatar-mid-3.jpg';
 
 // https://reach.tech/router/api/Link
 // https://github.com/gatsbyjs/gatsby/issues/7526#issuecomment-414858689
@@ -100,6 +101,10 @@ class Header extends Component {
   }
 
   render() {
+    console.log(this.props.pathName);
+
+    const { pathName } = this.props;
+    const isHome = pathName === 'Home';
     // active class name
     // https://spectrum.chat/thread/b698900b-cea6-44f8-8f35-d7015365ff18
     // reactstrap navbar
@@ -112,12 +117,15 @@ class Header extends Component {
             <div className="navbarbrand">
               <Link to={appRoutes.home} id="SiteTitle">
                 <img
-                  src={Favicon}
+                  src={!isHome ? ProfileAvatar3 : Favicon}
                   width="30"
                   height="30"
                   className="d-inline-block align-top"
                   alt="profile"
-                  style={{ marginBottom: '0' }}
+                  style={{
+                    marginBottom: '0',
+                    borderRadius: !isHome ? '50%' : null,
+                  }}
                 />{' '}
                 &nbsp;
                 <span>{this.props.siteTitle}</span>

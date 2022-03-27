@@ -97,29 +97,6 @@ class ResearchPage extends Component {
   };
 
   render() {
-    let pubsInfo = [
-      {
-        prompt: 'Conferences',
-        data: jsonQuery('publications[*type=conference]', {
-          data: publicationsData,
-        }).value,
-      },
-      {
-        prompt: 'Posters',
-        data: jsonQuery('publications[*type=poster]', {
-          data: publicationsData,
-        }).value,
-      },
-      {
-        prompt: 'Workshops',
-        data: jsonQuery('publications[*type=workshop]', {
-          data: publicationsData,
-        }).value,
-      },
-    ];
-
-    console.log(pubsInfo[0]);
-
     return (
       <Layout pathName="Research">
         <a href="#research"></a>
