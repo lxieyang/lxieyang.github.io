@@ -74,7 +74,7 @@ li.publication {
 
 .authors .author-important {
   font-weight: bold;
-  text-decoration: underline;
+  /* text-decoration: underline; */
   /* border-bottom: black solid 1px; */
 }
 

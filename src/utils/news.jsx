@@ -50,7 +50,8 @@ export default [
         just won a{' '}
         <span className="news-badge">
           <span className="best-paper">
-            <FaTrophy /> &nbsp; Best Paper Award
+            {/* <FaTrophy /> &nbsp; */}
+            🏆&nbsp;Best Paper Award
           </span>
         </span>{' '}
         at{' '}
@@ -194,7 +195,8 @@ export default [
         in New Orleans. It received a{' '}
         <span className="news-badge">
           <span className="honorable">
-            <FaAward /> &nbsp; Best Paper Honorable Mention Award
+            {/* <FaAward /> &nbsp; */}
+            🏅&nbsp;Best Paper Honorable Mention Award
           </span>
         </span>
         ! Check it out{' '}
@@ -263,7 +265,8 @@ export default [
         </a>
         . It also received a{' '}
         <strong>
-          <FaAward /> Best Paper Honorable Mention Award
+          {/* <FaAward /> */}
+          🏅&nbsp;Best Paper Honorable Mention Award
         </strong>
         ! Check it out <a href="/research/#unakite-uist-2019">here</a>.
       </Fragment>

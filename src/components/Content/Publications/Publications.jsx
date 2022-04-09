@@ -112,21 +112,27 @@ class Publications extends Component {
                         {/* eslint-disable-next-line */}
                         <a className="anchor" name={pub.codename} />
                         <Col
+                          xs="3"
                           md="4"
                           lg="3"
-                          className="d-none d-sm-none d-md-block d-lg-block"
+                          className="d-md-block d-lg-block"
                         >
                           <PreviewImg
                             src={pub.previewImgLink}
                             alt={pub.codename}
-                            className="img-fluid"
+                            className="img-fluid pub-image-preview"
                           />
-                          <ConferenceTag>{pub.conferenceTag}</ConferenceTag>
+                          <ConferenceTag className="conference-tag">
+                            {pub.conferenceTag}
+                          </ConferenceTag>
                         </Col>
-                        <Col md="8" lg="9">
-                          <div className="paper-title pub-element">
+                        <Col xs="9" md="8" lg="9">
+                          <a
+                            className="paper-title pub-element"
+                            href={`${pubFilePathPrefix}/${pub.codename}/${pub.codename}.pdf`}
+                          >
                             {pub.title}
-                          </div>
+                          </a>
                           <div className="authors pub-element">
                             {pub.authors.map((author, authorIdx) => (
                               <React.Fragment key={authorIdx}>
@@ -155,20 +161,21 @@ class Publications extends Component {
                             <div className="awards pub-element">
                               {pub.award.honorableMention && (
                                 <span className="honorable">
-                                  <FaAward style={{ marginRight: 4 }} /> Best
-                                  Paper Honorable Mention Award
+                                  {/* <FaAward style={{ marginRight: 4 }} /> */}
+                                  🏅&nbsp;Best Paper Honorable Mention Award
                                 </span>
                               )}
                               {pub.award.bestPaper && (
                                 <span className="best-paper">
-                                  <FaTrophy style={{ marginRight: 4 }} /> Best
-                                  Paper Award
+                                  {/* <FaTrophy style={{ marginRight: 4 }} /> */}
+                                  🏆&nbsp;Best Paper Award
                                 </span>
                               )}
                             </div>
                           )}
                           <div className="data pub-element">
                             <span>
+                              [
                               <a
                                 href={`#${pub.codename}`}
                                 id={`${pub.codename}-abstract`}
@@ -177,7 +184,7 @@ class Publications extends Component {
                                   alignItems: 'center',
                                 }}
                               >
-                                <img
+                                {/* <img
                                   src={GistIcon}
                                   alt="video"
                                   style={{
@@ -185,13 +192,15 @@ class Publications extends Component {
                                     width: 20,
                                     height: 20,
                                   }}
-                                />
+                                /> */}
                                 Abstract
                               </a>
+                              ]
                             </span>
 
                             {pub.ieeexplore !== undefined && (
                               <span>
+                                [
                                 <a
                                   href={pub.ieeexplore}
                                   target="_blank"
@@ -201,7 +210,7 @@ class Publications extends Component {
                                     alignItems: 'center',
                                   }}
                                 >
-                                  <img
+                                  {/* <img
                                     src={IEEEIcon}
                                     alt="ieee"
                                     style={{
@@ -209,9 +218,10 @@ class Publications extends Component {
                                       width: 20,
                                       height: 20,
                                     }}
-                                  />
+                                  /> */}
                                   IEEE Digital Library
                                 </a>
+                                ]
                               </span>
                             )}
                             {pub.acmdl !== undefined && (
@@ -221,16 +231,18 @@ class Publications extends Component {
                                     <em>Available soon!</em>
                                   </React.Fragment>
                                 ) : (
-                                  <a
-                                    href={pub.acmdl}
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                    style={{
-                                      display: 'flex',
-                                      alignItems: 'center',
-                                    }}
-                                  >
-                                    <img
+                                  <>
+                                    [
+                                    <a
+                                      href={pub.acmdl}
+                                      target="_blank"
+                                      rel="noopener noreferrer"
+                                      style={{
+                                        display: 'flex',
+                                        alignItems: 'center',
+                                      }}
+                                    >
+                                      {/* <img
                                       src={ACMDLIcon}
                                       alt="acmdl"
                                       style={{
@@ -238,14 +250,17 @@ class Publications extends Component {
                                         width: 20,
                                         height: 20,
                                       }}
-                                    />
-                                    ACM Digital Library
-                                  </a>
+                                    /> */}
+                                      ACM DL
+                                    </a>
+                                    ]
+                                  </>
                                 )}
                               </span>
                             )}
                             {pub.arxiv !== undefined && (
                               <span>
+                                [
                                 <a
                                   href={pub.arxiv}
                                   target="_blank"
@@ -255,7 +270,7 @@ class Publications extends Component {
                                     alignItems: 'center',
                                   }}
                                 >
-                                  <img
+                                  {/* <img
                                     src={ArxivIcon}
                                     alt="ieee"
                                     style={{
@@ -263,15 +278,17 @@ class Publications extends Component {
                                       width: 20,
                                       height: 20,
                                     }}
-                                  />
-                                  arxiv.org
+                                  /> */}
+                                  arxiv
                                 </a>
+                                ]
                               </span>
                             )}
                             {pub.shouldShowLocalPaperLink !== false ? (
                               pub.type === 'poster' ? (
                                 <React.Fragment>
                                   <span>
+                                    [
                                     <a
                                       href={`${pubFilePathPrefix}/${pub.codename}/${pub.codename}-paper.pdf`}
                                       target="_blank"
@@ -281,7 +298,7 @@ class Publications extends Component {
                                         alignItems: 'center',
                                       }}
                                     >
-                                      <img
+                                      {/* <img
                                         src={DocumentIcon}
                                         alt="video"
                                         style={{
@@ -289,11 +306,13 @@ class Publications extends Component {
                                           width: 20,
                                           height: 20,
                                         }}
-                                      />
+                                      /> */}
                                       Extended Abstract
                                     </a>
+                                    ]
                                   </span>
                                   <span>
+                                    [
                                     <a
                                       href={`${pubFilePathPrefix}/${pub.codename}/${pub.codename}-poster.pdf`}
                                       target="_blank"
@@ -303,7 +322,7 @@ class Publications extends Component {
                                         alignItems: 'center',
                                       }}
                                     >
-                                      <img
+                                      {/* <img
                                         src={PosterIcon}
                                         alt="video"
                                         style={{
@@ -311,13 +330,15 @@ class Publications extends Component {
                                           width: 20,
                                           height: 20,
                                         }}
-                                      />
+                                      /> */}
                                       Poster
                                     </a>
+                                    ]
                                   </span>
                                 </React.Fragment>
                               ) : (
                                 <span>
+                                  [
                                   <a
                                     href={`${pubFilePathPrefix}/${pub.codename}/${pub.codename}.pdf`}
                                     target="_blank"
@@ -327,7 +348,7 @@ class Publications extends Component {
                                       alignItems: 'center',
                                     }}
                                   >
-                                    <img
+                                    {/* <img
                                       src={DocumentIcon}
                                       alt="video"
                                       style={{
@@ -335,14 +356,16 @@ class Publications extends Component {
                                         width: 20,
                                         height: 20,
                                       }}
-                                    />
-                                    Local PDF
+                                    /> */}
+                                    Paper PDF
                                   </a>
+                                  ]
                                 </span>
                               )
                             ) : null}
                             {pub.conferenceTalkVideo !== undefined && (
                               <span>
+                                [
                                 <a
                                   href={pub.conferenceTalkVideo}
                                   target="_blank"
@@ -352,7 +375,7 @@ class Publications extends Component {
                                     alignItems: 'center',
                                   }}
                                 >
-                                  <img
+                                  {/* <img
                                     src={VideoIcon}
                                     alt="video"
                                     style={{
@@ -360,13 +383,15 @@ class Publications extends Component {
                                       width: 20,
                                       height: 20,
                                     }}
-                                  />
-                                  Conference Talk
+                                  /> */}
+                                  Talk Video
                                 </a>
+                                ]
                               </span>
                             )}
                             {pub.cmuSCSMedia !== undefined && (
                               <span>
+                                [
                                 <a
                                   href={pub.cmuSCSMedia}
                                   target="_blank"
@@ -376,7 +401,7 @@ class Publications extends Component {
                                     alignItems: 'center',
                                   }}
                                 >
-                                  <img
+                                  {/* <img
                                     src={CMUSCSIcon}
                                     alt="video"
                                     style={{
@@ -384,9 +409,10 @@ class Publications extends Component {
                                       width: 20,
                                       height: 20,
                                     }}
-                                  />
+                                  /> */}
                                   CMU SCS News
                                 </a>
+                                ]
                               </span>
                             )}
                           </div>
