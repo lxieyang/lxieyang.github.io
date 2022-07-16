@@ -8,6 +8,8 @@ import strata_cscw_2021PreviewImgLink from '../assets/files/pubs/strata-cscw-202
 import tabsdo_uist_2021PreviewImgLink from '../assets/files/pubs/tabsdo-uist-2021/tabsdo-uist-2021.jpg';
 import crystalline_chi_2022PreviewImgLink from '../assets/files/pubs/crystalline-chi-2022/crystalline-chi-2022.png';
 import adamite_chi_2022PreviewImgLink from '../assets/files/pubs/adamite-chi-2022/adamite-chi-2022.png';
+import multimodal_assets_2022PreviewImgLink from '../assets/files/pubs/multimodal-assets-2022/multimodal-assets-2022.png';
+import wigglite_uist_2022PreviewImgLink from '../assets/files/pubs/wigglite-uist-2022/wigglite-uist-2022.png';
 import { filePathPrefix } from './constants';
 
 export const pubFilePathPrefix = filePathPrefix + `/pubs`;
@@ -299,8 +301,8 @@ export const publicationsData = {
       bibtex: ``,
       previewImgLink: unakite_uist_2019PreviewImgLink,
       shouldShowLocalPaperLink: true,
-      doi: 'http://dx.doi.org/10.1145/3332165.3347908',
-      acmdl: 'http://dx.doi.org/10.1145/3332165.3347908',
+      doi: 'https://dx.doi.org/10.1145/3332165.3347908',
+      acmdl: 'https://dx.doi.org/10.1145/3332165.3347908',
       acmdl_available: true,
       award: {
         honorableMention: true,
@@ -491,9 +493,96 @@ export const publicationsData = {
       shouldShowLocalPaperLink: true,
       doi: 'https://doi.org/10.1145/3491102.3501968',
       acmdl: 'https://doi.org/10.1145/3491102.3501968',
-      arxiv: 'http://arxiv.org/abs/2202.02175',
+      arxiv: 'https://arxiv.org/abs/2202.02175',
       acmdl_available: true,
       conferenceTalkVideo: 'https://youtu.be/VO-osTVGuJs',
+    },
+
+    // Freedom to Choose: Understanding Input Modality Preferences of People with Upper-body Motor Impairments for Activities of Daily Living - ASSETS 2022
+    {
+      title:
+        'Freedom to Choose: Understanding Input Modality Preferences of People with Upper-body Motor Impairments for Activities of Daily Living',
+      type: 'conference',
+      conference: 'ASSETS',
+      conferenceFullName:
+        'ACM SIGACCESS Conference on Computers and Accessibility',
+      conferenceTag: 'ASSETS 2022',
+      year: 2022,
+      month: 10,
+      authors: [
+        {
+          name: 'Franklin Mingzhe Li',
+          bold: false,
+        },
+        {
+          name: 'Michael Xieyang Liu',
+          bold: true,
+        },
+        {
+          name: 'Yang Zhang',
+          bold: false,
+        },
+        {
+          name: 'Patrick Carrington',
+          bold: false,
+        },
+      ],
+      abstract:
+        'Many people with upper-body motor impairments encounter challenges while performing Activities of Daily Living (ADLs) and Instrumental Activities of Daily Living (IADLs), such as toileting, grooming, and managing finances, which have impacts on their Quality of Life (QOL). Although existing assistive technologies enable people with upper-body motor impairments to use different input modalities to interact with computing devices independently (e.g., using voice to interact with a computer), many people still require Personal Care Assistants (PCAs) to perform ADLs. Multimodal input has the potential to enable users to perform ADLs without human assistance. We conducted 12 semi-structured interviews with people who have upper-body motor impairments to capture their existing practices and challenges of performing ADLs, identify opportunities to expand the input possibilities for assistive devices, and understand user preferences for multimodal interaction during everyday tasks. Finally, we discuss implications for the design and use of multimodal input solutions to support user independence and collaborative experiences when performing daily living tasks.',
+      codename: 'multimodal-assets-2022',
+      bibtex: ``,
+      previewImgLink: multimodal_assets_2022PreviewImgLink,
+      shouldShowLocalPaperLink: true,
+      doi: 'https://doi.org/10.1145/3517428.3544814',
+      acmdl: 'https://doi.org/10.1145/3517428.3544814',
+      arxiv: 'https://arxiv.org/abs/2207.04344',
+      acmdl_available: false,
+    },
+
+    // Wigglite: Low-cost Information Collection and Triage - UIST 2022
+    {
+      title: 'Wigglite: Low-cost Information Collection and Triage',
+      type: 'conference',
+      conference: 'UIST',
+      conferenceFullName:
+        'ACM Symposium on User Interface Software and Technology (UIST)',
+      conferenceTag: 'UIST 2022',
+      year: 2022,
+      month: 10,
+      authors: [
+        {
+          name: 'Michael Xieyang Liu',
+          bold: true,
+        },
+        {
+          name: 'Andrew Kuznetsov',
+          bold: false,
+        },
+        {
+          name: 'Yongsung Kim',
+          bold: false,
+        },
+        {
+          name: 'Joseph Chee Chang',
+          bold: false,
+        },
+        {
+          name: 'Aniket Kittur',
+          bold: false,
+        },
+        {
+          name: 'Brad A. Myers',
+          bold: false,
+        },
+      ],
+      abstract: 'Coming soon!',
+      codename: 'wigglite-uist-2022',
+      bibtex: ``,
+      previewImgLink: wigglite_uist_2022PreviewImgLink,
+      shouldShowLocalPaperLink: true,
+      doi: 'https://doi.org/10.1145/3526113.3545661',
+      acmdl: 'https://doi.org/10.1145/3526113.3545661',
+      acmdl_available: false,
     },
   ],
 };
