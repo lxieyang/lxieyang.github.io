@@ -584,6 +584,7 @@ export const publicationsData = {
       shouldShowLocalPaperLink: true,
       doi: 'https://doi.org/10.1145/3526113.3545661',
       acmdl: 'https://doi.org/10.1145/3526113.3545661',
+      arxiv: 'https://arxiv.org/abs/2208.00496',
       acmdl_available: false,
     },
   ],
