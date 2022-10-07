@@ -20,7 +20,7 @@ const ContactInfo = ({ data }) => {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Newell-Simon Hall 4505
+          Newell-Simon Hall 4611
         </a>
       </div>
 
@@ -30,12 +30,12 @@ const ContactInfo = ({ data }) => {
 
       <div className="contact-entry">
         <TwitterIcon className="icon" />
-        <a href={data.site.siteMetadata.externalLinks.twitter}>Twitter</a>
+        <a href={data.site.siteMetadata.externalLinks.twitter}>@lxieyang</a>
       </div>
 
       <div className="contact-entry">
         <GithubIcon className="icon" />
-        <a href={data.site.siteMetadata.externalLinks.github}>Github</a>
+        <a href={data.site.siteMetadata.externalLinks.github}>lxieyang</a>
       </div>
 
       <div className="contact-entry">

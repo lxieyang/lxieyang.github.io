@@ -62,6 +62,7 @@ const IndexPage = ({ data }) => {
                     src={ProfileImg}
                     alt="profile"
                     // style={{ maxWidth: '100%', maxHeight: '100%' }}
+                    // style={{ transform: 'scale(2)' }}
                   />
                   <br />
                   {/* <div className="image-watermark-top-left">Dec. 2021</div>
@@ -145,29 +146,40 @@ const IndexPage = ({ data }) => {
               </p>
             </Col>
           </Row> */}
-            {/* <Row>
-            <Col
-              style={{
-                background: 'rgba(193, 0, 15, 1)',
-                color: '#fff',
-                margin: '8px 16px',
-                padding: '4px 8px',
-                borderRadius: 5,
-              }}
-            >
-              📢 I am on the market for a summer 2022 internship :-)
-            </Col>
-          </Row> */}
+
             <div className="header-banner-images-container d-none d-sm-none d-md-block d-lg-block">
-              <img src={CMULogo} alt="cmu" />
-              <img src={CMUTextLogo} alt="cmu" />
+              <img src={HCIITextLogo} alt="hcii" /> &nbsp; &nbsp; &nbsp;
+              {/* <img src={CMULogo} alt="cmu" /> &nbsp; */}
+              <img
+                src={CMUTextLogo}
+                alt="cmu-text"
+                style={{
+                  marginTop: '12px',
+                }}
+              />
             </div>
-            <br />
+            <Row>
+              <Col style={{ margin: 0, padding: 0 }}>
+                <div
+                  style={{
+                    display: 'inline-block',
+                    backgroundColor: 'rgba(193, 0, 15, 0.75)',
+                    color: '#fff',
+                    margin: '8px 16px',
+                    padding: '6px 12px',
+                    borderRadius: 5,
+                  }}
+                >
+                  📢 I will be on the job market for industry research or
+                  engineering positions in 2023 :-)
+                </div>
+              </Col>
+            </Row>
             <h1>About me</h1>
             <p className="">
               Michael Xieyang Liu is a{' '}
-              {ordinal(1 + moment().diff(moment([2017, 8]), 'years'))} year
-              Ph.D. student at{' '}
+              <s>{ordinal(1 + moment().diff(moment([2017, 8]), 'years'))}</s>{' '}
+              <em>final</em> year Ph.D. student at{' '}
               <a href="http://www.hcii.cmu.edu">
                 Human-Computer Interaction Institute
               </a>{' '}
@@ -237,7 +249,7 @@ const IndexPage = ({ data }) => {
             <HeadshotTooltip target="walter-lasecki" headshotPath={WalterImg} />
           </p> */}
 
-            <h1>Open-source projects</h1>
+            <h1>Selected Open-source projects</h1>
 
             <ul>
               {/* Vertical Tabs */}

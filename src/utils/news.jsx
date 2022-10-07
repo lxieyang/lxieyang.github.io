@@ -6,6 +6,29 @@ export default [
   {
     content: (
       <Fragment>
+        Our full paper{' '}
+        <span className="paper-title">
+          {/* <a href={`#`} target="_blank" rel="noopener noreferrer"> */}
+          Wigglite: Low-cost Information Collection and Triage
+          {/* </a> */}
+        </span>{' '}
+        was conditionally accepted to{' '}
+        <a
+          href="https://uist.acm.org/uist2022/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          UIST 2022
+        </a>
+        ! .
+      </Fragment>
+    ),
+    date: new Date('2022-08-04'),
+    shouldDisplay: true,
+  },
+  {
+    content: (
+      <Fragment>
         Our two full papers{' '}
         <span className="paper-title">
           {/* <a href={`#`} target="_blank" rel="noopener noreferrer"> */}
