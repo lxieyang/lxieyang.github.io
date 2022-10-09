@@ -1,7 +1,8 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Email from '../ObfuscatedEmail/ObfuscatedEmail';
 
 import { CVPath } from '../../../utils/constants';
+import { ThesisProposalAbstractPath } from '../../../utils/constants';
 
 import { MdLocationOn as LocationIcon } from '@react-icons/all-files/md/MdLocationOn';
 import { MdEmail as EmailIcon } from '@react-icons/all-files/md/MdEmail';
@@ -9,10 +10,26 @@ import { FaTwitterSquare as TwitterIcon } from '@react-icons/all-files/fa/FaTwit
 import { FaGithub as GithubIcon } from '@react-icons/all-files/fa/FaGithub';
 import { MdSchool as GoogleScholarIcon } from '@react-icons/all-files/md/MdSchool';
 import { IoMdDocument as CVIcon } from '@react-icons/all-files/io/IoMdDocument';
+import { TiDocumentText as ThesisIcon } from '@react-icons/all-files/ti/TiDocumentText';
+
+let showThesisTimeout = undefined;
 
 const ContactInfo = ({ data }) => {
+  const [showThesis, setShowThesis] = useState(false);
+
   return (
-    <div className="contact-container">
+    <div
+      className="contact-container"
+      onDoubleClick={() => {
+        setShowThesis(!showThesis);
+        if (showThesisTimeout) {
+          clearTimeout(showThesisTimeout);
+        }
+        showThesisTimeout = setTimeout(() => {
+          setShowThesis(false);
+        }, 3000);
+      }}
+    >
       <div className="contact-entry">
         <LocationIcon className="icon" />{' '}
         <a
@@ -48,6 +65,21 @@ const ContactInfo = ({ data }) => {
       <div className="contact-entry">
         <CVIcon className="icon" /> <a href={CVPath}>Curriculum Vitae</a>
       </div>
+
+      <div
+        className="contact-entry"
+        style={{
+          display: showThesis ? 'block' : 'none',
+          transition: 'all 0.1s ease-in-out',
+        }}
+      >
+        <ThesisIcon className="icon" />
+        <a href={ThesisProposalAbstractPath} target="_blank">
+          Thesis proposal abstract
+        </a>
+      </div>
+
+      <div style={{ width: '100%', height: '20px' }}></div>
     </div>
   );
 };
