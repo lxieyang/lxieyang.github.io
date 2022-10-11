@@ -15,7 +15,7 @@
     "gatsby-image": "^3.11.0",
     "gatsby-plugin-catch-links": "^4.19.0",
     "gatsby-plugin-copy-files": "^1.1.0",
-    "gatsby-plugin-favicon": "^2.1.1",
+    "gatsby-plugin-favicon": "^3.0.0",
     "gatsby-plugin-feed": "^4.19.0",
     "gatsby-plugin-google-analytics": "^4.19.0",
     "gatsby-plugin-google-fonts": "^1.0.1",
