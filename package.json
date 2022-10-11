@@ -11,7 +11,7 @@
     "core-js": "^2.6.11",
     "disqus-react": "^1.0.10",
     "emotion": "^11.0.0",
-    "gatsby": "^4.19.2",
+    "gatsby": "^4.24.4",
     "gatsby-image": "^3.11.0",
     "gatsby-plugin-catch-links": "^4.19.0",
     "gatsby-plugin-copy-files": "^1.1.0",
