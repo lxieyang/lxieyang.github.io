@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import copy from 'copy-to-clipboard';
 import Email from '../ObfuscatedEmail/ObfuscatedEmail';
 
 import { CVPath } from '../../../utils/constants';
@@ -76,6 +77,14 @@ const ContactInfo = ({ data }) => {
         <ThesisIcon className="icon" />
         <a href={ThesisProposalAbstractPath} target="_blank">
           Thesis proposal abstract
+        </a>{' '}
+        <a
+          onClick={() => {
+            copy(ThesisProposalAbstractPath);
+          }}
+          href="#"
+        >
+          [copy]
         </a>
       </div>
 
