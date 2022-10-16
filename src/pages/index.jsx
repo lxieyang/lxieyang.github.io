@@ -372,6 +372,12 @@ const IndexPage = ({ data }) => {
           <hr />
           <br />
 
+          <Publication />
+
+          <br />
+          <hr />
+          <br />
+
           <Row>
             <Col md="6">
               <h1>News</h1>
@@ -459,11 +465,6 @@ const IndexPage = ({ data }) => {
               })}
             </Col>
           </Row>
-          <br />
-          <hr />
-          <br />
-
-          <Publication />
         </Col>
       </Row>
     </Layout>

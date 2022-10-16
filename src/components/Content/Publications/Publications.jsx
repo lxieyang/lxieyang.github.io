@@ -51,8 +51,16 @@ const ConferenceTag = styled.div`
   align-items: center;
   justify-content: center;
   font-weight: bold;
-  font-size: 1.25rem;
+  font-size: 0.9rem;
   opacity: 0.8;
+
+  .tag-inner {
+    margin-top: 0.125rem;
+    padding: 0.05rem 0.25rem;
+    border-radius: 0.3rem;
+    background-color: #333;
+    color: #fff;
+  }
 `;
 
 // const NewTag = styled.span`
@@ -112,7 +120,7 @@ class Publications extends Component {
                         {/* eslint-disable-next-line */}
                         <a className="anchor" name={pub.codename} />
                         <Col
-                          xs="3"
+                          xs="5"
                           md="4"
                           lg="3"
                           className="d-md-block d-lg-block"
@@ -122,11 +130,11 @@ class Publications extends Component {
                             alt={pub.codename}
                             className="img-fluid pub-image-preview"
                           />
-                          <ConferenceTag className="conference-tag">
-                            {pub.conferenceTag}
+                          <ConferenceTag className="conference-tag d-inline-block d-sm-flex">
+                            <div className="tag-inner">{pub.conferenceTag}</div>
                           </ConferenceTag>
                         </Col>
-                        <Col xs="9" md="8" lg="9">
+                        <Col xs="12" md="8" lg="9">
                           <a
                             className="paper-title pub-element"
                             href={`${pubFilePathPrefix}/${pub.codename}/${pub.codename}.pdf`}
@@ -434,6 +442,16 @@ class Publications extends Component {
                             {pub.abstract}
                           </UncontrolledCollapse>
                         </Col>
+                        {pubCategory.data.length - 1 !== pubIdx && (
+                          <Col xs="12" className="d-sm-none">
+                            <div
+                              style={{
+                                height: 20,
+                                borderBottom: '1px solid #eee',
+                              }}
+                            ></div>
+                          </Col>
+                        )}
                       </Row>
                     );
                   }
