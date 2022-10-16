@@ -33,6 +33,7 @@ import TravelList from '../utils/travel';
 import Publication from '../components/Content/Publications/Publications';
 
 import './index.css';
+import Experiences from '../components/Content/Experiences/Experiences';
 
 const IndexPage = ({ data }) => {
   const candidateAvatars = [
@@ -171,11 +172,13 @@ const IndexPage = ({ data }) => {
                   }}
                 >
                   📢 I will be on the job market for industry research or
-                  engineering positions in 2023 :-)
+                  applied scientist positions in 2023. Let's chat if you know an
+                  intersting opportunities!
                 </div>
               </Col>
             </Row>
-            <h1>About me</h1>
+            {/* <h1>About me</h1> */}
+            <br />
             <p className="">
               Michael Xieyang Liu is a{' '}
               <s>{ordinal(1 + moment().diff(moment([2017, 8]), 'years'))}</s>{' '}
@@ -192,13 +195,14 @@ const IndexPage = ({ data }) => {
               <a href="http://kittur.org/" id="niki-kittur">
                 Dr. Niki Kittur
               </a>
-              . Prior to Ph.D., he received his dual Bachelor’s degrees in
+              .
+              {/* Prior to Ph.D., he received his dual Bachelor’s degrees in
               Computer Science at{' '}
               <a href="https://www.umich.edu">
                 University of Michigan, Ann Arbor
               </a>{' '}
               and{' '}
-              <a href="http://en.sjtu.edu.cn">Shanghai Jiao Tong University</a>.
+              <a href="http://en.sjtu.edu.cn">Shanghai Jiao Tong University</a>. */}
             </p>
             <p>
               He works at the intersection of{' '}
@@ -373,6 +377,12 @@ const IndexPage = ({ data }) => {
           <br />
 
           <Publication />
+
+          {/* <br />
+          <hr />
+          <br />
+
+          <Experiences /> */}
 
           <br />
           <hr />
