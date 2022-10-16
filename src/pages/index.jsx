@@ -82,8 +82,11 @@ const IndexPage = ({ data }) => {
                 <p className="basic-info-text d-none d-sm-none d-md-block d-lg-block">
                   Pronoun: he/him
                 </p>
-                <p className="basic-info-text">Ph.D. student</p>
                 <p className="basic-info-text">
+                  Ph.D. student{' '}
+                  <span className="d-inline-block d-sm-none">@CMU HCII</span>
+                </p>
+                <p className="basic-info-text d-none d-sm-block">
                   <a href="http://www.hcii.cmu.edu">
                     {' '}
                     Human-Computer Interaction Institute
@@ -164,16 +167,22 @@ const IndexPage = ({ data }) => {
                 <div
                   style={{
                     display: 'inline-block',
-                    backgroundColor: 'rgba(193, 0, 15, 0.75)',
-                    color: '#fff',
-                    margin: '8px 16px',
+                    // backgroundColor: 'rgba(193, 0, 15, 0.75)',
+                    // color: '#fff',
+                    backgroundColor: '#fff',
+                    color: '#333',
+                    border: '2px dashed rgba(193, 0, 15, 0.75)',
+                    margin: '0px 16px',
+                    marginTop: 0,
                     padding: '6px 12px',
-                    borderRadius: 5,
+                    borderRadius: 8,
                   }}
                 >
-                  📢 I will be on the job market for industry research or
-                  applied scientist positions in 2023. Let's chat if you know an
-                  intersting opportunities!
+                  📢 I will be on the job market for{' '}
+                  <strong>
+                    industry research or applied scientist positions
+                  </strong>{' '}
+                  in 2023. Let's chat if you know an intersting opportunities!
                 </div>
               </Col>
             </Row>
