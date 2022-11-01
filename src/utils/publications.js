@@ -536,7 +536,7 @@ export const publicationsData = {
       doi: 'https://doi.org/10.1145/3517428.3544814',
       acmdl: 'https://doi.org/10.1145/3517428.3544814',
       arxiv: 'https://arxiv.org/abs/2207.04344',
-      acmdl_available: false,
+      acmdl_available: true,
     },
 
     // Wigglite: Low-cost Information Collection and Triage - UIST 2022
@@ -585,7 +585,8 @@ export const publicationsData = {
       doi: 'https://doi.org/10.1145/3526113.3545661',
       acmdl: 'https://doi.org/10.1145/3526113.3545661',
       arxiv: 'https://arxiv.org/abs/2208.00496',
-      acmdl_available: false,
+      acmdl_available: true,
+      conferenceTalkVideo: 'https://youtu.be/_MH81Zuyj64',
     },
   ],
 };
