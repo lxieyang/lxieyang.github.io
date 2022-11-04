@@ -588,5 +588,86 @@ export const publicationsData = {
       acmdl_available: true,
       conferenceTalkVideo: 'https://youtu.be/_MH81Zuyj64',
     },
+
+    // Multidirectional Gesturing for OnDisplay Item Identification and/or Further Action Control
+    {
+      title:
+        'Multidirectional Gesturing for OnDisplay Item Identification and/or Further Action Control',
+      type: 'patent',
+      // conference: 'PCT/US2022/043604',
+      conferenceFullName: 'US Patent PCT/US2022/043604 (submitted)',
+      conferenceTag: 'US Patent PCT/US2022/043604',
+      year: 2022,
+      month: 9,
+      authors: [
+        {
+          name: 'Aniket Kittur',
+          bold: false,
+        },
+        {
+          name: 'Brad A. Myers',
+          bold: false,
+        },
+        {
+          name: 'Michael Xieyang Liu',
+          bold: true,
+        },
+      ],
+      abstract: ``,
+      codename: 'us-patent-wiggle-2022',
+      bibtex: ``,
+      shouldShowLocalPaperLink: false,
+      acmdl_available: false,
+    },
+
+    // Multidirectional Gesturing for OnDisplay Item Identification and/or Further Action Control
+    {
+      title: 'Generation of Interactive Utterances of Code Tasks',
+      type: 'patent',
+      // conference: 'PCT/US2022/043604',
+      conferenceFullName: 'US Patent (submitted)',
+      // conferenceTag: 'US Patent PCT/US2022/043604',
+      year: 2022,
+      month: 9,
+      authors: [
+        {
+          name: 'Ben Zorn',
+          bold: false,
+        },
+        {
+          name: 'Carina Negreanu',
+          bold: false,
+        },
+        {
+          name: 'Advait Sarkar',
+          bold: false,
+        },
+        {
+          name: 'Andrew Gordon',
+          bold: false,
+        },
+        {
+          name: 'Jack Williams',
+          bold: false,
+        },
+        {
+          name: 'Michael Xieyang Liu',
+          bold: true,
+        },
+        {
+          name: 'Neil Toronto',
+          bold: false,
+        },
+        {
+          name: 'Sruti Srinivasa Ragavan',
+          bold: false,
+        },
+      ],
+      abstract: ``,
+      codename: 'us-patent-codeexcel-2022',
+      bibtex: ``,
+      shouldShowLocalPaperLink: false,
+      acmdl_available: false,
+    },
   ],
 };

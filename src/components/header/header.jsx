@@ -71,7 +71,7 @@ class Header extends Component {
     // https://www.w3schools.com/howto/howto_js_navbar_hide_scroll.asp
     if (typeof window !== 'undefined') {
       let prevScrollpos = window.pageYOffset;
-      window.onscroll = function() {
+      window.onscroll = function () {
         const maxScroll = document.body.clientHeight - window.innerHeight;
         let currentScrollPos = window.pageYOffset;
         if (
@@ -143,12 +143,13 @@ class Header extends Component {
                 {/*<ListLink route={appRoutes.experiences} routeName={'Experiences'}/>*/}
                 {/* <ListLink route={appRoutes.blogs} routeName={'Blogs'} /> */}
                 {/* <ListLink route={appRoutes.about} routeName={'About'} /> */}
-                <ListLink
+                <ListLink route={appRoutes.cv} routeName={'CV'} />
+                {/* <ListLink
                   isPurelink={true}
                   route={CVPath}
                   routeName={'CV'}
                   external={false}
-                />
+                /> */}
               </Nav>
             </Collapse>
           </Container>
