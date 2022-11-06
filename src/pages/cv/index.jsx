@@ -825,14 +825,21 @@ const CV = ({ data }) => {
   );
 };
 
+const LeftIndex = styled.span`
+  /* font-style: italic; */
+  font-weight: 300;
+
+  @media (max-width: 768px) {
+    font-style: normal;
+    font-weight: 600;
+    color: #c1000f;
+  }
+`;
+
 const CVEntryWithDateOnTheLeft = ({ dateString, content, indexSpace = 2 }) => (
   <Row style={{ marginBottom: '0.45rem' }}>
-    <Col
-      xs="12"
-      sm={indexSpace}
-      style={{ fontStyle: 'italic', fontWeight: 300 }}
-    >
-      {dateString}
+    <Col xs="12" sm={indexSpace}>
+      <LeftIndex>{dateString}</LeftIndex>
     </Col>
     <Col xs="12" sm={12 - indexSpace} style={{ fontWeight: 300 }}>
       {content}
