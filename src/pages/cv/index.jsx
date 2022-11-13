@@ -496,6 +496,10 @@ const CV = ({ data }) => {
           <CVSectionTitle>
             Selected Honors, Grants, Awards & Coverage
           </CVSectionTitle>
+          <CVEntryWithIndexOnTheLeft indexSpace={100} indexString={'Nov. 2022'}>
+            <strong>Special Recognitions for Outstanding Reviews</strong>, ACM
+            CHI Conference on Human Factors in Computing Systems (CHI 2023)
+          </CVEntryWithIndexOnTheLeft>
           <CVEntryWithIndexOnTheLeft indexSpace={100} indexString={'Nov. 2021'}>
             <strong>CMU SCS News Coverage on our CSCW 2021 Best Paper</strong>:{' '}
             <a
@@ -737,7 +741,7 @@ const CV = ({ data }) => {
             2020, 2021, 2022), <u>IUI</u> (2020), <u>VAST</u> (2020)
             <strong>Journal</strong>: <u>TOCHI</u> (2022) <br />
             <strong>Special Recognitions for Outstanding Reviews</strong>:{' '}
-            <u>UIST</u>
+            <u>UIST</u> (2021), <u>CHI</u> (2023)
           </CVEntryWithIndexOnTheLeft>
 
           <CVSectionSubTitle>
