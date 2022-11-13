@@ -178,11 +178,14 @@ const IndexPage = ({ data }) => {
                     borderRadius: 8,
                   }}
                 >
-                  📢 I will be on the job market for{' '}
+                  📢 I'm on the job market for{' '}
                   <strong>
                     industry research or applied scientist positions
                   </strong>{' '}
-                  in 2023. Let's chat if you know an intersting opportunities!
+                  in 2023. I design and build systems that accelerate online
+                  sensemaking for developers and facilitate human-AI
+                  interactions for end-users. Please get in touch if you know of
+                  any relevant opportunities!
                 </div>
               </Col>
             </Row>

@@ -67,7 +67,8 @@ const ContactInfo = ({ data, inCVPage }) => {
 
       {inCVPage !== true && (
         <div className="contact-entry">
-          <CVIcon className="icon" /> <a href={CVPath}>Curriculum Vitae</a>
+          <CVIcon className="icon" />{' '}
+          <a href={CVPath}>Curriculum Vitae (PDF)</a>
         </div>
       )}
 
