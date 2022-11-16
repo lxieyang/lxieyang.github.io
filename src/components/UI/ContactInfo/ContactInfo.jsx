@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import copy from 'copy-to-clipboard';
 import Email from '../ObfuscatedEmail/ObfuscatedEmail';
 
-import { CVPath } from '../../../utils/constants';
+import { CVPath, ThesisProposalPath } from '../../../utils/constants';
 import { ThesisProposalAbstractPath } from '../../../utils/constants';
 
 import { MdLocationOn as LocationIcon } from '@react-icons/all-files/md/MdLocationOn';
@@ -80,17 +80,17 @@ const ContactInfo = ({ data, inCVPage }) => {
         }}
       >
         <ThesisIcon className="icon" />
-        <a href={ThesisProposalAbstractPath} target="_blank">
-          Thesis proposal abstract
+        <a href={ThesisProposalPath} target="_blank">
+          Thesis proposal
         </a>{' '}
-        <a
+        {/* <a
           onClick={() => {
             copy(ThesisProposalAbstractPath);
           }}
           href="#"
         >
           [copy]
-        </a>
+        </a> */}
       </div>
 
       <div style={{ width: '100%', height: '20px' }}></div>
