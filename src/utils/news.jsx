@@ -1,8 +1,23 @@
 import React, { Fragment } from 'react';
 import { pubFilePathPrefix } from '../utils/publications';
 import { FaAward, FaTrophy } from 'react-icons/fa';
+import {
+  ThesisProposalPath,
+  ThesisProposalSlidesPath,
+} from '../utils/constants';
 
 export default [
+  {
+    content: (
+      <Fragment>
+        I passed my thesis proposal! One step closer to graduation! Here's my{' '}
+        <a href={ThesisProposalPath}>proposal document</a> and{' '}
+        <a href={ThesisProposalSlidesPath}>slides</a>.
+      </Fragment>
+    ),
+    date: new Date('2022-12-12'),
+    shouldDisplay: true,
+  },
   {
     content: (
       <Fragment>
