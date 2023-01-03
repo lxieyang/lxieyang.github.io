@@ -753,6 +753,14 @@ const CV = ({ data }) => {
               <strong style={{ fontStyle: 'normal' }}>Committee Member</strong>
             }
           >
+            Ph.D. Admission Committee (2022-2023)
+          </CVEntryWithIndexOnTheLeft>
+          <CVEntryWithIndexOnTheLeft
+            indexSpace={160}
+            indexString={
+              <strong style={{ fontStyle: 'normal' }}>Committee Member</strong>
+            }
+          >
             REU (Research Experience for Undergraduate) Admissions Committee
             (2021-2022)
           </CVEntryWithIndexOnTheLeft>

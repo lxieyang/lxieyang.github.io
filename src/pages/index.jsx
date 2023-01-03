@@ -193,7 +193,7 @@ const IndexPage = ({ data }) => {
             <br />
             <p className="">
               Michael Xieyang Liu is a{' '}
-              <s>{ordinal(1 + moment().diff(moment([2017, 8]), 'years'))}</s>{' '}
+              {/* <s>{ordinal(1 + moment().diff(moment([2017, 8]), 'years'))}</s>{' '} */}
               <em>final</em> year Ph.D. student at{' '}
               <a href="http://www.hcii.cmu.edu">
                 Human-Computer Interaction Institute
@@ -207,7 +207,22 @@ const IndexPage = ({ data }) => {
               <a href="http://kittur.org/" id="niki-kittur">
                 Dr. Niki Kittur
               </a>
-              .
+              . Previously, he interned in the{' '}
+              <a
+                href="https://www.microsoft.com/en-us/research/group/research-software-engineering-rise/"
+                target="_blank"
+              >
+                RiSE
+              </a>{' '}
+              group and{' '}
+              <a
+                href="https://www.microsoft.com/en-us/research/project/calc-intelligence/"
+                target="_blank"
+              >
+                Calc Intelligence
+              </a>{' '}
+              group at Microsoft Research, the Google Cloud group at Google, and
+              Bosch Research.
               {/* Prior to Ph.D., he received his dual Bachelor’s degrees in
               Computer Science at{' '}
               <a href="https://www.umich.edu">

@@ -115,9 +115,9 @@ class ResearchPage extends Component {
             <strong>Background:</strong> Programmers spend a significant
             proportion of their time searching for and making sense of complex
             information in order to accomplish their goals, whether choosing
-            among between different APIs, adapting code snippets found on the
-            Internet to meet their needs, or trying to learn unfamiliar code to
-            fix an error or add a new feature. When performing tasks like these,
+            between different APIs, adapting code snippets found on the Internet
+            to meet their needs, or trying to learn unfamiliar code to fix an
+            error or add a new feature. When performing tasks like these,
             programmers continually are making hypotheses, proposing questions,
             and discovering answers. However, after each sensemaking episode in
             which a programmer gains knowledge for themselves, their work is
