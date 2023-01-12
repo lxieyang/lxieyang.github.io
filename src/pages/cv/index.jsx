@@ -69,17 +69,17 @@ const CV = ({ data }) => {
       prefix: 'C',
       data: jsonQuery('publications[*type=conference]', {
         data: publicationsData,
-      }).value,
+      }).value.filter((p) => p.showOnWebCV !== false),
     },
+    // {
+    //   prompt: 'Posters',
+    //   prefix: 'P',
+    //   data: jsonQuery('publications[*type=poster]', {
+    //     data: publicationsData,
+    //   }).value,
+    // },
     {
-      prompt: 'Posters',
-      prefix: 'P',
-      data: jsonQuery('publications[*type=poster]', {
-        data: publicationsData,
-      }).value,
-    },
-    {
-      prompt: 'Workshops',
+      prompt: 'Workshop Papers & Posters',
       prefix: 'W',
       data: jsonQuery('publications[*type=workshop]', {
         data: publicationsData,
@@ -87,7 +87,7 @@ const CV = ({ data }) => {
     },
     {
       prompt: 'Patent',
-      prefix: 'PT',
+      prefix: 'P',
       data: jsonQuery('publications[*type=patent]', {
         data: publicationsData,
       }).value,
@@ -123,6 +123,15 @@ const CV = ({ data }) => {
             <ContactInfo data={data} inCVPage={true} />
           </Col>
         </Row>
+
+        <CVSectionContainer>
+          <CVSectionTitle>Research Focus</CVSectionTitle>
+          My research is at the intersection of Human-computer Interaction
+          (HCI), programming tools, sensemaking, intelligent user interfaces,
+          and human-AI interaction, where I design and build systems that
+          accelerate online sensemaking for developers [C3-6, C9, W1-3, P1] and
+          facilitate human-AI interactions for end-users [C1, C2, C7, C10, P2].
+        </CVSectionContainer>
 
         <CVSectionContainer>
           <CVSectionTitle>Education</CVSectionTitle>
@@ -197,6 +206,90 @@ const CV = ({ data }) => {
               </>
             }
           />
+        </CVSectionContainer>
+
+        <CVSectionContainer>
+          <CVSectionTitle>Publications</CVSectionTitle>
+          {pubsInfo.map((pubCategory, pubCategoryIdx) => {
+            return (
+              <div key={pubCategoryIdx}>
+                <CVSectionSubTitle>{pubCategory.prompt}</CVSectionSubTitle>
+                {reverse(sortBy(pubCategory.data, ['year', 'month'])).map(
+                  (pub, pubIdx) => {
+                    return (
+                      <CVEntryWithIndexOnTheLeft
+                        indexString={
+                          <>
+                            {pubCategory.prefix}
+                            {pubCategory.data.length - pubIdx}.
+                            {/* <br />
+                            {pub.conferenceTag} */}
+                          </>
+                        }
+                        key={pubIdx}
+                      >
+                        {pub.authors.map((author, authorIdx) => (
+                          <React.Fragment key={authorIdx}>
+                            <span
+                              key={authorIdx}
+                              style={{
+                                fontWeight: author.bold ? '500' : '300',
+                              }}
+                            >
+                              {author.name}
+                            </span>
+                            {authorIdx === pub.authors.length - 1 ? '. ' : ', '}
+                          </React.Fragment>
+                        ))}
+                        {pub.type !== 'patent' ? (
+                          <a
+                            style={{
+                              color: 'rgb(166, 38, 27)',
+                              fontWeight: 500,
+                            }}
+                            href={`${pubFilePathPrefix}/${pub.codename}/${pub.codename}.pdf`}
+                          >
+                            {pub.title}
+                          </a>
+                        ) : (
+                          <span style={{ fontWeight: 500 }}>{pub.title}</span>
+                        )}
+                        .{' '}
+                        <span style={{ fontStyle: 'italic', fontWeight: 300 }}>
+                          {pub.conferenceFullName}, <span>{pub.year}</span>
+                        </span>
+                        <br />
+                        {pub.type !== 'patent' && (
+                          <>
+                            <span style={{ textDecoration: 'underline' }}>
+                              {pub.conferenceTag}{' '}
+                            </span>
+                            <br />
+                          </>
+                        )}
+                        {pub.award && (
+                          <div style={{ fontWeight: 600 }}>
+                            {pub.award.honorableMention && (
+                              <span className="honorable">
+                                {/* <FaAward style={{ marginRight: 4 }} /> */}
+                                🏅&nbsp;Best Paper Honorable Mention Award
+                              </span>
+                            )}
+                            {pub.award.bestPaper && (
+                              <span className="best-paper">
+                                {/* <FaTrophy style={{ marginRight: 4 }} /> */}
+                                🏆&nbsp;Best Paper Award
+                              </span>
+                            )}
+                          </div>
+                        )}
+                      </CVEntryWithIndexOnTheLeft>
+                    );
+                  }
+                )}
+              </div>
+            );
+          })}
         </CVSectionContainer>
 
         <CVSectionContainer>
@@ -406,90 +499,6 @@ const CV = ({ data }) => {
               </>
             }
           />
-        </CVSectionContainer>
-
-        <CVSectionContainer>
-          <CVSectionTitle>Publications</CVSectionTitle>
-          {pubsInfo.map((pubCategory, pubCategoryIdx) => {
-            return (
-              <div key={pubCategoryIdx}>
-                <CVSectionSubTitle>{pubCategory.prompt}</CVSectionSubTitle>
-                {reverse(sortBy(pubCategory.data, ['year', 'month'])).map(
-                  (pub, pubIdx) => {
-                    return (
-                      <CVEntryWithIndexOnTheLeft
-                        indexString={
-                          <>
-                            {pubCategory.prefix}.
-                            {pubCategory.data.length - pubIdx}
-                            {/* <br />
-                            {pub.conferenceTag} */}
-                          </>
-                        }
-                        key={pubIdx}
-                      >
-                        {pub.authors.map((author, authorIdx) => (
-                          <React.Fragment key={authorIdx}>
-                            <span
-                              key={authorIdx}
-                              style={{
-                                fontWeight: author.bold ? '500' : '300',
-                              }}
-                            >
-                              {author.name}
-                            </span>
-                            {authorIdx === pub.authors.length - 1 ? '. ' : ', '}
-                          </React.Fragment>
-                        ))}
-                        {pub.type !== 'patent' ? (
-                          <a
-                            style={{
-                              color: 'rgb(166, 38, 27)',
-                              fontWeight: 500,
-                            }}
-                            href={`${pubFilePathPrefix}/${pub.codename}/${pub.codename}.pdf`}
-                          >
-                            {pub.title}
-                          </a>
-                        ) : (
-                          <span style={{ fontWeight: 500 }}>{pub.title}</span>
-                        )}
-                        .{' '}
-                        <span style={{ fontStyle: 'italic', fontWeight: 300 }}>
-                          {pub.conferenceFullName}, <span>{pub.year}</span>
-                        </span>
-                        <br />
-                        {pub.type !== 'patent' && (
-                          <>
-                            <span style={{ textDecoration: 'underline' }}>
-                              {pub.conferenceTag}{' '}
-                            </span>
-                            <br />
-                          </>
-                        )}
-                        {pub.award && (
-                          <div style={{ fontWeight: 600 }}>
-                            {pub.award.honorableMention && (
-                              <span className="honorable">
-                                {/* <FaAward style={{ marginRight: 4 }} /> */}
-                                🏅&nbsp;Best Paper Honorable Mention Award
-                              </span>
-                            )}
-                            {pub.award.bestPaper && (
-                              <span className="best-paper">
-                                {/* <FaTrophy style={{ marginRight: 4 }} /> */}
-                                🏆&nbsp;Best Paper Award
-                              </span>
-                            )}
-                          </div>
-                        )}
-                      </CVEntryWithIndexOnTheLeft>
-                    );
-                  }
-                )}
-              </div>
-            );
-          })}
         </CVSectionContainer>
 
         <CVSectionContainer>

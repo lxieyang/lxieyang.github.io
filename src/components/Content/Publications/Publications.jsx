@@ -85,19 +85,19 @@ class Publications extends Component {
         prompt: 'Conferences',
         data: jsonQuery('publications[*type=conference]', {
           data: publicationsData,
-        }).value,
+        }).value.filter((p) => p.showInResearchPage !== false),
       },
+      // {
+      //   prompt: 'Posters',
+      //   data: jsonQuery('publications[*type=poster]', {
+      //     data: publicationsData,
+      //   }).value,
+      // },
       {
-        prompt: 'Posters',
-        data: jsonQuery('publications[*type=poster]', {
-          data: publicationsData,
-        }).value,
-      },
-      {
-        prompt: 'Workshops',
+        prompt: 'Workshop Papers & Posters',
         data: jsonQuery('publications[*type=workshop]', {
           data: publicationsData,
-        }).value,
+        }).value.filter((p) => p.showInResearchPage !== false),
       },
     ];
 

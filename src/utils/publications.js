@@ -10,6 +10,7 @@ import crystalline_chi_2022PreviewImgLink from '../assets/files/pubs/crystalline
 import adamite_chi_2022PreviewImgLink from '../assets/files/pubs/adamite-chi-2022/adamite-chi-2022.png';
 import multimodal_assets_2022PreviewImgLink from '../assets/files/pubs/multimodal-assets-2022/multimodal-assets-2022.png';
 import wigglite_uist_2022PreviewImgLink from '../assets/files/pubs/wigglite-uist-2022/wigglite-uist-2022.png';
+import codexcel_2023PreviewImgLink from '../assets/files/pubs/codexcel-chi-2023/codexcel-chi-2023.png';
 import { filePathPrefix } from './constants';
 
 export const pubFilePathPrefix = filePathPrefix + `/pubs`;
@@ -161,7 +162,7 @@ export const publicationsData = {
     {
       title:
         'An Exploratory Study of Web Foraging to Understand and Support Programming Decisions',
-      type: 'poster',
+      type: 'workshop',
       conference: 'VL/HCC',
       conferenceFullName:
         'IEEE Symposium on Visual Languages and Human-Centric Computing (VL/HCC)',
@@ -668,6 +669,61 @@ export const publicationsData = {
       bibtex: ``,
       shouldShowLocalPaperLink: false,
       acmdl_available: false,
+    },
+
+    // Crystalline: Lowering the Cost for Developers to Collect and Organize Information for Decision Making - CHI 2022
+    {
+      title:
+        '"What It Wants Me To Say": Bridging the Abstraction Gap Between End-User Programmers and Code-Generating Large Language Models',
+      type: 'conference',
+      conference: 'CHI',
+      conferenceFullName:
+        'ACM CHI Conference on Human Factors in Computing Systems (CHI)',
+      conferenceTag: 'CHI 2023',
+      year: 2023,
+      month: 5,
+      authors: [
+        {
+          name: 'Michael Xieyang Liu',
+          bold: true,
+        },
+        {
+          name: 'Advait Sarkar',
+          bold: false,
+        },
+        {
+          name: 'Carina Negreanu',
+          bold: false,
+        },
+        {
+          name: 'Ben Zorn',
+          bold: false,
+        },
+        {
+          name: 'Jack Williams',
+          bold: false,
+        },
+        {
+          name: 'Neil Toronto',
+          bold: false,
+        },
+        {
+          name: 'Andrew D. Gordon',
+          bold: false,
+        },
+      ],
+      abstract: `Code-generating large language models translate natural language into code. However, only a small portion of the infinite space of naturalistic utterances is effective at guiding code generation. For non-expert end-user programmers, learning this is the challenge of abstraction matching. We examine this challenge in the specific context of data analysis in spreadsheets, in a system that maps the users natural language query to Python code using the Codex generator, executes the code, and shows the result. We propose grounded abstraction matching, which bridges the abstraction gap by translating the code back into a systematic and predictable naturalistic utterance. In a between-subjects, think-aloud study (n=24), we compare grounded abstraction matching to an ungrounded alternative based on previously established query framing principles. We find that the grounded approach improves end-users' understanding of the scope and capabilities of the code-generating model, and the kind of language needed to use it effectively.`,
+      codename: 'codexcel-chi-2023',
+      bibtex: ``,
+      previewImgLink: codexcel_2023PreviewImgLink,
+      shouldShowLocalPaperLink: false,
+      // doi: 'https://doi.org/10.1145/3491102.3501968',
+      // acmdl: 'https://doi.org/10.1145/3491102.3501968',
+      // arxiv: 'https://arxiv.org/abs/2202.02175',
+      acmdl_available: false,
+      // conferenceTalkVideo: 'https://youtu.be/VO-osTVGuJs',
+      showOnWebCV: true,
+      showInResearchPage: false,
     },
   ],
 };
