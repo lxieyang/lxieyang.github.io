@@ -129,8 +129,8 @@ const CV = ({ data }) => {
           My research is at the intersection of Human-computer Interaction
           (HCI), programming tools, sensemaking, intelligent user interfaces,
           and human-AI interaction, where I design and build systems that
-          accelerate online sensemaking for developers [C3-6, C9, W1-3, P1] and
-          facilitate human-AI interactions for end-users [C1, C2, C7, C10, P2].
+          accelerate online sensemaking for developers [C3-6, 9; W1-3; P1] and
+          facilitate human-AI interactions for end-users [C1-2, 7, 11; P2].
         </CVSectionContainer>
 
         <CVSectionContainer>
@@ -193,7 +193,7 @@ const CV = ({ data }) => {
               </>
             }
           />
-          <CVEntryWithDateOnTheLeft
+          {/* <CVEntryWithDateOnTheLeft
             dateString={'2013 - 2017'}
             content={
               <>
@@ -205,7 +205,7 @@ const CV = ({ data }) => {
                 <br />
               </>
             }
-          />
+          /> */}
         </CVSectionContainer>
 
         <CVSectionContainer>
@@ -502,6 +502,32 @@ const CV = ({ data }) => {
         </CVSectionContainer>
 
         <CVSectionContainer>
+          <CVSectionTitle>Invited Talks</CVSectionTitle>
+          <CVEntryWithIndexOnTheLeft indexSpace={100} indexString={'Aug. 2022'}>
+            <strong>
+              Bridging the Abstration Gap Between End-User Programmers and
+              LLM-backed Code-Generating Models
+            </strong>
+            , Microsoft Research
+          </CVEntryWithIndexOnTheLeft>
+          <CVEntryWithIndexOnTheLeft indexSpace={100} indexString={'Aug. 2020'}>
+            <strong>Understanding Refactoring with Golang</strong>, Google Cloud
+            DevEx Presentation
+          </CVEntryWithIndexOnTheLeft>
+          <CVEntryWithIndexOnTheLeft
+            indexSpace={100}
+            indexString={'April 2018'}
+          >
+            <strong>
+              Supporting Knowledge Acceleration for Programming from a
+              Sensemaking Perspective
+            </strong>
+            , Sensemaking Workshop at CHI Conference on Human Factors in
+            Computing Systems
+          </CVEntryWithIndexOnTheLeft>
+        </CVSectionContainer>
+
+        <CVSectionContainer>
           <CVSectionTitle>
             Selected Honors, Grants, Awards & Coverage
           </CVSectionTitle>
@@ -702,7 +728,7 @@ const CV = ({ data }) => {
             </strong>{' '}
             <br />
             <em>
-              Oberlin College Student (Currently a CMU S3D PhD. Candidate)
+              Oberlin College Student (Currently a CMU S3D Ph.D. Candidate)
             </em>{' '}
             <br />
             Studied programmers' web-foraging behaviors. Contributed to the

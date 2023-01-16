@@ -520,6 +520,7 @@ export const query = graphql`
           github
           facebook
           instagram
+          linkedin
           twitter
         }
       }

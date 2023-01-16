@@ -9,6 +9,7 @@ import { MdLocationOn as LocationIcon } from '@react-icons/all-files/md/MdLocati
 import { MdEmail as EmailIcon } from '@react-icons/all-files/md/MdEmail';
 import { FaTwitterSquare as TwitterIcon } from '@react-icons/all-files/fa/FaTwitterSquare';
 import { FaGithub as GithubIcon } from '@react-icons/all-files/fa/FaGithub';
+import { FaLinkedin as LinkedInIcon } from '@react-icons/all-files/fa/FaLinkedin';
 import { MdSchool as GoogleScholarIcon } from '@react-icons/all-files/md/MdSchool';
 import { IoMdDocument as CVIcon } from '@react-icons/all-files/io/IoMdDocument';
 import { TiDocumentText as ThesisIcon } from '@react-icons/all-files/ti/TiDocumentText';
@@ -50,12 +51,17 @@ const ContactInfo = ({ data, inCVPage }) => {
 
       <div className="contact-entry">
         <TwitterIcon className="icon" />
-        <a href={data.site.siteMetadata.externalLinks.twitter}>@lxieyang</a>
+        <a href={data.site.siteMetadata.externalLinks.twitter}>Twitter</a>
+      </div>
+
+      <div className="contact-entry">
+        <LinkedInIcon className="icon" />
+        <a href={data.site.siteMetadata.externalLinks.linkedin}>LinkedIn</a>
       </div>
 
       <div className="contact-entry">
         <GithubIcon className="icon" />
-        <a href={data.site.siteMetadata.externalLinks.github}>lxieyang</a>
+        <a href={data.site.siteMetadata.externalLinks.github}>Github</a>
       </div>
 
       <div className="contact-entry">

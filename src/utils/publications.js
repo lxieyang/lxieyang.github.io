@@ -11,6 +11,7 @@ import adamite_chi_2022PreviewImgLink from '../assets/files/pubs/adamite-chi-202
 import multimodal_assets_2022PreviewImgLink from '../assets/files/pubs/multimodal-assets-2022/multimodal-assets-2022.png';
 import wigglite_uist_2022PreviewImgLink from '../assets/files/pubs/wigglite-uist-2022/wigglite-uist-2022.png';
 import codexcel_2023PreviewImgLink from '../assets/files/pubs/codexcel-chi-2023/codexcel-chi-2023.png';
+import pinmi_2023PreviewImgLink from '../assets/files/pubs/pinmi-chi-2023/pinmi-chi-2023.png';
 import { filePathPrefix } from './constants';
 
 export const pubFilePathPrefix = filePathPrefix + `/pubs`;
@@ -671,7 +672,62 @@ export const publicationsData = {
       acmdl_available: false,
     },
 
-    // Crystalline: Lowering the Cost for Developers to Collect and Organize Information for Decision Making - CHI 2022
+    // Pin-MI: Facilitating Counselor Reflective Learning With a Real-time Annotation Tool - CHI 2023
+    {
+      title:
+        'Pin-MI: Facilitating Counselor Reflective Learning With a Real-time Annotation Tool',
+      type: 'conference',
+      conference: 'CHI',
+      conferenceFullName:
+        'ACM CHI Conference on Human Factors in Computing Systems (CHI)',
+      conferenceTag: 'CHI 2023',
+      year: 2023,
+      month: 5,
+      authors: [
+        {
+          name: 'Tianying Chen',
+          bold: false,
+        },
+        {
+          name: 'Michael Xieyang Liu',
+          bold: true,
+        },
+        {
+          name: 'Emily Ding',
+          bold: false,
+        },
+        {
+          name: 'Emma O’Neil',
+          bold: false,
+        },
+        {
+          name: 'Mansi Agarwal',
+          bold: false,
+        },
+        {
+          name: 'Robert E. Kraut',
+          bold: false,
+        },
+        {
+          name: 'Laura Dabbish',
+          bold: false,
+        },
+      ],
+      abstract: `Experiential training, where mental health professionals practice their learned skills, remains the most costly component of therapeutic training. We introduce Pinion, a tool that supports experiential learning of counseling skills through interactive role-play as client and counselors. In Pinion counselors annotate, or "pin" the important moments in their role-play sessions in real-time. The pins are then used post-session to facilitate a reflective learning process. We discuss the design and qualitative evaluation of Pinion with a set of healthcare professionals learning MI. Our evaluation suggests that Pinion helped users develop empathy, be more aware of their skill usage, guaranteed immediate and targeted feedback, and helped users correct the misconceptions about their performances. We discuss implications for the design of experiential training tools for learning counseling skills.`,
+      codename: 'pinmi-chi-2023',
+      bibtex: ``,
+      previewImgLink: pinmi_2023PreviewImgLink,
+      shouldShowLocalPaperLink: false,
+      // doi: 'https://doi.org/10.1145/3491102.3501968',
+      // acmdl: 'https://doi.org/10.1145/3491102.3501968',
+      // arxiv: 'https://arxiv.org/abs/2202.02175',
+      acmdl_available: false,
+      // conferenceTalkVideo: 'https://youtu.be/VO-osTVGuJs',
+      showOnWebCV: true,
+      showInResearchPage: true,
+    },
+
+    // "What It Wants Me To Say": Bridging the Abstraction Gap Between End-User Programmers and Code-Generating Large Language Models - CHI 2023
     {
       title:
         '"What It Wants Me To Say": Bridging the Abstraction Gap Between End-User Programmers and Code-Generating Large Language Models',
@@ -723,7 +779,7 @@ export const publicationsData = {
       acmdl_available: false,
       // conferenceTalkVideo: 'https://youtu.be/VO-osTVGuJs',
       showOnWebCV: true,
-      showInResearchPage: false,
+      showInResearchPage: true,
     },
   ],
 };
