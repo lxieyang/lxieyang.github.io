@@ -4,6 +4,7 @@ import unakiteVlhccWorkshopPreviewImgLink from '../assets/files/pubs/unakite-vlh
 import stackoverflowVlhccWorkshopPreviewImgLink from '../assets/files/pubs/stackoverflow-vlhcc-workshop/stackoverflow-vlhcc-workshop-preview.jpg';
 import av_annoPreviewImgLink from '../assets/files/pubs/av_anno/av_anno.png';
 import unakite_uist_2019PreviewImgLink from '../assets/files/pubs/unakite-uist-2019/unakite-uist-2019.png';
+import covidcast_pnas_2021PreviewImgLink from '../assets/files/pubs/covidcast-pnas-2021/covidcast-pnas-2021.png';
 import strata_cscw_2021PreviewImgLink from '../assets/files/pubs/strata-cscw-2021/strata-cscw-2021.jpg';
 import tabsdo_uist_2021PreviewImgLink from '../assets/files/pubs/tabsdo-uist-2021/tabsdo-uist-2021.jpg';
 import crystalline_chi_2022PreviewImgLink from '../assets/files/pubs/crystalline-chi-2022/crystalline-chi-2022.png';
@@ -310,6 +311,56 @@ export const publicationsData = {
         honorableMention: true,
       },
       conferenceTalkVideo: 'https://youtu.be/UMQ-kWgmbQ4',
+    },
+
+    // An open repository of real-time COVID-19 indicators - PNAS 2021
+    {
+      title: 'An open repository of real-time COVID-19 indicators',
+      type: 'conference',
+      conference: 'PNAS',
+      conferenceFullName:
+        'Proceedings of the National Academy of Sciences (PNAS)',
+      conferenceTag: 'PNAS 2021',
+      year: 2021,
+      month: 9,
+      authors: [
+        {
+          name: 'Alex Reinhart',
+          bold: false,
+        },
+        {
+          name: 'Logan Brooks',
+          bold: false,
+        },
+        {
+          name: 'Maria Jahja',
+          bold: false,
+        },
+        {
+          name: 'Aaron Rumack',
+          bold: false,
+        },
+        {
+          name: 'Jingjing Tang',
+          bold: false,
+        },
+        {
+          name: '[et al., including Michael Xieyang Liu]',
+          bold: true,
+        },
+      ],
+      abstract: `The COVID-19 pandemic presented enormous data challenges in the United States. Policy makers, epidemiological modelers, and health researchers all require up-to-date data on the pandemic and relevant public behavior, ideally at fine spatial and temporal resolution. The COVIDcast API is our attempt to fill this need: Operational since April 2020, it provides open access to both traditional public health surveillance signals (cases, deaths, and hospitalizations) and many auxiliary indicators of COVID-19 activity, such as signals extracted from deidentified medical claims data, massive online surveys, cell phone mobility data, and internet search trends. These are available at a fine geographic resolution (mostly at the county level) and are updated daily. The COVIDcast API also tracks all revisions to historical data, allowing modelers to account for the frequent revisions and backfill that are common for many public health data sources. All of the data are available in a common format through the API and accompanying R and Python software packages. This paper describes the data sources and signals, and provides examples demonstrating that the auxiliary signals in the COVIDcast API present information relevant to tracking COVID activity, augmenting traditional public health reporting and empowering research and decision-making.`,
+      codename: 'covidcast-pnas-2021',
+      bibtex: ``,
+      previewImgLink: covidcast_pnas_2021PreviewImgLink,
+      shouldShowLocalPaperLink: true,
+      doi: 'https://doi.org/10.1073/pnas.2111452118',
+      pnasdl: 'https://doi.org/10.1073/pnas.2111452118',
+      pnasdl_available: true,
+      award: {
+        honorableMention: false,
+      },
+      website: 'https://delphi.cmu.edu/covidcast/',
     },
 
     // Tabs.do: Task-Centric Browser Tab Management - UIST 2021

@@ -266,6 +266,40 @@ class Publications extends Component {
                                 )}
                               </span>
                             )}
+                            {pub.pnasdl !== undefined && (
+                              <span>
+                                {pub.pnasdl_available === false ? (
+                                  <React.Fragment>
+                                    <em>Available soon!</em>
+                                  </React.Fragment>
+                                ) : (
+                                  <>
+                                    [
+                                    <a
+                                      href={pub.pnasdl}
+                                      target="_blank"
+                                      rel="noopener noreferrer"
+                                      style={{
+                                        display: 'flex',
+                                        alignItems: 'center',
+                                      }}
+                                    >
+                                      {/* <img
+                                      src={ACMDLIcon}
+                                      alt="acmdl"
+                                      style={{
+                                        marginRight: 3,
+                                        width: 20,
+                                        height: 20,
+                                      }}
+                                    /> */}
+                                      PNAS
+                                    </a>
+                                    ]
+                                  </>
+                                )}
+                              </span>
+                            )}
                             {pub.arxiv !== undefined && (
                               <span>
                                 [
@@ -419,6 +453,32 @@ class Publications extends Component {
                                     }}
                                   /> */}
                                   CMU SCS News
+                                </a>
+                                ]
+                              </span>
+                            )}
+                            {pub.website !== undefined && (
+                              <span>
+                                [
+                                <a
+                                  href={pub.website}
+                                  target="_blank"
+                                  rel="noopener noreferrer"
+                                  style={{
+                                    display: 'flex',
+                                    alignItems: 'center',
+                                  }}
+                                >
+                                  {/* <img
+                                    src={CMUSCSIcon}
+                                    alt="video"
+                                    style={{
+                                      marginRight: 3,
+                                      width: 20,
+                                      height: 20,
+                                    }}
+                                  /> */}
+                                  Project Website
                                 </a>
                                 ]
                               </span>

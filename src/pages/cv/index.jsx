@@ -129,8 +129,8 @@ const CV = ({ data }) => {
           My research is at the intersection of Human-computer Interaction
           (HCI), programming tools, sensemaking, intelligent user interfaces,
           and human-AI interaction, where I design and build systems that
-          accelerate online sensemaking for developers [C3-6, 9; W1-3; P1] and
-          facilitate human-AI interactions for end-users [C1-2, 7, 11; P2].
+          accelerate online sensemaking for developers [C3, 5-7, 10; W1-3; P1]
+          and facilitate human-AI interactions for end-users [C1-2, 8, 12; P2].
         </CVSectionContainer>
 
         <CVSectionContainer>
@@ -926,6 +926,7 @@ export const query = graphql`
           github
           facebook
           instagram
+          linkedin
           twitter
         }
       }
