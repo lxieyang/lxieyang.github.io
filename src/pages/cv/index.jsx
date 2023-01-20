@@ -336,7 +336,8 @@ const CV = ({ data }) => {
                 </em>
                 <br />
                 Designed, built, and evaluated natural language interactions for
-                end-user programmers.
+                end-user programmers by leveraging code-generating large
+                language models (LLMs).
               </>
             }
           />
