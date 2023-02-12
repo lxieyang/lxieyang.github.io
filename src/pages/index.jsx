@@ -240,7 +240,7 @@ const IndexPage = ({ data }) => {
               <strong>Intelligent User Interfaces</strong>, where he uses
               human-centered methods to design, build, and study interactive
               systems to empower individuals, especially developers, to find,
-              collect, organize, and make sese of information online as well as
+              collect, organize, and make sense of information online as well as
               to keep track of their complex decision making processes so that
               other individuals could also benefit.
             </p>
