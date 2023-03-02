@@ -136,7 +136,7 @@ const CV = ({ data }) => {
         <CVSectionContainer>
           <CVSectionTitle>Education</CVSectionTitle>
           <CVEntryWithDateOnTheLeft
-            dateString={'2017 - present'}
+            dateString={'2017 - 2023 (expected)'}
             content={
               <>
                 <strong>Ph.D.</strong> in{' '}
@@ -386,6 +386,70 @@ const CV = ({ data }) => {
                 <br />
                 Worked on crowd & AI-powered projects that aim to improve the
                 safety and performance of autonomous vehicles.
+              </>
+            }
+          />
+        </CVSectionContainer>
+
+        <CVSectionContainer>
+          <CVSectionTitle>Open-source Experience</CVSectionTitle>
+          <CVEntryWithDateOnTheLeft
+            dateString={'2019 - present'}
+            content={
+              <>
+                <strong>
+                  <a
+                    href="https://chrome.google.com/webstore/detail/vertical-tabs/pddljdmihkpdfpkgmbhdomeeifpklgnm"
+                    target={'_blank'}
+                  >
+                    Vertical Tabs Chrome Extension
+                  </a>
+                </strong>
+                <br />
+                <a
+                  href="https://chrome.google.com/webstore/detail/vertical-tabs/pddljdmihkpdfpkgmbhdomeeifpklgnm"
+                  target={'_blank'}
+                >
+                  29,000+ users
+                </a>{' '}
+                on Chrome Web Store;{' '}
+                <a
+                  href="https://github.com/lxieyang/vertical-tabs-chrome-extension"
+                  target={'_blank'}
+                >
+                  350+ stars
+                </a>{' '}
+                on GitHub (as of Mar. 2023)
+              </>
+            }
+          />
+          <CVEntryWithDateOnTheLeft
+            dateString={'2019 - present'}
+            content={
+              <>
+                <strong>
+                  <a
+                    href="https://github.com/lxieyang/chrome-extension-boilerplate-react/"
+                    target={'_blank'}
+                  >
+                    Chrome extension boilerplate (w/ React & Webpack)
+                  </a>
+                </strong>
+                <br />
+                <a
+                  href="https://github.com/lxieyang/chrome-extension-boilerplate-react/stargazers"
+                  target={'_blank'}
+                >
+                  2000+ stars
+                </a>
+                ,{' '}
+                <a
+                  href="https://github.com/lxieyang/chrome-extension-boilerplate-react/forks"
+                  target={'_blank'}
+                >
+                  600+ forks
+                </a>{' '}
+                on GitHub (as of Mar. 2023)
               </>
             }
           />
