@@ -836,9 +836,9 @@ const CV = ({ data }) => {
               <strong style={{ fontStyle: 'normal' }}>Paper Reviewing</strong>
             }
           >
-            <strong>Conferences</strong>: <u>CHI</u> (2019, 2020, 2021, 2022,
-            2023), <u>CSCW</u> (2019, 2020, 2021, 2022), <u>UIST</u> (2019,
-            2020, 2021, 2022), <u>IUI</u> (2020), <u>VAST</u> (2020)
+            <strong>Conferences</strong>: <u>CHI</u> (2019 - 2023), <u>CSCW</u>{' '}
+            (2019 - 2023), <u>UIST</u> (2019 - 2022), <u>IUI</u> (2020),{' '}
+            <u>VAST</u> (2020)
             <strong>Journal</strong>: <u>TOCHI</u> (2022) <br />
             <strong>Special Recognitions for Outstanding Reviews</strong>:{' '}
             <u>UIST</u> (2021), <u>CHI</u> (2023)
