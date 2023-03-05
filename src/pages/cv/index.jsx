@@ -568,6 +568,32 @@ const CV = ({ data }) => {
 
         <CVSectionContainer>
           <CVSectionTitle>Invited Talks</CVSectionTitle>
+          <CVEntryWithIndexOnTheLeft indexSpace={100} indexString={'Mar. 2023'}>
+            <strong>
+              Accelerating Programming Sensemaking with Human-Centered
+              Interactive Systems
+            </strong>
+            , Microsoft Research
+          </CVEntryWithIndexOnTheLeft>
+          <CVEntryWithIndexOnTheLeft indexSpace={100} indexString={'Mar. 2023'}>
+            <strong>
+              Accelerating Programming Sensemaking with Human-Centered
+              Interactive Systems
+            </strong>
+            , Apple AI/ML
+          </CVEntryWithIndexOnTheLeft>
+          <CVEntryWithIndexOnTheLeft indexSpace={100} indexString={'Feb. 2023'}>
+            <strong>
+              Accelerating Sensemaking with Human-Centered Interactive Systems
+            </strong>
+            , Google Research
+          </CVEntryWithIndexOnTheLeft>
+          <CVEntryWithIndexOnTheLeft indexSpace={100} indexString={'Feb. 2023'}>
+            <strong>
+              Accelerating Sensemaking with Human-Centered Interactive Systems
+            </strong>
+            , Allen Institute for Artificial Intelligence (AI2)
+          </CVEntryWithIndexOnTheLeft>
           <CVEntryWithIndexOnTheLeft indexSpace={100} indexString={'Aug. 2022'}>
             <strong>
               Bridging the Abstration Gap Between End-User Programmers and
