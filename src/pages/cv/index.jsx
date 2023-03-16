@@ -410,7 +410,7 @@ const CV = ({ data }) => {
                   href="https://chrome.google.com/webstore/detail/vertical-tabs/pddljdmihkpdfpkgmbhdomeeifpklgnm"
                   target={'_blank'}
                 >
-                  29,000+ users
+                  30,000+ users
                 </a>{' '}
                 on Chrome Web Store;{' '}
                 <a
