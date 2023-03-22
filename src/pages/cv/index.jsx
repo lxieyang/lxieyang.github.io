@@ -440,14 +440,14 @@ const CV = ({ data }) => {
                   href="https://github.com/lxieyang/chrome-extension-boilerplate-react/stargazers"
                   target={'_blank'}
                 >
-                  2000+ stars
+                  2100+ stars
                 </a>
                 ,{' '}
                 <a
                   href="https://github.com/lxieyang/chrome-extension-boilerplate-react/forks"
                   target={'_blank'}
                 >
-                  600+ forks
+                  680+ forks
                 </a>{' '}
                 on GitHub (as of Mar. 2023)
               </>
