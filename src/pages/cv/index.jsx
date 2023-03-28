@@ -417,7 +417,7 @@ const CV = ({ data }) => {
                   href="https://github.com/lxieyang/vertical-tabs-chrome-extension"
                   target={'_blank'}
                 >
-                  350+ stars
+                  360+ stars
                 </a>{' '}
                 on GitHub (as of Mar. 2023)
               </>
@@ -447,7 +447,7 @@ const CV = ({ data }) => {
                   href="https://github.com/lxieyang/chrome-extension-boilerplate-react/forks"
                   target={'_blank'}
                 >
-                  680+ forks
+                  700+ forks
                 </a>{' '}
                 on GitHub (as of Mar. 2023)
               </>
