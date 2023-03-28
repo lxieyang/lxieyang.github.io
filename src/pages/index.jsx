@@ -162,7 +162,7 @@ const IndexPage = ({ data }) => {
                 }}
               />
             </div>
-            <Row>
+            {/* <Row>
               <Col style={{ margin: 0, padding: 0 }}>
                 <div
                   style={{
@@ -188,7 +188,7 @@ const IndexPage = ({ data }) => {
                   any relevant opportunities!
                 </div>
               </Col>
-            </Row>
+            </Row> */}
             {/* <h1>About me</h1> */}
             <br />
             <p className="">
