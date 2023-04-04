@@ -830,6 +830,9 @@ export const publicationsData = {
       // conferenceTalkVideo: 'https://youtu.be/VO-osTVGuJs',
       showOnWebCV: true,
       showInResearchPage: true,
+      award: {
+        honorableMention: true,
+      },
     },
   ],
 };

@@ -246,10 +246,11 @@ const IndexPage = ({ data }) => {
             </p>
             <p>
               He publishes at premier HCI academic venues such as CHI, UIST, and
-              CSCW, including two award-winning papers: a{' '}
-              <strong>best paper</strong> at CSCW 2021 and a{' '}
-              <strong>best paper honorable mention</strong> paper at UIST 2019.
-              His work has been generously supported by the{' '}
+              CSCW, including three award-winning papers: a{' '}
+              <strong>best paper honorable mention</strong> at CHI 2023, a{' '}
+              <strong>best paper</strong> at CSCW 2021, and a{' '}
+              <strong>best paper honorable mention</strong> at UIST 2019. His
+              work has been generously supported by the{' '}
               <a href="https://www.nsf.gov/awardsearch/showAward?AWD_ID=1814826">
                 National Science Foundation (NSF)
               </a>

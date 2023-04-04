@@ -622,6 +622,13 @@ const CV = ({ data }) => {
           <CVSectionTitle>
             Selected Honors, Grants, Awards & Coverage
           </CVSectionTitle>
+          <CVEntryWithIndexOnTheLeft
+            indexSpace={100}
+            indexString={'April 2023'}
+          >
+            <strong>Best Paper Honorable Mention Award</strong>, ACM CHI
+            Conference on Human Factors in Computing Systems (CHI 2023)
+          </CVEntryWithIndexOnTheLeft>
           <CVEntryWithIndexOnTheLeft indexSpace={100} indexString={'Nov. 2022'}>
             <strong>Special Recognitions for Outstanding Reviews</strong>, ACM
             CHI Conference on Human Factors in Computing Systems (CHI 2023)

@@ -10,6 +10,47 @@ export default [
   {
     content: (
       <Fragment>
+        Our full paper{' '}
+        <span className="paper-title">
+          <a
+            href={`${pubFilePathPrefix}/codexcel-chi-2023/codexcel-chi-2023.pdf`}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            "What It Wants Me To Say": Bridging the Abstraction Gap Between
+            End-User Programmers and Code-Generating Large Language Models
+          </a>
+        </span>{' '}
+        just won a{' '}
+        <span className="news-badge">
+          <span className="best-paper">
+            {/* <FaTrophy /> &nbsp; */}
+            🏆&nbsp;Best Paper Honorable Mention Award
+          </span>
+        </span>{' '}
+        at{' '}
+        <a
+          href="https://chi2023.acm.org/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          CHI 2023
+        </a>
+        ! Check it out{' '}
+        <a
+          href={`${pubFilePathPrefix}/codexcel-chi-2023/codexcel-chi-2023.pdf`}
+        >
+          here
+        </a>
+        !
+      </Fragment>
+    ),
+    date: new Date('2023-04-03'),
+    shouldDisplay: true,
+  },
+  {
+    content: (
+      <Fragment>
         I passed my thesis proposal! One step closer to graduation! Here's my{' '}
         <a href={ThesisProposalPath}>proposal document</a> and{' '}
         <a href={ThesisProposalSlidesPath}>slides</a>.
