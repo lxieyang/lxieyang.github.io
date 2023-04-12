@@ -13,7 +13,7 @@ export default [
         Our full paper{' '}
         <span className="paper-title">
           <a
-            href={`${pubFilePathPrefix}/codexcel-chi-2023/codexcel-chi-2023.pdf`}
+            href={`${pubFilePathPrefix}/llmgam-chi-2023/llmgam-chi-2023.pdf`}
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -37,9 +37,7 @@ export default [
           CHI 2023
         </a>
         ! Check it out{' '}
-        <a
-          href={`${pubFilePathPrefix}/codexcel-chi-2023/codexcel-chi-2023.pdf`}
-        >
+        <a href={`${pubFilePathPrefix}/llmgam-chi-2023/llmgam-chi-2023.pdf`}>
           here
         </a>
         !
