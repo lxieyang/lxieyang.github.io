@@ -723,17 +723,17 @@ export const publicationsData = {
       acmdl_available: false,
     },
 
-    // Pin-MI: Facilitating Counselor Reflective Learning With a Real-time Annotation Tool - CHI 2023
+    // Facilitating Counselor Reflective Learning With a Real-time Annotation Tool - CHI 2023
     {
       title:
-        'Pin-MI: Facilitating Counselor Reflective Learning With a Real-time Annotation Tool',
+        'Facilitating Counselor Reflective Learning With a Real-time Annotation Tool',
       type: 'conference',
       conference: 'CHI',
       conferenceFullName:
         'ACM CHI Conference on Human Factors in Computing Systems (CHI)',
       conferenceTag: 'CHI 2023',
       year: 2023,
-      month: 5,
+      month: 4,
       authors: [
         {
           name: 'Tianying Chen',
@@ -769,10 +769,9 @@ export const publicationsData = {
       bibtex: ``,
       previewImgLink: pinmi_2023PreviewImgLink,
       shouldShowLocalPaperLink: true,
-      // doi: 'https://doi.org/10.1145/3544548.3581551',
-      // acmdl: 'https://doi.org/10.1145/3544548.3581551',
-      acmdl_available: false,
-      // conferenceTalkVideo: 'https://youtu.be/VO-osTVGuJs',
+      doi: 'https://doi.org/10.1145/3544548.3581551',
+      acmdl: 'https://doi.org/10.1145/3544548.3581551',
+      acmdl_available: true,
       showOnWebCV: true,
       showInResearchPage: true,
     },
@@ -787,7 +786,7 @@ export const publicationsData = {
         'ACM CHI Conference on Human Factors in Computing Systems (CHI)',
       conferenceTag: 'CHI 2023',
       year: 2023,
-      month: 5,
+      month: 4,
       authors: [
         {
           name: 'Michael Xieyang Liu',
@@ -824,9 +823,9 @@ export const publicationsData = {
       previewImgLink: llmgam_2023PreviewImgLink,
       shouldShowLocalPaperLink: true,
       doi: 'https://doi.org/10.1145/3544548.3580817',
-      // acmdl: 'https://doi.org/10.1145/3544548.3580817',
-      // arxiv: 'https://arxiv.org/abs/2202.02175',
-      // acmdl_available: true,
+      acmdl: 'https://doi.org/10.1145/3544548.3580817',
+      arxiv: 'https://arxiv.org/abs/2304.06597',
+      acmdl_available: true,
       conferenceTalkVideo: 'https://youtu.be/w9PXnm_outI',
       showOnWebCV: true,
       showInResearchPage: true,
