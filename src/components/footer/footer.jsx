@@ -238,13 +238,8 @@ class Footer extends Component {
   }
 
   render() {
-    const {
-      googleScholarProfile,
-      facebook,
-      github,
-      instagram,
-      twitter,
-    } = this.props.links;
+    const { googleScholarProfile, facebook, github, instagram, twitter } =
+      this.props.links;
     const { gitDataFromGithub } = this.state;
 
     return (
@@ -264,7 +259,7 @@ class Footer extends Component {
             </Col>
 
             <Col lg="5" className="text-left">
-              <CodeCommitSection gitDataFromGithub={gitDataFromGithub} />
+              {/* <CodeCommitSection gitDataFromGithub={gitDataFromGithub} /> */}
             </Col>
           </Row>
         </FooterContainer>
