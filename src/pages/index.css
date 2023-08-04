@@ -112,7 +112,7 @@ h1 {
   /* font-weight: bold; */
   /* color: rgba(101, 102, 109, 1); */
   /* color: rgba(193, 0, 15, 1); */
-  color: #01751e;
+  color: #005f18;
 }
 
 .self-identify-paragraph {
@@ -149,7 +149,7 @@ h1 {
 
 .travel-upcoming {
   /* color: rgba(193, 0, 15, 1); */
-  color: #01751e;
+  color: #005f18;
 }
 
 .old-news {
@@ -220,6 +220,6 @@ h1 {
 .paper-title.pub-element {
   /* color: #c1000f; */
   /* color: #00695c; */
-  color: #01751e;
+  color: #005f18;
   font-style: normal;
 }

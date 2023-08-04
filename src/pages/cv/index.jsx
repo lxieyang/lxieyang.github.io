@@ -353,7 +353,7 @@ const CV = ({ data }) => {
                           <a
                             style={{
                               // color: 'rgb(166, 38, 27)',
-                              color: '#01751e',
+                              color: '#005f18',
                               fontWeight: 500,
                             }}
                             href={`${pubFilePathPrefix}/${pub.codename}/${pub.codename}.pdf`}
