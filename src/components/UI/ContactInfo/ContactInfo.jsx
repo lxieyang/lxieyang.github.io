@@ -2,7 +2,11 @@ import React, { useState } from 'react';
 import copy from 'copy-to-clipboard';
 import Email from '../ObfuscatedEmail/ObfuscatedEmail';
 
-import { CVPath, ThesisProposalPath } from '../../../utils/constants';
+import {
+  CVPath,
+  ThesisProposalPath,
+  DissertationPath,
+} from '../../../utils/constants';
 import { ThesisProposalAbstractPath } from '../../../utils/constants';
 
 import { MdLocationOn as LocationIcon } from '@react-icons/all-files/md/MdLocationOn';
@@ -32,7 +36,7 @@ const ContactInfo = ({ data, inCVPage }) => {
         }, 3000);
       }}
     >
-      {inCVPage !== true && (
+      {/* {inCVPage !== true && (
         <div className="contact-entry">
           <LocationIcon className="icon" />{' '}
           <a
@@ -43,7 +47,7 @@ const ContactInfo = ({ data, inCVPage }) => {
             Newell-Simon Hall 4611
           </a>
         </div>
-      )}
+      )} */}
 
       <div className="contact-entry">
         <EmailIcon className="icon" /> <Email />
@@ -54,10 +58,10 @@ const ContactInfo = ({ data, inCVPage }) => {
         <a href={data.site.siteMetadata.externalLinks.twitter}>Twitter</a>
       </div>
 
-      <div className="contact-entry">
+      {/* <div className="contact-entry">
         <LinkedInIcon className="icon" />
         <a href={data.site.siteMetadata.externalLinks.linkedin}>LinkedIn</a>
-      </div>
+      </div> */}
 
       <div className="contact-entry">
         <GithubIcon className="icon" />
@@ -86,17 +90,9 @@ const ContactInfo = ({ data, inCVPage }) => {
         }}
       >
         <ThesisIcon className="icon" />
-        <a href={ThesisProposalPath} target="_blank">
-          Thesis proposal
+        <a href={DissertationPath} target="_blank">
+          Dissertation
         </a>{' '}
-        {/* <a
-          onClick={() => {
-            copy(ThesisProposalAbstractPath);
-          }}
-          href="#"
-        >
-          [copy]
-        </a> */}
       </div>
 
       <div style={{ width: '100%', height: '20px' }}></div>

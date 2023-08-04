@@ -1,9 +1,15 @@
 a {
-  color: #c1000f;
+  /* color: #c1000f; */
+  /* color: #00695c; */
+  /* color: #00786a; */
+  color: #01751e;
 }
 
 a:hover {
-  color: #c1000f;
+  /* color: #c1000f; */
+  /* color: #00695c; */
+  /* color: #00786a; */
+  color: #029a28;
 }
 
 .tooltip {

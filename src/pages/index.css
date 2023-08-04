@@ -111,7 +111,8 @@ h1 {
   font-size: 1.1rem;
   /* font-weight: bold; */
   /* color: rgba(101, 102, 109, 1); */
-  color: rgba(193, 0, 15, 1);
+  /* color: rgba(193, 0, 15, 1); */
+  color: #01751e;
 }
 
 .self-identify-paragraph {
@@ -147,7 +148,8 @@ h1 {
 }
 
 .travel-upcoming {
-  color: rgba(193, 0, 15, 1);
+  /* color: rgba(193, 0, 15, 1); */
+  color: #01751e;
 }
 
 .old-news {
@@ -216,6 +218,8 @@ h1 {
 }
 
 .paper-title.pub-element {
-  color: #c1000f;
+  /* color: #c1000f; */
+  /* color: #00695c; */
+  color: #01751e;
   font-style: normal;
 }

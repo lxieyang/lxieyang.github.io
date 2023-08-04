@@ -34,7 +34,8 @@ const CVButton = styled.a`
   font-size: 1.2rem;
   border-radius: 5px;
   padding: 0.25rem 0.5rem;
-  border: 1px solid #c1000f;
+  /* border: 1px solid #c1000f; */
+  border: 1px solid #01751e;
   /* background-color: #c1000f; */
   /* color: #fff; */
 `;
@@ -112,11 +113,13 @@ const CV = ({ data }) => {
         <Row>
           <Col xs="12" sm="6">
             <CVContactsInfoContainer>
-              Human-Computer Interaction Institute, School of Computer Science{' '}
+              People + AI Research (PAIR) <br />
+              Google
+              {/* Human-Computer Interaction Institute, School of Computer Science{' '}
               <br />
               Carnegie Mellon University <br />
               5000 Forbes Avenue <br />
-              Pittsburgh, PA 15213
+              Pittsburgh, PA 15213 */}
             </CVContactsInfoContainer>
           </Col>
           <Col xs="12" sm="6">
@@ -129,22 +132,128 @@ const CV = ({ data }) => {
           My research is at the intersection of Human-computer Interaction
           (HCI), programming tools, sensemaking, intelligent user interfaces,
           and human-AI interaction, where I design and build systems that
-          accelerate online sensemaking for developers [C3, 5-7, 10; W1-3; P1]
-          and facilitate human-AI interactions for end-users [C1-2, 8, 12; P2].
+          accelerate online sensemaking for developers and facilitate human-AI
+          interactions for end-users.
+        </CVSectionContainer>
+
+        <CVSectionContainer>
+          <CVSectionTitle>Professional Experience</CVSectionTitle>
+          <CVEntryWithDateOnTheLeft
+            dateString={'Aug. 2023 - present'}
+            content={
+              <>
+                <strong>Google PAIR</strong>, Research Scientist
+              </>
+            }
+          />
+          <CVEntryWithDateOnTheLeft
+            dateString={'May - Aug. 2022'}
+            content={
+              <>
+                <strong>Microsoft Research</strong>, Research Intern
+                <br />
+                <em>
+                  with{' '}
+                  <a href="https://advait.org/" target="_blank">
+                    Advait Sarkar
+                  </a>
+                  ,{' '}
+                  <a
+                    href="https://www.microsoft.com/en-us/research/people/cnegreanu/"
+                    target="_blank"
+                  >
+                    Carina Negreanu
+                  </a>
+                  ,{' '}
+                  <a
+                    href="https://www.microsoft.com/en-us/research/people/johnwilliams/"
+                    target="_blank"
+                  >
+                    Jack Williams
+                  </a>
+                  ,{' '}
+                  <a
+                    href="https://www.microsoft.com/en-us/research/people/adg/"
+                    target="_blank"
+                  >
+                    Andy Gordon
+                  </a>{' '}
+                  &{' '}
+                  <a
+                    href="https://www.microsoft.com/en-us/research/people/zorn/"
+                    target="_blank"
+                  >
+                    Ben Zorn
+                  </a>
+                </em>
+                <br />
+                Natural language interactions for end-user programmers using
+                code-generating LLMs.
+              </>
+            }
+          />
+          <CVEntryWithDateOnTheLeft
+            dateString={'May - Aug. 2020'}
+            content={
+              <>
+                <strong>Google</strong>, Research Intern
+                <br />
+                <em>with Dustin Smith, Todd Kulesza, & Sarah D'Angelo</em>
+                <br />
+                Go developers' refactoring practices and engagement with
+                refactoring tools
+              </>
+            }
+          />
+          <CVEntryWithDateOnTheLeft
+            dateString={'May - Aug. 2019'}
+            content={
+              <>
+                <strong>Bosch Research</strong>, Research Intern
+                <br />
+                <em>
+                  with{' '}
+                  <a
+                    href="https://sites.google.com/view/lisayu/home"
+                    target="_blank"
+                  >
+                    Lisa Yu
+                  </a>
+                  ,{' '}
+                  <a
+                    href="https://www.bosch-ai.com/research/researcher-pages/t_overviewpage_100.html"
+                    target="_blank"
+                  >
+                    Wan-Yi Lin
+                  </a>{' '}
+                  &{' '}
+                  <a
+                    href="https://www.bosch.com/research/know-how/research-experts/alessandro-oltramari-ph-d/"
+                    target="_blank"
+                  >
+                    Alessandro Oltramari
+                  </a>
+                </em>
+                <br />
+                Crowdsourcing & AI techniques for improving the safety and
+                performance of autonomous vehicles.
+              </>
+            }
+          />
         </CVSectionContainer>
 
         <CVSectionContainer>
           <CVSectionTitle>Education</CVSectionTitle>
           <CVEntryWithDateOnTheLeft
-            dateString={'2017 - 2023 (expected)'}
+            dateString={'2017 - 2023'}
             content={
               <>
                 <strong>Ph.D.</strong> in{' '}
                 <strong>Human-Computer Interaction</strong>
                 <br />
                 Carnegie Mellon University, Pittsburgh, PA, USA <br />
-                Thesis: Scaffolding Knowledge Capturing, Structuring, and Reuse
-                during Online Sensemaking <br />
+                Thesis: Tool Support for Knowledge Foraging, Structuring, and
+                Transfer during Online Sensemaking <br />
                 Advisors:{' '}
                 <a href="https://www.cs.cmu.edu/~bam/" target="_blank">
                   Brad A. Myers
@@ -160,15 +269,14 @@ const CV = ({ data }) => {
                   target="_blank"
                 >
                   Kenneth Holstein
-                </a>{' '}
-                (CMU HCII),{' '}
+                </a>
+                ,{' '}
                 <a
                   href="https://sites.google.com/site/dmrussell/"
                   target="_blank"
                 >
                   Daniel M. Russell
                 </a>{' '}
-                (Google, Inc.)
               </>
             }
           />
@@ -244,7 +352,8 @@ const CV = ({ data }) => {
                         {pub.type !== 'patent' ? (
                           <a
                             style={{
-                              color: 'rgb(166, 38, 27)',
+                              // color: 'rgb(166, 38, 27)',
+                              color: '#01751e',
                               fontWeight: 500,
                             }}
                             href={`${pubFilePathPrefix}/${pub.codename}/${pub.codename}.pdf`}
@@ -293,102 +402,55 @@ const CV = ({ data }) => {
         </CVSectionContainer>
 
         <CVSectionContainer>
-          <CVSectionTitle>Professional Experience</CVSectionTitle>
-          <CVEntryWithDateOnTheLeft
-            dateString={'May. - Aug. 2022'}
-            content={
-              <>
-                <strong>Microsoft Research</strong>, Research Intern
-                <br />
-                <em>
-                  with{' '}
-                  <a href="https://advait.org/" target="_blank">
-                    Advait Sarkar
-                  </a>
-                  ,{' '}
-                  <a
-                    href="https://www.microsoft.com/en-us/research/people/cnegreanu/"
-                    target="_blank"
-                  >
-                    Carina Negreanu
-                  </a>
-                  ,{' '}
-                  <a
-                    href="https://www.microsoft.com/en-us/research/people/johnwilliams/"
-                    target="_blank"
-                  >
-                    Jack Williams
-                  </a>
-                  ,{' '}
-                  <a
-                    href="https://www.microsoft.com/en-us/research/people/adg/"
-                    target="_blank"
-                  >
-                    Andy Gordon
-                  </a>{' '}
-                  &{' '}
-                  <a
-                    href="https://www.microsoft.com/en-us/research/people/zorn/"
-                    target="_blank"
-                  >
-                    Ben Zorn
-                  </a>
-                </em>
-                <br />
-                Designed, built, and evaluated natural language interactions for
-                end-user programmers by leveraging code-generating large
-                language models (LLMs).
-              </>
-            }
-          />
-          <CVEntryWithDateOnTheLeft
-            dateString={'May. - Aug. 2020'}
-            content={
-              <>
-                <strong>Google</strong>, Research Intern
-                <br />
-                <em>with Dustin Smith, Todd Kulesza, and Sarah D'Angelo</em>
-                <br />
-                Conducted qualitative research on Go developers' refactoring
-                practices and engagement with refactoring tools.
-              </>
-            }
-          />
-          <CVEntryWithDateOnTheLeft
-            dateString={'May. - Aug. 2019'}
-            content={
-              <>
-                <strong>Bosch Research</strong>, Research Intern
-                <br />
-                <em>
-                  with{' '}
-                  <a
-                    href="https://sites.google.com/view/lisayu/home"
-                    target="_blank"
-                  >
-                    Lisa Yu
-                  </a>
-                  ,{' '}
-                  <a
-                    href="https://www.bosch-ai.com/research/researcher-pages/t_overviewpage_100.html"
-                    target="_blank"
-                  >
-                    Wan-Yi Lin
-                  </a>{' '}
-                  &{' '}
-                  <a
-                    href="https://www.bosch.com/research/know-how/research-experts/alessandro-oltramari-ph-d/"
-                    target="_blank"
-                  >
-                    Alessandro Oltramari
-                  </a>
-                </em>
-                <br />
-                Worked on crowd & AI-powered projects that aim to improve the
-                safety and performance of autonomous vehicles.
-              </>
-            }
-          />
+          <CVSectionTitle>Invited Talks</CVSectionTitle>
+          <CVEntryWithIndexOnTheLeft indexSpace={100} indexString={'Mar. 2023'}>
+            <strong>
+              Accelerating Programming Sensemaking with Human-Centered
+              Interactive Systems
+            </strong>
+            , Microsoft Research
+          </CVEntryWithIndexOnTheLeft>
+          <CVEntryWithIndexOnTheLeft indexSpace={100} indexString={'Mar. 2023'}>
+            <strong>
+              Accelerating Programming Sensemaking with Human-Centered
+              Interactive Systems
+            </strong>
+            , Apple AI/ML
+          </CVEntryWithIndexOnTheLeft>
+          <CVEntryWithIndexOnTheLeft indexSpace={100} indexString={'Feb. 2023'}>
+            <strong>
+              Accelerating Sensemaking with Human-Centered Interactive Systems
+            </strong>
+            , Google Research
+          </CVEntryWithIndexOnTheLeft>
+          <CVEntryWithIndexOnTheLeft indexSpace={100} indexString={'Feb. 2023'}>
+            <strong>
+              Accelerating Sensemaking with Human-Centered Interactive Systems
+            </strong>
+            , Allen Institute for Artificial Intelligence (AI2)
+          </CVEntryWithIndexOnTheLeft>
+          <CVEntryWithIndexOnTheLeft indexSpace={100} indexString={'Aug. 2022'}>
+            <strong>
+              Bridging the Abstration Gap Between End-User Programmers and
+              LLM-backed Code-Generating Models
+            </strong>
+            , Microsoft Research
+          </CVEntryWithIndexOnTheLeft>
+          <CVEntryWithIndexOnTheLeft indexSpace={100} indexString={'Aug. 2020'}>
+            <strong>Understanding Refactoring with Golang</strong>, Google Cloud
+            DevEx Presentation
+          </CVEntryWithIndexOnTheLeft>
+          <CVEntryWithIndexOnTheLeft
+            indexSpace={100}
+            indexString={'April 2018'}
+          >
+            <strong>
+              Supporting Knowledge Acceleration for Programming from a
+              Sensemaking Perspective
+            </strong>
+            , Sensemaking Workshop at CHI Conference on Human Factors in
+            Computing Systems
+          </CVEntryWithIndexOnTheLeft>
         </CVSectionContainer>
 
         <CVSectionContainer>
@@ -410,16 +472,16 @@ const CV = ({ data }) => {
                   href="https://chrome.google.com/webstore/detail/vertical-tabs/pddljdmihkpdfpkgmbhdomeeifpklgnm"
                   target={'_blank'}
                 >
-                  30,000+ users
+                  33k users
                 </a>{' '}
                 on Chrome Web Store;{' '}
                 <a
                   href="https://github.com/lxieyang/vertical-tabs-chrome-extension"
                   target={'_blank'}
                 >
-                  360+ stars
+                  400+ stars
                 </a>{' '}
-                on GitHub (as of Mar. 2023)
+                on GitHub (as of Aug. 2023)
               </>
             }
           />
@@ -440,16 +502,16 @@ const CV = ({ data }) => {
                   href="https://github.com/lxieyang/chrome-extension-boilerplate-react/stargazers"
                   target={'_blank'}
                 >
-                  2200+ stars
+                  2.6k stars
                 </a>
                 ,{' '}
                 <a
                   href="https://github.com/lxieyang/chrome-extension-boilerplate-react/forks"
                   target={'_blank'}
                 >
-                  720+ forks
+                  830+ forks
                 </a>{' '}
-                on GitHub (as of Mar. 2023)
+                on GitHub (as of Aug. 2023)
               </>
             }
           />
@@ -458,7 +520,7 @@ const CV = ({ data }) => {
         <CVSectionContainer>
           <CVSectionTitle>Research Experience</CVSectionTitle>
           <CVEntryWithDateOnTheLeft
-            dateString={'2017 - present'}
+            dateString={'2017 - 2023'}
             content={
               <>
                 <strong>Graduate Research Assistant</strong> (advised by{' '}
@@ -564,58 +626,6 @@ const CV = ({ data }) => {
               </>
             }
           />
-        </CVSectionContainer>
-
-        <CVSectionContainer>
-          <CVSectionTitle>Invited Talks</CVSectionTitle>
-          <CVEntryWithIndexOnTheLeft indexSpace={100} indexString={'Mar. 2023'}>
-            <strong>
-              Accelerating Programming Sensemaking with Human-Centered
-              Interactive Systems
-            </strong>
-            , Microsoft Research
-          </CVEntryWithIndexOnTheLeft>
-          <CVEntryWithIndexOnTheLeft indexSpace={100} indexString={'Mar. 2023'}>
-            <strong>
-              Accelerating Programming Sensemaking with Human-Centered
-              Interactive Systems
-            </strong>
-            , Apple AI/ML
-          </CVEntryWithIndexOnTheLeft>
-          <CVEntryWithIndexOnTheLeft indexSpace={100} indexString={'Feb. 2023'}>
-            <strong>
-              Accelerating Sensemaking with Human-Centered Interactive Systems
-            </strong>
-            , Google Research
-          </CVEntryWithIndexOnTheLeft>
-          <CVEntryWithIndexOnTheLeft indexSpace={100} indexString={'Feb. 2023'}>
-            <strong>
-              Accelerating Sensemaking with Human-Centered Interactive Systems
-            </strong>
-            , Allen Institute for Artificial Intelligence (AI2)
-          </CVEntryWithIndexOnTheLeft>
-          <CVEntryWithIndexOnTheLeft indexSpace={100} indexString={'Aug. 2022'}>
-            <strong>
-              Bridging the Abstration Gap Between End-User Programmers and
-              LLM-backed Code-Generating Models
-            </strong>
-            , Microsoft Research
-          </CVEntryWithIndexOnTheLeft>
-          <CVEntryWithIndexOnTheLeft indexSpace={100} indexString={'Aug. 2020'}>
-            <strong>Understanding Refactoring with Golang</strong>, Google Cloud
-            DevEx Presentation
-          </CVEntryWithIndexOnTheLeft>
-          <CVEntryWithIndexOnTheLeft
-            indexSpace={100}
-            indexString={'April 2018'}
-          >
-            <strong>
-              Supporting Knowledge Acceleration for Programming from a
-              Sensemaking Perspective
-            </strong>
-            , Sensemaking Workshop at CHI Conference on Human Factors in
-            Computing Systems
-          </CVEntryWithIndexOnTheLeft>
         </CVSectionContainer>
 
         <CVSectionContainer>

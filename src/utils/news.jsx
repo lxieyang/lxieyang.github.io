@@ -8,6 +8,11 @@ import {
 
 export default [
   {
+    content: <Fragment>I passed my Ph.D. thesis defense!</Fragment>,
+    date: new Date('2023-07-25'),
+    shouldDisplay: false,
+  },
+  {
     content: (
       <Fragment>
         Our full paper{' '}
@@ -55,7 +60,7 @@ export default [
       </Fragment>
     ),
     date: new Date('2022-12-12'),
-    shouldDisplay: true,
+    shouldDisplay: false,
   },
   {
     content: (

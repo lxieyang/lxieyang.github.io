@@ -12,8 +12,8 @@ import {
   NavItem,
 } from 'reactstrap';
 // import HeaderImg from '../../images/lxieyang-avatar-yellowstone.jpg';
-import Favicon from '../../../static/cmu-favicon.png';
-import ProfileAvatar3 from '../../images/avatar-mid-3.jpg';
+// import Favicon from '../../../static/cmu-favicon.png';
+import Favicon from '../../../static/pair-logo-152.png';
 
 // https://reach.tech/router/api/Link
 // https://github.com/gatsbyjs/gatsby/issues/7526#issuecomment-414858689
@@ -117,7 +117,7 @@ class Header extends Component {
             <div className="navbarbrand">
               <Link to={appRoutes.home} id="SiteTitle">
                 <img
-                  src={!isHome ? ProfileAvatar3 : Favicon}
+                  src={Favicon}
                   width="30"
                   height="30"
                   className="d-inline-block align-top"
@@ -139,7 +139,7 @@ class Header extends Component {
                   route={appRoutes.home}
                   routeName={'Home'}
                 />
-                <ListLink route={appRoutes.research} routeName={'Research'} />
+                {/* <ListLink route={appRoutes.research} routeName={'Research'} /> */}
                 {/*<ListLink route={appRoutes.experiences} routeName={'Experiences'}/>*/}
                 {/* <ListLink route={appRoutes.blogs} routeName={'Blogs'} /> */}
                 {/* <ListLink route={appRoutes.about} routeName={'About'} /> */}

@@ -79,14 +79,16 @@ const IndexPage = ({ data }) => {
                   {data.site.siteMetadata.nameEnglish}
                 </h5>
 
-                <p className="basic-info-text d-none d-sm-none d-md-block d-lg-block">
+                {/* <p className="basic-info-text d-none d-sm-none d-md-block d-lg-block">
                   Pronoun: he/him
-                </p>
+                </p> */}
                 <p className="basic-info-text">
-                  Ph.D. student{' '}
-                  <span className="d-inline-block d-sm-none">@CMU HCII</span>
+                  Research Scientist{' '}
+                  <span className="d-inline-block d-sm-none">
+                    @ Google PAIR
+                  </span>
                 </p>
-                <p className="basic-info-text d-none d-sm-block">
+                {/* <p className="basic-info-text d-none d-sm-block">
                   <a href="http://www.hcii.cmu.edu">
                     {' '}
                     Human-Computer Interaction Institute
@@ -97,7 +99,7 @@ const IndexPage = ({ data }) => {
                   </a>{' '}
                   <br />
                   <a href="https://www.cmu.edu/">Carnegie Mellon University</a>
-                </p>
+                </p> */}
 
                 <div className="d-none d-sm-none d-md-block d-lg-block">
                   <ContactInfo data={data} />
@@ -151,9 +153,9 @@ const IndexPage = ({ data }) => {
             </Col>
           </Row> */}
 
-            <div className="header-banner-images-container d-none d-sm-none d-md-block d-lg-block">
+            {/* <div className="header-banner-images-container d-none d-sm-none d-md-block d-lg-block">
               <img src={HCIITextLogo} alt="hcii" /> &nbsp; &nbsp; &nbsp;
-              {/* <img src={CMULogo} alt="cmu" /> &nbsp; */}
+              <img src={CMULogo} alt="cmu" /> &nbsp;
               <img
                 src={CMUTextLogo}
                 alt="cmu-text"
@@ -161,7 +163,7 @@ const IndexPage = ({ data }) => {
                   marginTop: '12px',
                 }}
               />
-            </div>
+            </div> */}
             {/* <Row>
               <Col style={{ margin: 0, padding: 0 }}>
                 <div
@@ -191,15 +193,19 @@ const IndexPage = ({ data }) => {
             </Row> */}
             {/* <h1>About me</h1> */}
             <br />
-            <p className="">
-              Michael Xieyang Liu is a{' '}
-              {/* <s>{ordinal(1 + moment().diff(moment([2017, 8]), 'years'))}</s>{' '} */}
-              <em>final</em> year Ph.D. student at{' '}
-              <a href="http://www.hcii.cmu.edu">
+
+            <p>
+              Michael Xieyang Liu is a Research Scientist at Google in the{' '}
+              <a href="https://pair.withgoogle.com/" target="_blank">
+                Google PAIR
+              </a>{' '}
+              (People+AI Research Initiative) team. He previously earned his
+              Ph.D. from the{' '}
+              <a href="https://www.hcii.cmu.edu">
                 Human-Computer Interaction Institute
               </a>{' '}
-              @ <a href="http://www.cmu.edu">Carnegie Mellon University</a>,
-              where he is advised by{' '}
+              @ <a href="https://www.cmu.edu">Carnegie Mellon University</a>,
+              where he was advised by{' '}
               <a href="http://www.cs.cmu.edu/~bam/" id="brad-myers">
                 Dr. Brad A. Myers
               </a>{' '}
@@ -207,7 +213,7 @@ const IndexPage = ({ data }) => {
               <a href="http://kittur.org/" id="niki-kittur">
                 Dr. Niki Kittur
               </a>
-              . Previously, he interned in the{' '}
+              . During his Ph.D., he interned at the{' '}
               <a
                 href="https://www.microsoft.com/en-us/research/group/research-software-engineering-rise/"
                 target="_blank"
