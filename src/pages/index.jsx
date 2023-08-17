@@ -83,10 +83,10 @@ const IndexPage = ({ data }) => {
                   Pronoun: he/him
                 </p> */}
                 <p className="basic-info-text">
-                  Research Scientist{' '}
-                  <span className="d-inline-block d-sm-none">
+                  Research Scientist @ Google PAIR{' '}
+                  {/* <span className="d-inline-block d-sm-none">
                     @ Google PAIR
-                  </span>
+                  </span> */}
                 </p>
                 {/* <p className="basic-info-text d-none d-sm-block">
                   <a href="http://www.hcii.cmu.edu">
