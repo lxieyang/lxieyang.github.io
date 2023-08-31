@@ -12,7 +12,7 @@ import {
 import Layout from '../components/layout/layout';
 import ContactInfo from '../components/UI/ContactInfo/ContactInfo';
 
-import ProfileImg from '../images/lxieyang-avatar.jpg';
+import ProfileImg from '../images/lxieyang-avatar.png';
 import ProfileAvatar1 from '../images/avatar-mid-1.jpg';
 import ProfileAvatar2 from '../images/avatar-mid-2.jpg';
 import ProfileAvatar3 from '../images/avatar-mid-3.jpg';
@@ -199,8 +199,13 @@ const IndexPage = ({ data }) => {
               <a href="https://pair.withgoogle.com/" target="_blank">
                 Google PAIR
               </a>{' '}
-              (People+AI Research Initiative) team. He previously earned his
-              Ph.D. from the{' '}
+              (People+AI Research Initiative) team. His research aims to improve
+              human-AI interaction, with a particular focus on human interaction
+              with large language models and controllable AI.
+            </p>
+
+            <p>
+              He previously earned his Ph.D. from the{' '}
               <a href="https://www.hcii.cmu.edu">
                 Human-Computer Interaction Institute
               </a>{' '}
@@ -227,7 +232,7 @@ const IndexPage = ({ data }) => {
               >
                 Calc Intelligence
               </a>{' '}
-              group at Microsoft Research, the Google Cloud group at Google, and
+              group at Microsoft Research, the Google Cloud team at Google, and
               Bosch Research.
               {/* Prior to Ph.D., he received his dual Bachelor’s degrees in
               Computer Science at{' '}
