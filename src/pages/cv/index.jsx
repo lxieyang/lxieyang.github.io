@@ -402,7 +402,17 @@ const CV = ({ data }) => {
         </CVSectionContainer>
 
         <CVSectionContainer>
-          <CVSectionTitle>Invited Talks</CVSectionTitle>
+          <CVSectionTitle>Invited Talks & Guest Lectures</CVSectionTitle>
+          <CVEntryWithIndexOnTheLeft
+            indexSpace={100}
+            indexString={'Sept. 2023'}
+          >
+            <strong>
+              Bridging the Abstraction Gap Between End-User Programmers and
+              Code-Generating Large Language Models
+            </strong>
+            , Viginia Tech
+          </CVEntryWithIndexOnTheLeft>
           <CVEntryWithIndexOnTheLeft indexSpace={100} indexString={'Mar. 2023'}>
             <strong>
               Accelerating Programming Sensemaking with Human-Centered
@@ -472,7 +482,7 @@ const CV = ({ data }) => {
                   href="https://chrome.google.com/webstore/detail/vertical-tabs/pddljdmihkpdfpkgmbhdomeeifpklgnm"
                   target={'_blank'}
                 >
-                  33k users
+                  36k users
                 </a>{' '}
                 on Chrome Web Store;{' '}
                 <a
@@ -481,7 +491,7 @@ const CV = ({ data }) => {
                 >
                   400+ stars
                 </a>{' '}
-                on GitHub (as of Aug. 2023)
+                on GitHub (as of Oct. 2023)
               </>
             }
           />
@@ -502,16 +512,16 @@ const CV = ({ data }) => {
                   href="https://github.com/lxieyang/chrome-extension-boilerplate-react/stargazers"
                   target={'_blank'}
                 >
-                  2.6k stars
+                  2.8k stars
                 </a>
                 ,{' '}
                 <a
                   href="https://github.com/lxieyang/chrome-extension-boilerplate-react/forks"
                   target={'_blank'}
                 >
-                  830+ forks
+                  900+ forks
                 </a>{' '}
-                on GitHub (as of Aug. 2023)
+                on GitHub (as of Oct. 2023)
               </>
             }
           />
@@ -519,6 +529,17 @@ const CV = ({ data }) => {
 
         <CVSectionContainer>
           <CVSectionTitle>Research Experience</CVSectionTitle>
+          <CVEntryWithDateOnTheLeft
+            dateString={'2023 - present'}
+            content={
+              <>
+                <strong>Research Scientist</strong>
+                <br />
+                <em>People + AI Research, Google</em>
+                <br />
+              </>
+            }
+          />
           <CVEntryWithDateOnTheLeft
             dateString={'2017 - 2023'}
             content={
@@ -636,7 +657,7 @@ const CV = ({ data }) => {
             indexSpace={100}
             indexString={'April 2023'}
           >
-            <strong>Best Paper Honorable Mention Award</strong>, ACM CHI
+            <strong>🏅 Best Paper Honorable Mention Award</strong>, ACM CHI
             Conference on Human Factors in Computing Systems (CHI 2023)
           </CVEntryWithIndexOnTheLeft>
           <CVEntryWithIndexOnTheLeft indexSpace={100} indexString={'Nov. 2022'}>
@@ -654,7 +675,7 @@ const CV = ({ data }) => {
             </a>
           </CVEntryWithIndexOnTheLeft>
           <CVEntryWithIndexOnTheLeft indexSpace={100} indexString={'Oct. 2021'}>
-            <strong>Best Paper Award</strong>, 24th ACM Conference on
+            <strong>🏆 Best Paper Award</strong>, 24th ACM Conference on
             Computer-Supported Cooperative Work and Social Computing (CSCW 2021)
           </CVEntryWithIndexOnTheLeft>
           <CVEntryWithIndexOnTheLeft indexSpace={100} indexString={'June 2021'}>
@@ -675,8 +696,8 @@ const CV = ({ data }) => {
             </a>
           </CVEntryWithIndexOnTheLeft>
           <CVEntryWithIndexOnTheLeft indexSpace={100} indexString={'Oct. 2019'}>
-            <strong>Best Paper Honorable Mention Award</strong>, 32nd Annual ACM
-            Symposium on User Interface Software and Technology (UIST 2019)
+            <strong>🏅 Best Paper Honorable Mention Award</strong>, 32nd Annual
+            ACM Symposium on User Interface Software and Technology (UIST 2019)
           </CVEntryWithIndexOnTheLeft>
           <CVEntryWithIndexOnTheLeft indexSpace={100} indexString={'June 2018'}>
             <strong>
@@ -847,7 +868,7 @@ const CV = ({ data }) => {
             indexString={'2017 - 2018'}
           >
             <strong>Emily Deng</strong> <br />
-            <em>CMU Master’s Student</em> <br />
+            <em>CMU Master's Student</em> <br />
             Designed and carried out interview studies with programmers that
             probe their programming behaviors and needs.
           </CVEntryWithIndexOnTheLeft>
@@ -856,7 +877,7 @@ const CV = ({ data }) => {
             indexString={'2017 - 2018'}
           >
             <strong>Shaun Burley</strong> <br />
-            <em>CMU Master’s Student</em> <br />
+            <em>CMU Master's Student</em> <br />
             Designed and carried out interview studies with programmers that
             probe their programming behaviors and needs.
           </CVEntryWithIndexOnTheLeft>
@@ -871,6 +892,15 @@ const CV = ({ data }) => {
               <strong style={{ fontStyle: 'normal' }}>Associate Chair</strong>
             }
           >
+            {' '}
+            <u>ACM CHI</u> 2024{' '}
+            <a
+              target="_blank"
+              href="https://chi2024.acm.org/subcommittees/selecting-a-subcommittee/"
+            >
+              Computational Interaction subcommittee
+            </a>
+            <br />
             <u>ACM CHI</u> 2020 Late Breaking Work Track
           </CVEntryWithIndexOnTheLeft>
           <CVEntryWithIndexOnTheLeft
@@ -879,7 +909,7 @@ const CV = ({ data }) => {
               <strong style={{ fontStyle: 'normal' }}>Paper Reviewing</strong>
             }
           >
-            <strong>Conferences</strong>: <u>CHI</u> (2019 - 2023), <u>CSCW</u>{' '}
+            <strong>Conferences</strong>: <u>CHI</u> (2019 - 2024), <u>CSCW</u>{' '}
             (2019 - 2023), <u>UIST</u> (2019 - 2022), <u>IUI</u> (2020),{' '}
             <u>VAST</u> (2020)
             <strong>Journal</strong>: <u>TOCHI</u> (2022) <br />
