@@ -1,5 +1,11 @@
 export default [
   {
+    date: 'Oct 29, 2023',
+    location: 'San Francisco, CA, US',
+    event: 'UIST 2023',
+    url: 'https://uist.acm.org/uist2023/',
+  },
+  {
     date: 'Oct 31, 2022',
     location: 'Bend, OR, US',
     event: 'UIST 2022',

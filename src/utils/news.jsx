@@ -1,6 +1,5 @@
 import React, { Fragment } from 'react';
 import { pubFilePathPrefix } from '../utils/publications';
-import { FaAward, FaTrophy } from 'react-icons/fa';
 import {
   ThesisProposalPath,
   ThesisProposalSlidesPath,
@@ -8,9 +7,14 @@ import {
 
 export default [
   {
+    content: <Fragment>I joined Google PAIR as a Research Scientist!</Fragment>,
+    date: new Date('2023-08-07'),
+    shouldDisplay: true,
+  },
+  {
     content: <Fragment>I passed my Ph.D. thesis defense!</Fragment>,
     date: new Date('2023-07-25'),
-    shouldDisplay: false,
+    shouldDisplay: true,
   },
   {
     content: (
