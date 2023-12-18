@@ -403,6 +403,14 @@ const CV = ({ data }) => {
 
         <CVSectionContainer>
           <CVSectionTitle>Invited Talks & Guest Lectures</CVSectionTitle>
+          <CVEntryWithIndexOnTheLeft indexSpace={100} indexString={'Dec. 2023'}>
+            <strong>
+              <a href="https://youtu.be/CqtRFZGYfks" target="_blank">
+                Building AI Sensemaking Systems
+              </a>
+            </strong>
+            , University of Zürich
+          </CVEntryWithIndexOnTheLeft>
           <CVEntryWithIndexOnTheLeft
             indexSpace={100}
             indexString={'Sept. 2023'}
