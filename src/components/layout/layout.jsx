@@ -1,6 +1,5 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import Helmet from 'react-helmet';
 import { StaticQuery, graphql } from 'gatsby';
 import { Container } from 'reactstrap';
 
@@ -31,24 +30,6 @@ const Layout = ({ children, data, pathName }) => {
       `}
       render={(data) => (
         <div>
-          <Helmet
-            title={`${pathName !== undefined ? pathName + ' | ' : ''}${
-              data.site.siteMetadata.title
-            }`}
-            meta={[
-              {
-                name: 'description',
-                content: "Michael Xieyang Liu's personal website",
-              },
-              {
-                name: 'keywords',
-                content:
-                  'Human Computer Interaction, Computer Science, Researcher, Carnegie Mellon University',
-              },
-            ]}
-          >
-            <html lang="en" />
-          </Helmet>
           <Header
             siteTitle={data.site.siteMetadata.title}
             pathName={pathName}

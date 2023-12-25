@@ -1,5 +1,4 @@
 import React, { useEffect } from 'react';
-import Helmet from 'react-helmet';
 import { Container } from 'reactstrap';
 
 import LyricsOne from '../../images/xuexuemaimai/那时正好的时光.png';
@@ -32,9 +31,6 @@ const Motivation = () => {
 
   return (
     <div className="PageContainer">
-      <Helmet title={'❄️🍐🐱😉'}>
-        <meta name="robots" content="noindex" />
-      </Helmet>
       <div className="Background">
         <div className="BgImage">
           <img src={EggImg} alt="Seattle" />
@@ -64,5 +60,12 @@ const Motivation = () => {
     </div>
   );
 };
+
+export const Head = () => (
+  <>
+    <title>👢👢🌾🌾</title>
+    <meta name="robots" content="noindex" />
+  </>
+);
 
 export default Motivation;

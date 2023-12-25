@@ -1,7 +1,5 @@
 import React from 'react';
 import moment from 'moment';
-import ordinal from 'ordinal';
-import randomItem from 'random-item';
 import { graphql } from 'gatsby';
 import {
   // Container,
@@ -59,7 +57,6 @@ const IndexPage = ({ data }) => {
               <Col xs="4" sm="12">
                 <div className="watermark-image-display-container">
                   <img
-                    // src={randomItem(candidateAvatars)}
                     src={ProfileImg}
                     alt="profile"
                     // style={{ maxWidth: '100%', maxHeight: '100%' }}
@@ -517,6 +514,28 @@ const IndexPage = ({ data }) => {
         </Col>
       </Row>
     </Layout>
+  );
+};
+
+export const Head = ({ location, data }) => {
+  const { pathname } = location;
+  return (
+    <>
+      <title>
+        {`${pathname !== '/' ? pathname : 'Home'} | ${
+          data.site.siteMetadata.title
+        }`}
+      </title>
+      <html lang="en" />
+      <meta
+        name="description"
+        content="Michael Xieyang Liu's personal website"
+      />
+      <meta
+        name="keywords"
+        content="Google Research, Human-AI Interaction, Computer Science, Research Scientist"
+      />
+    </>
   );
 };
 

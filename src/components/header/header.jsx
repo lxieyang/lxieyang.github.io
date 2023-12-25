@@ -101,8 +101,6 @@ class Header extends Component {
   }
 
   render() {
-    console.log(this.props.pathName);
-
     const { pathName } = this.props;
     const isHome = pathName === 'Home';
     // active class name

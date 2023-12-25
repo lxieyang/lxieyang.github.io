@@ -22,7 +22,6 @@ module.exports = {
         display: 'swap',
       },
     },
-    'gatsby-plugin-react-helmet',
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
@@ -38,20 +37,6 @@ module.exports = {
       },
     },
     'gatsby-plugin-offline',
-    {
-      resolve: `gatsby-plugin-google-analytics`,
-      options: {
-        trackingId: 'UA-123595265-1',
-        // Puts tracking script in the head instead of the body
-        head: true,
-        // Setting this parameter is optional
-        anonymize: false,
-        // Setting this parameter is also optional
-        respectDNT: true,
-        // Avoids sending pageview hits from custom paths
-        exclude: ['/preview/**', '/do-not-track/me/too/'],
-      },
-    },
     {
       resolve: 'gatsby-plugin-copy-files',
       options: {
@@ -101,36 +86,5 @@ module.exports = {
         ],
       },
     },
-    // {
-    //   resolve: `gatsby-plugin-favicon`,
-    //   options: {
-    //     logo: `${__dirname}/static/favicon.jpg`,
-    //     // WebApp Manifest Configuration
-    //     appName: `Michael Liu's Website`,
-    //     appDescription: 'The personal website of Michael Xieyang Liu',
-    //     developerName: 'Michael Xieyang Liu',
-    //     developerURL: 'https://lxieyang.github.io',
-    //     dir: 'auto',
-    //     lang: 'en-US',
-    //     background: '#fff',
-    //     theme_color: '#002635',
-    //     display: 'standalone',
-    //     orientation: 'any',
-    //     start_url: '/?homescreen=1',
-    //     version: '1.0',
-    //     icons: {
-    //       android: true,
-    //       appleIcon: true,
-    //       appleStartup: true,
-    //       coast: false,
-    //       favicons: true,
-    //       firefox: true,
-    //       opengraph: false,
-    //       twitter: false,
-    //       yandex: false,
-    //       windows: false
-    //     }
-    //   }
-    // }
   ],
 };

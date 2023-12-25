@@ -10,7 +10,7 @@ const ImageWrapper = styled.div`
 `;
 
 const PromptWrapper = styled.div`
-  margin-top: 1.0rem;
+  margin-top: 1rem;
   font-size: 1.5rem;
   /* font-weight: bold; */
   display: flex;
@@ -20,15 +20,23 @@ const PromptWrapper = styled.div`
 const NotFoundPage = () => (
   <Layout>
     <ImageWrapper>
-      <img src={ I404Img } alt="404 NOT FOUND" style={{width: '60%', height: '60%'}}/>
+      <img
+        src={I404Img}
+        alt="404 NOT FOUND"
+        style={{ width: '60%', height: '60%' }}
+      />
     </ImageWrapper>
 
     <PromptWrapper>
-      <p>Sorry, the route you are looking for does NOT exist. 
-      Head back <Link exact to="/">home</Link>?</p>
+      <p>
+        Sorry, the route you are looking for does NOT exist. Head back{' '}
+        <Link exact to="/">
+          home
+        </Link>
+        ?
+      </p>
     </PromptWrapper>
-    
   </Layout>
-)
+);
 
 export default NotFoundPage;

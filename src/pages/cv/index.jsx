@@ -1060,6 +1060,12 @@ const CVEntryWithIndexOnTheLeft = ({
   </div>
 );
 
+export const Head = ({ data }) => (
+  <>
+    <title>{`CV | ${data.site.siteMetadata.title}`}</title>
+  </>
+);
+
 export const query = graphql`
   query CVPageQuery {
     site {
