@@ -827,6 +827,10 @@ export const publicationsData = {
       arxiv: 'https://arxiv.org/abs/2304.06597',
       acmdl_available: true,
       conferenceTalkVideo: 'https://youtu.be/w9PXnm_outI',
+      msrblog:
+        'https://www.microsoft.com/en-us/research/blog/advancing-transparency-updates-on-responsible-ai-research/',
+      msrblogTitle:
+        'Advancing transparency: Updates on responsible AI research - Microsoft Research Blog',
       showOnWebCV: true,
       showInResearchPage: true,
       award: {

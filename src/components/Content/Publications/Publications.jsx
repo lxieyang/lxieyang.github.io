@@ -443,16 +443,25 @@ class Publications extends Component {
                                     alignItems: 'center',
                                   }}
                                 >
-                                  {/* <img
-                                    src={CMUSCSIcon}
-                                    alt="video"
-                                    style={{
-                                      marginRight: 3,
-                                      width: 20,
-                                      height: 20,
-                                    }}
-                                  /> */}
                                   CMU SCS News
+                                </a>
+                                ]
+                              </span>
+                            )}
+                            {pub.msrblog !== undefined && (
+                              <span>
+                                [
+                                <a
+                                  href={pub.msrblog}
+                                  target="_blank"
+                                  rel="noopener noreferrer"
+                                  style={{
+                                    display: 'flex',
+                                    alignItems: 'center',
+                                  }}
+                                  title={pub.msrblogTitle}
+                                >
+                                  Microsoft Research Blog
                                 </a>
                                 ]
                               </span>
