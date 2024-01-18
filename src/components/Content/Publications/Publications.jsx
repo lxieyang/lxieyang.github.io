@@ -130,9 +130,13 @@ class Publications extends Component {
                             alt={pub.codename}
                             className="img-fluid pub-image-preview"
                           />
-                          <ConferenceTag className="conference-tag d-inline-block d-sm-flex">
-                            <div className="tag-inner">{pub.conferenceTag}</div>
-                          </ConferenceTag>
+                          {pub.conferenceTag && (
+                            <ConferenceTag className="conference-tag d-inline-block d-sm-flex">
+                              <div className="tag-inner">
+                                {pub.conferenceTag}
+                              </div>
+                            </ConferenceTag>
+                          )}
                         </Col>
                         <Col xs="12" md="8" lg="9">
                           <a
@@ -158,13 +162,18 @@ class Publications extends Component {
                               </React.Fragment>
                             ))}
                           </div>
-                          <div className="publication-location pub-element">
-                            <span className="conference">
-                              {pub.conferenceFullName}
-                            </span>
-                            ,{' '}
-                            <span className="conference-year">{pub.year}</span>.
-                          </div>
+                          {pub.conferenceFullName && (
+                            <div className="publication-location pub-element">
+                              <span className="conference">
+                                {pub.conferenceFullName}
+                              </span>
+                              ,{' '}
+                              <span className="conference-year">
+                                {pub.year}
+                              </span>
+                              .
+                            </div>
+                          )}
                           {pub.award && (
                             <div className="awards pub-element">
                               {pub.award.honorableMention && (

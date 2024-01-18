@@ -13,6 +13,7 @@ import multimodal_assets_2022PreviewImgLink from '../assets/files/pubs/multimoda
 import wigglite_uist_2022PreviewImgLink from '../assets/files/pubs/wigglite-uist-2022/wigglite-uist-2022.png';
 import llmgam_2023PreviewImgLink from '../assets/files/pubs/llmgam-chi-2023/llmgam-chi-2023.png';
 import pinmi_2023PreviewImgLink from '../assets/files/pubs/pinmi-chi-2023/pinmi-chi-2023.png';
+import selenite_2024PreviewImgLink from '../assets/files/pubs/selenite-chi-2024/selenite-chi-2024.jpg';
 import { filePathPrefix } from './constants';
 
 export const pubFilePathPrefix = filePathPrefix + `/pubs`;
@@ -836,6 +837,57 @@ export const publicationsData = {
       award: {
         honorableMention: true,
       },
+    },
+
+    // Selenite: Scaffolding Online Sensemaking with Comprehensive Overviews Elicited from Large Language Models - CHI 2024
+    {
+      title:
+        'Selenite: Scaffolding Online Sensemaking with Comprehensive Overviews Elicited from Large Language Models',
+      type: 'conference',
+      // conference: 'CHI',
+      // conferenceFullName:
+      //   'ACM CHI Conference on Human Factors in Computing Systems (CHI)',
+      // conferenceTag: 'CHI 2024',
+      // year: 2024,
+      // month: 5,
+      authors: [
+        {
+          name: 'Michael Xieyang Liu',
+          bold: true,
+        },
+        {
+          name: 'Sherry Tongshuang Wu',
+          bold: false,
+        },
+        {
+          name: 'Tianying Chen',
+          bold: false,
+        },
+        {
+          name: 'Franklin Mingzhe Li',
+          bold: false,
+        },
+        {
+          name: 'Aniket Kittur',
+          bold: false,
+        },
+        {
+          name: 'Brad A. Myers',
+          bold: false,
+        },
+      ],
+      abstract: `Sensemaking in unfamiliar domains can be challenging, demanding considerable user effort to compare different options with respect to various criteria. Prior research and our formative study found that people would benefit from reading an overview of an information space upfront, including the criteria others previously found useful. However, existing sensemaking tools struggle with the "cold-start" problem -- not only requiring significant input from previous users to generate and share these overviews, but also that such overviews may turn out to be biased and incomplete. In this work, we introduce a novel system, Selenite, which leverages LLMs as reasoning machines and knowledge retrievers to automatically produce a comprehensive overview of options and criteria to jumpstart users' sensemaking processes. Subsequently, Selenite also adapts as people use it, helping users find, read, and navigate unfamiliar information in a systematic yet personalized manner. Through three studies, we found that Selenite produced accurate and high-quality overviews reliably, significantly accelerated users' information processing, and effectively improved their overall comprehension and sensemaking experience.`,
+      codename: 'selenite-chi-2024',
+      bibtex: ``,
+      previewImgLink: selenite_2024PreviewImgLink,
+      shouldShowLocalPaperLink: true,
+      doi: 'https://doi.org/10.1145/3544548.3580817',
+      // acmdl: 'https://doi.org/10.1145/3544548.3580817',
+      arxiv: 'https://arxiv.org/abs/2310.02161',
+      acmdl_available: false,
+      // conferenceTalkVideo: 'https://youtu.be/w9PXnm_outI',
+      showOnWebCV: false,
+      showInResearchPage: true,
     },
   ],
 };
