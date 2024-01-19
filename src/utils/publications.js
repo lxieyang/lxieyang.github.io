@@ -844,12 +844,12 @@ export const publicationsData = {
       title:
         'Selenite: Scaffolding Online Sensemaking with Comprehensive Overviews Elicited from Large Language Models',
       type: 'conference',
-      // conference: 'CHI',
-      // conferenceFullName:
-      //   'ACM CHI Conference on Human Factors in Computing Systems (CHI)',
-      // conferenceTag: 'CHI 2024',
-      // year: 2024,
-      // month: 5,
+      conference: 'CHI',
+      conferenceFullName:
+        'ACM CHI Conference on Human Factors in Computing Systems (CHI)',
+      conferenceTag: 'CHI 2024',
+      year: 2024,
+      month: 5,
       authors: [
         {
           name: 'Michael Xieyang Liu',
@@ -886,7 +886,7 @@ export const publicationsData = {
       arxiv: 'https://arxiv.org/abs/2310.02161',
       acmdl_available: false,
       // conferenceTalkVideo: 'https://youtu.be/w9PXnm_outI',
-      showOnWebCV: false,
+      showOnWebCV: true,
       showInResearchPage: true,
     },
   ],
