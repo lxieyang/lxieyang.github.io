@@ -1,0 +1,2 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[12],{Nj9M:function(e,n,t){},iMmY:function(e,n,t){"use strict";t.r(n);var a=t("q1tI"),o=t.n(a),i=t("xkgm");t("Nj9M");n.default=function(e){return o.a.createElement("div",{className:"PageContainer"},o.a.createElement(i.c,null,o.a.createElement("div",{className:"Banner"},"You won't get much work done if you only do it when you feel like it.")))}}}]);
+//# sourceMappingURL=component---src-pages-backtowork-index-jsx-05abc0d9351a7291be68.js.map
