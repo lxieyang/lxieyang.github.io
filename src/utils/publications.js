@@ -13,6 +13,8 @@ import multimodal_assets_2022PreviewImgLink from '../assets/files/pubs/multimoda
 import wigglite_uist_2022PreviewImgLink from '../assets/files/pubs/wigglite-uist-2022/wigglite-uist-2022.png';
 import llmgam_2023PreviewImgLink from '../assets/files/pubs/llmgam-chi-2023/llmgam-chi-2023.png';
 import pinmi_2023PreviewImgLink from '../assets/files/pubs/pinmi-chi-2023/pinmi-chi-2023.png';
+import llmc_2024PreviewImgLink from '../assets/files/pubs/llm-comparator-2024/llm-comparator-2024.png';
+import cooking_2024PreviewImgLink from '../assets/files/pubs/cooking-chi-2024/cooking-chi-2024.jpg';
 import selenite_2024PreviewImgLink from '../assets/files/pubs/selenite-chi-2024/selenite-chi-2024.jpg';
 import { filePathPrefix } from './constants';
 
@@ -839,6 +841,48 @@ export const publicationsData = {
       },
     },
 
+    // A Contextual Inquiry of People with Vision Impairments in Cooking - CHI 2024
+    {
+      title:
+        'A Contextual Inquiry of People with Vision Impairments in Cooking',
+      type: 'conference',
+      conference: 'CHI',
+      conferenceFullName:
+        'ACM CHI Conference on Human Factors in Computing Systems (CHI)',
+      conferenceTag: 'CHI 2024',
+      year: 2024,
+      month: 5,
+      authors: [
+        {
+          name: 'Franklin Mingzhe Li',
+          bold: false,
+        },
+        {
+          name: 'Michael Xieyang Liu',
+          bold: true,
+        },
+        {
+          name: 'Shaun K. Kane',
+          bold: false,
+        },
+        {
+          name: 'Patrick Carrington',
+          bold: false,
+        },
+      ],
+      abstract: `Individuals with vision impairments employ a variety of strategies for object identification, such as pans or soy sauce, in the culinary process. In addition, they often rely on contextual details about objects, such as location, orientation, and current status, to autonomously execute cooking activities. To understand how people with vision impairments collect and use the contextual information of objects while cooking, we conducted a contextual inquiry study with 12 participants in their own kitchens. This research aims to analyze object interaction dynamics in culinary practices to enhance assistive vision technologies for visually impaired cooks. We outline eight different types of contextual information and the strategies that blind cooks currently use to access the information while preparing meals. Further, we discuss preferences for communicating contextual information about kitchen objects as well as considerations for the deployment of AI-powered assistive technologies.`,
+      codename: 'cooking-chi-2024',
+      bibtex: ``,
+      previewImgLink: cooking_2024PreviewImgLink,
+      shouldShowLocalPaperLink: true,
+      doi: 'https://doi.org/10.1145/3613904.3642233',
+      acmdl: 'https://doi.org/10.1145/3613904.3642233',
+      acmdl_available: false,
+      // conferenceTalkVideo: 'https://youtu.be/w9PXnm_outI',
+      showOnWebCV: true,
+      showInResearchPage: true,
+    },
+
     // Selenite: Scaffolding Online Sensemaking with Comprehensive Overviews Elicited from Large Language Models - CHI 2024
     {
       title:
@@ -884,6 +928,72 @@ export const publicationsData = {
       doi: 'https://doi.org/10.1145/3613904.3642149',
       acmdl: 'https://doi.org/10.1145/3613904.3642149',
       arxiv: 'https://arxiv.org/abs/2310.02161',
+      acmdl_available: false,
+      // conferenceTalkVideo: 'https://youtu.be/w9PXnm_outI',
+      showOnWebCV: true,
+      showInResearchPage: true,
+    },
+
+    // LLM Comparator: Visual Analytics for Side-by-Side Evaluation of Large Language Models - arxiv 2024
+    {
+      title:
+        'LLM Comparator: Visual Analytics for Side-by-Side Evaluation of Large Language Models',
+      type: 'conference',
+      conference: 'arxiv',
+      conferenceFullName: 'arxiv preprint',
+      conferenceTag: 'arxiv 2024',
+      year: 2024,
+      month: 2,
+      authors: [
+        {
+          name: 'Minsuk Kahng',
+          bold: false,
+        },
+        {
+          name: 'Ian Tenney',
+          bold: false,
+        },
+        {
+          name: 'Mahima Pushkarna',
+          bold: false,
+        },
+        {
+          name: 'Michael Xieyang Liu',
+          bold: true,
+        },
+        {
+          name: 'James Wexler',
+          bold: false,
+        },
+        {
+          name: 'Emily Reif',
+          bold: false,
+        },
+        {
+          name: 'Krystal Kallarackal',
+          bold: false,
+        },
+        {
+          name: 'Minsuk Chang',
+          bold: false,
+        },
+        {
+          name: 'Michael Terry',
+          bold: false,
+        },
+        {
+          name: 'Lucas Dixon',
+          bold: false,
+        },
+      ],
+      abstract: `Automatic side-by-side evaluation has emerged as a promising approach to evaluating the quality of responses from large language models (LLMs). However, analyzing the results from this evaluation approach raises scalability and interpretability challenges. In this paper, we present LLM Comparator, a novel visual analytics tool for interactively analyzing results from automatic side-by-side evaluation. The tool supports interactive workflows for users to understand when and why a model performs better or worse than a baseline model, and how the responses from two models are qualitatively different. We iteratively designed and developed the tool by closely working with researchers and engineers at a large technology company. This paper details the user challenges we identified, the design and development of the tool, and an observational study with participants who regularly evaluate their models.`,
+      codename: 'llm-comparator-2024',
+      bibtex: ``,
+      previewImgLink: llmc_2024PreviewImgLink,
+      shouldShowLocalPaperLink: true,
+      // doi: 'https://doi.org/10.1145/3613904.3642149',
+      // acmdl: 'https://doi.org/10.1145/3613904.3642149',
+      arxiv: 'https://arxiv.org/abs/2402.10524',
       acmdl_available: false,
       // conferenceTalkVideo: 'https://youtu.be/w9PXnm_outI',
       showOnWebCV: true,

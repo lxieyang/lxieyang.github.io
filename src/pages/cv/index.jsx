@@ -66,7 +66,7 @@ const CVSectionSubTitle = styled.div`
 const CV = ({ data }) => {
   let pubsInfo = [
     {
-      prompt: 'Peer-reviewed Conference Papers',
+      prompt: 'Conference Papers, Journal Articles & Pre-prints',
       prefix: 'C',
       data: jsonQuery('publications[*type=conference]', {
         data: publicationsData,
@@ -490,7 +490,7 @@ const CV = ({ data }) => {
                   href="https://chrome.google.com/webstore/detail/vertical-tabs/pddljdmihkpdfpkgmbhdomeeifpklgnm"
                   target={'_blank'}
                 >
-                  36k users
+                  36.9k users
                 </a>{' '}
                 on Chrome Web Store;{' '}
                 <a
@@ -499,7 +499,7 @@ const CV = ({ data }) => {
                 >
                   400+ stars
                 </a>{' '}
-                on GitHub (as of Oct. 2023)
+                on GitHub (as of Feb. 2024)
               </>
             }
           />
@@ -520,16 +520,16 @@ const CV = ({ data }) => {
                   href="https://github.com/lxieyang/chrome-extension-boilerplate-react/stargazers"
                   target={'_blank'}
                 >
-                  2.8k stars
+                  3.1k stars
                 </a>
                 ,{' '}
                 <a
                   href="https://github.com/lxieyang/chrome-extension-boilerplate-react/forks"
                   target={'_blank'}
                 >
-                  900+ forks
+                  980+ forks
                 </a>{' '}
-                on GitHub (as of Oct. 2023)
+                on GitHub (as of Feb. 2024)
               </>
             }
           />

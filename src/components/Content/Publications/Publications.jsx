@@ -82,7 +82,7 @@ class Publications extends Component {
   render() {
     let pubsInfo = [
       {
-        prompt: 'Conferences',
+        prompt: 'Conferences & Pre-prints',
         data: jsonQuery('publications[*type=conference]', {
           data: publicationsData,
         }).value.filter((p) => p.showInResearchPage !== false),
@@ -245,7 +245,7 @@ class Publications extends Component {
                               <span>
                                 {pub.acmdl_available === false ? (
                                   <React.Fragment>
-                                    <em>Available soon!</em>
+                                    <em>ACM DL available soon!</em>
                                   </React.Fragment>
                                 ) : (
                                   <>
