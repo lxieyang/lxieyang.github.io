@@ -931,7 +931,7 @@ export const publicationsData = {
       acmdl: 'https://doi.org/10.1145/3613904.3642149',
       arxiv: 'https://arxiv.org/abs/2310.02161',
       acmdl_available: false,
-      // conferenceTalkVideo: 'https://youtu.be/w9PXnm_outI',
+      conferenceTalkVideo: 'https://youtu.be/S8a0yxU0Me0',
       showOnWebCV: true,
       showInResearchPage: true,
     },
