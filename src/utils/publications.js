@@ -14,6 +14,7 @@ import wigglite_uist_2022PreviewImgLink from '../assets/files/pubs/wigglite-uist
 import llmgam_2023PreviewImgLink from '../assets/files/pubs/llmgam-chi-2023/llmgam-chi-2023.png';
 import pinmi_2023PreviewImgLink from '../assets/files/pubs/pinmi-chi-2023/pinmi-chi-2023.png';
 import llmc_2024PreviewImgLink from '../assets/files/pubs/llm-comparator-2024/llm-comparator-2024.png';
+import llmconstraints_2024PreviewImgLink from '../assets/files/pubs/llm-constraints-2024/llm-constraints-2024.jpg';
 import cooking_2024PreviewImgLink from '../assets/files/pubs/cooking-chi-2024/cooking-chi-2024.jpg';
 import selenite_2024PreviewImgLink from '../assets/files/pubs/selenite-chi-2024/selenite-chi-2024.jpg';
 import { filePathPrefix } from './constants';
@@ -935,14 +936,15 @@ export const publicationsData = {
       showInResearchPage: true,
     },
 
-    // LLM Comparator: Visual Analytics for Side-by-Side Evaluation of Large Language Models - arxiv 2024
+    // LLM Comparator: Visual Analytics for Side-by-Side Evaluation of Large Language Models - CHI 2024
     {
       title:
         'LLM Comparator: Visual Analytics for Side-by-Side Evaluation of Large Language Models',
       type: 'conference',
-      conference: 'arxiv',
-      conferenceFullName: 'arxiv preprint',
-      conferenceTag: 'arxiv 2024',
+      conference: 'CHI',
+      conferenceFullName:
+        'Extended Abstract in ACM CHI Conference on Human Factors in Computing Systems (CHI)',
+      conferenceTag: 'CHI 2024',
       year: 2024,
       month: 2,
       authors: [
@@ -995,6 +997,61 @@ export const publicationsData = {
       // doi: 'https://doi.org/10.1145/3613904.3642149',
       // acmdl: 'https://doi.org/10.1145/3613904.3642149',
       arxiv: 'https://arxiv.org/abs/2402.10524',
+      acmdl_available: false,
+      // conferenceTalkVideo: 'https://youtu.be/w9PXnm_outI',
+      showOnWebCV: true,
+      showInResearchPage: true,
+    },
+
+    // "We Need Structured Output": Towards User-centered Constraints on Large Language Model Output - CHI 2024
+    {
+      title:
+        '"We Need Structured Output": Towards User-centered Constraints on Large Language Model Output',
+      type: 'conference',
+      conference: 'CHI',
+      conferenceFullName:
+        'Extended Abstract in ACM CHI Conference on Human Factors in Computing Systems (CHI)',
+      conferenceTag: 'CHI 2024',
+      year: 2024,
+      month: 3,
+      authors: [
+        {
+          name: 'Michael Xieyang Liu',
+          bold: true,
+        },
+        {
+          name: 'Frederick Liu',
+          bold: false,
+        },
+        {
+          name: 'Alexander J. Fiannaca',
+          bold: false,
+        },
+        {
+          name: 'Terry Koo',
+          bold: false,
+        },
+        {
+          name: 'Lucas Dixon',
+          bold: false,
+        },
+        {
+          name: 'Michael Terry',
+          bold: false,
+        },
+        {
+          name: 'Carrie J. Cai',
+          bold: false,
+        },
+      ],
+      abstract: `Large language models can produce creative and diverse responses. However, to integrate them into current developer workflows, it is essential to constrain their outputs to follow specific formats or standards. In this work, we surveyed 51 experienced industry professionals to understand the range of scenarios and motivations driving the need for output constraints from a user-centered perspective. We identified 134 concrete use cases for constraints at two levels: low-level, which ensures the output adhere to a structured format and an appropriate length, and high-level, which requires the output to follow semantic and stylistic guidelines without hallucination. Critically, applying output constraints could not only streamline the currently repetitive process of developing, testing, and integrating LLM prompts for developers, but also enhance the user experience of LLM-powered features and applications. We conclude with a discussion on user preferences and needs towards articulating intended constraints for LLMs, alongside an initial design for a constraint prototyping tool.`,
+      codename: 'llm-constraints-2024',
+      bibtex: ``,
+      previewImgLink: llmconstraints_2024PreviewImgLink,
+      shouldShowLocalPaperLink: false,
+      doi: 'https://doi.org/10.1145/3613905.3650756',
+      acmdl: 'https://doi.org/10.1145/3613905.3650756',
+      // arxiv: 'https://arxiv.org/abs/2402.10524',
       acmdl_available: false,
       // conferenceTalkVideo: 'https://youtu.be/w9PXnm_outI',
       showOnWebCV: true,
