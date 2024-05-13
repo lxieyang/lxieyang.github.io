@@ -403,6 +403,27 @@ const CV = ({ data }) => {
 
         <CVSectionContainer>
           <CVSectionTitle>Invited Talks & Guest Lectures</CVSectionTitle>
+          <CVEntryWithIndexOnTheLeft
+            indexSpace={100}
+            indexString={'April 2024'}
+          >
+            <strong>
+              <a
+                href="https://drive.google.com/file/d/1xg8X-Es4PVK5wVx_Cjay7hFzdN3_9IVb/view"
+                target="_blank"
+              >
+                Guest lecture: Sensemaking
+              </a>
+            </strong>
+            ,{' '}
+            <a
+              href="https://www.cs.cmu.edu/~sherryw/courses/2024s-dhcs.html"
+              target="_blank"
+            >
+              Designing Human-Centered Software
+            </a>
+            , Carnegie Mellon University
+          </CVEntryWithIndexOnTheLeft>
           <CVEntryWithIndexOnTheLeft indexSpace={100} indexString={'Dec. 2023'}>
             <strong>
               <a href="https://youtu.be/CqtRFZGYfks" target="_blank">
