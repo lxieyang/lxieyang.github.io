@@ -114,7 +114,7 @@ const CV = ({ data }) => {
           <Col xs="12" sm="6">
             <CVContactsInfoContainer>
               People + AI Research (PAIR) <br />
-              Google
+              Google DeepMind
               {/* Human-Computer Interaction Institute, School of Computer Science{' '}
               <br />
               Carnegie Mellon University <br />
@@ -142,7 +142,7 @@ const CV = ({ data }) => {
             dateString={'Aug. 2023 - present'}
             content={
               <>
-                <strong>Google PAIR</strong>, Research Scientist
+                <strong>Google DeepMind</strong>, Research Scientist
               </>
             }
           />

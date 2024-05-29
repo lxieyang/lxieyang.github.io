@@ -192,13 +192,14 @@ const IndexPage = ({ data }) => {
             <br />
 
             <p>
-              Michael Xieyang Liu is a Research Scientist at Google in the{' '}
+              Michael Xieyang Liu is a Research Scientist at Google DeepMind in
+              the{' '}
               <a href="https://pair.withgoogle.com/" target="_blank">
                 Google PAIR
               </a>{' '}
               (People+AI Research Initiative) team. His research aims to improve
               human-AI interaction, with a particular focus on human interaction
-              with large language models and controllable AI.
+              with multimodal large language models and controllable AI.
             </p>
 
             <p>

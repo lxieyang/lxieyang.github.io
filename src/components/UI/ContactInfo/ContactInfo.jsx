@@ -55,7 +55,7 @@ const ContactInfo = ({ data, inCVPage }) => {
 
       <div className="contact-entry">
         <TwitterIcon className="icon" />
-        <a href={data.site.siteMetadata.externalLinks.twitter}>Twitter</a>
+        <a href={data.site.siteMetadata.externalLinks.twitter}>X / Twitter</a>
       </div>
 
       {/* <div className="contact-entry">
