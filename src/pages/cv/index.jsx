@@ -922,6 +922,19 @@ const CV = ({ data }) => {
             }
           >
             {' '}
+            <u>ACM CHI</u> 2025{' '}
+            <a
+              target="_blank"
+              href="https://archive.sigchi.org/conferences/upcoming-conferences/"
+            >
+              Engineering Interactive Systems subcommittee
+            </a>
+            <br />
+            <u>ACM UIST</u> 2024{' '}
+            <a target="_blank" href="https://uist.acm.org/2024/organizers/">
+              Program Committee Member
+            </a>
+            <br />
             <u>ACM CHI</u> 2024{' '}
             <a
               target="_blank"
@@ -939,8 +952,9 @@ const CV = ({ data }) => {
             }
           >
             <strong>Conferences</strong>: <u>CHI</u> (2019 - 2024), <u>CSCW</u>{' '}
-            (2019 - 2023), <u>UIST</u> (2019 - 2022), <u>IUI</u> (2020),{' '}
+            (2019 - 2023), <u>UIST</u> (2019 - 2024), <u>IUI</u> (2020),{' '}
             <u>VAST</u> (2020)
+            <br />
             <strong>Journal</strong>: <u>TOCHI</u> (2022) <br />
             <strong>Special Recognitions for Outstanding Reviews</strong>:{' '}
             <u>UIST</u> (2021), <u>CHI</u> (2023)
