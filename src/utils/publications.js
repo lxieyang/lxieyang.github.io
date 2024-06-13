@@ -1001,6 +1001,8 @@ export const publicationsData = {
       arxiv: 'https://arxiv.org/abs/2402.10524',
       acmdl_available: true,
       conferenceTalkVideo: 'https://youtu.be/UpgoHnXvwC0',
+      blogPost:
+        'https://medium.com/people-ai-research/llm-comparator-a-tool-for-human-driven-llm-evaluation-81292c17f521',
       showOnWebCV: true,
       showInResearchPage: true,
     },

@@ -475,6 +475,23 @@ class Publications extends Component {
                                 ]
                               </span>
                             )}
+                            {pub.blogPost !== undefined && (
+                              <span>
+                                [
+                                <a
+                                  href={pub.blogPost}
+                                  target="_blank"
+                                  rel="noopener noreferrer"
+                                  style={{
+                                    display: 'flex',
+                                    alignItems: 'center',
+                                  }}
+                                >
+                                  Blog Post
+                                </a>
+                                ]
+                              </span>
+                            )}
                             {pub.website !== undefined && (
                               <span>
                                 [
