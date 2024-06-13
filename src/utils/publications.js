@@ -880,7 +880,7 @@ export const publicationsData = {
       acmdl: 'https://doi.org/10.1145/3613904.3642233',
       acmdl_available: true,
       arxiv: 'https://arxiv.org/abs/2402.15108',
-      // conferenceTalkVideo: 'https://youtu.be/w9PXnm_outI',
+      conferenceTalkVideo: 'https://youtu.be/f7yopOQOtL8',
       showOnWebCV: true,
       showInResearchPage: true,
     },
@@ -932,6 +932,8 @@ export const publicationsData = {
       arxiv: 'https://arxiv.org/abs/2310.02161',
       acmdl_available: true,
       conferenceTalkVideo: 'https://youtu.be/S8a0yxU0Me0',
+      cmuSCSMedia:
+        'https://www.cs.cmu.edu/news/2024/selenite-search-engine-tool',
       showOnWebCV: true,
       showInResearchPage: true,
     },
