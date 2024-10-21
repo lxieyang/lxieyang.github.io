@@ -500,6 +500,36 @@ const CV = ({ data }) => {
               <>
                 <strong>
                   <a
+                    href="https://github.com/lxieyang/chrome-extension-boilerplate-react/"
+                    target={'_blank'}
+                  >
+                    Chrome extension boilerplate (w/ React & Webpack)
+                  </a>
+                </strong>
+                <br />
+                <a
+                  href="https://github.com/lxieyang/chrome-extension-boilerplate-react/stargazers"
+                  target={'_blank'}
+                >
+                  3.6k stars
+                </a>
+                ,{' '}
+                <a
+                  href="https://github.com/lxieyang/chrome-extension-boilerplate-react/forks"
+                  target={'_blank'}
+                >
+                  1.1k forks
+                </a>{' '}
+                on GitHub (as of Oct. 2024)
+              </>
+            }
+          />
+          <CVEntryWithDateOnTheLeft
+            dateString={'2019 - present'}
+            content={
+              <>
+                <strong>
+                  <a
                     href="https://chrome.google.com/webstore/detail/vertical-tabs/pddljdmihkpdfpkgmbhdomeeifpklgnm"
                     target={'_blank'}
                   >
@@ -518,42 +548,99 @@ const CV = ({ data }) => {
                   href="https://github.com/lxieyang/vertical-tabs-chrome-extension"
                   target={'_blank'}
                 >
-                  400+ stars
+                  460+ stars
                 </a>{' '}
-                on GitHub (as of Feb. 2024)
+                on GitHub (as of Oct. 2024)
               </>
             }
           />
-          <CVEntryWithDateOnTheLeft
-            dateString={'2019 - present'}
-            content={
-              <>
-                <strong>
-                  <a
-                    href="https://github.com/lxieyang/chrome-extension-boilerplate-react/"
-                    target={'_blank'}
-                  >
-                    Chrome extension boilerplate (w/ React & Webpack)
-                  </a>
-                </strong>
-                <br />
-                <a
-                  href="https://github.com/lxieyang/chrome-extension-boilerplate-react/stargazers"
-                  target={'_blank'}
-                >
-                  3.1k stars
-                </a>
-                ,{' '}
-                <a
-                  href="https://github.com/lxieyang/chrome-extension-boilerplate-react/forks"
-                  target={'_blank'}
-                >
-                  980+ forks
-                </a>{' '}
-                on GitHub (as of Feb. 2024)
-              </>
+        </CVSectionContainer>
+
+        <CVSectionContainer>
+          <CVSectionTitle>Service</CVSectionTitle>
+          <CVSectionSubTitle>Academic Service</CVSectionSubTitle>
+          <CVEntryWithIndexOnTheLeft
+            indexSpace={160}
+            indexString={
+              <strong style={{ fontStyle: 'normal' }}>Associate Chair</strong>
             }
-          />
+          >
+            {' '}
+            <u>ACM CHI</u> 2025{' '}
+            <a
+              target="_blank"
+              href="https://archive.sigchi.org/conferences/upcoming-conferences/"
+            >
+              Blending Interaction: Engineering Interactive Systems & Tools
+              subcommittee
+            </a>
+            <br />
+            <u>ACM UIST</u> 2024{' '}
+            <a target="_blank" href="https://uist.acm.org/2024/organizers/">
+              Program Committee Member
+            </a>
+            <br />
+            <u>ACM CHI</u> 2024{' '}
+            <a
+              target="_blank"
+              href="https://chi2024.acm.org/subcommittees/selecting-a-subcommittee/"
+            >
+              Computational Interaction subcommittee
+            </a>
+            <br />
+            <u>ACM CHI</u> 2020 Late Breaking Work Track
+          </CVEntryWithIndexOnTheLeft>
+          <CVEntryWithIndexOnTheLeft
+            indexSpace={160}
+            indexString={
+              <strong style={{ fontStyle: 'normal' }}>Paper Reviewing</strong>
+            }
+          >
+            <strong>Conferences</strong>: <u>CHI</u> (2019 - 2025), <u>CSCW</u>{' '}
+            (2019 - 2023), <u>UIST</u> (2019 - 2024), <u>IUI</u> (2020),{' '}
+            <u>VAST</u> (2020)
+            <br />
+            <strong>Journal</strong>: <u>TOCHI</u> (2022) <br />
+            <strong>Special Recognitions for Outstanding Reviews</strong>:{' '}
+            <u>UIST</u> (2021), <u>CHI</u> (2023)
+          </CVEntryWithIndexOnTheLeft>
+
+          <CVSectionSubTitle>
+            Departmental & Community Service
+          </CVSectionSubTitle>
+          <CVEntryWithIndexOnTheLeft
+            indexSpace={160}
+            indexString={
+              <strong style={{ fontStyle: 'normal' }}>Committee Member</strong>
+            }
+          >
+            Ph.D. Admission Committee (2022-2023)
+          </CVEntryWithIndexOnTheLeft>
+          <CVEntryWithIndexOnTheLeft
+            indexSpace={160}
+            indexString={
+              <strong style={{ fontStyle: 'normal' }}>Committee Member</strong>
+            }
+          >
+            REU (Research Experience for Undergraduate) Admissions Committee
+            (2021-2022)
+          </CVEntryWithIndexOnTheLeft>
+          <CVEntryWithIndexOnTheLeft
+            indexSpace={160}
+            indexString={
+              <strong style={{ fontStyle: 'normal' }}>Committee Member</strong>
+            }
+          >
+            CMU HCII Faculty Lunch Organization Committee (2019-2020)
+          </CVEntryWithIndexOnTheLeft>
+          <CVEntryWithIndexOnTheLeft
+            indexSpace={160}
+            indexString={
+              <strong style={{ fontStyle: 'normal' }}>Committee Member</strong>
+            }
+          >
+            CMU HCII Ph.D. Student Lounge Committee (2019-2020)
+          </CVEntryWithIndexOnTheLeft>
         </CVSectionContainer>
 
         <CVSectionContainer>
@@ -676,6 +763,45 @@ const CV = ({ data }) => {
               </>
             }
           />
+        </CVSectionContainer>
+
+        <CVSectionContainer>
+          <CVSectionTitle>Mentoring</CVSectionTitle>
+          <CVEntryWithIndexOnTheLeft
+            indexSpace={120}
+            indexString={'2018 - 2019'}
+          >
+            <strong>
+              <a href="https://janeon.github.io/" target="_blank">
+                Jane Hsieh
+              </a>
+            </strong>{' '}
+            <br />
+            <em>
+              Oberlin College Student (Currently a CMU S3D Ph.D. Candidate)
+            </em>{' '}
+            <br />
+            Studied programmers' web-foraging behaviors. Contributed to the
+            development of the Unakite system.
+          </CVEntryWithIndexOnTheLeft>
+          <CVEntryWithIndexOnTheLeft
+            indexSpace={120}
+            indexString={'2017 - 2018'}
+          >
+            <strong>Emily Deng</strong> <br />
+            <em>CMU Master's Student</em> <br />
+            Designed and carried out interview studies with programmers that
+            probe their programming behaviors and needs.
+          </CVEntryWithIndexOnTheLeft>
+          <CVEntryWithIndexOnTheLeft
+            indexSpace={120}
+            indexString={'2017 - 2018'}
+          >
+            <strong>Shaun Burley</strong> <br />
+            <em>CMU Master's Student</em> <br />
+            Designed and carried out interview studies with programmers that
+            probe their programming behaviors and needs.
+          </CVEntryWithIndexOnTheLeft>
         </CVSectionContainer>
 
         <CVSectionContainer>
@@ -870,131 +996,6 @@ const CV = ({ data }) => {
             <br />
             University of Michigan – Shanghai Jiao Tong University Joint
             Institute
-          </CVEntryWithIndexOnTheLeft>
-        </CVSectionContainer>
-
-        <CVSectionContainer>
-          <CVSectionTitle>Mentoring</CVSectionTitle>
-          <CVEntryWithIndexOnTheLeft
-            indexSpace={120}
-            indexString={'2018 - 2019'}
-          >
-            <strong>
-              <a href="https://janeon.github.io/" target="_blank">
-                Jane Hsieh
-              </a>
-            </strong>{' '}
-            <br />
-            <em>
-              Oberlin College Student (Currently a CMU S3D Ph.D. Candidate)
-            </em>{' '}
-            <br />
-            Studied programmers' web-foraging behaviors. Contributed to the
-            development of the Unakite system.
-          </CVEntryWithIndexOnTheLeft>
-          <CVEntryWithIndexOnTheLeft
-            indexSpace={120}
-            indexString={'2017 - 2018'}
-          >
-            <strong>Emily Deng</strong> <br />
-            <em>CMU Master's Student</em> <br />
-            Designed and carried out interview studies with programmers that
-            probe their programming behaviors and needs.
-          </CVEntryWithIndexOnTheLeft>
-          <CVEntryWithIndexOnTheLeft
-            indexSpace={120}
-            indexString={'2017 - 2018'}
-          >
-            <strong>Shaun Burley</strong> <br />
-            <em>CMU Master's Student</em> <br />
-            Designed and carried out interview studies with programmers that
-            probe their programming behaviors and needs.
-          </CVEntryWithIndexOnTheLeft>
-        </CVSectionContainer>
-
-        <CVSectionContainer>
-          <CVSectionTitle>Service</CVSectionTitle>
-          <CVSectionSubTitle>Academic Service</CVSectionSubTitle>
-          <CVEntryWithIndexOnTheLeft
-            indexSpace={160}
-            indexString={
-              <strong style={{ fontStyle: 'normal' }}>Associate Chair</strong>
-            }
-          >
-            {' '}
-            <u>ACM CHI</u> 2025{' '}
-            <a
-              target="_blank"
-              href="https://archive.sigchi.org/conferences/upcoming-conferences/"
-            >
-              Engineering Interactive Systems subcommittee
-            </a>
-            <br />
-            <u>ACM UIST</u> 2024{' '}
-            <a target="_blank" href="https://uist.acm.org/2024/organizers/">
-              Program Committee Member
-            </a>
-            <br />
-            <u>ACM CHI</u> 2024{' '}
-            <a
-              target="_blank"
-              href="https://chi2024.acm.org/subcommittees/selecting-a-subcommittee/"
-            >
-              Computational Interaction subcommittee
-            </a>
-            <br />
-            <u>ACM CHI</u> 2020 Late Breaking Work Track
-          </CVEntryWithIndexOnTheLeft>
-          <CVEntryWithIndexOnTheLeft
-            indexSpace={160}
-            indexString={
-              <strong style={{ fontStyle: 'normal' }}>Paper Reviewing</strong>
-            }
-          >
-            <strong>Conferences</strong>: <u>CHI</u> (2019 - 2024), <u>CSCW</u>{' '}
-            (2019 - 2023), <u>UIST</u> (2019 - 2024), <u>IUI</u> (2020),{' '}
-            <u>VAST</u> (2020)
-            <br />
-            <strong>Journal</strong>: <u>TOCHI</u> (2022) <br />
-            <strong>Special Recognitions for Outstanding Reviews</strong>:{' '}
-            <u>UIST</u> (2021), <u>CHI</u> (2023)
-          </CVEntryWithIndexOnTheLeft>
-
-          <CVSectionSubTitle>
-            Departmental & Community Service
-          </CVSectionSubTitle>
-          <CVEntryWithIndexOnTheLeft
-            indexSpace={160}
-            indexString={
-              <strong style={{ fontStyle: 'normal' }}>Committee Member</strong>
-            }
-          >
-            Ph.D. Admission Committee (2022-2023)
-          </CVEntryWithIndexOnTheLeft>
-          <CVEntryWithIndexOnTheLeft
-            indexSpace={160}
-            indexString={
-              <strong style={{ fontStyle: 'normal' }}>Committee Member</strong>
-            }
-          >
-            REU (Research Experience for Undergraduate) Admissions Committee
-            (2021-2022)
-          </CVEntryWithIndexOnTheLeft>
-          <CVEntryWithIndexOnTheLeft
-            indexSpace={160}
-            indexString={
-              <strong style={{ fontStyle: 'normal' }}>Committee Member</strong>
-            }
-          >
-            CMU HCII Faculty Lunch Organization Committee (2019-2020)
-          </CVEntryWithIndexOnTheLeft>
-          <CVEntryWithIndexOnTheLeft
-            indexSpace={160}
-            indexString={
-              <strong style={{ fontStyle: 'normal' }}>Committee Member</strong>
-            }
-          >
-            CMU HCII Ph.D. Student Lounge Committee (2019-2020)
           </CVEntryWithIndexOnTheLeft>
         </CVSectionContainer>
 
