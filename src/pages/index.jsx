@@ -80,23 +80,8 @@ const IndexPage = ({ data }) => {
                   Pronoun: he/him
                 </p> */}
                 <p className="basic-info-text">
-                  Research Scientist @ Google PAIR{' '}
-                  {/* <span className="d-inline-block d-sm-none">
-                    @ Google PAIR
-                  </span> */}
+                  Research Scientist @ Google DeepMind{' '}
                 </p>
-                {/* <p className="basic-info-text d-none d-sm-block">
-                  <a href="http://www.hcii.cmu.edu">
-                    {' '}
-                    Human-Computer Interaction Institute
-                  </a>{' '}
-                  <br />
-                  <a href="https://www.cs.cmu.edu/">
-                    School of Computer Science
-                  </a>{' '}
-                  <br />
-                  <a href="https://www.cmu.edu/">Carnegie Mellon University</a>
-                </p> */}
 
                 <div className="d-none d-sm-none d-md-block d-lg-block">
                   <ContactInfo data={data} />
@@ -108,98 +93,18 @@ const IndexPage = ({ data }) => {
 
         <Col sm="8" md="9">
           <div className="homepage-word-section">
-            {/* <h1
-            style={{
-              display: 'flex',
-              alignItems: 'center',
-            }}
-          >
-            {data.site.siteMetadata.nameEnglish} &nbsp;
-            <span className="d-none d-sm-none d-md-none d-lg-inline">
-              <img
-                src={CMUAvatar}
-                width="30"
-                height="30"
-                className="d-inline-block"
-                alt="cmu-avatar"
-              />
-              <img
-                src={HCIIAvatar}
-                width="30"
-                height="30"
-                className="d-inline-block"
-                alt="hcii-avatar"
-              />
-            </span>
-          </h1> */}
-            {/* <Row>
-            <Col xs="4" sm="4" className="d-sm-block d-md-none">
-              <div>
-                <img
-                  src={ProfileImg}
-                  alt="profile"
-                  style={{ maxWidth: '100%', maxHeight: '100%' }}
-                />
-              </div>
-            </Col>
-            <Col xs="8" sm="8" md="12">
-              <p className="my-title d-md-block">
-                #humanComputerInteraction &nbsp; #programmingTools &nbsp;
-                #sensemaking &nbsp; #intelligentUserInterfaces
-              </p>
-            </Col>
-          </Row> */}
-
-            {/* <div className="header-banner-images-container d-none d-sm-none d-md-block d-lg-block">
-              <img src={HCIITextLogo} alt="hcii" /> &nbsp; &nbsp; &nbsp;
-              <img src={CMULogo} alt="cmu" /> &nbsp;
-              <img
-                src={CMUTextLogo}
-                alt="cmu-text"
-                style={{
-                  marginTop: '12px',
-                }}
-              />
-            </div> */}
-            {/* <Row>
-              <Col style={{ margin: 0, padding: 0 }}>
-                <div
-                  style={{
-                    display: 'inline-block',
-                    // backgroundColor: 'rgba(193, 0, 15, 0.75)',
-                    // color: '#fff',
-                    backgroundColor: '#fff',
-                    color: '#333',
-                    border: '2px dashed rgba(193, 0, 15, 0.75)',
-                    margin: '0px 16px',
-                    marginTop: 0,
-                    padding: '6px 12px',
-                    borderRadius: 8,
-                  }}
-                >
-                  📢 I'm on the job market for{' '}
-                  <strong>
-                    industry research or applied scientist positions
-                  </strong>{' '}
-                  in 2023. I design and build systems that accelerate online
-                  sensemaking for developers and facilitate human-AI
-                  interactions for end-users. Please get in touch if you know of
-                  any relevant opportunities!
-                </div>
-              </Col>
-            </Row> */}
-            {/* <h1>About me</h1> */}
             <br />
 
             <p>
               Michael Xieyang Liu is a Research Scientist at Google DeepMind in
               the{' '}
               <a href="https://pair.withgoogle.com/" target="_blank">
-                Google PAIR
+                PAIR
               </a>{' '}
-              (People+AI Research Initiative) team. His research aims to improve
-              human-AI interaction, with a particular focus on human interaction
-              with multimodal large language models and controllable AI.
+              (People + AI Research Initiative) team. His research aims to
+              improve human-AI interaction, with a particular focus on human
+              interaction with multimodal large language models and controllable
+              AI.
             </p>
 
             <p>
@@ -255,7 +160,7 @@ const IndexPage = ({ data }) => {
             </p>
             <p>
               He publishes at premier HCI academic venues such as CHI, UIST, and
-              CSCW, including three award-winning papers: a{' '}
+              CSCW, VIS, including three award-winning papers: a{' '}
               <strong>best paper honorable mention</strong> at CHI 2023, a{' '}
               <strong>best paper</strong> at CSCW 2021, and a{' '}
               <strong>best paper honorable mention</strong> at UIST 2019. His
@@ -277,18 +182,6 @@ const IndexPage = ({ data }) => {
               <ContactInfo data={data} />
             </div>
             <hr />
-            {/* <p>
-            I worked as an undergraduate researcher with{' '}
-            <a href="https://web.eecs.umich.edu/~wlasecki/" id="walter-lasecki">
-              Dr. Walter S. Lasecki
-            </a>{' '}
-            in the{' '}
-            <a href="http://web.eecs.umich.edu/~wlasecki/croma.html">
-              Crowds + Machines Lab (Croma Lab)
-            </a>{' '}
-            during my time at Umich.
-            <HeadshotTooltip target="walter-lasecki" headshotPath={WalterImg} />
-          </p> */}
 
             <h1>Selected Open-source projects</h1>
 
