@@ -17,6 +17,8 @@ import llmc_2024PreviewImgLink from '../assets/files/pubs/llm-comparator-2024/ll
 import llmconstraints_2024PreviewImgLink from '../assets/files/pubs/llm-constraints-2024/llm-constraints-2024.jpg';
 import cooking_2024PreviewImgLink from '../assets/files/pubs/cooking-chi-2024/cooking-chi-2024.jpg';
 import selenite_2024PreviewImgLink from '../assets/files/pubs/selenite-chi-2024/selenite-chi-2024.jpg';
+import mobilemaker_2024PreviewImgLink from '../assets/files/pubs/mobilemaker-vlhcc-2024/mobilemaker-vlhcc-2024.jpg';
+import llmcomparator_2024PreviewImgLink from '../assets/files/pubs/llmcomparator-vis-2024/llmcomparator-vis-2024.jpg';
 import { filePathPrefix } from './constants';
 
 export const pubFilePathPrefix = filePathPrefix + `/pubs`;
@@ -1058,6 +1060,120 @@ export const publicationsData = {
       arxiv: 'https://arxiv.org/abs/2404.07362',
       acmdl_available: true,
       conferenceTalkVideo: 'https://youtu.be/JEJpBbk5CAs',
+      showOnWebCV: true,
+      showInResearchPage: true,
+    },
+
+    // In Situ AI Prototyping: Infusing Multimodal Prompts into Mobile Settings with MobileMaker - VL/HCC 2024
+    {
+      title:
+        'In Situ AI Prototyping: Infusing Multimodal Prompts into Mobile Settings with MobileMaker',
+      type: 'conference',
+      conference: 'VL/HCC',
+      conferenceFullName:
+        'IEEE Symposium on Visual Languages and Human-Centric Computing (VL/HCC)',
+      conferenceTag: 'VL/HCC 2024',
+      year: 2024,
+      month: 9,
+      authors: [
+        {
+          name: 'Michael Xieyang Liu*',
+          bold: true,
+        },
+        {
+          name: 'Savvas Petridis*',
+          bold: false,
+        },
+        {
+          name: 'Alexander J. Fiannaca',
+          bold: false,
+        },
+        {
+          name: 'Vivian Tsai',
+          bold: false,
+        },
+        {
+          name: 'Michael Terry',
+          bold: false,
+        },
+        {
+          name: 'Carrie J. Cai',
+          bold: false,
+        },
+      ],
+      abstract: `Recent advances in multimodal large language models (LLMs) have made it easier to rapidly prototype AI-powered features, especially for mobile use cases. However, gathering early, mobile-situated user feedback on these AI prototypes remains challenging. The broad scope and flexibility of LLMs means that, for a given use-case-specific prototype, there is a crucial need to understand the wide range of in-the-wild input users are likely to provide and their in-context expectations for the AI's behavior. To explore the concept of in situ AI prototyping and testing, we created MobileMaker: a platform that enables designers to rapidly create and test mobile AI prototypes directly on devices. This tool also enables testers to make on-device, in-the-field revisions of prototypes using natural language. In an exploratory study with 16 participants, we explored how user feedback on prototypes created with MobileMaker compares to that of existing prototyping tools (e.g., Figma, prompt editors). Our findings suggest that MobileMaker prototypes enabled more serendipitous discovery of: model input edge cases, discrepancies between AI's and user's in-context interpretation of the task, and contextual signals missed by the AI. Furthermore, we learned that while the ability to make in-the-wild revisions led users to feel more fulfilled as active participants in the design process, it might also constrain their feedback to the subset of changes perceived as more actionable or implementable by the prototyping tool.`,
+      codename: 'mobilemaker-vlhcc-2024',
+      previewImgLink: mobilemaker_2024PreviewImgLink,
+      shouldShowLocalPaperLink: true,
+      doi: 'https://doi.org/10.1109/VL/HCC60511.2024.00023',
+      ieeexplore: 'https://ieeexplore.ieee.org/document/10714531',
+      arxiv: 'https://arxiv.org/abs/2405.03806',
+      showOnWebCV: true,
+      showInResearchPage: true,
+    },
+
+    // In Situ AI Prototyping: Infusing Multimodal Prompts into Mobile Settings with MobileMaker - VL/HCC 2024
+    {
+      title:
+        'LLM Comparator: Interactive Analysis of Side-by-Side Evaluation of Large Language Models',
+      type: 'conference',
+      conference: 'VIS',
+      conferenceFullName:
+        'IEEE Transactions on Visualization and Computer Graphics',
+      conferenceTag: 'IEEE VIS 2024',
+      year: 2024,
+      month: 10,
+      authors: [
+        {
+          name: 'Minsuk Kahng',
+          bold: false,
+        },
+        {
+          name: 'Ian Tenney',
+          bold: false,
+        },
+        {
+          name: 'Mahima Pushkarna',
+          bold: false,
+        },
+        {
+          name: 'Michael Xieyang Liu',
+          bold: true,
+        },
+        {
+          name: 'James Wexler',
+          bold: false,
+        },
+        {
+          name: 'Emily Reif',
+          bold: false,
+        },
+        {
+          name: 'Krystal Kallarackal',
+          bold: false,
+        },
+        {
+          name: 'Minsuk Chang',
+          bold: false,
+        },
+        {
+          name: 'Michael Terry',
+          bold: false,
+        },
+        {
+          name: 'Lucas Dixon',
+          bold: false,
+        },
+      ],
+      abstract: `Evaluating large language models (LLMs) presents unique challenges. While automatic side-by-side evaluation, also known as LLM-as-a-judge, has become a promising solution, model developers and researchers face difficulties with scalability and interpretability when analyzing these evaluation outcomes. To address these challenges, we introduce LLM Comparator, a new visual analytics tool designed for side-by-side evaluations of LLMs. This tool provides analytical workflows that help users understand when and why one LLM outperforms or underperforms another, and how their responses differ. Through close collaboration with practitioners developing LLMs at Google, we have iteratively designed, developed, and refined the tool. Qualitative feedback from these users highlights that the tool facilitates in-depth analysis of individual examples while enabling users to visually overview and flexibly slice data. This empowers users to identify undesirable patterns, formulate hypotheses about model behavior, and gain insights for model improvement. LLM Comparator has been integrated into Google's LLM evaluation platforms and open-sourced.`,
+      codename: 'llmcomparator-vis-2024',
+      previewImgLink: llmcomparator_2024PreviewImgLink,
+      shouldShowLocalPaperLink: true,
+      doi: 'https://doi.org/10.1109/TVCG.2024.3456354',
+      ieeexplore: 'https://ieeexplore.ieee.org/document/10670495',
+      blogPost:
+        'https://medium.com/people-ai-research/llm-comparator-a-tool-for-human-driven-llm-evaluation-81292c17f521',
+      codebaseLink: 'https://github.com/PAIR-code/llm-comparator',
       showOnWebCV: true,
       showInResearchPage: true,
     },

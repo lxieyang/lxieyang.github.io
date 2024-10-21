@@ -201,15 +201,6 @@ class Publications extends Component {
                                   alignItems: 'center',
                                 }}
                               >
-                                {/* <img
-                                  src={GistIcon}
-                                  alt="video"
-                                  style={{
-                                    marginRight: 3,
-                                    width: 20,
-                                    height: 20,
-                                  }}
-                                /> */}
                                 Abstract
                               </a>
                               ]
@@ -227,15 +218,6 @@ class Publications extends Component {
                                     alignItems: 'center',
                                   }}
                                 >
-                                  {/* <img
-                                    src={IEEEIcon}
-                                    alt="ieee"
-                                    style={{
-                                      marginRight: 3,
-                                      width: 20,
-                                      height: 20,
-                                    }}
-                                  /> */}
                                   IEEE Digital Library
                                 </a>
                                 ]
@@ -259,15 +241,6 @@ class Publications extends Component {
                                         alignItems: 'center',
                                       }}
                                     >
-                                      {/* <img
-                                      src={ACMDLIcon}
-                                      alt="acmdl"
-                                      style={{
-                                        marginRight: 3,
-                                        width: 20,
-                                        height: 20,
-                                      }}
-                                    /> */}
                                       ACM DL
                                     </a>
                                     ]
@@ -293,15 +266,6 @@ class Publications extends Component {
                                         alignItems: 'center',
                                       }}
                                     >
-                                      {/* <img
-                                      src={ACMDLIcon}
-                                      alt="acmdl"
-                                      style={{
-                                        marginRight: 3,
-                                        width: 20,
-                                        height: 20,
-                                      }}
-                                    /> */}
                                       PNAS
                                     </a>
                                     ]
@@ -321,15 +285,6 @@ class Publications extends Component {
                                     alignItems: 'center',
                                   }}
                                 >
-                                  {/* <img
-                                    src={ArxivIcon}
-                                    alt="ieee"
-                                    style={{
-                                      marginRight: 3,
-                                      width: 20,
-                                      height: 20,
-                                    }}
-                                  /> */}
                                   arxiv
                                 </a>
                                 ]
@@ -349,15 +304,6 @@ class Publications extends Component {
                                         alignItems: 'center',
                                       }}
                                     >
-                                      {/* <img
-                                        src={DocumentIcon}
-                                        alt="video"
-                                        style={{
-                                          marginRight: 3,
-                                          width: 20,
-                                          height: 20,
-                                        }}
-                                      /> */}
                                       Extended Abstract
                                     </a>
                                     ]
@@ -373,15 +319,6 @@ class Publications extends Component {
                                         alignItems: 'center',
                                       }}
                                     >
-                                      {/* <img
-                                        src={PosterIcon}
-                                        alt="video"
-                                        style={{
-                                          marginRight: 3,
-                                          width: 20,
-                                          height: 20,
-                                        }}
-                                      /> */}
                                       Poster
                                     </a>
                                     ]
@@ -399,15 +336,6 @@ class Publications extends Component {
                                       alignItems: 'center',
                                     }}
                                   >
-                                    {/* <img
-                                      src={DocumentIcon}
-                                      alt="video"
-                                      style={{
-                                        marginRight: 3,
-                                        width: 20,
-                                        height: 20,
-                                      }}
-                                    /> */}
                                     Paper PDF
                                   </a>
                                   ]
@@ -426,15 +354,6 @@ class Publications extends Component {
                                     alignItems: 'center',
                                   }}
                                 >
-                                  {/* <img
-                                    src={VideoIcon}
-                                    alt="video"
-                                    style={{
-                                      marginRight: 3,
-                                      width: 20,
-                                      height: 20,
-                                    }}
-                                  /> */}
                                   Talk Video
                                 </a>
                                 ]
@@ -475,6 +394,23 @@ class Publications extends Component {
                                 ]
                               </span>
                             )}
+                            {pub.codebaseLink !== undefined && (
+                              <span>
+                                [
+                                <a
+                                  href={pub.codebaseLink}
+                                  target="_blank"
+                                  rel="noopener noreferrer"
+                                  style={{
+                                    display: 'flex',
+                                    alignItems: 'center',
+                                  }}
+                                >
+                                  Code
+                                </a>
+                                ]
+                              </span>
+                            )}
                             {pub.blogPost !== undefined && (
                               <span>
                                 [
@@ -504,30 +440,12 @@ class Publications extends Component {
                                     alignItems: 'center',
                                   }}
                                 >
-                                  {/* <img
-                                    src={CMUSCSIcon}
-                                    alt="video"
-                                    style={{
-                                      marginRight: 3,
-                                      width: 20,
-                                      height: 20,
-                                    }}
-                                  /> */}
                                   Project Website
                                 </a>
                                 ]
                               </span>
                             )}
                           </div>
-                          {/*
-                            <div className="pub-element">
-                              {
-                                pub.year >= this.state.currentYear
-                                ? <NewTag>new</NewTag>
-                                : null
-                              }
-                            </div>
-                            */}
                           <UncontrolledCollapse
                             // defaultOpen={!mobile()}
                             defaultOpen={false}
