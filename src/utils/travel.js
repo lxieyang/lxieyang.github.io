@@ -1,12 +1,24 @@
 export default [
   {
-    date: 'Oct 29, 2023',
+    date: 'October 13, 2024',
+    location: 'Pittsburgh, PA, US',
+    event: 'UIST 2024',
+    url: 'https://uist.acm.org/2024/',
+  },
+  {
+    date: 'May 11, 2024',
+    location: 'Honolulu, HI, US',
+    event: 'CHI 2024',
+    url: 'https://chi2024.acm.org/',
+  },
+  {
+    date: 'October 29, 2023',
     location: 'San Francisco, CA, US',
     event: 'UIST 2023',
     url: 'https://uist.acm.org/uist2023/',
   },
   {
-    date: 'Oct 31, 2022',
+    date: 'October 31, 2022',
     location: 'Bend, OR, US',
     event: 'UIST 2022',
     url: 'https://uist.acm.org/uist2022/',
@@ -71,12 +83,6 @@ export default [
     event: 'Bosch Research Pittsburgh Internship',
     url: 'https://www.bosch.us/our-company/bosch-in-the-usa/pittsburgh/',
   },
-  // {
-  //   date: 'May 14, 2019',
-  //   location: 'Austin, TX, US',
-  //   event: 'Personal Trip',
-  //   url: 'https://www.austintexas.org/',
-  // },
   {
     date: 'May 4, 2019',
     location: 'Glasgow, Scotland',

@@ -7,7 +7,9 @@ import {
 
 export default [
   {
-    content: <Fragment>I joined Google PAIR as a Research Scientist!</Fragment>,
+    content: (
+      <Fragment>I joined Google DeepMind as a Research Scientist!</Fragment>
+    ),
     date: new Date('2023-08-07'),
     shouldDisplay: true,
   },

@@ -235,8 +235,8 @@ const CV = ({ data }) => {
                   </a>
                 </em>
                 <br />
-                Crowdsourcing & AI techniques for improving the safety and
-                performance of autonomous vehicles.
+                AI & Crowdsourcing for improving the safety and performance of
+                autonomous vehicles.
               </>
             }
           />
