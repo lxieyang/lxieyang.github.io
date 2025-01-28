@@ -19,6 +19,7 @@ import cooking_2024PreviewImgLink from '../assets/files/pubs/cooking-chi-2024/co
 import selenite_2024PreviewImgLink from '../assets/files/pubs/selenite-chi-2024/selenite-chi-2024.jpg';
 import mobilemaker_2024PreviewImgLink from '../assets/files/pubs/mobilemaker-vlhcc-2024/mobilemaker-vlhcc-2024.jpg';
 import llmcomparator_2024PreviewImgLink from '../assets/files/pubs/llmcomparator-vis-2024/llmcomparator-vis-2024.jpg';
+import gensors_2025PreviewImgLink from '../assets/files/pubs/gensors-iui-2025/gensors-iui-2025.jpg';
 import { filePathPrefix } from './constants';
 
 export const pubFilePathPrefix = filePathPrefix + `/pubs`;
@@ -1112,7 +1113,7 @@ export const publicationsData = {
       showInResearchPage: true,
     },
 
-    // In Situ AI Prototyping: Infusing Multimodal Prompts into Mobile Settings with MobileMaker - VL/HCC 2024
+    // LLM Comparator: Interactive Analysis of Side-by-Side Evaluation of Large Language Models
     {
       title:
         'LLM Comparator: Interactive Analysis of Side-by-Side Evaluation of Large Language Models',
@@ -1174,6 +1175,59 @@ export const publicationsData = {
       blogPost:
         'https://medium.com/people-ai-research/llm-comparator-a-tool-for-human-driven-llm-evaluation-81292c17f521',
       codebaseLink: 'https://github.com/PAIR-code/llm-comparator',
+      showOnWebCV: true,
+      showInResearchPage: true,
+    },
+
+    // Gensors: Authoring Personalized Visual Sensors with Multimodal Foundation Models and Reasoning - IUI 2025
+    {
+      title:
+        'Gensors: Authoring Personalized Visual Sensors with Multimodal Foundation Models and Reasoning',
+      type: 'conference',
+      conference: 'IUI',
+      conferenceFullName: 'ACM Conference on Intelligent User Interfaces (IUI)',
+      conferenceTag: 'IUI 2025',
+      year: 2025,
+      month: 3,
+      authors: [
+        {
+          name: 'Michael Xieyang Liu*',
+          bold: true,
+        },
+        {
+          name: 'Savvas Petridis*',
+          bold: false,
+        },
+        {
+          name: 'Vivian Tsai',
+          bold: false,
+        },
+        {
+          name: 'Alexander J. Fiannaca',
+          bold: false,
+        },
+        {
+          name: 'Alex Olwal',
+          bold: false,
+        },
+        {
+          name: 'Michael Terry',
+          bold: false,
+        },
+        {
+          name: 'Carrie J. Cai',
+          bold: false,
+        },
+      ],
+      abstract: `Multimodal large language models (MLLMs), with their expansive world knowledge and reasoning capabilities, present a unique opportunity for end-users to create personalized AI sensors capable of reasoning about complex situations. A user could describe a desired sensing task in natural language (e.g., "alert if my toddler is getting into mischief"), with the MLLM analyzing the camera feed and responding within seconds. In a formative study, we found that users saw substantial value in defining their own sensors, yet struggled to articulate their unique personal requirements and debug the sensors through prompting alone. To address these challenges, we developed Gensors, a system that empowers users to define customized sensors supported by the reasoning capabilities of MLLMs. Gensors 1) assists users in eliciting requirements through both automatically-generated and manually created sensor criteria, 2) facilitates debugging by allowing users to isolate and test individual criteria in parallel, 3) suggests additional criteria based on user-provided images, and 4) proposes test cases to help users "stress test" sensors on potentially unforeseen scenarios. In a user study, participants reported significantly greater sense of control, understanding, and ease of communication when defining sensors using Gensors. Beyond addressing model limitations, Gensors supported users in debugging, eliciting requirements, and expressing unique personal requirements to the sensor through criteria-based reasoning; it also helped uncover users' "blind spots" by exposing overlooked criteria and revealing unanticipated failure modes. Finally, we discuss how unique characteristics of MLLMs--such as hallucinations and inconsistent responses--can impact the sensor-creation process. These findings contribute to the design of future intelligent sensing systems that are intuitive and customizable by everyday users.`,
+      codename: 'gensors-iui-2025',
+      bibtex: ``,
+      previewImgLink: gensors_2025PreviewImgLink,
+      shouldShowLocalPaperLink: true,
+      doi: 'https://doi.org/10.1145/3708359.3712085',
+      acmdl: 'https://doi.org/10.1145/3708359.3712085',
+      arxiv: 'https://arxiv.org/abs/2501.15727',
+      acmdl_available: true,
       showOnWebCV: true,
       showInResearchPage: true,
     },
