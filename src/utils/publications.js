@@ -1230,6 +1230,7 @@ export const publicationsData = {
       acmdl_available: true,
       showOnWebCV: true,
       showInResearchPage: true,
+      conferenceTalkVideo: 'https://youtu.be/tj5WUjPU488',
     },
   ],
 };
