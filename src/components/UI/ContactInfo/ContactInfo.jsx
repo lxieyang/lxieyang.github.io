@@ -11,7 +11,8 @@ import { ThesisProposalAbstractPath } from '../../../utils/constants';
 
 import { MdLocationOn as LocationIcon } from '@react-icons/all-files/md/MdLocationOn';
 import { MdEmail as EmailIcon } from '@react-icons/all-files/md/MdEmail';
-import { FaTwitterSquare as TwitterIcon } from '@react-icons/all-files/fa/FaTwitterSquare';
+// Replacing Twitter icon with X icon asset
+import XLogo from '../../../images/footer/x-icon.svg';
 import { FaGithub as GithubIcon } from '@react-icons/all-files/fa/FaGithub';
 import { FaLinkedin as LinkedInIcon } from '@react-icons/all-files/fa/FaLinkedin';
 import { MdSchool as GoogleScholarIcon } from '@react-icons/all-files/md/MdSchool';
@@ -54,8 +55,13 @@ const ContactInfo = ({ data, inCVPage }) => {
       </div>
 
       <div className="contact-entry">
-        <TwitterIcon className="icon" />
-        <a href={data.site.siteMetadata.externalLinks.twitter}>X / Twitter</a>
+        <img
+          src={XLogo}
+          alt="X"
+          className="icon"
+          style={{ width: '1.1rem', height: '1.1rem' }}
+        />
+        <a href={data.site.siteMetadata.externalLinks.twitter}>X</a>
       </div>
 
       {/* <div className="contact-entry">

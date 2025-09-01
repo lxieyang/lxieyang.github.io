@@ -10,7 +10,7 @@ module.exports = {
       facebook: 'https://www.facebook.com/profile.php?id=100000519299083',
       instagram: 'https://www.instagram.com/xieyangl/',
       linkedin: 'https://www.linkedin.com/in/michael-xieyang-liu-ba6124175/',
-      twitter: 'https://twitter.com/lxieyang',
+      twitter: 'https://x.com/lxieyang',
     },
   },
   plugins: [

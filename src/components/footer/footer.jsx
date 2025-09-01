@@ -5,7 +5,7 @@ import styled from 'styled-components';
 import GoogleScholarLogo from '../../images/footer/googleScholar-icon.png';
 import GithubLogo from '../../images/footer/github-icon.png';
 import FacebookLogo from '../../images/footer/facebook-icon.png';
-import TwitterLogo from '../../images/footer/twitter-icon.png';
+import XLogo from '../../images/footer/x-icon.svg';
 import './footer.css';
 
 /* Styled components */
@@ -72,8 +72,8 @@ const CopyrightSection = ({
           <a href={facebook} id="facebook-logo">
             <SocialMediaIcon alt="facebook" src={FacebookLogo} />
           </a>
-          <a href={twitter} id="twitter-logo">
-            <SocialMediaIcon alt="twitter" src={TwitterLogo} />
+          <a href={twitter} id="x-logo">
+            <SocialMediaIcon alt="X" src={XLogo} style={{ borderRadius: 0 }} />
           </a>
         </SocialMediaIconsContainer>
       </div>
