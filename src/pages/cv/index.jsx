@@ -152,41 +152,6 @@ const CV = ({ data }) => {
               <>
                 <strong>Microsoft Research</strong>, Research Intern
                 <br />
-                <em>
-                  with{' '}
-                  <a href="https://advait.org/" target="_blank">
-                    Advait Sarkar
-                  </a>
-                  ,{' '}
-                  <a
-                    href="https://www.microsoft.com/en-us/research/people/cnegreanu/"
-                    target="_blank"
-                  >
-                    Carina Negreanu
-                  </a>
-                  ,{' '}
-                  <a
-                    href="https://www.microsoft.com/en-us/research/people/johnwilliams/"
-                    target="_blank"
-                  >
-                    Jack Williams
-                  </a>
-                  ,{' '}
-                  <a
-                    href="https://www.microsoft.com/en-us/research/people/adg/"
-                    target="_blank"
-                  >
-                    Andy Gordon
-                  </a>{' '}
-                  &{' '}
-                  <a
-                    href="https://www.microsoft.com/en-us/research/people/zorn/"
-                    target="_blank"
-                  >
-                    Ben Zorn
-                  </a>
-                </em>
-                <br />
                 Natural language interactions for end-user programmers using
                 code-generating LLMs.
               </>
@@ -198,8 +163,6 @@ const CV = ({ data }) => {
               <>
                 <strong>Google</strong>, Research Intern
                 <br />
-                <em>with Dustin Smith, Todd Kulesza, & Sarah D'Angelo</em>
-                <br />
                 Go developers' refactoring practices and engagement with
                 refactoring tools
               </>
@@ -210,30 +173,6 @@ const CV = ({ data }) => {
             content={
               <>
                 <strong>Bosch Research</strong>, Research Intern
-                <br />
-                <em>
-                  with{' '}
-                  <a
-                    href="https://sites.google.com/view/lisayu/home"
-                    target="_blank"
-                  >
-                    Lisa Yu
-                  </a>
-                  ,{' '}
-                  <a
-                    href="https://www.bosch-ai.com/research/researcher-pages/t_overviewpage_100.html"
-                    target="_blank"
-                  >
-                    Wan-Yi Lin
-                  </a>{' '}
-                  &{' '}
-                  <a
-                    href="https://www.bosch.com/research/know-how/research-experts/alessandro-oltramari-ph-d/"
-                    target="_blank"
-                  >
-                    Alessandro Oltramari
-                  </a>
-                </em>
                 <br />
                 AI & Crowdsourcing for improving the safety and performance of
                 autonomous vehicles.
