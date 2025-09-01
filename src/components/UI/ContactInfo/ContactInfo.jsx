@@ -1,20 +1,12 @@
 import React, { useState } from 'react';
-import copy from 'copy-to-clipboard';
 import Email from '../ObfuscatedEmail/ObfuscatedEmail';
 
-import {
-  CVPath,
-  ThesisProposalPath,
-  DissertationPath,
-} from '../../../utils/constants';
-import { ThesisProposalAbstractPath } from '../../../utils/constants';
+import { CVPath, DissertationPath } from '../../../utils/constants';
 
-import { MdLocationOn as LocationIcon } from '@react-icons/all-files/md/MdLocationOn';
 import { MdEmail as EmailIcon } from '@react-icons/all-files/md/MdEmail';
 // Replacing Twitter icon with X icon asset
 import XLogo from '../../../images/footer/x-icon.svg';
 import { FaGithub as GithubIcon } from '@react-icons/all-files/fa/FaGithub';
-import { FaLinkedin as LinkedInIcon } from '@react-icons/all-files/fa/FaLinkedin';
 import { MdSchool as GoogleScholarIcon } from '@react-icons/all-files/md/MdSchool';
 import { IoMdDocument as CVIcon } from '@react-icons/all-files/io/IoMdDocument';
 import { TiDocumentText as ThesisIcon } from '@react-icons/all-files/ti/TiDocumentText';
@@ -27,6 +19,8 @@ const ContactInfo = ({ data, inCVPage }) => {
   return (
     <div
       className="contact-container"
+      role="button"
+      tabIndex={0}
       onDoubleClick={() => {
         setShowThesis(!showThesis);
         if (showThesisTimeout) {
@@ -35,6 +29,17 @@ const ContactInfo = ({ data, inCVPage }) => {
         showThesisTimeout = setTimeout(() => {
           setShowThesis(false);
         }, 3000);
+      }}
+      onKeyDown={(e) => {
+        if (e.key === 'Enter') {
+          setShowThesis(!showThesis);
+          if (showThesisTimeout) {
+            clearTimeout(showThesisTimeout);
+          }
+          showThesisTimeout = setTimeout(() => {
+            setShowThesis(false);
+          }, 3000);
+        }
       }}
     >
       {/* {inCVPage !== true && (
@@ -96,7 +101,7 @@ const ContactInfo = ({ data, inCVPage }) => {
         }}
       >
         <ThesisIcon className="icon" />
-        <a href={DissertationPath} target="_blank">
+        <a href={DissertationPath} target="_blank" rel="noopener noreferrer">
           Dissertation
         </a>{' '}
       </div>
