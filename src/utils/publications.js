@@ -656,10 +656,10 @@ export const publicationsData = {
         'Multidirectional Gesturing for OnDisplay Item Identification and/or Further Action Control',
       type: 'patent',
       // conference: 'PCT/US2022/043604',
-      conferenceFullName: 'US Patent PCT/US2022/043604 (submitted)',
-      conferenceTag: 'US Patent PCT/US2022/043604',
-      year: 2022,
-      month: 9,
+      conferenceFullName: 'US Patent US20240385745A1',
+      conferenceTag: 'US Patent US20240385745A1',
+      year: 2024,
+      month: 5,
       authors: [
         {
           name: 'Aniket Kittur',
@@ -686,10 +686,10 @@ export const publicationsData = {
       title: 'Generation of Interactive Utterances of Code Tasks',
       type: 'patent',
       // conference: 'PCT/US2022/043604',
-      conferenceFullName: 'US Patent (submitted)',
-      // conferenceTag: 'US Patent PCT/US2022/043604',
-      year: 2022,
-      month: 9,
+      conferenceFullName: 'US Patent US20240143928A1',
+      conferenceTag: 'US Patent US20240143928A1',
+      year: 2024,
+      month: 11,
       authors: [
         {
           name: 'Ben Zorn',
@@ -712,7 +712,7 @@ export const publicationsData = {
           bold: false,
         },
         {
-          name: 'Michael Xieyang Liu',
+          name: 'Xieyang Liu',
           bold: true,
         },
         {
@@ -721,6 +721,10 @@ export const publicationsData = {
         },
         {
           name: 'Sruti Srinivasa Ragavan',
+          bold: false,
+        },
+        {
+          name: 'Brian Paul Slininger',
           bold: false,
         },
       ],
@@ -1416,6 +1420,55 @@ series = {CHI EA '25}
       acmdl_available: true,
       showOnWebCV: true,
       showInResearchPage: true,
+    },
+
+    // Meta-Sensors: Self-Discovery, Adaptation and Reasoning - TDCommons Defensive Publication 2025
+    {
+      title: 'Meta-Sensors: Self-Discovery, Adaptation and Reasoning',
+      type: 'patent',
+      conferenceFullName:
+        'Technical Disclosure Commons (Defensive Publications Series)',
+      year: 2025,
+      month: 3,
+      authors: [
+        { name: 'Michael Xieyang Liu', bold: true },
+        { name: 'Michael Terry', bold: false },
+        { name: 'Alex Olwal', bold: false },
+        { name: 'Savvas Petridis', bold: false },
+        { name: 'Vivian Tsai', bold: false },
+        { name: 'Alexander Fiannaca', bold: false },
+        { name: 'Carrie J. Cai', bold: false },
+      ],
+      abstract: `This publication describes Meta-Sensor techniques implemented by a computing system that observes the environment and leverages artificial intelligence foundation models (e.g., multimodal large language models) to perform self-discovery and suggestion of useful sensor events to users, to contextually adapt event sensors, and to self-adjust event sensors to address the limitations in home security systems, smart home controllers, and other devices and services.`,
+      codename: 'meta-sensors-tdcommons-2025',
+      shouldShowLocalPaperLink: false,
+      acmdl_available: false,
+      website: 'https://www.tdcommons.org/dpubs_series/7863',
+    },
+
+    // Semantic Sensors: Multimodal Language Model Powered Sensors Capable of Reasoning - TDCommons Defensive Publication 2025
+    {
+      title:
+        'Semantic Sensors: Multimodal Language Model Powered Sensors Capable of Reasoning',
+      type: 'patent',
+      conferenceFullName:
+        'Technical Disclosure Commons (Defensive Publications Series)',
+      year: 2025,
+      month: 6,
+      authors: [
+        { name: 'Alex Olwal', bold: false },
+        { name: 'Michael Xieyang Liu', bold: true },
+        { name: 'Savvas Petridis', bold: false },
+        { name: 'Vivian Tsai', bold: false },
+        { name: 'Alexander Fiannaca', bold: false },
+        { name: 'Michael Terry', bold: false },
+        { name: 'Carrie Cai', bold: false },
+      ],
+      abstract: `While sensor-driven systems such as motion detection, home security systems, etc. are capable of preconfigured tasks, such systems offer limited customization. Large language models are capable of performing reasoning tasks based on data provided to them. This disclosure describes a comprehensive semantic sensing system that is configured to understand user intent and to perform reasoning tasks based on different streams of sensor data (e.g., obtained from low-level sensors) to fulfill that intent. Reasoning tasks can be performed using a foundational AI model. Semantic sensors – sensor-systems that utilize a multimodal language model that interprets sensor data – are described that enable systems that can be easily customized, debugged, and used in various applications. Per the techniques, data from sensors (together with user-permitted contextual data) are provided to a multimodal language model that performs reasoning to generate a high-level understanding of the environment in which the sensors are deployed. The understanding can be used to perform custom tasks, answer natural language questions, to debug/configure sensors, etc. Applications of the described semantic sensors include smart homes, environmental monitoring, industrial process control, healthcare, etc.`,
+      codename: 'semantic-sensors-tdcommons-2025',
+      shouldShowLocalPaperLink: false,
+      acmdl_available: false,
+      website: 'https://www.tdcommons.org/dpubs_series/8210/',
     },
   ],
 };

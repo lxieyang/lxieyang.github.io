@@ -87,7 +87,7 @@ const CV = ({ data }) => {
       }).value,
     },
     {
-      prompt: 'Patent',
+      prompt: 'Patents and Defensive Publications',
       prefix: 'P',
       data: jsonQuery('publications[*type=patent]', {
         data: publicationsData,
