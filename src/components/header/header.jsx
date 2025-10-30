@@ -125,11 +125,16 @@ class Header extends Component {
                   }}
                 />{' '}
                 &nbsp;
-                <span>{this.props.siteTitle}</span>
+                <span className="d-none d-md-inline">
+                  {this.props.siteTitle}
+                </span>
               </Link>
             </div>
-            <NavbarToggler className="ml-auto mr-2" onClick={this.toggle} />
-            <Collapse isOpen={this.state.isOpen} navbar>
+            <NavbarToggler
+              className="ml-auto mr-2 d-none"
+              onClick={this.toggle}
+            />
+            <Collapse isOpen={true} navbar>
               <Nav className="ml-auto" navbar>
                 <ListLink
                   exact={true}
