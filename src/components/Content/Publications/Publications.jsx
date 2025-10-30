@@ -14,17 +14,6 @@ import {
   pubFilePathPrefix,
 } from '../../../utils/publications';
 
-import GistIcon from '../../../images/gist-icon.jpg';
-import ACMDLIcon from '../../../images/acmdl-icon.jpg';
-import VideoIcon from '../../../images/video-icon.png';
-import DocumentIcon from '../../../images/document-icon.png';
-import ArxivIcon from '../../../images/arxiv.jpg';
-import PosterIcon from '../../../images/poster-icon.png';
-import IEEEIcon from '../../../images/ieee-icon.png';
-import CMUSCSIcon from '../../../images/cmu-scs-logo.png';
-
-import { FaAward, FaTrophy } from 'react-icons/fa';
-
 const PublicationContainer = styled.div``;
 
 const PubCategoryContainer = styled.div`
@@ -33,10 +22,6 @@ const PubCategoryContainer = styled.div`
 
 const PubCategoryPromptContainer = styled.h4`
   opacity: 0.7;
-`;
-
-const ProjectNamePromptContainer = styled.h3`
-  /* opacity: 0.7; */
 `;
 
 const PreviewImg = styled.img`
@@ -103,7 +88,7 @@ class Publications extends Component {
 
     return (
       <React.Fragment>
-        <a href="#publications"> </a>
+        <div id="publications" />
         <h1>Publications</h1>
 
         <PublicationContainer>
@@ -117,8 +102,7 @@ class Publications extends Component {
                   (pub, pubIdx) => {
                     return (
                       <Row key={pubIdx} style={{ marginBottom: '25px' }}>
-                        {/* eslint-disable-next-line */}
-                        <a className="anchor" name={pub.codename} />
+                        <div id={pub.codename} />
                         <Col
                           xs="5"
                           md="4"

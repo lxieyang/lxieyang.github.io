@@ -25,9 +25,9 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Michael Liu's Website`,
+        name: `Michael Xieyang Liu's Website`,
         description: 'The personal website of Michael Xieyang Liu',
-        short_name: 'ML Site',
+        short_name: 'MXL Site',
         background_color: 'white',
         start_url: '/',
         theme_color: '#00695c',

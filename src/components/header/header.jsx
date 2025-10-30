@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import { Link } from 'gatsby';
 import appRoutes from '../../utils/appRoutes';
-import { CVPath } from '../../utils/constants';
 import './header.css';
 import {
   Container,
@@ -111,7 +110,7 @@ class Header extends Component {
     return (
       <div style={{ fontSize: '1.2rem' }}>
         <Navbar id="navbar" color="light" light expand="md" fixed="top">
-          <Container>
+          <Container className="d-flex align-items-center">
             <div className="navbarbrand">
               <Link to={appRoutes.home} id="SiteTitle">
                 <img
@@ -129,7 +128,7 @@ class Header extends Component {
                 <span>{this.props.siteTitle}</span>
               </Link>
             </div>
-            <NavbarToggler className="mr-2" onClick={this.toggle} />
+            <NavbarToggler className="ml-auto mr-2" onClick={this.toggle} />
             <Collapse isOpen={this.state.isOpen} navbar>
               <Nav className="ml-auto" navbar>
                 <ListLink
@@ -137,17 +136,7 @@ class Header extends Component {
                   route={appRoutes.home}
                   routeName={'Home'}
                 />
-                {/* <ListLink route={appRoutes.research} routeName={'Research'} /> */}
-                {/*<ListLink route={appRoutes.experiences} routeName={'Experiences'}/>*/}
-                {/* <ListLink route={appRoutes.blogs} routeName={'Blogs'} /> */}
-                {/* <ListLink route={appRoutes.about} routeName={'About'} /> */}
                 <ListLink route={appRoutes.cv} routeName={'CV'} />
-                {/* <ListLink
-                  isPurelink={true}
-                  route={CVPath}
-                  routeName={'CV'}
-                  external={false}
-                /> */}
               </Nav>
             </Collapse>
           </Container>

@@ -1,46 +1,20 @@
 import React from 'react';
-import moment from 'moment';
 import { graphql } from 'gatsby';
-import {
-  // Container,
-  Row,
-  Col,
-} from 'reactstrap';
+import { Row, Col } from 'reactstrap';
 
 import Layout from '../components/layout/layout';
 import ContactInfo from '../components/UI/ContactInfo/ContactInfo';
 
 import ProfileImg from '../images/lxieyang-avatar.png';
-import ProfileAvatar1 from '../images/avatar-mid-1.jpg';
-import ProfileAvatar2 from '../images/avatar-mid-2.jpg';
-import ProfileAvatar3 from '../images/avatar-mid-3.jpg';
-import CMUAvatar from '../images/cmu.png';
-import HCIIAvatar from '../images/hcii-logo-big.jpg';
-import CMULogo from '../images/cmu-logo.png';
-import CMUTextLogo from '../images/cmu-text-logo-transparent.png';
-import HCIITextLogo from '../images/hcii-text-logo.png';
 import HeadshotTooltip from '../components/UI/HeadshotTooltip/HeadshotTooltip';
 import BradImg from '../images/people/bradmyers.jpg';
 import NikiImg from '../images/people/nikikittur.jpg';
-// import WalterImg from '../images/people/walterlasecki.jpg';
 
-import { CVPath } from '../utils/constants';
-
-import NewsList from '../utils/news';
-import TravelList from '../utils/travel';
 import Publication from '../components/Content/Publications/Publications';
 
 import './index.css';
-import Experiences from '../components/Content/Experiences/Experiences';
 
 const IndexPage = ({ data }) => {
-  const candidateAvatars = [
-    ProfileImg,
-    ProfileAvatar1,
-    ProfileAvatar2,
-    ProfileAvatar3,
-  ];
-
   return (
     <Layout pathName={'Home'}>
       <Row>
@@ -80,7 +54,8 @@ const IndexPage = ({ data }) => {
                   Pronoun: he/him
                 </p> */}
                 <p className="basic-info-text">
-                  Research Scientist @ Google DeepMind{' '}
+                  Senior Research Scientist
+                  <br /> @GoogleDeepMind
                 </p>
 
                 <div className="d-none d-sm-none d-md-block d-lg-block">
@@ -96,9 +71,13 @@ const IndexPage = ({ data }) => {
             <br />
 
             <p>
-              Michael Xieyang Liu is a Research Scientist at Google DeepMind in
-              the{' '}
-              <a href="https://pair.withgoogle.com/" target="_blank">
+              Michael Xieyang Liu is a Senior Research Scientist at Google
+              DeepMind in the{' '}
+              <a
+                href="https://pair.withgoogle.com/"
+                target="_blank"
+                rel="noreferrer"
+              >
                 PAIR
               </a>{' '}
               (People + AI Research Initiative) team. His research aims to
@@ -109,22 +88,30 @@ const IndexPage = ({ data }) => {
 
             <p>
               He previously earned his Ph.D. from the{' '}
-              <a href="https://www.hcii.cmu.edu">
+              <a href="https://www.hcii.cmu.edu" rel="noreferrer">
                 Human-Computer Interaction Institute
               </a>{' '}
-              @ <a href="https://www.cmu.edu">Carnegie Mellon University</a>,
-              where he was advised by{' '}
-              <a href="http://www.cs.cmu.edu/~bam/" id="brad-myers">
+              @{' '}
+              <a href="https://www.cmu.edu" rel="noreferrer">
+                Carnegie Mellon University
+              </a>
+              , where he was advised by{' '}
+              <a
+                href="http://www.cs.cmu.edu/~bam/"
+                id="brad-myers"
+                rel="noreferrer"
+              >
                 Dr. Brad A. Myers
               </a>{' '}
               and{' '}
-              <a href="http://kittur.org/" id="niki-kittur">
+              <a href="http://kittur.org/" id="niki-kittur" rel="noreferrer">
                 Dr. Niki Kittur
               </a>
               . During his Ph.D., he interned at the{' '}
               <a
                 href="https://www.microsoft.com/en-us/research/group/research-software-engineering-rise/"
                 target="_blank"
+                rel="noreferrer"
               >
                 RiSE
               </a>{' '}
@@ -132,18 +119,12 @@ const IndexPage = ({ data }) => {
               <a
                 href="https://www.microsoft.com/en-us/research/project/calc-intelligence/"
                 target="_blank"
+                rel="noreferrer"
               >
                 Calc Intelligence
               </a>{' '}
               group at Microsoft Research, the Google Cloud team at Google, and
               Bosch Research.
-              {/* Prior to Ph.D., he received his dual Bachelor’s degrees in
-              Computer Science at{' '}
-              <a href="https://www.umich.edu">
-                University of Michigan, Ann Arbor
-              </a>{' '}
-              and{' '}
-              <a href="http://en.sjtu.edu.cn">Shanghai Jiao Tong University</a>. */}
             </p>
             <p>
               He works at the intersection of{' '}
@@ -165,11 +146,17 @@ const IndexPage = ({ data }) => {
               <strong>best paper</strong> at CSCW 2021, and a{' '}
               <strong>best paper honorable mention</strong> at UIST 2019. His
               work has been generously supported by the{' '}
-              <a href="https://www.nsf.gov/awardsearch/showAward?AWD_ID=1814826">
+              <a
+                href="https://www.nsf.gov/awardsearch/showAward?AWD_ID=1814826"
+                rel="noreferrer"
+              >
                 National Science Foundation (NSF)
               </a>
               , Google, Bosch, the Office of Naval Research, and the{' '}
-              <a href="https://centerforknowledgeacceleration.wordpress.com/">
+              <a
+                href="https://centerforknowledgeacceleration.wordpress.com/"
+                rel="noreferrer"
+              >
                 CMU Center for Knowledge Acceleration
               </a>
               .
@@ -193,6 +180,7 @@ const IndexPage = ({ data }) => {
                     href={
                       'https://chrome.google.com/webstore/detail/vertical-tabs/pddljdmihkpdfpkgmbhdomeeifpklgnm'
                     }
+                    rel="noreferrer"
                   >
                     Vertical Tabs Chrome Extension
                   </a>
@@ -237,6 +225,7 @@ const IndexPage = ({ data }) => {
                     href={
                       'https://github.com/lxieyang/vertical-tabs-chrome-extension'
                     }
+                    rel="noreferrer"
                   >
                     [Code]
                   </a>
@@ -251,6 +240,7 @@ const IndexPage = ({ data }) => {
                     href={
                       'https://github.com/lxieyang/chrome-extension-boilerplate-react'
                     }
+                    rel="noreferrer"
                   >
                     Chrome extension boilerplate (w/ React & Webpack)
                   </a>
@@ -295,6 +285,7 @@ const IndexPage = ({ data }) => {
                     href={
                       'https://github.com/lxieyang/chrome-extension-boilerplate-react'
                     }
+                    rel="noreferrer"
                   >
                     [Code]
                   </a>
@@ -307,104 +298,6 @@ const IndexPage = ({ data }) => {
           <br />
 
           <Publication />
-
-          {/* <br />
-          <hr />
-          <br />
-
-          <Experiences /> */}
-
-          <br />
-          <hr />
-          <br />
-
-          <Row>
-            <Col md="6">
-              <h1>News</h1>
-              <ul
-                style={{
-                  padding: 0,
-                  listStyle: 'none',
-                  // fontSize: '0.9rem'
-                }}
-              >
-                {NewsList.map((newsItem, idx) => {
-                  return (
-                    <li
-                      key={idx}
-                      style={{
-                        margin: '16px 0px',
-                      }}
-                      className={
-                        newsItem.shouldDisplay === false ? 'old-news' : null
-                      }
-                    >
-                      {newsItem.date && (
-                        <span
-                          className="news-date"
-                          // style={{
-                          //   fontSize:
-                          //     idx === 0 ? '1rem' : idx <= 2 ? '0.95rem' : null,
-                          //   padding:
-                          //     idx === 0 ? '3px 6px' : idx <= 2 ? '2px 6px' : null,
-                          //   opacity: idx === 0 ? 0.9 : idx <= 2 ? 0.75 : 0.6,
-                          // }}
-                        >
-                          {moment(newsItem.date).fromNow()}
-                        </span>
-                      )}
-
-                      <p style={{ paddingLeft: 3 }}>{newsItem.content}</p>
-                    </li>
-                  );
-                })}
-              </ul>
-            </Col>
-            <Col md="6">
-              <h1>Travel</h1>
-              {/* <div
-          style={{
-            backgroundColor: 'lightgrey',
-            padding: '5px',
-            fontSize: '0.8rem',
-            color: '#333',
-            borderRadius: '4px',
-          }}
-        >
-          Due to my Achilles tendon injury in July 2018, my travel plan is
-          limited. I'm expected to recover fully in late 2019.
-        </div> */}
-              {TravelList.map((travelItem, idx) => {
-                const YearGap = 3.0;
-                let diff =
-                  (new Date() - new Date(travelItem.date)) /
-                  (YearGap * 365 * 24 * 60 * 60 * 1000);
-
-                return (
-                  <div
-                    key={idx}
-                    className={[
-                      'travel',
-                      diff <= 0
-                        ? 'travel-upcoming'
-                        : diff <= 1
-                        ? 'travel-past'
-                        : 'travel-old',
-                    ].join(' ')}
-                    // style={{ fontSize: '0.9rem' }}
-                  >
-                    <Row>
-                      <Col>{travelItem.date}</Col>
-                      <Col>
-                        <a href={travelItem.url}>{travelItem.event}</a>
-                      </Col>
-                      <Col>{travelItem.location}</Col>
-                    </Row>
-                  </div>
-                );
-              })}
-            </Col>
-          </Row>
         </Col>
       </Row>
     </Layout>

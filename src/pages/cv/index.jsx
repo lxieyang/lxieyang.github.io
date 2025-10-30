@@ -1,13 +1,9 @@
-import React, { Component } from 'react';
+import React from 'react';
 import styled from 'styled-components';
 import { graphql } from 'gatsby';
 import { sortBy, reverse } from 'lodash';
 import jsonQuery from 'json-query';
-import {
-  // Container,
-  Row,
-  Col,
-} from 'reactstrap';
+import { Row, Col } from 'reactstrap';
 
 import { BsDownload as DownloadIcon } from '@react-icons/all-files/bs/BsDownload';
 
@@ -72,13 +68,6 @@ const CV = ({ data }) => {
         data: publicationsData,
       }).value.filter((p) => p.showOnWebCV !== false),
     },
-    // {
-    //   prompt: 'Posters',
-    //   prefix: 'P',
-    //   data: jsonQuery('publications[*type=poster]', {
-    //     data: publicationsData,
-    //   }).value,
-    // },
     {
       prompt: 'Workshop Papers & Posters',
       prefix: 'W',
@@ -97,11 +86,7 @@ const CV = ({ data }) => {
 
   return (
     <Layout pathName="CV">
-      <div
-      // style={{
-      //   fontFamily: `'Linux Libertine', sans-serif`,
-      // }}
-      >
+      <div>
         <CVNameContainer>
           <CVName>Michael Xieyang Liu</CVName>
           <CVButton className="button" href={CVPath}>
@@ -115,11 +100,6 @@ const CV = ({ data }) => {
             <CVContactsInfoContainer>
               People + AI Research (PAIR) <br />
               Google DeepMind
-              {/* Human-Computer Interaction Institute, School of Computer Science{' '}
-              <br />
-              Carnegie Mellon University <br />
-              5000 Forbes Avenue <br />
-              Pittsburgh, PA 15213 */}
             </CVContactsInfoContainer>
           </Col>
           <Col xs="12" sm="6">
@@ -139,15 +119,15 @@ const CV = ({ data }) => {
         <CVSectionContainer>
           <CVSectionTitle>Professional Experience</CVSectionTitle>
           <CVEntryWithDateOnTheLeft
-            dateString={'Aug. 2023 - present'}
+            dateString={'2023 - '}
             content={
               <>
-                <strong>Google DeepMind</strong>, Research Scientist
+                <strong>Google DeepMind</strong>, Senior Research Scientist
               </>
             }
           />
           <CVEntryWithDateOnTheLeft
-            dateString={'May - Aug. 2022'}
+            dateString={'2022'}
             content={
               <>
                 <strong>Microsoft Research</strong>, Research Intern
@@ -158,7 +138,7 @@ const CV = ({ data }) => {
             }
           />
           <CVEntryWithDateOnTheLeft
-            dateString={'May - Aug. 2020'}
+            dateString={'2020'}
             content={
               <>
                 <strong>Google</strong>, Research Intern
@@ -169,7 +149,7 @@ const CV = ({ data }) => {
             }
           />
           <CVEntryWithDateOnTheLeft
-            dateString={'May - Aug. 2019'}
+            dateString={'2019'}
             content={
               <>
                 <strong>Bosch Research</strong>, Research Intern
@@ -194,11 +174,15 @@ const CV = ({ data }) => {
                 Thesis: Tool Support for Knowledge Foraging, Structuring, and
                 Transfer during Online Sensemaking <br />
                 Advisors:{' '}
-                <a href="https://www.cs.cmu.edu/~bam/" target="_blank">
+                <a
+                  href="https://www.cs.cmu.edu/~bam/"
+                  target="_blank"
+                  rel="noreferrer"
+                >
                   Brad A. Myers
                 </a>{' '}
                 &{' '}
-                <a href="https://kittur.org/" target="_blank">
+                <a href="https://kittur.org/" target="_blank" rel="noreferrer">
                   Aniket Kittur
                 </a>
                 <br />
@@ -206,6 +190,7 @@ const CV = ({ data }) => {
                 <a
                   href="https://www.thecoalalab.com/kenholstein"
                   target="_blank"
+                  rel="noreferrer"
                 >
                   Kenneth Holstein
                 </a>
@@ -213,6 +198,7 @@ const CV = ({ data }) => {
                 <a
                   href="https://sites.google.com/site/dmrussell/"
                   target="_blank"
+                  rel="noreferrer"
                 >
                   Daniel M. Russell
                 </a>{' '}
@@ -350,6 +336,7 @@ const CV = ({ data }) => {
               <a
                 href="https://drive.google.com/file/d/1xg8X-Es4PVK5wVx_Cjay7hFzdN3_9IVb/view"
                 target="_blank"
+                rel="noreferrer"
               >
                 Guest lecture: Sensemaking
               </a>
@@ -358,6 +345,7 @@ const CV = ({ data }) => {
             <a
               href="https://www.cs.cmu.edu/~sherryw/courses/2024s-dhcs.html"
               target="_blank"
+              rel="noreferrer"
             >
               Designing Human-Centered Software
             </a>
@@ -365,7 +353,11 @@ const CV = ({ data }) => {
           </CVEntryWithIndexOnTheLeft>
           <CVEntryWithIndexOnTheLeft indexSpace={100} indexString={'Dec. 2023'}>
             <strong>
-              <a href="https://youtu.be/CqtRFZGYfks" target="_blank">
+              <a
+                href="https://youtu.be/CqtRFZGYfks"
+                target="_blank"
+                rel="noreferrer"
+              >
                 Building AI Sensemaking Systems
               </a>
             </strong>
@@ -441,6 +433,7 @@ const CV = ({ data }) => {
                   <a
                     href="https://github.com/lxieyang/chrome-extension-boilerplate-react/"
                     target={'_blank'}
+                    rel="noreferrer"
                   >
                     Chrome extension boilerplate (w/ React & Webpack)
                   </a>
@@ -449,6 +442,7 @@ const CV = ({ data }) => {
                 <a
                   href="https://github.com/lxieyang/chrome-extension-boilerplate-react/stargazers"
                   target={'_blank'}
+                  rel="noreferrer"
                 >
                   3.6k stars
                 </a>
@@ -456,6 +450,7 @@ const CV = ({ data }) => {
                 <a
                   href="https://github.com/lxieyang/chrome-extension-boilerplate-react/forks"
                   target={'_blank'}
+                  rel="noreferrer"
                 >
                   1.1k forks
                 </a>{' '}
@@ -471,6 +466,7 @@ const CV = ({ data }) => {
                   <a
                     href="https://chrome.google.com/webstore/detail/vertical-tabs/pddljdmihkpdfpkgmbhdomeeifpklgnm"
                     target={'_blank'}
+                    rel="noreferrer"
                   >
                     Vertical Tabs Chrome Extension
                   </a>
@@ -479,6 +475,7 @@ const CV = ({ data }) => {
                 <a
                   href="https://chrome.google.com/webstore/detail/vertical-tabs/pddljdmihkpdfpkgmbhdomeeifpklgnm"
                   target={'_blank'}
+                  rel="noreferrer"
                 >
                   36.9k users
                 </a>{' '}
@@ -486,6 +483,7 @@ const CV = ({ data }) => {
                 <a
                   href="https://github.com/lxieyang/vertical-tabs-chrome-extension"
                   target={'_blank'}
+                  rel="noreferrer"
                 >
                   460+ stars
                 </a>{' '}
@@ -509,13 +507,18 @@ const CV = ({ data }) => {
             <a
               target="_blank"
               href="https://archive.sigchi.org/conferences/upcoming-conferences/"
+              rel="noreferrer"
             >
               Blending Interaction: Engineering Interactive Systems & Tools
               subcommittee
             </a>
             <br />
             <u>ACM UIST</u> 2024{' '}
-            <a target="_blank" href="https://uist.acm.org/2024/organizers/">
+            <a
+              target="_blank"
+              href="https://uist.acm.org/2024/organizers/"
+              rel="noreferrer"
+            >
               Program Committee Member
             </a>
             <br />
@@ -523,6 +526,7 @@ const CV = ({ data }) => {
             <a
               target="_blank"
               href="https://chi2024.acm.org/subcommittees/selecting-a-subcommittee/"
+              rel="noreferrer"
             >
               Computational Interaction subcommittee
             </a>
@@ -600,11 +604,15 @@ const CV = ({ data }) => {
             content={
               <>
                 <strong>Graduate Research Assistant</strong> (advised by{' '}
-                <a href="http://www.cs.cmu.edu/~bam/" target="_blank">
+                <a
+                  href="http://www.cs.cmu.edu/~bam/"
+                  target="_blank"
+                  rel="noreferrer"
+                >
                   Brad A. Myers
                 </a>{' '}
                 &{' '}
-                <a href="http://kittur.org/" target="_blank">
+                <a href="http://kittur.org/" target="_blank" rel="noreferrer">
                   Aniket Kittur)
                 </a>
                 <br />
@@ -625,28 +633,48 @@ const CV = ({ data }) => {
             content={
               <>
                 <strong>Research Assistant</strong> (with{' '}
-                <a href="http://jodiforlizzi.com/" target="_blank">
+                <a
+                  href="http://jodiforlizzi.com/"
+                  target="_blank"
+                  rel="noreferrer"
+                >
                   Jodi Forlizzi
                 </a>
                 ,{' '}
-                <a href="http://www.cs.cmu.edu/~roni/" target="_blank">
+                <a
+                  href="http://www.cs.cmu.edu/~roni/"
+                  target="_blank"
+                  rel="noreferrer"
+                >
                   Roni Rosenfeld
                 </a>{' '}
                 &{' '}
-                <a href="http://www.stat.cmu.edu/~ryantibs/" target="_blank">
+                <a
+                  href="http://www.stat.cmu.edu/~ryantibs/"
+                  target="_blank"
+                  rel="noreferrer"
+                >
                   Ryan Tibshirani
                 </a>
                 )
                 <br />
                 <em>
-                  <a href="https://delphi.cmu.edu/" target="_blank">
+                  <a
+                    href="https://delphi.cmu.edu/"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
                     Delphi Research Group
                   </a>
                   , Carnegie Mellon University
                 </em>
                 <br />
                 Working on the visualization team of the{' '}
-                <a href="https://delphi.cmu.edu/covidcast/" target="_blank">
+                <a
+                  href="https://delphi.cmu.edu/covidcast/"
+                  target="_blank"
+                  rel="noreferrer"
+                >
                   COVIDcast system
                 </a>
                 , which displays indicators related to COVID-19 activity level
@@ -658,6 +686,7 @@ const CV = ({ data }) => {
                     'https://www.cmu.edu/news/stories/archives/2020/april/cmu-unveils-covidcast-maps.html'
                   }
                   target="_blank"
+                  rel="noreferrer"
                 >
                   [Press coverage]
                 </a>
@@ -687,6 +716,7 @@ const CV = ({ data }) => {
                 <a
                   href="https://www.cs.princeton.edu/~jiadeng/"
                   target="_blank"
+                  rel="noreferrer"
                 >
                   Jia Deng
                 </a>
@@ -711,7 +741,11 @@ const CV = ({ data }) => {
             indexString={'2018 - 2019'}
           >
             <strong>
-              <a href="https://janeon.github.io/" target="_blank">
+              <a
+                href="https://janeon.github.io/"
+                target="_blank"
+                rel="noreferrer"
+              >
                 Jane Hsieh
               </a>
             </strong>{' '}
@@ -763,6 +797,7 @@ const CV = ({ data }) => {
             <a
               href="https://www.cs.cmu.edu/news/2021/reuse-content-tool"
               target="_blank"
+              rel="noreferrer"
             >
               "CMU Researchers Develop Tool To Help Determine When To Reuse
               Content"
@@ -785,6 +820,7 @@ const CV = ({ data }) => {
             <a
               href="https://www.cmu.edu/news/stories/archives/2020/april/cmu-unveils-covidcast-maps.html"
               target="_blank"
+              rel="noreferrer"
             >
               "Carnegie Mellon Unveils Five Interactive COVID-19 Maps"
             </a>
@@ -798,6 +834,7 @@ const CV = ({ data }) => {
               <a
                 href="https://www.nsf.gov/awardsearch/showAward?AWD_ID=1814826"
                 target="_blank"
+                rel="noreferrer"
               >
                 SHF: Small: Knowledge Acceleration for Programming ($500,000
                 over 3 years)
@@ -860,6 +897,7 @@ const CV = ({ data }) => {
               <a
                 href="https://www.comap-math.com/mcm/2015Certs/33804.pdf"
                 target="_blank"
+                rel="noreferrer"
               >
                 Meritorious Winner (Acceptance: 9%)
               </a>
@@ -884,6 +922,7 @@ const CV = ({ data }) => {
               <a
                 href="https://www.cs.cmu.edu/~bam/uicourse/05631fall2020/"
                 target="_blank"
+                rel="noreferrer"
               >
                 05-431/05-631 Software Structures for User Interfaces
               </a>
@@ -907,6 +946,7 @@ const CV = ({ data }) => {
               <a
                 href="https://docs.google.com/document/d/1tn3SMN37z4f_Q8Sey-oe9LuZKh9AMctI7B4HO-zs-F4/edit?usp=sharing"
                 target="_blank"
+                rel="noreferrer"
               >
                 EECS484 Database Management Systems
               </a>
@@ -920,6 +960,7 @@ const CV = ({ data }) => {
               <a
                 href="http://web.eecs.umich.edu/~aprakash/eecs484/index.html"
                 target="_blank"
+                rel="noreferrer"
               >
                 EECS484 Database Management Systems
               </a>

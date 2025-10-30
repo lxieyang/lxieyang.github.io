@@ -1,5 +1,4 @@
 import React, { useEffect } from 'react';
-import { Container } from 'reactstrap';
 
 import LyricsOne from '../../images/xuexuemaimai/那时正好的时光.png';
 import LyricsTwo from '../../images/xuexuemaimai/爱上刚好的对方.png';
@@ -55,6 +54,7 @@ const Motivation = () => {
 
       <audio id="backgroundMusic">
         <source src={sgzh} type="audio/mpeg" />
+        <track kind="captions" />
         Your browser does not support the audio element.
       </audio>
     </div>
