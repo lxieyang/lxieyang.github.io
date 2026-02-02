@@ -3,6 +3,9 @@
   "description": "Michael Xieyang Liu's website",
   "version": "3.0.0",
   "author": "Michael Xieyang Liu",
+  "engines": {
+    "node": ">=18.0.0 <25.0.0"
+  },
   "dependencies": {
     "@react-icons/all-files": "^4.1.0",
     "bootstrap": "^4.6.2",
@@ -12,7 +15,6 @@
     "emotion": "^11.0.0",
     "gatsby": "^5.14.1",
     "gatsby-plugin-catch-links": "^5.14.0",
-    "gatsby-plugin-copy-files": "^1.1.0",
     "gatsby-plugin-google-fonts": "^1.0.1",
     "gatsby-plugin-image": "^3.14.0",
     "gatsby-plugin-manifest": "^5.14.0",
@@ -53,9 +55,12 @@
   ],
   "license": "MIT",
   "scripts": {
+    "copy-assets": "rm -rf static/assets && cp -r src/assets static/assets",
     "start": "npm run develop",
-    "build": "gatsby build",
+    "predevelop": "npm run copy-assets",
     "develop": "gatsby develop",
+    "prebuild": "npm run copy-assets",
+    "build": "gatsby build",
     "postBuildDeploy": "gh-pages -b master -d public",
     "deploy": "gatsby build && gh-pages -b master -d public",
     "format": "prettier --write '**/*.js'",
