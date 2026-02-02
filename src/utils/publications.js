@@ -21,6 +21,7 @@ import mobilemaker_2024PreviewImgLink from '../assets/files/pubs/mobilemaker-vlh
 import llmcomparator_2024PreviewImgLink from '../assets/files/pubs/llmcomparator-vis-2024/llmcomparator-vis-2024.jpg';
 import gensors_2025PreviewImgLink from '../assets/files/pubs/gensors-iui-2025/gensors-iui-2025.jpg';
 import industryllm_2025PreviewImgLink from '../assets/files/pubs/industryllm-chi-2025/industryllm-chi-2025.jpg';
+import adcanvas_2026PreviewImgLink from '../assets/files/pubs/adcanvas-chi-2026/adcanvas-chi-2026.jpg';
 import { filePathPrefix } from './constants';
 
 export const pubFilePathPrefix = filePathPrefix + `/pubs`;
@@ -679,6 +680,7 @@ export const publicationsData = {
       bibtex: ``,
       shouldShowLocalPaperLink: false,
       acmdl_available: false,
+      website: 'https://patents.google.com/patent/US20240385745A1/en',
     },
 
     // Multidirectional Gesturing for OnDisplay Item Identification and/or Further Action Control
@@ -733,6 +735,7 @@ export const publicationsData = {
       bibtex: ``,
       shouldShowLocalPaperLink: false,
       acmdl_available: false,
+      website: 'https://patents.google.com/patent/US12524616B2/en',
     },
 
     // Facilitating Counselor Reflective Learning With a Real-time Annotation Tool - CHI 2023
@@ -1469,6 +1472,48 @@ series = {CHI EA '25}
       shouldShowLocalPaperLink: false,
       acmdl_available: false,
       website: 'https://www.tdcommons.org/dpubs_series/8210/',
+    },
+
+    // ADCanvas: Accessible and Conversational Audio Description Authoring for Blind and Low Vision Creators - CHI 2026
+    {
+      title:
+        'ADCanvas: Accessible and Conversational Audio Description Authoring for Blind and Low Vision Creators',
+      type: 'conference',
+      conference: 'CHI',
+      conferenceFullName:
+        'ACM CHI Conference on Human Factors in Computing Systems (CHI)',
+      conferenceTag: 'CHI 2026',
+      year: 2026,
+      month: 4,
+      authors: [
+        {
+          name: 'Franklin Mingzhe Li',
+          bold: false,
+        },
+        {
+          name: 'Michael Xieyang Liu',
+          bold: true,
+        },
+        {
+          name: 'Cynthia L. Bennett',
+          bold: false,
+        },
+        {
+          name: 'Shaun K. Kane',
+          bold: false,
+        },
+      ],
+      abstract:
+        'Audio Description (AD) provides essential access to visual media for blind and low vision (BLV) audiences. Yet current AD production tools remain largely inaccessible to BLV video creators, who possess valuable expertise but face barriers due to visually-driven interfaces. We present ADCanvas, a multimodal authoring system that supports non-visual control over audio description (AD) creation. ADCanvas combines conversational interaction with keyboard-based playback control and a plain-text, screen reader–accessible editor to support end-to-end AD authoring and visual question answering (VQA). Combining screen-reader-friendly controls with a multimodal LLM agent, ADCanvas supports live VQA, script generation, and AD modification. Through a user study with 12 BLV video creators, we find that users adopt the conversational agent as an informational aide and drafting assistant, while maintaining agency through verification and editing. For example, participants saw themselves as curators who received information from the model and filtered it down for their audience. Our findings offer design implications for accessible media tools, including precise editing controls, accessibility support for creative ideation, and configurable rules for human-AI collaboration.',
+      codename: 'adcanvas-chi-2026',
+      bibtex: ``,
+      previewImgLink: adcanvas_2026PreviewImgLink,
+      shouldShowLocalPaperLink: true,
+      doi: 'https://doi.org/10.1145/3772318.3791158',
+      acmdl: 'https://doi.org/10.1145/3772318.3791158',
+      acmdl_available: true,
+      showOnWebCV: true,
+      showInResearchPage: true,
     },
   ],
 };

@@ -285,6 +285,18 @@ const CV = ({ data }) => {
                           >
                             {pub.title}
                           </a>
+                        ) : pub.website ? (
+                          <a
+                            style={{
+                              color: '#005f18',
+                              fontWeight: 500,
+                            }}
+                            href={pub.website}
+                            target="_blank"
+                            rel="noreferrer"
+                          >
+                            {pub.title}
+                          </a>
                         ) : (
                           <span style={{ fontWeight: 500 }}>{pub.title}</span>
                         )}
@@ -499,14 +511,41 @@ const CV = ({ data }) => {
           <CVEntryWithIndexOnTheLeft
             indexSpace={160}
             indexString={
+              <strong style={{ fontStyle: 'normal' }}>
+                Steering & Advising
+              </strong>
+            }
+          >
+            <u>ACM IUI</u> 2025{' '}
+            <a
+              target="_blank"
+              href="https://iui.acm.org/2025/committee_members.html"
+              rel="noreferrer"
+            >
+              Doctoral Consortium Chair
+            </a>
+          </CVEntryWithIndexOnTheLeft>
+          <CVEntryWithIndexOnTheLeft
+            indexSpace={160}
+            indexString={
               <strong style={{ fontStyle: 'normal' }}>Associate Chair</strong>
             }
           >
             {' '}
+            <u>ACM CHI</u> 2026{' '}
+            <a
+              target="_blank"
+              href="https://chi2026.acm.org/authors/papers/selecting-a-subcommittee/#blending_interaction"
+              rel="noreferrer"
+            >
+              Blending Interaction: Engineering Interactive Systems & Tools
+              subcommittee
+            </a>
+            <br />
             <u>ACM CHI</u> 2025{' '}
             <a
               target="_blank"
-              href="https://archive.sigchi.org/conferences/upcoming-conferences/"
+              href="https://chi2025.acm.org/subcommittees/selecting-a-subcommittee/#blending_interaction"
               rel="noreferrer"
             >
               Blending Interaction: Engineering Interactive Systems & Tools
@@ -539,13 +578,13 @@ const CV = ({ data }) => {
               <strong style={{ fontStyle: 'normal' }}>Paper Reviewing</strong>
             }
           >
-            <strong>Conferences</strong>: <u>CHI</u> (2019 - 2025), <u>CSCW</u>{' '}
-            (2019 - 2023), <u>UIST</u> (2019 - 2024), <u>IUI</u> (2020),{' '}
+            <strong>Conferences</strong>: <u>CHI</u> (2019 - 2026), <u>CSCW</u>{' '}
+            (2019 - 2023), <u>UIST</u> (2019 - 2025), <u>IUI</u> (2020),{' '}
             <u>VAST</u> (2020)
             <br />
             <strong>Journal</strong>: <u>TOCHI</u> (2022) <br />
             <strong>Special Recognitions for Outstanding Reviews</strong>:{' '}
-            <u>UIST</u> (2021), <u>CHI</u> (2023)
+            <u>UIST</u> (2021, 2024, 2025), <u>CHI</u> (2023, 2025)
           </CVEntryWithIndexOnTheLeft>
 
           <CVSectionSubTitle>
