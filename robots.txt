@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+Disallow: /xuexuemaimai/
+
+# Sitemap
+Sitemap: https://lxieyang.github.io/sitemap-index.xml
