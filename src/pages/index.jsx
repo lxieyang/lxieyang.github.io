@@ -170,6 +170,11 @@ const IndexPage = ({ data }) => {
             </div>
             <hr />
 
+            <Publication />
+
+            <hr />
+            <br />
+
             <h1>Selected Open-source projects</h1>
 
             <ul>
@@ -293,11 +298,6 @@ const IndexPage = ({ data }) => {
               </li>
             </ul>
           </div>
-
-          <hr />
-          <br />
-
-          <Publication />
         </Col>
       </Row>
     </Layout>
