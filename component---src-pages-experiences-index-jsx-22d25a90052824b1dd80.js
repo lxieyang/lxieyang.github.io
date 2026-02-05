@@ -1,2 +1,0 @@
-"use strict";(self.webpackChunkmichael_personal_website=self.webpackChunkmichael_personal_website||[]).push([[246],{1008:function(e,n,l){l.r(n);var a=l(7294),t=l(9252);n.default=e=>a.createElement(t.Z,{pathName:"Experiences"},a.createElement("h1",null,"Experiences"),a.createElement("h4",null,"Coming soon!"))}}]);
-//# sourceMappingURL=component---src-pages-experiences-index-jsx-22d25a90052824b1dd80.js.map
