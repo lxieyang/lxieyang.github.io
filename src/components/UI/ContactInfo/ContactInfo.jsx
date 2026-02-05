@@ -13,8 +13,17 @@ import { TiDocumentText as ThesisIcon } from '@react-icons/all-files/ti/TiDocume
 
 let showThesisTimeout = undefined;
 
-const ContactInfo = ({ data, inCVPage }) => {
-  const [showThesis, setShowThesis] = useState(false);
+const ContactInfo = ({
+  data,
+  inCVPage,
+  showEmail = true,
+  showTwitter = true,
+  showGithub = true,
+  showScholar = true,
+  showCV = true,
+  showThesis = true,
+}) => {
+  const [showThesisVisible, setShowThesisVisible] = useState(false);
 
   return (
     <div
@@ -22,22 +31,22 @@ const ContactInfo = ({ data, inCVPage }) => {
       role="button"
       tabIndex={0}
       onDoubleClick={() => {
-        setShowThesis(!showThesis);
+        setShowThesisVisible(!showThesisVisible);
         if (showThesisTimeout) {
           clearTimeout(showThesisTimeout);
         }
         showThesisTimeout = setTimeout(() => {
-          setShowThesis(false);
+          setShowThesisVisible(false);
         }, 3000);
       }}
       onKeyDown={(e) => {
         if (e.key === 'Enter') {
-          setShowThesis(!showThesis);
+          setShowThesisVisible(!showThesisVisible);
           if (showThesisTimeout) {
             clearTimeout(showThesisTimeout);
           }
           showThesisTimeout = setTimeout(() => {
-            setShowThesis(false);
+            setShowThesisVisible(false);
           }, 3000);
         }
       }}
@@ -55,56 +64,66 @@ const ContactInfo = ({ data, inCVPage }) => {
         </div>
       )} */}
 
-      <div className="contact-entry">
-        <EmailIcon className="icon" /> <Email />
-      </div>
+      {showEmail && (
+        <div className="contact-entry">
+          <EmailIcon className="icon" /> <Email />
+        </div>
+      )}
 
-      <div className="contact-entry">
-        <img
-          src={XLogo}
-          alt="X"
-          className="icon"
-          style={{ width: '1.1rem', height: '1.1rem' }}
-        />
-        <a href={data.site.siteMetadata.externalLinks.twitter}>X</a>
-      </div>
+      {showScholar && (
+        <div className="contact-entry">
+          <GoogleScholarIcon className="icon" />{' '}
+          <a href={data.site.siteMetadata.externalLinks.googleScholarProfile}>
+            Google Scholar
+          </a>
+        </div>
+      )}
 
-      {/* <div className="contact-entry">
-        <LinkedInIcon className="icon" />
-        <a href={data.site.siteMetadata.externalLinks.linkedin}>LinkedIn</a>
-      </div> */}
+      {showGithub && (
+        <div className="contact-entry">
+          <GithubIcon className="icon" />
+          <a href={data.site.siteMetadata.externalLinks.github}>Github</a>
+        </div>
+      )}
 
-      <div className="contact-entry">
-        <GithubIcon className="icon" />
-        <a href={data.site.siteMetadata.externalLinks.github}>Github</a>
-      </div>
-
-      <div className="contact-entry">
-        <GoogleScholarIcon className="icon" />{' '}
-        <a href={data.site.siteMetadata.externalLinks.googleScholarProfile}>
-          Google Scholar
-        </a>
-      </div>
-
-      {inCVPage !== true && (
+      {showCV && inCVPage !== true && (
         <div className="contact-entry">
           <CVIcon className="icon" />{' '}
           <a href={CVPath}>Curriculum Vitae (PDF)</a>
         </div>
       )}
 
-      <div
-        className="contact-entry"
-        style={{
-          display: showThesis ? 'block' : 'none',
-          transition: 'all 0.1s ease-in-out',
-        }}
-      >
-        <ThesisIcon className="icon" />
-        <a href={DissertationPath} target="_blank" rel="noopener noreferrer">
-          Dissertation
-        </a>{' '}
-      </div>
+      {showTwitter && (
+        <div className="contact-entry">
+          <img
+            src={XLogo}
+            alt="X"
+            className="icon"
+            style={{ width: '1.1rem', height: '1.1rem' }}
+          />
+          <a href={data.site.siteMetadata.externalLinks.twitter}>X</a>
+        </div>
+      )}
+
+      {/* <div className="contact-entry">
+        <LinkedInIcon className="icon" />
+        <a href={data.site.siteMetadata.externalLinks.linkedin}>LinkedIn</a>
+      </div> */}
+
+      {showThesis && (
+        <div
+          className="contact-entry"
+          style={{
+            display: showThesisVisible ? 'block' : 'none',
+            transition: 'all 0.1s ease-in-out',
+          }}
+        >
+          <ThesisIcon className="icon" />
+          <a href={DissertationPath} target="_blank" rel="noopener noreferrer">
+            Dissertation
+          </a>{' '}
+        </div>
+      )}
 
       <div style={{ width: '100%', height: '20px' }}></div>
     </div>

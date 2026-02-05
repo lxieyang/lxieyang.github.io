@@ -59,7 +59,11 @@ const IndexPage = ({ data }) => {
                 </p>
 
                 <div className="d-none d-sm-none d-md-block d-lg-block">
-                  <ContactInfo data={data} />
+                  <ContactInfo
+                    data={data}
+                    showEmail={false}
+                    showTwitter={false}
+                  />
                 </div>
               </Col>
             </Row>
@@ -166,7 +170,7 @@ const IndexPage = ({ data }) => {
             </p>
 
             <div className="d-sm-none d-md-none d-lg-none">
-              <ContactInfo data={data} />
+              <ContactInfo data={data} showEmail={false} showTwitter={false} />
             </div>
             <hr />
 
