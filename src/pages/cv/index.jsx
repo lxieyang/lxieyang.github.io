@@ -103,7 +103,7 @@ const CV = ({ data }) => {
             </CVContactsInfoContainer>
           </Col>
           <Col xs="12" sm="6">
-            <ContactInfo data={data} inCVPage={true} />
+            <ContactInfo data={data} inCVPage={true} showTwitter={false} />
           </Col>
         </Row>
 
