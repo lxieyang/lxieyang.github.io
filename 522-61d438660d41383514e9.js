@@ -1,1 +1,5 @@
-(self.webpackChunkmichael_personal_website=self.webpackChunkmichael_personal_website||[]).push([[522],{8522:function(){}}]);
+(self.webpackChunkmichael_personal_website =
+  self.webpackChunkmichael_personal_website || []).push([
+  [522],
+  { 8522: function () {} },
+]);
