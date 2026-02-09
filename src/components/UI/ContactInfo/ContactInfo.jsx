@@ -1,7 +1,9 @@
 import React, { useState } from 'react';
+import { Link } from 'gatsby';
 import Email from '../ObfuscatedEmail/ObfuscatedEmail';
 
-import { CVPath, DissertationPath } from '../../../utils/constants';
+import { DissertationPath } from '../../../utils/constants';
+import appRoutes from '../../../utils/appRoutes';
 
 import { MdEmail as EmailIcon } from '@react-icons/all-files/md/MdEmail';
 // Replacing Twitter icon with X icon asset
@@ -89,7 +91,7 @@ const ContactInfo = ({
       {showCV && inCVPage !== true && (
         <div className="contact-entry">
           <CVIcon className="icon" />{' '}
-          <a href={CVPath}>Curriculum Vitae (PDF)</a>
+          <Link to={appRoutes.cv}>Curriculum Vitae</Link>
         </div>
       )}
 
