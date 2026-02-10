@@ -1511,6 +1511,7 @@ series = {CHI EA '25}
       shouldShowLocalPaperLink: true,
       doi: 'https://doi.org/10.1145/3772318.3791158',
       acmdl: 'https://doi.org/10.1145/3772318.3791158',
+      arxiv: 'https://arxiv.org/abs/2602.07266',
       acmdl_available: true,
       showOnWebCV: true,
       showInResearchPage: true,
