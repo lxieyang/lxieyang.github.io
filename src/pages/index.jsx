@@ -84,12 +84,26 @@ const IndexPage = ({ data }) => {
               >
                 PAIR
               </a>{' '}
-              (People + AI Research Initiative) team. His research aims to
-              improve human-AI interaction, with a particular focus on human
-              interaction with multimodal large language models and controllable
-              AI.
+              (People + AI Research Initiative) team. His research focuses on{' '}
+              <strong>human-AI interaction</strong> for large and multimodal
+              language models, including tools for{' '}
+              <strong>LLM evaluation</strong>,{' '}
+              <strong>controllable generation</strong>, and{' '}
+              <strong>in situ AI prototyping</strong>. He combines
+              human-centered research with system building, developing tools and
+              studies that help people use AI more effectively in real workflows
+              — from <a href="#llm-constraints-2024">structured LLM outputs</a>{' '}
+              and{' '}
+              <a href="#mobilemaker-vlhcc-2024">
+                in-the-wild mobile prototyping
+              </a>{' '}
+              to <a href="#gensors-iui-2025">personalized visual sensors</a>,{' '}
+              <a href="#llmcomparator-vis-2024">
+                side-by-side model evaluation
+              </a>
+              , <a href="#adcanvas-chi-2026">accessible technology</a>, and
+              more.
             </p>
-
             <p>
               He previously earned his Ph.D. from the{' '}
               <a href="https://www.hcii.cmu.edu" rel="noreferrer">
@@ -111,7 +125,15 @@ const IndexPage = ({ data }) => {
               <a href="http://kittur.org/" id="niki-kittur" rel="noreferrer">
                 Dr. Niki Kittur
               </a>
-              . During his Ph.D., he interned at the{' '}
+              . In his Ph.D. research, he worked at the intersection of{' '}
+              <strong>Human-computer Interaction (HCI)</strong>,{' '}
+              <strong>Programming Support Tools</strong>,{' '}
+              <strong>Sensemaking</strong>,{' '}
+              <strong>End-user Programming</strong>, and{' '}
+              <strong>Intelligent User Interfaces</strong>, using human-centered
+              methods to design, build, and study interactive systems that help
+              people, especially developers, find, collect, organize, and make
+              sense of information online. He also interned at the{' '}
               <a
                 href="https://www.microsoft.com/en-us/research/group/research-software-engineering-rise/"
                 target="_blank"
@@ -131,25 +153,9 @@ const IndexPage = ({ data }) => {
               Bosch Research.
             </p>
             <p>
-              He works at the intersection of{' '}
-              <strong>Human-computer Interaction (HCI)</strong>,{' '}
-              <strong>Programming Support Tools</strong>,{' '}
-              <strong>Sensemaking</strong>,{' '}
-              <strong>End-user Programming</strong>, and{' '}
-              <strong>Intelligent User Interfaces</strong>, where he uses
-              human-centered methods to design, build, and study interactive
-              systems to empower individuals, especially developers, to find,
-              collect, organize, and make sense of information online as well as
-              to keep track of their complex decision making processes so that
-              other individuals could also benefit.
-            </p>
-            <p>
               He publishes at premier HCI academic venues such as CHI, UIST, and
-              CSCW, VIS, including three award-winning papers: a{' '}
-              <strong>best paper honorable mention</strong> at CHI 2023, a{' '}
-              <strong>best paper</strong> at CSCW 2021, and a{' '}
-              <strong>best paper honorable mention</strong> at UIST 2019. His
-              work has been generously supported by the{' '}
+              CSCW, VIS, including three award-winning papers. His PhD work was
+              generously supported by the{' '}
               <a
                 href="https://www.nsf.gov/awardsearch/showAward?AWD_ID=1814826"
                 rel="noreferrer"
