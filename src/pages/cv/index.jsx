@@ -109,11 +109,16 @@ const CV = ({ data }) => {
 
         <CVSectionContainer>
           <CVSectionTitle>Research Focus</CVSectionTitle>
-          My research is at the intersection of Human-computer Interaction
-          (HCI), programming tools, sensemaking, intelligent user interfaces,
-          and human-AI interaction, where I design and build systems that
-          accelerate online sensemaking for developers and facilitate human-AI
-          interactions for end-users.
+          My research focuses on <strong>human-AI interaction</strong> for large
+          and multimodal language models, including tools for{' '}
+          <strong>LLM evaluation</strong>,{' '}
+          <strong>controllable generation</strong>, and{' '}
+          <strong>in situ AI prototyping</strong>. I combine human-centered
+          research with system building, developing tools and studies that help
+          people use AI more effectively in real workflows — from structured LLM
+          outputs and in-the-wild mobile prototyping to personalized visual
+          sensors, side-by-side model evaluation, accessible technology, and
+          more.
         </CVSectionContainer>
 
         <CVSectionContainer>
