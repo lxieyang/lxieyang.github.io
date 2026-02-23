@@ -258,21 +258,38 @@ class Publications extends Component {
                               </span>
                             )}
                             {pub.arxiv !== undefined && (
-                              <span>
-                                [
-                                <a
-                                  href={pub.arxiv}
-                                  target="_blank"
-                                  rel="noopener noreferrer"
-                                  style={{
-                                    display: 'flex',
-                                    alignItems: 'center',
-                                  }}
-                                >
-                                  arxiv
-                                </a>
-                                ]
-                              </span>
+                              <>
+                                <span>
+                                  [
+                                  <a
+                                    href={pub.arxiv}
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    style={{
+                                      display: 'flex',
+                                      alignItems: 'center',
+                                    }}
+                                  >
+                                    arxiv
+                                  </a>
+                                  ]
+                                </span>
+                                <span>
+                                  [
+                                  <a
+                                    href={pub.arxiv.replace('/abs/', '/html/')}
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    style={{
+                                      display: 'flex',
+                                      alignItems: 'center',
+                                    }}
+                                  >
+                                    arxiv HTML
+                                  </a>
+                                  ]
+                                </span>
+                              </>
                             )}
                             {pub.shouldShowLocalPaperLink !== false ? (
                               pub.type === 'poster' ? (
