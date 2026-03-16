@@ -7,3 +7,4 @@ yarn-error.log
 /public
 static/assets
 .DS_Store
+tasks/
