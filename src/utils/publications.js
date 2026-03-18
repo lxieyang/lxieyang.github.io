@@ -22,6 +22,7 @@ import llmcomparator_2024PreviewImgLink from '../assets/files/pubs/llmcomparator
 import gensors_2025PreviewImgLink from '../assets/files/pubs/gensors-iui-2025/gensors-iui-2025.jpg';
 import industryllm_2025PreviewImgLink from '../assets/files/pubs/industryllm-chi-2025/industryllm-chi-2025.jpg';
 import adcanvas_2026PreviewImgLink from '../assets/files/pubs/adcanvas-chi-2026/adcanvas-chi-2026.jpg';
+import ailego_2026PreviewImgLink from '../assets/files/pubs/ailego-cscw-2026/ailego-cscw-2026.png';
 import { filePathPrefix } from './constants';
 
 export const pubFilePathPrefix = filePathPrefix + `/pubs`;
@@ -1513,6 +1514,51 @@ series = {CHI EA '25}
       acmdl: 'https://doi.org/10.1145/3772318.3791158',
       arxiv: 'https://arxiv.org/abs/2602.07266',
       acmdl_available: true,
+      showOnWebCV: true,
+      showInResearchPage: true,
+    },
+
+    // AI LEGO: Scaffolding Cross-Functional Collaboration in Industrial Responsible AI Practices during Early Design Stages - CSCW 2026
+    {
+      title:
+        'AI LEGO: Scaffolding Cross-Functional Collaboration in Industrial Responsible AI Practices during Early Design Stages',
+      type: 'conference',
+      conference: 'CSCW',
+      conferenceFullName:
+        'ACM Conference on Computer Supported Cooperative Work and Social Computing (CSCW)',
+      conferenceTag: 'CSCW 2026',
+      year: 2026,
+      month: 11,
+      authors: [
+        {
+          name: 'Muzhe Wu',
+          bold: false,
+        },
+        {
+          name: 'Yanzhi Zhao',
+          bold: false,
+        },
+        {
+          name: 'Shuyi Han',
+          bold: false,
+        },
+        {
+          name: 'Michael Xieyang Liu',
+          bold: true,
+        },
+        {
+          name: 'Hong Shen',
+          bold: false,
+        },
+      ],
+      abstract:
+        'Responsible AI (RAI) efforts increasingly emphasize the importance of addressing potential harms early in the AI development lifecycle through social-technical lenses. However, in cross-functional industry teams, this work is often stalled by a persistent coordination challenge: how technical teams hand off technical intent, how teams establish shared structures for collaboration, and how non-technical roles are supported in systematically evaluating harms. Through literature review and a semi-structured interview study with 8 practitioners, we unpack how this challenge manifests—technical design choices are rarely handed off in ways that support meaningful engagement by non-technical roles; collaborative workflows lack shared, visual structures to support mutual understanding; and non-technical practitioners are left without scaffolds for systematic harm evaluation. Existing tools like JIRA or Google Docs, while useful for product tracking, are ill-suited for supporting joint harm identification across roles, often requiring significant extra effort to align understanding. To address this, we developed AI LEGO, a web-based prototype that operationalizes the boundary object theory to support cross-functional AI practitioners in effectively facilitating knowledge handoff and identifying harmful design choices in the early design stages. Technical roles use interactive blocks to draft development plans, while non-technical roles engage with those blocks through stage-specific checklists and LLM-driven persona simulations to surface potential harms. In a study with 18 cross-functional practitioners, AI LEGO increased the volume and likelihood of harms identified compared to baseline worksheets. Participants found that its modular structure and persona prompts made harm identification more accessible, fostering clearer and more collaborative RAI practices in early design.',
+      codename: 'ailego-cscw-2026',
+      bibtex: ``,
+      previewImgLink: ailego_2026PreviewImgLink,
+      shouldShowLocalPaperLink: true,
+      arxiv: 'https://arxiv.org/abs/2505.10300',
+      acmdl_available: false,
       showOnWebCV: true,
       showInResearchPage: true,
     },
