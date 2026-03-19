@@ -23,6 +23,7 @@ import gensors_2025PreviewImgLink from '../assets/files/pubs/gensors-iui-2025/ge
 import industryllm_2025PreviewImgLink from '../assets/files/pubs/industryllm-chi-2025/industryllm-chi-2025.jpg';
 import adcanvas_2026PreviewImgLink from '../assets/files/pubs/adcanvas-chi-2026/adcanvas-chi-2026.jpg';
 import ailego_2026PreviewImgLink from '../assets/files/pubs/ailego-cscw-2026/ailego-cscw-2026.png';
+import compass_2026PreviewImgLink from '../assets/files/pubs/compass-dis-2026/compass-dis-2026.png';
 import { filePathPrefix } from './constants';
 
 export const pubFilePathPrefix = filePathPrefix + `/pubs`;
@@ -1558,6 +1559,50 @@ series = {CHI EA '25}
       previewImgLink: ailego_2026PreviewImgLink,
       shouldShowLocalPaperLink: true,
       arxiv: 'https://arxiv.org/abs/2505.10300',
+      acmdl_available: false,
+      showOnWebCV: true,
+      showInResearchPage: true,
+    },
+
+    // Compass vs Railway Tracks: Unpacking User Mental Models for Communicating Long-Horizon Work to Humans vs. AI - DIS 2026
+    {
+      title:
+        'Compass vs Railway Tracks: Unpacking User Mental Models for Communicating Long-Horizon Work to Humans vs. AI',
+      type: 'conference',
+      conference: 'DIS',
+      conferenceFullName: 'ACM Designing Interactive Systems Conference (DIS)',
+      conferenceTag: 'DIS 2026',
+      year: 2026,
+      month: 7,
+      authors: [
+        {
+          name: 'Savvas Petridis*',
+          bold: false,
+        },
+        {
+          name: 'Michael Xieyang Liu*',
+          bold: true,
+        },
+        {
+          name: 'Alexander J. Fiannaca',
+          bold: false,
+        },
+        {
+          name: 'Carrie J. Cai',
+          bold: false,
+        },
+        {
+          name: 'Michael Terry',
+          bold: false,
+        },
+      ],
+      abstract:
+        'As AI systems (foundation models, agentic systems) grow increasingly capable of operating for minutes or hours at a time, users\' prompts are transforming into highly detailed, elaborate specifications for the AI to autonomously work on. While interactive prompting has been extensively studied, comparatively less is known about how people communicate specifications for these types of long-horizon tasks. In a qualitative study in which 16 professionals drafted specifications for both a human colleague and an AI, we found a core divergence in how people specified problems to people versus AI: people approached communication with humans as providing a "compass", offering high-level intent to encourage flexible exploration. In contrast, communication with AI resembled painstakingly laying down "railway tracks": rigid, exhaustive instructions to minimize ambiguity and deviation. This strategy was driven by a perception that current AI has limited ability to infer intent, prioritize, and make judgments on its own. When envisioning an ideal AI collaborator, users expressed a desire for a hybrid between current AI and human colleagues: a collaborator that blends AI\'s efficiency and large context window with the critical thinking and agency of a human colleague. We discuss design implications for future AI systems, proposing that they align on outcomes through generated rough drafts, verify feasibility via end-to-end "test runs," and monitor execution through intelligent check-ins, ultimately transforming AI from a passive instruction-follower into a reliable collaborator for ambiguous, long-horizon problems.',
+      codename: 'compass-dis-2026',
+      bibtex: ``,
+      previewImgLink: compass_2026PreviewImgLink,
+      shouldShowLocalPaperLink: true,
+      arxiv: 'https://arxiv.org/abs/2601.11848',
       acmdl_available: false,
       showOnWebCV: true,
       showInResearchPage: true,
