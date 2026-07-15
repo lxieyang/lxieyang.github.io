@@ -154,7 +154,7 @@ const IndexPage = ({ data }) => {
             </p>
             <p>
               He publishes at premier HCI academic venues such as CHI, UIST, and
-              CSCW, VIS, including three award-winning papers. His PhD work was
+              CSCW, VIS, including four award-winning papers. His PhD work was
               generously supported by the{' '}
               <a
                 href="https://www.nsf.gov/awardsearch/showAward?AWD_ID=1814826"

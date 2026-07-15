@@ -1576,12 +1576,12 @@ series = {CHI EA '25}
       month: 7,
       authors: [
         {
-          name: 'Savvas Petridis*',
-          bold: false,
-        },
-        {
           name: 'Michael Xieyang Liu*',
           bold: true,
+        },
+        {
+          name: 'Savvas Petridis*',
+          bold: false,
         },
         {
           name: 'Alexander J. Fiannaca',
@@ -1603,7 +1603,11 @@ series = {CHI EA '25}
       previewImgLink: compass_2026PreviewImgLink,
       shouldShowLocalPaperLink: true,
       arxiv: 'https://arxiv.org/abs/2601.11848',
-      acmdl_available: false,
+      acmdl: 'https://dl.acm.org/doi/10.1145/3800645.3812956',
+      acmdl_available: true,
+      award: {
+        bestPaper: true,
+      },
       showOnWebCV: true,
       showInResearchPage: true,
     },
